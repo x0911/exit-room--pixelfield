@@ -1,0 +1,315 @@
+::-webkit-scrollbar {
+  width: 4px;
+  height: 0;
+  border-radius: 0;
+}
+
+::-webkit-scrollbar-track {
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 0;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #4f84ff;
+  border-radius: 0;
+}
+
+* {
+  overscroll-behavior: contain !important;
+  letter-spacing: 1px !important;
+
+  // For FireFox
+  scrollbar-width: thin;
+  scrollbar-color: #4f84ff rgba(255, 255, 255, 0.1);
+}
+
+html {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  position: relative;
+  background: transparent;
+}
+
+body {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  background: transparent;
+}
+
+img {
+  user-select: none;
+  -webkit-user-drag: none;
+}
+
+.theme--dark.v-application {
+  background: transparent !important;
+}
+
+.v-card .v-card__title,
+.v-card__title {
+  word-break: initial !important;
+}
+
+.max-room-h {
+  max-height: 95vh;
+  overflow-y: auto;
+  display: flex;
+
+  & > .v-card {
+    display: flex;
+    flex: 1 1 100%;
+    flex-direction: column;
+    max-height: 100%;
+    max-width: 100%;
+
+    & > .email-header {
+      font-size: 18px;
+    }
+
+    & > .v-system-bar,
+    & > .room-static,
+    & > .email-header,
+    & > .email-footer,
+    & > .v-card__actions,
+    & > .v-card__title,
+    & > .v-card__subtitle {
+      flex: 0 0 auto;
+    }
+
+    & > .v-card__text,
+    & > .scrollable .v-card__text {
+      -webkit-backface-visibility: hidden;
+      backface-visibility: hidden;
+      flex: 1 1 auto;
+      overflow-y: auto;
+    }
+  }
+}
+
+// .default-container {
+//   padding: 32px;
+//   background-color: white;
+//   border: 4px solid #0460A9;
+// }
+
+$positions: relative, absolute, fixed, sticky, static, initial;
+@each $position in $positions {
+  .p-#{$position} {
+    position: $position !important;
+  }
+}
+
+.center-top-absolute {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translate(0, -50%);
+}
+
+.cursor-pointer {
+  cursor: pointer;
+}
+
+.d-inline u {
+  color: blue;
+}
+
+$fillables: width, height;
+
+@each $fillable in $fillables {
+  .fill-#{$fillable} {
+    #{$fillable}: 100%;
+  }
+}
+
+// Letter spacing
+
+@for $i from 0 through 10 {
+  $px: $i * 0.4px;
+  .ls-#{$i} {
+    letter-spacing: $px !important;
+  }
+}
+
+// Game China - Must be in global.scss
+.man-card {
+  .v-image {
+    .v-image__image {
+      transition: all 0.15s linear;
+    }
+  }
+  &.hovered {
+    .v-image {
+      .v-image__image {
+        transform: scale(1.1);
+      }
+    }
+  }
+}
+
+.g_message {
+  background-color: #eee;
+  border-radius: 20px;
+  padding: 8px 15px;
+  position: relative;
+
+  &::before {
+    content: '';
+    position: absolute;
+    z-index: 0;
+    bottom: 0;
+    left: -7px;
+    height: 20px;
+    width: 20px;
+    background: #eee;
+    border-bottom-right-radius: 15px;
+  }
+
+  &::after {
+    content: '';
+    position: absolute;
+    z-index: 1;
+    bottom: 0;
+    left: -10px;
+    width: 10px;
+    height: 20px;
+    background: white;
+    border-bottom-right-radius: 10px;
+  }
+}
+
+.basic-blinker {
+  opacity: 1;
+  animation: basik-blinker 2s infinite !important;
+  animation-timing-function: linear;
+}
+
+.img-spot {
+  &--triggered {
+    &::before {
+      content: '';
+      background: #ff613d;
+      top: 50%;
+      left: 0;
+      transform: translate(0, -50%);
+      height: 5%;
+      width: 100%;
+      position: absolute;
+    }
+    &::after {
+      content: '';
+      background: #ff613d;
+      top: 0;
+      left: 50%;
+      transform: translate(-50%, 0);
+      height: 100%;
+      width: 5%;
+      position: absolute;
+    }
+  }
+}
+.spot-inner {
+  color: white;
+  font-weight: 600;
+  background: #ff613d;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2px 6px;
+  z-index: 1;
+}
+
+.typed-element {
+  display: block !important;
+}
+
+@keyframes blinker {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0;
+  }
+  51% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.g__color-blinker {
+  animation: color-blinker 0.5s infinite !important;
+  animation-timing-function: linear;
+}
+
+@keyframes color-blinker {
+  // 1% {
+  //   color: #ffeb00;
+  // }
+  50% {
+    color: red;
+  }
+}
+
+.g__fake_offer {
+  animation: trap_blinker 1s linear infinite;
+  font-weight: bold;
+  color: red;
+}
+
+@keyframes trap_blinker {
+  50% {
+    color: #eee;
+  }
+}
+
+.g__final_highlight {
+  animation: final_blinker 1.3s linear infinite;
+}
+
+@keyframes final_blinker {
+  0% {
+    filter: drop-shadow(0 0 20px rgba(0, 0, 0, 1)) brightness(1.2);
+  }
+  50% {
+    filter: drop-shadow(0 0 20px crimson) brightness(2);
+  }
+  100% {
+    filter: drop-shadow(0 0 20px rgba(0, 0, 0, 1)) brightness(1.2);
+  }
+}
+
+@keyframes task_icon_glow {
+  0%,
+  100% {
+    box-shadow: 0 0 15px 12px rgb(0, 255, 0);
+  }
+  50% {
+    box-shadow: 0 0 15px 12px transparent;
+  }
+}
+
+@keyframes bounce {
+  0%,
+  100% {
+    transform: scale(0);
+  }
+  50% {
+    transform: scale(1);
+  }
+}
+
+@keyframes changeColor {
+  0% {
+    filter: hue-rotate(0deg);
+  }
+
+  100% {
+    filter: hue-rotate(360deg);
+  }
+}

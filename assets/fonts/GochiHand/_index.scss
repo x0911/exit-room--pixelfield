@@ -1,0 +1,9 @@
+@font-face {
+  font-family: 'GochiHand';
+  font-style: normal;
+  font-display: swap;
+  font-weight: 400;
+  src: local('GochiHand'), local('GochiHand-Regular'),
+    url('../fonts/GochiHand/GochiHand-Regular.woff2') format('woff2'),
+    url('../fonts/GochiHand/GochiHand-Regular.woff') format('woff');
+}

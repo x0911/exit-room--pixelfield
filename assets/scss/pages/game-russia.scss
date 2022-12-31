@@ -1,0 +1,13 @@
+.question-container {
+  .block {
+    transition: opacity 1s ease-in-out;
+    user-select: none;
+    &.opacity-0 {
+      pointer-events: none;
+    }
+  }
+  .answers {
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+}

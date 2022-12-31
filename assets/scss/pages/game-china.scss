@@ -1,0 +1,31 @@
+.se-types {
+  // gap: 12px;
+  // padding: 16px;
+  .se-type {
+    padding: 6px 12px;
+    color: #ffeb3b;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 12px;
+    border: 2px solid #4e480c;
+
+    .v-card__title {
+      padding: 0;
+      margin: 0;
+      word-break: initial;
+      font-size: 16px !important;
+    }
+  }
+}
+
+.selected-se-type {
+  background: #153c9f;
+  border-radius: 12px;
+}
+
+.selected-se-type-answer {
+  background-color: #20325e;
+  border-color: #20325e;
+  opacity: 0.5;
+}

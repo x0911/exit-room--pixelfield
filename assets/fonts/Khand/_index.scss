@@ -1,0 +1,49 @@
+@font-face {
+  font-family: 'Khand';
+  font-style: normal;
+  font-display: swap;
+  font-weight: 200;
+  src: local('Khand'), local('Khand-Light'),
+    url('../fonts/Khand/Khand-Light.woff2') format('woff2'),
+    url('../fonts/Khand/Khand-Light.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'Khand';
+  font-style: normal;
+  font-display: swap;
+  font-weight: 400;
+  src: local('Khand'), local('Khand-Regular'),
+    url('../fonts/Khand/Khand-Regular.woff2') format('woff2'),
+    url('../fonts/Khand/Khand-Regular.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'Khand';
+  font-style: normal;
+  font-display: swap;
+  font-weight: 500;
+  src: local('Khand'), local('Khand-Medium'),
+    url('../fonts/Khand/Khand-Medium.woff2') format('woff2'),
+    url('../fonts/Khand/Khand-Medium.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'Khand';
+  font-style: normal;
+  font-display: swap;
+  font-weight: 600;
+  src: local('Khand'), local('Khand-SemiBold'),
+    url('../fonts/Khand/Khand-SemiBold.woff2') format('woff2'),
+    url('../fonts/Khand/Khand-SemiBold.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'Khand';
+  font-style: normal;
+  font-display: swap;
+  font-weight: 700;
+  src: local('Khand'), local('Khand-Bold'),
+    url('../fonts/Khand/Khand-Bold.woff2') format('woff2'),
+    url('../fonts/Khand/Khand-Bold.woff') format('woff');
+}

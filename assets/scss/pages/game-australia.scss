@@ -1,0 +1,81 @@
+.card-match-game {
+  .card {
+    perspective: 1000px;
+    box-shadow: none;
+    transition: all 0.8s ease-in-out;
+    --card-size: calc((90vh - 140px) / 3);
+    @media (max-width: 960px) {
+      --card-size: calc((90vh - 110px) / 2);
+      min-height: 110px;
+    }
+    @media (max-width: 670px) {
+      min-height: 90px;
+    }
+    min-height: 130px;
+    max-height: var(--card-size);
+    height: var(--card-size);
+    width: var(--card-size);
+    &-inner {
+      width: 100%;
+      transition: transform 0.8s;
+      transform-style: preserve-3d;
+      box-sizing: border-box;
+
+      &-front,
+      &-back {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        backface-visibility: hidden;
+      }
+
+      &-front {
+        padding: 6px;
+        .front-inset {
+          height: 100%;
+          border: 8px solid var(--v-primary-darken2);
+          box-shadow: inset 0 0 0 2px var(--v-primary-base),
+            0 0 0 2px var(--v-primary-base);
+        }
+        @media (max-width: 960px) {
+          padding: 4px;
+          .front-inset {
+            border: 4px solid var(--v-primary-darken2);
+            box-shadow: inset 0 0 0 1px var(--v-primary-base),
+              0 0 0 1px var(--v-primary-base);
+          }
+        }
+      }
+
+      &-back {
+        transform: rotateY(180deg);
+      }
+
+      &.flipped {
+        transform: rotateY(180deg);
+      }
+    }
+
+    &.active {
+      // animation: boxShadowAnimate 10s infinite;
+      opacity: 0;
+      pointer-events: none;
+    }
+  }
+}
+
+$colors: (
+  0%: #ff4081,
+  20%: #e040fb,
+  40%: #7c4dff,
+  60%: #18ffff,
+  80%: #b2ff59,
+  100%: #ff4081,
+);
+@keyframes boxShadowAnimate {
+  @each $perc, $color in $colors {
+    #{$perc} {
+      box-shadow: 0 0 20px 0 $color;
+    }
+  }
+}

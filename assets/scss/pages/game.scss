@@ -1,0 +1,363 @@
+$mainColor: #36548a; // #183b7d - #36548a
+$mainColorDarken: #183b7d;
+
+.game {
+  height: 98vh;
+  position: absolute;
+  top: 51%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  &.disable-clicking {
+    pointer-events: none;
+  }
+
+  &_room {
+    opacity: 0.5 !important;
+    pointer-events: none;
+    .room-icon {
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      position: relative;
+      margin-bottom: 25px;
+
+      .bounce-1,
+      .bounce-2 {
+        width: 100%;
+        height: 100%;
+        border-radius: 50%;
+        opacity: 0.6;
+        position: absolute;
+        top: 0;
+        left: 0;
+        background: rgb(255, 255, 255);
+      }
+    }
+    
+    &.active {
+      opacity: 1 !important;
+      pointer-events: all;
+      .room-icon {
+        animation: task_icon_glow 1.5s infinite ease-in-out;
+        .bounce-1,
+        .bounce-2 {
+          background: rgb(0, 255, 0);
+          animation: bounce 3s infinite ease-in-out;
+        }
+        .bounce-2 {
+          animation-delay: -1.5s;
+        }
+      }
+    }
+  }
+
+  &_room,
+  .game-title {
+    color: #ffffff;
+    font-size: 18px;
+    position: absolute;
+    text-align: center;
+    line-height: 28px;
+    user-select: none;
+
+    &:not(.f-tech) {
+      opacity: 0;
+    }
+
+    &.loaded {
+      animation-name: fadeIn;
+      animation-duration: 1s;
+      animation-fill-mode: forwards;
+    }
+
+    .country {
+      font-size: 28px;
+    }
+
+    .title {
+      font-size: 35px !important;
+      transform: translate(0, 16px);
+    }
+
+    .g__final_highlight {
+      font-size: 38px !important;
+    }
+
+    @media (max-width: 800px) {
+      font-size: 15px;
+      line-height: 20px;
+
+      .country {
+        font-size: 25px;
+        line-height: 22px;
+      }
+      .title {
+        font-size: 25px !important;
+      }
+      .g__final_highlight {
+        font-size: 28px !important;
+      }
+      img.lock {
+        width: 50px;
+      }
+    }
+
+    @media (max-height: 700px) {
+      font-size: 9px;
+      line-height: 10px;
+
+      .country {
+        font-size: 15px;
+        line-height: 15px;
+      }
+      .title {
+        font-size: 15px !important;
+      }
+      img.lock {
+        width: 30px;
+      }
+    }
+
+    @media (max-height: 385px) {
+      font-size: 8px;
+      line-height: 8px;
+
+      .country {
+        font-size: 13px;
+        line-height: 15px;
+      }
+      .title {
+        font-size: 18px !important;
+      }
+      img.lock {
+        width: 30px;
+      }
+    }
+
+    &:hover {
+      cursor: pointer;
+    }
+  }
+
+  &_room {
+    width: 12.5%;
+    height: 16.1%;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    text-shadow: 2px 2px 10px #000000;
+    font-weight: 500;
+
+    // animated-borders
+    background: transparent;
+    border: 0;
+    border-radius: 0;
+    -webkit-transform: translate(0%, 0%);
+    transform: translate(0%, 0%);
+    overflow: visible;
+    color: #ffffff;
+    font-size: 20px;
+    text-align: center;
+    text-decoration: none;
+    // ./animated-borders
+
+    .picture {
+      object-fit: contain;
+      max-width: 100%;
+      max-height: 100%;
+    }
+  }
+
+  .game-title {
+    bottom: 5%;
+    left: 38%;
+    color: #ffffff;
+    font-size: 50px;
+    line-height: 35px;
+    text-align: center;
+    font-weight: 900;
+    text-transform: uppercase;
+    cursor: auto !important;
+
+    &__stretch {
+      transform: scale(0.8) translate(0, -15%);
+    }
+
+    @media (min-width: 1920px) {
+      bottom: 5%;
+      left: 36%;
+      font-size: 64px;
+      line-height: 45px;
+    }
+    @media (max-width: 800px) {
+      left: 34%;
+      bottom: 1%;
+      font-size: 30px;
+      line-height: 22px;
+    }
+
+    @media (max-height: 700px) {
+      left: 34%;
+      bottom: 1%;
+      font-size: 30px;
+      line-height: 22px;
+    }
+
+    @media (max-height: 600px) {
+      left: 34%;
+      bottom: 1%;
+      font-size: 30px;
+      line-height: 22px;
+    }
+
+    @media (max-height: 500px) {
+      left: 34%;
+      bottom: 1%;
+      font-size: 30px;
+      line-height: 22px;
+    }
+
+    @media (max-height: 385px) {
+      left: 36%;
+      bottom: 1%;
+      font-size: 30px;
+      line-height: 22px;
+    }
+  }
+
+  &_rooms {
+    min-width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-self: center;
+
+    &_map {
+      user-select: none;
+      pointer-events: none;
+      height: 98vh;
+
+      &_straps {
+        position: absolute;
+      }
+    }
+  }
+}
+
+.room1 {
+  top: 40%;
+  left: 7%;
+
+  @media (max-height: 385px) {
+    top: 50%;
+  }
+}
+
+.room2 {
+  top: 46%;
+  left: 27%;
+
+  @media (max-height: 385px) {
+    top: 56%;
+  }
+}
+
+.room3 {
+  top: 40%;
+  left: 45%;
+
+  @media (max-height: 385px) {
+    top: 50%;
+  }
+}
+
+.room4 {
+  top: 46%;
+  left: 65%;
+
+  @media (max-height: 385px) {
+    top: 56%;
+  }
+}
+
+.room5 {
+  top: 40%;
+  left: 80%;
+
+  @media (max-height: 385px) {
+    top: 50%;
+  }
+}
+
+.room6 {
+  top: 40%;
+  left: 82%;
+
+  .f-tech {
+    width: 150%;
+  }
+
+  @media (max-height: 385px) {
+    top: 50%;
+  }
+}
+
+.game_room.room7 {
+  top: 2%;
+  left: auto;
+  right: 1%;
+  width: 25%;
+
+  .title {
+    font-size: 35px;
+
+    @media (min-width: 1000px) {
+      font-size: 45px !important;
+    }
+  }
+  @media (max-height: 385px) {
+    top: 10%;
+  }
+}
+
+@keyframes boxShadow {
+  0% {
+    box-shadow: 0 0 0 transparent;
+  }
+  17% {
+    box-shadow: 0 0 25px rgb(111, 0, 255);
+  }
+  34% {
+    box-shadow: 0 0 0 transparent;
+  }
+  51% {
+    box-shadow: 0 0 25px rgb(255, 0, 234);
+  }
+  68% {
+    box-shadow: 0 0 0 transparent;
+  }
+  85% {
+    box-shadow: 0 0 25px rgb(255, 0, 0);
+  }
+  100% {
+    box-shadow: 0 0 0 transparent;
+  }
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}

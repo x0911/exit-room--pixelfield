@@ -1,0 +1,77 @@
+{
+  "info": {
+    "lang": "en",
+    "status": "done",
+    "source": "",
+    "title": "Data Protection: Crossword Game",
+    "setter": {
+      "title": "F-Mark s.r.o",
+      "url": "https://www.f-mark.cz/"
+    }
+  },
+  "width": 19,
+  "height": 19,
+  "acrossClues": [],
+  "downClues": [
+    {
+      "x": 3,
+      "y": 1,
+      "clue": "2. xxx (2)",
+      "answer": "信息"
+    },
+    {
+      "x": 7,
+      "y": 1,
+      "clue": "4. xxx (3)",
+      "answer": "控制者"
+    },
+    {
+      "x": 13,
+      "y": 1,
+      "clue": "7. xxx (3)",
+      "answer": "假化名"
+    },
+    {
+      "x": 17,
+      "y": 1,
+      "clue": "9. xxx (1)",
+      "answer": "官"
+    },
+    {
+      "x": 19,
+      "y": 1,
+      "clue": "10. xxx (2)",
+      "answer": "遗传"
+    },
+    {
+      "x": 1,
+      "y": 1,
+      "clue": "1. xxx (3)",
+      "answer": "可携带"
+    },
+    {
+      "x": 5,
+      "y": 1,
+      "clue": "3. xxx (2)",
+      "answer": "申诉"
+    },
+    {
+      "x": 9,
+      "y": 1,
+      "clue": "5. xxx (2)",
+      "answer": "通知"
+    },
+    {
+      "x": 11,
+      "y": 1,
+      "clue": "6. xxx (2)",
+      "answer": "影响"
+    },
+    {
+      "x": 15,
+      "y": 1,
+      "clue": "8. xxx (3)",
+      "answer": "SPI"
+    }
+  ]
+}

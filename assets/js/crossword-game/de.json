@@ -1,0 +1,78 @@
+{
+  "info": {
+    "lang": "en",
+    "status": "done",
+    "source": "",
+    "title": "Data Protection: Crossword Game",
+    "setter": {
+      "title": "F-Mark s.r.o",
+      "url": "https://www.f-mark.cz/"
+    }
+  },
+  "width": 23,
+  "height": 23,
+  "acrossClues": [
+    {
+      "x": 12,
+      "y": 3,
+      "clue": "3. xxx (10)",
+      "answer": "Beschwerde"
+    },
+    {
+      "x": 15,
+      "y": 9,
+      "clue": "5. xxx (9)",
+      "answer": "Erklärung"
+    },
+    {
+      "x": 5,
+      "y": 12,
+      "clue": "2. xxx (11)",
+      "answer": "Information"
+    },
+    {
+      "x": 1,
+      "y": 14,
+      "clue": "9. xxx (11)",
+      "answer": "Beauftragte"
+    },
+    {
+      "x": 13,
+      "y": 19,
+      "clue": "8. xxx (3)",
+      "answer": "spi"
+    }
+  ],
+  "downClues": [
+    {
+      "x": 13,
+      "y": 1,
+      "clue": "7. xxx (17)",
+      "answer": "Pseudonymisierung"
+    },
+    {
+      "x": 9,
+      "y": 7,
+      "clue": "1. xxx (15)",
+      "answer": "Übertragbarkeit"
+    },
+    {
+      "x": 18,
+      "y": 7,
+      "clue": "6. xxx (6)",
+      "answer": "Folgen"
+    },
+    {
+      "x": 15,
+      "y": 8,
+      "clue": "4. xxx (15)",
+      "answer": "Verantwortliche"
+    },
+    {
+      "x": 6,
+      "y": 10,
+      "clue": "10. xxx (9)",
+      "answer": "Genetisch"
+    }
+  ]
+}

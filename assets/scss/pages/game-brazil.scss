@@ -1,0 +1,15 @@
+.puzzle-container {
+  border: 30px solid white;
+  background: var(--v-primary-base);
+  @media (max-width: 890px) {
+    border: 15px solid white;
+  }
+  // box-shadow: 0px 0px 0px 12px var(--v-primary-base) !important;
+}
+
+.loading-container {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}

@@ -1,0 +1,43 @@
+.video-container {
+  //
+}
+
+.video {
+  width: 1000px;
+  max-width: 90vw;
+  margin: 0 auto;
+  height: auto;
+  @media (max-height: 500px) {
+    /*
+    - Why used max-height instead of max-width?
+    = Because device is rotated to landscape while playing the game
+    */
+    width: 100vw !important;
+    height: 100vh !important;
+  }
+}
+
+.lang-icon {
+  img {
+    max-height: 40px;
+  }
+}
+
+.language_title {
+  text-align: center;
+  justify-content: center;
+  color: black;
+  text-transform: uppercase;
+  display: flex;
+  flex-wrap: wrap;
+
+  .word {
+    font-size: 20px;
+    font-weight: bold;
+    span {
+      display: inline-block;
+      width: 30px;
+      margin-bottom: 10px;
+    }
+  }
+}

@@ -1,0 +1,78 @@
+{
+  "info": {
+    "lang": "esp",
+    "status": "done",
+    "source": "",
+    "title": "Data Protection: Crossword Game",
+    "setter": {
+      "title": "F-Mark s.r.o",
+      "url": "https://www.f-mark.cz/"
+    }
+  },
+  "width": 19,
+  "height": 19,
+  "acrossClues": [
+    {
+      "x": 1,
+      "y": 1,
+      "clue": "10. xxx (9)",
+      "answer": "genéticos"
+    },
+    {
+      "x": 6,
+      "y": 3,
+      "clue": "1. xxx (12)",
+      "answer": "portabilidad"
+    },
+    {
+      "x": 10,
+      "y": 6,
+      "clue": "5. xxx (5)",
+      "answer": "aviso"
+    },
+    {
+      "x": 4,
+      "y": 9,
+      "clue": "7. xxx (15)",
+      "answer": "seudonimización"
+    }
+  ],
+  "downClues": [
+    {
+      "x": 6,
+      "y": 1,
+      "clue": "6. xxx (7)",
+      "answer": "impacto"
+    },
+    {
+      "x": 8,
+      "y": 3,
+      "clue": "3. xxx (7)",
+      "answer": "reclamo"
+    },
+    {
+      "x": 14,
+      "y": 3,
+      "clue": "2. xxx (11)",
+      "answer": "información"
+    },
+    {
+      "x": 4,
+      "y": 7,
+      "clue": "4. xxx (11)",
+      "answer": "responsable"
+    },
+    {
+      "x": 7,
+      "y": 9,
+      "clue": "9. xxx (8)",
+      "answer": "delegado"
+    },
+    {
+      "x": 12,
+      "y": 9,
+      "clue": "8. xxx (3)",
+      "answer": "ips"
+    }
+  ]
+}

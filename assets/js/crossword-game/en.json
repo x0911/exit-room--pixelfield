@@ -1,0 +1,78 @@
+{
+  "info": {
+    "lang": "en",
+    "status": "done",
+    "source": "",
+    "title": "Data Protection: Crossword Game",
+    "setter": {
+      "title": "F-Mark s.r.o",
+      "url": "https://www.f-mark.cz/"
+    }
+  },
+  "width": 19,
+  "height": 19,
+  "acrossClues": [
+    {
+      "x": 1,
+      "y": 2,
+      "clue": "2. xxx (11)",
+      "answer": "Information"
+    },
+    {
+      "x": 7,
+      "y": 4,
+      "clue": "4. xxx (10)",
+      "answer": "Controller"
+    },
+    {
+      "x": 1,
+      "y": 9,
+      "clue": "7. xxx (16)",
+      "answer": "Pseudonymisation"
+    },
+    {
+      "x": 13,
+      "y": 11,
+      "clue": "10. xxx (7)",
+      "answer": "Genetic"
+    }
+  ],
+  "downClues": [
+    {
+      "x": 10,
+      "y": 1,
+      "clue": "1. xxx (11)",
+      "answer": "Portability"
+    },
+    {
+      "x": 16,
+      "y": 3,
+      "clue": "3. xxx (9)",
+      "answer": "Grievance"
+    },
+    {
+      "x": 14,
+      "y": 6,
+      "clue": "5. xxx (6)",
+      "answer": "Notice"
+    },
+    {
+      "x": 19,
+      "y": 7,
+      "clue": "6. xxx (6)",
+      "answer": "Impact"
+    },
+    {
+      "x": 1,
+      "y": 8,
+      "clue": "8. xxx (3)",
+      "answer": "SPI"
+    },
+    {
+      "x": 3,
+      "y": 4,
+      "clue": "9. xxx (7)",
+      "answer": "Officer"
+    }
+  ]
+}

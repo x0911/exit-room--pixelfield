@@ -1,0 +1,50 @@
+@import './GochiHand/_index.scss';
+@import './ArchitectsDaughter/_index.scss';
+@import './MeowScript/_index.scss';
+@import './OdibeeSans/_index.scss';
+@import './PressStart2P/_index.scss';
+@import './BlackOpsOne/_index.scss';
+@import './Poppins/_index.scss';
+@import './ShareTechMono/_index.scss';
+@import './ShadowsIntoLight/_index.scss';
+@import './Khand/_index.scss';
+
+body {
+  .v-application {
+    .f-black-ops-one,
+    .f-title,
+    .v-card__title,
+    .v-btn {
+      font-family: 'BlackOpsOne', sans-serif !important;
+    }
+    .f-odibee-sans,
+    .f-body,
+    .v-card__text,
+    .v-label,
+    .text-body-1,
+    .text-body-2 {
+      font-family: 'Poppins', sans-serif !important;
+    }
+    .f-gochi {
+      font-family: 'GochiHand', sans-serif !important;
+    }
+    .f-meow {
+      font-family: 'MeowScript', sans-serif !important;
+    }
+    .f-architects {
+      font-family: 'ArchitectsDaughter', sans-serif !important;
+    }
+    .f-poppins {
+      font-family: 'Poppins', sans-serif !important;
+    }
+    .f-tech {
+      font-family: 'ShareTechMono', sans-serif !important;
+    }
+    .f-khand {
+      font-family: 'Khand', sans-serif !important;
+    }
+    .f-hand {
+      font-family: 'ShadowsIntoLight', sans-serif !important;
+    }
+  }
+}

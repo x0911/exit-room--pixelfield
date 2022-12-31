@@ -1,0 +1,78 @@
+{
+  "info": {
+    "lang": "fr",
+    "status": "done",
+    "source": "",
+    "title": "Data Protection: Crossword Game",
+    "setter": {
+      "title": "F-Mark s.r.o",
+      "url": "https://www.f-mark.cz/"
+    }
+  },
+  "width": 20,
+  "height": 20,
+  "acrossClues": [
+    {
+      "x": 4,
+      "y": 6,
+      "clue": "7. xxx (16)",
+      "answer": "pseudonymisation"
+    },
+    {
+      "x": 1,
+      "y": 9,
+      "clue": "4. xxx (10)",
+      "answer": "contrôleur"
+    },
+    {
+      "x": 17,
+      "y": 9,
+      "clue": "5. xxx (4)",
+      "answer": "avis"
+    },
+    {
+      "x": 12,
+      "y": 11,
+      "clue": "3. xxx (7)",
+      "answer": "plainte"
+    },
+    {
+      "x": 6,
+      "y": 12,
+      "clue": "9. xxx (5)",
+      "answer": "agent"
+    },
+    {
+      "x": 9,
+      "y": 14,
+      "clue": "1. xxx (11)",
+      "answer": "portabilité"
+    }
+  ],
+  "downClues": [
+    {
+      "x": 13,
+      "y": 1,
+      "clue": "10. xxx (9)",
+      "answer": "génétique"
+    },
+    {
+      "x": 10,
+      "y": 5,
+      "clue": "2. xxx (11)",
+      "answer": "information"
+    },
+    {
+      "x": 17,
+      "y": 6,
+      "clue": "6. xxx (6)",
+      "answer": "impact"
+    },
+    {
+      "x": 12,
+      "y": 10,
+      "clue": "8. xxx (3)",
+      "answer": "dps"
+    }
+  ]
+}

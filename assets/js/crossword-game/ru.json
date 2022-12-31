@@ -1,0 +1,78 @@
+{
+  "info": {
+    "lang": "ru",
+    "status": "done",
+    "source": "",
+    "title": "Data Protection: Crossword Game",
+    "setter": {
+      "title": "F-Mark s.r.o",
+      "url": "https://www.f-mark.cz/"
+    }
+  },
+  "width": 24,
+  "height": 24,
+  "acrossClues": [
+    {
+      "x": 5,
+      "y": 10,
+      "clue": "10. xxx (19)",
+      "answer": "генетические данные"
+    },
+    {
+      "x": 15,
+      "y": 15,
+      "clue": "9. xxx (10)",
+      "answer": "специалист"
+    },
+    {
+      "x": 1,
+      "y": 16,
+      "clue": "2. xxx (10)",
+      "answer": "информация"
+    }
+  ],
+  "downClues": [
+    {
+      "x": 15,
+      "y": 1,
+      "clue": "5. xxx (11)",
+      "answer": "уведомление"
+    },
+    {
+      "x": 20,
+      "y": 4,
+      "clue": "7. xxx (15)",
+      "answer": "псевдонимизация"
+    },
+    {
+      "x": 12,
+      "y": 6,
+      "clue": "6. xxx (11)",
+      "answer": "воздействия"
+    },
+    {
+      "x": 8,
+      "y": 9,
+      "clue": "3. xxx (10)",
+      "answer": "рекламация"
+    },
+    {
+      "x": 23,
+      "y": 9,
+      "clue": "1. xxx (7)",
+      "answer": "перенос"
+    },
+    {
+      "x": 4,
+      "y": 16,
+      "clue": "4. xxx (8)",
+      "answer": "оператор"
+    },
+    {
+      "x": 17,
+      "y": 1,
+      "clue": "8. xxx (3)",
+      "answer": "SPI"
+    }
+  ]
+}

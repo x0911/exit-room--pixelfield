@@ -1,0 +1,120 @@
+.file-container {
+  // border: 5px solid var(--v-primary-base);
+  display: flex;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+  min-width: 193px;
+  height: 180px;
+  cursor: pointer;
+
+  .bg-icon {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+
+  .file-name {
+    // text-transform: uppercase;
+    margin-top: 20px;
+    color: var(--v-dark-blue-base);
+    font-size: 85%;
+
+    &.fs-sm {
+      font-size: 80%;
+    }
+    &.fs-xs {
+      font-size: 75%;
+    }
+  }
+}
+
+.draggable-container-left {
+  display: flex;
+  flex-wrap: wrap;
+  overflow: hidden;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+.draggable-container-right {
+  display: flex;
+  flex-wrap: nowrap;
+  box-sizing: border-box !important;
+  border: 4px dashed transparent;
+  height: 108px;
+  overflow-y: auto;
+
+  &.allow-drag {
+    border-color: var(--v-error-base);
+  }
+}
+
+.dist-container {
+  .v-card__title {
+    background: var(--v-primary-base) !important;
+    color: white !important;
+    font-weight: 300 !important;
+    font-size: 15px !important;
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+
+  .file-container {
+    position: relative !important;
+    min-width: 107px;
+    height: 100px;
+    border-width: 3px;
+
+    .file-name {
+      font-size: 70%;
+      text-transform: none;
+      line-height: 14px;
+      margin-top: 12px;
+
+      &.fs-md {
+        font-size: 68%;
+      }
+      &.fs-sm {
+        font-size: 65%;
+      }
+      &.fs-xs {
+        font-size: 50%;
+      }
+    }
+  }
+}
+
+.left-container-circle {
+  position: fixed;
+  width: 90%;
+  height: 90%;
+  border: 4px solid var(--v-primary-base);
+  border-radius: 50%;
+}
+
+.left-container-img {
+  position: absolute;
+  top: 50vh;
+  left: 0;
+  transform: translate(0, -50vh);
+  overflow: visible;
+}
+
+.shelfs {
+  .shelf {
+    .shelf-title {
+      transform: translate(0, 9px);
+      line-height: 15px;
+      font-size: 11px !important;
+    }
+  }
+}
+
+.shelf-toggler {
+  flex-wrap: wrap;
+  row-gap: 6px;
+}

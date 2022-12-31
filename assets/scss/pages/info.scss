@@ -1,0 +1,13 @@
+.info-screen {
+  border: 4px solid var(--v-primary-darken-base);
+
+  .v-card__title {
+    // color: #444c61;
+    font-size: 30px;
+  }
+
+  .v-card__text {
+    color: #444c61;
+    opacity: 1;
+  }
+}

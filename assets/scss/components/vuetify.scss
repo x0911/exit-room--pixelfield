@@ -1,0 +1,565 @@
+/*
+This is global style file for Vuetify components
+It's used in nuxt.config.js in global css files
+*/
+
+.v-application--is-ltr {
+  .ltr-flip {
+    transform: rotate(180deg);
+  }
+}
+
+.v-application--is-rtl {
+  .rtl-flip {
+    transform: rotate(180deg);
+  }
+}
+
+.theme--light {
+  &.v-btn {
+    &.v-btn--disabled.v-btn--has-bg.custom-disabled-state {
+      background-color: #c3c3c3 !important;
+    }
+  }
+}
+.theme--dark {
+  &.v-btn {
+    &.v-btn--disabled.v-btn--has-bg.custom-disabled-state {
+      background-color: #464646 !important;
+    }
+  }
+}
+
+.v-application {
+  .primary {
+    background: radial-gradient(
+      var(--v-primary-darken-base),
+      var(--v-primary-lighten-base)
+    ) !important;
+  }
+  .error {
+    background: radial-gradient(
+      var(--v-primary-darken-base),
+      #661704
+    ) !important;
+  }
+  .success {
+    background: radial-gradient(
+      var(--v-primary-darken-base),
+      #00bb60
+    ) !important;
+  }
+}
+
+.v-btn {
+  font-weight: 400 !important;
+
+  &:not(.normal-btn):not(.v-btn--icon):not(.v-btn--outlined):not(.v-btn--text) {
+    border-width: 2px;
+    border-style: solid;
+    border-radius: 0;
+
+    &.v-btn--disabled.v-btn--has-bg {
+      background: #002d7a33 !important;
+      opacity: 0.75 !important;
+    }
+
+    &.primary,
+    &.error {
+      transition: all 0.25s;
+      &:hover,
+      &:focus {
+        transform: translateY(-0.3em);
+
+        &::before {
+          opacity: 0;
+        }
+      }
+    }
+
+    &.primary {
+      border-color: var(--v-primary-lighten-base) !important;
+
+      &:hover,
+      &:focus {
+        box-shadow: 0 0.85em 0.85em -0.4em var(--v-primary-lighten-base);
+        // background: radial-gradient(var(--v-primary-darken-base), var(--v-primary-darken-base), var(--v-primary-lighten-base));
+      }
+    }
+    &.error {
+      border-color: #831a00 !important;
+
+      &:hover,
+      &:focus {
+        box-shadow: 0 0.85em 0.85em -0.4em #831a00;
+        // background: radial-gradient(var(--v-primary-darken-base), var(--v-primary-darken-base), #661704);
+      }
+    }
+  }
+
+  &__content {
+    text-transform: none;
+  }
+}
+
+.border-2 {
+  border-width: 2px !important;
+}
+
+.border-3 {
+  border-width: 3px !important;
+}
+
+.v-card {
+  transition: all 0.25s !important;
+  .v-card__title {
+    &.no-word-break {
+      word-break: initial;
+    }
+  }
+  &.info-screen {
+    border: 4px solid var(--v-primary-darken-base) !important;
+
+    &.border-primary {
+      border-color: var(--v-primary-darken-base) !important;
+    }
+
+    .v-card__title {
+      color: #8c2d42 !important;
+      &:not(.normal-size) {
+        font-size: 25px !important;
+      }
+    }
+
+    .v-card__text {
+      &:not(.primary-darken):not(.normal-color) {
+        color: #444c61 !important;
+      }
+    }
+
+    &.darken {
+      background: radial-gradient(
+        var(--v-primary-darken-base),
+        var(--v-primary-lighten-base)
+      );
+      border-color: var(--v-primary-lighten-base);
+      .v-card__title {
+        color: #ffeb00 !important;
+      }
+
+      .v-card__text {
+        &:not(.primary-darken):not(.normal-color) {
+          color: #c5cbdb !important;
+        }
+      }
+    }
+  }
+
+  &.hoverable-card {
+    .no-user-select {
+      transition: all 0.2s ease-in-out;
+      color: rgb(255, 255, 255, 0.5);
+    }
+    .lang-icon {
+      img {
+        transition: all 0.2s ease-in-out;
+        filter: contrast(2) invert(1) drop-shadow(2px 4px 6px black);
+      }
+    }
+
+    &:hover,
+    &:focus {
+      .no-user-select {
+        color: white;
+      }
+      .lang-icon {
+        background: transparent;
+        img {
+          filter: contrast(2) invert(1) drop-shadow(2px 4px 6px black);
+        }
+      }
+    }
+  }
+}
+
+.animated-card-border {
+  $activeBorderColor: var(--v-primary-darken-base);
+  $activeBorderWidth: 3px;
+  $activeBorderStyle: dashed;
+  position: relative;
+  box-sizing: border-box;
+
+  &::before,
+  &::after {
+    box-sizing: inherit;
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+  }
+
+  &::before,
+  &::after {
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    transform-origin: center;
+  }
+
+  &::before {
+    border-top: $activeBorderWidth $activeBorderStyle $activeBorderColor;
+    border-bottom: $activeBorderWidth $activeBorderStyle $activeBorderColor;
+    transform: scale3d(0, 1, 1);
+  }
+
+  &::after {
+    border-left: $activeBorderWidth $activeBorderStyle $activeBorderColor;
+    border-right: $activeBorderWidth $activeBorderStyle $activeBorderColor;
+    transform: scale3d(1, 0, 1);
+  }
+
+  &.animate {
+    &::before,
+    &::after {
+      transform: scale3d(1, 1, 1);
+      transition: transform 0.5s;
+    }
+  }
+}
+
+.v-divider {
+  &.bold {
+    border-width: 2px;
+  }
+}
+
+.v-list-item {
+  &.wrap {
+    .v-list-item__content {
+      .v-list-item__title,
+      .v-list-item__subtitle {
+        white-space: initial;
+      }
+    }
+  }
+
+  &.min-h-auto {
+    min-height: auto;
+  }
+}
+
+.v-dialog {
+  border-radius: 0 !important;
+  max-height: 96%;
+}
+
+.v-text-field {
+  &.label-overflow-visible {
+    label {
+      overflow: visible;
+    }
+  }
+}
+
+.transparent-bg {
+  background: transparent !important;
+}
+
+.v-btn-toggle {
+  &.border-normal {
+    & > .v-btn {
+      border-left-width: 2px !important;
+      border-right-width: 2px !important;
+    }
+  }
+}
+
+$progressColors: (
+  'white': white,
+  'primary': #5291de,
+  'error': #dd2c00,
+  'orange': orange,
+);
+.v-progress-circular {
+  .v-progress-circular__info {
+    z-index: 1;
+  }
+
+  @each $pColor, $color in $progressColors {
+    &.fill-#{$pColor} {
+      svg {
+        circle {
+          fill: darken($color, 20%);
+        }
+      }
+    }
+  }
+}
+
+@for $i from 0 through 5 {
+  @for $n from 0 through 9 {
+    $x: $i + ($n / 10);
+    $em: $x * 1rem;
+    .lh-#{$i}-#{$n} {
+      line-height: $em !important;
+    }
+    .ls-#{$i}-#{$n} {
+      letter-spacing: $i * 1px !important;
+    }
+  }
+}
+
+.user-select-none {
+  user-select: none !important;
+}
+
+.v-stepper__step {
+  &.no-gap {
+    .v-stepper__step__step {
+      margin-right: 0 !important;
+      margin-left: 0 !important;
+    }
+  }
+}
+
+.v-stepper__content {
+  &.wrapper-overflow-visible {
+    padding-left: 0;
+    padding-right: 0;
+    .v-stepper__wrapper {
+      padding-left: 24px;
+      padding-right: 24px;
+    }
+    @media (max-width: 850px) {
+      padding-top: 10px;
+    }
+  }
+}
+
+.v-radio,
+.v-simple-checkbox {
+  &.no-gap {
+    .v-input--selection-controls__input {
+      margin-right: 0 !important;
+      margin-left: 0 !important;
+    }
+  }
+}
+
+.opacity-0 {
+  opacity: 0;
+}
+
+.v-expansion-panel {
+  &.elevation-0 {
+    &::before {
+      box-shadow: none !important;
+    }
+  }
+}
+
+.timer-container {
+  border: 3px solid var(--v-primary-darken-base);
+  border-bottom: 0;
+  min-width: 80px;
+  padding: 8px 0;
+  background-color: white;
+
+  .timer {
+    color: var(--v-primary-darken-base);
+  }
+}
+
+.v-chip {
+  &.no-wrap {
+    max-width: initial !important;
+  }
+}
+
+// Crossword Puzzle
+.crossword {
+  transform: scale(0.95);
+  @media (min-width: 950px) {
+    // transform: scale(0.7);
+  }
+  @media (min-width: 1441px) {
+    // transform: scale(0.6);
+  }
+  .cwrow {
+    // &:nth-child(n + 13) {
+    //   opacity: 0;
+    //   display: none;
+    // }
+    &.hidden-row {
+      opacity: 0;
+      display: none;
+    }
+    .cwcell {
+      border-color: var(--v-primary-darken-base) !important;
+      &.light {
+        .cwcluelabel {
+          font-weight: bold;
+          width: auto;
+          left: 4px;
+          top: 4px;
+          color: var(--v-primary-darken-base);
+          user-select: none;
+          pointer-events: none;
+        }
+        input {
+          //
+        }
+      }
+      &.dark {
+        opacity: 0;
+      }
+      .cwcluelabel {
+        font-size: 14px !important;
+        pointer-events: none !important;
+      }
+      @media (max-height: 500px) {
+        .cwcluelabel {
+          font-size: 11px !important;
+        }
+        &.light {
+          input {
+            font-size: 13px !important;
+          }
+        }
+      }
+    }
+    // &:nth-child(1) {
+    //   .cwcell:nth-child(10) {
+    //     border-top: 1px solid;
+    //     border-right: 1px solid;
+    //   }
+    // }
+    // &:nth-child(2) {
+    //   .cwcell:not(:nth-child(10)) {
+    //     border-bottom: 1px solid;
+    //   }
+    //   .cwcell:nth-child(11) {
+    //     border-right: 1px solid;
+    //   }
+    // }
+    // &:nth-child(3),
+    // &:nth-child(5),
+    // &:nth-child(6),
+    // &:nth-child(7) {
+    //   .cwcell:nth-child(10),
+    //   .cwcell:nth-child(16) {
+    //     border-right: 1px solid;
+    //   }
+    // }
+    // &:nth-child(4) {
+    //   .cwcell:not(:nth-child(10)):not(:nth-child(16)) {
+    //     border-bottom: 1px solid;
+    //   }
+    //   .cwcell:nth-child(16) {
+    //     border-right: 1px solid;
+    //   }
+    // }
+    // &:nth-child(6),
+    // &:nth-child(7),
+    // &:nth-child(8) {
+    //   .cwcell:nth-child(14),
+    //   .cwcell:nth-child(16) {
+    //     border-right: 1px solid;
+    //   }
+    // }
+    // &:nth-child(7) {
+    //   .cwcell:nth-child(10) {
+    //     border-bottom: 1px solid;
+    //   }
+    // }
+    // &:nth-child(9) {
+    //   .cwcell:not(:nth-child(2)):not(:nth-child(14)):not(:nth-child(16)):not(:nth-child(19)) {
+    //     border-bottom: 1px solid;
+    //   }
+    //   .cwcell:nth-child(16) {
+    //     border-right: 1px solid;
+    //   }
+    // }
+    // &:nth-child(10) {
+    //   .cwcell:nth-child(2),
+    //   .cwcell:nth-child(14),
+    //   .cwcell:nth-child(16) {
+    //     border-right: 1px solid;
+    //   }
+    // }
+    // &:nth-child(11) {
+    //   .cwcell:not(:nth-child(2)):not(:nth-child(19)) {
+    //     border-bottom: 1px solid;
+    //   }
+    //   .cwcell:nth-child(5) {
+    //     border-right: 1px solid;
+    //   }
+    // }
+    // &:nth-child(12) {
+    //   .cwcell:nth-child(2),
+    //   .cwcell:nth-child(19) {
+    //     border-bottom: 1px solid;
+    //   }
+    // }
+  }
+}
+
+.v-menu__content {
+  .v-list {
+    color: #121212 !important;
+    background: #ffffff !important;
+
+    .v-list-item:not(.v-list-item--active) {
+      color: #121212 !important;
+    }
+
+    .v-list-item__mask {
+      color: rgba(0, 0, 0, 0.38) !important;
+      background: #eee !important;
+    }
+  }
+}
+
+.no-user-select {
+  user-select: none;
+}
+
+.pointer-events-none {
+  pointer-events: none;
+}
+
+.pointer-events-all {
+  pointer-events: all;
+}
+
+.max-h-100 {
+  max-height: 100% !important;
+}
+
+// Fix font-sizes for each font-family
+.v-card {
+  .v-card__text {
+    // font-size: 1.6rem;
+    // line-height: 2.1rem;
+  }
+}
+
+.v-input {
+  .v-label {
+    // font-size: 1.4rem !important;
+    // line-height: 1.7rem !important;
+  }
+}
+
+.v-list-item {
+  .v-list-item__title {
+    // font-size: 1.4rem !important;
+    line-height: 1.5rem !important;
+  }
+}
+
+.splash-screen_loading {
+  filter: hue-rotate(90deg)
+    drop-shadow(2px 4px 6px var(--v-primary-lighten-base));
+}

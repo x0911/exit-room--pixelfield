@@ -1,0 +1,78 @@
+{
+  "info": {
+    "lang": "sl",
+    "status": "done",
+    "source": "",
+    "title": "Data Protection: Crossword Game",
+    "setter": {
+      "title": "F-Mark s.r.o",
+      "url": "https://www.f-mark.cz/"
+    }
+  },
+  "width": 19,
+  "height": 19,
+  "acrossClues": [
+    {
+      "x": 4,
+      "y": 2,
+      "clue": "3. xxx (8)",
+      "answer": "pritožba"
+    },
+    {
+      "x": 3,
+      "y": 5,
+      "clue": "9. xxx (17)",
+      "answer": "pooblaščena oseba"
+    },
+    {
+      "x": 11,
+      "y": 10,
+      "clue": "5. xxx (9)",
+      "answer": "obvestilo"
+    },
+    {
+      "x": 1,
+      "y": 13,
+      "clue": "10. xxx (8)",
+      "answer": "genetski"
+    }
+  ],
+  "downClues": [
+    {
+      "x": 5,
+      "y": 1,
+      "clue": "1. xxx (14)",
+      "answer": "prenosljivosti"
+    },
+    {
+      "x": 13,
+      "y": 2,
+      "clue": "4. xxx (11)",
+      "answer": "upravljavec"
+    },
+    {
+      "x": 17,
+      "y": 3,
+      "clue": "7. xxx (16)",
+      "answer": "psevdonimizacija"
+    },
+    {
+      "x": 3,
+      "y": 4,
+      "clue": "6. xxx (6)",
+      "answer": "vpliva"
+    },
+    {
+      "x": 15,
+      "y": 5,
+      "clue": "8. xxx (3)",
+      "answer": "oop"
+    },
+    {
+      "x": 19,
+      "y": 7,
+      "clue": "2. xxx (11)",
+      "answer": "informacije"
+    }
+  ]
+}

@@ -1,0 +1,42 @@
+/* Variables */
+$gapTypes: 'row', 'column';
+// Breakpoints - based on Vuetify
+$break-xlg: 1904px;
+$break-lg: 1264px;
+$break-md: 960px;
+$break-sm: 600px;
+$break-xs: 480px;
+$break-xxs: 350px;
+$breakpoints: (
+  'xxs': $break-xxs,
+  'xs': $break-xs,
+  'sm': $break-sm,
+  'md': $break-md,
+  'lg': $break-lg,
+  'xl': $break-xlg,
+);
+
+/* Common */
+@for $i from 0 through 16 {
+  $px: $i * 4px;
+  .gap-#{$i} {
+    gap: $px;
+  }
+  @each $gt in $gapTypes {
+    .gap-#{$gt}-#{$i} {
+      #{$gt}-gap: $px;
+    }
+  }
+  @each $bp, $widthInPx in $breakpoints {
+    @media (min-width: $widthInPx) {
+      .gap-#{$bp}-#{$i} {
+        gap: $px;
+      }
+      @each $gt in $gapTypes {
+        .gap-#{$gt}-#{$bp}-#{$i} {
+          #{$gt}-gap: $px;
+        }
+      }
+    }
+  }
+}

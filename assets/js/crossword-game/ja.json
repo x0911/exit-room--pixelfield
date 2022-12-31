@@ -1,0 +1,77 @@
+{
+  "info": {
+    "lang": "jp",
+    "status": "done",
+    "source": "",
+    "title": "Data Protection: Crossword Game",
+    "setter": {
+      "title": "F-Mark s.r.o",
+      "url": "https://www.f-mark.cz/"
+    }
+  },
+  "width": 19,
+  "height": 19,
+  "acrossClues": [],
+  "downClues": [
+    {
+      "x": 3,
+      "y": 1,
+      "clue": "2. xxx (2)",
+      "answer": "情報"
+    },
+    {
+      "x": 7,
+      "y": 1,
+      "clue": "4. xxx (3)",
+      "answer": "管理者"
+    },
+    {
+      "x": 13,
+      "y": 1,
+      "clue": "7. xxx (3)",
+      "answer": "仮名化"
+    },
+    {
+      "x": 17,
+      "y": 1,
+      "clue": "9. xxx (3)",
+      "answer": "責任者"
+    },
+    {
+      "x": 19,
+      "y": 1,
+      "clue": "10. xxx (2)",
+      "answer": "遺伝"
+    },
+    {
+      "x": 1,
+      "y": 1,
+      "clue": "1. xxx (8)",
+      "answer": "ポータビリティー"
+    },
+    {
+      "x": 5,
+      "y": 1,
+      "clue": "3. xxx (2)",
+      "answer": "苦情"
+    },
+    {
+      "x": 9,
+      "y": 1,
+      "clue": "5. xxx (2)",
+      "answer": "通知"
+    },
+    {
+      "x": 11,
+      "y": 1,
+      "clue": "6. xxx (2)",
+      "answer": "影響"
+    },
+    {
+      "x": 15,
+      "y": 1,
+      "clue": "8. xxx (3)",
+      "answer": "SPI"
+    }
+  ]
+}

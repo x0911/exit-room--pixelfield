@@ -1,0 +1,78 @@
+{
+  "info": {
+    "lang": "tr",
+    "status": "done",
+    "source": "",
+    "title": "Data Protection: Crossword Game",
+    "setter": {
+      "title": "F-Mark s.r.o",
+      "url": "https://www.f-mark.cz/"
+    }
+  },
+  "width": 20,
+  "height": 20,
+  "acrossClues": [
+    {
+      "x": 1,
+      "y": 2,
+      "clue": "3. xxx (7)",
+      "answer": "şikayet"
+    },
+    {
+      "x": 14,
+      "y": 7,
+      "clue": "2. xxx (5)",
+      "answer": "bilgi"
+    },
+    {
+      "x": 1,
+      "y": 9,
+      "clue": "4. xxx (20)",
+      "answer": "sorumlu ad kullanımı"
+    },
+    {
+      "x": 9,
+      "y": 12,
+      "clue": "9. xxx (9)",
+      "answer": "gorevlisi"
+    },
+    {
+      "x": 12,
+      "y": 14,
+      "clue": "6. xxx (4)",
+      "answer": "etki"
+    }
+  ],
+  "downClues": [
+    {
+      "x": 5,
+      "y": 1,
+      "clue": "5. xxx (10)",
+      "answer": "aydinlatma"
+    },
+    {
+      "x": 14,
+      "y": 1,
+      "clue": "1. xxx (14)",
+      "answer": "taşınabilirlik"
+    },
+    {
+      "x": 10,
+      "y": 3,
+      "clue": "7. xxx (7)",
+      "answer": "takmaad"
+    },
+    {
+      "x": 17,
+      "y": 7,
+      "clue": "10. xxx (7)",
+      "answer": "genetik"
+    },
+    {
+      "x": 12,
+      "y": 8,
+      "clue": "8. xxx (3)",
+      "answer": "hkb"
+    }
+  ]
+}

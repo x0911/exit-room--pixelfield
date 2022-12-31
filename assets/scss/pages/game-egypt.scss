@@ -1,0 +1,34 @@
+.game-egypt {
+}
+
+.game-container {
+  user-select: none;
+  .options-container {
+    max-width: 360px;
+    margin: 0 auto;
+    background-color: white;
+    padding: 10px;
+    display: grid;
+    grid-template-columns: repeat(2, 160px);
+    gap: 10px;
+    .lh-normal {
+      line-height: 16px;
+    }
+  }
+  .allow-drag {
+    border-style: dashed !important;
+    // border-color: orange !important;
+  }
+  .entries-container {
+    > div {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      justify-content: center;
+
+      .entry {
+        cursor: grab;
+      }
+    }
+  }
+}
