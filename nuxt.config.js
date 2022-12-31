@@ -3,8 +3,8 @@ import i18n from './plugins/i18n.js';
 
 export default {
   // Target: https://go.nuxtjs.dev/config-target
-  target: 'server',
-  ssr: true,
+  target: 'static',
+  ssr: false,
 
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
@@ -212,5 +212,8 @@ export default {
         },
       });
     },
+  },
+  generate: {
+    fallback: true,
   },
 };
