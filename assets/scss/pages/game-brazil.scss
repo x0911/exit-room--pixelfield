@@ -1,15 +1,11 @@
-.puzzle-container {
-  border: 30px solid white;
-  background: var(--v-primary-base);
-  @media (max-width: 890px) {
-    border: 15px solid white;
-  }
-  // box-shadow: 0px 0px 0px 12px var(--v-primary-base) !important;
-}
+:deep(.v-dialog) {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 
-.loading-container {
-  position: fixed;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  -ms-overflow-style: none;
+  &::-webkit-scrollbar {
+    display: none;
+  }
 }

@@ -94,7 +94,7 @@ import GameRussia from '@/components/impress/game/russia.vue';
 import GameChina from '@/components/impress/game/china.vue';
 import GameIndia from '@/components/impress/game/india.vue';
 import GameEgypt from '@/components/impress/game/egypt.vue';
-import GameBrazil from '@/components/impress/game/brazil.vue';
+import GameBrazil from '~/components/impress/game/brazil/brazil.vue';
 import GameUsa from '@/components/impress/game/usa.vue';
 
 import IsVerticalMixin from '@/mixins/is-vertical.js';

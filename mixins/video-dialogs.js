@@ -107,6 +107,20 @@ export default {
           speech: 'yael-2.mp3',
         },
       ];
+      const hallwayRoom = [
+        {
+          speaker: this.$t('franklin'),
+          from: 1,
+          text: this.$tr('speeches.brazil.1'),
+          isConfirmable: true,
+        },
+        {
+          speaker: this.$t('franklin'),
+          from: 4,
+          text: this.$tr('speeches.brazil.2'),
+          isConfirmable: true,
+        },
+      ];
       const bedroomX2 = [
         {
           speaker: this.$t('player-is-thinking'),
@@ -121,6 +135,7 @@ export default {
         italy: reception,
         egypt: dinningRoom,
         'egypt-x2': dinningRoomX2,
+        brazil: hallwayRoom,
         'china-x2': bedroomX2,
       };
     },

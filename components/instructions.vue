@@ -63,7 +63,7 @@
           tile
           @click="cancel()"
         >
-          {{ $t('cancel') }}
+          {{ cancelText }}
         </v-btn>
         <v-btn
           v-if="steps && steps.length > 1"
@@ -134,6 +134,9 @@ export default {
     nextMethod() {
       return this.$store.getters.instructions.nextMethod;
     },
+    cancelText() {
+      return this.$store.getters.instructions.cancelText || this.$t('cancel');
+    },
     prevText() {
       return this.$store.getters.instructions.prevText || this.$t('previous');
     },
@@ -154,6 +157,9 @@ export default {
     },
     cancelable() {
       return this.$store.getters.instructions.cancelable;
+    },
+    cancelMethod() {
+      return this.$store.getters.instructions.cancelMethod;
     },
     showNextArrow() {
       return this.$store.getters.instructions.showNextArrow;
@@ -197,6 +203,9 @@ export default {
     },
     cancel() {
       this.$set(this, 'model', false);
+      if (this.cancelMethod && typeof this.cancelMethod === 'function') {
+        this.cancelMethod()
+      }
     },
   },
 };

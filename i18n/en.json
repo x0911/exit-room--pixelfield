@@ -6,6 +6,11 @@
   "player-is-thinking": "Player is thinking",
   "welcome-instructions": "The only thing you will need to be able to play the game is your mouse or mousepad. Right answers will allow you to proceed with the game. Selecting any wrong answers will result in you failing the task, but please note, that if you happen to fail a task, you can always go back and redo it. In order to proceed, please click on the confirm button.",
   "confirm": "Confirm",
+  "submit": "Submit",
+  "score": "Score",
+  "country": "Country",
+  "countries_scores": "The 5 countries with the highest scores",
+  "lets-go": "Let's go",
   "task-name": {
     "1": "Reception",
     "2": "Dining room",
@@ -18,8 +23,15 @@
     "text": "It's recommended to play the game in fullscreen mode, Would you like to try it now?"
   },
   "enable": "Enable",
+  "validate": "Validate",
   "cancel": "Cancel",
   "hint-title": "Hint",
+  "take_photo": "Take photo",
+  "name": "Name",
+  "address": "Address",
+  "cabin_number": "Cabin number",
+  "age": "Age",
+  "nationality": "Nationality",
   "hints": {
     "splash": ["Select your language to proceed"],
     "map": ["Active room will have a glowing circle above its name"],
@@ -28,6 +40,7 @@
       "Waiter will give you a menu, check if you see any concerns.",
       "After checking, you can safely click on any item on the menu to proceed to next steps"
     ],
+    "brazil": [],
     "china": [
       "Read the note, then search around you in the room to find a ship ticket containing the privacy notice.",
       "After you find it, look around you to find 5 objects that will have the 5 symbols of privacy on them."
@@ -90,6 +103,10 @@
       ],
       "9": ["by sharing that I keep kosher, now everyone knows I’m Jewish."]
     },
+    "brazil": {
+      "1": "Please scan your face in order to get to the game room.",
+      "2": "We are very innovative and use technology as much as possible, so when you gave us your passport at registration, we automatically uploaded your passport photo to our facial recognition software so we can control access to the VIP game room!"
+    },
     "china": {
       "1": [
         "Hmm, that lunch menu incident was weird. I should do something about this!",
@@ -105,6 +122,10 @@
     "egypt": {
       "title": "Lunch Menu",
       "a1": "Waiter will give you the menu now, check if you see any concerns"
+    },
+    "brazil": {
+      "title": "The mini-game",
+      "a1": "Please scan your face in order to get to the game room."
     },
     "china": {
       "title": "Look at that!",
@@ -147,6 +168,37 @@
       }
     }
   },
+  "brazil": {
+    "questions": {
+      "1": {
+        "label": "Did you realize your passport photo would be used in this way?",
+        "options": ["Yes", "No"]
+      },
+      "2": {
+        "label": "Does this make you uncomfortable?",
+        "options": ["Yes", "No"]
+      },
+      "3": {
+        "label": "Is the facial recognition in the privacy notice?"
+      },
+      "4": {
+        "label": "Does the processing of this data occur strange to you?",
+        "options": [
+          "Yes! Some information should not be shown to other passengers.",
+          "Yes! Some passenger information should be deleted after certain retention periods.",
+          "Yes! Both of the above mentioned.",
+          "No! This information is needed for the purposes of the functioning of the game – and therefore fine."
+        ]
+      }
+    },
+    "mini_game": {
+      "title": "Hit-a-mole",
+      "description": "You have <strong> 30 seconds </strong> to hit the moles.",
+      "score": "Your score is: <strong> {score} points.</strong>",
+      "ranking": "“Congratulations: You are number {ranking} on our eternal scoreboard!”",
+      "statistics": "Statistics of former players:"
+    }
+  },
   "china": {
     "bedroom-note": [
       "Dear passenger!",
@@ -175,7 +227,8 @@
   "learning-outcome": {
     "title": "Learning Outcome",
     "italy": [],
-    "egypt": []
+    "egypt": [],
+    "brazil": []
   },
   "try-again": "Try again",
   "lunch-menu": {
@@ -201,6 +254,7 @@
       }
     ]
   },
+  "restart": "Restart",
   "restart-game": {
     "title": "Restart Game",
     "hint": "Are you sure you want to restart the game?",
