@@ -42,6 +42,16 @@
           </v-btn>
         </v-card-actions>
       </v-card>
+      <v-btn
+        color="primary"
+        class="px-6 pass-room"
+        x-large
+        tile
+        @click="passRoomHandler"
+      >
+        {{ $t('next') }}
+        <v-icon large>mdi-keyboard-backspace mdi-rotate-180</v-icon>
+      </v-btn>
     </v-dialog>
     <score-board-inline
       :model="result.model"
@@ -383,6 +393,10 @@ export default {
         this.$store.commit('PLAY_VIDEO', `${this.stepId}-x2`);
       }
     },
+    passRoomHandler() {
+      localStorage.setItem('room_china', '100');
+      window.impressAPI.goto('map');
+    }
   },
 };
 </script>
