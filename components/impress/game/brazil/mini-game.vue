@@ -131,6 +131,7 @@ export default {
       });
     },
     finishGame() {
+      this.scores.push(this.score)
       const maxScore = Math.max(...this.scores)
       this.$emit('next', maxScore)
       this.resetMoles()
