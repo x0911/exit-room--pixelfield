@@ -10,9 +10,9 @@
       <v-card class="info-screen px-2 pb-2" light tile flat>
         <v-card-text class="pt-4">
           <div class="d-flex justify-center mb-5">
-            <v-avatar tile size="150">
+            <v-avatar rounded="lg" size="150">
               <v-img
-                :src="require(`@/assets/images/brick/perfect_score.jpg`)"
+                :src="require(`@/assets/images/games/russia/maria.jpg`)"
               ></v-img>
             </v-avatar>
           </div>
@@ -59,7 +59,7 @@ export default {
   }),
   computed: {
     lines() {
-      const lines = this.$tr('outro.successText', "array");
+      const lines = this.$tr('outro.successText', 'array');
       const newLines = [];
       const score = this.perc;
       lines.forEach((line) => {

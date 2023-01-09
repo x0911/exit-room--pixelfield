@@ -49,6 +49,9 @@ It's used in nuxt.config.js in global css files
       #00bb60
     ) !important;
   }
+  .maria-color {
+    background: radial-gradient(#1e063d, #600fcb) !important;
+  }
 }
 
 .v-btn {

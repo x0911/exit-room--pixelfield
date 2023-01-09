@@ -1,135 +1,7 @@
 <template>
   <v-container>
     <v-dialog
-      :value="videos.intro.ended && model === 1"
-      overlay-opacity="0"
-      persistent
-      class="elevation-0"
-      content-class="elevation-0"
-      :retain-focus="false"
-      max-width="700"
-    >
-      <div>
-        <v-card :disabled="loading" light tile flat class="transparent mx-auto">
-          <div class="mb-4">
-            <v-card light tile flat class="info-screen border-3">
-              <v-stepper v-model="questionModel" elevation="0">
-                <v-stepper-header class="elevation-0">
-                  <template v-for="(q, i) in questions">
-                    <v-stepper-step
-                      v-if="i < questions.length - 1"
-                      :complete-icon="`mdi-numeric-${i + 1}`"
-                      :edit-icon="`mdi-numeric-${i + 1}`"
-                      :key="i"
-                      :step="i + 1"
-                      :editable="questionModel > i + 1 || !!q.value"
-                      :complete="questionModel === i + 1"
-                      class="no-gap"
-                      @click="
-                        questionModel > i + 1 || !!q.value
-                          ? playGameSound('button-press')
-                          : () => {}
-                      "
-                    ></v-stepper-step>
-                    <v-divider
-                      v-if="i < questions.length - 2"
-                      :key="`separator-${i}`"
-                    ></v-divider>
-                  </template>
-                </v-stepper-header>
-                <v-divider></v-divider>
-                <div class="my-2">
-                  <v-img
-                    contain
-                    alt="Question image"
-                    height="350"
-                    :src="
-                      require(`@/assets/images/games/russia/${questionModel}.jpg`)
-                    "
-                  ></v-img>
-                </div>
-                <v-stepper-items>
-                  <template v-for="(q, i) in questions">
-                    <v-stepper-content
-                      :key="i"
-                      :step="i + 1"
-                      class="wrapper-overflow-visible"
-                    >
-                      <div class="mb-1">
-                        <label
-                          :for="`question-${i}`"
-                          class="d-block text-center"
-                          :inner-html.prop="$t(`russia.questions.${i + 1}.q`)"
-                        ></label>
-                      </div>
-                      <div
-                        class="d-flex flex-wrap justify-center pt-8 pb-5 gap-3"
-                      >
-                        <v-btn
-                          value="right"
-                          large
-                          color="primary"
-                          depressed
-                          @click="setValue(q, 'right')"
-                        >
-                          <v-icon
-                            class="me-3"
-                            :color="q.value === 'right' ? 'blue' : ''"
-                          >
-                            mdi-checkbox-blank-circle{{
-                              q.value === 'right' ? '' : '-outline'
-                            }}
-                          </v-icon>
-                          {{ $t('russia.question-options.right') }}
-                        </v-btn>
-                        <v-btn
-                          value="wrong"
-                          large
-                          color="error"
-                          depressed
-                          @click="setValue(q, 'wrong')"
-                        >
-                          <v-icon
-                            class="me-3"
-                            :color="q.value === 'wrong' ? 'error' : ''"
-                          >
-                            mdi-checkbox-blank-circle{{
-                              q.value === 'wrong' ? '' : '-outline'
-                            }}
-                          </v-icon>
-                          {{ $t('russia.question-options.wrong') }}
-                        </v-btn>
-                      </div>
-                      <div>
-                        <v-list-item class="wrap">
-                          <v-list-item-avatar class="align-self-start">
-                            <v-icon>mdi-comment-alert-outline</v-icon>
-                          </v-list-item-avatar>
-                          <v-list-item-content>
-                            <v-list-item-title
-                              class="text-caption font-weight-bold"
-                            >
-                              {{ $t('warning') }}
-                            </v-list-item-title>
-                            <v-list-item-subtitle
-                              class="text-caption font-weight-medium lh-lg"
-                            >
-                              {{ $t(`russia.questions.${i + 1}.warning`) }}
-                            </v-list-item-subtitle>
-                          </v-list-item-content>
-                        </v-list-item>
-                      </div>
-                    </v-stepper-content>
-                  </template>
-                </v-stepper-items>
-              </v-stepper>
-            </v-card>
-          </div>
-        </v-card>
-      </div>
-    </v-dialog>
-    <v-dialog
-      :value="videos.intro.ended && model === 2"
+      :value="videos.intro.ended"
       overlay-opacity="0"
       persistent
       class="elevation-0"
@@ -146,25 +18,48 @@
                   <template v-for="(msg, i) in msgs">
                     <div
                       :key="i"
-                      class="msgs__msg d-flex align-center"
+                      class="msgs__msg d-flex align-center gap-2"
                       :class="`msgs__msg-${msg.dir} ${
                         msg.dir === 'ltr' ? 'justify-start' : 'justify-end'
                       }`"
                     >
+                      <v-avatar
+                        v-if="msg.dir === 'ltr'"
+                        size="40"
+                        class="align-self-start"
+                      >
+                        <v-img
+                          v-if="getSender(i) !== getSender(i - 1)"
+                          :src="getSpeakerImage(msg)"
+                          alt="Speaker Image"
+                        ></v-img>
+                      </v-avatar>
                       <div
                         class="msgs__msg-inner d-flex flex-column justify-center align-center px-3 py-2 rounded-lg"
                         :class="{
-                          error: msg.dir === 'ltr',
+                          error: msg.dir === 'ltr' && msg.isFranklin,
+                          'maria-color': msg.dir === 'ltr' && msg.isMaria,
                           success: msg.dir === 'rtl',
                         }"
                       >
                         <template v-if="msg.show">
-                          {{ msg.text }}
+                          <div :inner-html.prop="msg.text"></div>
                         </template>
                         <template v-else>
                           <dot-flashing></dot-flashing>
                         </template>
                       </div>
+                      <v-avatar
+                        v-if="msg.dir === 'rtl'"
+                        size="40"
+                        class="align-self-start"
+                      >
+                        <v-img
+                          v-if="getSender(i) !== getSender(i - 1)"
+                          :src="getSpeakerImage(msg)"
+                          alt="Speaker Image"
+                        ></v-img>
+                      </v-avatar>
                     </div>
                     <div
                       :key="`seen-${i}`"
@@ -233,72 +128,6 @@
       :passed="result.passed"
       @restart="restart()"
     >
-      <template #answers>
-        <v-list>
-          <template v-for="(q, i) in questions">
-            <v-list-item :key="i" v-if="!q.dummy" class="px-0">
-              <v-list-item-content>
-                <v-list-item-title>
-                  {{ $t(`russia.questions.${i + 1}.title`) }}
-                </v-list-item-title>
-              </v-list-item-content>
-              <v-list-item-action>
-                <v-chip
-                  small
-                  :color="q.correctValue === 'wrong' ? 'error' : 'primary'"
-                >
-                  {{ $t(`russia.question-options.${q.correctValue}`) }}
-                </v-chip>
-              </v-list-item-action>
-            </v-list-item>
-          </template>
-        </v-list>
-        <v-divider class="mb-3"></v-divider>
-        <div>
-          <div class="font-weight-bold mb-4">
-            {{ $t('correct-chat-flow') }}
-          </div>
-          <div class="msgs d-flex flex-column gap-3">
-            <template v-for="(msg, i) in correctMsgs">
-              <div
-                :key="i"
-                class="msgs__msg d-flex align-center"
-                :class="`msgs__msg-${msg.dir} ${
-                  msg.dir === 'ltr' ? 'justify-start' : 'justify-end'
-                }`"
-              >
-                <div
-                  class="msgs__msg-inner d-flex flex-column justify-center align-center px-3 py-2 rounded-lg white--text"
-                  :class="{
-                    error: msg.dir === 'ltr',
-                    success: msg.dir === 'rtl',
-                  }"
-                >
-                  <template v-if="msg.show">
-                    {{ msg.text }}
-                  </template>
-                  <template v-else>
-                    <dot-flashing></dot-flashing>
-                  </template>
-                </div>
-              </div>
-              <div
-                :key="`seen-${i}`"
-                v-if="msg.seen"
-                class="text-caption d-flex gap-1"
-                :class="`${
-                  msg.dir === 'ltr'
-                    ? 'justify-start align-self-start'
-                    : 'justify-end align-self-end'
-                }`"
-              >
-                <v-icon size="16">mdi-check-all</v-icon>
-                {{ $t('seen') }}
-              </div>
-            </template>
-          </div>
-        </div>
-      </template>
     </score-board-inline>
   </v-container>
 </template>
@@ -317,38 +146,11 @@ export default {
   data: () => ({
     stepId: 'russia',
     loading: false,
-    model: 1,
     videos: {
       intro: {
         ended: false,
       },
     },
-    questions: [
-      {
-        question: '',
-        value: null,
-        correctValue: 'wrong',
-      },
-      {
-        question: '',
-        value: null,
-        correctValue: 'wrong',
-      },
-      {
-        question: '',
-        value: null,
-        correctValue: 'right',
-      },
-      {
-        // dummy_question
-        // dont_delete_it
-        question: '',
-        value: null,
-        correctValue: 'wrong',
-        dummy: true,
-      },
-    ],
-    questionModel: 1,
     result: {
       model: false,
       perc: 0,
@@ -362,10 +164,40 @@ export default {
     msgDelay: 3000,
   }),
   computed: {
-    nextDisabled() {
-      const index = this.questionModel - 1;
-      const question = this.questions[index];
-      return !question?.value;
+    getSpeakerImage() {
+      return (msg = {}) => {
+        const getImage = (file = '') => {
+          return require(`@/assets/images/games/russia/${file}`);
+        };
+        if (msg.isPlayer) {
+          return getImage('player.png');
+        }
+        if (msg.isMaria) {
+          return getImage('maria.jpg');
+        }
+        if (msg.isFranklin) {
+          return getImage('franklin.jpg');
+        }
+        return '';
+      };
+    },
+    getSender() {
+      return (i = 0) => {
+        if (i < 0) {
+          return '';
+        }
+        const msg = this.msgs[i];
+        if (msg.isPlayer) {
+          return 'player';
+        }
+        if (msg.isMaria) {
+          return 'maria';
+        }
+        if (msg.isFranklin) {
+          return 'franklin';
+        }
+        return '';
+      };
     },
   },
   mounted() {
@@ -376,11 +208,8 @@ export default {
       this.setCorrectMsgs();
     },
     stepLeave() {
-      this.resetValues();
       this.$set(this.videos.intro, 'ended', false);
       this.$set(this.result, 'model', false);
-      this.$set(this, 'model', 1);
-      this.$set(this, 'questionModel', 1);
       this.$set(this, 'msgs', []);
       this.$set(this, 'suggestions', []);
       this.$set(this, 'chatEnded', false);
@@ -400,7 +229,7 @@ export default {
     chooseSuggestion(msg) {
       this.pushMsg(msg);
       this.suggestions = [];
-      this.initChat(msg.accepted);
+      this.initChat(msg.closeGame);
     },
     wait() {
       const msgDelay = this.msgDelay;
@@ -410,9 +239,14 @@ export default {
         }, msgDelay);
       });
     },
-    async initChat(accepted = false) {
+    async initChat(closeGame = false) {
       const msgs = this.$t('russia.task-2.msgs');
       const innerMsgs = this.msgs;
+      if (closeGame) {
+        this.$set(this, 'userScammed', true);
+        this.finish();
+        return;
+      }
       if (innerMsgs.length === 0) {
         this.pushMsg(msgs[0]);
         await this.wait();
@@ -424,21 +258,30 @@ export default {
       }
       if (innerMsgs.length === 4) {
         await this.wait();
-        const i = accepted ? 6 : 5;
-        this.pushMsg(msgs[i]);
+        this.pushMsg(msgs[5]);
         await this.wait();
-        this.offerSuggestions([msgs[7], msgs[8]]);
-      }
-      if (innerMsgs.length === 6) {
+        this.pushMsg(msgs[6]);
         await this.wait();
-        if (accepted) {
-          this.$set(this, 'userScammed', true);
-          this.pushMsg(msgs[9]);
-          await this.wait();
-        } else {
-          const lastMsg = innerMsgs[innerMsgs.length - 1];
-          lastMsg.seen = true;
-        }
+        this.pushMsg(msgs[7]);
+        await this.wait();
+        this.pushMsg(msgs[8]);
+        await this.wait();
+        this.pushMsg(msgs[9]);
+        await this.wait();
+        this.pushMsg(msgs[10]);
+        await this.wait();
+        this.pushMsg(msgs[11]);
+        await this.wait();
+        this.pushMsg(msgs[12]);
+        await this.wait();
+        this.pushMsg(msgs[13]);
+        await this.wait();
+        this.pushMsg(msgs[14]);
+        await this.wait();
+        this.pushMsg(msgs[15]);
+        await this.wait();
+        this.pushMsg(msgs[16]);
+        await this.wait();
         this.$set(this, 'chatEnded', true);
       }
     },
@@ -455,11 +298,6 @@ export default {
       const indexes = [0, 1, 2, 3, 5, 7];
       indexes.forEach((i) => {
         pushMsg(msgs[i], i);
-      });
-    },
-    resetValues() {
-      this.questions.forEach((q) => {
-        q.value = null;
       });
     },
     toggleOption(active, toggle) {
@@ -482,6 +320,7 @@ export default {
         model: true,
         title: this.$t('screens.russia.title'),
         steps: ['screens.russia.a1'],
+        nextMethod: this.showChat,
       });
     },
     goBackToMap() {
@@ -494,27 +333,7 @@ export default {
         this.openIntro();
       }, 200);
     },
-    questionNext() {
-      if (!this.nextDisabled) {
-        if (this.questionModel === this.questions.length - 1) {
-          this.nextTask();
-        } else {
-          this.questionModel++;
-        }
-      }
-    },
-    nextTask() {
-      this.playGameSound('big-button-press-1');
-      this.$set(this, 'model', 0);
-      this.$store.commit('SET_INSTRUCTIONS', {
-        bottomModel: true,
-        title: this.$t('russia.task-2.title'),
-        steps: ['screens.russia.b1'],
-        nextMethod: this.showChat,
-      });
-    },
     showChat() {
-      this.$set(this, 'model', 2);
       this.initChat();
     },
     async finish() {
@@ -543,36 +362,11 @@ export default {
       this.stepLeave();
       this.showResultDialog();
     },
-    questionPrev() {
-      if (this.questionModel > 1) {
-        this.questionModel--;
-      }
-    },
     getScore() {
-      const questions = [...this.questions].splice(
-        0,
-        this.questions.length - 1
-      );
-      const max = questions.length;
-      const correct = questions.filter(
-        (q) => q.value === q.correctValue
-      ).length;
-      const score = Math.ceil((correct / max) * 100);
-      return score;
+      return 100;
     },
     showResultDialog() {
       this.$set(this.result, 'model', true);
-    },
-    setValue(q, v) {
-      if (v === 'wrong') {
-        this.playGameSound('big-button-press-1');
-      } else {
-        this.playGameSound('button-press');
-      }
-      q.value = v;
-      setTimeout(() => {
-        this.questionNext();
-      }, 300);
     },
   },
 };

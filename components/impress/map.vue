@@ -332,15 +332,6 @@ export default {
         this.$store.commit('SET_DISCLAIMER_MODEL', false);
       }
     },
-    is6TasksDone() {
-      const rooms = this.rooms.filter((r) => r.country !== 'india');
-      const length = rooms.length;
-      const playedGames = rooms.filter((r) => r.done).length;
-      const is6TasksDone = playedGames === length;
-      if (is6TasksDone) {
-        this.$set(this, 'showFinalTaskTrap', true);
-      }
-    },
     checkSkipIntro() {
       const skipIntro = this.skipIntro;
       this.showIntro2();
@@ -372,9 +363,6 @@ export default {
           setTimeout(() => {
             this.checkIfGameEnded();
           }, 100);
-          setTimeout(() => {
-            this.is6TasksDone();
-          }, 250);
         }, 1000);
       }, 500);
     },
