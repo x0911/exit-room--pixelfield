@@ -105,11 +105,11 @@ export const state = () => ({
       canPlay: false,
       ended: false,
     },
-    // russia: {
-    //   path: '6th-task.mp4',
-    //   canPlay: false,
-    //   ended: false,
-    // },
+    russia: {
+      path: '6th-task.mp4',
+      canPlay: false,
+      ended: false,
+    },
     // india: {
     //   path: '7th-task.mp4',
     //   canPlay: false,
@@ -122,7 +122,7 @@ export const state = () => ({
     'china',
     'brazil',
     'usa',
-    // 'russia',
+    'russia',
     // 'india'
   ],
   soundsOff: false,
