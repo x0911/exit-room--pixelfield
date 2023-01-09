@@ -37,6 +37,7 @@
             v-for="(room, i) in rooms"
             :key="i"
             class="game_room"
+            flat
             :class="{
               [`room${i + 1}`]: true,
               active: isNextRoom(i),
@@ -92,7 +93,7 @@
                 </div>
                 <div class="f-tech">
                   <div class="country">
-                    {{ $t(`task-name.${i + 1}`) }}
+                    {{ room.title }}
                   </div>
                 </div>
               </client-only>
@@ -226,16 +227,16 @@ export default {
         },
         {
           country: 'usa',
+          title: this.$t('task-name.3'),
+          progress: 0,
+          done: false,
+        },
+        {
+          country: 'russia',
           title: this.$t('task-name.5'),
           progress: 0,
           done: false,
         },
-        // {
-        //   country: 'russia',
-        //   title: this.$t('task-name.6'),
-        //   progress: 0,
-        //   done: false,
-        // },
         // {
         //   country: 'india',
         //   title: this.$t('task-name.7'),
