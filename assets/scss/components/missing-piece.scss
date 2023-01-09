@@ -1,0 +1,24 @@
+.image-background {
+  position: fixed;
+  left: 0;
+  top: 0;
+}
+
+.loading {
+  position: fixed;
+  left: calc(50% - 50px);
+  top: calc(50% - 50px);
+}
+
+.missing-piece {
+  width: 100px;
+  height: 100px;
+  position: absolute;
+  left: calc(50% - 100px);
+  bottom: 0.5rem;
+  z-index: 9999;
+
+  &.is-selected {
+    border: 2px solid #64202f;
+  }
+}

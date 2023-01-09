@@ -1,0 +1,23 @@
+.puzzle-items {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 1rem;
+}
+
+.puzzle-images {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  position: relative;
+  width: 360px;
+  height: 360px;
+}
+
+.code {
+  width: 90px;
+  height: 258px;
+  position: absolute;
+  border: 2px black solid;
+  z-index: 3;
+  left: 205px;
+  top: 100px;
+}

@@ -11,6 +11,7 @@
   "country": "Country",
   "countries_scores": "The 5 countries with the highest scores",
   "lets-go": "Let's go",
+  "privacy_notice": "Open privacy notice",
   "task-name": {
     "1": "Reception",
     "2": "Dining room",
@@ -44,7 +45,8 @@
     "china": [
       "Read the note, then search around you in the room to find a ship ticket containing the privacy notice.",
       "After you find it, look around you to find 5 objects that will have the 5 symbols of privacy on them."
-    ]
+    ],
+    "usa": []
   },
   "start_game": "Meet Franklin",
   "skip": "Skip",
@@ -112,6 +114,11 @@
         "Hmm, that lunch menu incident was weird. I should do something about this!",
         "But first I need to find a ship ticket containing the privacy notice and examine the notice to see whether it was really legitimate to collect and share dietary restrictions with the other passengers."
       ]
+    },
+    "usa": {
+      "1": "You have the right to request a copy of all Personal Information collected about you, and to ask us to correct or delete that information. To exercise these rights, please contact Captain Maria.",
+      "2": "Everything is fine – no need to bother captain Maria.",
+      "3": "I insist to see captain Maria immediately!"
     }
   },
   "screens": {
@@ -130,6 +137,18 @@
     "china": {
       "title": "Look at that!",
       "a1": "You've found a note from a mysterious person."
+    },
+    "usa": {
+      "games": {
+        "1": {
+          "title": "Missing Piece game",
+          "a1": "You have to find the privacy notice in this room."
+        },
+        "2": {
+          "title": "Puzzle game",
+          "a1": "You have to assemble a puzzle of 16 pieces, which will result in the image of the captain and at the same time the entry code to the cabin."
+        }
+      }
     },
     "russia": {
       "title": "Captain's Cabin",
@@ -203,12 +222,60 @@
       "statistics": "Statistics of former players:"
     }
   },
+  "usa": {
+    "complete_puzzle": "Please complete the puzzle to get the code",
+    "questions": {
+      "1": {
+        "label": "Have you find the mention of using passport photos for biometrics?",
+        "options": [
+          "Yes, I have, everything is clear and there has been no violation of the private data.",
+          "Yes, but I'm still not sure if everything is correct.",
+          "No, I have to find another source of information."
+        ],
+        "correctOptions": [2]
+      },
+      "2": {
+        "options": [
+          "A well-known company deceived the employees! The breach of private data will cost them a fortune!",
+          "A famous tennis player was seen with his new girlfriend!",
+          "You have your privacy rights! In modern era it is illegal to use a private data without a permission. There must be a privacy rights section in every privacy notice guidelines."
+        ],
+        "correctOptions": [0, 2]
+      }
+    }
+  },
   "china": {
     "bedroom-note": [
       "Dear passenger!",
       "This ship contains some dubious data processing.",
       "With the help of my 5 hidden privacy principles you can restore privacy on this ship"
-    ]
+    ],
+    "privacy-notice": {
+      "title": "Cruise Chip Privacy Notice",
+      "description": "We take your privacy very seriously. This notice sets forth what we collect, what we share, and your right. For more details, please see the captain.",
+      "table": {
+        "title": "The Personal information we collect and how we use it",
+        "headers": ["CATEGORY OF PERSONAL information", "DESCRIPTION"],
+        "content": [
+          {
+            "category": "Identification and contact information",
+            "description": "We collect to identify and contact you, such as your name, gender nationality, date of birth, mailing adress, email adress, telephone number, and passport information (such as passport number and expiration date). This information may be shared with employees of the ship to facilitate your voyage."
+          },
+          {
+          "category": "Data to enhance your voyage",
+            "description": "As a high-tech cruise line, we employ state-of-the-art technology and algorithms to offer you the best voyage possible. To do this, we may use cameras and other sensors to track your movement on the ship, how long you stay in various rooms,and how you interact with our employees and other passengers."
+          },
+          {
+            "category": "Payment information",
+            "description": "Information which you give us to execute the payment. Usually, this means the payment card details."
+          },
+          {
+            "category": "Safety information",
+            "description": "we are committed to ensuring you have a safe voyage! We will ask you to let us know if you have any food allergies, and we also have a nurse on staff in the event of sea-sickness or other ailment. If you visit the nurse, we may collect infor-mation about any current or prior health conditions. This information will only be used by cruise employees for the purposes of ensuring your safety."
+          }
+        ]
+      }
+    }
   },
   "russia": {
     "task-2": {

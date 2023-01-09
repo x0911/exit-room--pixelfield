@@ -91,11 +91,11 @@ import Splash from '@/components/impress/splash.vue';
 import Map from '@/components/impress/map.vue';
 import Gameitaly from '~/components/impress/game/italy.vue';
 import GameRussia from '@/components/impress/game/russia.vue';
-import GameChina from '@/components/impress/game/china.vue';
+import GameChina from '~/components/impress/game/china.vue';
 import GameIndia from '@/components/impress/game/india.vue';
 import GameEgypt from '@/components/impress/game/egypt.vue';
 import GameBrazil from '~/components/impress/game/brazil/brazil.vue';
-import GameUsa from '@/components/impress/game/usa.vue';
+import GameUsa from '~/components/impress/game/usa/usa.vue';
 
 import IsVerticalMixin from '@/mixins/is-vertical.js';
 import InstructionsDialog from '@/components/instructions.vue';
@@ -205,7 +205,7 @@ export default {
         {
           component: 'GameUsa',
           id: 'usa',
-          videos: ['usa'],
+          videos: ['usa', 'usa-x2', 'usa-x3', 'usa-x4'],
           x: '0',
           y: `-${h}`,
           z: '-1500',

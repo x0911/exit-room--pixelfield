@@ -130,6 +130,31 @@ export default {
           speech: 'user-1.mp3',
         },
       ];
+      const usaX2 = [
+        {
+          speaker: this.$t('franklin'),
+          from: 1,
+          text: this.$tr('speeches.usa.1'),
+          isConfirmable: true,
+        }
+      ]
+      const usaX3 = [
+        {
+          speaker: this.$t('franklin'),
+          from: 1,
+          text: this.$tr('speeches.usa.2'),
+          isConfirmable: true,
+        }
+      ]
+      const usaX4 = [
+        {
+          speaker: this.$t('player-is-thinking'),
+          from: 1,
+          text: this.$tr('speeches.usa.3'),
+          isConfirmable: true,
+        }
+      ]
+
       return {
         'game-intro-0': splash,
         italy: reception,
@@ -137,6 +162,9 @@ export default {
         'egypt-x2': dinningRoomX2,
         brazil: hallwayRoom,
         'china-x2': bedroomX2,
+        'usa-x2': usaX2,
+        'usa-x3': usaX3,
+        'usa-x4': usaX4,
       };
     },
   },

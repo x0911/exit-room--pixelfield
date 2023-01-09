@@ -38,6 +38,9 @@
           >
             <v-card-text class="pt-6 pb-2 text-justify h-full">
               <template v-if="dialog.isConfirmable">
+                <div v-if="dialog.speaker" class="font-weight-bold">
+                  <span> {{ dialog.speaker }}: </span>
+                </div>
                 {{ dialog.text }}
               </template>
               <template v-else>
@@ -253,6 +256,7 @@ export default {
       }
     },
     hideVideoDialog(id = '', replay = false) {
+      this.$nuxt.$emit('confirm-current-video')
       const index = this.dialogs.findIndex((dialog) => dialog.id === id);
       if (index > -1) {
         this.dialogs[index].model = false;
