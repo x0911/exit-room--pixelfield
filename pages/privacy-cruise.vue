@@ -1,87 +1,96 @@
 <template>
   <v-app data-app :class="{ 'is-vertical': isVertical }">
-    <v-main>
-      <v-sheet
-        class="transparent"
-        tile
-        elevation="0"
-        min-height="100%"
-        min-width="100%"
-        height="100%"
-        width="100%"
-        max-height="100%"
-        max-width="100%"
-      >
-        <v-layout align-center justify-center align-content-center fill-height>
-          <!-- To show transition-step-video -->
-          <!-- data-transition-duration="0" -->
-          <div
-            id="impress"
-            data-transition-duration="1000"
-            :data-width="$vuetify.breakpoint.width"
-            :data-height="$vuetify.breakpoint.height"
-            data-max-scale="1"
-            data-min-scale="1"
-            data-perspective="1000"
+    <login-dialog v-model="isLoggedIn" />
+    <template v-if="isLoggedIn">
+      <v-main>
+        <v-sheet
+          class="transparent"
+          tile
+          elevation="0"
+          min-height="100%"
+          min-width="100%"
+          height="100%"
+          width="100%"
+          max-height="100%"
+          max-width="100%"
+        >
+          <v-layout
+            align-center
+            justify-center
+            align-content-center
+            fill-height
           >
-            <template v-for="(step, i) in steps">
-              <div
-                :id="step.id"
-                :key="i"
-                class="step"
-                :class="{
-                  'custom-active': activeStep === step.id || step.active,
-                  'custom-next':
-                    activeStep !== 'splash' &&
-                    (navigation.next === step.id ||
-                      (rooms.includes(step.active) && step.id === 'map')),
-                  'custom-prev':
-                    activeStep !== 'splash' && navigation.prev === step.id,
-                }"
-                :data-x="step.x"
-                :data-y="step.y"
-                :data-z="step.z"
-                data-transition-duration="1000"
-              >
+            <!-- To show transition-step-video -->
+            <!-- data-transition-duration="0" -->
+            <div
+              id="impress"
+              data-transition-duration="1000"
+              :data-width="$vuetify.breakpoint.width"
+              :data-height="$vuetify.breakpoint.height"
+              data-max-scale="1"
+              data-min-scale="1"
+              data-perspective="1000"
+            >
+              <template v-for="(step, i) in steps">
                 <div
-                  :key="`step-bg-${i}`"
-                  class="app-bg"
+                  :id="step.id"
+                  :key="i"
+                  class="step"
                   :class="{
-                    [`${activeStep}`]: true,
-                    'is-vertical': isVertical,
-                    'opacity-0': !globalBtns,
+                    'custom-active': activeStep === step.id || step.active,
+                    'custom-next':
+                      activeStep !== 'splash' &&
+                      (navigation.next === step.id ||
+                        (rooms.includes(step.active) && step.id === 'map')),
+                    'custom-prev':
+                      activeStep !== 'splash' && navigation.prev === step.id,
                   }"
-                  :style="`background-image: url('${require('@/assets/images/bg/' +
-                    (step.id === 'map' ? mapBg : step.id) +
-                    '-bg.jpg')}') !important`"
-                ></div>
-                <template v-for="(vid, vi) in step.videos">
-                  <fullscreen-video
-                    :key="`step-video-${i}-${vi}`"
-                    :ref="`video-${vid}`"
-                    :class="{ 'opacity-0': !videos[vid].canPlay }"
-                    :path="videos[vid].path"
-                    :video-id="vid"
-                    :can-play="videos[vid].canPlay"
-                    @ended="videoEnded(vid, i)"
-                  ></fullscreen-video>
-                </template>
-                <component :is="step.component" />
-              </div>
-            </template>
-          </div>
-        </v-layout>
-      </v-sheet>
-    </v-main>
-    <instructions-dialog></instructions-dialog>
-    <instructions-bottom-dialog></instructions-bottom-dialog>
-    <instructions-right-dialog></instructions-right-dialog>
-    <orientation-listener></orientation-listener>
-    <fullscreen-listener></fullscreen-listener>
-    <score-board-dialog></score-board-dialog>
-    <main-game-hint></main-game-hint>
-    <main-game-audio></main-game-audio>
-    <game-sounds></game-sounds>
+                  :data-x="step.x"
+                  :data-y="step.y"
+                  :data-z="step.z"
+                  data-transition-duration="1000"
+                >
+                  <div
+                    :key="`step-bg-${i}`"
+                    class="app-bg"
+                    :class="{
+                      [`${activeStep}`]: true,
+                      'is-vertical': isVertical,
+                      'opacity-0': !globalBtns,
+                    }"
+                    :style="`background-image: url('${require('@/assets/images/bg/' +
+                      (step.id === 'map' ? mapBg : step.id) +
+                      '-bg.jpg')}') !important`"
+                  ></div>
+                  <template v-for="(vid, vi) in step.videos">
+                    <fullscreen-video
+                      :key="`step-video-${i}-${vi}`"
+                      :ref="`video-${vid}`"
+                      :class="{ 'opacity-0': !videos[vid].canPlay }"
+                      :path="videos[vid].path"
+                      :video-id="vid"
+                      :can-play="videos[vid].canPlay"
+                      @ended="videoEnded(vid, i)"
+                    ></fullscreen-video>
+                  </template>
+                  <component :is="step.component" />
+                </div>
+              </template>
+              <cookie-modal v-model="cookieModel" />
+            </div>
+          </v-layout>
+        </v-sheet>
+      </v-main>
+      <instructions-dialog></instructions-dialog>
+      <instructions-bottom-dialog></instructions-bottom-dialog>
+      <instructions-right-dialog></instructions-right-dialog>
+      <orientation-listener></orientation-listener>
+      <fullscreen-listener></fullscreen-listener>
+      <score-board-dialog></score-board-dialog>
+      <main-game-hint></main-game-hint>
+      <main-game-audio></main-game-audio>
+      <game-sounds></game-sounds>
+    </template>
   </v-app>
 </template>
 
@@ -108,9 +117,14 @@ import FullscreenListener from '@/components/fullscreen-listener.vue';
 import ScoreBoardDialog from '@/components/ScoreBoardDialog.vue';
 import FullscreenVideo from '@/components/fullscreen-video.vue';
 import GameSounds from '@/components/game-sounds.vue';
+import LoginDialog from '~/components/LoginDialog';
+import CookieModal from "~/components/ui/cookie-modal";
 
 export default {
   components: {
+    LoginDialog,
+    CookieModal,
+
     Intro,
     Splash,
     Map,
@@ -136,6 +150,8 @@ export default {
   mixins: [IsVerticalMixin],
   layout: 'impress',
   data: () => ({
+    isLoggedIn: true,
+    cookieModel: false,
     navigation: {
       active: null,
       next: null,
@@ -255,9 +271,14 @@ export default {
     activeStep(v) {
       this.fixMapBg(v);
     },
+    isLoggedIn: {
+      immediate: true,
+      handler(value) {
+        console.log(value)
+      }
+    }
   },
   mounted() {
-    this.checkLogin();
     const $this = this;
     const impressRootElement = document.getElementById('impress');
     $this.$nuxt.$on('impress-restart', this.restart);
@@ -298,10 +319,6 @@ export default {
           this.$set(this, 'mapBg', 'map');
         }, 1000);
       }
-    },
-    checkLogin() {
-      // Always `true` as requested by `Jan Froněk`
-      return true;
     },
     setImpressNavigation() {
       const rooms = this.rooms;

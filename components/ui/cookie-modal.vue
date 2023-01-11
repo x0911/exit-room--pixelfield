@@ -28,7 +28,7 @@
           depressed
           large
           class="px-5"
-          @click="acceptCookies()"
+          @click="acceptCookies"
         >
           {{ $t('accept') }}
           <v-icon class="ms-2">mdi-keyboard-backspace mdi-rotate-180</v-icon>
@@ -50,30 +50,25 @@ export default {
       default: false,
     },
   },
-  data: () => ({}),
   mounted() {
     this.checkCookieAccepted();
   },
   methods: {
     checkCookieAccepted() {
-      if (this.selfActivate) {
-        setTimeout(() => {
-          const accepted =
-            localStorage.getItem(`novartis-dp-cookie-accepted`) || 'false';
-          if (accepted === 'true') {
-            this.$emit('input', false);
-            // this.$store.commit('SET_SOUNDS_OFF', false);
-          } else {
-            this.$emit('input', true);
-            // this.$store.commit('SET_SOUNDS_OFF', true);
-          }
-        }, 1000);
-      }
+      if (!this.selfActivate) return;
+      setTimeout(() => {
+        const accepted =
+          localStorage.getItem(`privacy-game-cookie-accepted`) || 'false';
+        if (accepted === 'true') {
+          this.$emit('input', false);
+        } else {
+          this.$emit('input', true);
+        }
+      }, 2000);
     },
     acceptCookies() {
-      localStorage.setItem('novartis-dp-cookie-accepted', true);
+      localStorage.setItem(`privacy-game-cookie-accepted`, 'true');
       this.$emit('input', false);
-      // this.$store.commit('SET_SOUNDS_OFF', false);
     },
   },
 };

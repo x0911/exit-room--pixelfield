@@ -59,7 +59,7 @@
                     </span>
                   </template>
                 </div>
-                <div :key="`spacer_${i}`" class="word">
+                <div v-if="i !== wordsToSplit.length - 1" :key="`spacer_${i}`" class="word">
                   <span> </span>
                 </div>
               </template>
@@ -68,42 +68,47 @@
               class="info-screen darken mx-auto"
               tile
               flat
-              max-width="1200"
+              max-width="900"
               min-width="400"
-              dark
+              light
             >
-              <v-card-text
-                class="d-flex flex-wrap gap-row-2 justify-center px-4 py-2"
-              >
-                <template v-for="(lang, i) in langs">
-                  <v-card
-                    :key="i"
-                    class="transparent hoverable-card text-center d-flex flex-column justify-center"
-                    width="100"
-                    height="70"
-                    tile
-                    flat
-                    @click="selectLang(lang.value)"
-                  >
-                    <div class="lang-icon">
-                      <img
-                        :src="
-                          require(`@/assets/images/langs/brick${i + 1}.svg`)
-                        "
-                      />
-                    </div>
-                    <div class="no-user-select">
-                      {{ lang.name }}
-                    </div>
-                  </v-card>
-                </template>
+              <v-card-text class="d-flex justify-center px-0 py-2">
+                <swiper :options="swiperOptions">
+                  <template v-for="(lang, i) in langs">
+                    <swiper-slide :key="i" style="width: auto !important">
+                      <v-card
+                        :class="{
+                          'transparent text-center': true,
+                        }"
+                        width="90"
+                        tile
+                        flat
+                        @click="selectLang(lang.value)"
+                      >
+                        <div>
+                          <div>
+                            <v-avatar size="70">
+                              <v-img
+                                :src="
+                                  require(`@/assets/images/langs/${lang.image}.svg`)
+                                "
+                              ></v-img>
+                            </v-avatar>
+                          </div>
+                          <div class="no-user-select white--text">
+                            {{ lang.name }}
+                          </div>
+                        </div>
+                      </v-card>
+                    </swiper-slide>
+                  </template>
+                </swiper>
               </v-card-text>
             </v-card>
           </div>
         </v-slide-y-reverse-transition>
       </v-layout>
     </v-bottom-sheet>
-    <cookie-modal v-model="cookiesModel" :self-activate="false"></cookie-modal>
   </div>
 </template>
 
@@ -111,12 +116,10 @@
 import LottieAnimation from '@/components/LottieAnimation.vue';
 import SoundPlayer from '@/mixins/sound-player.js';
 import ImpressStep from '@/mixins/impress-step.js';
-import CookieModal from '@/components/ui/cookie-modal.vue';
 export default {
   name: 'SplashScreen',
   components: {
     LottieAnimation,
-    CookieModal,
   },
   mixins: [ImpressStep, SoundPlayer],
   data() {
@@ -125,8 +128,6 @@ export default {
       colors: ['#64202f', '#3a121b'],
       stepId: 'splash',
       locale: null,
-      acceptCookies: true,
-      cookiesModel: false,
       model: false,
       step: 0,
       swiperOptions: {
@@ -197,13 +198,6 @@ export default {
       ],
     };
   },
-  watch: {
-    cookiesModel(v) {
-      if (!v) {
-        this.acceptCookies = true;
-      }
-    },
-  },
   mounted() {
     this.$nuxt.$on(`video-game-intro-0-ended`, this.video0Ended);
   },
@@ -227,7 +221,6 @@ export default {
       localStorage.setItem('data-protection-language', locale);
       this.$i18n.setLocale(locale);
       this.$set(this, 'locale', locale);
-      localStorage.setItem('novartis-dp-cookie-accepted', true);
       window.impressAPI.goto('map');
       this.$store.dispatch('updateLang', locale);
     },

@@ -1,7 +1,6 @@
 <template>
   <div>
     <nuxt />
-    <cookie-modal></cookie-modal>
     <transition-step-video></transition-step-video>
     <v-dialog v-model="fullscreenLoader" persistent>
       <v-card color="transparent" tile flat>
@@ -22,7 +21,6 @@ import TransitionStepVideo from '@/components/transition-step-video.vue';
 export default {
   components: {
     TransitionStepVideo,
-    CookieModal: () => import('@/components/ui/cookie-modal.vue'),
   },
   data: () => ({}),
   computed: {

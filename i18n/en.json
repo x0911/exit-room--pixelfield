@@ -12,6 +12,19 @@
   "countries_scores": "The 5 countries with the highest scores",
   "lets-go": "Let's go",
   "privacy_notice": "Open privacy notice",
+  "cookies": {
+    "title": "Cookies",
+    "text": [
+      "This website has been created by your employer to raise awareness and knowledge related to privacy, and you will have the opportunity to participate in activities to test your knowledge and learn more about privacy.",
+      "Aggregate, non-identifiable data regarding participation and privacy knowledge will be shared with your employer to inform the privacy program.",
+      "Please note that, in cases of small teams or country operations, your employer may be able to identify you if less than five people have the same division or organizational unit, job function, and work country. Your employer will process the data consistent with its privacy policy and associate notice, including not intentionally identifying you and taking reasonable measures, as appropriate, to prevent identification.",
+      "Although this website will not ask you to enter data about yourself, it does use cookies for the following purposes:",
+      "<strong>1) Necessary cookies:</strong> necessary cookies enable basic functions like page navigation and access to secure areas of the website. This website cannot function properly without these cookies.<",
+      "<strong>2) Preferences:</strong> preference cookies enable this website to remember information that changes the way the website behaves or looks, like your preferred language or finished tasks or score.",
+      "<strong>3) Statistics:</strong> statistic cookies help to understand how you interact with this website by collecting and reporting information anonymously.",
+      "Audio will begin after this screen, please set your audio appropriately"
+    ]
+  },
   "task-name": {
     "1": "Reception",
     "2": "Dining room",
@@ -122,6 +135,11 @@
     }
   },
   "screens": {
+    "login": {
+      "label": "Please enter your access code",
+      "input-label": "Code",
+      "incorrect-password": "Incorrect code, Please try again"
+    },
     "italy": {
       "title": "The survey",
       "a1": "Please complete the following survey to proceed to next room"

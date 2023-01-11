@@ -141,10 +141,11 @@ export default {
       this.$set(this, 'model', false);
     },
     selectLang(locale = 'en') {
-      this.playGameSound('big-button-press-1');
+      /** this.playGameSound('big-button-press-1');
       localStorage.setItem('data-protection-language', locale);
       this.$i18n.setLocale(locale);
       window.impressAPI.goto('map');
+       **/
     },
     playIntroVideo() {
       this.$set(this, 'model', false);
