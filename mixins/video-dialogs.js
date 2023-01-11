@@ -6,22 +6,20 @@ export default {
       const splash = [
         {
           speaker: this.$t('franklin'),
-          from: 4,
-          duration: 7,
+          from: 3.9,
           textArray: this.$tr('speeches.splash.1', 'array'),
-          speech: '1-silly.wav',
-        },
-        {
-          from: 14,
-          text: this.$t('welcome-instructions'),
           isConfirmable: true,
         },
         {
           speaker: this.$t('franklin'),
-          from: 16,
-          duration: 3,
+          from: 4.1,
           textArray: this.$tr('speeches.splash.2', 'array'),
-          speech: '2-silly.wav',
+          isConfirmable: true,
+        },
+        {
+          from: 17,
+          text: this.$t('welcome-instructions'),
+          isConfirmable: true,
         },
       ];
       const reception = [
@@ -125,9 +123,8 @@ export default {
         {
           speaker: this.$t('player-is-thinking'),
           from: 1,
-          duration: 13,
           textArray: this.$tr('speeches.china.1', 'array'),
-          speech: 'user-1.mp3',
+          isConfirmable: true,
         },
       ];
       const usaX2 = [
@@ -136,24 +133,24 @@ export default {
           from: 1,
           text: this.$tr('speeches.usa.1'),
           isConfirmable: true,
-        }
-      ]
+        },
+      ];
       const usaX3 = [
         {
           speaker: this.$t('franklin'),
           from: 1,
           text: this.$tr('speeches.usa.2'),
           isConfirmable: true,
-        }
-      ]
+        },
+      ];
       const usaX4 = [
         {
           speaker: this.$t('player-is-thinking'),
           from: 1,
           text: this.$tr('speeches.usa.3'),
           isConfirmable: true,
-        }
-      ]
+        },
+      ];
 
       return {
         'game-intro-0': splash,

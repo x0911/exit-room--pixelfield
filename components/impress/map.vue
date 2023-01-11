@@ -363,9 +363,6 @@ export default {
           setTimeout(() => {
             this.checkIfGameEnded();
           }, 100);
-          setTimeout(() => {
-            this.is6TasksDone();
-          }, 250);
         }, 1000);
       }, 500);
     },

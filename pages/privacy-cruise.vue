@@ -59,7 +59,11 @@
                       'opacity-0': !globalBtns,
                     }"
                     :style="`background-image: url('${require('@/assets/images/bg/' +
-                      (step.id === 'map' ? mapBg : step.id) +
+                      (step.id === 'map'
+                        ? mapBg
+                        : roomsBgs[step.id]
+                        ? roomsBgs[step.id]
+                        : step.id) +
                       '-bg.jpg')}') !important`"
                   ></div>
                   <template v-for="(vid, vi) in step.videos">
@@ -118,7 +122,7 @@ import ScoreBoardDialog from '@/components/ScoreBoardDialog.vue';
 import FullscreenVideo from '@/components/fullscreen-video.vue';
 import GameSounds from '@/components/game-sounds.vue';
 import LoginDialog from '~/components/LoginDialog';
-import CookieModal from "~/components/ui/cookie-modal";
+import CookieModal from '~/components/ui/cookie-modal';
 
 export default {
   components: {
@@ -203,7 +207,7 @@ export default {
         {
           component: 'GameChina',
           id: 'china',
-          videos: ['china', 'china-x2'],
+          videos: ['china', 'china-x2', 'china-x3', 'china-x4'],
           x: `-${w}`,
           y: `${h}`,
           z: '-1500',
@@ -266,6 +270,9 @@ export default {
     activeStep() {
       return this.$store.getters.activeStep;
     },
+    roomsBgs() {
+      return this.$store.getters.roomsBgs;
+    },
   },
   watch: {
     activeStep(v) {
@@ -274,9 +281,9 @@ export default {
     isLoggedIn: {
       immediate: true,
       handler(value) {
-        console.log(value)
-      }
-    }
+        console.log(value);
+      },
+    },
   },
   mounted() {
     const $this = this;

@@ -35,6 +35,7 @@ export default {
       }
       if (this.stepLeave) {
         this.$nuxt.$on(`impress-step-leave-${stepId}`, this.stepLeave);
+        this.replaceBg(stepId);
       }
     }
   },
@@ -63,6 +64,13 @@ export default {
         taskId,
         taskName,
       };
+    },
+    replaceBg(name = '') {
+      const stepId = this.stepId;
+      this.$store.commit('SET_ROOM_BG', {
+        stepId,
+        name,
+      });
     },
   },
 };

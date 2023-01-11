@@ -41,7 +41,12 @@
                 <div v-if="dialog.speaker" class="font-weight-bold">
                   <span> {{ dialog.speaker }}: </span>
                 </div>
-                {{ dialog.text }}
+                <template v-if="dialog.speech">
+                  <div :inner-html.prop="dialog.text"></div>
+                </template>
+                <template v-else>
+                  <div :inner-html.prop="dialog.textArray || dialog.text"></div>
+                </template>
               </template>
               <template v-else>
                 <template v-if="dialog.speaker">
@@ -70,7 +75,7 @@
               depressed
               @click="hideVideoDialog(dialog.id, true)"
             >
-              {{ $tr('confirm') }}
+              {{ $tr('next') }}
             </v-btn>
           </v-card-actions>
         </div>
@@ -256,7 +261,7 @@ export default {
       }
     },
     hideVideoDialog(id = '', replay = false) {
-      this.$nuxt.$emit('confirm-current-video')
+      this.$nuxt.$emit('confirm-current-video');
       const index = this.dialogs.findIndex((dialog) => dialog.id === id);
       if (index > -1) {
         this.dialogs[index].model = false;

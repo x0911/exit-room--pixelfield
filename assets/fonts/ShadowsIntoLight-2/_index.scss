@@ -1,0 +1,11 @@
+@font-face {
+  font-family: 'ShadowsIntoLight-2';
+  font-style: normal;
+  font-display: swap;
+  font-weight: 400;
+  src: local('ShadowsIntoLight-2'), local('ShadowsIntoLight-2-Regular'),
+    url('../fonts/ShadowsIntoLight-2/ShadowsIntoLight-2-Regular.woff2')
+      format('woff2'),
+    url('../fonts/ShadowsIntoLight-2/ShadowsIntoLight-2-Regular.woff')
+      format('woff');
+}

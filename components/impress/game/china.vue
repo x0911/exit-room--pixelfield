@@ -1,109 +1,146 @@
 <template>
-  <v-container>
-    <v-dialog
-      :value="videos.intro.ended"
-      overlay-opacity="0"
-      persistent
-      class="elevation-0"
-      content-class="elevation-0"
-      :retain-focus="false"
-      scrollable
-      max-width="800"
-    >
-      <v-card v-show="step === 1" class="transparent" tile flat>
-        <div>
-          <v-img contain :src="require('@/assets/images/games/china/note.png')">
-            <v-layout justify-center fill-height>
-              <div
-                class="f-hand text-h4 font-weight-medium pt-12 px-16 black--text"
-              >
-                <template
-                  v-for="(line, i) in $tr('china.bedroom-note', 'array')"
-                >
-                  <div :key="i" :inner-html.prop="line" class="lh-3-6"></div>
-                </template>
-              </div>
-            </v-layout>
-          </v-img>
-        </div>
-        <v-card-actions class="mt-4 px-6 pb-4">
-          <v-spacer></v-spacer>
-          <v-btn
-            color="primary"
-            class="px-4"
-            tile
-            large
-            depressed
-            :data-video-start="`${stepId}-x2`"
-            @click="nextStep"
-          >
-            {{ $t('next') }}
-            <v-icon class="ms-2">mdi-keyboard-backspace mdi-rotate-180</v-icon>
-          </v-btn>
-        </v-card-actions>
-      </v-card>
-      <v-btn
-        color="primary"
-        class="px-6 pass-room"
-        x-large
-        tile
-        @click="passRoomHandler"
+  <div>
+    <v-container>
+      <v-dialog
+        :value="videos.intro.ended"
+        overlay-opacity="0"
+        persistent
+        class="elevation-0"
+        content-class="elevation-0"
+        :retain-focus="false"
+        scrollable
+        max-width="800"
       >
-        {{ $t('next') }}
-        <v-icon large>mdi-keyboard-backspace mdi-rotate-180</v-icon>
-      </v-btn>
-    </v-dialog>
-    <score-board-inline
-      :model="result.model"
-      :perc="result.perc"
-      :passed="result.passed"
-      @restart="restart()"
-    >
-      <template #answers>
-        <template v-for="(q, i) in questions">
-          <div :key="i" :class="{ 'mt-2': i > 0 }">
-            <div
-              class="font-weight-medium mb-1"
-              :inner-html.prop="
-                $t(`china.assignment.questions.${q.question}.text`)
-              "
-            ></div>
-            <template v-if="q.multiple">
-              <template v-for="(qv, qvi) in q.correctValue">
+        <v-card v-show="step === 1" class="transparent" tile flat>
+          <div>
+            <v-img
+              contain
+              :src="require('@/assets/images/games/china/note.png')"
+            >
+              <v-layout justify-center fill-height>
                 <div
-                  :key="`qvi-${qvi}`"
+                  class="f-hand text-h4 font-weight-medium pt-12 px-16 black--text"
+                >
+                  <template
+                    v-for="(line, i) in $tr('china.bedroom-note', 'array')"
+                  >
+                    <div :key="i" :inner-html.prop="line" class="lh-3-6"></div>
+                  </template>
+                </div>
+              </v-layout>
+            </v-img>
+          </div>
+          <v-card-actions class="mt-4 px-6 pb-4">
+            <v-spacer></v-spacer>
+            <v-btn
+              color="primary"
+              class="px-4"
+              tile
+              large
+              depressed
+              :data-video-start="`${stepId}-x2`"
+              @click="nextStep"
+            >
+              {{ $t('next') }}
+              <v-icon class="ms-2"
+                >mdi-keyboard-backspace mdi-rotate-180</v-icon
+              >
+            </v-btn>
+          </v-card-actions>
+        </v-card>
+        <v-card v-show="step === 2" class="transparent" tile flat>
+          <div>
+            <v-img
+              contain
+              :src="require('@/assets/images/games/china/letter.jpg')"
+            >
+              <v-layout justify-center fill-height>
+                <div
+                  class="f-hand-2 text-h4 font-weight-medium pt-12 px-16 black--text"
+                >
+                  <template
+                    v-for="(line, i) in $tr('china.bedroom-letter', 'array')"
+                  >
+                    <div :key="i" :inner-html.prop="line"></div>
+                  </template>
+                </div>
+              </v-layout>
+            </v-img>
+          </div>
+          <v-card-actions class="mt-4 px-6 pb-4">
+            <v-spacer></v-spacer>
+            <v-btn
+              color="primary"
+              class="px-4"
+              tile
+              large
+              depressed
+              :data-video-start="`${stepId}-x3`"
+              @click="nextStep"
+            >
+              {{ $t('next') }}
+              <v-icon class="ms-2"
+                >mdi-keyboard-backspace mdi-rotate-180</v-icon
+              >
+            </v-btn>
+          </v-card-actions>
+        </v-card>
+      </v-dialog>
+      <score-board-inline
+        :model="result.model"
+        :perc="result.perc"
+        :passed="result.passed"
+        @restart="restart()"
+      >
+        <template #answers>
+          <template v-for="(q, i) in questions">
+            <div :key="i" :class="{ 'mt-2': i > 0 }">
+              <div
+                class="font-weight-medium mb-1"
+                :inner-html.prop="
+                  $t(`china.assignment.questions.${q.question}.text`)
+                "
+              ></div>
+              <template v-if="q.multiple">
+                <template v-for="(qv, qvi) in q.correctValue">
+                  <div
+                    :key="`qvi-${qvi}`"
+                    :inner-html.prop="
+                      $t(`china.assignment.questions.${q.question}.options`)[qv]
+                    "
+                  ></div>
+                </template>
+              </template>
+              <template v-else>
+                <div
                   :inner-html.prop="
-                    $t(`china.assignment.questions.${q.question}.options`)[qv]
+                    $t(`china.assignment.questions.${q.question}.options`)[
+                      q.correctValue
+                    ]
                   "
                 ></div>
               </template>
-            </template>
-            <template v-else>
+            </div>
+          </template>
+          <v-divider class="my-2"></v-divider>
+          <template v-for="(seType, i) in seTypes">
+            <div :key="`se-type-${i}`" :class="{ 'mt-2': i > 0 }">
               <div
-                :inner-html.prop="
-                  $t(`china.assignment.questions.${q.question}.options`)[
-                    q.correctValue
-                  ]
-                "
+                class="font-weight-medium mb-1"
+                :inner-html.prop="$t(`china.se-types.${seType}`)"
               ></div>
-            </template>
-          </div>
+              <div
+                :inner-html.prop="$t(`china.se-types-answers.${seType}`)"
+              ></div>
+            </div>
+          </template>
         </template>
-        <v-divider class="my-2"></v-divider>
-        <template v-for="(seType, i) in seTypes">
-          <div :key="`se-type-${i}`" :class="{ 'mt-2': i > 0 }">
-            <div
-              class="font-weight-medium mb-1"
-              :inner-html.prop="$t(`china.se-types.${seType}`)"
-            ></div>
-            <div
-              :inner-html.prop="$t(`china.se-types-answers.${seType}`)"
-            ></div>
-          </div>
-        </template>
-      </template>
-    </score-board-inline>
-  </v-container>
+      </score-board-inline>
+    </v-container>
+    <div class="items-container">
+      <!--  -->
+    </div>
+  </div>
 </template>
 
 <script>
@@ -169,6 +206,16 @@ export default {
       perc: 0,
       passed: false,
     },
+    rotatableItems: [
+      'alarm',
+      'boat',
+      'book',
+      'candle',
+      'charger',
+      'cup',
+      'key',
+      'pillow',
+    ],
   }),
   computed: {
     nextDisabled() {
@@ -391,12 +438,18 @@ export default {
       if (this.step === 2) {
         this.$set(this.videos.intro, 'ended', false);
         this.$store.commit('PLAY_VIDEO', `${this.stepId}-x2`);
+        setTimeout(() => {
+          this.replaceBg('china-v2');
+        }, 1000);
+      }
+      if (this.step === 3) {
+        this.$set(this.videos.intro, 'ended', false);
+        this.$store.commit('PLAY_VIDEO', `${this.stepId}-x3`);
+        setTimeout(() => {
+          this.replaceBg('china-v3');
+        }, 1000);
       }
     },
-    passRoomHandler() {
-      localStorage.setItem('room_china', '100');
-      window.impressAPI.goto('map');
-    }
   },
 };
 </script>

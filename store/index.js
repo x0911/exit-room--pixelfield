@@ -61,7 +61,7 @@ export const state = () => ({
   appLoaded: false,
   videos: {
     'game-intro-0': {
-      path: 'intro.mp4',
+      path: 'intro-v1.mp4',
       canPlay: false,
       ended: false,
     },
@@ -86,12 +86,27 @@ export const state = () => ({
       ended: false,
     },
     china: {
-      path: '3rd-task.mp4',
+      path: '3rd-room-v1.mp4',
       canPlay: false,
       ended: false,
     },
     'china-x2': {
-      path: 'intro.mp4',
+      path: '3rd-room-compine-v2_v3.mp4',
+      canPlay: false,
+      ended: false,
+    },
+    'china-x3': {
+      path: '3rd-room-v4.mp4',
+      canPlay: false,
+      ended: false,
+    },
+    'china-x4': {
+      path: '3rd-room-v5.mp4',
+      canPlay: false,
+      ended: false,
+    },
+    'china-x5': {
+      path: '3rd-room-v6.mp4',
       canPlay: false,
       ended: false,
     },
@@ -140,6 +155,14 @@ export const state = () => ({
     'russia',
     // 'india'
   ],
+  roomsBgs: {
+    italy: 'italy',
+    egypt: 'egypt',
+    china: 'china',
+    brazil: 'brazil',
+    usa: 'usa',
+    russia: 'russia',
+  },
   soundsOff: false,
   audioSoundsOff: false,
   gameIsDone: false,
@@ -212,6 +235,9 @@ export const mutations = {
       def[key] = payload[key];
     });
     state.instructions = def;
+  },
+  SET_ROOM_BG(state, payload) {
+    state.roomsBgs[payload.stepId] = payload.name || payload.stepId;
   },
   SET_INSTRUCTIONS_MODEL(state, payload) {
     state.instructions.model = payload;
@@ -337,4 +363,5 @@ export const getters = {
   mapLoaded: (state) => state.mapLoaded,
   videoIsSkippable: (state) => state.videoIsSkippable,
   fullscreenLoader: (state) => state.fullscreenLoader,
+  roomsBgs: (state) => state.roomsBgs,
 };

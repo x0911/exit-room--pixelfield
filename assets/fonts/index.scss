@@ -7,6 +7,7 @@
 @import './Poppins/_index.scss';
 @import './ShareTechMono/_index.scss';
 @import './ShadowsIntoLight/_index.scss';
+@import './ShadowsIntoLight-2/_index.scss';
 @import './Khand/_index.scss';
 
 body {
@@ -45,6 +46,9 @@ body {
     }
     .f-hand {
       font-family: 'ShadowsIntoLight', sans-serif !important;
+    }
+    .f-hand-2 {
+      font-family: 'ShadowsIntoLight-2', sans-serif !important;
     }
   }
 }
