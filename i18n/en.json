@@ -266,9 +266,12 @@
       }
     },
     "mini_game": {
-      "title": "Hit-a-mole",
-      "description": "You have <strong> 30 seconds </strong> to hit the moles.",
+      "title": "Hit-a-camera ",
+      "description": "You have 30 seconds to hit cameras. For every camera clicked during a 30-second run you will get 50 points. You can repeat the game up to 5 times and the highest score will be remembered and contributed to your country‘s score.",
       "score": "Your score is: <strong> {score} points.</strong>",
+      "points": "points",
+      "high_score": "High score:",
+      "seconds": "seconds",
       "ranking": "“Congratulations: You are number {ranking} on our eternal scoreboard!”",
       "statistics": "Statistics of former players:"
     }
