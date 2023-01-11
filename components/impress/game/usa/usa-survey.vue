@@ -5,7 +5,7 @@
         {{
           step === 1
             ? $t('usa.questions.1.label')
-            : $t('pick-response-to-continue')
+            : $t('choose-headlines')
         }}
       </div>
       <v-radio-group

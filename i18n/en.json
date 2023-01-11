@@ -48,9 +48,15 @@
   "age": "Age",
   "nationality": "Nationality",
   "hints": {
-    "splash": ["Select your language to proceed"],
-    "map": ["Active room will have a glowing circle above its name"],
-    "italy": ["Complete the survey"],
+    "splash": [
+      "Select your language to proceed"
+    ],
+    "map": [
+      "Active room will have a glowing circle above its name"
+    ],
+    "italy": [
+      "Complete the survey"
+    ],
     "egypt": [
       "Waiter will give you a menu, check if you see any concerns.",
       "After checking, you can safely click on next to proceed to next steps"
@@ -86,7 +92,10 @@
         "Hello and welcome!",
         "Let me introduce myself: My name is Franklin and I will be your guide during our cruise."
       ],
-      "2": ["Splendid!", "Now, please follow me to the reception!"]
+      "2": [
+        "Splendid!",
+        "Now, please follow me to the reception!"
+      ]
     },
     "italy": {
       "1": [
@@ -98,26 +107,34 @@
       ]
     },
     "egypt": {
-      "1": ["Please, join us and enjoy your meal!"],
+      "1": [
+        "Please, join us and enjoy your meal!"
+      ],
       "2": [
         "You have been assigned to your seat with 4 other guests.",
         "Before you eat, we have made a special task for you. Take a look at the menu and follow the instructions."
       ],
-      "3": ["I’m only 2 months pregnant and not showing"],
+      "3": [
+        "I’m only 2 months pregnant and not showing"
+      ],
       "4": [
         "I don’t want people to know I’m pregnant yet, and sharing that I’m not drinking may reveal that."
       ],
       "5": [
         "I developed diabetes as a child and have to be very careful with what I eat –"
       ],
-      "6": ["but I don’t tell people about this –"],
+      "6": [
+        "but I don’t tell people about this –"
+      ],
       "7": [
         "it’s something I tend to keep private. I wonder if the others will suspect my medical condition."
       ],
       "8": [
         "I know that in some parts of the world, people are discriminated against based on religion –"
       ],
-      "9": ["by sharing that I keep kosher, now everyone knows I’m Jewish."]
+      "9": [
+        "by sharing that I keep kosher, now everyone knows I’m Jewish."
+      ]
     },
     "brazil": {
       "1": [
@@ -130,7 +147,10 @@
         "Hmm, that lunch menu incident was weird. I should do something about this!",
         "But first I need to find a ship ticket containing the privacy notice and examine the notice to see whether it was really legitimate to collect and share dietary restrictions with the other passengers."
       ],
-      "2": ["I heard some noise in here", "is everything okay?"],
+      "2": [
+        "I heard some noise in here",
+        "is everything okay?"
+      ],
       "3": [
         "The dietary information was shared with other passengers which was not disclosed in the privacy notice",
         "This is concerning"
@@ -199,23 +219,53 @@
     "questions": {
       "1": {
         "label": "read a privacy policy",
-        "options": ["Always", "Often", "Occasionally", "Rarely", "Never"]
+        "options": [
+          "Always",
+          "Often",
+          "Occasionally",
+          "Rarely",
+          "Never"
+        ]
       },
       "2": {
         "label": "customize cookie settings",
-        "options": ["Always", "Often", "Occasionally", "Rarely", "Never"]
+        "options": [
+          "Always",
+          "Often",
+          "Occasionally",
+          "Rarely",
+          "Never"
+        ]
       },
       "3": {
         "label": "customize other privacy settings (like how your info can be used)",
-        "options": ["Always", "Often", "Occasionally", "Rarely", "Never"]
+        "options": [
+          "Always",
+          "Often",
+          "Occasionally",
+          "Rarely",
+          "Never"
+        ]
       },
       "4": {
         "label": "try to enter as little information as needed",
-        "options": ["Always", "Often", "Occasionally", "Rarely", "Never"]
+        "options": [
+          "Always",
+          "Often",
+          "Occasionally",
+          "Rarely",
+          "Never"
+        ]
       },
       "5": {
         "label": "save credit card details or other Personal Information to your browser?",
-        "options": ["Always", "Often", "Occasionally", "Rarely", "Never"]
+        "options": [
+          "Always",
+          "Often",
+          "Occasionally",
+          "Rarely",
+          "Never"
+        ]
       },
       "6": {
         "label": "",
@@ -234,39 +284,78 @@
       },
       "7": {
         "label": "The Novartis Data Privacy Policy",
-        "options": ["Yes", "No"]
+        "options": [
+          "Yes",
+          "No"
+        ]
       },
       "8": {
         "label": "Our Data Privacy Principles",
-        "options": ["Yes", "No"]
+        "options": [
+          "Yes",
+          "No"
+        ]
       },
       "9": {
         "label": "Who to contact for data privacy support?",
-        "options": ["Yes", "No"]
+        "options": [
+          "Yes",
+          "No"
+        ]
       },
       "10": {
         "label": "When to apply the Privacy Principles?",
-        "options": ["Yes", "No"]
+        "options": [
+          "Yes",
+          "No"
+        ]
       },
       "11": {
         "label": "What to do if you become aware of a data privacy incident?",
-        "options": ["Yes", "No"]
+        "options": [
+          "Yes",
+          "No"
+        ]
       },
       "12": {
         "label": "Report when you receive Personal Information you should not receive, such as date of birth, home address, ethical origin, medical or salary information?",
-        "options": ["Always", "Often", "Occasionally", "Rarely", "Never"]
+        "options": [
+          "Always",
+          "Often",
+          "Occasionally",
+          "Rarely",
+          "Never"
+        ]
       },
       "13": {
         "label": "Check the Novartis Data Privacy Policy when you have questions about handling  Personal Information?",
-        "options": ["Always", "Often", "Occasionally", "Rarely", "Never"]
+        "options": [
+          "Always",
+          "Often",
+          "Occasionally",
+          "Rarely",
+          "Never"
+        ]
       },
       "14": {
         "label": "Contact the privacy team if you cannot address a privacy-related question yourself?",
-        "options": ["Always", "Often", "Occasionally", "Rarely", "Never"]
+        "options": [
+          "Always",
+          "Often",
+          "Occasionally",
+          "Rarely",
+          "Never"
+        ]
       },
       "15": {
         "label": "Seek to collect as little information as possible when creating a survey, registration, or other form.",
-        "options": ["Always", "Often", "Occasionally", "Rarely", "Never"]
+        "options": [
+          "Always",
+          "Often",
+          "Occasionally",
+          "Rarely",
+          "Never"
+        ]
       },
       "16": {
         "label": "",
@@ -302,7 +391,9 @@
           "Yes – it is unprofessional",
           "Yes – it feels like this is private information that should not have been shared"
         ],
-        "correctOptions": [2]
+        "correctOptions": [
+          2
+        ]
       },
       "2": {
         "label": "What should you say to Franklin?",
@@ -312,7 +403,9 @@
           "The waiter’s notes should not have been on the menu.",
           "All of the above."
         ],
-        "correctOptions": [3]
+        "correctOptions": [
+          3
+        ]
       }
     }
   },
@@ -320,11 +413,17 @@
     "questions": {
       "1": {
         "label": "Did you realize your passport photo would be used in this way?",
-        "options": ["Yes", "No"]
+        "options": [
+          "Yes",
+          "No"
+        ]
       },
       "2": {
         "label": "Does this make you uncomfortable?",
-        "options": ["Yes", "No"]
+        "options": [
+          "Yes",
+          "No"
+        ]
       },
       "3": {
         "label": "Is the facial recognition in the privacy notice?"
@@ -361,7 +460,9 @@
           "Yes, but I'm still not sure if everything is correct.",
           "No, I have to find another source of information."
         ],
-        "correctOptions": [2]
+        "correctOptions": [
+          2
+        ]
       },
       "2": {
         "options": [
@@ -369,7 +470,10 @@
           "A famous tennis player was seen with his new girlfriend!",
           "You have your privacy rights! In modern era it is illegal to use a private data without a permission. There must be a privacy rights section in every privacy notice guidelines."
         ],
-        "correctOptions": [0, 2]
+        "correctOptions": [
+          0,
+          2
+        ]
       }
     }
   },
@@ -390,7 +494,10 @@
       "close": "Close privacy notice",
       "table": {
         "title": "The Personal information we collect and how we use it",
-        "headers": ["CATEGORY OF PERSONAL information", "DESCRIPTION"],
+        "headers": [
+          "CATEGORY OF PERSONAL information",
+          "DESCRIPTION"
+        ],
         "content": [
           {
             "category": "Identification and contact information",
@@ -559,6 +666,7 @@
     "action": "Yes, restart!"
   },
   "pick-response-to-continue": "Pick a response to continue",
+  "choose-headlines": "Choose which headlines are useful:",
   "congratulations": "Congratulations",
   "outro": {
     "successText": [
@@ -621,11 +729,17 @@
     "questions": {
       "q1": {
         "text": "Does the privacy notice contain any information in connection with collecting data covering dietary restrictions?",
-        "options": ["YES", "NO"]
+        "options": [
+          "YES",
+          "NO"
+        ]
       },
       "q2": {
         "text": "Should the privacy notice have been shared with the other passengers?",
-        "options": ["YES", "NO"]
+        "options": [
+          "YES",
+          "NO"
+        ]
       }
     }
   },
