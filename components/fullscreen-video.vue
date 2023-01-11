@@ -37,32 +37,49 @@
             class="info-screen darken px-2 border-3 pb-4 d-flex align-center"
           >
             <v-card-text class="pt-6 pb-2 text-justify h-full">
-              <template v-if="dialog.isConfirmable">
-                <div v-if="dialog.speaker" class="font-weight-bold">
-                  <span> {{ dialog.speaker }}: </span>
-                </div>
-                <template v-if="dialog.speech">
-                  <div :inner-html.prop="dialog.text"></div>
-                </template>
-                <template v-else>
-                  <div :inner-html.prop="dialog.textArray || dialog.text"></div>
-                </template>
-              </template>
-              <template v-else>
-                <template v-if="dialog.speaker">
-                  <div class="font-weight-bold text-h6 f-khand">
-                    <span class="ls-4"> {{ dialog.speaker }}: </span>
+              <v-layout align-start justify-start class="gap-4">
+                <v-flex v-if="dialog.avatar" shrink>
+                  <v-avatar size="50">
+                    <v-img
+                      :src="require(`@/assets/images/avatars/${dialog.avatar}`)"
+                    ></v-img>
+                  </v-avatar>
+                </v-flex>
+                <v-flex>
+                  <div>
+                    <template v-if="dialog.isConfirmable">
+                      <div v-if="dialog.speaker" class="font-weight-bold">
+                        <span> {{ dialog.speaker }}: </span>
+                      </div>
+                      <template v-if="dialog.speech">
+                        <div :inner-html.prop="dialog.text"></div>
+                      </template>
+                      <template v-else>
+                        <div
+                          :inner-html.prop="dialog.textArray || dialog.text"
+                        ></div>
+                      </template>
+                    </template>
+                    <template v-else>
+                      <template v-if="dialog.speaker">
+                        <div class="font-weight-bold text-h6 f-khand">
+                          <span class="ls-4"> {{ dialog.speaker }}: </span>
+                        </div>
+                      </template>
+                      <vue-typed-js
+                        :typeSpeed="
+                          (dialog.duration / dialog.text.length) * 750
+                        "
+                        :strings="[dialog.textArray]"
+                        :contentType="'html'"
+                        :showCursor="false"
+                      >
+                        <div class="typing"></div>
+                      </vue-typed-js>
+                    </template>
                   </div>
-                </template>
-                <vue-typed-js
-                  :typeSpeed="(dialog.duration / dialog.text.length) * 750"
-                  :strings="[dialog.textArray]"
-                  :contentType="'html'"
-                  :showCursor="false"
-                >
-                  <div class="typing"></div>
-                </vue-typed-js>
-              </template>
+                </v-flex>
+              </v-layout>
             </v-card-text>
           </v-card>
           <v-card-actions v-if="dialog.isConfirmable">

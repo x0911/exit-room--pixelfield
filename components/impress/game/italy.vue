@@ -13,39 +13,71 @@
         <v-card :disabled="loading" light tile flat class="transparent mx-auto">
           <div class="mb-4">
             <v-card light tile flat class="info-screen border-3">
-              <template v-for="(q, i) in questions">
-                <v-card-text :key="i" class="py-6">
-                  <div class="mb-2 text-body-1 font-weight-medium">
-                    {{ $tr(`italy.questions.${i + 1}.label`) }}
-                  </div>
-                  <template v-if="!q.type || q.type === 'text'">
-                    <v-text-field
-                      v-model="q.value"
-                      filled
-                      rounded
-                      class="rounded-sm"
-                      hide-details
-                    ></v-text-field>
-                  </template>
-                  <template v-else-if="q.type === 'checkbox'">
-                    <v-btn-toggle v-model="q.value">
+              <v-card-text class="py-6">
+                <template v-for="(q, i) in questions">
+                  <div :key="i" class="mb-5">
+                    <div v-if="q.hasTitle" class="mb-4 text-h6">
+                      {{ $tr(`italy.questions-titles.${i + 1}`) }}
+                    </div>
+                    <div class="mb-2 text-body-1 font-weight-medium">
+                      {{ $tr(`italy.questions.${i + 1}.label`) }}
+                    </div>
+                    <template v-if="!q.type || q.type === 'text'">
+                      <v-text-field
+                        v-model="q.value"
+                        filled
+                        rounded
+                        class="rounded-sm"
+                        hide-details
+                      ></v-text-field>
+                    </template>
+                    <template v-else-if="!q.multiple && q.type === 'checkbox'">
+                      <v-radio-group v-model="q.value" hide-details>
+                        <template
+                          v-for="(answer, ai) in $tr(
+                            `italy.questions.${i + 1}.options`,
+                            'array'
+                          )"
+                        >
+                          <v-radio :key="ai" :value="ai" :label="answer">
+                          </v-radio>
+                        </template>
+                      </v-radio-group>
+                    </template>
+                    <template v-else-if="q.multiple && q.type === 'checkbox'">
                       <template
                         v-for="(answer, ai) in $tr(
                           `italy.questions.${i + 1}.options`,
                           'array'
                         )"
                       >
-                        <v-btn
+                        <v-checkbox
                           :key="ai"
-                          :class="{ 'primary white--text': q.value === ai }"
+                          hide-details
+                          v-model="q.value"
+                          :value="ai"
+                          multiple
+                          :label="answer"
                         >
-                          {{ answer }}
-                        </v-btn>
+                        </v-checkbox>
                       </template>
-                    </v-btn-toggle>
-                  </template>
-                </v-card-text>
-              </template>
+                    </template>
+                    <template v-else-if="q.type === 'dropdown'">
+                      <v-select
+                        v-model="q.value"
+                        filled
+                        rounded
+                        :placeholder="$tr(`italy.questions.${i + 1}.label`)"
+                        class="rounded-sm"
+                        hide-details
+                        :items="q.options"
+                        :item-text="q.itemText || null"
+                        :item-value="q.itemValue || null"
+                      ></v-select>
+                    </template>
+                  </div>
+                </template>
+              </v-card-text>
               <v-overlay v-model="loading" absolute dark>
                 <v-progress-circular
                   color="white"
@@ -92,6 +124,7 @@
 import ScoreBoardInline from '~/components/ScoreBoardInline.vue';
 import SoundPlayer from '@/mixins/sound-player.js';
 import ImpressStep from '@/mixins/impress-step.js';
+import { countries } from '@/assets/js/countries';
 export default {
   components: {
     ScoreBoardInline,
@@ -111,17 +144,113 @@ export default {
         {
           question: '',
           value: null,
-          type: 'text',
-        },
-        {
-          question: '',
-          value: null,
-          type: 'text',
+          type: 'checkbox',
+          multiple: false,
+          hasTitle: true,
         },
         {
           question: '',
           value: null,
           type: 'checkbox',
+          multiple: false,
+        },
+        {
+          question: '',
+          value: null,
+          type: 'checkbox',
+          multiple: false,
+        },
+        {
+          question: '',
+          value: null,
+          type: 'checkbox',
+          multiple: false,
+        },
+        {
+          question: '',
+          value: null,
+          type: 'checkbox',
+          multiple: false,
+        },
+        {
+          question: '',
+          value: [],
+          type: 'checkbox',
+          multiple: true,
+          hasTitle: true,
+        },
+        {
+          question: '',
+          value: null,
+          type: 'checkbox',
+          multiple: false,
+          hasTitle: true,
+        },
+        {
+          question: '',
+          value: null,
+          type: 'checkbox',
+          multiple: false,
+        },
+        {
+          question: '',
+          value: null,
+          type: 'checkbox',
+          multiple: false,
+        },
+        {
+          question: '',
+          value: null,
+          type: 'checkbox',
+          multiple: false,
+        },
+        {
+          question: '',
+          value: null,
+          type: 'checkbox',
+          multiple: false,
+        },
+        {
+          question: '',
+          value: null,
+          type: 'checkbox',
+          multiple: false,
+          hasTitle: true,
+        },
+        {
+          question: '',
+          value: null,
+          type: 'checkbox',
+          multiple: false,
+        },
+        {
+          question: '',
+          value: null,
+          type: 'checkbox',
+          multiple: false,
+        },
+        {
+          question: '',
+          value: null,
+          type: 'checkbox',
+          multiple: false,
+        },
+        {
+          question: '',
+          value: null,
+          type: 'checkbox',
+          multiple: false,
+          hasTitle: true,
+        },
+        {
+          question: '',
+          value: null,
+          type: 'dropdown',
+          multiple: false,
+          hasTitle: true,
+          options: countries,
+          itemText: 'name',
+          itemValue: 'code',
         },
       ],
       result: {

@@ -9,6 +9,7 @@
     <v-card class="info-screen border-2" light>
       <v-card-text class="px-4 pb-0 pt-4">
         <div
+          v-if="hasSubtitle || hasPanels"
           class="primary grey--text text--lighten-2 font-weight-light px-5 py-5"
         >
           <slot name="subtitle">
@@ -154,7 +155,7 @@ export default {
       }
     },
     hasSubtitle() {
-      return this.subtitle?.length > 0;
+      return this.subtitle?.length > 0 || this.$slots.subtitle;
     },
   },
   watch: {

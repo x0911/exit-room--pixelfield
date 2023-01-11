@@ -5,6 +5,9 @@
       :inner-html.prop="$t('brazil.mini_game.ranking', { ranking: 2 })"
     />
     <v-card-text class="px-0">
+      {{ $t('brazil.mini_game.ranking-2') }}
+    </v-card-text>
+    <v-card-text class="px-0">
       <div class="subtitle-2 text--darken-4 font-weight-bold mb-3">
         {{ $t('brazil.mini_game.statistics') }}
       </div>
@@ -16,7 +19,7 @@
       ></v-data-table>
       <v-card class="pa-0" flat>
         <v-card-title
-          class="px-0 pb-0 subtitle-1"
+          class="px-0 pb-0 mb-3 subtitle-1"
           v-text="$t('brazil.questions.4.label')"
         />
         <v-checkbox
@@ -26,7 +29,8 @@
           class="ma-0 mb-2 caption"
           hide-details
           :label="option"
-          :value="option"
+          :value="oIdx"
+          v-model="questionModel"
         />
         <div class="d-flex justify-center pt-8">
           <v-btn
@@ -35,7 +39,7 @@
             tile
             large
             depressed
-            @click="$emit('finish')"
+            @click="finish"
           >
             {{ $t('submit') }}
           </v-btn>
@@ -47,12 +51,13 @@
 
 <script>
 export default {
-  name: "RankingCard",
+  name: 'RankingCard',
   data() {
     return {
+      questionModel: [],
       items: [
         {
-          name: 'First User',
+          name: 'Carla Smith',
           score: 100,
           address: 'Prague, Czech',
           cabin_number: 10,
@@ -60,7 +65,7 @@ export default {
           nationality: 'English',
         },
         {
-          name: 'Second User',
+          name: 'Yuri Salazar',
           score: 99,
           address: 'London, England',
           cabin_number: 23,
@@ -68,15 +73,15 @@ export default {
           nationality: 'English',
         },
         {
-          name: 'Third User',
+          name: 'Yael Cooper',
           score: 97,
           address: 'Paris, France',
           cabin_number: 2,
           age: 27,
           nationality: 'English',
         },
-      ]
-    }
+      ],
+    };
   },
   computed: {
     headers() {
@@ -84,13 +89,18 @@ export default {
         text: this.$t(header),
         value: header,
         sortable: false,
-        align: 'center'
-      }))
+        align: 'center',
+      }));
     },
   },
-}
+  methods: {
+    finish() {
+      const passed =
+        !this.questionModel.includes(3) && this.questionModel.length === 3;
+      this.$emit('finish', passed);
+    },
+  },
+};
 </script>
 
-<style scoped>
-
-</style>
+<style scoped></style>
