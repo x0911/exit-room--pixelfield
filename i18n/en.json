@@ -385,8 +385,9 @@
       "<div class='d-flex justify-end'><i class='f-hand-2 font-weight-bold text-h5'>– Captain Maria</i></div>"
     ],
     "privacy-notice": {
-      "title": "Cruise Chip Privacy Notice",
+      "title": "Cruise Ship Privacy Notice",
       "description": "We take your privacy very seriously. This notice sets forth what we collect, what we share, and your right. For more details, please see the captain.",
+      "close": "Close privacy notice",
       "table": {
         "title": "The Personal information we collect and how we use it",
         "headers": ["CATEGORY OF PERSONAL information", "DESCRIPTION"],

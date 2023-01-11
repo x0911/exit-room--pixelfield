@@ -1,5 +1,5 @@
 <template>
-  <v-card light tile flat class="pa-10 px-auto">
+  <v-card class="pa-10 px-auto" flat light tile>
     <div v-if="showCode" class="code"></div>
     <v-row>
       <div class="text-body-1 mb-2 font-weight-bold">
@@ -8,22 +8,32 @@
     </v-row>
     <v-row>
       <v-col class="d-flex align-center justify-start pl-0" cols="6">
-        <div class="puzzle-images">
-          <div
-            v-for="(image, index) in correctImages"
-            :key="image.id"
-            :style="{
-              ...getCommonStyles(image, index),
-              ...image.styles,
-            }"
-            @dragenter="dragEnterHandler(image)"
-            @dragleave="dragLeaveHandler(image)"
-            @drop.prevent="dropPuzzleItem($event, image)"
-            @dragover.prevent
-          >
-            <img v-if="image.src" :src="image.src" width="100%" height="100%" />
+        <v-img
+          :src="require('~/assets/images/games/usa/puzzle/puzzle_template.png')"
+          max-width="360"
+        >
+          <div class="puzzle-images">
+            <div
+              v-for="(image, index) in correctImages"
+              :key="image.id"
+              :style="{
+                ...getCommonStyles(image, index),
+                ...image.styles,
+              }"
+              @dragenter="dragEnterHandler(image)"
+              @dragleave="dragLeaveHandler(image)"
+              @drop.prevent="dropPuzzleItem($event, image)"
+              @dragover.prevent
+            >
+              <img
+                v-if="image.src"
+                :src="image.src"
+                height="100%"
+                width="100%"
+              />
+            </div>
           </div>
-        </div>
+        </v-img>
       </v-col>
       <v-col cols="6">
         <div class="puzzle-items">
@@ -33,14 +43,14 @@
             draggable="true"
             @dragstart="dragPuzzleItem($event, image)"
           >
-            <img width="72px" height="72px" role="button" :src="image.src" />
+            <img :src="image.src" height="72px" role="button" width="72px"/>
           </div>
         </div>
       </v-col>
       <v-row
         v-if="isPuzzleValid"
-        style="max-width: calc(100% - 20px)"
         class="mt-0"
+        style="max-width: calc(100% - 20px)"
       >
         <v-col class="d-flex align-center mb-2" cols="3">
           <div class="text-body-2 font-weight-bold">Enter the code:</div>
@@ -49,23 +59,23 @@
           <v-otp-input v-model="code" length="3" type="number"></v-otp-input>
         </v-col>
       </v-row>
-      <v-col cols="12" class="d-flex justify-center">
+      <v-col class="d-flex justify-center" cols="12">
         <v-btn
-          color="primary"
           class="px-6 mt-4 ml-16 mr-8"
-          tile
+          color="primary"
           large
           outlined
+          tile
           @click="restartPuzzleHandler"
         >
           {{ $t('restart') }}
         </v-btn>
         <v-btn
-          color="primary"
-          class="px-6 mt-4"
-          tile
-          large
           :disabled="!isCodeValid"
+          class="px-6 mt-4"
+          color="primary"
+          large
+          tile
           @click="validatePuzzleHandler"
         >
           {{ $t('next') }}
@@ -248,7 +258,7 @@ export default {
   },
   computed: {
     isPuzzleValid() {
-      return this.correctImages.every(({ id, src }) => src?.includes(id));
+      return this.correctImages.every(({id, src}) => src?.includes(id));
     },
     isCodeValid() {
       return this.code === this.correctCode;
@@ -292,9 +302,9 @@ export default {
         imageSource.id === imageDestination.id
           ? imageSource.styles
           : {
-              width: '90px',
-              height: '90px',
-            };
+            width: '90px',
+            height: '90px',
+          };
       this.correctImages = [...this.correctImages];
     },
     getCommonStyles(image, index) {
@@ -302,7 +312,6 @@ export default {
         position: 'absolute',
         minHeight: '90px',
         minWidth: '90px',
-        border: !image.src ? 'solid 1px' : 'none',
         borderCollapse: 'collapse',
         left: 90 * (index % 4) + 'px',
         top: 90 * parseInt(index / 4) + 'px',
@@ -326,7 +335,7 @@ export default {
       this.showCode = false;
       this.correctImages = new Array(16)
         .fill(0)
-        .map((_, idx) => ({ id: idx + 1 }));
+        .map((_, idx) => ({id: idx + 1}));
       this.randomImages = [...this.images].sort(() =>
         Math.random() > 0.5 ? 1 : -1
       );

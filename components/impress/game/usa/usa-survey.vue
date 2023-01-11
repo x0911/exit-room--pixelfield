@@ -1,5 +1,5 @@
 <template>
-  <v-card max-width="600" tile flat rounded light class="pa-6 mx-auto">
+  <v-card class="pa-6 mx-auto" flat light max-width="600" rounded tile>
     <v-card-text class="pa-4">
       <div class="text-body-1 mb-4 font-weight-bold">
         {{
@@ -8,35 +8,52 @@
             : $t('pick-response-to-continue')
         }}
       </div>
-      <v-checkbox
-        v-for="option in options"
-        :key="option.id"
-        v-model="option.value"
+      <v-radio-group
+        v-if="step === 1"
+        v-model="correctFirstAnswer"
         :error="hasError"
-        color="primary"
-        class="ma-0 mb-2 caption"
         hide-details
-        :label="option.text"
-        :value="option.value"
-      />
+      >
+        <v-radio
+          v-for="option in options"
+          :key="option.id"
+          :label="option.text"
+          :value="option.id"
+          class="ma-0 mb-2 caption"
+          color="primary"
+        />
+      </v-radio-group>
+      <template v-else>
+        <v-checkbox
+          v-for="option in options"
+          :key="option.id"
+          v-model="option.value"
+          :error="hasError"
+          :label="option.text"
+          :value="option.value"
+          class="ma-0 mb-2 caption"
+          color="primary"
+          hide-details
+        />
+      </template>
       <div class="d-flex justify-center mt-10">
         <v-btn
           v-if="step === 1"
-          tile
           class="px-6 mr-4"
           large
+          tile
           @click="$emit('cancel')"
         >
           <span>{{ $t('cancel') }}</span>
         </v-btn>
-        <v-btn v-if="step === 2" tile class="px-6 mr-4" large @click="step--">
+        <v-btn v-if="step === 2" class="px-6 mr-4" large tile @click="step--">
           <span>{{ $t('previous') }}</span>
         </v-btn>
         <v-btn
-          color="primary"
-          tile
           class="px-6 mr-4"
+          color="primary"
           large
+          tile
           @click="validateFormHandler"
         >
           <span>{{ $t('next') }}</span>
@@ -63,11 +80,15 @@ export default {
       step: 1,
       options: [],
       hasError: false,
+      correctFirstAnswer: null
     };
   },
   computed: {
     canProceedNext() {
-      return this.options.every(({ value }, index) =>
+      if (this.step === 1) {
+        return this.correctFirstAnswer === this.$t(`usa.questions.${this.step}.correctOptions`)[0]
+      }
+      return this.options.every(({value}, index) =>
         this.$t(`usa.questions.${this.step}.correctOptions`).includes(index)
           ? value
           : !value
@@ -80,7 +101,7 @@ export default {
       handler() {
         this.options = this.$t(`usa.questions.${this.step}.options`).map(
           (option, index) => ({
-            id: index + 1,
+            id: index,
             text: option,
             value: false,
           })
@@ -92,6 +113,9 @@ export default {
       handler() {
         this.hasError = false;
       },
+    },
+    correctFirstAnswer() {
+      this.hasError = false;
     },
   },
   methods: {
