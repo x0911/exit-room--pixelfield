@@ -18,10 +18,22 @@
         ></lottie-animation>
       </div>
       <template v-else-if="isLoading === false">
-        <face-scan v-if="step === 'face-scan'" @next="step = 'countries-score'" />
-        <countries-scores v-if="step === 'countries-score'" @next="step = 'survey'" />
+        <face-scan
+          v-if="step === 'face-scan'"
+          @next="step = 'countries-score'"
+        />
+        <countries-scores
+          v-if="step === 'countries-score'"
+          @next="step = 'survey'"
+        />
         <brazil-survey v-if="step === 'survey'" @next="step = 'mini-game'" />
-        <mini-game v-if="step === 'mini-game'" @next="step = 'ranking'; result.perc = $event"/>
+        <mini-game
+          v-if="step === 'mini-game'"
+          @next="
+            step = 'ranking';
+            result.perc = $event;
+          "
+        />
         <ranking-card v-if="step === 'ranking'" @finish="submitGame" />
       </template>
     </v-dialog>
@@ -41,8 +53,8 @@ import BrazilSurvey from '~/components/impress/game/brazil/brazil-survey';
 import ImpressStep from '~/mixins/impress-step.js';
 import MiniGame from '~/components/impress/game/brazil/mini-game';
 import FaceScan from '~/components/impress/game/brazil/face-scan';
-import RankingCard from "~/components/impress/game/brazil/ranking-card";
-import CountriesScores from "~/components/impress/game/brazil/countries-scores";
+import RankingCard from '~/components/impress/game/brazil/ranking-card';
+import CountriesScores from '~/components/impress/game/brazil/countries-scores';
 
 export default {
   components: {
@@ -86,7 +98,7 @@ export default {
     openIntro() {
       this.$store.commit('SET_INSTRUCTIONS', {
         model: true,
-        title: this.$t('screens.brazil.title'),
+        title: '',
         steps: ['screens.brazil.a1'],
         nextMethod: this.startGameLoading,
       });
@@ -111,19 +123,23 @@ export default {
       }, 2000);
     },
     reset() {
-      this.step = 'face-scan'
-      this.isLoading = null
-      window.impressAPI.goto('map')
+      this.step = 'face-scan';
+      this.isLoading = null;
+      window.impressAPI.goto('map');
     },
-    submitGame() {
+    submitGame(passed = false) {
       const scorePercent = Math.floor(this.result.perc / 10);
-      const score = scorePercent > 100 ? 100 : scorePercent;
-
+      let score = scorePercent > 100 ? 100 : scorePercent;
+      if (!passed) {
+        score = 0;
+      }
+      this.$set(this.result, 'perc', score);
+      this.$set(this.result, 'passed', score === 100);
+      this.showResultDialog();
       this.$store.commit('SET_SCORE_BOARD_DIALOG', {
-        model: true,
+        model: false,
         score,
         game: 'brazil',
-        next: this.reset
       });
     },
   },

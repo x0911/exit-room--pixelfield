@@ -6,12 +6,14 @@ export default {
       const splash = [
         {
           speaker: this.$t('franklin'),
+          avatar: 'franklin.jpg',
           from: 3.9,
           textArray: this.$tr('speeches.splash.1', 'array'),
           isConfirmable: true,
         },
         {
           speaker: this.$t('franklin'),
+          avatar: 'franklin.jpg',
           from: 4.1,
           textArray: this.$tr('speeches.splash.2', 'array'),
           isConfirmable: true,
@@ -25,6 +27,7 @@ export default {
       const reception = [
         {
           speaker: this.$t('franklin'),
+          avatar: 'franklin.jpg',
           from: 3,
           duration: 10,
           textArray: this.$tr('speeches.italy.1', 'array'),
@@ -32,6 +35,7 @@ export default {
         },
         {
           speaker: this.$t('franklin'),
+          avatar: 'franklin.jpg',
           from: 15,
           duration: 11,
           textArray: this.$tr('speeches.italy.2', 'array'),
@@ -41,6 +45,7 @@ export default {
       const dinningRoom = [
         {
           speaker: this.$t('franklin'),
+          avatar: 'franklin.jpg',
           from: 3,
           duration: 2,
           textArray: this.$tr('speeches.egypt.1', 'array'),
@@ -48,6 +53,7 @@ export default {
         },
         {
           speaker: this.$t('franklin'),
+          avatar: 'franklin.jpg',
           from: 8,
           duration: 9,
           textArray: this.$tr('speeches.egypt.2', 'array'),
@@ -108,14 +114,9 @@ export default {
       const hallwayRoom = [
         {
           speaker: this.$t('franklin'),
+          avatar: 'franklin.jpg',
           from: 1,
-          text: this.$tr('speeches.brazil.1'),
-          isConfirmable: true,
-        },
-        {
-          speaker: this.$t('franklin'),
-          from: 4,
-          text: this.$tr('speeches.brazil.2'),
+          textArray: this.$tr('speeches.brazil.1'),
           isConfirmable: true,
         },
       ];
@@ -130,6 +131,7 @@ export default {
       const bedroomX5 = [
         {
           speaker: this.$t('franklin'),
+          avatar: 'franklin.jpg',
           from: 1.5,
           textArray: this.$tr('speeches.china.2', 'array'),
           isConfirmable: true,
@@ -142,6 +144,7 @@ export default {
         },
         {
           speaker: this.$t('franklin'),
+          avatar: 'franklin.jpg',
           from: 3.2,
           textArray: this.$tr('speeches.china.4', 'array'),
           isConfirmable: true,
@@ -150,6 +153,7 @@ export default {
       const usaX2 = [
         {
           speaker: this.$t('franklin'),
+          avatar: 'franklin.jpg',
           from: 1,
           text: this.$tr('speeches.usa.1'),
           isConfirmable: true,
@@ -158,6 +162,7 @@ export default {
       const usaX3 = [
         {
           speaker: this.$t('franklin'),
+          avatar: 'franklin.jpg',
           from: 1,
           text: this.$tr('speeches.usa.2'),
           isConfirmable: true,
@@ -166,6 +171,7 @@ export default {
       const usaX4 = [
         {
           speaker: this.$t('player-is-thinking'),
+          avatar: 'player.png',
           from: 1,
           text: this.$tr('speeches.usa.3'),
           isConfirmable: true,

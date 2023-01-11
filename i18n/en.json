@@ -30,7 +30,7 @@
     "1": "Reception",
     "2": "Dining room",
     "3": "Bed room",
-    "4": "Hallway",
+    "4": "Game room",
     "5": "Captain's cabin"
   },
   "fullscreen-hint": {
@@ -48,15 +48,9 @@
   "age": "Age",
   "nationality": "Nationality",
   "hints": {
-    "splash": [
-      "Select your language to proceed"
-    ],
-    "map": [
-      "Active room will have a glowing circle above its name"
-    ],
-    "italy": [
-      "Complete the survey"
-    ],
+    "splash": ["Select your language to proceed"],
+    "map": ["Active room will have a glowing circle above its name"],
+    "italy": ["Complete the survey"],
     "egypt": [
       "Waiter will give you a menu, check if you see any concerns.",
       "After checking, you can safely click on next to proceed to next steps"
@@ -92,10 +86,7 @@
         "Hello and welcome!",
         "Let me introduce myself: My name is Franklin and I will be your guide during our cruise."
       ],
-      "2": [
-        "Splendid!",
-        "Now, please follow me to the reception!"
-      ]
+      "2": ["Splendid!", "Now, please follow me to the reception!"]
     },
     "italy": {
       "1": [
@@ -107,38 +98,32 @@
       ]
     },
     "egypt": {
-      "1": [
-        "Please, join us and enjoy your meal!"
-      ],
+      "1": ["Please, join us and enjoy your meal!"],
       "2": [
         "You have been assigned to your seat with 4 other guests.",
         "Before you eat, we have made a special task for you. Take a look at the menu and follow the instructions."
       ],
-      "3": [
-        "I’m only 2 months pregnant and not showing"
-      ],
+      "3": ["I’m only 2 months pregnant and not showing"],
       "4": [
         "I don’t want people to know I’m pregnant yet, and sharing that I’m not drinking may reveal that."
       ],
       "5": [
         "I developed diabetes as a child and have to be very careful with what I eat –"
       ],
-      "6": [
-        "but I don’t tell people about this –"
-      ],
+      "6": ["but I don’t tell people about this –"],
       "7": [
         "it’s something I tend to keep private. I wonder if the others will suspect my medical condition."
       ],
       "8": [
         "I know that in some parts of the world, people are discriminated against based on religion –"
       ],
-      "9": [
-        "by sharing that I keep kosher, now everyone knows I’m Jewish."
-      ]
+      "9": ["by sharing that I keep kosher, now everyone knows I’m Jewish."]
     },
     "brazil": {
-      "1": "Please scan your face in order to get to the game room.",
-      "2": "We are very innovative and use technology as much as possible, so when you gave us your passport at registration, we automatically uploaded your passport photo to our facial recognition software so we can control access to the VIP game room!"
+      "1": [
+        "Please scan your face in order to get to the game room.",
+        "We are very innovative and use technology as much as possible, so when you gave us your passport at registration, we automatically uploaded your passport photo to our facial recognition software so we can control access to the VIP game room!"
+      ]
     },
     "china": {
       "1": [
@@ -203,19 +188,108 @@
   },
   "next": "Next",
   "italy": {
+    "questions-titles": {
+      "1": "When using a digital device for personal reasons how often do you",
+      "6": "Which of the following falls within the Novartis definition of ‘Personal Information’? (select all that apply)",
+      "7": "Are you familiar with? (yes/no)",
+      "12": "At work, do you:",
+      "16": "Select job function",
+      "17": "Select your country"
+    },
     "questions": {
       "1": {
-        "label": "What is your name?"
+        "label": "read a privacy policy",
+        "options": ["Always", "Often", "Occasionally", "Rarely", "Never"]
       },
       "2": {
-        "label": "How old are you?"
+        "label": "customize cookie settings",
+        "options": ["Always", "Often", "Occasionally", "Rarely", "Never"]
       },
       "3": {
-        "label": "Do you know that these are just dummy questions until the developer gets the final scenario?",
+        "label": "customize other privacy settings (like how your info can be used)",
+        "options": ["Always", "Often", "Occasionally", "Rarely", "Never"]
+      },
+      "4": {
+        "label": "try to enter as little information as needed",
+        "options": ["Always", "Often", "Occasionally", "Rarely", "Never"]
+      },
+      "5": {
+        "label": "save credit card details or other Personal Information to your browser?",
+        "options": ["Always", "Often", "Occasionally", "Rarely", "Never"]
+      },
+      "6": {
+        "label": "",
         "options": [
-          "Yes",
-          "No"
+          "Phone number",
+          "Birthday",
+          "Home address",
+          "Information combined which could only identify one person on the planet, even if you don’t know their name (for example, country, college, employer, and age range)",
+          "GPS coordinates over time",
+          "Government identifier",
+          "IP address",
+          "Medical records",
+          "Anonymized data ",
+          "Cookies"
         ]
+      },
+      "7": {
+        "label": "The Novartis Data Privacy Policy",
+        "options": ["Yes", "No"]
+      },
+      "8": {
+        "label": "Our Data Privacy Principles",
+        "options": ["Yes", "No"]
+      },
+      "9": {
+        "label": "Who to contact for data privacy support?",
+        "options": ["Yes", "No"]
+      },
+      "10": {
+        "label": "When to apply the Privacy Principles?",
+        "options": ["Yes", "No"]
+      },
+      "11": {
+        "label": "What to do if you become aware of a data privacy incident?",
+        "options": ["Yes", "No"]
+      },
+      "12": {
+        "label": "Report when you receive Personal Information you should not receive, such as date of birth, home address, ethical origin, medical or salary information?",
+        "options": ["Always", "Often", "Occasionally", "Rarely", "Never"]
+      },
+      "13": {
+        "label": "Check the Novartis Data Privacy Policy when you have questions about handling  Personal Information?",
+        "options": ["Always", "Often", "Occasionally", "Rarely", "Never"]
+      },
+      "14": {
+        "label": "Contact the privacy team if you cannot address a privacy-related question yourself?",
+        "options": ["Always", "Often", "Occasionally", "Rarely", "Never"]
+      },
+      "15": {
+        "label": "Seek to collect as little information as possible when creating a survey, registration, or other form.",
+        "options": ["Always", "Often", "Occasionally", "Rarely", "Never"]
+      },
+      "16": {
+        "label": "",
+        "options": [
+          "People & Organization (P&O); ",
+          "Procurement; ",
+          "Legal, Novartis Business Assurance & Advisory (NBAA), Ethics, Risk & Compliance (ERC), Data Privacy; ",
+          "Finance; ",
+          "Global Health and Corporate Responsibility; Information Security & Risk Management (ISRM); ",
+          "Information Technology (IT); ",
+          "Marketing & Sales; ",
+          "Medical; ",
+          "Clinical Development & Trials & Drug Discovery; ",
+          "Communications & Engagement; ",
+          "Data Science;",
+          "Patient Services & Programs; ",
+          "Public Affairs; ",
+          "Other."
+        ]
+      },
+      "17": {
+        "label": "Select your country",
+        "options": []
       }
     }
   },
@@ -228,9 +302,7 @@
           "Yes – it is unprofessional",
           "Yes – it feels like this is private information that should not have been shared"
         ],
-        "correctOptions": [
-          2
-        ]
+        "correctOptions": [2]
       },
       "2": {
         "label": "What should you say to Franklin?",
@@ -240,9 +312,7 @@
           "The waiter’s notes should not have been on the menu.",
           "All of the above."
         ],
-        "correctOptions": [
-          3
-        ]
+        "correctOptions": [3]
       }
     }
   },
@@ -250,17 +320,11 @@
     "questions": {
       "1": {
         "label": "Did you realize your passport photo would be used in this way?",
-        "options": [
-          "Yes",
-          "No"
-        ]
+        "options": ["Yes", "No"]
       },
       "2": {
         "label": "Does this make you uncomfortable?",
-        "options": [
-          "Yes",
-          "No"
-        ]
+        "options": ["Yes", "No"]
       },
       "3": {
         "label": "Is the facial recognition in the privacy notice?"
@@ -283,6 +347,7 @@
       "high_score": "High score:",
       "seconds": "seconds",
       "ranking": "“Congratulations: You are number {ranking} on our eternal scoreboard!”",
+      "ranking-2": "Your name, game-score and other travel information (e.g., home-address, cabin-number, age and nationality) including your picture are saved and processed in our eternal scoreboard.",
       "statistics": "Statistics of former players:"
     }
   },
@@ -296,9 +361,7 @@
           "Yes, but I'm still not sure if everything is correct.",
           "No, I have to find another source of information."
         ],
-        "correctOptions": [
-          2
-        ]
+        "correctOptions": [2]
       },
       "2": {
         "options": [
@@ -306,10 +369,7 @@
           "A famous tennis player was seen with his new girlfriend!",
           "You have your privacy rights! In modern era it is illegal to use a private data without a permission. There must be a privacy rights section in every privacy notice guidelines."
         ],
-        "correctOptions": [
-          0,
-          2
-        ]
+        "correctOptions": [0, 2]
       }
     }
   },
@@ -329,10 +389,7 @@
       "description": "We take your privacy very seriously. This notice sets forth what we collect, what we share, and your right. For more details, please see the captain.",
       "table": {
         "title": "The Personal information we collect and how we use it",
-        "headers": [
-          "CATEGORY OF PERSONAL information",
-          "DESCRIPTION"
-        ],
+        "headers": ["CATEGORY OF PERSONAL information", "DESCRIPTION"],
         "content": [
           {
             "category": "Identification and contact information",
@@ -440,7 +497,7 @@
         },
         {
           "dir": "ltr",
-          "text": "<a target='_blank' class='blue--text text--lighten-1 font-weight-bold' href='https://www.google.com/'>Privacy Day Competition URL</a>",
+          "text": "<a target='_blank' class='blue--text text--lighten-1 font-weight-bold' href='https://forms.office.com/e/4VUZPkpvud'>Privacy Day Competition URL</a>",
           "isMaria": true
         }
       ]
@@ -571,5 +628,6 @@
       }
     }
   },
-  "player": "Player"
+  "player": "Player",
+  "finish": "Finish"
 }
