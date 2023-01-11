@@ -7,34 +7,15 @@
     :retain-focus="false"
   >
     <v-card class="info-screen border-2" light>
-      <score-board :model="model && localModel" :score="perc"></score-board>
-      <v-card-text class="px-4 pb-0">
+      <v-card-text class="px-4 pb-0 pt-4">
         <div
           class="primary grey--text text--lighten-2 font-weight-light px-5 py-5"
         >
-          <div class="text-center text-h4 pt-4 pb-6 font-weight-light">
-            <template v-if="perc === 100">
-              {{ $t('score-result.star3') }}
+          <slot name="subtitle">
+            <template v-for="(line, i) in subtitle">
+              <div :key="i" :inner-html.prop="line" class="mb-1"></div>
             </template>
-            <template v-else-if="perc > 50">
-              {{ $t('score-result.star2') }}
-            </template>
-            <template v-else-if="perc > 25">
-              {{ $t('score-result.star1') }}
-            </template>
-            <template v-else>
-              {{ $t('score-result.star0') }}
-            </template>
-          </div>
-          <div class="mb-4">
-            <template v-if="perc === 100">
-              <slot name="subtitle">
-                <template v-for="(line, i) in subtitle">
-                  <div :key="i" :inner-html.prop="line" class="mb-1"></div>
-                </template>
-              </slot>
-            </template>
-          </div>
+          </slot>
           <template v-if="hasPanels">
             <v-expansion-panels hover accordion>
               <v-expansion-panel v-if="hasLearningOutcome" class="elevation-0">
@@ -98,12 +79,8 @@
 </template>
 
 <script>
-import ScoreBoard from '~/components/ScoreBoard.vue';
 import SoundPlayer from '@/mixins/sound-player.js';
 export default {
-  components: {
-    ScoreBoard,
-  },
   mixins: [SoundPlayer],
   props: {
     model: {

@@ -1,48 +1,34 @@
 <template>
   <v-container class="game-egypt">
     <v-dialog
+      :retain-focus="false"
       :value="videos.intro.ended"
-      overlay-opacity="0"
-      persistent
       class="elevation-0"
       content-class="elevation-0 overflow-auto max-h-100"
-      :retain-focus="false"
       light
+      overlay-opacity="0"
+      persistent
     >
-      <v-card max-width="600" max-height="90vh" class="mx-auto">
+      <v-card class="mx-auto" max-height="85vh" max-width="600">
         <template v-if="model === 0">
           <v-img
             :src="require('@/assets/images/games/egypt/lunch_menu_empty.jpg')"
+            class="image-bg"
+            height="85vh"
           >
             <v-card-title
-              class="d-block text-center mt-16 pt-16 primary-lighten--text text-h2 font-weight-bold"
+              class="d-block text-center mt-16 pb-6 primary-lighten--text text-h4 font-weight-bold"
             >
               <span class="ls-10">
                 {{ $tr('lunch-menu.title') }}
               </span>
             </v-card-title>
-            <v-layout align-center justify-center>
-              <v-avatar tile max-width="45%" width="100%" height="auto">
-                <v-img
-                  :src="
-                    require('@/assets/images/games/egypt/lunch_menu_top.jpg')
-                  "
-                  contain
-                ></v-img>
-              </v-avatar>
-            </v-layout>
-            <v-card-text class="px-16 pt-16">
+            <v-card-text class="px-16">
               <template v-for="(item, i) in $tr('lunch-menu.items', 'array')">
-                <v-card
-                  :key="i"
-                  class="mb-16 transparent"
-                  flat
-                  tile
-                  @click="model = 1"
-                >
-                  <v-layout column>
+                <v-card :key="i" class="transparent mt-4" flat tile>
+                  <v-layout class="pb-4" column>
                     <div>
-                      <v-layout justify-space-between class="gap-2">
+                      <v-layout class="gap-2" justify-space-between>
                         <div
                           class="d-flex align-end text-h5 primary-lighten--text font-weight-medium f-khand"
                         >
@@ -57,8 +43,8 @@
                         </div>
                       </v-layout>
                     </div>
-                    <v-layout justify-center class="mt-2 mb-1">
-                      <v-avatar tile width="100%" height="auto">
+                    <v-layout class="mt-2 mb-1" justify-center>
+                      <v-avatar height="auto" tile width="100%">
                         <v-img
                           :src="
                             require('@/assets/images/games/egypt/lunch_menu_divider.jpg')
@@ -79,46 +65,55 @@
         <template v-else-if="model === 1 || model === 2">
           <v-card-text class="pt-6">
             <template v-for="(q, i) in questions">
-              <div
-                :key="i"
-                v-if="(model === 1 && i === 0) || (model === 2 && i === 1)"
-              >
+              <div v-if="model === i + 1" :key="i">
                 <div class="mb-2 text-body-1 font-weight-medium">
                   {{ $tr(`egypt.questions.${i + 1}.label`) }}
                 </div>
-                <template
-                  v-for="(answer, ai) in $tr(
-                    `egypt.questions.${i + 1}.options`,
-                    'array'
-                  )"
-                >
-                  <div
-                    :key="ai"
-                    :data-video-start="model === 1 ? `${stepId}-x2` : null"
-                    @click="nextStep"
+                <template v-for="(option, oi) in questions[i].options">
+                  <v-checkbox
+                    :key="oi"
+                    v-model="option.value"
+                    :error="hasErrors"
+                    :label="$tr(`egypt.questions.${i + 1}.options`)[oi]"
+                    :value="option.value"
+                    class="mb-1"
+                    color="primary"
+                    hide-details
                   >
-                    <v-checkbox
-                      v-model="q.value"
-                      :value="ai"
-                      color="primary"
-                      hide-details
-                      class="mb-1"
-                      :label="answer"
-                    >
-                    </v-checkbox>
-                  </div>
+                  </v-checkbox>
                 </template>
               </div>
             </template>
           </v-card-text>
         </template>
       </v-card>
+      <div class="d-flex mt-4 align-center justify-center">
+        <v-btn
+          v-if="model >= 1"
+          class="px-6 mr-8"
+          large
+          @click="backHandler"
+        >
+          <v-icon class="mr-2">mdi-keyboard-backspace</v-icon>
+          {{ model === 2 ? $t('previous') : $t('back_to_menu') }}
+        </v-btn>
+        <v-btn
+          v-if="model <= 2"
+          class="px-6"
+          color="primary"
+          large
+          @click="nextStep"
+        >
+          {{ $t('next') }}
+          <v-icon class="ml-2">mdi-keyboard-backspace mdi-rotate-180</v-icon>
+        </v-btn>
+      </div>
     </v-dialog>
     <score-board-inline
       :model="result.model"
-      :perc="result.perc"
       :passed="result.passed"
-      @restart="restart()"
+      :perc="result.perc"
+      @restart="restart"
     >
     </score-board-inline>
   </v-container>
@@ -128,6 +123,7 @@
 import ScoreBoardInline from '@/components/ScoreBoardInline.vue';
 import SoundPlayer from '@/mixins/sound-player.js';
 import ImpressStep from '@/mixins/impress-step.js';
+
 export default {
   components: {
     ScoreBoardInline,
@@ -136,16 +132,20 @@ export default {
   data: () => ({
     stepId: 'egypt',
     model: 0,
+    hasErrors: false,
     questions: [
       {
         question: '',
-        value: null,
-        correctValue: 2,
+        options: [{value: null}, {value: null}, {value: null}],
       },
       {
         question: '',
-        value: null,
-        correctValue: 3,
+        options: [
+          {value: null},
+          {value: null},
+          {value: null},
+          {value: null},
+        ],
       },
     ],
     videos: {
@@ -159,26 +159,59 @@ export default {
       passed: false,
     },
   }),
-  computed: {},
-  watch: {},
+  computed: {
+    isFormValid() {
+      if (!this.model) return true;
+      return this.questions[this.model - 1].options.every(({value}, index) => {
+        return this.$tr(`egypt.questions.${this.model}.correctOptions`).includes(index) ? value : !value
+      })
+    },
+  },
+  watch: {
+    questions: {
+      deep: true,
+      handler() {
+        this.hasErrors = false
+      }
+    }
+  },
   mounted() {
     this.$nuxt.$on(`video-${this.stepId}-ended`, this.videoEnded);
     this.$nuxt.$on(`video-${this.stepId}-x2-ended`, this.videoEnded);
   },
   methods: {
-    nextStep() {
+    nextStep(event) {
+      this.playGameSound('big-button-press-1');
+      event.target['data-video-start'] = null;
+
+      /** first step to just skip the menu **/
+      if (!this.model) {
+        this.resetValue()
+        this.hasErrors = false
+        this.model++
+        return;
+      }
+      /** questions error **/
+      if (!this.isFormValid) {
+        this.hasErrors = true
+        return;
+      }
+
+      /** go to the next step **/
       this.model++;
-      const v = this.model;
-      if (v === 2) {
+      if (this.model === 2) {
         this.$set(this.videos.intro, 'ended', false);
+        event.target['data-video-start'] = `${this.stepId}-x2`;
         this.$store.commit('PLAY_VIDEO', `${this.stepId}-x2`);
       }
-      if (v === 3) {
+      if (this.model === 3) {
         this.showScoreBoard();
       }
     },
-    stepEnter() {
-      this.resetValue();
+    backHandler() {
+      this.playGameSound('big-button-press-2');
+      this.resetValue()
+      this.model--
     },
     stepLeave() {
       this.$set(this.videos.intro, 'ended', false);
@@ -187,13 +220,15 @@ export default {
     },
     resetValue() {
       this.questions.forEach((q) => {
-        q.value = null;
+        q.options.forEach(option => {
+          option.value = null
+        })
       });
     },
     restart() {
       this.stepLeave();
       setTimeout(() => {
-        this.stepEnter();
+        this.resetValue();
         this.videoEnded();
       }, 100);
     },
@@ -207,12 +242,9 @@ export default {
     videoEnded() {
       this.$store.commit('STOP_VIDEOS');
       this.$set(this.videos.intro, 'ended', true);
-      // setTimeout(() => {
-      //   this.openIntro();
-      // }, 200);
     },
     async showScoreBoard() {
-      const score = this.getScore();
+      const score = 100
       try {
         const info = this.getActiveTaskInfo();
         const questions = [...this.questions].map((q, i) => {
@@ -234,7 +266,7 @@ export default {
         console.log(err);
       }
       this.$set(this.result, 'perc', score);
-      this.$set(this.result, 'passed', score === 100);
+      this.$set(this.result, 'passed', true);
       this.$store.commit('SET_SCORE_BOARD_DIALOG', {
         model: false,
         score,
@@ -242,17 +274,6 @@ export default {
       });
       this.stepLeave();
       this.showResultDialog();
-    },
-    getScore() {
-      const fullmark = this.questions.length;
-      let marks = 0;
-      this.questions.forEach((q) => {
-        if (q.value === q.correctValue) {
-          marks++;
-        }
-      });
-      const perc = Math.ceil((marks / fullmark) * 100);
-      return perc;
     },
     showResultDialog() {
       this.$set(this.result, 'model', true);

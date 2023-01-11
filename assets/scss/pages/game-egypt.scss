@@ -1,4 +1,8 @@
-.game-egypt {
+.image-bg {
+  ::v-deep .v-image__image {
+    background-repeat: round;
+    background-position: unset !important;
+  }
 }
 
 .game-container {
