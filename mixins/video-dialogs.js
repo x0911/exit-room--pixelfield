@@ -127,6 +127,26 @@ export default {
           isConfirmable: true,
         },
       ];
+      const bedroomX5 = [
+        {
+          speaker: this.$t('franklin'),
+          from: 1.5,
+          textArray: this.$tr('speeches.china.2', 'array'),
+          isConfirmable: true,
+        },
+        {
+          speaker: this.$t('player'),
+          from: 2.5,
+          textArray: this.$tr('speeches.china.3', 'array'),
+          isConfirmable: true,
+        },
+        {
+          speaker: this.$t('franklin'),
+          from: 3.2,
+          textArray: this.$tr('speeches.china.4', 'array'),
+          isConfirmable: true,
+        },
+      ];
       const usaX2 = [
         {
           speaker: this.$t('franklin'),
@@ -159,6 +179,7 @@ export default {
         'egypt-x2': dinningRoomX2,
         brazil: hallwayRoom,
         'china-x2': bedroomX2,
+        'china-x5': bedroomX5,
         'usa-x2': usaX2,
         'usa-x3': usaX3,
         'usa-x4': usaX4,

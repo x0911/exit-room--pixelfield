@@ -125,6 +125,16 @@
       "1": [
         "Hmm, that lunch menu incident was weird. I should do something about this!",
         "But first I need to find a ship ticket containing the privacy notice and examine the notice to see whether it was really legitimate to collect and share dietary restrictions with the other passengers."
+      ],
+      "2": ["I heard some noise in here", "is everything okay?"],
+      "3": [
+        "The dietary information was shared with other passengers which was not disclosed in the privacy notice",
+        "This is concerning"
+      ],
+      "4": [
+        "Hmmmm. That seems unlikely",
+        "Captain Maria takes privacy seriously.",
+        "Why don’t you go to the VIP game room to relax and take your mind off your worries. You are on vacation and should not worry about such things after all!"
       ]
     },
     "usa": {
@@ -414,7 +424,8 @@
     "italy": [],
     "egypt": [],
     "brazil": [],
-    "russia": []
+    "russia": [],
+    "china": []
   },
   "try-again": "Try again",
   "lunch-menu": {
@@ -462,5 +473,60 @@
       "yes": "Yes",
       "no": "No"
     }
-  }
+  },
+  "found-object": {
+    "title": "You've found a privacy symbol",
+    "find-x-more": "You need to find {x} more symbols",
+    "found-all": "You've found all privacy symbols!",
+    "items": {
+      "bridge": "Collect only what is necessary",
+      "eye": "Be transparent",
+      "handshake": "Use responsibly",
+      "hourglass": "Retain only as long as necessary",
+      "lock": "Protect and be vigilant"
+    }
+  },
+  "note-from-prev-passenger": [
+    "Beware",
+    "Something weird is going on here",
+    "Look under the alarm clock"
+  ],
+  "privacy-notice": {
+    "title": "Cruise Ship Privacy Notice",
+    "text-1": "We take your privacy very seriously. This notice sets forth what we collect, what we share, and your rights. For more details, please see the captain.",
+    "text-2": "The Personal Information we collect and how we use it",
+    "headers": {
+      "name": "CATEGORY OF PERSONAL Information",
+      "desc": "DESCRIPTION"
+    },
+    "items": {
+      "1": {
+        "name": "Identification and contact information",
+        "desc": "We collect information to identify and contact you, such as your name, gender, nationality, date of birth, mailing address, email address, telephone number, and passport information (such as passport number and expiration date). This information may be shared with employees of the ship to facilitate your voyage."
+      },
+      "2": {
+        "name": "Data to enhance your voyage",
+        "desc": "As a high-tech cruise line, we employ state-of-the-art technology and algorithms to offer you the best voyage possible. To do this, we may use cameras and other sensors to track your movement on the ship, how long you stay in various rooms, and how you interact with our employees and other passengers"
+      },
+      "3": {
+        "name": "Payment information",
+        "desc": "Information which you give us to execute the payment. Usually, this means the payment card details."
+      },
+      "4": {
+        "name": "Safety information",
+        "desc": "We are committed to ensuring you have a safe voyage! We will ask you to let us know if you have any food allergies, and we also have a nurse on staff in the event of sea-sickness or other ailment. If you visit the nurse, we may collect information about any current or prior health conditions. This information will only be used by cruise employees for the purposes of ensuring your safety."
+      }
+    },
+    "questions": {
+      "q1": {
+        "text": "Does the privacy notice contain any information in connection with collecting data covering dietary restrictions?",
+        "options": ["YES", "NO"]
+      },
+      "q2": {
+        "text": "Should the privacy notice have been shared with the other passengers?",
+        "options": ["YES", "NO"]
+      }
+    }
+  },
+  "player": "Player"
 }

@@ -313,3 +313,46 @@ $fillables: width, height;
     filter: hue-rotate(360deg);
   }
 }
+
+.w-full {
+  width: 100%;
+}
+
+.h-full {
+  height: 100%;
+}
+
+.v-data-table {
+  &__wrapper {
+    table {
+      thead {
+        tr {
+          &:first-child {
+            th {
+              span {
+                white-space: pre;
+              }
+            }
+          }
+          th {
+            border-bottom: none !important;
+            font-size: 10px !important;
+          }
+        }
+      }
+      tbody {
+        tr {
+          &:hover {
+            background: transparent !important;
+          }
+          td {
+            border-bottom: none !important;
+            font-size: 10px !important;
+            padding-top: 12px !important;
+            padding-bottom: 16px !important;
+          }
+        }
+      }
+    }
+  }
+}

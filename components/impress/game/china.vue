@@ -2,11 +2,13 @@
   <div>
     <v-container>
       <v-dialog
-        :value="videos.intro.ended"
+        :value="
+          videos.intro.ended && (step !== 3 || foundObject.name === 'note')
+        "
         overlay-opacity="0"
         persistent
         class="elevation-0"
-        content-class="elevation-0"
+        content-class="elevation-0 overflow-auto max-h-100"
         :retain-focus="false"
         scrollable
         max-width="800"
@@ -85,6 +87,173 @@
             </v-btn>
           </v-card-actions>
         </v-card>
+        <v-card
+          v-show="step === 4"
+          max-width="800"
+          max-height="90vh"
+          class="mx-auto"
+        >
+          <v-img
+            :src="require('@/assets/images/games/china/privacy_notice_bg.jpg')"
+          >
+            <v-card-title
+              class="d-block text-center mt-16 pt-12 text-h4 font-weight-bold"
+            >
+              <span class="ls-10">
+                {{ $tr('privacy-notice.title') }}
+              </span>
+            </v-card-title>
+            <v-sheet
+              color="transparent"
+              class="pt-0 mx-auto"
+              tile
+              max-width="600"
+            >
+              <v-card-subtitle
+                class="mt-16 pt-4 pb-0 d-block text-center text-caption"
+              >
+                {{ $tr('privacy-notice.text-1') }}
+              </v-card-subtitle>
+              <v-card-subtitle class="d-block text-center text-caption">
+                {{ $tr('privacy-notice.text-2') }}
+              </v-card-subtitle>
+            </v-sheet>
+            <v-card-text class="px-16 pt-6">
+              <v-data-table
+                hide-default-footer
+                :headers="privacyNoticeHeaders"
+                :items="privacyNoticeItems"
+                disable-sort
+                disable-filtering
+                disable-pagination
+                class="transparent"
+              ></v-data-table>
+            </v-card-text>
+          </v-img>
+          <v-card-actions class="d-flex justify-end gap-6 pt-4">
+            <v-btn
+              dark
+              color="primary"
+              class="px-6"
+              x-large
+              depressed
+              tile
+              @click="
+                nextStep();
+                playGameSound('big-button-press-1');
+              "
+            >
+              <span class="me-3">
+                {{ $t('next') }}
+              </span>
+              <v-icon large>mdi-keyboard-backspace mdi-rotate-180</v-icon>
+            </v-btn>
+          </v-card-actions>
+        </v-card>
+        <v-card
+          v-show="step === 5"
+          tile
+          flat
+          class="transparent mx-auto"
+          max-width="600"
+        >
+          <v-card
+            max-height="90vh"
+            light
+            tile
+            flat
+            class="mx-auto info-screen primary border-3"
+          >
+            <v-card-text class="pt-8 white--text">
+              <template v-for="(q, i) in questions">
+                <div :key="i">
+                  <div class="white--text">
+                    {{ $t(`privacy-notice.questions.${q.question}.text`) }}
+                  </div>
+                  <v-radio-group v-model="q.value">
+                    <template
+                      v-for="(option, i) in $tr(
+                        `privacy-notice.questions.${q.question}.options`,
+                        'array'
+                      )"
+                    >
+                      <v-radio
+                        :key="`o-${i}`"
+                        :label="option"
+                        :value="i"
+                        color="white"
+                        dark
+                        class="white--text"
+                      ></v-radio>
+                    </template>
+                  </v-radio-group>
+                </div>
+              </template>
+            </v-card-text>
+          </v-card>
+          <v-card-actions class="d-flex justify-end gap-6 pt-4">
+            <v-btn
+              dark
+              color="primary"
+              class="px-6"
+              x-large
+              depressed
+              tile
+              :disabled="nextDisabled"
+              :data-video-start="`${stepId}-x5`"
+              @click="nextStep"
+            >
+              <span class="me-3">
+                {{ $t('next') }}
+              </span>
+              <v-icon large>mdi-keyboard-backspace mdi-rotate-180</v-icon>
+            </v-btn>
+          </v-card-actions>
+        </v-card>
+        <v-card
+          v-show="foundObject.name === 'note'"
+          class="transparent"
+          tile
+          flat
+        >
+          <div>
+            <v-img
+              contain
+              :src="require('@/assets/images/games/china/note.png')"
+            >
+              <v-layout justify-center fill-height>
+                <div
+                  class="f-hand text-h4 font-weight-medium pt-12 px-16 black--text"
+                >
+                  <template
+                    v-for="(line, i) in $tr(
+                      'note-from-prev-passenger',
+                      'array'
+                    )"
+                  >
+                    <div :key="i" :inner-html.prop="line" class="lh-3-7"></div>
+                  </template>
+                </div>
+              </v-layout>
+            </v-img>
+          </div>
+          <v-card-actions class="mt-4 px-6 pb-4">
+            <v-spacer></v-spacer>
+            <v-btn
+              color="primary"
+              class="px-4"
+              tile
+              large
+              depressed
+              @click="foundObject.name = ''"
+            >
+              {{ $t('next') }}
+              <v-icon class="ms-2"
+                >mdi-keyboard-backspace mdi-rotate-180</v-icon
+              >
+            </v-btn>
+          </v-card-actions>
+        </v-card>
       </v-dialog>
       <score-board-inline
         :model="result.model"
@@ -92,54 +261,106 @@
         :passed="result.passed"
         @restart="restart()"
       >
-        <template #answers>
-          <template v-for="(q, i) in questions">
-            <div :key="i" :class="{ 'mt-2': i > 0 }">
-              <div
-                class="font-weight-medium mb-1"
-                :inner-html.prop="
-                  $t(`china.assignment.questions.${q.question}.text`)
-                "
-              ></div>
-              <template v-if="q.multiple">
-                <template v-for="(qv, qvi) in q.correctValue">
-                  <div
-                    :key="`qvi-${qvi}`"
-                    :inner-html.prop="
-                      $t(`china.assignment.questions.${q.question}.options`)[qv]
-                    "
-                  ></div>
-                </template>
-              </template>
-              <template v-else>
-                <div
-                  :inner-html.prop="
-                    $t(`china.assignment.questions.${q.question}.options`)[
-                      q.correctValue
-                    ]
-                  "
-                ></div>
-              </template>
-            </div>
-          </template>
-          <v-divider class="my-2"></v-divider>
-          <template v-for="(seType, i) in seTypes">
-            <div :key="`se-type-${i}`" :class="{ 'mt-2': i > 0 }">
-              <div
-                class="font-weight-medium mb-1"
-                :inner-html.prop="$t(`china.se-types.${seType}`)"
-              ></div>
-              <div
-                :inner-html.prop="$t(`china.se-types-answers.${seType}`)"
-              ></div>
-            </div>
-          </template>
-        </template>
       </score-board-inline>
     </v-container>
-    <div class="items-container">
-      <!--  -->
+    <div v-if="step === 3 && videos.intro.ended" class="items-container">
+      <template v-for="(item, i) in rotatableItems">
+        <div
+          :key="i"
+          class="item"
+          :class="[`item-${item.name}`, `dir-${item.dir}`]"
+          @click="rotateItem(i)"
+        >
+          <img
+            :alt="`item-${item.name}-${item.dir}`"
+            :src="
+              require(`@/assets/images/games/china/items/${item.name}_${item.dir}.png`)
+            "
+            :draggable="false"
+          />
+        </div>
+      </template>
     </div>
+    <v-dialog
+      v-if="foundObject.name !== 'note'"
+      v-model="foundObject.model"
+      overlay-opacity="0"
+      persistent
+      class="elevation-0"
+      content-class="elevation-0"
+      :retain-focus="false"
+      scrollable
+      max-width="600"
+    >
+      <div>
+        <v-card light tile flat class="transparent mx-auto">
+          <div class="mb-4">
+            <v-card light tile flat class="info-screen py-3 border-3">
+              <v-card-text>
+                <v-layout justify-center column align-center class="gap-2">
+                  <div class="mb-4 text-center">
+                    <v-avatar tile size="120">
+                      <v-img
+                        v-if="foundObject.name"
+                        :src="
+                          require(`@/assets/images/games/china/symbols/${foundObject.name}.svg`)
+                        "
+                        contain
+                      ></v-img>
+                    </v-avatar>
+                    <div class="f-tech text-body-1">
+                      {{ $t(`found-object.items.${foundObject.name}`) }}
+                    </div>
+                  </div>
+                  <div class="w-full mb-5">
+                    <v-divider></v-divider>
+                  </div>
+                  <template
+                    v-if="foundObject.items.length === foundObject.count"
+                  >
+                    <!-- Found All Symbols -->
+                    <div class="text-h5">
+                      {{ $t('found-object.found-all') }}
+                    </div>
+                  </template>
+                  <template v-else>
+                    <div class="text-h5">
+                      {{ $t('found-object.title') }}
+                    </div>
+                    <div>
+                      {{
+                        $t('found-object.find-x-more', {
+                          x: foundObject.count - foundObject.items.length,
+                        })
+                      }}
+                    </div>
+                  </template>
+                </v-layout>
+              </v-card-text>
+            </v-card>
+          </div>
+        </v-card>
+        <v-card-actions class="mt-4 px-6 pb-4">
+          <v-spacer></v-spacer>
+          <v-btn
+            color="primary"
+            class="px-4"
+            tile
+            large
+            depressed
+            :data-video-start="
+              foundObject.items.length === foundObject.count
+                ? `${stepId}-x4`
+                : ''
+            "
+            @click="hideFoundObjectModel()"
+          >
+            {{ $t('next') }}
+            <v-icon class="ms-2">mdi-keyboard-backspace mdi-rotate-180</v-icon>
+          </v-btn>
+        </v-card-actions>
+      </div>
+    </v-dialog>
   </div>
 </template>
 
@@ -155,7 +376,6 @@ export default {
   data: () => ({
     stepId: 'china',
     step: 1,
-    showEmail: false,
     videos: {
       intro: {
         ended: false,
@@ -163,17 +383,14 @@ export default {
     },
     questions: [
       {
-        type: 'radio',
         question: 'q1',
         value: null,
         correctValue: 0,
       },
       {
-        type: 'radio',
-        multiple: true,
         question: 'q2',
-        value: [],
-        correctValue: [2, 3],
+        value: null,
+        correctValue: 1,
       },
     ],
     questionModel: 0,
@@ -207,27 +424,83 @@ export default {
       passed: false,
     },
     rotatableItems: [
-      'alarm',
-      'boat',
-      'book',
-      'candle',
-      'charger',
-      'cup',
-      'key',
-      'pillow',
+      {
+        name: 'alarm',
+        dir: 'front',
+        correctDir: 'left',
+        object: 'hourglass',
+        isOpened: false,
+      },
+      {
+        name: 'boat',
+        dir: 'front',
+        correctDir: 'back',
+        object: 'bridge',
+        isOpened: false,
+      },
+      {
+        name: 'book',
+        dir: 'front',
+        correctDir: 'back',
+        object: 'handshake',
+        isOpened: false,
+      },
+      {
+        name: 'candle',
+        dir: 'front',
+        correctDir: 'right',
+        object: 'note',
+        isOpened: false,
+      },
+      {
+        name: 'charger',
+        dir: 'front',
+        correctDir: 'back',
+        object: null,
+        isOpened: false,
+      },
+      {
+        name: 'cup',
+        dir: 'front',
+        correctDir: 'bot',
+        object: 'eye',
+        isOpened: false,
+      },
+      {
+        name: 'key',
+        dir: 'front',
+        correctDir: 'left',
+        object: 'lock',
+        isOpened: false,
+      },
+      {
+        name: 'pillow',
+        dir: 'front',
+        correctDir: 'back',
+        object: null,
+        isOpened: false,
+      },
     ],
+    dirs: ['front', 'back', 'left', 'right', 'top', 'bot'],
+    foundObject: {
+      model: false,
+      name: '',
+      items: [],
+      count: 5,
+    },
   }),
   computed: {
     nextDisabled() {
-      const index = this.questionModel;
-      const question = this.questions[index];
-      if (
-        (!question?.value && question?.value !== 0) ||
-        (Array.isArray(question?.value) && question?.value.length === 0)
-      ) {
-        return true;
-      }
-      return false;
+      let disabled = false;
+      this.questions.forEach((question) => {
+        if (
+          (!question?.value && question?.value !== 0) ||
+          question.value !== question.correctValue
+        ) {
+          disabled = true;
+        }
+      });
+      return disabled;
     },
     prevDisabled() {
       const index = this.questionModel;
@@ -267,11 +540,42 @@ export default {
       // Exclude takenAnswers
       // return array.filter((val) => !this.takenAnswers.includes(val));
     },
+    privacyNoticeHeaders() {
+      return [
+        {
+          text: this.$t('privacy-notice.headers.name'),
+          value: 'name',
+        },
+        {
+          text: this.$t('privacy-notice.headers.desc'),
+          value: 'desc',
+        },
+      ];
+    },
+    privacyNoticeItems() {
+      const items = [];
+      for (let i = 0; i < 4; i++) {
+        items.push({
+          name: this.$t(`privacy-notice.items.${i + 1}.name`),
+          desc: this.$t(`privacy-notice.items.${i + 1}.desc`),
+        });
+      }
+      return items;
+    },
   },
   mounted() {
     this.$nuxt.$on(`video-${this.stepId}-ended`, this.introEnded);
     this.$nuxt.$on(`video-${this.stepId}-x2-ended`, () => {
       this.introEnded(true);
+    });
+    this.$nuxt.$on(`video-${this.stepId}-x3-ended`, () => {
+      this.introEnded(true);
+    });
+    this.$nuxt.$on(`video-${this.stepId}-x4-ended`, () => {
+      this.introEnded(true);
+    });
+    this.$nuxt.$on(`video-${this.stepId}-x5-ended`, () => {
+      this.finish();
     });
   },
   methods: {
@@ -282,7 +586,6 @@ export default {
       this.$set(this.videos.intro, 'ended', false);
       this.$set(this.result, 'model', false);
       this.$set(this, 'step', 1);
-      this.$set(this, 'showEmail', false);
       this.$set(this, 'questionModel', 0);
       this.resetValue();
     },
@@ -296,6 +599,10 @@ export default {
       Object.keys(seTypesAnswers).forEach((key) => {
         this.$set(this.seTypesAnswers, key, null);
       });
+      this.rotatableItems.forEach((_, i) => {
+        this.$set(this.rotatableItems[i], 'dir', 'front');
+      });
+      this.$set(this.foundObject, 'items', []);
     },
     restart() {
       this.stepLeave();
@@ -389,36 +696,7 @@ export default {
       this.showResultDialog();
     },
     getScore() {
-      const questions = this.questions;
-      const arraysEqual = (arr1, arr2) => {
-        if (arr1.length !== arr2.length) {
-          return false;
-        }
-        for (let i = 0; i < arr1.length; i++) {
-          if (!arr2.includes(arr1[i])) {
-            return false;
-          }
-        }
-        return true;
-      };
-      let max = questions.length;
-      let correct = questions.filter(
-        (q) =>
-          (q.multiple && arraysEqual(q.correctValue, q.value)) ||
-          (!q.multiple && q.value === q.correctValue)
-      ).length;
-      // Also, Get score of match game
-      const additionalLength = this.seTypes.length;
-      max += additionalLength;
-      // get number of `value=key` in object `seTypesAnswers`
-      const keys = Object.keys(this.seTypesAnswers);
-      keys.forEach((key) => {
-        if (this.seTypesAnswers[key] === key) {
-          correct++;
-        }
-      });
-      const score = Math.ceil((correct / max) * 100);
-      return score;
+      return 100;
     },
     showResultDialog() {
       this.$set(this.result, 'model', true);
@@ -426,12 +704,10 @@ export default {
     viewEmail() {
       this.playGameSound('big-button-press-2');
       this.$set(this, 'step', 2);
-      this.$set(this, 'showEmail', true);
     },
     replyToEmail() {
       this.playGameSound('big-button-press-2');
       this.$set(this, 'step', 3);
-      this.$set(this, 'showEmail', false);
     },
     nextStep() {
       this.step++;
@@ -448,6 +724,51 @@ export default {
         setTimeout(() => {
           this.replaceBg('china-v3');
         }, 1000);
+      }
+      if (this.step === 4) {
+        this.$set(this.videos.intro, 'ended', false);
+        this.$store.commit('PLAY_VIDEO', `${this.stepId}-x4`);
+        setTimeout(() => {
+          this.replaceBg('china-v4');
+        }, 1000);
+      }
+      if (this.step === 6) {
+        this.$set(this.videos.intro, 'ended', false);
+        this.$store.commit('PLAY_VIDEO', `${this.stepId}-x5`);
+        setTimeout(() => {
+          this.replaceBg('china-v5');
+        }, 1000);
+      }
+    },
+    rotateItem(i = 0) {
+      const foundObjects = this.foundObject.items;
+      const item = this.rotatableItems[i];
+      const dirs = this.dirs;
+      let nextDirIndex = dirs.indexOf(item.dir) + 1;
+      if (nextDirIndex === dirs.length) {
+        nextDirIndex = 0;
+      }
+      const nextDir = dirs[nextDirIndex];
+      item.dir = nextDir;
+      if (
+        item.dir === item.correctDir &&
+        item.object &&
+        !foundObjects.includes(item.object)
+      ) {
+        this.showObject(item.object);
+      }
+    },
+    showObject(name = '') {
+      this.$set(this.foundObject, 'name', name);
+      if (name !== 'note') {
+        this.foundObject.items.push(name);
+        this.$set(this.foundObject, 'model', true);
+      }
+    },
+    hideFoundObjectModel() {
+      this.$set(this.foundObject, 'model', false);
+      if (this.foundObject.items.length === this.foundObject.count) {
+        this.nextStep();
       }
     },
   },
