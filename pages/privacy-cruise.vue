@@ -207,7 +207,7 @@ export default {
         {
           component: 'GameChina',
           id: 'china',
-          videos: ['china', 'china-x2', 'china-x3', 'china-x4'],
+          videos: ['china', 'china-x2', 'china-x3', 'china-x4', 'china-x5'],
           x: `-${w}`,
           y: `${h}`,
           z: '-1500',
