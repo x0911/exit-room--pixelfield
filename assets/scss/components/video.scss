@@ -38,6 +38,7 @@
   display: none !important;
   -webkit-appearance: none !important;
 }
+
 *::-webkit-media-controls-start-playback-button {
   display: none !important;
   -webkit-appearance: none !important;
@@ -52,18 +53,22 @@ video::-webkit-media-controls {
   opacity: 0 !important;
   display: none !important;
 }
+
 video::-webkit-media-controls-overlay-play-button {
   display: none !important;
 }
+
 video {
   &::-webkit-media-controls {
     display: none !important;
   }
+
   &::-webkit-media-controls-start-playback-button {
     display: none !important;
     -webkit-appearance: none !important;
   }
 }
+
 *::-webkit-media-controls-panel {
   display: none !important;
   -webkit-appearance: none !important;
@@ -77,4 +82,25 @@ video {
 *::-webkit-media-controls-start-playback-button {
   display: none !important;
   -webkit-appearance: none !important;
+}
+
+.thought-bubble-container {
+  position: relative;
+  margin: 0 !important;
+  height: auto;
+  width: auto;
+
+  .thought-bubble-background {
+    position: absolute;
+    top: 0;
+    height: 100%;
+    width: 95%;
+  }
+
+  .thought-bubble-content {
+    padding-left: 7rem !important;
+    padding-right: 3rem !important;
+    padding-bottom: 5rem !important;
+    z-index: 1000;
+  }
 }

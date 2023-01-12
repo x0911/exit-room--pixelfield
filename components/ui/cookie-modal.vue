@@ -1,10 +1,10 @@
 <template>
   <v-dialog
     :value="value"
-    persistent
-    max-width="600"
-    scrollable
     content-class="elevation-0"
+    max-width="600"
+    persistent
+    scrollable
   >
     <v-card class="transparent">
       <v-card-text class="pa-0 info-screen v-card darken border-3">
@@ -15,7 +15,7 @@
           <v-divider></v-divider>
           <v-card-text class="pt-5">
             <template v-for="(line, i) in $t('cookies.text')">
-              <div :key="i" class="mb-3" :inner-html.prop="line"></div>
+              <div :key="i" :inner-html.prop="line" class="mb-3"></div>
             </template>
           </v-card-text>
         </v-card>
@@ -23,11 +23,11 @@
       <v-card-actions class="mt-4 px-6">
         <v-spacer></v-spacer>
         <v-btn
+          class="px-5"
           color="primary"
-          tile
           depressed
           large
-          class="px-5"
+          tile
           @click="acceptCookies"
         >
           {{ $t('accept') }}
@@ -64,10 +64,11 @@ export default {
         } else {
           this.$emit('input', true);
         }
-      }, 2000);
+      }, 1000);
     },
     acceptCookies() {
       localStorage.setItem(`privacy-game-cookie-accepted`, 'true');
+      this.$nuxt.$emit(`impress-step-enter-splash`);
       this.$emit('input', false);
     },
   },

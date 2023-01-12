@@ -1,7 +1,7 @@
 <template>
   <div class="px-4">
     <!-- preload images - Browser will not load images twice -->
-    <div style="opacity: 0; z-index: -1" class="p-fixed pointer-event-none">
+    <div class="p-fixed pointer-event-none" style="opacity: 0; z-index: -1">
       <v-img
         v-for="(lang, i) in langs"
         :key="i"
@@ -11,100 +11,93 @@
     <!-- ../preload images -->
     <v-bottom-sheet
       v-model="model"
-      persistent
-      hide-overlay
-      max-width="810"
+      :retain-focus="false"
       class="elevation-0"
       content-class="elevation-0"
       fullscreen
+      hide-overlay
+      max-width="810"
       no-click-animation
-      :retain-focus="false"
+      persistent
     >
-      <v-layout align-center justify-center align-content-center fill-height>
+      <v-layout align-center align-content-center fill-height justify-center>
         <v-slide-y-reverse-transition group hide-on-leave>
           <div v-if="!hasLoaded" key="loader" class="splash-screen_loading">
             <lottie-animation
-              loop
-              :width="100"
               :height="100"
               :path="require('@/assets/animated/spinner.json')"
+              :width="100"
+              loop
             ></lottie-animation>
           </div>
-          <div v-else-if="step === 0" key="start-game-button">
-            <v-btn
-              x-large
-              color="primary"
-              depressed
-              class="py-8 px-10"
-              data-video-start="game-intro-0"
-              @click="play0Video()"
-            >
-              {{ $t('start_game') }}
-              <v-icon class="ms-3">
-                mdi-keyboard-backspace mdi-rotate-180
-              </v-icon>
-            </v-btn>
-          </div>
-          <div v-else-if="step === 1" key="languages" style="max-width: 90vw">
-            <div class="text-center mb-3 language_title">
-              <template v-for="(w, i) in wordsToSplit">
-                <div :key="i" class="word">
-                  <template v-for="(letter, li) in w.split('')">
-                    <span
-                      :key="`${letter}_${li}`"
-                      class="no-user-select white--text"
-                      :style="`background-color: ${colors[li % colors.length]}`"
-                    >
-                      {{ letter }}
-                    </span>
-                  </template>
-                </div>
-                <div v-if="i !== wordsToSplit.length - 1" :key="`spacer_${i}`" class="word">
-                  <span> </span>
-                </div>
-              </template>
-            </div>
-            <v-card
-              class="info-screen darken mx-auto"
-              tile
-              flat
-              max-width="900"
-              min-width="400"
-              light
-            >
-              <v-card-text class="d-flex justify-center px-0 py-2">
-                <swiper :options="swiperOptions">
-                  <template v-for="(lang, i) in langs">
-                    <swiper-slide :key="i" style="width: auto !important">
-                      <v-card
-                        :class="{
-                          'transparent text-center': true,
-                        }"
-                        width="90"
-                        tile
-                        flat
-                        @click="selectLang(lang.value)"
+          <div v-else-if="step === 0" key="loader">
+            <div key="languages" style="max-width: 90vw">
+              <div class="text-center mb-3 language_title">
+                <template v-for="(w, i) in wordsToSplit">
+                  <div :key="i" class="word">
+                    <template v-for="(letter, li) in w.split('')">
+                      <span
+                        :key="`${letter}_${li}`"
+                        :style="`background-color: ${
+                          colors[li % colors.length]
+                        }`"
+                        class="no-user-select white--text"
                       >
-                        <div>
+                        {{ letter }}
+                      </span>
+                    </template>
+                  </div>
+                  <div
+                    v-if="i !== wordsToSplit.length - 1"
+                    :key="`spacer_${i}`"
+                    class="word"
+                  >
+                    <span> </span>
+                  </div>
+                </template>
+              </div>
+              <v-card
+                class="info-screen darken mx-auto"
+                flat
+                light
+                max-width="1000"
+                min-width="400"
+                tile
+              >
+                <v-card-text class="d-flex justify-center px-0 py-2">
+                  <swiper :options="swiperOptions">
+                    <template v-for="(lang, i) in langs">
+                      <swiper-slide :key="i" style="width: auto !important">
+                        <v-card
+                          :class="{
+                            'transparent text-center': true,
+                          }"
+                          flat
+                          tile
+                          width="90"
+                          @click="selectLang($event, lang.value)"
+                        >
                           <div>
-                            <v-avatar size="70">
-                              <v-img
-                                :src="
-                                  require(`@/assets/images/langs/${lang.image}.svg`)
-                                "
-                              ></v-img>
-                            </v-avatar>
+                            <div>
+                              <v-avatar size="70">
+                                <v-img
+                                  :src="
+                                    require(`@/assets/images/langs/${lang.image}.svg`)
+                                  "
+                                ></v-img>
+                              </v-avatar>
+                            </div>
+                            <div class="no-user-select white--text">
+                              {{ lang.name }}
+                            </div>
                           </div>
-                          <div class="no-user-select white--text">
-                            {{ lang.name }}
-                          </div>
-                        </div>
-                      </v-card>
-                    </swiper-slide>
-                  </template>
-                </swiper>
-              </v-card-text>
-            </v-card>
+                        </v-card>
+                      </swiper-slide>
+                    </template>
+                  </swiper>
+                </v-card-text>
+              </v-card>
+            </div>
           </div>
         </v-slide-y-reverse-transition>
       </v-layout>
@@ -116,6 +109,7 @@
 import LottieAnimation from '@/components/LottieAnimation.vue';
 import SoundPlayer from '@/mixins/sound-player.js';
 import ImpressStep from '@/mixins/impress-step.js';
+
 export default {
   name: 'SplashScreen',
   components: {
@@ -216,20 +210,18 @@ export default {
       this.$set(this, 'model', false);
       this.$set(this, 'step', 0);
     },
-    selectLang(locale = 'en') {
+    selectLang(event, locale = 'en') {
       this.playGameSound('big-button-press-1');
       localStorage.setItem('data-protection-language', locale);
       this.$i18n.setLocale(locale);
       this.$set(this, 'locale', locale);
-      window.impressAPI.goto('map');
+      this.$set(this, 'step', 1);
+      event.target['data-video-start'] = 'game-intro-0';
       this.$store.dispatch('updateLang', locale);
+      this.play0Video();
     },
     video0Ended() {
-      this.$set(this, 'step', 1);
-      this.$store.commit('SET_HINT', this.$t('choose-lang-alert'));
-      setTimeout(() => {
-        this.$set(this, 'model', true);
-      }, 1200);
+      window.impressAPI.goto('map')
     },
     play0Video() {
       this.$set(this, 'model', false);
@@ -241,5 +233,5 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-@import '~/assets/scss/pages/splash';
+@import '~/assets/scss/pages/splash.scss';
 </style>

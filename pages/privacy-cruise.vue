@@ -1,41 +1,41 @@
 <template>
-  <v-app data-app :class="{ 'is-vertical': isVertical }">
-    <login-dialog v-model="isLoggedIn" />
+  <v-app :class="{ 'is-vertical': isVertical }" data-app>
+    <login-dialog v-model="isLoggedIn"/>
     <template v-if="isLoggedIn">
+      <cookie-modal v-model="cookieModel"/>
       <v-main>
         <v-sheet
           class="transparent"
-          tile
           elevation="0"
-          min-height="100%"
-          min-width="100%"
           height="100%"
-          width="100%"
           max-height="100%"
           max-width="100%"
+          min-height="100%"
+          min-width="100%"
+          tile
+          width="100%"
         >
           <v-layout
             align-center
-            justify-center
             align-content-center
             fill-height
+            justify-center
           >
             <!-- To show transition-step-video -->
             <!-- data-transition-duration="0" -->
             <div
               id="impress"
-              data-transition-duration="1000"
-              :data-width="$vuetify.breakpoint.width"
               :data-height="$vuetify.breakpoint.height"
+              :data-width="$vuetify.breakpoint.width"
               data-max-scale="1"
               data-min-scale="1"
               data-perspective="1000"
+              data-transition-duration="1000"
             >
               <template v-for="(step, i) in steps">
                 <div
                   :id="step.id"
                   :key="i"
-                  class="step"
                   :class="{
                     'custom-active': activeStep === step.id || step.active,
                     'custom-next':
@@ -48,11 +48,11 @@
                   :data-x="step.x"
                   :data-y="step.y"
                   :data-z="step.z"
+                  class="step"
                   data-transition-duration="1000"
                 >
                   <div
                     :key="`step-bg-${i}`"
-                    class="app-bg"
                     :class="{
                       [`${activeStep}`]: true,
                       'is-vertical': isVertical,
@@ -65,22 +65,22 @@
                         ? roomsBgs[step.id]
                         : step.id) +
                       '-bg.jpg')}') !important`"
+                    class="app-bg"
                   ></div>
                   <template v-for="(vid, vi) in step.videos">
                     <fullscreen-video
                       :key="`step-video-${i}-${vi}`"
                       :ref="`video-${vid}`"
+                      :can-play="videos[vid].canPlay"
                       :class="{ 'opacity-0': !videos[vid].canPlay }"
                       :path="videos[vid].path"
                       :video-id="vid"
-                      :can-play="videos[vid].canPlay"
                       @ended="videoEnded(vid, i)"
                     ></fullscreen-video>
                   </template>
-                  <component :is="step.component" />
+                  <component :is="step.component"/>
                 </div>
               </template>
-              <cookie-modal v-model="cookieModel" />
             </div>
           </v-layout>
         </v-sheet>
@@ -155,7 +155,7 @@ export default {
   layout: 'impress',
   data: () => ({
     isLoggedIn: true,
-    cookieModel: false,
+    cookieModel: null,
     navigation: {
       active: null,
       next: null,
@@ -278,12 +278,6 @@ export default {
     activeStep(v) {
       this.fixMapBg(v);
     },
-    isLoggedIn: {
-      immediate: true,
-      handler(value) {
-        console.log(value);
-      },
-    },
   },
   mounted() {
     const $this = this;
@@ -298,8 +292,11 @@ export default {
         'impress:stepenter',
         function (event) {
           const stepId = event?.target?.id;
+          const isSplashStep = stepId === 'splash';
           $this.activateStep(stepId);
-          $this.$nuxt.$emit(`impress-step-enter-${stepId}`);
+          if ((isSplashStep && $this.cookieModel === false) || !isSplashStep) {
+            $this.$nuxt.$emit(`impress-step-enter-${stepId}`);
+          }
           $this.setImpressNavigation();
         }
       );
@@ -379,6 +376,7 @@ export default {
     height: 100%;
   }
 }
+
 .step {
   opacity: 0;
   transition: opacity 1s;
@@ -388,10 +386,12 @@ export default {
   top: 0;
   left: 0;
 }
+
 .future,
 .past {
   opacity: 0;
 }
+
 .step.active,
 .step.present,
 .step.custom-active,
@@ -399,14 +399,17 @@ export default {
 .step.custom-next {
   opacity: 1 !important;
 }
+
 .present .rotating {
   transform: rotate(-10deg);
   transition-delay: 0.25s;
 }
+
 .impress-on-overview .step {
   opacity: 1;
   cursor: pointer;
 }
+
 .app-bg {
   position: fixed;
   left: 0;
@@ -415,6 +418,7 @@ export default {
   height: 100%;
   transition: all 1s ease-in-out;
 }
+
 .app-bg,
 .theme--dark.v-application,
 .theme--light.v-application {
@@ -423,6 +427,7 @@ export default {
   background-position: top !important;
   background-color: initial !important;
 }
+
 .app-bg,
 .theme--dark.v-application.is-vertical,
 .theme--light.v-application.is-vertical {

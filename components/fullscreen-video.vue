@@ -3,16 +3,16 @@
     <video
       v-if="path"
       ref="video"
+      :autoplay="false"
       :class="{
         video: true,
         'is-vertical': isVertical,
         'full-video': fullVideo,
       }"
-      playsinline
-      :autoplay="false"
-      preload="metadata"
-      :controls="false"
       :contextmenu="false"
+      :controls="false"
+      playsinline
+      preload="metadata"
       @ended="ended()"
     >
       <source
@@ -25,19 +25,31 @@
       <v-bottom-sheet
         :key="`${dialog.id}-${i}`"
         v-model="dialog.model"
-        max-width="600"
-        hide-overlay
-        scrollable
-        persistent
-        content-class="elevation-0 overflow-auto max-h-100"
         class="elevation-0"
+        content-class="elevation-0 overflow-auto max-h-100"
+        hide-overlay
+        max-width="720"
+        persistent
+        scrollable
       >
         <div class="pb-4">
           <v-card
-            class="info-screen darken px-2 border-3 pb-4 d-flex align-center"
+            :class="{
+              'info-screen darken border-3': !isPlayerThinking(dialog),
+              'thought-bubble-container': isPlayerThinking(dialog)
+            }"
+            class="transparent px-2 pb-4 d-flex align-center"
           >
-            <v-card-text class="pt-6 pb-2 text-justify h-full">
-              <v-layout align-start justify-start class="gap-4">
+            <img
+              v-if="isPlayerThinking(dialog)"
+              :src="require('~/assets/images/thought_bubble.png')"
+              class="thought-bubble-background"
+            />
+            <v-card-text
+              :class="{ 'thought-bubble-content': isPlayerThinking(dialog) }"
+              class="pt-12 pb-4 text-justify h-full"
+            >
+              <v-layout align-start class="gap-4" justify-start>
                 <v-flex v-if="dialog.avatar" shrink>
                   <v-avatar size="50">
                     <v-img
@@ -67,12 +79,12 @@
                         </div>
                       </template>
                       <vue-typed-js
+                        :contentType="'html'"
+                        :showCursor="false"
+                        :strings="[dialog.textArray]"
                         :typeSpeed="
                           (dialog.duration / dialog.text.length) * 750
                         "
-                        :strings="[dialog.textArray]"
-                        :contentType="'html'"
-                        :showCursor="false"
                       >
                         <div class="typing"></div>
                       </vue-typed-js>
@@ -85,11 +97,11 @@
           <v-card-actions v-if="dialog.isConfirmable">
             <v-spacer></v-spacer>
             <v-btn
-              color="primary"
               class="px-6"
-              tile
-              large
+              color="primary"
               depressed
+              large
+              tile
               @click="hideVideoDialog(dialog.id, true)"
             >
               {{ $tr('next') }}
@@ -105,6 +117,7 @@
 import IsVerticalMixin from '@/mixins/is-vertical.js';
 import SoundPlayer from '@/mixins/sound-player.js';
 import VideoDialogs from '@/mixins/video-dialogs.js';
+
 export default {
   mixins: [IsVerticalMixin, SoundPlayer, VideoDialogs],
   props: {
@@ -296,6 +309,9 @@ export default {
       this.dialogs.forEach((dialog) => {
         dialog.model = false;
       });
+    },
+    isPlayerThinking({speaker}) {
+      return speaker === this.$t('player-is-thinking');
     },
     ended(playSound = false) {
       if (playSound) {

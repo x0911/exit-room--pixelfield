@@ -34,10 +34,21 @@
   .word {
     font-size: 20px;
     font-weight: bold;
+
     span {
       display: inline-block;
       width: 30px;
       margin-bottom: 10px;
     }
   }
+}
+
+::v-deep .swiper-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+::v-deep .swiper-slide {
+  height: fit-content;
 }
