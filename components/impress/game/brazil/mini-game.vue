@@ -59,24 +59,24 @@ export default {
       lines: [
         {
           cameras: [
-            {status: CAMERA_STATUS.HIDDEN},
-            {status: CAMERA_STATUS.HIDDEN},
-            {status: CAMERA_STATUS.HIDDEN},
+            { status: CAMERA_STATUS.HIDDEN },
+            { status: CAMERA_STATUS.HIDDEN },
+            { status: CAMERA_STATUS.HIDDEN },
           ],
         },
         {
           cameras: [
-            {status: CAMERA_STATUS.HIDDEN},
-            {status: CAMERA_STATUS.HIDDEN},
-            {status: CAMERA_STATUS.HIDDEN},
-            {status: CAMERA_STATUS.HIDDEN},
+            { status: CAMERA_STATUS.HIDDEN },
+            { status: CAMERA_STATUS.HIDDEN },
+            { status: CAMERA_STATUS.HIDDEN },
+            { status: CAMERA_STATUS.HIDDEN },
           ],
         },
         {
           cameras: [
-            {status: CAMERA_STATUS.HIDDEN},
-            {status: CAMERA_STATUS.HIDDEN},
-            {status: CAMERA_STATUS.HIDDEN},
+            { status: CAMERA_STATUS.HIDDEN },
+            { status: CAMERA_STATUS.HIDDEN },
+            { status: CAMERA_STATUS.HIDDEN },
           ],
         },
       ],
@@ -97,16 +97,17 @@ export default {
   watch: {
     timeRemainingSecs(value) {
       if (!value) {
-        this.scores.push(this.score)
+        this.scores.push(this.score);
       }
-    }
+    },
   },
   mounted() {
     this.$store.commit('SET_INSTRUCTIONS', {
-      model: true,
+      bottomModel: true,
       title: this.$t('brazil.mini_game.title'),
       steps: ['brazil.mini_game.description'],
       nextText: this.$t('start'),
+      image: 'avatars/franklin.jpg',
       nextMethod: this.startGame,
     });
   },
@@ -122,7 +123,9 @@ export default {
         this.$store.commit('SET_INSTRUCTIONS', {
           model: true,
           title: this.$t('brazil.mini_game.title'),
-          steps: [this.$t('brazil.mini_game.score', {score: this.getHighestScore})],
+          steps: [
+            this.$t('brazil.mini_game.score', { score: this.getHighestScore }),
+          ],
           nextText: this.$t('finish'),
           nextMethod: this.finishGame,
           cancelable: this.canRestart,
@@ -138,7 +141,7 @@ export default {
       const randomHideSecs = randomHide >= 1000 ? randomHide : 1000;
 
       if (randomLine <= 2) {
-        const {cameras} = this.lines[randomLine];
+        const { cameras } = this.lines[randomLine];
         const selectedCamera = cameras[randomCamera];
         selectedCamera.status = CAMERA_STATUS.VISIBLE;
         setTimeout(() => {
@@ -162,7 +165,7 @@ export default {
       this.startGame();
     },
     resetCameras() {
-      this.lines.forEach(({cameras}) => {
+      this.lines.forEach(({ cameras }) => {
         cameras.forEach((camera) => {
           camera.status = CAMERA_STATUS.HIDDEN;
         });
