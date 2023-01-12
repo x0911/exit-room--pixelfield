@@ -50,101 +50,106 @@
             flat
           >
             <v-card-text class="pt-6 pb-2 text-justify h-full">
-              <v-row>
-                <v-col v-if="image" cols="4" align-self="center">
-                  <v-avatar tile size="140">
+              <v-layout align-start justify-start class="gap-4">
+                <v-flex v-if="image" shrink>
+                  <v-avatar size="50">
                     <v-img
                       :src="require(`@/assets/images/${image}`)"
                       @error="image = null"
                     ></v-img>
                   </v-avatar>
-                </v-col>
-                <v-col :cols="image ? '8' : '12'" align-self="center">
-                  <div v-if="title" class="yellow--text mb-2">
-                    {{ title }}
-                  </div>
+                </v-flex>
+                <v-flex>
                   <div>
-                    <v-scroll-y-transition group hide-on-leave>
-                      <template v-for="(s, i) in steps">
-                        <div v-if="step === i + 1" :key="`step-${i}`">
-                          <div
-                            v-if="$t(`${s}`) && typeof $t(`${s}`) === 'object'"
-                          >
-                            <template
-                              v-for="(line, li) in Object.values($t(`${s}`))"
+                    <div v-if="title" class="yellow--text mb-2">
+                      {{ title }}
+                    </div>
+                    <div>
+                      <v-scroll-y-transition group hide-on-leave>
+                        <template v-for="(s, i) in steps">
+                          <div v-if="step === i + 1" :key="`step-${i}`">
+                            <div
+                              v-if="
+                                $t(`${s}`) && typeof $t(`${s}`) === 'object'
+                              "
                             >
-                              <div :key="`line-${li}`">
-                                <div v-if="spans">
-                                  <template
-                                    v-for="(span, si) in line.split(' ')"
-                                  >
-                                    <v-icon
-                                      v-if="
-                                        `${span[0]}${span[span.length - 1]}` ===
-                                        '##'
-                                      "
-                                      :key="`icon-${si}`"
+                              <template
+                                v-for="(line, li) in Object.values($t(`${s}`))"
+                              >
+                                <div :key="`line-${li}`">
+                                  <div v-if="spans">
+                                    <template
+                                      v-for="(span, si) in line.split(' ')"
                                     >
-                                      {{ span }}
-                                    </v-icon>
-                                    <span v-else :key="`span-${si}`">
-                                      {{ span }}
-                                    </span>
+                                      <v-icon
+                                        v-if="
+                                          `${span[0]}${
+                                            span[span.length - 1]
+                                          }` === '##'
+                                        "
+                                        :key="`icon-${si}`"
+                                      >
+                                        {{ span }}
+                                      </v-icon>
+                                      <span v-else :key="`span-${si}`">
+                                        {{ span }}
+                                      </span>
+                                    </template>
+                                  </div>
+                                  <template v-else>
+                                    <v-list-item
+                                      v-if="lineSuffix"
+                                      dark
+                                      class="ma-0 pa-0 wrap"
+                                    >
+                                      <v-list-item-icon class="my-3 me-2">
+                                        <v-icon>{{ lineSuffix }}</v-icon>
+                                      </v-list-item-icon>
+                                      <v-list-item-content class="px-0 py-1">
+                                        <v-list-item-title>
+                                          <div :inner-html.prop="line"></div>
+                                        </v-list-item-title>
+                                      </v-list-item-content>
+                                    </v-list-item>
+                                    <div
+                                      v-else
+                                      :class="{ 'mt-1': li !== 0 }"
+                                      :inner-html.prop="line"
+                                    ></div>
                                   </template>
                                 </div>
-                                <template v-else>
-                                  <v-list-item
-                                    v-if="lineSuffix"
-                                    dark
-                                    class="ma-0 pa-0 wrap"
-                                  >
-                                    <v-list-item-icon class="my-3 me-2">
-                                      <v-icon>{{ lineSuffix }}</v-icon>
-                                    </v-list-item-icon>
-                                    <v-list-item-content class="px-0 py-1">
-                                      <v-list-item-title>
-                                        <div :inner-html.prop="line"></div>
-                                      </v-list-item-title>
-                                    </v-list-item-content>
-                                  </v-list-item>
-                                  <div
-                                    v-else
-                                    :class="{ 'mt-1': li !== 0 }"
-                                    :inner-html.prop="line"
-                                  ></div>
-                                </template>
-                              </div>
-                            </template>
-                          </div>
-                          <div v-else>
-                            <div v-if="spans">
-                              <template
-                                v-for="(span, si) in $t(`${s}`).split(' ')"
-                              >
-                                <v-icon
-                                  v-if="
-                                    `${span[0]}${span[span.length - 1]}` ===
-                                    '##'
-                                  "
-                                  :key="`icon-${si}`"
-                                >
-                                  {{
-                                    span.replace(/#/g, '').replace(/@/g, ' ')
-                                  }}
-                                </v-icon>
-                                <span v-else :key="`span-${si}`">
-                                  {{ span }}
-                                </span>
                               </template>
                             </div>
-                            <div v-else :inner-html.prop="$t(`${s}`)"></div>
+                            <div v-else>
+                              <div v-if="spans">
+                                <template
+                                  v-for="(span, si) in $t(`${s}`).split(' ')"
+                                >
+                                  <v-icon
+                                    v-if="
+                                      `${span[0]}${span[span.length - 1]}` ===
+                                      '##'
+                                    "
+                                    :key="`icon-${si}`"
+                                  >
+                                    {{
+                                      span.replace(/#/g, '').replace(/@/g, ' ')
+                                    }}
+                                  </v-icon>
+                                  <span v-else :key="`span-${si}`">
+                                    {{ span }}
+                                  </span>
+                                </template>
+                              </div>
+                              <div v-else :inner-html.prop="$t(`${s}`)"></div>
+                            </div>
                           </div>
-                        </div>
-                      </template>
-                    </v-scroll-y-transition>
+                        </template>
+                      </v-scroll-y-transition>
+                    </div>
                   </div>
-                </v-col>
-              </v-row>
+                </v-flex>
+              </v-layout>
             </v-card-text>
           </v-card>
         </v-col>

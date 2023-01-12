@@ -20,13 +20,13 @@
       <template v-else-if="isLoading === false">
         <face-scan
           v-if="step === 'face-scan'"
-          @next="step = 'countries-score'"
+          @next="step = 'survey'"
         />
         <countries-scores
           v-if="step === 'countries-score'"
-          @next="step = 'survey'"
+          @next="step = 'mini-game'"
         />
-        <brazil-survey v-if="step === 'survey'" @next="step = 'mini-game'" />
+        <brazil-survey v-if="step === 'survey'" @next="step = 'countries-score'" />
         <mini-game
           v-if="step === 'mini-game'"
           @next="
