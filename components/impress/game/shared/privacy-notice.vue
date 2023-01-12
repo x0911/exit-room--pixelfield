@@ -8,7 +8,6 @@
     persistent
   >
     <v-card
-      v-click-outside="() => $emit('input', false)"
       class="mx-auto overflow-auto"
       light
       max-height="80vh"
@@ -90,7 +89,7 @@ export default {
   props: {
     value: {
       type: Boolean,
-      default: false
+      default: null
     }
   }
 };

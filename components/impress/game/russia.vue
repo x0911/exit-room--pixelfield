@@ -7,9 +7,10 @@
       class="elevation-0"
       content-class="elevation-0"
       :retain-focus="false"
-      max-width="700"
+      max-width="900"
     >
-      <v-card class="transparent" tile flat>
+      <puzzle-game v-if="isPuzzle" />
+      <v-card v-else class="transparent" tile flat>
         <v-card-text class="px-0 py-2 info-screen v-card darken border-3">
           <v-card class="transparent" tile flat min-height="200">
             <v-card-text>
@@ -137,8 +138,10 @@ import ScoreBoardInline from '@/components/ScoreBoardInline.vue';
 import SoundPlayer from '@/mixins/sound-player.js';
 import ImpressStep from '@/mixins/impress-step.js';
 import DotFlashing from '@/components/dot-flashing.vue';
+import PuzzleGame from "~/components/impress/game/usa/puzzle-game";
 export default {
   components: {
+    PuzzleGame,
     ScoreBoardInline,
     DotFlashing,
   },
@@ -146,6 +149,7 @@ export default {
   data: () => ({
     stepId: 'russia',
     loading: false,
+    isPuzzle: true,
     videos: {
       intro: {
         ended: false,

@@ -87,8 +87,17 @@ export default {
       this.step === 4 ? await this.finishStep() : this.step++;
     },
     async finishStep() {
+      this.playGameSound('big-button-press-1');
       await this.addLoading(2000);
-      this.$emit('next');
+      this.$store.commit('SET_SCORE_BOARD_DIALOG', {
+        model: true,
+        score: 100,
+        game: 'usa',
+        next: () => {
+          this.$emit('next');
+          window.impressAPI.goto('map');
+        },
+      });
     },
   },
 };

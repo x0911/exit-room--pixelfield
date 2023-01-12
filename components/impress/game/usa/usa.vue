@@ -7,7 +7,7 @@
       class="elevation-0"
       content-class="elevation-0"
       :retain-focus="false"
-      max-width="900"
+      max-width="700"
     >
       <div v-if="isLoading" class="splash-screen_loading">
         <lottie-animation
@@ -28,9 +28,11 @@
       />
       <missing-piece
         v-else-if="isMissingPieceOpen"
-        @next="isMissingPieceOpen = false"
+        @next="
+          isMissingPieceOpen = false;
+          isControlsOpen = false;
+        "
       />
-      <puzzle-game v-else-if="isPuzzleOpen" @next="finishPuzzleGame" />
       <privacy-notice v-else-if="isPrivacyOpen" v-model="isPrivacyOpen" />
       <template v-else-if="isControlsOpen">
         <div class="d-flex justify-end">
@@ -42,8 +44,8 @@
             fixed
             bottom
             style="bottom: 30px; right: 20rem"
-            :disabled="!hasCompleteSurvey"
-            @click="startPuzzleGame"
+            :disabled="isPrivacyOpen === null"
+            @click="isQuestionsOpen = true"
           >
             <span class="mr-3">{{ $t('start') }}</span>
             <v-icon large>mdi-keyboard-backspace mdi-rotate-180</v-icon>
@@ -77,7 +79,6 @@
 
 <script>
 import ScoreBoardInline from '~/components/ScoreBoardInline.vue';
-import PuzzleGame from '~/components/impress/game/usa/puzzle-game';
 import SoundPlayer from '~/mixins/sound-player.js';
 import ImpressStep from '~/mixins/impress-step.js';
 import PrivacyNotice from '~/components/impress/game/shared/privacy-notice';
@@ -88,15 +89,13 @@ export default {
   components: {
     UsaSurvey,
     PrivacyNotice,
-    PuzzleGame,
     MissingPiece,
     ScoreBoardInline,
   },
   mixins: [ImpressStep, SoundPlayer],
   data: () => ({
     stepId: 'usa',
-    isPrivacyOpen: false,
-    isPuzzleOpen: false,
+    isPrivacyOpen: null,
     isQuestionsOpen: false,
     isControlsOpen: true,
     isMissingPieceOpen: false,
@@ -117,11 +116,6 @@ export default {
     isMissingPieceOpen(value) {
       if (!value) {
         this.hasCompleteSurvey = true;
-      }
-    },
-    isPrivacyOpen(value) {
-      if (!value) {
-        this.isQuestionsOpen = true;
       }
     },
   },
@@ -149,20 +143,7 @@ export default {
     },
     openPrivacyNoticeHandler() {
       this.playGameSound('big-button-press-1');
-      this.isPrivacyOpen = true
-    },
-    startPuzzleGame() {
-      this.playGameSound('big-button-press-1');
-      this.isLoading = true;
-
-      setTimeout(() => {
-        this.isLoading = false;
-        this.isPuzzleOpen = true;
-      }, 1000);
-    },
-    finishPuzzleGame() {
-      this.isPuzzleOpen = false;
-      this.isControlsOpen = false;
+      this.isPrivacyOpen = true;
     },
   },
 };

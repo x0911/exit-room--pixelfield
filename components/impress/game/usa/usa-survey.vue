@@ -2,11 +2,7 @@
   <v-card class="pa-6 mx-auto" flat light max-width="600" rounded tile>
     <v-card-text class="pa-4">
       <div class="text-body-1 mb-4 font-weight-bold">
-        {{
-          step === 1
-            ? $t('usa.questions.1.label')
-            : $t('choose-headlines')
-        }}
+        {{ step === 1 ? $t('usa.questions.1.label') : $t('choose-headlines') }}
       </div>
       <v-radio-group
         v-if="step === 1"
@@ -15,11 +11,12 @@
         hide-details
       >
         <v-radio
-          v-for="option in options"
+          v-for="(option, index) in options"
           :key="option.id"
           :label="option.text"
           :value="option.id"
-          class="ma-0 mb-2 caption"
+          class="ma-0 caption"
+          :class="{ 'pb-4': index !== options.length - 1 }"
           color="primary"
         />
       </v-radio-group>
@@ -80,15 +77,18 @@ export default {
       step: 1,
       options: [],
       hasError: false,
-      correctFirstAnswer: null
+      correctFirstAnswer: null,
     };
   },
   computed: {
     canProceedNext() {
       if (this.step === 1) {
-        return this.correctFirstAnswer === this.$t(`usa.questions.${this.step}.correctOptions`)[0]
+        return (
+          this.correctFirstAnswer ===
+          this.$t(`usa.questions.${this.step}.correctOptions`)[0]
+        );
       }
-      return this.options.every(({value}, index) =>
+      return this.options.every(({ value }, index) =>
         this.$t(`usa.questions.${this.step}.correctOptions`).includes(index)
           ? value
           : !value

@@ -349,15 +349,7 @@ export default {
     },
     validatePuzzleHandler() {
       this.playGameSound('big-button-press-1');
-      this.$store.commit('SET_SCORE_BOARD_DIALOG', {
-        model: true,
-        score: 100,
-        game: 'usa',
-        next: () => {
-          this.$emit('next');
-          window.impressAPI.goto('map');
-        },
-      });
+      this.$emit('next');
     },
     restartPuzzleHandler() {
       this.showCode = false;
