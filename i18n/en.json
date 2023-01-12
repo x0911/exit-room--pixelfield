@@ -194,16 +194,18 @@
         "1": {
           "title": "Missing Piece game",
           "a1": "You have to find the privacy notice in this room."
-        },
-        "2": {
-          "title": "Puzzle game",
-          "a1": "You have to assemble a puzzle of 16 pieces, which will result in the image of the captain and at the same time the entry code to the cabin."
         }
       }
     },
     "russia": {
       "title": "Captain's Cabin",
-      "a1": "You're going to have a conversation with <b>Capitan Maria</b>."
+      "a1": "You're going to have a conversation with <b>Capitan Maria</b>.",
+      "games": {
+        "1": {
+          "title": "Puzzle game",
+          "a1": "You have to assemble a puzzle of 16 pieces, which will result in the image of the captain and at the same time the entry code to the cabin."
+        }
+      }
     }
   },
   "next": "Next",
@@ -451,7 +453,6 @@
     }
   },
   "usa": {
-    "complete_puzzle": "Please complete the puzzle to get the code",
     "questions": {
       "1": {
         "label": "Have you find the mention of using passport photos for biometrics?",
@@ -520,6 +521,7 @@
     }
   },
   "russia": {
+    "complete_puzzle": "Please complete the puzzle to get the code",
     "task-2": {
       "msgs": [
         {

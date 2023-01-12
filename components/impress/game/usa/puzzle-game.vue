@@ -3,13 +3,13 @@
     <div v-if="showCode" class="code"></div>
     <v-row>
       <div class="text-body-1 mb-2 font-weight-bold">
-        {{ $t('usa.complete_puzzle') }}
+        {{ $t('russia.complete_puzzle') }}
       </div>
     </v-row>
     <v-row>
       <v-col class="d-flex align-center justify-start pl-0" cols="6">
         <v-img
-          :src="require('~/assets/images/games/usa/puzzle/puzzle_template.png')"
+          :src="require('~/assets/images/games/russia/puzzle/puzzle_template.png')"
           max-width="360"
         >
           <div class="puzzle-images">
@@ -37,13 +37,13 @@
           </div>
         </v-img>
       </v-col>
-      <v-col cols="6">
-        <div
-          draggable="true"
-          class="puzzle-items"
-          @drop.prevent="dropReturnPuzzleItem"
-          @dragover.prevent
-        >
+      <v-col
+        draggable="true"
+        @drop.prevent="dropReturnPuzzleItem"
+        @dragover.prevent
+        cols="6"
+      >
+        <div class="puzzle-items">
           <div
             v-for="image in randomImages"
             :key="image.id"
@@ -80,7 +80,7 @@
           {{ $t('restart') }}
         </v-btn>
         <v-btn
-          :disabled="!isCodeValid"
+          :disabled="false"
           class="px-6 mt-4"
           color="primary"
           large
@@ -100,7 +100,7 @@ import SoundPlayer from '~/mixins/sound-player';
 const IMAGES = [
   {
     id: 1,
-    src: require(`~/assets/images/games/usa/puzzle/1.png`),
+    src: require(`~/assets/images/games/russia/puzzle/1.png`),
     styles: {
       width: '124px',
       height: '93px',
@@ -108,7 +108,7 @@ const IMAGES = [
   },
   {
     id: 2,
-    src: require(`~/assets/images/games/usa/puzzle/2.png`),
+    src: require(`~/assets/images/games/russia/puzzle/2.png`),
     styles: {
       width: '98px',
       height: '124px',
@@ -117,7 +117,7 @@ const IMAGES = [
   },
   {
     id: 3,
-    src: require(`~/assets/images/games/usa/puzzle/3.png`),
+    src: require(`~/assets/images/games/russia/puzzle/3.png`),
     styles: {
       width: '160px',
       height: '94px',
@@ -126,7 +126,7 @@ const IMAGES = [
   },
   {
     id: 4,
-    src: require(`~/assets/images/games/usa/puzzle/4.png`),
+    src: require(`~/assets/images/games/russia/puzzle/4.png`),
     styles: {
       height: '126px',
       left: '267px',
@@ -134,7 +134,7 @@ const IMAGES = [
   },
   {
     id: 5,
-    src: require(`~/assets/images/games/usa/puzzle/5.png`),
+    src: require(`~/assets/images/games/russia/puzzle/5.png`),
     styles: {
       height: '165px',
       width: '93px',
@@ -143,7 +143,7 @@ const IMAGES = [
   },
   {
     id: 6,
-    src: require(`~/assets/images/games/usa/puzzle/6.png`),
+    src: require(`~/assets/images/games/russia/puzzle/6.png`),
     styles: {
       left: '56px',
       top: '86px',
@@ -153,7 +153,7 @@ const IMAGES = [
   },
   {
     id: 7,
-    src: require(`~/assets/images/games/usa/puzzle/7.png`),
+    src: require(`~/assets/images/games/russia/puzzle/7.png`),
     styles: {
       left: '177px',
       top: '56px',
@@ -163,7 +163,7 @@ const IMAGES = [
   },
   {
     id: 8,
-    src: require(`~/assets/images/games/usa/puzzle/8.png`),
+    src: require(`~/assets/images/games/russia/puzzle/8.png`),
     styles: {
       left: '235px',
       top: '86px',
@@ -173,7 +173,7 @@ const IMAGES = [
   },
   {
     id: 9,
-    src: require(`~/assets/images/games/usa/puzzle/9.png`),
+    src: require(`~/assets/images/games/russia/puzzle/9.png`),
     styles: {
       top: '179px',
       height: '94px',
@@ -182,7 +182,7 @@ const IMAGES = [
   },
   {
     id: 10,
-    src: require(`~/assets/images/games/usa/puzzle/10.png`),
+    src: require(`~/assets/images/games/russia/puzzle/10.png`),
     styles: {
       left: '88px',
       top: '147px',
@@ -192,7 +192,7 @@ const IMAGES = [
   },
   {
     id: 11,
-    src: require(`~/assets/images/games/usa/puzzle/11.png`),
+    src: require(`~/assets/images/games/russia/puzzle/11.png`),
     styles: {
       left: '146px',
       top: '179px',
@@ -202,7 +202,7 @@ const IMAGES = [
   },
   {
     id: 12,
-    src: require(`~/assets/images/games/usa/puzzle/12.png`),
+    src: require(`~/assets/images/games/russia/puzzle/12.png`),
     styles: {
       left: '265px',
       top: '145px',
@@ -212,7 +212,7 @@ const IMAGES = [
   },
   {
     id: 13,
-    src: require(`~/assets/images/games/usa/puzzle/13.png`),
+    src: require(`~/assets/images/games/russia/puzzle/13.png`),
     styles: {
       top: '235px',
       height: '125px',
@@ -221,7 +221,7 @@ const IMAGES = [
   },
   {
     id: 14,
-    src: require(`~/assets/images/games/usa/puzzle/14.png`),
+    src: require(`~/assets/images/games/russia/puzzle/14.png`),
     styles: {
       left: '56px',
       top: '266px',
@@ -231,7 +231,7 @@ const IMAGES = [
   },
   {
     id: 15,
-    src: require(`~/assets/images/games/usa/puzzle/15.png`),
+    src: require(`~/assets/images/games/russia/puzzle/15.png`),
     styles: {
       left: '179px',
       top: '234px',
@@ -241,7 +241,7 @@ const IMAGES = [
   },
   {
     id: 16,
-    src: require(`~/assets/images/games/usa/puzzle/16.png`),
+    src: require(`~/assets/images/games/russia/puzzle/16.png`),
     styles: {
       left: '233px',
       top: '267px',
@@ -281,11 +281,6 @@ export default {
     },
   },
   created() {
-    this.$store.commit('SET_INSTRUCTIONS', {
-      model: true,
-      title: this.$t('screens.usa.games.2.title'),
-      steps: ['screens.usa.games.2.a1'],
-    });
     this.restartPuzzleHandler();
   },
   methods: {
@@ -310,22 +305,22 @@ export default {
         const { id, src } = JSON.parse(imageData);
         const image = this.correctImages.find((image) => image.id === id);
         const imageId = +src.split('/').pop().split('.png')[0];
-        const { styles } = this.images.find(image => image.id === imageId)
+        const { styles } = this.images.find((image) => image.id === imageId);
         this.randomImages.push({
           id: imageId,
-          src: require(`~/assets/images/games/usa/puzzle/${imageId}.png`),
-          styles
+          src: require(`~/assets/images/games/russia/puzzle/${imageId}.png`),
+          styles,
         });
         delete image.src;
       }
-      this.updateImages()
+      this.updateImages();
     },
     updatePuzzleImage(imageSource, imageDestination) {
       const rImageIdx = this.randomImages.findIndex(
         (rImage) => rImage.id === imageSource.id
       );
       this.randomImages.splice(rImageIdx, 1);
-      imageDestination.src = require(`~/assets/images/games/usa/puzzle/${imageSource.id}.png`);
+      imageDestination.src = require(`~/assets/images/games/russia/puzzle/${imageSource.id}.png`);
       imageDestination.styles =
         imageSource.id === imageDestination.id
           ? imageSource.styles
@@ -333,7 +328,7 @@ export default {
               width: '90px',
               height: '90px',
             };
-      this.updateImages()
+      this.updateImages();
     },
     getCommonStyles(image, index) {
       return {
@@ -371,7 +366,7 @@ export default {
     updateImages() {
       this.correctImages = [...this.correctImages];
       this.randomImages = [...this.randomImages];
-    }
+    },
   },
 };
 </script>

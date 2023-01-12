@@ -9,8 +9,8 @@
       :retain-focus="false"
       max-width="900"
     >
-      <puzzle-game v-if="isPuzzle" />
-      <v-card v-else class="transparent" tile flat>
+      <puzzle-game v-if="step === 1" @next="puzzleNextHandler" />
+      <v-card v-else-if="step === 2" class="transparent" tile flat>
         <v-card-text class="px-0 py-2 info-screen v-card darken border-3">
           <v-card class="transparent" tile flat min-height="200">
             <v-card-text>
@@ -127,7 +127,7 @@
       :model="result.model"
       :perc="result.perc"
       :passed="result.passed"
-      @restart="restart()"
+      @restart="restart"
     >
     </score-board-inline>
   </v-container>
@@ -149,7 +149,7 @@ export default {
   data: () => ({
     stepId: 'russia',
     loading: false,
-    isPuzzle: true,
+    step: 0,
     videos: {
       intro: {
         ended: false,
@@ -218,6 +218,17 @@ export default {
       this.$set(this, 'suggestions', []);
       this.$set(this, 'chatEnded', false);
       this.$set(this, 'userScammed', false);
+    },
+    puzzleNextHandler() {
+      this.$store.commit('SET_INSTRUCTIONS', {
+        model: true,
+        title: this.$t('screens.russia.title'),
+        steps: ['screens.russia.a1'],
+        nextMethod: () => {
+          this.step++;
+          this.initChat();
+        },
+      });
     },
     pushMsg(msg) {
       const obj = { ...msg, show: false, seen: false };
@@ -304,14 +315,6 @@ export default {
         pushMsg(msgs[i], i);
       });
     },
-    toggleOption(active, toggle) {
-      if (active) {
-        this.playGameSound('button-press');
-      } else {
-        this.playGameSound('big-button-press-1');
-      }
-      toggle();
-    },
     restart() {
       this.stepLeave();
       setTimeout(() => {
@@ -322,9 +325,9 @@ export default {
     openIntro() {
       this.$store.commit('SET_INSTRUCTIONS', {
         model: true,
-        title: this.$t('screens.russia.title'),
-        steps: ['screens.russia.a1'],
-        nextMethod: this.showChat,
+        title: this.$t('screens.russia.games.1.title'),
+        steps: ['screens.russia.games.1.a1'],
+        nextMethod: () => this.step++,
       });
     },
     goBackToMap() {
@@ -336,9 +339,6 @@ export default {
       setTimeout(() => {
         this.openIntro();
       }, 200);
-    },
-    showChat() {
-      this.initChat();
     },
     async finish() {
       let score = this.getScore();
