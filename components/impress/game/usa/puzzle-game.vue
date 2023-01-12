@@ -20,6 +20,8 @@
                 ...getCommonStyles(image, index),
                 ...image.styles,
               }"
+              draggable="true"
+              @dragstart="dragReturnPuzzleItem($event, image)"
               @dragenter="dragEnterHandler(image)"
               @dragleave="dragLeaveHandler(image)"
               @drop.prevent="dropPuzzleItem($event, image)"
@@ -36,14 +38,21 @@
         </v-img>
       </v-col>
       <v-col cols="6">
-        <div class="puzzle-items">
+        <div
+          draggable="true"
+          class="puzzle-items"
+          @drop.prevent="dropReturnPuzzleItem"
+          @dragover.prevent
+        >
           <div
             v-for="image in randomImages"
             :key="image.id"
             draggable="true"
             @dragstart="dragPuzzleItem($event, image)"
+            @drop.prevent="dropPuzzleItem($event, image)"
+            @dragover.prevent
           >
-            <img :src="image.src" height="72px" role="button" width="72px"/>
+            <img :src="image.src" height="72px" role="button" width="72px" />
           </div>
         </div>
       </v-col>
@@ -258,7 +267,7 @@ export default {
   },
   computed: {
     isPuzzleValid() {
-      return this.correctImages.every(({id, src}) => src?.includes(id));
+      return this.correctImages.every(({ id, src }) => src?.includes(id));
     },
     isCodeValid() {
       return this.code === this.correctCode;
@@ -283,16 +292,35 @@ export default {
     dragPuzzleItem(event, image) {
       event.dataTransfer.setData('image', JSON.stringify(image));
     },
+    dragReturnPuzzleItem(event, image) {
+      event.dataTransfer.setData('image-back', JSON.stringify(image));
+    },
     dropPuzzleItem(event, dropImage) {
       this.dragLeaveHandler(dropImage);
       if (dropImage.src) return;
       const imageData = event.dataTransfer.getData('image');
       if (imageData) {
         const imageJson = JSON.parse(imageData);
-        this.updateImageSrc(imageJson, dropImage);
+        this.updatePuzzleImage(imageJson, dropImage);
       }
     },
-    updateImageSrc(imageSource, imageDestination) {
+    dropReturnPuzzleItem(event) {
+      const imageData = event.dataTransfer.getData('image-back');
+      if (imageData) {
+        const { id, src } = JSON.parse(imageData);
+        const image = this.correctImages.find((image) => image.id === id);
+        const imageId = +src.split('/').pop().split('.png')[0];
+        const { styles } = this.images.find(image => image.id === imageId)
+        this.randomImages.push({
+          id: imageId,
+          src: require(`~/assets/images/games/usa/puzzle/${imageId}.png`),
+          styles
+        });
+        delete image.src;
+      }
+      this.updateImages()
+    },
+    updatePuzzleImage(imageSource, imageDestination) {
       const rImageIdx = this.randomImages.findIndex(
         (rImage) => rImage.id === imageSource.id
       );
@@ -302,10 +330,10 @@ export default {
         imageSource.id === imageDestination.id
           ? imageSource.styles
           : {
-            width: '90px',
-            height: '90px',
-          };
-      this.correctImages = [...this.correctImages];
+              width: '90px',
+              height: '90px',
+            };
+      this.updateImages()
     },
     getCommonStyles(image, index) {
       return {
@@ -335,19 +363,23 @@ export default {
       this.showCode = false;
       this.correctImages = new Array(16)
         .fill(0)
-        .map((_, idx) => ({id: idx + 1}));
+        .map((_, idx) => ({ id: idx + 1 }));
       this.randomImages = [...this.images].sort(() =>
         Math.random() > 0.5 ? 1 : -1
       );
     },
     dragEnterHandler(image) {
       image.background = 'lightgrey';
-      this.correctImages = [...this.correctImages];
+      this.updateImages();
     },
     dragLeaveHandler(image) {
       image.background = 'transparent';
-      this.correctImages = [...this.correctImages];
+      this.updateImages();
     },
+    updateImages() {
+      this.correctImages = [...this.correctImages];
+      this.randomImages = [...this.randomImages];
+    }
   },
 };
 </script>
