@@ -64,7 +64,7 @@ export default {
         } else {
           this.$emit('input', true);
         }
-      }, 2000);
+      }, 1000);
     },
     acceptCookies() {
       localStorage.setItem(`privacy-game-cookie-accepted`, 'true');
