@@ -10,7 +10,7 @@
     <v-card
       class="mx-auto overflow-auto"
       light
-      max-height="80vh"
+      max-height="85vh"
       max-width="800"
     >
       <v-img

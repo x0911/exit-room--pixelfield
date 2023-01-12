@@ -19,10 +19,16 @@
       </div>
       <usa-survey
         v-if="isQuestionsOpen"
-        :can-cancel="hasCompleteSurvey"
         @cancel="isQuestionsOpen = false"
         @next="
           isQuestionsOpen = false;
+          hasCompleteSurvey = true;
+        "
+      />
+      <phone-questions
+        v-else-if="isPhoneOpen"
+        @next="
+          isPhoneOpen = false;
           isMissingPieceOpen = true;
         "
       />
@@ -61,8 +67,22 @@
             style="bottom: 30px; right: 2rem"
             @click="openPrivacyNoticeHandler"
           >
-            <span class="mr-3">{{ $t('privacy_notice') }}</span>
+            <span class="mr-3"> {{ $t('china.privacy-notice.open') }} </span>
             <v-icon role="button">mdi-launch</v-icon>
+          </v-btn>
+          <v-btn
+            color="primary"
+            class="px-6"
+            large
+            fixed
+            left
+            bottom
+            :disabled="!hasCompleteSurvey"
+            style="bottom: 30px"
+            @click="isPhoneOpen = true"
+          >
+            <span class="mr-3"> {{ $t('phone') }} </span>
+            <v-icon role="button">mdi-cellphone</v-icon>
           </v-btn>
         </div>
       </template>
@@ -84,9 +104,11 @@ import ImpressStep from '~/mixins/impress-step.js';
 import PrivacyNotice from '~/components/impress/game/shared/privacy-notice';
 import UsaSurvey from '~/components/impress/game/usa/usa-survey';
 import MissingPiece from '~/components/impress/game/usa/missing-piece';
+import PhoneQuestions from '~/components/impress/game/usa/phone-questions';
 
 export default {
   components: {
+    PhoneQuestions,
     UsaSurvey,
     PrivacyNotice,
     MissingPiece,
@@ -97,6 +119,7 @@ export default {
     stepId: 'usa',
     isPrivacyOpen: null,
     isQuestionsOpen: false,
+    isPhoneOpen: false,
     isControlsOpen: true,
     isMissingPieceOpen: false,
     hasCompleteSurvey: false,
@@ -112,13 +135,6 @@ export default {
       passed: false,
     },
   }),
-  watch: {
-    isMissingPieceOpen(value) {
-      if (!value) {
-        this.hasCompleteSurvey = true;
-      }
-    },
-  },
   mounted() {
     this.$nuxt.$on(`video-${this.stepId}-ended`, this.introEnded);
   },

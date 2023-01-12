@@ -1,0 +1,62 @@
+.outer {
+  position: fixed;
+  max-width: 37.5rem;
+  bottom: 0;
+  left: calc(50% - 18.75rem);
+
+  ::v-deep .v-image__image {
+    z-index: 999;
+  }
+}
+
+.content {
+  position: absolute;
+  right: 120px;
+  top: 210px;
+  gap: 2rem;
+  z-index: 1000;
+  max-width: 354px;
+  left: calc(50% - 172px);
+}
+
+.form-content {
+  position: absolute;
+  right: 120px;
+  top: 120px;
+  gap: 0.25rem;
+  z-index: 1000;
+  max-width: 450px;
+  width: 100%;
+  left: calc(50% - 225px);
+}
+
+.app-container {
+  height: 4rem;
+  width: 4rem;
+  border: solid 1px white;
+  border-radius: 0.75rem;
+  background-color: #7b1951e2;
+  cursor: pointer;
+}
+
+.app-content-form {
+  width: 100%;
+  border: solid 1px white;
+  border-radius: 0.75rem;
+}
+
+.toggle-container {
+  gap: 0.5rem;
+  bottom: 3rem;
+  z-index: 1000;
+  position: absolute;
+  left: calc(50% - 46px);
+}
+
+::v-deep .v-input__slot {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+  padding: 0.5rem;
+  align-items: flex-start;
+}
