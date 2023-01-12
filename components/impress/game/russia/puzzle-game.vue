@@ -80,7 +80,7 @@
           {{ $t('restart') }}
         </v-btn>
         <v-btn
-          :disabled="false"
+          :disabled="isCodeValid"
           class="px-6 mt-4"
           color="primary"
           large

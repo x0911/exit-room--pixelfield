@@ -134,11 +134,12 @@
 </template>
 
 <script>
-import ScoreBoardInline from '@/components/ScoreBoardInline.vue';
-import SoundPlayer from '@/mixins/sound-player.js';
-import ImpressStep from '@/mixins/impress-step.js';
-import DotFlashing from '@/components/dot-flashing.vue';
-import PuzzleGame from "~/components/impress/game/usa/puzzle-game";
+import ScoreBoardInline from '~/components/ScoreBoardInline.vue';
+import SoundPlayer from '~/mixins/sound-player.js';
+import ImpressStep from '~/mixins/impress-step.js';
+import DotFlashing from '~/components/dot-flashing.vue';
+import PuzzleGame from "~/components/impress/game/russia/puzzle-game";
+
 export default {
   components: {
     PuzzleGame,

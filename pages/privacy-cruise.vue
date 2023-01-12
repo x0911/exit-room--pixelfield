@@ -103,7 +103,7 @@ import Intro from '@/components/impress/intro.vue';
 import Splash from '@/components/impress/splash.vue';
 import Map from '@/components/impress/map.vue';
 import Gameitaly from '~/components/impress/game/italy.vue';
-import GameRussia from '@/components/impress/game/russia.vue';
+import GameRussia from '~/components/impress/game/russia/russia.vue';
 import GameChina from '~/components/impress/game/china.vue';
 import GameIndia from '@/components/impress/game/india.vue';
 import GameEgypt from '@/components/impress/game/egypt.vue';
