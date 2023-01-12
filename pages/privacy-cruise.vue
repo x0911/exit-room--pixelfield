@@ -225,7 +225,7 @@ export default {
         {
           component: 'GameUsa',
           id: 'usa',
-          videos: ['usa', 'usa-x2', 'usa-x3', 'usa-x4'],
+          videos: ['usa'],
           x: '0',
           y: `-${h}`,
           z: '-1500',

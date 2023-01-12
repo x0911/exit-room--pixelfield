@@ -597,6 +597,7 @@
   },
   "found-object": {
     "title": "You've found a privacy symbol",
+    "find-phone": "You've found the phone.",
     "find-x-more": "You need to find {x} more symbols",
     "found-all": "You've found all privacy symbols!",
     "items": {
@@ -604,7 +605,8 @@
       "eye": "Be transparent",
       "handshake": "Use responsibly",
       "hourglass": "Retain only as long as necessary",
-      "lock": "Protect and be vigilant"
+      "lock": "Protect and be vigilant",
+      "phone": "Phone"
     }
   },
   "note-from-prev-passenger": [

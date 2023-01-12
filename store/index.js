@@ -116,22 +116,7 @@ export const state = () => ({
       ended: false,
     },
     usa: {
-      path: '5th-task.mp4',
-      canPlay: false,
-      ended: false,
-    },
-    'usa-x2': {
-      path: 'empty-task.mp4',
-      canPlay: true,
-      ended: false,
-    },
-    'usa-x3': {
-      path: 'empty-task.mp4',
-      canPlay: true,
-      ended: false,
-    },
-    'usa-x4': {
-      path: 'empty-task.mp4',
+      path: '5th-room.mp4',
       canPlay: true,
       ended: false,
     },

@@ -30,6 +30,7 @@
           hide-details
           :label="option"
           :value="oIdx"
+          :error="hasErrors"
           v-model="questionModel"
         />
         <div class="d-flex justify-center pt-8">
@@ -55,6 +56,7 @@ export default {
   data() {
     return {
       questionModel: [],
+      hasErrors: false,
       items: [
         {
           name: 'Carla Smith',
@@ -93,11 +95,23 @@ export default {
       }));
     },
   },
+  watch: {
+    questionModel: {
+      deep: true,
+      handler() {
+        this.hasErrors = false
+      }
+    }
+  },
   methods: {
     finish() {
       const passed =
         !this.questionModel.includes(3) && this.questionModel.length === 3;
-      this.$emit('finish', passed);
+      if (!passed) {
+        this.hasErrors = true;
+      } else {
+        this.$emit('finish');
+      }
     },
   },
 };

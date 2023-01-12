@@ -23,20 +23,17 @@
         @next="
           isQuestionsOpen = false;
           hasCompleteSurvey = true;
-        "
-      />
-      <phone-questions
-        v-else-if="isPhoneOpen"
-        @next="
-          isPhoneOpen = false;
           isMissingPieceOpen = true;
         "
       />
+      <phone-questions v-else-if="isPhoneOpen" @next="isPhoneOpen = false" />
       <missing-piece
         v-else-if="isMissingPieceOpen"
+        :step-id="stepId"
         @next="
           isMissingPieceOpen = false;
           isControlsOpen = false;
+          isPhoneOpen = true;
         "
       />
       <privacy-notice v-else-if="isPrivacyOpen" v-model="isPrivacyOpen" />
@@ -69,20 +66,6 @@
           >
             <span class="mr-3"> {{ $t('china.privacy-notice.open') }} </span>
             <v-icon role="button">mdi-launch</v-icon>
-          </v-btn>
-          <v-btn
-            color="primary"
-            class="px-6"
-            large
-            fixed
-            left
-            bottom
-            :disabled="!hasCompleteSurvey"
-            style="bottom: 30px"
-            @click="isPhoneOpen = true"
-          >
-            <span class="mr-3"> {{ $t('phone') }} </span>
-            <v-icon role="button">mdi-cellphone</v-icon>
           </v-btn>
         </div>
       </template>

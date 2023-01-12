@@ -127,12 +127,8 @@ export default {
       this.isLoading = null;
       window.impressAPI.goto('map');
     },
-    submitGame(passed = false) {
-      const scorePercent = Math.floor(this.result.perc / 10);
-      let score = scorePercent > 100 ? 100 : scorePercent;
-      if (!passed) {
-        score = 0;
-      }
+    submitGame() {
+      const score = 100
       this.$set(this.result, 'perc', score);
       this.$set(this.result, 'passed', score === 100);
       this.showResultDialog();
