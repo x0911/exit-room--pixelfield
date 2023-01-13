@@ -62,7 +62,7 @@
     >
       <v-card max-width="800" max-height="90vh" class="mx-auto">
         <v-img
-          :src="require('@/assets/images/games/china/privacy_notice_bg.jpg')"
+          :src="require('~/assets/images/games/china/items/privacy_notice_front.png')"
         >
           <v-card-title
             class="d-block text-center mt-16 pt-12 text-h4 font-weight-bold"

@@ -1,24 +1,122 @@
-.image-background {
+.items-container {
+  z-index: 1;
   position: fixed;
-  left: 0;
   top: 0;
-}
+  left: 0;
+  width: 100%;
+  height: 100%;
 
-.loading {
-  position: fixed;
-  left: calc(50% - 50px);
-  top: calc(50% - 50px);
-}
+  .item {
+    --w: 10%;
+    --h: 10%;
+    --t: 10%;
+    --l: 10%;
+    top: var(--t);
+    left: var(--l);
+    width: var(--w);
+    height: var(--h);
+    overflow: hidden;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
 
-.missing-piece {
-  width: 100px;
-  height: 100px;
-  position: absolute;
-  left: calc(50% - 100px);
-  bottom: 0.5rem;
-  z-index: 9999;
+    &--up {
+      box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px,
+        rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+    }
 
-  &.is-selected {
-    border: 2px solid #64202f;
+    &-alarm {
+      --w: 4%;
+      --h: 6%;
+      --t: 62%;
+      --l: 67%;
+    }
+    &-boat {
+      --w: 9%;
+      --h: 16%;
+      --t: 54%;
+      --l: 48%;
+    }
+    &-book {
+      --w: 6%;
+      --h: 10%;
+      --t: 43%;
+      --l: 83%;
+    }
+    &-candle {
+      --w: 10%;
+      --h: 13%;
+      --t: 62%;
+      --l: 29%;
+    }
+    &-charger {
+      --w: 20%;
+      --h: 17%;
+      --t: 76%;
+      --l: 80%;
+      z-index: 2;
+    }
+    &-cup {
+      --w: 7%;
+      --h: 11%;
+      --t: 65%;
+      --l: 42%;
+    }
+    &-key {
+      --w: 8%;
+      --h: 13%;
+      --t: 24%;
+      --l: 3%;
+    }
+    &-pillow {
+      --w: 12%;
+      --h: 19%;
+      --t: 60%;
+      --l: 85%;
+    }
+    &-carpet {
+      --w: 45%;
+      --h: 20%;
+      --t: 80%;
+      --l: 55%;
+      z-index: 1;
+
+      &--up {
+        --w: 65%;
+        --h: 24%;
+        --t: 82%;
+        --l: 67%;
+        transform: rotate(7deg);
+      }
+
+      img {
+        object-fit: unset !important;
+      }
+    }
+    &-privacy_notice {
+      --w: 3%;
+      --h: 50%;
+      --t: 72%;
+      --l: 24%;
+      transform: rotate(75deg);
+      height: 50px;
+    }
+    &-privacy-part-2 {
+      --w: 10%;
+      --h: 20%;
+      --t: 63%;
+      --l: 3%;
+      z-index: 0;
+      transform: rotate(25deg);
+    }
+
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+      filter: drop-shadow(5px 5px 5px #111);
+    }
   }
 }

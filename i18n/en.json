@@ -176,6 +176,15 @@
         "1": {
           "title": "Missing Piece game",
           "a1": "You have to find the privacy notice in this room."
+        },
+        "2": {
+          "a1": "You can call Franklin to take you to see Captain Maria.",
+          "steps": {
+            "1": {
+              "title": "Everything is fine – no need to bother captain Maria.",
+              "next": "See Captain Maria"
+            }
+          }
         }
       }
     },
@@ -372,6 +381,11 @@
         "correctOptions": [2]
       },
       "2": {
+        "label": "Do you want to use your smart phone  and search online for how to report privacy violations ?",
+        "options": ["Yes", "No"],
+        "correctOptions": [0]
+      },
+      "3": {
         "options": [
           {
             "title": "A well-known company deceived the employees!",
@@ -383,7 +397,7 @@
           },
           {
             "title": "You have your privacy rights!",
-            "description":  "In modern era it is illegal to use a private data without a permission. There must be a privacy rights section in every privacy notice guidelines."
+            "description": "In modern era it is illegal to use a private data without a permission. There must be a privacy rights section in every privacy notice guidelines."
           }
         ],
         "correctOptions": [0, 2]
@@ -425,6 +439,16 @@
           {
             "category": "Safety information",
             "description": "we are committed to ensuring you have a safe voyage! We will ask you to let us know if you have any food allergies, and we also have a nurse on staff in the event of sea-sickness or other ailment. If you visit the nurse, we may collect infor-mation about any current or prior health conditions. This information will only be used by cruise employees for the purposes of ensuring your safety."
+          }
+        ]
+      }
+    },
+    "missing-privacy-notice": {
+      "table": {
+        "content": [
+          {
+            "category": "Your rights",
+            "description": "You have the right to request a copy of all Personal Information collected about you and to ask us to collect or delete that information. To exercice these rights, please contact Captain Maria "
           }
         ]
       }
@@ -545,7 +569,8 @@
     "egypt": [],
     "brazil": [],
     "russia": [],
-    "china": []
+    "china": [],
+    "usa": []
   },
   "try-again": "Try again",
   "lunch-menu": {
@@ -597,9 +622,11 @@
   },
   "found-object": {
     "title": "You've found a privacy symbol",
-    "find-phone": "You've found the phone.",
+    "wrong-item": "Sorry, you've clicked on a wrong item. Try clicking on other items to find the privacy notice.",
     "find-x-more": "You need to find {x} more symbols",
     "found-all": "You've found all privacy symbols!",
+    "privacy-found-part-1": "Congratulations! You've found the first part of the privacy notice. <br /> You need to find the second part of the privacy notice.",
+    "privacy-found-part-2": "Congratulations! You found the missing part of the privacy notice.",
     "items": {
       "bridge": "Collect only what is necessary",
       "eye": "Be transparent",

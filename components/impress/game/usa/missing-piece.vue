@@ -1,211 +1,224 @@
 <template>
   <div>
     <div class="items-container">
-      <template v-for="(item, i) in rotatableItems">
+      <v-img
+        width="100vw"
+        height="100vh"
+        :src="require('~/assets/images/games/usa/missing-piece.png')"
+      />
+      <template v-for="(item, index) in items">
         <div
-          :key="i"
+          :key="index"
           class="item"
-          :class="[`item-${item.name}`, `dir-${item.dir}`]"
-          @click="rotateItem(i)"
+          :class="{
+            'item--up': getIsWrongItemClicked(item),
+            [`item-${item.name}`]: true,
+            [`item-${item.name}--up`]: item.isOpened,
+          }"
+          @click="selectItemHandler(item)"
         >
           <img
-            :alt="`item-${item.name}-${item.dir}`"
             :src="
-              require(`@/assets/images/games/china/items/${item.name}_${item.dir}.png`)
+              require(`@/assets/images/games/china/items/${item.name}_front.png`)
             "
             :draggable="false"
           />
+
+          <v-dialog
+            v-if="getIsWrongItemClicked(item)"
+            :value="item.modal"
+            overlay-opacity="0"
+            persistent
+            class="elevation-0"
+            content-class="elevation-0"
+            :retain-focus="false"
+            scrollable
+            max-width="600"
+          >
+            <v-card light tile flat class="rounded-lg pa-4 mx-auto">
+              <v-card-text class="d-flex flex-column align-center">
+                <v-img
+                  width="10rem"
+                  height="10rem"
+                  :src="
+                    require(`@/assets/images/games/china/items/${item.name}_front.png`)
+                  "
+                ></v-img>
+                <div class="text-body-1 font-weight-bold mt-4">
+                  {{ $t(`found-object.wrong-item`) }}
+                </div>
+              </v-card-text>
+              <v-card-actions class="px-6 pb-4 d-flex justify-end">
+                <v-btn
+                  color="primary"
+                  class="px-4"
+                  tile
+                  large
+                  depressed
+                  @click="item.modal = false"
+                >
+                  {{ $t('next') }}
+                  <v-icon class="ms-2"
+                    >mdi-keyboard-backspace mdi-rotate-180</v-icon
+                  >
+                </v-btn>
+              </v-card-actions>
+            </v-card>
+          </v-dialog>
+          <div
+            v-if="item.hiddenElement?.canFind && item.isOpened"
+            :class="`item item-${item.hiddenElement.name}`"
+            @click.stop="selectHiddenItemHandler(item.hiddenElement)"
+          >
+            <img
+              :src="
+                require(`@/assets/images/games/china/items/${item.hiddenElement.name}_front.png`)
+              "
+              :draggable="false"
+            />
+          </div>
         </div>
       </template>
     </div>
-    <v-dialog
-      v-if="foundObject.name === 'charger'"
-      v-model="foundObject.model"
-      overlay-opacity="0"
-      persistent
-      class="elevation-0"
-      content-class="elevation-0"
-      :retain-focus="false"
-      scrollable
-      max-width="600"
-    >
-      <div>
-        <v-card light tile flat class="transparent mx-auto">
-          <div class="mb-4">
-            <v-card light tile flat class="info-screen py-3 border-3">
-              <v-card-text>
-                <v-layout justify-center column align-center class="gap-2">
-                  <div class="mb-4 text-center">
-                    <v-avatar tile size="120">
-                      <v-img
-                        v-if="foundObject.name"
-                        :src="
-                          require(`@/assets/images/games/china/symbols/${foundObject.name}.svg`)
-                        "
-                        contain
-                      ></v-img>
-                    </v-avatar>
-                    <div class="f-tech text-body-1">
-                      {{ $t(`found-object.items.phone`) }}
-                    </div>
-                  </div>
-                  <div class="w-full mb-5">
-                    <v-divider></v-divider>
-                  </div>
-                  <template
-                    v-if="foundObject.items.length === foundObject.count"
-                  >
-                    <div class="text-h5">
-                      {{ $t('found-object.find-phone') }}
-                    </div>
-                  </template>
-                </v-layout>
-              </v-card-text>
-            </v-card>
-          </div>
-        </v-card>
-        <v-card-actions class="mt-4 px-6 pb-4">
-          <v-spacer></v-spacer>
-          <v-btn
-            color="primary"
-            class="px-4"
-            tile
-            large
-            depressed
-            :data-video-start="
-              foundObject.items.length === foundObject.count
-                ? `${stepId}-x4`
-                : ''
-            "
-            @click="hideFoundObjectModel()"
-          >
-            {{ $t('next') }}
-            <v-icon class="ms-2">mdi-keyboard-backspace mdi-rotate-180</v-icon>
-          </v-btn>
-        </v-card-actions>
-      </div>
-    </v-dialog>
+    <component :is="selectedModal.component" v-model="selectedModal.modal" />
   </div>
 </template>
 
 <script>
+import PrivacyNotice from '~/components/impress/game/shared/privacy-notice';
+import MissingPrivacyNotice from '~/components/impress/game/shared/missing-privacy-notice';
+
 export default {
   name: 'MissingPiece',
-  props: {
-    stepId: {
-      type: String,
-      default: null,
-    },
-  },
+  components: { PrivacyNotice, MissingPrivacyNotice },
   data() {
     return {
-      rotatableItems: [
+      selectedModal: {},
+      items: [
         {
           name: 'alarm',
-          dir: 'front',
-          correctDir: 'left',
-          object: 'hourglass',
           isOpened: false,
+          modal: true,
         },
         {
           name: 'boat',
-          dir: 'front',
-          correctDir: 'back',
-          object: 'bridge',
           isOpened: false,
+          modal: true,
         },
         {
           name: 'book',
-          dir: 'front',
-          correctDir: 'back',
-          object: 'handshake',
           isOpened: false,
+          modal: true,
         },
         {
           name: 'candle',
-          dir: 'front',
-          correctDir: 'right',
-          object: 'note',
           isOpened: false,
+          modal: true,
         },
         {
           name: 'charger',
-          dir: 'front',
-          correctDir: 'back',
-          object: 'charger',
           isOpened: false,
+          modal: true,
         },
         {
           name: 'cup',
-          dir: 'front',
-          correctDir: 'bot',
-          object: 'eye',
           isOpened: false,
+          modal: true,
         },
         {
           name: 'key',
-          dir: 'front',
-          correctDir: 'left',
-          object: 'lock',
           isOpened: false,
+          modal: true,
         },
         {
           name: 'pillow',
-          dir: 'front',
-          correctDir: 'back',
-          object: null,
           isOpened: false,
+          modal: true,
+        },
+        {
+          name: 'privacy_notice',
+          isOpened: false,
+          component: 'privacy-notice',
+          modal: true,
+        },
+        {
+          name: 'carpet',
+          isOpened: false,
+          hiddenElement: {
+            name: 'privacy-part-2',
+            component: 'missing-privacy-notice',
+            modal: true,
+            canFind: false,
+          },
         },
       ],
-      dirs: ['front', 'back', 'left', 'right', 'top', 'bot'],
-      foundObject: {
-        model: false,
-        name: '',
-        items: [],
-        count: 1,
-      },
+      foundItems: [],
     };
   },
+  watch: {
+    foundItems: {
+      deep: true,
+      handler(foundItems) {
+        if (foundItems?.length === 2) {
+          const isAllClosed = foundItems.every((item) => !item.modal);
+          if (isAllClosed) {
+            this.$store.commit('SET_INSTRUCTIONS', {
+              bottomModel: true,
+              title: this.$t('franklin'),
+              steps: ['found-object.privacy-found-part-2'],
+              image: 'avatars/franklin.jpg',
+              nextText: this.$t('next'),
+              nextMethod: () => this.$emit('next'),
+            });
+          }
+        }
+      },
+    },
+  },
   methods: {
-    resetValues() {
-      this.rotatableItems.forEach((_, i) => {
-        this.$set(this.rotatableItems[i], 'dir', 'front');
+    selectItemHandler(item) {
+      item.isOpened = item.hiddenElement ? this.foundItems.length : true;
+      item.modal = true;
+      const { component, modal } = item;
+      if (component) {
+        this.selectedModal = { component, modal };
+        this.validateFirstPrivacyNotice();
+        const isAdded = this.foundItems.some(
+          (foundItem) => foundItem.component === component
+        );
+        if (!isAdded) {
+          this.foundItems.push(this.selectedModal);
+        }
+      }
+    },
+    selectHiddenItemHandler({ component, modal }) {
+      this.selectedModal = { component, modal };
+      this.foundItems.push(this.selectedModal);
+    },
+    getIsWrongItemClicked(item) {
+      return item.isOpened && !item.hiddenElement && !item.component;
+    },
+    validateFirstPrivacyNotice() {
+      if (this.foundItems.length) return;
+
+      this.$store.commit('SET_INSTRUCTIONS', {
+        bottomModel: true,
+        title: this.$t('franklin'),
+        steps: ['found-object.privacy-found-part-1'],
+        nextText: this.$t('next'),
+        image: 'avatars/franklin.jpg',
       });
-      this.$set(this.foundObject, 'items', []);
-    },
-    rotateItem(i = 0) {
-      const foundObjects = this.foundObject.items;
-      const item = this.rotatableItems[i];
-      const dirs = this.dirs;
-      let nextDirIndex = dirs.indexOf(item.dir) + 1;
-      if (nextDirIndex === dirs.length) {
-        nextDirIndex = 0;
-      }
-      const nextDir = dirs[nextDirIndex];
-      item.dir = nextDir;
-      if (
-        item.dir === item.correctDir &&
-        item.object &&
-        !foundObjects.includes(item.object)
-      ) {
-        this.showObject(item.object);
-      }
-    },
-    showObject(name = '') {
-      this.$set(this.foundObject, 'name', name);
-      if (name !== 'note') {
-        this.foundObject.items.push(name);
-        this.$set(this.foundObject, 'model', true);
-      }
-      this.$emit('next')
-    },
-    hideFoundObjectModel() {
-      this.$set(this.foundObject, 'model', false);
+
+      this.items.forEach((item) => {
+        if (item.hiddenElement) {
+          item.hiddenElement.canFind = true;
+        }
+      });
     },
   },
 };
 </script>
 
 <style lang="scss" scoped>
-@import '@/assets/scss/pages/game-china.scss';
+@import '@/assets/scss/components/missing-piece.scss';
 </style>

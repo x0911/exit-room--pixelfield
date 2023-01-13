@@ -20,61 +20,38 @@
       <usa-survey
         v-if="isQuestionsOpen"
         @cancel="isQuestionsOpen = false"
-        @next="
-          isQuestionsOpen = false;
-          hasCompleteSurvey = true;
-          isMissingPieceOpen = true;
-        "
+        @next="completeSurveyHandler"
       />
-      <phone-questions v-else-if="isPhoneOpen" @next="isPhoneOpen = false" />
+      <phone-questions
+        v-else-if="isPhoneOpen"
+        @next="completePhoneQuestionsHandler"
+      />
       <missing-piece
         v-else-if="isMissingPieceOpen"
-        :step-id="stepId"
-        @next="
-          isMissingPieceOpen = false;
-          isControlsOpen = false;
-          isPhoneOpen = true;
-        "
+        @next="completeMissingPieceHandler"
       />
-      <privacy-notice v-else-if="isPrivacyOpen" v-model="isPrivacyOpen" />
-      <template v-else-if="isControlsOpen">
-        <div class="d-flex justify-end">
-          <v-btn
-            color="primary"
-            tile
-            class="px-6 mr-4"
-            large
-            fixed
-            bottom
-            style="bottom: 30px; right: 20rem"
-            :disabled="isPrivacyOpen === null"
-            @click="isQuestionsOpen = true"
-          >
-            <span class="mr-3">{{ $t('start') }}</span>
-            <v-icon large>mdi-keyboard-backspace mdi-rotate-180</v-icon>
-          </v-btn>
-          <v-btn
-            color="primary"
-            tile
-            class="px-6"
-            large
-            fixed
-            right
-            bottom
-            style="bottom: 30px; right: 2rem"
-            @click="openPrivacyNoticeHandler"
-          >
-            <span class="mr-3"> {{ $t('china.privacy-notice.open') }} </span>
-            <v-icon role="button">mdi-launch</v-icon>
-          </v-btn>
-        </div>
-      </template>
+      <div class="d-flex justify-end">
+        <v-btn
+          v-if="!isGameStarted"
+          color="primary"
+          tile
+          class="px-6 mr-4"
+          large
+          fixed
+          bottom
+          style="bottom: 30px; right: 3rem"
+          @click="isQuestionsOpen = true"
+        >
+          <span class="mr-3">{{ $t('start') }}</span>
+          <v-icon large>mdi-keyboard-backspace mdi-rotate-180</v-icon>
+        </v-btn>
+      </div>
     </v-dialog>
     <score-board-inline
       :model="result.model"
       :perc="result.perc"
       :passed="result.passed"
-      @restart="restart()"
+      @restart="restart"
     >
     </score-board-inline>
   </v-container>
@@ -84,7 +61,6 @@
 import ScoreBoardInline from '~/components/ScoreBoardInline.vue';
 import SoundPlayer from '~/mixins/sound-player.js';
 import ImpressStep from '~/mixins/impress-step.js';
-import PrivacyNotice from '~/components/impress/game/shared/privacy-notice';
 import UsaSurvey from '~/components/impress/game/usa/usa-survey';
 import MissingPiece from '~/components/impress/game/usa/missing-piece';
 import PhoneQuestions from '~/components/impress/game/usa/phone-questions';
@@ -93,19 +69,16 @@ export default {
   components: {
     PhoneQuestions,
     UsaSurvey,
-    PrivacyNotice,
     MissingPiece,
     ScoreBoardInline,
   },
   mixins: [ImpressStep, SoundPlayer],
   data: () => ({
     stepId: 'usa',
-    isPrivacyOpen: null,
     isQuestionsOpen: false,
     isPhoneOpen: false,
-    isControlsOpen: true,
     isMissingPieceOpen: false,
-    hasCompleteSurvey: false,
+    isChartOpen: false,
     isLoading: false,
     videos: {
       intro: {
@@ -118,15 +91,37 @@ export default {
       passed: false,
     },
   }),
+  computed: {
+    isGameStarted() {
+      return (
+        this.isLoading ||
+        this.isQuestionsOpen ||
+        this.isPhoneOpen ||
+        this.isMissingPieceOpen ||
+        this.isChartOpen
+      );
+    },
+  },
   mounted() {
     this.$nuxt.$on(`video-${this.stepId}-ended`, this.introEnded);
   },
   methods: {
+    addLoading(ms = 1000) {
+      this.isLoading = true;
+      return new Promise((resolve) => {
+        setTimeout(() => {
+          this.isLoading = false;
+          resolve();
+        }, ms);
+      });
+    },
     restart() {
-      setTimeout(() => {
-        this.stepEnter();
-        this.introEnded();
-      }, 100);
+      this.isQuestionsOpen = false;
+      this.isPhoneOpen = false;
+      this.isMissingPieceOpen = false;
+      this.isChartOpen = false;
+      this.isLoading = false;
+      setTimeout(this.introEnded, 100);
     },
     introEnded(immediate = false) {
       this.$set(this.result, 'model', false);
@@ -137,12 +132,51 @@ export default {
         immediate ? 0 : 1000
       );
     },
-    showResultDialog() {
-      this.$set(this.result, 'model', true);
+    async completePhoneQuestionsHandler() {
+      this.isPhoneOpen = false;
+      await this.addLoading();
+      this.isMissingPieceOpen = true;
     },
-    openPrivacyNoticeHandler() {
-      this.playGameSound('big-button-press-1');
-      this.isPrivacyOpen = true;
+    async completeMissingPieceHandler() {
+      this.isMissingPieceOpen = false;
+      this.isChartOpen = true;
+      await this.addLoading();
+      this.startChat();
+    },
+    async completeSurveyHandler() {
+      this.isQuestionsOpen = false;
+      await this.addLoading();
+      this.isPhoneOpen = true;
+    },
+    startChat() {
+      this.$store.commit('SET_INSTRUCTIONS', {
+        model: true,
+        title: '',
+        steps: ['screens.usa.games.2.a1'],
+        nextText: this.$t('confirm'),
+        nextMethod: this.finishChat,
+      });
+    },
+    finishChat() {
+      this.$store.commit('SET_INSTRUCTIONS', {
+        bottomModel: true,
+        title: this.$t('franklin'),
+        steps: ['screens.usa.games.2.steps.1.title'],
+        image: 'avatars/franklin.jpg',
+        nextText: this.$t('screens.usa.games.2.steps.1.next'),
+        nextMethod: this.finishGame,
+      });
+    },
+    finishGame() {
+      const score = 100;
+      this.result.model = true;
+      this.result.perc = score;
+      this.result.passed = true;
+      this.$store.commit('SET_SCORE_BOARD_DIALOG', {
+        model: false,
+        score,
+        game: 'usa',
+      });
     },
   },
 };

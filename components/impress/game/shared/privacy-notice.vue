@@ -14,7 +14,7 @@
       max-width="800"
     >
       <v-img
-        :src="require('~/assets/images/games/china/privacy_notice_bg.jpg')"
+        :src="require('~/assets/images/games/china/items/privacy_notice_front.png')"
       >
         <v-card-title
           class="d-block text-center mt-16 pt-12 white--text font-weight-bold"

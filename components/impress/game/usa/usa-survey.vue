@@ -2,9 +2,9 @@
   <v-card class="pa-6 mx-auto" flat light max-width="600" rounded tile>
     <v-card-text class="pa-4">
       <div class="text-body-1 mb-4 font-weight-bold">
-       {{ $t('usa.questions.1.label') }}
+        {{ $t(`usa.questions.${step}.label`) }}
       </div>
-      <v-radio-group v-model="correctOption" :error="hasError" hide-details>
+      <v-radio-group v-model="selectedOption" :error="hasErrors" hide-details>
         <v-radio
           v-for="(option, index) in options"
           :key="option.id"
@@ -20,9 +20,9 @@
           class="px-6 mr-4"
           large
           tile
-          @click="$emit('cancel')"
+          @click="step === 1 ? $emit('cancel') : step--"
         >
-          <span>{{ $t('cancel') }}</span>
+          <span>{{ step === 1 ? $t('cancel') : $t('previous') }}</span>
         </v-btn>
         <v-btn
           class="px-6 mr-4"
@@ -46,22 +46,25 @@ export default {
   mixins: [SoundPlayer],
   data() {
     return {
-      hasError: false,
-      correctOption: null,
-      options: (this.options = this.$t(`usa.questions.1.options`).map(
+      step: 1,
+      hasErrors: false,
+      selectedOption: null,
+    };
+  },
+  computed: {
+    options() {
+      return this.$t(`usa.questions.${this.step}.options`).map(
         (option, index) => ({
           id: index,
           text: option,
           value: false,
         })
-      )),
-    };
-  },
-  computed: {
+      );
+    },
     canProceedNext() {
       return (
-        this.correctOption ===
-        this.$t(`usa.questions.1.correctOptions`)[0]
+        this.selectedOption ===
+        this.$t(`usa.questions.${this.step}.correctOptions`)[0]
       );
     },
   },
@@ -69,22 +72,25 @@ export default {
     options: {
       deep: true,
       handler() {
-        this.hasError = false;
+        this.hasErrors = false;
       },
     },
-    correctOption() {
-      this.hasError = false;
+    step() {
+      this.selectedOption = null;
+    },
+    selectedOption() {
+      this.hasErrors = false;
     },
   },
   methods: {
     validateFormHandler() {
       this.playGameSound(`big-button-press-2`);
-      this.hasError = false;
+      this.hasErrors = false;
       if (!this.canProceedNext) {
-        this.hasError = true;
+        this.hasErrors = true;
         return;
       }
-      this.$emit('next');
+      this.step === 1 ? this.step++ : this.$emit('next');
     },
   },
 };

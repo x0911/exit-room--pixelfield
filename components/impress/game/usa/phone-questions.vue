@@ -74,11 +74,11 @@ export default {
   data() {
     return {
       step: 1,
-      options: this.$t('usa.questions.2.options').map((option) => ({
+      options: this.$t('usa.questions.3.options').map((option) => ({
         ...option,
         value: false,
       })),
-      correctOptions: this.$t('usa.questions.2.correctOptions'),
+      correctOptions: this.$t('usa.questions.3.correctOptions'),
       hasErrors: false,
     };
   },
