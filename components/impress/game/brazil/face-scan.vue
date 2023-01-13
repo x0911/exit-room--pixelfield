@@ -6,7 +6,13 @@
     </div>
     <div class="d-flex align-center mt-4 gap-6">
       <template v-if="!isPhotoTaken">
-        <v-btn large color="primary" class="pa-6" @click="takePhoto">
+        <v-btn
+          v-if="!errorOpenCamera"
+          large
+          color="primary"
+          class="pa-6"
+          @click="takePhoto"
+        >
           <span class="pr-4">{{ $t('take_photo') }}</span>
           <v-icon large>mdi-camera</v-icon>
         </v-btn>
@@ -49,6 +55,7 @@ export default {
       isLoading: false,
       isValidating: false,
       usedVideo: false,
+      errorOpenCamera: false,
     };
   },
   mounted() {
@@ -58,11 +65,18 @@ export default {
       video: true,
     });
 
-    navigator.mediaDevices.getUserMedia(constraints).then((stream) => {
-      this.isLoading = false;
-      window.stream = stream;
-      this.$refs.camera.srcObject = window.stream;
-    });
+    navigator.mediaDevices
+      .getUserMedia(constraints)
+      .then((stream) => {
+        this.isLoading = false;
+        window.stream = stream;
+        this.$refs.camera.srcObject = window.stream;
+      })
+      .catch((err) => {
+        this.isLoading = false;
+        this.errorOpenCamera = true;
+        console.log(err);
+      });
   },
   methods: {
     takePhoto() {
@@ -75,7 +89,7 @@ export default {
       this.playGameSound('big-button-press-1');
       this.isValidating = true;
       setTimeout(() => {
-        window.stream.getTracks().forEach(function (track) {
+        window.stream?.getTracks().forEach(function (track) {
           track.stop();
         });
         this.isValidating = false;
