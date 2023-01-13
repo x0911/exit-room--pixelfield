@@ -1,5 +1,5 @@
 <template>
-  <v-container>
+  <v-container v-if="isMounted">
     <v-dialog
       :value="videos.intro.ended && model === 0"
       overlay-opacity="0"
@@ -18,17 +18,18 @@
         ></lottie-animation>
       </div>
       <template v-else-if="isLoading === false">
-        <face-scan
-          v-if="step === 'face-scan'"
-          @next="step = 'survey'"
-        />
+        <face-scan v-if="step === 'face-scan'" @next="step = 'survey'" />
         <countries-scores
           v-if="step === 'countries-score'"
           @next="step = 'mini-game'"
         />
-        <brazil-survey v-if="step === 'survey'" @next="step = 'countries-score'" />
+        <brazil-survey
+          v-if="step === 'survey'"
+          @next="step = 'countries-score'"
+        />
         <mini-game
           v-if="step === 'mini-game'"
+          :is-mini-game="step === 'mini-game'"
           @next="
             step = 'ranking';
             result.perc = $event;
@@ -81,15 +82,22 @@ export default {
       perc: 0,
       passed: false,
     },
+    isMounted: true,
   }),
   mounted() {
     this.$nuxt.$on(`video-${this.stepId}-ended`, this.introEnded);
   },
   methods: {
     stepLeave() {
+      this.$set(this, 'isLoading', null);
+      this.$set(this, 'step', 'face-scan');
       this.$set(this.videos.intro, 'ended', false);
       this.$set(this.result, 'model', false);
       this.$set(this, 'model', 0);
+      this.$set(this, 'isMounted', false);
+      setTimeout(() => {
+        this.$set(this, 'isMounted', true);
+      }, 1000);
     },
     restart() {
       this.stepLeave();
@@ -128,7 +136,7 @@ export default {
       window.impressAPI.goto('map');
     },
     submitGame() {
-      const score = 100
+      const score = 100;
       this.$set(this.result, 'perc', score);
       this.$set(this.result, 'passed', score === 100);
       this.showResultDialog();

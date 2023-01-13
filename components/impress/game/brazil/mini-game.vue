@@ -54,6 +54,12 @@ const CAMERA_STATUS = {
 
 export default {
   name: 'MiniGame',
+  props: {
+    isMiniGame: {
+      type: Boolean,
+      default: false,
+    },
+  },
   data() {
     return {
       lines: [
@@ -120,18 +126,22 @@ export default {
         clearInterval(gameIntervalRef);
         clearInterval(timeIntervalRef);
 
-        this.$store.commit('SET_INSTRUCTIONS', {
-          model: true,
-          title: this.$t('brazil.mini_game.title'),
-          steps: [
-            this.$t('brazil.mini_game.score', { score: this.getHighestScore }),
-          ],
-          nextText: this.$t('finish'),
-          nextMethod: this.finishGame,
-          cancelable: this.canRestart,
-          cancelText: this.$t('restart'),
-          cancelMethod: this.restartGame,
-        });
+        if (this.isMiniGame) {
+          this.$store.commit('SET_INSTRUCTIONS', {
+            model: true,
+            title: this.$t('brazil.mini_game.title'),
+            steps: [
+              this.$t('brazil.mini_game.score', {
+                score: this.getHighestScore,
+              }),
+            ],
+            nextText: this.$t('finish'),
+            nextMethod: this.finishGame,
+            cancelable: this.canRestart,
+            cancelText: this.$t('restart'),
+            cancelMethod: this.restartGame,
+          });
+        }
       }, this.timeRemainingSecs * 1000);
     },
     gameManager() {

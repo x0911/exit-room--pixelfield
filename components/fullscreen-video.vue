@@ -36,7 +36,7 @@
           <v-card
             :class="{
               'info-screen darken border-3': !isPlayerThinking(dialog),
-              'thought-bubble-container': isPlayerThinking(dialog)
+              'thought-bubble-container': isPlayerThinking(dialog),
             }"
             class="transparent px-2 pb-4 d-flex align-center"
           >
@@ -171,6 +171,10 @@ export default {
           this.$refs.video.muted = false;
         }
       }
+    },
+    activeStep() {
+      this.$set(this, 'dialogs', []);
+      this.$set(this, 'shownDialogs', []);
     },
   },
   beforeDestroy() {
@@ -310,7 +314,7 @@ export default {
         dialog.model = false;
       });
     },
-    isPlayerThinking({speaker}) {
+    isPlayerThinking({ speaker }) {
       return speaker === this.$t('player-is-thinking');
     },
     ended(playSound = false) {
