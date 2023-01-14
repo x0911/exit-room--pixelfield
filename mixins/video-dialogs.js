@@ -14,29 +14,17 @@ export default {
         {
           speaker: this.$t('franklin'),
           avatar: 'franklin.jpg',
-          from: 4.1,
+          from: 4.2,
           textArray: this.$tr('speeches.splash.2', 'array'),
-          isConfirmable: true,
-        },
-        {
-          from: 17,
-          text: this.$t('welcome-instructions'),
           isConfirmable: true,
         },
       ];
       const reception = [
         {
-          speaker: this.$t('franklin'),
-          avatar: 'franklin.jpg',
-          from: 3,
+          speaker: this.$t('receptionist'),
+          avatar: 'receptionist.jpg',
+          from: 11,
           textArray: this.$tr('speeches.italy.1', 'array'),
-          isConfirmable: true,
-        },
-        {
-          speaker: this.$t('franklin'),
-          avatar: 'franklin.jpg',
-          from: 15,
-          textArray: this.$tr('speeches.italy.2', 'array'),
           isConfirmable: true,
         },
       ];
@@ -51,7 +39,7 @@ export default {
         {
           speaker: this.$t('franklin'),
           avatar: 'franklin.jpg',
-          from: 8,
+          from: 5,
           textArray: this.$tr('speeches.egypt.2', 'array'),
           isConfirmable: true,
         },
@@ -65,13 +53,13 @@ export default {
         },
         {
           speaker: this.$t('carla-thought'),
-          from: 6,
+          from: 2,
           textArray: this.$tr('speeches.egypt.4', 'array'),
           isConfirmable: true,
         },
         {
           speaker: this.$t('yuri-thought'),
-          from: 16,
+          from: 2,
           textArray: this.$tr('speeches.egypt.5', 'array'),
           isConfirmable: true,
         },

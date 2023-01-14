@@ -287,7 +287,7 @@ $fillables: width, height;
 @keyframes task_icon_glow {
   0%,
   100% {
-    box-shadow: 0 0 15px 12px rgb(0, 255, 0);
+    box-shadow: 0 0 15px 12px #1ea7cd;
   }
   50% {
     box-shadow: 0 0 15px 12px transparent;

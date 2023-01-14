@@ -61,7 +61,7 @@ export const state = () => ({
   appLoaded: false,
   videos: {
     'game-intro-0': {
-      path: 'intro-v1.mp4',
+      path: 'intro-trim-1.mp4',
       canPlay: false,
       ended: false,
     },
@@ -71,17 +71,17 @@ export const state = () => ({
       ended: false,
     },
     italy: {
-      path: 'intro.mp4',
+      path: 'intro-trim-2.mp4',
       canPlay: false,
       ended: false,
     },
     egypt: {
-      path: 'intro.mp4',
+      path: '2nd-room-v1.mp4',
       canPlay: false,
       ended: false,
     },
     'egypt-x2': {
-      path: 'intro.mp4',
+      path: '2nd-room-v2.mp4',
       canPlay: false,
       ended: false,
     },
