@@ -222,6 +222,7 @@ export const mutations = {
     state.instructions = def;
   },
   SET_ROOM_BG(state, payload) {
+    console.log(payload)
     state.roomsBgs[payload.stepId] = payload.name || payload.stepId;
   },
   SET_INSTRUCTIONS_MODEL(state, payload) {

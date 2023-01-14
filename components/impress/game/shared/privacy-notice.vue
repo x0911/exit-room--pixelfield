@@ -5,7 +5,7 @@
     class="elevation-0"
     content-class="elevation-0 overflow-auto max-h-100"
     overlay-opacity="0"
-    :persistent="persistent"
+    persistent
   >
     <v-card
       class="privacy-notice mx-auto overflow-auto"
@@ -94,10 +94,6 @@ export default {
     value: {
       type: Boolean,
       default: null,
-    },
-    persistent: {
-      type: Boolean,
-      default: true,
     },
     scrollToBottom: {
       type: Boolean,

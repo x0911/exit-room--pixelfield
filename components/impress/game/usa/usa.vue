@@ -17,11 +17,7 @@
           :path="require('@/assets/animated/spinner.json')"
         ></lottie-animation>
       </div>
-      <privacy-notice
-        v-if="isPrivacyOpen"
-        v-model="isPrivacyOpen"
-        :persistent="false"
-      />
+      <privacy-notice v-if="isPrivacyOpen" v-model="isPrivacyOpen" />
       <usa-survey
         v-if="isQuestionsOpen"
         @cancel="isQuestionsOpen = false"
@@ -59,7 +55,7 @@
     </v-dialog>
     <score-board-inline
       :model="result.model"
-      :label="$t('usa.scoreBoardInline')"
+      :label="$t('usa.score-board-inline')"
       :perc="result.perc"
       :passed="result.passed"
       @restart="restart"
@@ -129,20 +125,10 @@ export default {
     },
   },
   watch: {
-    async isPrivacyOpen(value) {
+    isPrivacyOpen(value) {
+      this.isPrivacyOpenHandler();
       if (!value) {
-        const isStart = [
-          this.isQuestionsOpen,
-          this.isPhoneOpen,
-          this.isPrivacySurveyOpen,
-          this.isMissingPieceOpen,
-          this.isChatOpen,
-        ].every((step) => !step);
-
-        if (isStart) {
-          await this.addLoading();
-          this.isQuestionsOpen = true;
-        }
+        this.isPrivacyCloseHandler();
       }
     },
   },
@@ -205,6 +191,32 @@ export default {
       this.isQuestionsOpen = false;
       await this.addLoading();
       this.isPhoneOpen = true;
+    },
+    isPrivacyOpenHandler() {
+      const imageBg = this.$store.getters.roomsBgs[this.stepId];
+      if (imageBg.includes('x2')) {
+        this.$store.commit('SET_ROOM_BG', {
+          stepId: this.stepId,
+          name: this.stepId,
+        });
+      }
+    },
+    async isPrivacyCloseHandler() {
+      this.$store.commit('SET_ROOM_BG', {
+        stepId: this.stepId,
+        name: `${this.stepId}-x2`,
+      });
+      const isStart = [
+        this.isQuestionsOpen,
+        this.isPhoneOpen,
+        this.isPrivacySurveyOpen,
+        this.isMissingPieceOpen,
+        this.isChatOpen,
+      ].every((step) => !step);
+      if (isStart) {
+        await this.addLoading();
+        this.isQuestionsOpen = true;
+      }
     },
     startChat() {
       this.$store.commit('SET_INSTRUCTIONS', {
