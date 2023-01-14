@@ -4,7 +4,15 @@
     v-model="isPrivacyOpen"
     :scroll-to-bottom="true"
   />
-  <v-card v-else-if="isQuestionsOpen" class="pa-6 mx-auto" flat light max-width="600" rounded tile>
+  <v-card
+    v-else-if="isQuestionsOpen"
+    class="pa-6 mx-auto"
+    flat
+    light
+    max-width="600"
+    rounded
+    tile
+  >
     <v-card-text class="pa-4">
       <div class="text-body-1 mb-4 font-weight-bold">
         {{ $t(`usa.questions.4.label`) }}
@@ -86,9 +94,18 @@ export default {
       this.isQuestionsOpen = false;
       this.$store.commit('SET_INSTRUCTIONS', {
         model: true,
-        steps: [ this.$t('screens.usa.look-around')],
+        steps: ['screens.usa.look-around'],
         nextText: this.$t('next'),
-        nextMethod: () => this.$emit('next'),
+        nextMethod: this.playVideo,
+      });
+    },
+    playVideo(event) {
+      event.target['data-video-start'] = 'usa-x2';
+      this.$store.commit('PLAY_VIDEO', 'usa-x2');
+
+      this.$nuxt.$on(`video-usa-x2-ended`, () => {
+        event.target['data-video-start'] = null;
+        this.$emit('next');
       });
     },
   },

@@ -117,7 +117,12 @@ export const state = () => ({
     },
     usa: {
       path: '5th-room.mp4',
-      canPlay: true,
+      canPlay: false,
+      ended: false,
+    },
+    'usa-x2': {
+      path: '5th-room-v2.mp4',
+      canPlay: false,
       ended: false,
     },
     russia: {
@@ -222,7 +227,6 @@ export const mutations = {
     state.instructions = def;
   },
   SET_ROOM_BG(state, payload) {
-    console.log(payload)
     state.roomsBgs[payload.stepId] = payload.name || payload.stepId;
   },
   SET_INSTRUCTIONS_MODEL(state, payload) {

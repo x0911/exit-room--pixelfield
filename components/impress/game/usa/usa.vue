@@ -195,17 +195,11 @@ export default {
     isPrivacyOpenHandler() {
       const imageBg = this.$store.getters.roomsBgs[this.stepId];
       if (imageBg.includes('x2')) {
-        this.$store.commit('SET_ROOM_BG', {
-          stepId: this.stepId,
-          name: this.stepId,
-        });
+        this.replaceBg(this.stepId);
       }
     },
     async isPrivacyCloseHandler() {
-      this.$store.commit('SET_ROOM_BG', {
-        stepId: this.stepId,
-        name: `${this.stepId}-x2`,
-      });
+      this.replaceBg('usa-x2');
       const isStart = [
         this.isQuestionsOpen,
         this.isPhoneOpen,

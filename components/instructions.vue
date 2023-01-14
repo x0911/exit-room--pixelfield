@@ -85,7 +85,7 @@
           :min-width="steps && steps.length > 1 ? 'auto' : '150'"
           depressed
           :data-video-start="step >= steps.length ? `${videoSlug}` : 'null'"
-          @click="next()"
+          @click="next"
         >
           {{ nextText }}
           <v-icon v-if="showNextArrow" class="ms-3"
@@ -187,7 +187,7 @@ export default {
         this.step--;
       }
     },
-    next() {
+    next(event) {
       this.playGameSound('big-button-press-2');
       if (this.step < this.steps.length) {
         this.step++;
@@ -197,7 +197,7 @@ export default {
           this.$nuxt.$router.push(this.localePath(this.nextLink));
         }
         if (this.nextMethod && typeof this.nextMethod === 'function') {
-          this.nextMethod();
+          this.nextMethod(event);
         }
       }
     },
