@@ -1,8 +1,8 @@
 <template>
   <v-app :class="{ 'is-vertical': isVertical }" data-app>
-    <login-dialog v-model="isLoggedIn"/>
+    <login-dialog v-model="isLoggedIn" />
     <template v-if="isLoggedIn">
-      <cookie-modal v-model="cookieModel"/>
+      <cookie-modal v-model="cookieModel" />
       <v-main>
         <v-sheet
           class="transparent"
@@ -49,7 +49,7 @@
                   :data-y="step.y"
                   :data-z="step.z"
                   class="step"
-                  data-transition-duration="1000"
+                  :data-transition-duration="step.duration || '1000'"
                 >
                   <div
                     :key="`step-bg-${i}`"
@@ -78,7 +78,7 @@
                       @ended="videoEnded(vid, i)"
                     ></fullscreen-video>
                   </template>
-                  <component :is="step.component"/>
+                  <component :is="step.component" />
                 </div>
               </template>
             </div>
@@ -184,7 +184,7 @@ export default {
           y: '0',
           z: '-1500',
           active: false,
-          duration: '1000',
+          duration: '0',
         },
         {
           component: 'Gameitaly',

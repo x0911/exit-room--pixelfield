@@ -20,7 +20,7 @@ $mainColorDarken: #183b7d;
       height: 40px;
       border-radius: 50%;
       position: relative;
-      margin-bottom: 25px;
+      margin-bottom: 5px;
 
       .bounce-1,
       .bounce-2 {
@@ -33,8 +33,13 @@ $mainColorDarken: #183b7d;
         left: 0;
         background: rgb(255, 255, 255);
       }
+
+      @media (max-height: 400px) {
+        width: 30px;
+        height: 30px;
+      }
     }
-    
+
     &.active {
       opacity: 1 !important;
       pointer-events: all;
@@ -42,7 +47,7 @@ $mainColorDarken: #183b7d;
         animation: task_icon_glow 1.5s infinite ease-in-out;
         .bounce-1,
         .bounce-2 {
-          background: rgb(0, 255, 0);
+          background: #69e1f7;
           animation: bounce 3s infinite ease-in-out;
         }
         .bounce-2 {
@@ -254,60 +259,63 @@ $mainColorDarken: #183b7d;
 }
 
 .room1 {
-  top: 40%;
-  left: 7%;
-
+  top: 65%;
+  left: 39%;
+  
   @media (max-height: 385px) {
-    top: 50%;
+    left: 37%;
+    top: 65%;
   }
 }
 
 .room2 {
-  top: 46%;
-  left: 27%;
-
+  top: 65%;
+  left: 20%;
+  
   @media (max-height: 385px) {
-    top: 56%;
+    left: 22%;
+    top: 61%;
   }
 }
 
 .room3 {
-  top: 40%;
-  left: 45%;
+  top: 47%;
+  left: 39%;
 
   @media (max-height: 385px) {
-    top: 50%;
+    top: 47%;
   }
 }
 
 .room4 {
-  top: 46%;
-  left: 65%;
+  top: 47%;
+  left: 20%;
 
   @media (max-height: 385px) {
-    top: 56%;
+    top: 41%;
   }
 }
 
 .room5 {
-  top: 40%;
-  left: 45%;
+  top: 47%;
+  left: 39%;
 
   @media (max-height: 385px) {
-    top: 50%;
+    top: 47%;
   }
 }
 
 .room6 {
-  top: 40%;
-  left: 82%;
-
+  top: 29%;
+  left: 48%;
+  
   .f-tech {
     width: 150%;
   }
-
+  
   @media (max-height: 385px) {
-    top: 50%;
+    left: 45%;
+    top: 28%;
   }
 }
 

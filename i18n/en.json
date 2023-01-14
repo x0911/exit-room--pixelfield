@@ -1,10 +1,9 @@
 {
   "franklin": "Franklin",
-  "carla-thought": "Carla’s thought",
-  "yuri-thought": "Yuri’s thought",
-  "yael-thought": "Yael’s thought",
+  "carla-thought": "Carla’s thinking",
+  "yuri-thought": "Yuri’s thinking",
+  "yael-thought": "Yael’s thinking",
   "player-is-thinking": "Player is thinking",
-  "welcome-instructions": "The only thing you will need to be able to play the game is your mouse or mousepad. Right answers will allow you to proceed with the game. Selecting any wrong answers will result in you failing the task, but please note, that if you happen to fail a task, you can always go back and redo it. In order to proceed, please click on the confirm button.",
   "confirm": "Confirm",
   "submit": "Submit",
   "accept": "Accept",
@@ -69,8 +68,7 @@
   "wall": "Room Selector",
   "map-email": {
     "text": [
-      "Welcome to '<b>Exit Room</b>' game",
-      "This is your room selector, rooms order is mandatory. Active room will have a glowing circle above its name."
+      "This is your room selector. Rooms order is mandatory. Active room has a glowing circle above its name."
     ]
   },
   "start": "Start",
@@ -88,21 +86,23 @@
         "Hello and welcome!",
         "Let me introduce myself: My name is Franklin and I will be your guide during our cruise."
       ],
-      "2": ["Splendid!", "Now, please follow me to the reception!"]
+      "2": [
+        "The only thing you will need to be able to play the game is your mouse or mousepad. Right answers will allow you to proceed with the game. Selecting any wrong answers will result in you failing the task, but please note, that if you happen to fail a task, you can always go back and redo it. In order to proceed, please click on the confirm button.",
+        "Splendid!",
+        "Now, please follow me to the reception!"
+      ]
     },
     "italy": {
       "1": [
         "Welcome aboard!",
-        "Our high-tech ship features the most cutting-edge digital technology available on the high seas- which we trust will make this a memorable and enjoyable vacation!"
-      ],
-      "2": [
+        "Our high-tech ship features the most cutting-edge digital technology available on the high seas- which we trust will make this a memorable and enjoyable vacation!",
         "We’ll set sail in a few moments, but first, we need some registration information. Please provide your passport, any dietary restrictions, and then complete this survey."
       ]
     },
     "egypt": {
       "1": ["Please, join us and enjoy your meal!"],
       "2": [
-        "You have been assigned to your seat with 4 other guests.",
+        "You have been assigned to your seat with 3 other guests.",
         "Before you eat, we have made a special task for you. Take a look at the menu and follow the instructions."
       ],
       "3": ["I’m only 2 months pregnant and not showing"],
@@ -284,20 +284,20 @@
       "16": {
         "label": "",
         "options": [
-          "People & Organization (P&O); ",
-          "Procurement; ",
-          "Legal, Novartis Business Assurance & Advisory (NBAA), Ethics, Risk & Compliance (ERC), Data Privacy; ",
-          "Finance; ",
-          "Global Health and Corporate Responsibility; Information Security & Risk Management (ISRM); ",
-          "Information Technology (IT); ",
-          "Marketing & Sales; ",
-          "Medical; ",
-          "Clinical Development & Trials & Drug Discovery; ",
-          "Communications & Engagement; ",
-          "Data Science;",
-          "Patient Services & Programs; ",
-          "Public Affairs; ",
-          "Other."
+          "People & Organization (P&O)",
+          "Procurement",
+          "Legal, Novartis Business Assurance & Advisory (NBAA), Ethics, Risk & Compliance (ERC), Data Privacy",
+          "Finance",
+          "Global Health and Corporate ResponsibilityInformation Security & Risk Management (ISRM)",
+          "Information Technology (IT)",
+          "Marketing & Sales",
+          "Medical",
+          "Clinical Development & Trials & Drug Discovery",
+          "Communications & Engagement",
+          "Data Science",
+          "Patient Services & Programs",
+          "Public Affairs",
+          "Other"
         ]
       },
       "17": {
@@ -681,5 +681,6 @@
   "player": "Player",
   "finish": "Finish",
   "upload_photo": "Upload photo",
-  "hide": "Hide"
+  "hide": "Hide",
+  "receptionist": "Receptionist"
 }

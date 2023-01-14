@@ -13,9 +13,22 @@
           class="primary grey--text text--lighten-2 font-weight-light px-5 py-5"
         >
           <slot name="subtitle">
-            <template v-for="(line, i) in subtitle">
-              <div :key="i" :inner-html.prop="line" class="mb-1"></div>
-            </template>
+            <v-layout class="gap-4">
+              <v-flex shrink>
+                <v-avatar size="50">
+                  <v-img
+                    :src="require(`@/assets/images/avatars/franklin.jpg`)"
+                  ></v-img>
+                </v-avatar>
+              </v-flex>
+              <v-flex>
+                <div>
+                  <template v-for="(line, i) in subtitle">
+                    <div :key="i" :inner-html.prop="line" class="mb-1"></div>
+                  </template>
+                </div>
+              </v-flex>
+            </v-layout>
           </slot>
           <template v-if="hasPanels">
             <v-expansion-panels hover accordion>
