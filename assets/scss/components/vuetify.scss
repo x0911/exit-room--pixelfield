@@ -157,7 +157,9 @@ It's used in nuxt.config.js in global css files
       }
     }
   }
-
+  &.card-error {
+    border: 1px solid #831a00 !important;
+  }
   &.hoverable-card {
     .no-user-select {
       transition: all 0.2s ease-in-out;

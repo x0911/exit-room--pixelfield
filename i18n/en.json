@@ -144,9 +144,7 @@
       ]
     },
     "usa": {
-      "1": "You have the right to request a copy of all Personal Information collected about you, and to ask us to correct or delete that information. To exercise these rights, please contact Captain Maria.",
-      "2": "Everything is fine – no need to bother captain Maria.",
-      "3": "I insist to see captain Maria immediately!"
+      "1": "I am desperate and scared. Do I have any privacy rights here?! <br />Let’s check privacy notice to see what it says."
     }
   },
   "screens": {
@@ -182,11 +180,12 @@
           "steps": {
             "1": {
               "title": "Everything is fine – no need to bother captain Maria.",
-              "next": "See Captain Maria"
+              "next": "I insist to see Captain Maria"
             }
           }
         }
-      }
+      },
+      "look-around": "Look around the room and try to find the missing piece of the privacy notice."
     },
     "russia": {
       "title": "Captain's Cabin",
@@ -370,6 +369,21 @@
     ]
   },
   "usa": {
+    "hints": {
+      "phone-questions": "Click on the internet browsing icon.",
+      "missing-piece": {
+        "1": [
+          "Find the missing piece of the privacy notice",
+          "Have you looked under the carpet yet?"
+        ],
+        "2": [
+          "Click at the missing piece of the privacy notice."
+        ]
+      }
+    },
+    "instructions": {
+      "phone-questions": "Mark useful articles that could possibly help you."
+    },
     "questions": {
       "1": {
         "label": "Have you find the mention of using passport photos for biometrics?",
@@ -401,8 +415,14 @@
           }
         ],
         "correctOptions": [0, 2]
+      },
+      "4": {
+        "label": "Did you notice that the privacy notice is torn?",
+        "options": ["Yes", "No"],
+        "correctOptions": [0]
       }
-    }
+    },
+    "scoreBoardInline": "OK let's go see the captain."
   },
   "china": {
     "bedroom-note": [
@@ -419,10 +439,14 @@
       "title": "Cruise Ship Privacy Notice",
       "description": "We take your privacy very seriously. This notice sets forth what we collect, what we share, and your right. For more details, please see the captain.",
       "open": "Open privacy notice",
-      "close": "Close privacy notice",
+      "close": "Close",
+      "close-and-call-franklin": "Call Franklin and demand to see Captain Maria",
       "table": {
         "title": "The Personal information we collect and how we use it",
-        "headers": ["CATEGORY OF PERSONAL information", "DESCRIPTION"],
+        "headers": [
+          "CATEGORY OF PERSONAL information",
+          "DESCRIPTION"
+        ],
         "content": [
           {
             "category": "Identification and contact information",
@@ -448,7 +472,7 @@
         "content": [
           {
             "category": "Your rights",
-            "description": "You have the right to request a copy of all Personal Information collected about you and to ask us to collect or delete that information. To exercice these rights, please contact Captain Maria "
+            "description": "You have the right to request a copy of all Personal Information collected about you and to ask us to collect or delete that information. To exercice these rights, please contact Captain Maria."
           }
         ]
       }
@@ -496,7 +520,7 @@
         },
         {
           "dir": "ltr",
-          "text": "That’s not necessary – you don’t have privacy rights",
+          "text": "That’s not necessary – you don’t have privacy rights.",
           "isFranklin": true
         },
         {
@@ -622,11 +646,13 @@
   },
   "found-object": {
     "title": "You've found a privacy symbol",
-    "wrong-item": "Sorry, you've clicked on a wrong item. Try clicking on other items to find the privacy notice.",
+    "wrong-item": {
+      "1": "Sorry, you've clicked on a wrong item. Try clicking on other items to find missing piece of the privacy notice.",
+      "2": "Sorry, you've clicked on a wrong item. Have you looked under the carpet yet?"
+    },
     "find-x-more": "You need to find {x} more symbols",
     "found-all": "You've found all privacy symbols!",
-    "privacy-found-part-1": "Congratulations! You've found the first part of the privacy notice. <br /> You need to find the second part of the privacy notice.",
-    "privacy-found-part-2": "Congratulations! You found the missing part of the privacy notice.",
+    "privacy-found": "Congratulations! You found the missing part of the privacy notice.",
     "items": {
       "bridge": "Collect only what is necessary",
       "eye": "Be transparent",
@@ -670,11 +696,17 @@
     "questions": {
       "q1": {
         "text": "Does the privacy notice contain any information in connection with collecting data covering dietary restrictions?",
-        "options": ["YES", "NO"]
+        "options": [
+          "YES",
+          "NO"
+        ]
       },
       "q2": {
         "text": "Should the privacy notice have been shared with the other passengers?",
-        "options": ["YES", "NO"]
+        "options": [
+          "YES",
+          "NO"
+        ]
       }
     }
   },

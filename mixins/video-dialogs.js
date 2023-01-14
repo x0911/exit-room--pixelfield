@@ -97,6 +97,14 @@ export default {
           isConfirmable: true,
         },
       ];
+      const bedroom = [
+        {
+          speaker: this.$t('player-is-thinking'),
+          from: 2,
+          textArray: this.$tr('speeches.usa.1'),
+          isConfirmable: true,
+        },
+      ];
       const bedroomX2 = [
         {
           speaker: this.$t('player-is-thinking'),
@@ -127,33 +135,6 @@ export default {
           isConfirmable: true,
         },
       ];
-      const usaX2 = [
-        {
-          speaker: this.$t('franklin'),
-          avatar: 'franklin.jpg',
-          from: 1,
-          text: this.$tr('speeches.usa.1'),
-          isConfirmable: true,
-        },
-      ];
-      const usaX3 = [
-        {
-          speaker: this.$t('franklin'),
-          avatar: 'franklin.jpg',
-          from: 1,
-          text: this.$tr('speeches.usa.2'),
-          isConfirmable: true,
-        },
-      ];
-      const usaX4 = [
-        {
-          speaker: this.$t('player-is-thinking'),
-          avatar: 'player.png',
-          from: 1,
-          text: this.$tr('speeches.usa.3'),
-          isConfirmable: true,
-        },
-      ];
 
       return {
         'game-intro-0': splash,
@@ -163,9 +144,7 @@ export default {
         brazil: hallwayRoom,
         'china-x2': bedroomX2,
         'china-x5': bedroomX5,
-        'usa-x2': usaX2,
-        'usa-x3': usaX3,
-        'usa-x4': usaX4,
+        'usa': bedroom,
       };
     },
   },

@@ -90,9 +90,22 @@
                         dark
                         height="100%"
                         class="d-flex align-center"
+                        :style="
+                          getWrongAnswerStyles(
+                            suggestion,
+                            'border: 1px solid #FF5252 !important;'
+                          )
+                        "
                         @click="chooseSuggestion(suggestion)"
                       >
-                        <v-card-text>
+                        <v-card-text
+                          :style="
+                            getWrongAnswerStyles(
+                              suggestion,
+                              'color: #FF5252 !important;'
+                            )
+                          "
+                        >
                           {{ suggestion.text }}
                         </v-card-text>
                       </v-card>
@@ -114,7 +127,7 @@
               depressed
               @click="finish()"
             >
-              {{ $t('continue') }}
+              {{ $t('map') }}
               <v-icon class="ms-2"
                 >mdi-keyboard-backspace mdi-rotate-180</v-icon
               >
@@ -138,7 +151,7 @@ import ScoreBoardInline from '~/components/ScoreBoardInline.vue';
 import SoundPlayer from '~/mixins/sound-player.js';
 import ImpressStep from '~/mixins/impress-step.js';
 import DotFlashing from '~/components/dot-flashing.vue';
-import PuzzleGame from "~/components/impress/game/russia/puzzle-game";
+import PuzzleGame from '~/components/impress/game/russia/puzzle-game';
 
 export default {
   components: {
@@ -150,6 +163,7 @@ export default {
   data: () => ({
     stepId: 'russia',
     loading: false,
+    hasErrors: false,
     step: 0,
     videos: {
       intro: {
@@ -165,7 +179,6 @@ export default {
     correctMsgs: [],
     suggestions: [],
     chatEnded: false,
-    userScammed: false,
     msgDelay: 3000,
   }),
   computed: {
@@ -215,10 +228,10 @@ export default {
     stepLeave() {
       this.$set(this.videos.intro, 'ended', false);
       this.$set(this.result, 'model', false);
+      this.$set(this, 'step', 1);
       this.$set(this, 'msgs', []);
       this.$set(this, 'suggestions', []);
       this.$set(this, 'chatEnded', false);
-      this.$set(this, 'userScammed', false);
     },
     puzzleNextHandler() {
       this.$store.commit('SET_INSTRUCTIONS', {
@@ -243,9 +256,17 @@ export default {
       this.$set(this, 'suggestions', msgs);
     },
     chooseSuggestion(msg) {
+      this.hasErrors = msg.closeGame;
+      if (this.hasErrors) return;
       this.pushMsg(msg);
       this.suggestions = [];
-      this.initChat(msg.closeGame);
+      this.initChat();
+    },
+    isWrongAnswer({ closeGame }) {
+      return this.hasErrors && closeGame;
+    },
+    getWrongAnswerStyles(suggestion, styles) {
+      return this.isWrongAnswer(suggestion) ? styles : '';
     },
     wait() {
       const msgDelay = this.msgDelay;
@@ -255,14 +276,9 @@ export default {
         }, msgDelay);
       });
     },
-    async initChat(closeGame = false) {
+    async initChat() {
       const msgs = this.$t('russia.task-2.msgs');
       const innerMsgs = this.msgs;
-      if (closeGame) {
-        this.$set(this, 'userScammed', true);
-        this.finish();
-        return;
-      }
       if (innerMsgs.length === 0) {
         this.pushMsg(msgs[0]);
         await this.wait();
@@ -342,10 +358,10 @@ export default {
       }, 200);
     },
     async finish() {
-      let score = this.getScore();
-      if (this.userScammed) {
-        score = 0;
-      }
+      const score = this.getScore();
+      // if (this.userScammed) {
+      //   score = 0;
+      // }
       try {
         const info = this.getActiveTaskInfo();
         await this.$store.dispatch('createTask', {
@@ -357,21 +373,12 @@ export default {
       } catch (err) {
         console.log(err);
       }
-      this.$set(this.result, 'perc', score);
-      this.$set(this.result, 'passed', score === 100);
-      this.$store.commit('SET_SCORE_BOARD_DIALOG', {
-        model: false,
-        score: this.result.perc,
-        game: 'russia',
-      });
       this.stepLeave();
-      this.showResultDialog();
+      localStorage.setItem('room_russia', '100');
+      window.impressAPI.goto('map');
     },
     getScore() {
       return 100;
-    },
-    showResultDialog() {
-      this.$set(this.result, 'model', true);
     },
   },
 };

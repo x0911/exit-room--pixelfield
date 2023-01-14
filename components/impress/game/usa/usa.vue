@@ -17,6 +17,11 @@
           :path="require('@/assets/animated/spinner.json')"
         ></lottie-animation>
       </div>
+      <privacy-notice
+        v-if="isPrivacyOpen"
+        v-model="isPrivacyOpen"
+        :persistent="false"
+      />
       <usa-survey
         v-if="isQuestionsOpen"
         @cancel="isQuestionsOpen = false"
@@ -24,7 +29,12 @@
       />
       <phone-questions
         v-else-if="isPhoneOpen"
+        v-click-outside="outsideClickConfig"
         @next="completePhoneQuestionsHandler"
+      />
+      <privacy-survey
+        v-else-if="isPrivacySurveyOpen"
+        @next="completePrivacySurveyHandler"
       />
       <missing-piece
         v-else-if="isMissingPieceOpen"
@@ -32,23 +42,24 @@
       />
       <div class="d-flex justify-end">
         <v-btn
-          v-if="!isGameStarted"
           color="primary"
           tile
-          class="px-6 mr-4"
+          class="btn-open-privacy px-6 mr-4"
           large
           fixed
-          bottom
+          right
+          :disabled="isPrivacyOpen"
           style="bottom: 30px; right: 3rem"
-          @click="isQuestionsOpen = true"
+          @click="isPrivacyOpen = true"
         >
-          <span class="mr-3">{{ $t('start') }}</span>
-          <v-icon large>mdi-keyboard-backspace mdi-rotate-180</v-icon>
+          <span class="mr-3">{{ $t('china.privacy-notice.open') }}</span>
+          <v-icon>mdi-file-document</v-icon>
         </v-btn>
       </div>
     </v-dialog>
     <score-board-inline
       :model="result.model"
+      :label="$t('usa.scoreBoardInline')"
       :perc="result.perc"
       :passed="result.passed"
       @restart="restart"
@@ -64,9 +75,13 @@ import ImpressStep from '~/mixins/impress-step.js';
 import UsaSurvey from '~/components/impress/game/usa/usa-survey';
 import MissingPiece from '~/components/impress/game/usa/missing-piece';
 import PhoneQuestions from '~/components/impress/game/usa/phone-questions';
+import PrivacyNotice from '~/components/impress/game/shared/privacy-notice';
+import PrivacySurvey from '~/components/impress/game/usa/privacy-survey';
 
 export default {
   components: {
+    PrivacySurvey,
+    PrivacyNotice,
     PhoneQuestions,
     UsaSurvey,
     MissingPiece,
@@ -77,8 +92,10 @@ export default {
     stepId: 'usa',
     isQuestionsOpen: false,
     isPhoneOpen: false,
+    isPrivacySurveyOpen: false,
     isMissingPieceOpen: false,
-    isChartOpen: false,
+    isChatOpen: false,
+    isPrivacyOpen: false,
     isLoading: false,
     videos: {
       intro: {
@@ -92,14 +109,41 @@ export default {
     },
   }),
   computed: {
-    isGameStarted() {
-      return (
-        this.isLoading ||
-        this.isQuestionsOpen ||
-        this.isPhoneOpen ||
-        this.isMissingPieceOpen ||
-        this.isChartOpen
-      );
+    outsideClickConfig() {
+      return {
+        handler: () => {
+          this.isPhoneOpen = false;
+          this.isPrivacySurveyOpen = true;
+          this.$store.commit('SET_HINT', []);
+        },
+        include: () => {
+          return [
+            document.querySelector('.instructions-bottom'),
+            document.querySelector('.btn-open-privacy'),
+            document.querySelector('.privacy-notice'),
+            document.querySelector('.privacy-notice-actions'),
+            document.querySelector('.btn-hints'),
+          ].filter((htmlElement) => htmlElement);
+        },
+      };
+    },
+  },
+  watch: {
+    async isPrivacyOpen(value) {
+      if (!value) {
+        const isStart = [
+          this.isQuestionsOpen,
+          this.isPhoneOpen,
+          this.isPrivacySurveyOpen,
+          this.isMissingPieceOpen,
+          this.isChatOpen,
+        ].every((step) => !step);
+
+        if (isStart) {
+          await this.addLoading();
+          this.isQuestionsOpen = true;
+        }
+      }
     },
   },
   mounted() {
@@ -115,19 +159,29 @@ export default {
         }, ms);
       });
     },
-    restart() {
+    stepLeave() {
+      this.$set(this.videos.intro, 'ended', false);
+      this.$set(this.result, 'model', false);
+      this.resetValues();
+    },
+    resetValues() {
       this.isQuestionsOpen = false;
       this.isPhoneOpen = false;
+      this.isPrivacySurveyOpen = false;
       this.isMissingPieceOpen = false;
-      this.isChartOpen = false;
+      this.isChatOpen = false;
       this.isLoading = false;
+      this.isPrivacyOpen = false;
+    },
+    restart() {
+      this.stepLeave();
       setTimeout(this.introEnded, 100);
     },
     introEnded(immediate = false) {
-      this.$set(this.result, 'model', false);
       setTimeout(
         () => {
           this.$set(this.videos.intro, 'ended', true);
+          this.isPrivacyOpen = true;
         },
         immediate ? 0 : 1000
       );
@@ -135,11 +189,15 @@ export default {
     async completePhoneQuestionsHandler() {
       this.isPhoneOpen = false;
       await this.addLoading();
+      this.isPrivacySurveyOpen = true;
+    },
+    completePrivacySurveyHandler() {
+      this.isPrivacySurveyOpen = false;
       this.isMissingPieceOpen = true;
     },
     async completeMissingPieceHandler() {
       this.isMissingPieceOpen = false;
-      this.isChartOpen = true;
+      this.isChatOpen = true;
       await this.addLoading();
       this.startChat();
     },

@@ -1,6 +1,6 @@
 <template>
-  <v-img class="outer" :src="require('~/assets/images/games/usa/phone.png')">
-    <v-img :src="require('~/assets/images/games/usa/phone-background.png')" />
+  <v-img :src="require('~/assets/images/games/usa/phone.png')" class="outer">
+    <v-img :src="require('~/assets/images/games/usa/phone-background.png')"/>
     <div v-if="step === 1">
       <div class="content d-flex flex-wrap align-center">
         <div
@@ -8,8 +8,9 @@
           :key="index"
           class="app-container d-flex justify-center align-center"
         >
-          <v-icon v-if="index === 2" x-large class="icon" @click="step++"
-            >mdi-web</v-icon
+          <v-icon v-if="index === 2" class="icon" x-large @click="step++"
+          >mdi-web
+          </v-icon
           >
         </div>
       </div>
@@ -23,8 +24,9 @@
       <div class="form-content d-flex flex-column align-center">
         <div class="app-content-form d-flex justify-center align-center">
           <v-spacer></v-spacer>
-          <v-icon x-large style="border-left: 2px solid white" class="pa-1"
-            >mdi-magnify</v-icon
+          <v-icon class="pa-1" style="border-left: 2px solid white" x-large
+          >mdi-magnify
+          </v-icon
           >
         </div>
         <v-checkbox
@@ -32,11 +34,11 @@
           :key="index"
           v-model="option.value"
           :error="hasErrors"
-          style="border: 1px solid white"
+          :value="option.value"
           class="rounded-lg pl-3"
           color="white"
-          :value="option.value"
           hide-details
+          style="border: 1px solid white"
         >
           <template #label>
             <div>
@@ -54,10 +56,10 @@
             {{ $t('previous') }}
           </v-btn>
           <v-btn
-            style="border-color: #330000 !important"
-            color="primary"
             class="px-4"
+            color="primary"
             large
+            style="border-color: #330000 !important"
             @click.native="nextHandler"
           >
             {{ $t('next') }}
@@ -84,7 +86,7 @@ export default {
   },
   computed: {
     isFormValidated() {
-      return this.options.every(({ value }, index) =>
+      return this.options.every(({value}, index) =>
         this.correctOptions.includes(index) ? value : !value
       );
     },
@@ -96,6 +98,22 @@ export default {
         this.hasErrors = false;
       },
     },
+    step: {
+      immediate: true,
+      handler(step) {
+        if (step === 1) {
+          this.$store.commit('SET_HINT', [this.$t('usa.hints.phone-questions')]);
+        } else {
+          this.$store.commit("SET_INSTRUCTIONS", {
+            bottomModel: true,
+            title: this.$t('franklin'),
+            steps: ['usa.instructions.phone-questions'],
+            image: 'avatars/franklin.jpg',
+          })
+          this.$store.commit('SET_HINT', []);
+        }
+      }
+    }
   },
   methods: {
     nextHandler() {

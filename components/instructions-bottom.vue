@@ -8,7 +8,7 @@
     content-class="elevation-0 overflow-auto max-h-100"
     class="elevation-0"
   >
-    <div class="pb-12 px-8">
+    <div class="instructions-bottom pb-12 px-8">
       <v-row v-if="upperImage">
         <v-col>
           <v-layout align-center justify-center>

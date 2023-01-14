@@ -2,29 +2,30 @@
   <div>
     <v-bottom-sheet
       v-model="model"
-      scrollable
       class="elevation-0"
       content-class="elevation-0 pb-12"
       inset
+      scrollable
     >
       <template #activator="{ on }">
         <v-btn
           v-show="globalBtns && !instructionsModel && hints && hints.length > 0"
-          fixed
+          class="btn-hints"
+          bottom
           color="rgba(0,0,0,0.65)"
           fab
-          width="48"
+          fixed
           height="48"
-          bottom
           right
           style="bottom: 30px !important; z-index: 9999 !important"
-          v-on="on"
+          width="48"
           @click="playGameSound('button-press')"
+          v-on="on"
         >
           <v-icon>mdi-help</v-icon>
         </v-btn>
       </template>
-      <v-card light flat tile class="info-screen darken border-2 mx-auto">
+      <v-card class="info-screen darken border-2 mx-auto" flat light tile>
         <v-card-text class="pt-4">
           <div class="font-weight-bold yellow--text mb-2">
             {{ $t('hint-title') }}
@@ -40,31 +41,31 @@
     </v-bottom-sheet>
     <v-btn
       v-if="globalBtns"
-      class="normal-btn"
-      fixed
       bottom
-      x-small
-      depressed
+      class="normal-btn"
       color="transparent"
-      left
+      depressed
+      fixed
       href="https://www.f-mark.cz/"
-      target="_blank"
+      left
       style="z-index: 9999 !important; bottom: 5px !important"
+      target="_blank"
+      x-small
       @click="playGameSound('button-press')"
     >
       Produced by: F-mark s.r.o.
     </v-btn>
     <v-btn
       v-if="!globalBtns && videoIsSkippable"
-      color="primary"
-      large
       absolute
       bottom
-      right
       class="px-6 font-weight-light"
-      tile
+      color="primary"
       depressed
+      large
+      right
       style="z-index: 9999 !important; bottom: 100px !important"
+      tile
       @click="stopCurrentVideo"
     >
       {{ $t('skip') }}
@@ -86,10 +87,14 @@ export default {
     fullPath() {
       return this.$route.fullPath;
     },
-    hints() {
+    stepHints() {
       const activeStep = this.activeStep;
       const hints = activeStep ? this.$t(`hints.${activeStep}`) : [];
       return hints || [];
+    },
+    hints() {
+      const hints = this.$store.getters.hint;
+      return Array.isArray(hints) && hints.length ? hints : this.stepHints
     },
     globalBtns() {
       return this.$store.getters.globalBtns;

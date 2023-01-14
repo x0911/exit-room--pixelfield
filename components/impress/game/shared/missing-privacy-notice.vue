@@ -49,7 +49,7 @@
         large
         @click="$emit('input', false)"
       >
-        {{ $t('china.privacy-notice.close') }}
+        {{ $t('china.privacy-notice.close-and-call-franklin') }}
         <v-icon class="ml-2">mdi-close</v-icon>
       </v-btn>
     </div>

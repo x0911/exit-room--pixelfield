@@ -8,9 +8,19 @@
   >
     <v-card class="info-screen border-2" light>
       <v-card-text class="px-4 pb-0 pt-4">
+        <div v-if="label" class="d-flex align-center">
+          <v-avatar size="40" class="mr-4">
+            <v-img
+              :src="require(`~/assets/images/games/russia/franklin.jpg`)"
+              alt="Speaker Image"
+            ></v-img>
+          </v-avatar>
+          <div :inner-html.prop="label" class="font-weight-bold text-body-1"></div>
+        </div>
         <div
           v-if="hasSubtitle || hasPanels"
-          class="primary grey--text text--lighten-2 font-weight-light px-5 py-5"
+          :class="{ 'mt-4': label }"
+          class="primary grey--text text--lighten-2 mt-4 font-weight-light px-5 py-5"
         >
           <slot name="subtitle">
             <v-layout class="gap-4">
@@ -100,6 +110,10 @@ export default {
     model: {
       type: Boolean,
       default: false,
+    },
+    label: {
+      type: String,
+      default: null,
     },
     disableTryAgain: {
       type: Boolean,
