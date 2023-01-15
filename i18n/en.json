@@ -105,21 +105,17 @@
         "You have been assigned to your seat with 3 other guests.",
         "Before you eat, we have made a special task for you. Take a look at the menu and follow the instructions."
       ],
-      "3": ["I’m only 2 months pregnant and not showing"],
-      "4": [
+      "3": [
+        "I’m only 2 months pregnant and not showing",
         "I don’t want people to know I’m pregnant yet, and sharing that I’m not drinking may reveal that."
       ],
+      "4": [
+        "I developed diabetes as a child and have to be very careful with what I eat, but I don’t tell people about this.",
+        "It’s something I tend to keep private. I wonder if the others will suspect my medical condition."
+      ],
       "5": [
-        "I developed diabetes as a child and have to be very careful with what I eat –"
-      ],
-      "6": ["but I don’t tell people about this –"],
-      "7": [
-        "it’s something I tend to keep private. I wonder if the others will suspect my medical condition."
-      ],
-      "8": [
-        "I know that in some parts of the world, people are discriminated against based on religion –"
-      ],
-      "9": ["by sharing that I keep kosher, now everyone knows I’m Jewish."]
+        "I know that in some parts of the world, people are discriminated against based on religion, by sharing that I keep kosher, now everyone knows I’m Jewish."
+      ]
     },
     "brazil": {
       "1": [
@@ -132,16 +128,17 @@
         "Hmm, that lunch menu incident was weird. I should do something about this!",
         "But first I need to find a ship ticket containing the privacy notice and examine the notice to see whether it was really legitimate to collect and share dietary restrictions with the other passengers."
       ],
-      "2": ["I heard some noise in here", "is everything okay?"],
+      "2": ["I heard some noise in here", "Is everything okay?"],
       "3": [
         "The dietary information was shared with other passengers which was not disclosed in the privacy notice",
         "This is concerning"
       ],
       "4": [
-        "Hmmmm. That seems unlikely",
+        "Hmmmm. That seems unlikely.",
         "Captain Maria takes privacy seriously.",
         "Why don’t you go to the VIP game room to relax and take your mind off your worries. You are on vacation and should not worry about such things after all!"
-      ]
+      ],
+      "5": ["Everything is fine!"]
     },
     "usa": {
       "1": "I am desperate and scared. Do I have any privacy rights here?! <br />Let’s check privacy notice to see what it says."
@@ -167,7 +164,9 @@
     },
     "china": {
       "title": "Look at that!",
-      "a1": "You've found a note from a mysterious person."
+      "title2": "Find suspicious part!",
+      "a1": "You've found a note from a mysterious person.",
+      "a2": "Do you find any part of the privacy notice makes you uncomfortable? Please click at any part of the privacy notice that makes you uncomfortable."
     },
     "usa": {
       "games": {
@@ -313,8 +312,7 @@
           "No concerns",
           "Yes – it is unprofessional",
           "Yes – it feels like this is private information that should not have been shared"
-        ],
-        "correctOptions": [2]
+        ]
       },
       "2": {
         "label": "What should you say to Franklin?",
@@ -323,8 +321,7 @@
           "There was no need for each passenger to know this information.",
           "The waiter’s notes should not have been on the menu.",
           "All of the above."
-        ],
-        "correctOptions": [3]
+        ]
       }
     }
   },
@@ -347,7 +344,6 @@
         "options": [
           "Yes! Some information should not be shown to other passengers.",
           "Yes! Some passenger information should be deleted after certain retention periods.",
-          "Yes! Both of the above mentioned.",
           "No! This information is needed for the purposes of the functioning of the game – and therefore fine."
         ]
       }
@@ -359,7 +355,7 @@
       "points": "points",
       "high_score": "High score:",
       "seconds": "seconds",
-      "ranking": "“Congratulations: You are number {ranking} on our eternal scoreboard!”",
+      "ranking": "Congratulations: You are number {ranking} on our eternal scoreboard!",
       "ranking-2": "Your name, game-score and other travel information (e.g., home-address, cabin-number, age and nationality) including your picture are saved and processed in our eternal scoreboard.",
       "statistics": "Statistics of former players:"
     },
@@ -582,7 +578,9 @@
     ],
     "egypt": [
       "This is another example of human error – perhaps we should replace the waiter with an AI-powered robot, like me."
-    ]
+    ],
+    "china": ["Cheer up!", "Follow me to the game room."],
+    "brazil": ["Are you tired after playing?", "Come rest in your room."]
   },
   "excellent": "Excellent",
   "bad": "Bad",
@@ -714,5 +712,11 @@
   "finish": "Finish",
   "upload_photo": "Upload photo",
   "hide": "Hide",
-  "receptionist": "Receptionist"
+  "receptionist": "Receptionist",
+  "privacy_notice": "Privacy Notice",
+  "call-franklin": "Call Franklin",
+  "wrong-response": "Wrong Response!",
+  "wrong-response-desc": "You've selected an incorrect response, please try again",
+  "ok": "OK",
+  "click-to-open-privacy-notice": "Click to open Privacy Notice"
 }

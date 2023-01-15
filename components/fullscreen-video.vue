@@ -60,16 +60,48 @@
                 <v-flex>
                   <div>
                     <template v-if="dialog.isConfirmable">
-                      <div v-if="dialog.speaker" class="font-weight-bold">
-                        <span> {{ dialog.speaker }}: </span>
-                      </div>
-                      <template v-if="dialog.speech">
-                        <div :inner-html.prop="dialog.text"></div>
+                      <template
+                        v-if="dialog.options && dialog.options.length > 0"
+                      >
+                        <div
+                          class="text-center yellow--text font-weight-medium mb-3"
+                        >
+                          {{ $t('pick-response-to-continue') }}
+                        </div>
+                        <v-row>
+                          <template v-for="(option, oi) in dialog.options">
+                            <v-col :key="`option-${i}-${oi}`" cols="6">
+                              <v-card
+                                flat
+                                dark
+                                height="100%"
+                                class="d-flex align-center"
+                                @click="chooseOption(dialog, option)"
+                              >
+                                <v-card-text>
+                                  <div
+                                    :inner-html.prop="
+                                      option.textArray || dialog.text
+                                    "
+                                  ></div>
+                                </v-card-text>
+                              </v-card>
+                            </v-col>
+                          </template>
+                        </v-row>
                       </template>
                       <template v-else>
-                        <div
-                          :inner-html.prop="dialog.textArray || dialog.text"
-                        ></div>
+                        <div v-if="dialog.speaker" class="font-weight-bold">
+                          <span> {{ dialog.speaker }}: </span>
+                        </div>
+                        <template v-if="dialog.speech">
+                          <div :inner-html.prop="dialog.text"></div>
+                        </template>
+                        <template v-else>
+                          <div
+                            :inner-html.prop="dialog.textArray || dialog.text"
+                          ></div>
+                        </template>
                       </template>
                     </template>
                     <template v-else>
@@ -94,7 +126,12 @@
               </v-layout>
             </v-card-text>
           </v-card>
-          <v-card-actions v-if="dialog.isConfirmable">
+          <v-card-actions
+            v-if="
+              dialog.isConfirmable &&
+              (!dialog.options || dialog.options.length === 0)
+            "
+          >
             <v-spacer></v-spacer>
             <v-btn
               class="px-6"
@@ -104,7 +141,7 @@
               tile
               @click="hideVideoDialog(dialog.id, true)"
             >
-              {{ $tr('next') }}
+              {{ dialog.nextBtnText || $tr('next') }}
             </v-btn>
           </v-card-actions>
         </div>
@@ -329,6 +366,19 @@ export default {
       this.$store.commit('SHOW_GLOBAL_BTNS');
       this.$emit('ended');
       this.$set(this, 'canPlay', false);
+      this.$store.commit('SET_VIDEO_IS_SKIPPABLE', true);
+    },
+    chooseOption(dialog, option) {
+      if (!option.isCorrect) {
+        this.$store.commit('SET_INSTRUCTIONS', {
+          model: true,
+          title: this.$t('wrong-response'),
+          steps: ["wrong-response-desc"],
+          nextText: this.$t('ok'),
+        });
+        return;
+      }
+      this.hideVideoDialog(dialog.id, true);
     },
   },
 };

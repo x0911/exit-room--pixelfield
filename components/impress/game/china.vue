@@ -94,7 +94,9 @@
           class="mx-auto"
         >
           <v-img
-            :src="require('~/assets/images/games/china/items/privacy_notice_front.png')"
+            :src="
+              require('~/assets/images/games/china/items/privacy_notice_front.png')
+            "
           >
             <v-card-title
               class="d-block text-center mt-16 pt-12 text-h4 font-weight-bold"
@@ -127,10 +129,40 @@
                 disable-filtering
                 disable-pagination
                 class="transparent"
-              ></v-data-table>
+              >
+                <template #[`item.name`]="{ item }">
+                  <span
+                    class="cursor-pointer"
+                    :data-video-start="
+                      canMarkPrivacyLeak && item.suspicious
+                        ? `${stepId}-x5`
+                        : ''
+                    "
+                    @click="handlePrivacyRowClick(item)"
+                  >
+                    {{ item.name }}
+                  </span>
+                </template>
+                <template #[`item.desc`]="{ item }">
+                  <span
+                    class="cursor-pointer"
+                    :data-video-start="
+                      canMarkPrivacyLeak && item.suspicious
+                        ? `${stepId}-x5`
+                        : ''
+                    "
+                    @click="handlePrivacyRowClick(item)"
+                  >
+                    {{ item.desc }}
+                  </span>
+                </template>
+              </v-data-table>
             </v-card-text>
           </v-img>
-          <v-card-actions class="d-flex justify-end gap-6 pt-4">
+          <v-card-actions
+            v-if="!canMarkPrivacyLeak"
+            class="d-flex justify-end gap-6 pt-4"
+          >
             <v-btn
               dark
               color="primary"
@@ -167,10 +199,15 @@
             <v-card-text class="pt-8 white--text">
               <template v-for="(q, i) in questions">
                 <div :key="i">
-                  <div class="white--text">
+                  <div
+                    :class="{
+                      'white--text': !hasError,
+                      'error--text': hasError,
+                    }"
+                  >
                     {{ $t(`privacy-notice.questions.${q.question}.text`) }}
                   </div>
-                  <v-radio-group v-model="q.value">
+                  <v-radio-group v-model="q.value" :error="hasError">
                     <template
                       v-for="(option, i) in $tr(
                         `privacy-notice.questions.${q.question}.options`,
@@ -191,7 +228,12 @@
               </template>
             </v-card-text>
           </v-card>
-          <v-card-actions class="d-flex justify-end gap-6 pt-4">
+          <v-card-actions class="d-flex gap-6 pt-4">
+            <v-btn class="px-6 mr-8" large @click="step = 4">
+              <v-icon class="mr-2">mdi-keyboard-backspace</v-icon>
+              {{ $t('privacy_notice') }}
+            </v-btn>
+            <v-spacer></v-spacer>
             <v-btn
               dark
               color="primary"
@@ -199,8 +241,6 @@
               x-large
               depressed
               tile
-              :disabled="nextDisabled"
-              :data-video-start="`${stepId}-x5`"
               @click="nextStep"
             >
               <span class="me-3">
@@ -488,6 +528,8 @@ export default {
       items: [],
       count: 5,
     },
+    hasError: false,
+    canMarkPrivacyLeak: false,
   }),
   computed: {
     nextDisabled() {
@@ -558,6 +600,7 @@ export default {
         items.push({
           name: this.$t(`privacy-notice.items.${i + 1}.name`),
           desc: this.$t(`privacy-notice.items.${i + 1}.desc`),
+          suspicious: i === 1,
         });
       }
       return items;
@@ -587,6 +630,9 @@ export default {
       this.$set(this.result, 'model', false);
       this.$set(this, 'step', 1);
       this.$set(this, 'questionModel', 0);
+      this.$set(this, 'seTypeSelectModel', 0);
+      this.$set(this, 'seTypeAnswerPicker', null);
+      this.$set(this, 'canMarkPrivacyLeak', false);
       this.resetValue();
     },
     resetValue() {
@@ -603,6 +649,8 @@ export default {
         this.$set(this.rotatableItems[i], 'dir', 'front');
       });
       this.$set(this.foundObject, 'items', []);
+      this.$set(this.foundObject, 'model', false);
+      this.$set(this.foundObject, 'name', '');
     },
     restart() {
       this.stepLeave();
@@ -646,32 +694,6 @@ export default {
       this.$set(this.seTypesAnswers, key, seType);
       this.$set(this, 'seTypeSelectModel', 0);
     },
-    questionNext() {
-      if (!this.nextDisabled) {
-        const index = this.questionModel;
-        const questions = this.questions;
-        if (index >= questions.length - 1) {
-          this.$set(this, 'step', 4);
-          setTimeout(() => {
-            this.$store.commit('SET_INSTRUCTIONS', {
-              model: true,
-              title: this.$t('screens.china.title2'),
-              steps: ['screens.china.a2'],
-              nextMethod: this.openPart2,
-            });
-          }, 100);
-          return;
-        }
-        this.questionModel++;
-      }
-    },
-    questionPrev() {
-      if (this.questionModel > 0) {
-        this.questionModel--;
-      } else {
-        this.$set(this, 'step', 1);
-      }
-    },
     async finish() {
       const score = this.getScore();
       try {
@@ -710,6 +732,23 @@ export default {
       this.$set(this, 'step', 3);
     },
     nextStep() {
+      this.hasError = false;
+      if (this.step === 5) {
+        if (this.nextDisabled) {
+          this.hasError = true;
+          return;
+        }
+        if (!this.canMarkPrivacyLeak) {
+          this.canMarkPrivacyLeak = true;
+          this.step--;
+          this.$store.commit('SET_INSTRUCTIONS', {
+            model: true,
+            title: this.$t('screens.china.title2'),
+            steps: ['screens.china.a2'],
+          });
+          return;
+        }
+      }
       this.step++;
       if (this.step === 2) {
         this.$set(this.videos.intro, 'ended', false);
@@ -732,7 +771,8 @@ export default {
           this.replaceBg('china-v4');
         }, 1000);
       }
-      if (this.step === 6) {
+      if (this.step === 6 || (this.step === 5 && this.canMarkPrivacyLeak)) {
+        this.$store.commit('SET_VIDEO_IS_SKIPPABLE', false);
         this.$set(this.videos.intro, 'ended', false);
         this.$store.commit('PLAY_VIDEO', `${this.stepId}-x5`);
         setTimeout(() => {
@@ -768,6 +808,11 @@ export default {
     hideFoundObjectModel() {
       this.$set(this.foundObject, 'model', false);
       if (this.foundObject.items.length === this.foundObject.count) {
+        this.nextStep();
+      }
+    },
+    handlePrivacyRowClick(item) {
+      if (item.suspicious && this.canMarkPrivacyLeak) {
         this.nextStep();
       }
     },

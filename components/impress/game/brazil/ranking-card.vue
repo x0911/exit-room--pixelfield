@@ -8,15 +8,17 @@
       {{ $t('brazil.mini_game.ranking-2') }}
     </v-card-text>
     <v-card-text class="px-0">
-      <div class="subtitle-2 text--darken-4 font-weight-bold mb-3">
-        {{ $t('brazil.mini_game.statistics') }}
-      </div>
-      <v-data-table
-        :headers="headers"
-        :items="items"
-        :items-per-page="5"
-        class="elevation-0"
-      ></v-data-table>
+      <template v-if="false">
+        <div class="subtitle-2 text--darken-4 font-weight-bold mb-3">
+          {{ $t('brazil.mini_game.statistics') }}
+        </div>
+        <v-data-table
+          :headers="headers"
+          :items="items"
+          :items-per-page="5"
+          class="elevation-0"
+        ></v-data-table>
+      </template>
       <v-card class="pa-0" flat>
         <v-card-title
           class="px-0 pb-0 mb-3 subtitle-1"
@@ -99,14 +101,14 @@ export default {
     questionModel: {
       deep: true,
       handler() {
-        this.hasErrors = false
-      }
-    }
+        this.hasErrors = false;
+      },
+    },
   },
   methods: {
     finish() {
       const passed =
-        !this.questionModel.includes(3) && this.questionModel.length === 3;
+        !this.questionModel.includes(2) && this.questionModel.length === 2;
       if (!passed) {
         this.hasErrors = true;
       } else {

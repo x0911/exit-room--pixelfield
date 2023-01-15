@@ -55,6 +55,7 @@
                     :key="`step-bg-${i}`"
                     :class="{
                       [`${activeStep}`]: true,
+                      [`point__${roomsBgs[step.id]}`]: true,
                       'is-vertical': isVertical,
                       'opacity-0': !globalBtns,
                     }"
@@ -417,6 +418,11 @@ export default {
   width: 100%;
   height: 100%;
   transition: all 1s ease-in-out;
+
+  &.point__china-v3 {
+    // background-size: contain !important;
+    // background-position: center !important;
+  }
 }
 
 .app-bg,
