@@ -52,6 +52,7 @@ export default {
       steps: ['brazil.welcome-to-game-room'],
       nextText: this.$t('start'),
       image: 'avatars/franklin.jpg',
+      overlay: true,
     });
   },
 };

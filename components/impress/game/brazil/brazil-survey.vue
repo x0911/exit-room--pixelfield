@@ -5,13 +5,24 @@
         <v-card light tile flat class="info-screen border-3">
           <template v-for="(q, i) in questions">
             <v-card-text :key="i" class="py-6">
-              <div class="mb-2 text-body-1 font-weight-medium">
-                {{ $tr(`brazil.questions.${i + 1}.label`) }}
-                <template v-if="q.isLink">
-                  <v-btn icon @click="privacyNotes.model = true">
-                    <v-icon>mdi-launch</v-icon>
+              <template v-if="q.isLink">
+                <div class="mb-1">
+                  <v-btn
+                    small
+                    text
+                    class="text-underline f-odibee-sans px-0"
+                    @click="privacyNotes.model = true"
+                  >
+                    <v-icon small class="me-1">mdi-launch</v-icon>
+                    {{ $t('click-to-open-privacy-notice') }}
                   </v-btn>
-                </template>
+                </div>
+              </template>
+              <div
+                class="mb-2 text-body-1 font-weight-medium"
+                :class="{ 'error--text': hasErrors }"
+              >
+                {{ $tr(`brazil.questions.${i + 1}.label`) }}
               </div>
               <template if="q.type === 'checkbox'">
                 <v-btn-toggle v-model="q.value">
@@ -23,6 +34,7 @@
                   >
                     <v-btn
                       :key="ai"
+                      :value="ai"
                       :class="{ 'primary white--text': q.value === ai }"
                     >
                       {{ answer }}
@@ -45,7 +57,7 @@
           :disabled="isDisabled"
           @click="finishSurveyHandler"
         >
-          <span class="me-3">{{ $t('finish') }}</span>
+          <span class="me-3">{{ $t('next') }}</span>
           <v-icon large>mdi-keyboard-backspace mdi-rotate-180</v-icon>
         </v-btn>
       </div>
@@ -62,7 +74,9 @@
     >
       <v-card max-width="800" max-height="90vh" class="mx-auto">
         <v-img
-          :src="require('~/assets/images/games/china/items/privacy_notice_front.png')"
+          :src="
+            require('~/assets/images/games/china/items/privacy_notice_front.png')
+          "
         >
           <v-card-title
             class="d-block text-center mt-16 pt-12 text-h4 font-weight-bold"
@@ -134,26 +148,34 @@ export default {
         {
           question: '',
           value: null,
+          correctValue: 1,
           type: 'checkbox',
         },
         {
           question: '',
           value: null,
+          correctValue: 0,
           type: 'checkbox',
         },
         {
           question: '',
           value: null,
+          correctValue: 1,
           type: 'checkbox',
           isLink: true,
         },
       ],
+      hasErrors: false,
     };
   },
   computed: {
     isDisabled() {
+      return this.questions.some((question) => question.value === null);
+    },
+    isWrong() {
       return this.questions.some(
-        (question) => !question.value && question.value !== 0
+        (question) =>
+          question.value === null || question.value !== question.correctValue
       );
     },
     privacyNoticeHeaders() {
@@ -181,7 +203,12 @@ export default {
   },
   methods: {
     finishSurveyHandler() {
+      this.hasErrors = false;
       this.playGameSound('big-button-press-1');
+      if (this.isWrong) {
+        this.hasErrors = true;
+        return;
+      }
       this.$emit('next');
     },
   },

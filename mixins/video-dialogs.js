@@ -47,45 +47,25 @@ export default {
       const dinningRoomX2 = [
         {
           speaker: this.$t('carla-thought'),
-          from: 1,
+          avatar: 'carla.jpg',
+          from: 2,
           textArray: this.$tr('speeches.egypt.3', 'array'),
           isConfirmable: true,
         },
         {
-          speaker: this.$t('carla-thought'),
-          from: 2,
+          speaker: this.$t('yuri-thought'),
+          avatar: 'yuri.jpg',
+          from: 4,
           textArray: this.$tr('speeches.egypt.4', 'array'),
           isConfirmable: true,
         },
         {
-          speaker: this.$t('yuri-thought'),
-          from: 2,
+          speaker: this.$t('yael-thought'),
+          avatar: 'yael.jpg',
+          from: 6,
           textArray: this.$tr('speeches.egypt.5', 'array'),
           isConfirmable: true,
-        },
-        {
-          speaker: this.$t('yuri-thought'),
-          from: 25,
-          textArray: this.$tr('speeches.egypt.6', 'array'),
-          isConfirmable: true,
-        },
-        {
-          speaker: this.$t('yuri-thought'),
-          from: 30,
-          textArray: this.$tr('speeches.egypt.7', 'array'),
-          isConfirmable: true,
-        },
-        {
-          speaker: this.$t('yael-thought'),
-          from: 39,
-          textArray: this.$tr('speeches.egypt.8', 'array'),
-          isConfirmable: true,
-        },
-        {
-          speaker: this.$t('yael-thought'),
-          from: 48,
-          textArray: this.$tr('speeches.egypt.9', 'array'),
-          isConfirmable: true,
+          nextBtnText: this.$tr('call-franklin'),
         },
       ];
       const hallwayRoom = [
@@ -109,20 +89,30 @@ export default {
         {
           speaker: this.$t('franklin'),
           avatar: 'franklin.jpg',
-          from: 1.5,
+          from: 3.5,
           textArray: this.$tr('speeches.china.2', 'array'),
           isConfirmable: true,
         },
         {
           speaker: this.$t('player'),
-          from: 2.5,
+          from: 4.5,
           textArray: this.$tr('speeches.china.3', 'array'),
           isConfirmable: true,
+          options: [
+            {
+              textArray: this.$tr('speeches.china.3', 'array'),
+              isCorrect: true,
+            },
+            {
+              textArray: this.$tr('speeches.china.5', 'array'),
+              isCorrect: false,
+            },
+          ],
         },
         {
           speaker: this.$t('franklin'),
           avatar: 'franklin.jpg',
-          from: 3.2,
+          from: 6.5,
           textArray: this.$tr('speeches.china.4', 'array'),
           isConfirmable: true,
         },

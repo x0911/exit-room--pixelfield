@@ -69,31 +69,30 @@
                 <div class="mb-2 text-body-1 font-weight-medium">
                   {{ $tr(`egypt.questions.${i + 1}.label`) }}
                 </div>
-                <template v-for="(option, oi) in questions[i].options">
-                  <v-checkbox
-                    :key="oi"
-                    v-model="option.value"
-                    :error="hasErrors"
-                    :label="$tr(`egypt.questions.${i + 1}.options`)[oi]"
-                    :value="option.value"
-                    class="mb-1"
-                    color="primary"
-                    hide-details
-                  >
-                  </v-checkbox>
-                </template>
+                <div>
+                  <v-radio-group v-model="q.value" light :error="hasErrors">
+                    <template
+                      v-for="(option, oi) in $tr(
+                        `egypt.questions.${i + 1}.options`,
+                        'array'
+                      )"
+                    >
+                      <v-radio
+                        :key="`o-${oi}`"
+                        :label="option"
+                        :value="oi"
+                        light
+                      ></v-radio>
+                    </template>
+                  </v-radio-group>
+                </div>
               </div>
             </template>
           </v-card-text>
         </template>
       </v-card>
       <div class="d-flex mt-4 align-center justify-center">
-        <v-btn
-          v-if="model >= 1"
-          class="px-6 mr-8"
-          large
-          @click="backHandler"
-        >
+        <v-btn v-if="model === 1" class="px-6 mr-8" large @click="backHandler">
           <v-icon class="mr-2">mdi-keyboard-backspace</v-icon>
           {{ model === 2 ? $t('previous') : $t('back_to_menu') }}
         </v-btn>
@@ -136,16 +135,13 @@ export default {
     questions: [
       {
         question: '',
-        options: [{value: null}, {value: null}, {value: null}],
+        value: null,
+        correctValue: 2,
       },
       {
         question: '',
-        options: [
-          {value: null},
-          {value: null},
-          {value: null},
-          {value: null},
-        ],
+        value: null,
+        correctValue: 3,
       },
     ],
     videos: {
@@ -162,18 +158,17 @@ export default {
   computed: {
     isFormValid() {
       if (!this.model) return true;
-      return this.questions[this.model - 1].options.every(({value}, index) => {
-        return this.$tr(`egypt.questions.${this.model}.correctOptions`).includes(index) ? value : !value
-      })
+      const q = this.questions[this.model - 1];
+      return q.value === q.correctValue;
     },
   },
   watch: {
     questions: {
       deep: true,
       handler() {
-        this.hasErrors = false
-      }
-    }
+        this.hasErrors = false;
+      },
+    },
   },
   mounted() {
     this.$nuxt.$on(`video-${this.stepId}-ended`, this.videoEnded);
@@ -186,14 +181,14 @@ export default {
 
       /** first step to just skip the menu **/
       if (!this.model) {
-        this.resetValue()
-        this.hasErrors = false
-        this.model++
+        this.resetValue();
+        this.hasErrors = false;
+        this.model++;
         return;
       }
       /** questions error **/
       if (!this.isFormValid) {
-        this.hasErrors = true
+        this.hasErrors = true;
         return;
       }
 
@@ -203,6 +198,9 @@ export default {
         this.$set(this.videos.intro, 'ended', false);
         event.target['data-video-start'] = `${this.stepId}-x2`;
         this.$store.commit('PLAY_VIDEO', `${this.stepId}-x2`);
+        setTimeout(() => {
+          this.replaceBg('egypt-v2');
+        }, 1000);
       }
       if (this.model === 3) {
         this.showScoreBoard();
@@ -210,8 +208,8 @@ export default {
     },
     backHandler() {
       this.playGameSound('big-button-press-2');
-      this.resetValue()
-      this.model--
+      this.resetValue();
+      this.model--;
     },
     stepLeave() {
       this.$set(this.videos.intro, 'ended', false);
@@ -220,9 +218,7 @@ export default {
     },
     resetValue() {
       this.questions.forEach((q) => {
-        q.options.forEach(option => {
-          option.value = null
-        })
+        q.value = null;
       });
     },
     restart() {
@@ -244,7 +240,7 @@ export default {
       this.$set(this.videos.intro, 'ended', true);
     },
     async showScoreBoard() {
-      const score = 100
+      const score = 100;
       try {
         const info = this.getActiveTaskInfo();
         const questions = [...this.questions].map((q, i) => {
@@ -252,7 +248,7 @@ export default {
             question_id: i + 1,
             question_text: this.$t(`egypt.questions.${i + 1}.label`),
             answer_id: q.value,
-            answer_text: this.$tr(`italy.questions.${i + 1}.options`)[q.value],
+            answer_text: this.$tr(`egypt.questions.${i + 1}.options`)[q.value],
             is_correct: q.value === q.correctValue,
           };
         });
