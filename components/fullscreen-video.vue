@@ -375,6 +375,7 @@ export default {
           title: this.$t('wrong-response'),
           steps: ["wrong-response-desc"],
           nextText: this.$t('ok'),
+          overlay: true,
         });
         return;
       }
