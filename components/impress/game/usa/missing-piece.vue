@@ -70,7 +70,7 @@
                 >
                   {{ $t('next') }}
                   <v-icon class="ms-2"
-                    >mdi-keyboard-backspace mdi-rotate-180
+                  >mdi-keyboard-backspace mdi-rotate-180
                   </v-icon>
                 </v-btn>
               </v-card-actions>
@@ -79,7 +79,24 @@
         </div>
       </template>
     </div>
-    <component :is="selectedModal.component" v-model="selectedModal.modal" />
+    <v-btn
+      v-if="showNextButton"
+      class="px-4 privacy-btn"
+      color="primary"
+      depressed
+      fixed
+      large
+      style="right: 3rem; bottom: 100px; z-index: 10000"
+      tile
+      @click="
+        showNextButton = false;
+        $emit('next');
+      "
+    >
+      {{ $t('next') }}
+      <v-icon class="ms-2">mdi-keyboard-backspace mdi-rotate-180</v-icon>
+    </v-btn>
+    <component :is="selectedModal.component" v-model="selectedModal.modal"/>
   </div>
 </template>
 
@@ -88,11 +105,12 @@ import MissingPrivacyNotice from '~/components/impress/game/shared/missing-priva
 
 export default {
   name: 'MissingPiece',
-  components: { MissingPrivacyNotice },
+  components: {MissingPrivacyNotice},
   data() {
     return {
       selectedModal: {},
       wrongItemLabelIdx: 1,
+      showNextButton: false,
       items: [
         {
           name: 'alarm',
@@ -152,8 +170,8 @@ export default {
       deep: true,
       handler(items) {
         const isParentOfHiddenOpen = items
-          .filter(({ hiddenElement }) => hiddenElement)
-          .every(({ isOpened }) => isOpened);
+          .filter(({hiddenElement}) => hiddenElement)
+          .every(({isOpened}) => isOpened);
 
         if (isParentOfHiddenOpen) {
           this.$store.commit('SET_HINT', this.$t('usa.hints.missing-piece.2'));
@@ -170,17 +188,10 @@ export default {
     },
     selectedModal: {
       deep: true,
-      handler({ modal }) {
+      handler({modal}) {
         if (modal) return;
         this.$store.commit('SET_HINT', []);
-        this.$store.commit('SET_INSTRUCTIONS', {
-          bottomModel: true,
-          title: this.$t('franklin'),
-          steps: ['found-object.privacy-found'],
-          image: 'avatars/franklin.jpg',
-          nextText: this.$t('next'),
-          nextMethod: () => this.$emit('next'),
-        });
+        this.showNextButton = true;
       },
     },
   },
@@ -189,8 +200,8 @@ export default {
       item.isOpened = true;
       item.modal = true;
     },
-    selectHiddenItemHandler({ component, modal }) {
-      this.selectedModal = { component, modal };
+    selectHiddenItemHandler({component, modal}) {
+      this.selectedModal = {component, modal};
     },
     getIsWrongItemClicked(item) {
       return item.isOpened && !item.hiddenElement && !item.component;

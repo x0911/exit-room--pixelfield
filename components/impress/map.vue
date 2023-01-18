@@ -6,22 +6,22 @@
     />
     <v-bottom-sheet
       v-model="mapModel"
-      fullscreen
-      persistent
       class="elevation-0"
       content-class="elevation-0"
+      fullscreen
       no-click-animation
+      persistent
       width="auto"
     >
       <div
         key="travel-book"
-        class="game"
         :class="{ 'disable-clicking': disableClicking }"
+        class="game"
       >
         <div class="game_rooms">
           <img
-            class="game_rooms_map"
             :src="travelBook"
+            class="game_rooms_map"
             @load="travelBookLoaded = true"
           />
           <!-- <div
@@ -36,8 +36,6 @@
           <v-card
             v-for="(room, i) in rooms"
             :key="i"
-            class="game_room"
-            flat
             :class="{
               [`room${i + 1}`]: true,
               active: isNextRoom(i),
@@ -46,28 +44,30 @@
               'game_room-done': room.done,
             }"
             :data-video-start="canOpenAssignment(i) ? room.country : null"
+            class="game_room"
+            flat
             @click="openAssignment(i)"
           >
             <template v-if="i === rooms.length - 1 && false">
               <client-only>
                 <div
-                  class="f-tech d-flex flex-column align-center justify-center"
                   :class="{
                     'pt-4': showFinalTaskTrap && i === rooms.length - 1,
                   }"
+                  class="f-tech d-flex flex-column align-center justify-center"
                 >
                   <div class="d-flex align-center justify-center">
                     <img
                       v-if="!showFinalTaskTrap"
-                      class="lock"
                       :src="require('@/assets/images/lock-trim.png')"
+                      class="lock"
                     />
                     <div
-                      class="mb-5 title text-uppercase"
                       :class="{
                         g__final_highlight:
                           showFinalTaskTrap && i === rooms.length - 1,
                       }"
+                      class="mb-5 title text-uppercase"
                     >
                       {{ $t('final-task') }}
                     </div>
@@ -104,11 +104,11 @@
     </v-bottom-sheet>
     <v-dialog
       v-model="showEmail"
-      content-class="elevation-0"
-      class="elevation-0"
       :retain-focus="false"
-      persistent
+      class="elevation-0"
+      content-class="elevation-0"
       max-width="600"
+      persistent
       scrollable
     >
       <v-card class="transparent">
@@ -120,7 +120,7 @@
             <v-divider></v-divider>
             <v-card-text class="pt-3">
               <template v-for="(line, i) in $t('map-email.text')">
-                <v-flex :key="i" class="my-1" :inner-html.prop="line"></v-flex>
+                <v-flex :key="i" :inner-html.prop="line" class="my-1"></v-flex>
               </template>
             </v-card-text>
           </v-card>
@@ -128,11 +128,11 @@
         <v-card-actions class="mt-4 px-6">
           <v-spacer></v-spacer>
           <v-btn
-            color="primary"
             class="px-4"
-            tile
-            large
+            color="primary"
             depressed
+            large
+            tile
             @click="showEmail = false"
           >
             {{ $t('start') }}
@@ -147,19 +147,19 @@
       no-click-animation
       scrollable
     >
-      <v-card outlined tile class="info-screen border-2">
+      <v-card class="info-screen border-2" outlined tile>
         <v-btn
           absolute
-          style="z-index: 1; top: 30px; right: 30px"
           color="rgba(0, 0, 0, 0.65)"
           fab
           small
+          style="z-index: 1; top: 30px; right: 30px"
           @click="viewAttachment = false"
         >
           <v-icon>mdi-close</v-icon>
         </v-btn>
         <v-card-text class="pa-0 ma-0">
-          <v-img height="100" class="grey lighten-3" width="100%"> </v-img>
+          <v-img class="grey lighten-3" height="100" width="100%"></v-img>
         </v-card-text>
       </v-card>
     </v-dialog>
@@ -175,6 +175,7 @@ import SoundPlayer from '@/mixins/sound-player.js';
 import ImpressStep from '@/mixins/impress-step.js';
 import AppDisclaimer from '@/components/ui/AppDisclaimer.vue';
 import FinalTaskTrap from '@/components/final-task-trap.vue';
+
 export default {
   components: {
     AppDisclaimer,

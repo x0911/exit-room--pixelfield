@@ -21,10 +21,10 @@
         <v-radio
           v-for="(option, index) in options"
           :key="option.id"
+          :class="{ 'pb-4': index !== options.length - 1 }"
           :label="option.text"
           :value="option.id"
           class="ma-0 caption"
-          :class="{ 'pb-4': index !== options.length - 1 }"
           color="primary"
         />
       </v-radio-group>
@@ -48,7 +48,7 @@ import SoundPlayer from '~/mixins/sound-player';
 
 export default {
   name: 'PrivacySurvey',
-  components: { PrivacyNotice },
+  components: {PrivacyNotice},
   mixins: [SoundPlayer],
   data() {
     return {
@@ -82,6 +82,11 @@ export default {
     selectedOption() {
       this.hasErrors = false;
     },
+    isPrivacyOpen(value) {
+      if (!value) {
+        this.$emit('privacy-visible')
+      }
+    }
   },
   methods: {
     validateFormHandler() {
@@ -91,6 +96,7 @@ export default {
         this.hasErrors = true;
         return;
       }
+      this.$emit('privacy-hidden')
       this.isQuestionsOpen = false;
       this.$store.commit('SET_INSTRUCTIONS', {
         model: true,
