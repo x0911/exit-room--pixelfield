@@ -18,16 +18,26 @@
   "cookies": {
     "title": "Privacy & Cookie Notice",
     "text": [
-      "Purpose",
-      "This website contains an escape-room game with a survey and country competition related to privacy. It has been created by your employer to raise awareness and knowledge related to privacy and improve the privacy program and increase awareness within your company.",
-      "Voluntary basis",
-      "Please note that participation in this game is on a voluntary basis. There is no obligation to participate. Non-participation will not have any adverse effects on your employment relationship.",
-      "Anonymized data",
-      "Within the game only anonymized data is processed. Your employer cannot make any reference to or identification of specific employees. For the purpose of being able to provide you news on the results of the country-competition or react to your provided feedback on our game, you can voluntarily provide your work-email-address at the end of the game. In this case an identification would be possible. Please note that, in cases of small teams or country operations, your employer may be able to identify you if less than five people have the same division or organizational unit, job function, and work country. Your employer will process the data consistent with its privacy policy and associate notice, including not intentionally identifying you and taking reasonable measures, as appropriate, to prevent identification.",
-      "Cookies",
-      "This website only processes strictly necessary cookies. These cookies are necessary for the website to function and cannot be switched off in our systems. They are usually only set in response to actions made by you which amount to a request for services, such as setting your privacy preferences, logging in or filling in forms. You can set your browser to block or alert you about these cookies, but some parts of the site will not then work. These cookies do not store any personally identifiable information.",
-      "Legal basis and contact",
-      "In case your personal data is processed, the legal basis for the data processing would be the necessity for the purposes of legitimate interests. For more detailed information with regards data processing in your working environment and your data privacy rights (e.g., right to object) please find the local privacy notices for employees or contact your local data privacy team."
+      {
+        "title": "Purpose",
+        "description": "This website contains an escape-room game with a survey and country competition related to privacy. It has been created by your employer to raise awareness and knowledge related to privacy and improve the privacy program and increase awareness within your company."
+      },
+      {
+        "title": "Voluntary basis",
+        "description": "Please note that participation in this game is on a voluntary basis. There is no obligation to participate. Non-participation will not have any adverse effects on your employment relationship."
+      },
+      {
+        "title": "Anonymized data",
+        "description": "Within the game only anonymized data is processed. Your employer cannot make any reference to or identification of specific employees. For the purpose of being able to provide you news on the results of the country-competition or react to your provided feedback on our game, you can voluntarily provide your work-email-address at the end of the game. In this case an identification would be possible. Please note that, in cases of small teams or country operations, your employer may be able to identify you if less than five people have the same division or organizational unit, job function, and work country. Your employer will process the data consistent with its privacy policy and associate notice, including not intentionally identifying you and taking reasonable measures, as appropriate, to prevent identification."
+      },
+      {
+        "title": "Cookies",
+        "description": "This website only processes strictly necessary cookies. These cookies are necessary for the website to function and cannot be switched off in our systems. They are usually only set in response to actions made by you which amount to a request for services, such as setting your privacy preferences, logging in or filling in forms. You can set your browser to block or alert you about these cookies, but some parts of the site will not then work. These cookies do not store any personally identifiable information."
+      },
+      {
+        "title": "Legal basis and contact",
+        "description": "In case your personal data is processed, the legal basis for the data processing would be the necessity for the purposes of legitimate interests. For more detailed information with regards data processing in your working environment and your data privacy rights (e.g., right to object) please find the local privacy notices for employees or contact your local data privacy team."
+      }
     ]
   },
   "task-name": {

@@ -17,11 +17,13 @@
             <template v-for="(line, i) in $t('cookies.text')">
               <div
                 :key="i"
-                :inner-html.prop="line"
-                :class="{
-                  'mb-1 text-decoration-underline': i % 2 === 0,
-                  'mb-3': i % 2 !== 0 && i !== $t('cookies.text').length - 1,
-                }"
+                :inner-html.prop="line.title"
+                class="mb-1 text-decoration-underline"
+              ></div>
+              <div
+                :key="i"
+                :inner-html.prop="line.description"
+                class="mb-3"
               ></div>
             </template>
           </v-card-text>
