@@ -267,69 +267,70 @@ export const mutations = {
 };
 
 export const actions = {
-  createTask(context, payload) {
-    // try {
-    //   await context.commit('SET_FULL_SCREEN_LOADER', true);
-    //   const userId = localStorage.getItem('privacy-cruise-db-user-id');
-    //   payload.task_result = Number(payload.task_result?.toFixed());
-    //   const response = await this.$axios.$post('/api/questions/create-task/', {
-    //     user_uid: userId,
-    //     ...payload,
-    //   });
-    //   await context.commit('SET_FULL_SCREEN_LOADER', false);
-    //   return response;
-    // } catch (err) {
-    //   console.log(err);
-    // }
-    return '';
+  async createTask(context, payload) {
+    try {
+      await context.commit('SET_FULL_SCREEN_LOADER', true);
+      const userId = localStorage.getItem('privacy-cruise-db-user-id');
+      payload.task_result = Number(payload.task_result?.toFixed());
+      const response = await this.$axios.$post('/api/questions/create-task/', {
+        user_uid: userId,
+        ...payload,
+      });
+      await context.commit('SET_FULL_SCREEN_LOADER', false);
+      return response;
+    } catch (err) {
+      await context.commit('SET_FULL_SCREEN_LOADER', false);
+      console.log(err);
+    }
+    // return '';
   },
-  addFailCounter(context) {
-    // try {
-    //   const userId = localStorage.getItem('privacy-cruise-db-user-id');
-    //   const rooms = context.state.rooms || [];
-    //   const taskId = rooms.indexOf(context.state.activeStep) + 1;
-    //   const response = await this.$axios.$put(
-    //     '/api/questions/increment-fail/',
-    //     {
-    //       task_id: taskId,
-    //       user: userId,
-    //     }
-    //   );
-    //   return response;
-    // } catch (err) {
-    //   console.log(err);
-    // }
-    return '';
+  async addFailCounter(context) {
+    try {
+      const userId = localStorage.getItem('privacy-cruise-db-user-id');
+      const rooms = context.state.rooms || [];
+      const taskId = rooms.indexOf(context.state.activeStep) + 1;
+      const response = await this.$axios.$put(
+        '/api/questions/increment-fail/',
+        {
+          task_id: taskId,
+          user: userId,
+        }
+      );
+      return response;
+    } catch (err) {
+      console.log(err);
+    }
+    // return '';
   },
-  updateLang(context, payload) {
-    // try {
-    //   const userId = localStorage.getItem('privacy-cruise-db-user-id');
-    //   const response = await this.$axios.$put(
-    //     `/api/questions/update-lang/${userId}/`,
-    //     {
-    //       selected_lang: payload,
-    //     }
-    //   );
-    //   return response;
-    // } catch (err) {
-    //   console.log(err);
-    // }
-    return '';
+  async updateLang(context, payload) {
+    try {
+      const userId = localStorage.getItem('privacy-cruise-db-user-id');
+      const response = await this.$axios.$put(
+        `/api/questions/update-lang/${userId}/`,
+        {
+          selected_lang: payload,
+        }
+      );
+      return response;
+    } catch (err) {
+      console.log(err);
+    }
+    // return '';
   },
-  getUserId(context, payload) {
-    // try {
-    //   const userId = localStorage.getItem('privacy-cruise-db-user-id');
-    //   if (userId) {
-    //     return userId;
-    //   }
-    //   const response = await this.$axios.$get(`/api/questions/user-uid/`);
-    //   const uid = response.user_uid;
-    //   localStorage.setItem('privacy-cruise-db-user-id', uid);
-    //   return response;
-    // } catch (err) {
-    //   console.log(err);
-    // }
-    return '';
+  async getUserId(context, payload) {
+    try {
+      const userId = localStorage.getItem('privacy-cruise-db-user-id');
+      if (userId) {
+        return userId;
+      }
+      const response = await this.$axios.$get(`/api/questions/user-uid/`);
+      const uid = response.user_uid;
+      localStorage.setItem('privacy-cruise-db-user-id', uid);
+      return response;
+    } catch (err) {
+      console.log(err);
+    }
+    // return '';
   },
 };
 

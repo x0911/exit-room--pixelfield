@@ -35,6 +35,7 @@ export default {
   },
   mounted() {
     this.$store.dispatch('getUserId');
+    this.$store.commit('SET_FULL_SCREEN_LOADER', false);
   },
   methods: {},
 };
