@@ -65,6 +65,7 @@
                     v-model="item.value"
                     :error="hasErrors"
                     :value="item.value"
+                    dark
                     color="white"
                   />
                   <div :style="hasErrors && 'color: #FF5252 !important;'">

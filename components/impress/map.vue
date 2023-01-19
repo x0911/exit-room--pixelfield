@@ -228,13 +228,13 @@ export default {
         },
         {
           country: 'usa',
-          title: this.$t('task-name.3'),
+          title: this.$t('task-name.5'),
           progress: 0,
           done: false,
         },
         {
           country: 'russia',
-          title: this.$t('task-name.5'),
+          title: this.$t('task-name.6'),
           progress: 0,
           done: false,
         },

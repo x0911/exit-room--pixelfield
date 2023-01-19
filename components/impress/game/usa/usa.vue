@@ -17,7 +17,7 @@
           loop
         ></lottie-animation>
       </div>
-      <privacy-notice v-if="isPrivacyOpen" v-model="isPrivacyOpen"/>
+      <privacy-notice v-if="isPrivacyOpen" v-model="isPrivacyOpen" />
       <usa-survey
         v-if="isQuestionsOpen"
         @cancel="isQuestionsOpen = false"
@@ -134,9 +134,9 @@ export default {
     },
     isQuestionsOpen(value) {
       if (!value) {
-        this.canOpenPrivacyNotice = false
+        this.canOpenPrivacyNotice = false;
       }
-    }
+    },
   },
   mounted() {
     this.$nuxt.$on(`video-${this.stepId}-ended`, this.introEnded);
@@ -238,16 +238,27 @@ export default {
         nextMethod: this.finishGame,
       });
     },
-    finishGame() {
-      const score = 100;
-      this.result.model = true;
-      this.result.perc = score;
-      this.result.passed = true;
-      this.$store.commit('SET_SCORE_BOARD_DIALOG', {
-        model: false,
-        score,
-        game: 'usa',
-      });
+    async finishGame() {
+      try {
+        const score = 100;
+        this.result.model = true;
+        this.result.perc = score;
+        this.result.passed = true;
+        const info = this.getActiveTaskInfo();
+        await this.$store.dispatch('createTask', {
+          task_result: score,
+          questions: [],
+          task_id: info.taskId,
+          task_name: info.taskName,
+        });
+        this.$store.commit('SET_SCORE_BOARD_DIALOG', {
+          model: false,
+          score,
+          game: 'usa',
+        });
+      } catch (err) {
+        console.log(err);
+      }
     },
   },
 };
