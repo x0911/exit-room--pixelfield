@@ -316,14 +316,34 @@ export default {
         try {
           const info = this.getActiveTaskInfo();
           const questions = [...this.questions].map((q, i) => {
+            const qTitleIndex = this.$t(`italy.questions.${i + 1}.title`);
+            const qTitle = this.$t(`italy.questions-titles.${qTitleIndex}`);
+            const qTextInset = this.$t(`italy.questions.${i + 1}.label`);
+            const qText = `${qTitle} ( ${qTextInset} )`;
+            let answerText = q.value;
+            if (q.type === 'dropdown') {
+              answerText = q.options.find((o) => o[q.itemValue] === q.value)[
+                q.itemText
+              ];
+            }
+            if (q.type === 'checkbox') {
+              if (q.multiple) {
+                const arr = [];
+                q.value.forEach((v) => {
+                  arr.push(this.$tr(`italy.questions.${i + 1}.options`)[v]);
+                });
+                answerText = arr;
+              } else {
+                answerText = this.$tr(`italy.questions.${i + 1}.options`)[
+                  q.value
+                ];
+              }
+            }
             return {
               question_id: i + 1,
-              question_text: this.$t(`italy.questions.${i + 1}.label`),
+              question_text: qText,
               answer_id: q.type === 'text' ? null : q.value,
-              answer_text:
-                q.type === 'text'
-                  ? q.value
-                  : this.$tr(`italy.questions.${i + 1}.options`)[q.value],
+              answer_text: answerText,
               is_correct: true,
             };
           });
