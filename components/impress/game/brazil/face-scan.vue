@@ -1,40 +1,40 @@
 <template>
   <div class="d-flex flex-column align-center justify-center">
-    <div class="video-container" :class="{ 'validate-image': isValidating }">
-      <video ref="camera" width="400px" height="400px" autoplay></video>
-      <img v-show="isPhotoTaken && !usedVideo" ref="imgsrc" />
+    <div :class="{ 'validate-image': isValidating }" class="video-container">
+      <video ref="camera" autoplay height="400px" width="400px"></video>
+      <img v-show="isPhotoTaken && !usedVideo" ref="imgsrc"/>
     </div>
     <div class="d-flex align-center mt-4 gap-6">
       <template v-if="!isPhotoTaken">
         <v-btn
           v-if="!errorOpenCamera"
-          large
-          color="primary"
           class="pa-6"
+          color="primary"
+          large
           @click="takePhoto"
         >
           <span class="pr-4">{{ $t('take_photo') }}</span>
           <v-icon large>mdi-camera</v-icon>
         </v-btn>
-        <v-btn large color="primary" class="pa-6" @click="uploadPhoto">
+        <v-btn class="pa-6" color="primary" large @click="uploadPhoto">
           <span class="pr-4">{{ $t('upload_photo') }}</span>
           <v-icon large>mdi-file-upload</v-icon>
         </v-btn>
         <input
           v-show="false"
-          hidden="hidden"
           ref="file"
-          type="file"
           accept="image/png, image/jpeg"
+          hidden="hidden"
+          type="file"
           @change="setPhoto"
         />
       </template>
       <template v-else-if="!isValidating">
-        <v-btn large class="pa-6" @click="cancelPhoto">
+        <v-btn class="pa-6" large @click="cancelPhoto">
           <span class="pr-4">{{ $t('cancel') }}</span>
           <v-icon>mdi-camera-retake</v-icon>
         </v-btn>
-        <v-btn large color="primary" class="pa-6" @click="validatePhotoHandler">
+        <v-btn class="pa-6" color="primary" large @click="validatePhotoHandler">
           <span class="pr-4">{{ $t('validate') }}</span>
           <v-icon>mdi-check-circle</v-icon>
         </v-btn>
@@ -45,10 +45,17 @@
 
 <script>
 import SoundPlayer from '~/mixins/sound-player';
+import ImpressStep from "~/mixins/impress-step";
 
 export default {
   name: 'FaceScan',
-  mixins: [SoundPlayer],
+  mixins: [SoundPlayer, ImpressStep],
+  props: {
+    stepId: {
+      type: String,
+      default: null
+    }
+  },
   data() {
     return {
       isPhotoTaken: false,
@@ -59,6 +66,7 @@ export default {
     };
   },
   mounted() {
+    this.replaceBg('brazil-x3');
     this.isLoading = true;
     const constraints = (window.constraints = {
       audio: false,
@@ -95,6 +103,7 @@ export default {
         this.isValidating = false;
         this.usedVideo = false;
         this.$refs.imgsrc.src = '';
+        this.replaceBg('brazil');
         this.$emit('next');
       }, 3000);
     },
@@ -127,6 +136,6 @@ export default {
 };
 </script>
 
-<style scoped lang="scss">
+<style lang="scss" scoped>
 @import '~assets/scss/components/face-scan.scss';
 </style>

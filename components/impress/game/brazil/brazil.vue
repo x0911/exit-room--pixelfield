@@ -18,7 +18,11 @@
         ></lottie-animation>
       </div>
       <template v-else-if="isLoading === false">
-        <face-scan v-if="step === 'face-scan'" @next="step = 'survey'" />
+        <face-scan
+          v-if="step === 'face-scan'"
+          :step-id="stepId"
+          @next="step = 'survey'"
+        />
         <countries-scores
           v-if="step === 'countries-score'"
           @next="step = 'mini-game'"

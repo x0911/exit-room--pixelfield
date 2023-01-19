@@ -25,17 +25,17 @@
             )"
             :key="index"
             class="d-flex pt-5"
-            cols="10"
+            cols="12"
           >
-            <v-col class="my-0 mx-auto" cols="3">
+            <v-col class="my-0 mx-auto pl-4" cols="4">
               <div
-                class="font-weight-bold white--text pl-10 pt-10 body-1 d-flex justify-center"
+                class="font-weight-bold d-flex align-center  pt-10 pl-16 ml-6 text-size-8"
               >
                 {{ line.category }}
               </div>
             </v-col>
-            <v-col cols="7">
-              <div class="body-2 pl-6 pt-6 white--text pr-10 text-left">
+            <v-col class="pl-4" cols="8">
+              <div class="text-size-7 white--text px-16 py-6 text-left">
                 {{ line.description }}
               </div>
             </v-col>
@@ -67,3 +67,15 @@ export default {
   }
 };
 </script>
+
+<style lang="scss" scoped>
+.text-size-7 {
+  font-size: 0.7rem !important;
+  color: white !important;
+}
+
+.text-size-8 {
+  font-size: 0.85rem !important;
+  color: white !important;
+}
+</style>

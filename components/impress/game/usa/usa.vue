@@ -1,23 +1,23 @@
 <template>
   <v-container>
     <v-dialog
+      :retain-focus="false"
       :value="videos.intro.ended"
-      overlay-opacity="0"
-      persistent
       class="elevation-0"
       content-class="elevation-0"
-      :retain-focus="false"
       max-width="700"
+      overlay-opacity="0"
+      persistent
     >
       <div v-if="isLoading" class="splash-screen_loading">
         <lottie-animation
-          loop
-          :width="100"
           :height="100"
           :path="require('@/assets/animated/spinner.json')"
+          :width="100"
+          loop
         ></lottie-animation>
       </div>
-      <privacy-notice v-if="isPrivacyOpen" v-model="isPrivacyOpen" />
+      <privacy-notice v-if="isPrivacyOpen" v-model="isPrivacyOpen"/>
       <usa-survey
         v-if="isQuestionsOpen"
         @cancel="isQuestionsOpen = false"
@@ -31,6 +31,8 @@
       <privacy-survey
         v-else-if="isPrivacySurveyOpen"
         @next="completePrivacySurveyHandler"
+        @privacy-hidden="canOpenPrivacyNotice = false"
+        @privacy-visible="canOpenPrivacyNotice = true"
       />
       <missing-piece
         v-else-if="isMissingPieceOpen"
@@ -38,14 +40,15 @@
       />
       <div class="d-flex justify-end">
         <v-btn
-          color="primary"
-          tile
-          class="btn-open-privacy px-6 mr-4"
-          large
-          fixed
-          right
+          v-if="canOpenPrivacyNotice"
           :disabled="isPrivacyOpen"
+          class="btn-open-privacy px-6 mr-4"
+          color="primary"
+          fixed
+          large
+          right
           style="bottom: 30px; right: 3rem"
+          tile
           @click="isPrivacyOpen = true"
         >
           <span class="mr-3">{{ $t('china.privacy-notice.open') }}</span>
@@ -54,10 +57,10 @@
       </div>
     </v-dialog>
     <score-board-inline
-      :model="result.model"
       :label="$t('usa.score-board-inline')"
-      :perc="result.perc"
+      :model="result.model"
       :passed="result.passed"
+      :perc="result.perc"
       @restart="restart"
     >
     </score-board-inline>
@@ -92,6 +95,7 @@ export default {
     isMissingPieceOpen: false,
     isChatOpen: false,
     isPrivacyOpen: false,
+    canOpenPrivacyNotice: true,
     isLoading: false,
     videos: {
       intro: {
@@ -126,11 +130,13 @@ export default {
   },
   watch: {
     isPrivacyOpen(value) {
-      this.isPrivacyOpenHandler();
-      if (!value) {
-        this.isPrivacyCloseHandler();
-      }
+      return value ? this.isPrivacyOpenHandler() : this.isPrivacyCloseHandler();
     },
+    isQuestionsOpen(value) {
+      if (!value) {
+        this.canOpenPrivacyNotice = false
+      }
+    }
   },
   mounted() {
     this.$nuxt.$on(`video-${this.stepId}-ended`, this.introEnded);
@@ -178,6 +184,7 @@ export default {
       this.isPrivacySurveyOpen = true;
     },
     completePrivacySurveyHandler() {
+      this.canOpenPrivacyNotice = false;
       this.isPrivacySurveyOpen = false;
       this.isMissingPieceOpen = true;
     },
@@ -199,7 +206,6 @@ export default {
       }
     },
     async isPrivacyCloseHandler() {
-      this.replaceBg('usa-x2');
       const isStart = [
         this.isQuestionsOpen,
         this.isPhoneOpen,
@@ -208,6 +214,7 @@ export default {
         this.isChatOpen,
       ].every((step) => !step);
       if (isStart) {
+        this.canOpenPrivacyNotice = false;
         await this.addLoading();
         this.isQuestionsOpen = true;
       }
@@ -217,7 +224,7 @@ export default {
         model: true,
         title: '',
         steps: ['screens.usa.games.2.a1'],
-        nextText: this.$t('confirm'),
+        nextText: this.$t('call-franklin'),
         nextMethod: this.finishChat,
       });
     },

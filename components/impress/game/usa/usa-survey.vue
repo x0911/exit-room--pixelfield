@@ -8,10 +8,10 @@
         <v-radio
           v-for="(option, index) in options"
           :key="option.id"
+          :class="{ 'pb-4': index !== options.length - 1 }"
           :label="option.text"
           :value="option.id"
           class="ma-0 caption"
-          :class="{ 'pb-4': index !== options.length - 1 }"
           color="primary"
         />
       </v-radio-group>
@@ -91,6 +91,7 @@ export default {
         return;
       }
       this.step === 1 ? this.step++ : this.$emit('next');
+      
     },
   },
 };

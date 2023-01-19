@@ -60,11 +60,24 @@
                 <v-flex>
                   <div>
                     <template v-if="dialog.isConfirmable">
+                      <template>
+                        <div v-if="dialog.speaker" class="font-weight-bold">
+                          <span> {{ dialog.speaker }}: </span>
+                        </div>
+                        <template v-if="dialog.speech">
+                          <div :inner-html.prop="dialog.text"></div>
+                        </template>
+                        <template v-else>
+                          <div
+                            :inner-html.prop="dialog.textArray || dialog.text"
+                          ></div>
+                        </template>
+                      </template>
                       <template
                         v-if="dialog.options && dialog.options.length > 0"
                       >
                         <div
-                          class="text-center yellow--text font-weight-medium mb-3"
+                          class="text-center mt-2 yellow--text font-weight-medium mb-3"
                         >
                           {{ $t('pick-response-to-continue') }}
                         </div>
@@ -72,11 +85,11 @@
                           <template v-for="(option, oi) in dialog.options">
                             <v-col :key="`option-${i}-${oi}`" cols="6">
                               <v-card
-                                flat
-                                dark
-                                height="100%"
                                 class="d-flex align-center"
-                                @click="chooseOption(dialog, option)"
+                                dark
+                                flat
+                                height="100%"
+                                @click="chooseOption(dialog, oi)"
                               >
                                 <v-card-text>
                                   <div
@@ -89,19 +102,6 @@
                             </v-col>
                           </template>
                         </v-row>
-                      </template>
-                      <template v-else>
-                        <div v-if="dialog.speaker" class="font-weight-bold">
-                          <span> {{ dialog.speaker }}: </span>
-                        </div>
-                        <template v-if="dialog.speech">
-                          <div :inner-html.prop="dialog.text"></div>
-                        </template>
-                        <template v-else>
-                          <div
-                            :inner-html.prop="dialog.textArray || dialog.text"
-                          ></div>
-                        </template>
                       </template>
                     </template>
                     <template v-else>
@@ -126,12 +126,7 @@
               </v-layout>
             </v-card-text>
           </v-card>
-          <v-card-actions
-            v-if="
-              dialog.isConfirmable &&
-              (!dialog.options || dialog.options.length === 0)
-            "
-          >
+          <v-card-actions v-if="dialog.isConfirmable">
             <v-spacer></v-spacer>
             <v-btn
               class="px-6"
@@ -139,7 +134,7 @@
               depressed
               large
               tile
-              @click="hideVideoDialog(dialog.id, true)"
+              @click="nextHandler(dialog)"
             >
               {{ dialog.nextBtnText || $tr('next') }}
             </v-btn>
@@ -351,7 +346,7 @@ export default {
         dialog.model = false;
       });
     },
-    isPlayerThinking({ speaker }) {
+    isPlayerThinking({speaker}) {
       return speaker === this.$t('player-is-thinking');
     },
     ended(playSound = false) {
@@ -368,18 +363,35 @@ export default {
       this.$set(this, 'canPlay', false);
       this.$store.commit('SET_VIDEO_IS_SKIPPABLE', true);
     },
-    chooseOption(dialog, option) {
-      if (!option.isCorrect) {
+    chooseOption(dialog, oIndex) {
+      dialog.options.forEach(
+        (option, index) => (option.isSelected = index === oIndex)
+      );
+      if (!dialog.validateOptionsOnNext) {
+        this.validateOptions(dialog);
+      }
+    },
+    validateOptions(dialog) {
+      const selectedOption = dialog.options.find(
+        ({isSelected}) => isSelected
+      );
+      if (!selectedOption) return;
+      if (!selectedOption.isCorrect) {
         this.$store.commit('SET_INSTRUCTIONS', {
           model: true,
           title: this.$t('wrong-response'),
-          steps: ["wrong-response-desc"],
+          steps: ['wrong-response-desc'],
           nextText: this.$t('ok'),
           overlay: true,
         });
         return;
       }
       this.hideVideoDialog(dialog.id, true);
+    },
+    nextHandler(dialog) {
+      return dialog.validateOptionsOnNext
+        ? this.validateOptions(dialog)
+        : this.hideVideoDialog(dialog.id, true);
     },
   },
 };

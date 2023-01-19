@@ -100,12 +100,6 @@ export default {
           from: 3.5,
           textArray: this.$tr('speeches.china.2', 'array'),
           isConfirmable: true,
-        },
-        {
-          speaker: this.$t('player'),
-          from: 4.5,
-          textArray: this.$tr('speeches.china.3', 'array'),
-          isConfirmable: true,
           options: [
             {
               textArray: this.$tr('speeches.china.3', 'array'),
@@ -116,6 +110,13 @@ export default {
               isCorrect: false,
             },
           ],
+          validateOptionsOnNext: true,
+        },
+        {
+          speaker: this.$t('player'),
+          from: 4.5,
+          textArray: this.$tr('speeches.china.3', 'array'),
+          isConfirmable: true,
         },
         {
           speaker: this.$t('franklin'),
@@ -134,7 +135,7 @@ export default {
         brazil: hallwayRoom,
         'china-x2': bedroomX2,
         'china-x5': bedroomX5,
-        'usa': bedroom,
+        usa: bedroom,
       };
     },
   },

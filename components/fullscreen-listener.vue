@@ -2,40 +2,40 @@
   <div>
     <v-dialog
       v-model="model"
-      max-width="440"
-      scrollable
-      persistent
       :retain-focus="false"
       content-class="elevation-0"
+      max-width="440"
+      persistent
+      scrollable
     >
       <div>
-        <v-card class="info-screen darken px-2 pb-2 mb-4" light tile flat>
+        <v-card class="info-screen darken px-2 pb-2 mb-4" flat light tile>
           <v-card-title class="pt-5 normal-size no-word-break">
             {{ $t('fullscreen-hint.title') }}
           </v-card-title>
           <v-card-text
-            class="pt-2 pb-8"
             :inner-html.prop="$t('fullscreen-hint.text')"
+            class="pt-2 pb-8"
           >
           </v-card-text>
         </v-card>
         <v-card-actions class="px-6 pb-6">
           <v-spacer></v-spacer>
           <v-btn
+            class="normal-btn px-3"
             large
             text
-            class="normal-btn px-3"
             tile
             @click="hideLocalModel()"
           >
             {{ $t('cancel') }}
           </v-btn>
           <v-btn
+            class="px-7 py-6"
+            color="primary"
             depressed
             large
-            color="primary"
             tile
-            class="px-7 py-6"
             @click="toggleFullscreen('button-press')"
           >
             {{ $t('enable') }}
@@ -45,9 +45,9 @@
     </v-dialog>
     <v-bottom-sheet
       v-model="backToMap"
-      scrollable
       class="elevation-0"
       content-class="elevation-0"
+      scrollable
     >
       <template #activator="{ on }">
         <v-btn
@@ -56,25 +56,25 @@
             globalBtns &&
             $route.fullPath !== '/'
           "
-          fab
           color="rgba(0,0,0,0.65)"
-          small
+          fab
           fixed
-          top
+          small
           style="left: 15px; z-index: 9999"
-          v-on="on"
+          top
           @click="playGameSound('button-press')"
+          v-on="on"
         >
-          <v-icon> mdi-map-marker </v-icon>
+          <v-icon> mdi-map-marker</v-icon>
         </v-btn>
       </template>
       <div class="px-4 pb-10">
         <v-card
-          max-width="450"
-          light
           class="mx-auto info-screen border-3"
-          tile
           flat
+          light
+          max-width="450"
+          tile
         >
           <v-card-text class="">
             {{ $t('back-to-map.text') }}
@@ -82,25 +82,26 @@
           <v-card-actions class="px-4">
             <v-spacer></v-spacer>
             <v-btn
-              tile
-              text
-              large
               class="px-3 normal-btn"
+              large
+              text
+              tile
               @click="hideBackToMap('button-press')"
             >
               {{ $t('cancel') }}
             </v-btn>
             <v-btn
+              class="px-5"
               color="primary"
-              tile
               depressed
               large
-              class="px-5"
+              tile
               @click="goBackToMap"
             >
               {{ $t('map') }}
               <v-icon class="ms-2"
-                >mdi-keyboard-backspace mdi-rotate-180</v-icon
+              >mdi-keyboard-backspace mdi-rotate-180
+              </v-icon
               >
             </v-btn>
           </v-card-actions>
@@ -109,17 +110,17 @@
     </v-bottom-sheet>
     <v-btn
       v-show="canHaveFullscreen && globalBtns"
-      fab
-      small
-      fixed
-      top
-      color="rgba(0,0,0,0.65)"
-      left
       :style="`z-index: 9999; ${
         ['map', 'splash'].includes(activeStep) || $route.fullPath === '/'
           ? 'left: 15px;'
           : 'left: 70px;'
       }`"
+      color="rgba(0,0,0,0.65)"
+      fab
+      fixed
+      left
+      small
+      top
       @click="toggleFullscreen('button-press')"
     >
       <v-icon>
@@ -128,13 +129,13 @@
     </v-btn>
     <v-btn
       v-show="globalBtns"
-      fab
-      small
-      fixed
-      top
-      color="rgba(0,0,0,0.65)"
-      right
       :style="`z-index: 9999;`"
+      color="rgba(0,0,0,0.65)"
+      fab
+      fixed
+      right
+      small
+      top
       @click="toggleSounds()"
     >
       <v-icon>
@@ -149,14 +150,14 @@
         activeStep === 'map' &&
         $route.path === '/privacy-cruise'
       "
-      fixed
+      bottom
       color="rgba(0,0,0,0.65)"
       fab
-      width="48"
+      fixed
       height="48"
-      bottom
       left
       style="bottom: 95px; z-index: 9999"
+      width="48"
       @click="showDisclaimer"
     >
       <v-icon>mdi-trophy-outline</v-icon>
@@ -168,14 +169,14 @@
         activeStep === 'map' &&
         $route.path === '/privacy-cruise'
       "
-      fixed
+      bottom
       color="rgba(0,0,0,0.65)"
       fab
-      width="48"
+      fixed
       height="48"
-      bottom
       left
       style="bottom: 35px; z-index: 9999"
+      width="48"
       @click="openRestartGameDialog"
     >
       <v-icon>mdi-restart</v-icon>
@@ -185,6 +186,7 @@
 
 <script>
 import SoundPlayer from '@/mixins/sound-player.js';
+
 export default {
   mixins: [SoundPlayer],
   data: () => ({
@@ -250,7 +252,7 @@ export default {
       this.hideBackToMap('big-button-press-1');
       this.$store.commit('SET_INSTRUCTIONS', {
         model: true,
-        title: this.$tr('restart-game.title'),
+        title: this.$t('restart-game.title'),
         steps: [`restart-game.hint`],
         nextText: this.$t('restart-game.action'),
         cancelable: true,
@@ -334,8 +336,10 @@ export default {
         if (document.exitFullscreen) {
           document
             .exitFullscreen()
-            .then(() => {})
-            .catch(() => {});
+            .then(() => {
+            })
+            .catch(() => {
+            });
         }
         if (document.webkitCancelFullScreen) {
           document.webkitCancelFullScreen();
@@ -345,28 +349,38 @@ export default {
         if (document.documentElement.requestFullscreen) {
           document.documentElement
             .requestFullscreen()
-            .then(() => {})
-            .catch(() => {});
+            .then(() => {
+            })
+            .catch(() => {
+            });
         } else if (document.documentElement.webkitRequestFullScreen) {
           document.documentElement
             .webkitRequestFullScreen(Element.ALLOW_KEYBOARD_INPUT)
-            .then(() => {})
-            .catch(() => {});
+            .then(() => {
+            })
+            .catch(() => {
+            });
         } else if (document.documentElement.mozRequestFullScreen) {
           document.documentElement
             .mozRequestFullScreen()
-            .then(() => {})
-            .catch(() => {});
+            .then(() => {
+            })
+            .catch(() => {
+            });
         } else if (document.documentElement.msRequestFullscreen) {
           document.documentElement
             .msRequestFullscreen()
-            .then(() => {})
-            .catch(() => {});
+            .then(() => {
+            })
+            .catch(() => {
+            });
         } else if (document.documentElement.webkitEnterFullscreen) {
           document.documentElement
             .webkitEnterFullscreen(Element.ALLOW_KEYBOARD_INPUT)
-            .then(() => {})
-            .catch(() => {});
+            .then(() => {
+            })
+            .catch(() => {
+            });
         }
       }
     },

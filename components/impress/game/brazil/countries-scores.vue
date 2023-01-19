@@ -1,6 +1,6 @@
 <template>
   <v-card flat tile light class="pa-6">
-    <v-card-title class="subtitle-1">
+    <v-card-title class=" subtitle-1 text-h5">
       {{ $t('countries_scores') }}</v-card-title
     >
     <v-card-text>
@@ -8,7 +8,7 @@
         :headers="headers"
         :items="items"
         :items-per-page="5"
-        class="elevation-0"
+        class="elevation-0 "
         :disable-pagination="true"
       >
       </v-data-table>
@@ -57,4 +57,11 @@ export default {
   },
 };
 </script>
-<style scoped></style>
+<style scoped>
+::v-deep table  thead  tr  th {
+  font-size: 0.875rem !important;
+}
+::v-deep table tbody tr td {
+  font-size: 0.75rem !important;
+}
+</style>
