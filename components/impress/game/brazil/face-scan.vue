@@ -2,7 +2,7 @@
   <div class="d-flex flex-column align-center justify-center">
     <div :class="{ 'validate-image': isValidating }" class="video-container">
       <video ref="camera" autoplay height="400px" width="400px"></video>
-      <img v-show="isPhotoTaken && !usedVideo" ref="imgsrc"/>
+      <img v-show="isPhotoTaken && !usedVideo" ref="imgsrc" />
     </div>
     <div class="d-flex align-center mt-4 gap-6">
       <template v-if="!isPhotoTaken">
@@ -34,7 +34,13 @@
           <span class="pr-4">{{ $t('cancel') }}</span>
           <v-icon>mdi-camera-retake</v-icon>
         </v-btn>
-        <v-btn class="pa-6" color="primary" large @click="validatePhotoHandler">
+        <v-btn
+          class="pa-6"
+          color="primary"
+          large
+          :data-video-start="`${stepId}-x2`"
+          @click="validatePhotoHandler"
+        >
           <span class="pr-4">{{ $t('validate') }}</span>
           <v-icon>mdi-check-circle</v-icon>
         </v-btn>
@@ -45,16 +51,15 @@
 
 <script>
 import SoundPlayer from '~/mixins/sound-player';
-import ImpressStep from "~/mixins/impress-step";
 
 export default {
   name: 'FaceScan',
-  mixins: [SoundPlayer, ImpressStep],
+  mixins: [SoundPlayer],
   props: {
     stepId: {
       type: String,
-      default: null
-    }
+      default: null,
+    },
   },
   data() {
     return {
@@ -66,7 +71,6 @@ export default {
     };
   },
   mounted() {
-    this.replaceBg('brazil-x3');
     this.isLoading = true;
     const constraints = (window.constraints = {
       audio: false,
@@ -95,17 +99,12 @@ export default {
     },
     validatePhotoHandler() {
       this.playGameSound('big-button-press-1');
-      this.isValidating = true;
-      setTimeout(() => {
-        window.stream?.getTracks().forEach(function (track) {
-          track.stop();
-        });
-        this.isValidating = false;
-        this.usedVideo = false;
-        this.$refs.imgsrc.src = '';
-        this.replaceBg('brazil');
-        this.$emit('next');
-      }, 3000);
+      this.$emit('next');
+      this.isValidating = false;
+      this.usedVideo = false;
+      window.stream?.getTracks().forEach(function (track) {
+        track.stop();
+      });
     },
     cancelPhoto() {
       this.playGameSound('big-button-press-1');
