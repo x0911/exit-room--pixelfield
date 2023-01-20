@@ -320,38 +320,73 @@ export default {
             const qTitle = this.$t(`italy.questions-titles.${qTitleIndex}`);
             const qTextInset = this.$t(`italy.questions.${i + 1}.label`);
             const qText = `${qTitle} ( ${qTextInset} )`;
-            let answerText = q.value;
+            const answers = [];
+            if (q.type === 'text' || !q.type) {
+              answers.push({
+                answer_id: 1,
+                answer_text: q.value,
+              });
+            }
             if (q.type === 'dropdown') {
-              answerText = q.options.find((o) => o[q.itemValue] === q.value)[
-                q.itemText
-              ];
+              if (q.multiple) {
+                q.value.forEach((v) => {
+                  answers.push({
+                    answer_id: v,
+                    answer_text: q.options.find((o) => o[q.itemValue] === v)[
+                      q.itemText
+                    ],
+                  });
+                });
+              } else {
+                const answerText = q.options.find(
+                  (o) => o[q.itemValue] === q.value
+                )[q.itemText];
+                answers.push({
+                  answer_id: q.value,
+                  answer_text: answerText,
+                });
+              }
             }
             if (q.type === 'checkbox') {
               if (q.multiple) {
-                const arr = [];
                 q.value.forEach((v) => {
-                  arr.push(this.$tr(`italy.questions.${i + 1}.options`)[v]);
+                  answers.push({
+                    answer_id: v,
+                    answer_text: this.$tr(`italy.questions.${i + 1}.options`)[
+                      v
+                    ],
+                  });
                 });
-                answerText = arr;
               } else {
-                answerText = this.$tr(`italy.questions.${i + 1}.options`)[
+                const answerText = this.$tr(`italy.questions.${i + 1}.options`)[
                   q.value
                 ];
+                answers.push({
+                  answer_id: q.value,
+                  answer_text: answerText,
+                });
               }
             }
             return {
               question_id: i + 1,
               question_text: qText,
-              answer_id: q.type === 'text' ? null : q.value,
-              answer_text: answerText,
+              answers,
               is_correct: true,
             };
           });
+          const lastQuestion = this.questions[this.questions.length - 1];
+          const countryIso = lastQuestion.value;
+          localStorage.setItem('data-protection-country', countryIso);
+          const locale = localStorage.getItem('data-protection-language');
           await this.$store.dispatch('createTask', {
             task_result: score,
             questions,
             task_id: info.taskId,
             task_name: info.taskName,
+          });
+          await this.$store.dispatch('updateLang', {
+            selected_lang: locale,
+            country: countryIso,
           });
         } catch (err) {
           console.log(err);
