@@ -312,10 +312,7 @@ export const actions = {
       const userId = localStorage.getItem('privacy-cruise-db-user-id');
       const response = await this.$axios.$put(
         `/api/questions/update-lang/${userId}/`,
-        {
-          selected_lang: payload,
-          country: '',
-        }
+        payload
       );
       return response;
     } catch (err) {
@@ -337,6 +334,17 @@ export const actions = {
       console.log(err);
     }
     // return '';
+  },
+  async getGameRoomStats(context, payload) {
+    try {
+      const response = await this.$axios.$get(
+        `/api/questions/country-statistic/`
+      );
+      return response?.results || [];
+    } catch (err) {
+      console.log(err);
+    }
+    // return [];
   },
 };
 

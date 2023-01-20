@@ -243,18 +243,18 @@ export default {
       const score = 100;
       try {
         const info = this.getActiveTaskInfo();
-        const questions = [...this.questions].map((q, i) => {
-          return {
-            question_id: i + 1,
-            question_text: this.$t(`egypt.questions.${i + 1}.label`),
-            answer_id: q.value,
-            answer_text: this.$tr(`egypt.questions.${i + 1}.options`)[q.value],
-            is_correct: q.value === q.correctValue,
-          };
-        });
+        // const questions = [...this.questions].map((q, i) => {
+        //   return {
+        //     question_id: i + 1,
+        //     question_text: this.$t(`egypt.questions.${i + 1}.label`),
+        //     answer_id: q.value,
+        //     answer_text: this.$tr(`egypt.questions.${i + 1}.options`)[q.value],
+        //     is_correct: q.value === q.correctValue,
+        //   };
+        // });
         await this.$store.dispatch('createTask', {
           task_result: score,
-          questions,
+          questions: [],
           task_id: info.taskId,
           task_name: info.taskName,
         });

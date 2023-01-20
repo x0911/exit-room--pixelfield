@@ -213,15 +213,20 @@ export default {
     selectLang(event, locale = 'en') {
       this.playGameSound('big-button-press-1');
       localStorage.setItem('data-protection-language', locale);
+      const country =
+        localStorage.getItem('data-protection-country') || 'unknown';
       this.$i18n.setLocale(locale);
       this.$set(this, 'locale', locale);
       this.$set(this, 'step', 1);
       event.target['data-video-start'] = 'game-intro-0';
-      this.$store.dispatch('updateLang', locale);
+      this.$store.dispatch('updateLang', {
+        selected_lang: locale,
+        country,
+      });
       this.play0Video();
     },
     video0Ended() {
-      window.impressAPI.goto('map')
+      window.impressAPI.goto('map');
     },
     play0Video() {
       this.$set(this, 'model', false);

@@ -15,16 +15,13 @@
           <v-divider></v-divider>
           <v-card-text class="pt-5">
             <template v-for="(line, i) in $t('cookies.text')">
-              <div
-                :key="i"
-                :inner-html.prop="line.title"
-                class="mb-1 text-decoration-underline"
-              ></div>
-              <div
-                :key="i"
-                :inner-html.prop="line.description"
-                class="mb-3"
-              ></div>
+              <div :key="i">
+                <div
+                  :inner-html.prop="line.title"
+                  class="mb-1 text-decoration-underline"
+                ></div>
+                <div :inner-html.prop="line.description" class="mb-3"></div>
+              </div>
             </template>
           </v-card-text>
         </v-card>

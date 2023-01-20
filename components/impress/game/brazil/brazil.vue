@@ -91,7 +91,7 @@ export default {
   mounted() {
     this.$nuxt.$on(`video-${this.stepId}-ended`, this.introEnded);
     this.$nuxt.$on(`video-${this.stepId}-x2-ended`, () => {
-      this.replaceBg('brazil-x2')
+      this.replaceBg('brazil-x2');
       this.step = 'survey';
     });
   },
@@ -151,22 +151,31 @@ export default {
       try {
         const score = 100;
         const info = this.getActiveTaskInfo();
+        let gameScore = Number(this.result.perc);
+        const highestGameScore = Number(
+          localStorage.getItem('game-room-highest-score') || '0'
+        );
+        if (highestGameScore > gameScore) {
+          gameScore = highestGameScore;
+        } else {
+          localStorage.setItem('game-room-highest-score', `${gameScore}`);
+        }
         await this.$store.dispatch('createTask', {
           task_result: score,
           questions: [],
           task_id: info.taskId,
           task_name: info.taskName,
-          score: Number(this.result.perc),
+          score: gameScore,
         });
         this.$set(this.result, 'perc', score);
         this.$set(this.result, 'passed', score === 100);
+        this.stepLeave();
         this.showResultDialog();
         this.$store.commit('SET_SCORE_BOARD_DIALOG', {
           model: false,
           score,
           game: 'brazil',
         });
-        this.stepLeave();
       } catch (err) {
         console.log(err);
       }

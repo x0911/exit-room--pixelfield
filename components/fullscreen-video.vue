@@ -74,7 +74,11 @@
                         </template>
                       </template>
                       <template
-                        v-if="dialog.options && dialog.options.length > 0"
+                        v-if="
+                          dialog.options &&
+                          dialog.options.length > 0 &&
+                          !refreshing
+                        "
                       >
                         <div
                           class="text-center mt-2 yellow--text font-weight-medium mb-3"
@@ -89,10 +93,16 @@
                                 dark
                                 flat
                                 height="100%"
-                                @click="chooseOption(dialog, oi)"
+                                :class="{
+                                  'green darken-3': option.isSelected,
+                                }"
+                                @click="chooseOption(i, oi)"
                               >
                                 <v-card-text>
                                   <div
+                                    :class="{
+                                      'white--text': option.isSelected,
+                                    }"
                                     :inner-html.prop="
                                       option.textArray || dialog.text
                                     "
@@ -172,6 +182,7 @@ export default {
     dialogs: [],
     shownDialogs: [],
     audio: null,
+    refreshing: false,
   }),
   computed: {
     activeStep() {
@@ -346,7 +357,7 @@ export default {
         dialog.model = false;
       });
     },
-    isPlayerThinking({speaker}) {
+    isPlayerThinking({ speaker }) {
       return speaker === this.$t('player-is-thinking');
     },
     ended(playSound = false) {
@@ -363,17 +374,21 @@ export default {
       this.$set(this, 'canPlay', false);
       this.$store.commit('SET_VIDEO_IS_SKIPPABLE', true);
     },
-    chooseOption(dialog, oIndex) {
-      dialog.options.forEach(
-        (option, index) => (option.isSelected = index === oIndex)
-      );
+    chooseOption(dIndex, oIndex) {
+      this.refreshing = true;
+      const dialog = this.dialogs[dIndex];
+      const optionsLength = dialog.options.length;
+      for (let i = 0; i < optionsLength; i++) {
+        this.dialogs[dIndex].options[i].isSelected = i === oIndex;
+      }
       if (!dialog.validateOptionsOnNext) {
         this.validateOptions(dialog);
       }
+      this.refreshing = false;
     },
     validateOptions(dialog) {
       const selectedOption = dialog.options.find(
-        ({isSelected}) => isSelected
+        ({ isSelected }) => isSelected
       );
       if (!selectedOption) return;
       if (!selectedOption.isCorrect) {
