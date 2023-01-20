@@ -21,15 +21,15 @@
         <face-scan
           v-if="step === 'face-scan'"
           :step-id="stepId"
-          @next="step = 'survey'"
-        />
-        <countries-scores
-          v-if="step === 'countries-score'"
-          @next="step = 'mini-game'"
+          @next="nextFaceScanHandler"
         />
         <brazil-survey
           v-if="step === 'survey'"
           @next="step = 'countries-score'"
+        />
+        <countries-scores
+          v-if="step === 'countries-score'"
+          @next="step = 'mini-game'"
         />
         <mini-game
           v-if="step === 'mini-game'"
@@ -90,6 +90,10 @@ export default {
   }),
   mounted() {
     this.$nuxt.$on(`video-${this.stepId}-ended`, this.introEnded);
+    this.$nuxt.$on(`video-${this.stepId}-x2-ended`, () => {
+      this.replaceBg('brazil-x2')
+      this.step = 'survey';
+    });
   },
   methods: {
     stepLeave() {
@@ -133,6 +137,10 @@ export default {
       setTimeout(() => {
         this.isLoading = false;
       }, 2000);
+    },
+    nextFaceScanHandler() {
+      this.step = null;
+      this.$store.commit('PLAY_VIDEO', `${this.stepId}-x2`);
     },
     reset() {
       this.step = 'face-scan';

@@ -217,7 +217,7 @@ export default {
         {
           component: 'GameBrazil',
           id: 'brazil',
-          videos: ['brazil'],
+          videos: ['brazil', 'brazil-x2'],
           x: '0',
           y: `${h}`,
           z: '-1500',
