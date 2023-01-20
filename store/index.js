@@ -309,6 +309,7 @@ export const actions = {
         `/api/questions/update-lang/${userId}/`,
         {
           selected_lang: payload,
+          country: '',
         }
       );
       return response;
