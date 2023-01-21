@@ -103,45 +103,6 @@
       </div>
     </v-bottom-sheet>
     <v-dialog
-      v-model="showEmail"
-      :retain-focus="false"
-      class="elevation-0"
-      content-class="elevation-0"
-      max-width="600"
-      persistent
-      scrollable
-    >
-      <v-card class="transparent">
-        <v-card-text class="pa-0 info-screen v-card darken border-3">
-          <v-card class="transparent">
-            <div class="email-header f-title px-4 py-2 primary yellow--text">
-              {{ $t('wall') }}
-            </div>
-            <v-divider></v-divider>
-            <v-card-text class="pt-3">
-              <template v-for="(line, i) in $t('map-email.text')">
-                <v-flex :key="i" :inner-html.prop="line" class="my-1"></v-flex>
-              </template>
-            </v-card-text>
-          </v-card>
-        </v-card-text>
-        <v-card-actions class="mt-4 px-6">
-          <v-spacer></v-spacer>
-          <v-btn
-            class="px-4"
-            color="primary"
-            depressed
-            large
-            tile
-            @click="showEmail = false"
-          >
-            {{ $t('start') }}
-            <v-icon class="ms-2">mdi-keyboard-backspace mdi-rotate-180</v-icon>
-          </v-btn>
-        </v-card-actions>
-      </v-card>
-    </v-dialog>
-    <v-dialog
       v-model="viewAttachment"
       max-width="85%"
       no-click-animation
@@ -197,7 +158,6 @@ export default {
         },
       },
       mapLoaded: false,
-      showEmail: false,
 
       // Map
       travelBook: TravelBook,
@@ -340,7 +300,13 @@ export default {
         this.intro2Ended();
       } else {
         setTimeout(() => {
-          this.$set(this, 'showEmail', true);
+          this.$store.commit('SET_INSTRUCTIONS', {
+            bottomModel: true,
+            title: this.$t('franklin'),
+            steps: ['wall-steps'],
+            nextText: this.$t('start'),
+            image: 'avatars/franklin.jpg',
+          })
         }, 1200);
       }
     },

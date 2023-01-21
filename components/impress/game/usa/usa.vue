@@ -18,16 +18,22 @@
         ></lottie-animation>
       </div>
       <privacy-notice v-if="isPrivacyOpen" v-model="isPrivacyOpen" />
-      <usa-survey
-        v-if="isQuestionsOpen"
-        @cancel="isQuestionsOpen = false"
-        @next="completeSurveyHandler"
+      <usa-questions
+        v-if="isUsaQuestionsOpen"
+        @next="completeUsaQuestionsHandler"
       />
-      <phone-questions
-        v-else-if="isPhoneOpen"
-        v-click-outside="outsideClickConfig"
-        @next="completePhoneQuestionsHandler"
-      />
+      <div v-if="false">
+        <usa-survey
+          v-if="isQuestionsOpen"
+          @cancel="isQuestionsOpen = false"
+          @next="completeSurveyHandler"
+        />
+        <phone-questions
+          v-else-if="isPhoneOpen"
+          v-click-outside="outsideClickConfig"
+          @next="completePhoneQuestionsHandler"
+        />
+      </div>
       <privacy-survey
         v-else-if="isPrivacySurveyOpen"
         @next="completePrivacySurveyHandler"
@@ -76,9 +82,11 @@ import MissingPiece from '~/components/impress/game/usa/missing-piece';
 import PhoneQuestions from '~/components/impress/game/usa/phone-questions';
 import PrivacyNotice from '~/components/impress/game/shared/privacy-notice';
 import PrivacySurvey from '~/components/impress/game/usa/privacy-survey';
+import UsaQuestions from '~/components/impress/game/usa/usa-questions.vue';
 
 export default {
   components: {
+    UsaQuestions,
     PrivacySurvey,
     PrivacyNotice,
     PhoneQuestions,
@@ -92,6 +100,7 @@ export default {
     isQuestionsOpen: false,
     isPhoneOpen: false,
     isPrivacySurveyOpen: false,
+    isUsaQuestionsOpen: false,
     isMissingPieceOpen: false,
     isChatOpen: false,
     isPrivacyOpen: false,
@@ -160,6 +169,7 @@ export default {
       this.isQuestionsOpen = false;
       this.isPhoneOpen = false;
       this.isPrivacySurveyOpen = false;
+      this.isUsaQuestionsOpen = false;
       this.isMissingPieceOpen = false;
       this.isChatOpen = false;
       this.isLoading = false;
@@ -188,6 +198,10 @@ export default {
       this.isPrivacySurveyOpen = false;
       this.isMissingPieceOpen = true;
     },
+    completeUsaQuestionsHandler() {
+      this.isUsaQuestionsOpen = false;
+      this.isMissingPieceOpen = true;
+    },
     async completeMissingPieceHandler() {
       this.isMissingPieceOpen = false;
       this.isChatOpen = true;
@@ -210,13 +224,14 @@ export default {
         this.isQuestionsOpen,
         this.isPhoneOpen,
         this.isPrivacySurveyOpen,
+        this.isUsaQuestionsOpen,
         this.isMissingPieceOpen,
         this.isChatOpen,
       ].every((step) => !step);
       if (isStart) {
         this.canOpenPrivacyNotice = false;
         await this.addLoading();
-        this.isQuestionsOpen = true;
+        this.isUsaQuestionsOpen = true;
       }
     },
     startChat() {

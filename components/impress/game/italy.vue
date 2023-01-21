@@ -16,7 +16,11 @@
               <v-card-text class="py-6">
                 <template v-for="(q, i) in questions">
                   <div :key="i" class="mb-5">
-                    <div v-if="q.hasTitle" class="mb-4 text-h6">
+                    <div
+                      v-if="q.hasTitle"
+                      class="mb-4 text-h6 font-weight-bold"
+                    >
+                      {{ $tr(`italy.questions-indexes.${i + 1}`) }}/
                       {{ $tr(`italy.questions-titles.${i + 1}`) }}
                     </div>
                     <div class="mb-2 text-body-1 font-weight-medium">
@@ -67,7 +71,6 @@
                         v-model="q.value"
                         filled
                         rounded
-                        :placeholder="$tr(`italy.questions.${i + 1}.label`)"
                         class="rounded-sm"
                         hide-details
                         :items="q.options"
@@ -114,6 +117,7 @@
       :model="result.model"
       :perc="result.perc"
       :passed="result.passed"
+      :disable-try-again="true"
       @restart="restart()"
     >
     </score-board-inline>
@@ -320,73 +324,38 @@ export default {
             const qTitle = this.$t(`italy.questions-titles.${qTitleIndex}`);
             const qTextInset = this.$t(`italy.questions.${i + 1}.label`);
             const qText = `${qTitle} ( ${qTextInset} )`;
-            const answers = [];
-            if (q.type === 'text' || !q.type) {
-              answers.push({
-                answer_id: 1,
-                answer_text: q.value,
-              });
-            }
+            let answerText = q.value;
             if (q.type === 'dropdown') {
-              if (q.multiple) {
-                q.value.forEach((v) => {
-                  answers.push({
-                    answer_id: v,
-                    answer_text: q.options.find((o) => o[q.itemValue] === v)[
-                      q.itemText
-                    ],
-                  });
-                });
-              } else {
-                const answerText = q.options.find(
-                  (o) => o[q.itemValue] === q.value
-                )[q.itemText];
-                answers.push({
-                  answer_id: q.value,
-                  answer_text: answerText,
-                });
-              }
+              answerText = q.options.find((o) => o[q.itemValue] === q.value)[
+                q.itemText
+              ];
             }
             if (q.type === 'checkbox') {
               if (q.multiple) {
+                const arr = [];
                 q.value.forEach((v) => {
-                  answers.push({
-                    answer_id: v,
-                    answer_text: this.$tr(`italy.questions.${i + 1}.options`)[
-                      v
-                    ],
-                  });
+                  arr.push(this.$tr(`italy.questions.${i + 1}.options`)[v]);
                 });
+                answerText = arr;
               } else {
-                const answerText = this.$tr(`italy.questions.${i + 1}.options`)[
+                answerText = this.$tr(`italy.questions.${i + 1}.options`)[
                   q.value
                 ];
-                answers.push({
-                  answer_id: q.value,
-                  answer_text: answerText,
-                });
               }
             }
             return {
               question_id: i + 1,
               question_text: qText,
-              answers,
+              answer_id: q.type === 'text' ? null : q.value,
+              answer_text: answerText,
               is_correct: true,
             };
           });
-          const lastQuestion = this.questions[this.questions.length - 1];
-          const countryIso = lastQuestion.value;
-          localStorage.setItem('data-protection-country', countryIso);
-          const locale = localStorage.getItem('data-protection-language');
           await this.$store.dispatch('createTask', {
             task_result: score,
             questions,
             task_id: info.taskId,
             task_name: info.taskName,
-          });
-          await this.$store.dispatch('updateLang', {
-            selected_lang: locale,
-            country: countryIso,
           });
         } catch (err) {
           console.log(err);

@@ -10,6 +10,8 @@ export default {
           from: 3.9,
           textArray: this.$tr('speeches.splash.1', 'array'),
           isConfirmable: true,
+          style:
+            'position: fixed; top: calc(50% - 120px); width: 720px; max-width: 75vw',
         },
         {
           speaker: this.$t('franklin'),
@@ -17,6 +19,8 @@ export default {
           from: 4.2,
           textArray: this.$tr('speeches.splash.2', 'array'),
           isConfirmable: true,
+          style:
+            'position: fixed; top: max(calc(50% - 210px), 20px); width: 720px; max-width: 75vw',
         },
       ];
       const reception = [
@@ -32,15 +36,8 @@ export default {
         {
           speaker: this.$t('franklin'),
           avatar: 'franklin.jpg',
-          from: 3,
-          textArray: this.$tr('speeches.egypt.1', 'array'),
-          isConfirmable: true,
-        },
-        {
-          speaker: this.$t('franklin'),
-          avatar: 'franklin.jpg',
           from: 5,
-          textArray: this.$tr('speeches.egypt.2', 'array'),
+          textArray: this.$tr('speeches.egypt.1', 'array'),
           isConfirmable: true,
         },
       ];
@@ -49,21 +46,21 @@ export default {
           speaker: this.$t('carla-thought'),
           avatar: 'carla.jpg',
           from: 2,
-          textArray: this.$tr('speeches.egypt.3', 'array'),
+          textArray: this.$tr('speeches.egypt.2', 'array'),
           isConfirmable: true,
         },
         {
           speaker: this.$t('yuri-thought'),
           avatar: 'yuri.jpg',
           from: 4,
-          textArray: this.$tr('speeches.egypt.4', 'array'),
+          textArray: this.$tr('speeches.egypt.3', 'array'),
           isConfirmable: true,
         },
         {
-          speaker: this.$t('yael-thought'),
-          avatar: 'yael.jpg',
+          speaker: this.$t('dave-thought'),
+          avatar: 'dave.jpg',
           from: 6,
-          textArray: this.$tr('speeches.egypt.5', 'array'),
+          textArray: this.$tr('speeches.egypt.4', 'array'),
           isConfirmable: true,
           nextBtnText: this.$tr('call-franklin'),
         },
@@ -88,6 +85,7 @@ export default {
       const bedroomX2 = [
         {
           speaker: this.$t('player-is-thinking'),
+          hideSpeaker: true,
           from: 1,
           textArray: this.$tr('speeches.china.1', 'array'),
           isConfirmable: true,
@@ -100,6 +98,8 @@ export default {
           from: 3.5,
           textArray: this.$tr('speeches.china.2', 'array'),
           isConfirmable: true,
+          questionText: this.$t('what-should-tell-franklin'),
+          wrongResponse: this.$t('wrong-response-hint'),
           options: [
             {
               textArray: this.$tr('speeches.china.3', 'array'),
@@ -111,12 +111,6 @@ export default {
             },
           ],
           validateOptionsOnNext: true,
-        },
-        {
-          speaker: this.$t('player'),
-          from: 4.5,
-          textArray: this.$tr('speeches.china.3', 'array'),
-          isConfirmable: true,
         },
         {
           speaker: this.$t('franklin'),

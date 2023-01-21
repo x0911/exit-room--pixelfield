@@ -1,15 +1,15 @@
 <template>
   <v-dialog
-    :value="model && localModel"
-    persistent
-    max-width="620"
-    scrollable
     :retain-focus="false"
+    :value="model && localModel"
+    max-width="620"
+    persistent
+    scrollable
   >
     <v-card class="info-screen border-2" light>
       <v-card-text class="px-4 pb-0 pt-4">
         <div v-if="label" class="d-flex align-center">
-          <v-avatar size="40" class="mr-4">
+          <v-avatar class="mr-4" size="40">
             <v-img
               :src="require(`~/assets/images/games/russia/franklin.jpg`)"
               alt="Speaker Image"
@@ -25,7 +25,7 @@
           <slot name="subtitle">
             <v-layout class="gap-4">
               <v-flex shrink>
-                <v-avatar size="50">
+                <v-avatar size="80">
                   <v-img
                     :src="require(`@/assets/images/avatars/franklin.jpg`)"
                   ></v-img>
@@ -34,14 +34,14 @@
               <v-flex>
                 <div>
                   <template v-for="(line, i) in subtitle">
-                    <div :key="i" :inner-html.prop="line" class="mb-1"></div>
+                    <div :key="i" :inner-html.prop="line" class="mb-1  text-h6"></div>
                   </template>
                 </div>
               </v-flex>
             </v-layout>
           </slot>
           <template v-if="hasPanels">
-            <v-expansion-panels hover accordion>
+            <v-expansion-panels accordion hover>
               <v-expansion-panel v-if="hasLearningOutcome" class="elevation-0">
                 <v-expansion-panel-header class="font-weight-medium">
                   {{ $t('learning-outcome.title') }}
@@ -67,11 +67,11 @@
       <v-card-actions class="px-4 justify-center py-4">
         <v-btn
           v-if="!disableTryAgain"
-          color="primary"
-          large
           class="px-7"
-          tile
+          color="primary"
           depressed
+          large
+          tile
           @click="
             restart();
             playGameSound('big-button-press-2');
@@ -81,12 +81,12 @@
           {{ $t('try-again') }}
         </v-btn>
         <v-btn
-          color="primary"
-          large
-          class="px-7"
-          tile
-          depressed
           :data-video-start="passed ? videoId : null"
+          class="px-7"
+          color="primary"
+          depressed
+          large
+          tile
           @click="backToMap"
         >
           <template v-if="activeStep === 'india'">
@@ -104,6 +104,7 @@
 
 <script>
 import SoundPlayer from '@/mixins/sound-player.js';
+
 export default {
   mixins: [SoundPlayer],
   props: {
@@ -198,7 +199,8 @@ export default {
       this.$set(this, 'localModel', true);
     },
   },
-  mounted() {},
+  mounted() {
+  },
   methods: {
     checkFailCounter() {
       if (!this.passed) {

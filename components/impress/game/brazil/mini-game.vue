@@ -147,8 +147,8 @@ export default {
     gameManager() {
       const randomLine = Math.floor(Math.random() * 3);
       const randomCamera = Math.floor(Math.random() * 3);
-      const randomHide = Math.random() * 3000;
-      const randomHideSecs = randomHide >= 1000 ? randomHide : 1000;
+      const randomHide = Math.random() * 1000;
+      const randomHideSecs = randomHide >= 300 ? randomHide : 300;
 
       if (randomLine <= 2) {
         const { cameras } = this.lines[randomLine];

@@ -39,7 +39,14 @@
             result.perc = $event;
           "
         />
-        <ranking-card v-if="step === 'ranking'" @finish="submitGame" />
+        <ranking-card
+          v-if="step === 'ranking'"
+          @next="step = 'scoreboard-survey'"
+        />
+        <scoreboard-survey
+          v-if="step === 'scoreboard-survey'"
+          @finish="submitGame"
+        />
       </template>
     </v-dialog>
     <score-board-inline
@@ -60,6 +67,7 @@ import MiniGame from '~/components/impress/game/brazil/mini-game';
 import FaceScan from '~/components/impress/game/brazil/face-scan';
 import RankingCard from '~/components/impress/game/brazil/ranking-card';
 import CountriesScores from '~/components/impress/game/brazil/countries-scores';
+import ScoreboardSurvey from '~/components/impress/game/brazil/scoreboard-survey.vue';
 
 export default {
   components: {
@@ -68,6 +76,7 @@ export default {
     FaceScan,
     MiniGame,
     BrazilSurvey,
+    ScoreboardSurvey,
     ScoreBoardInline,
   },
   mixins: [ImpressStep],
@@ -109,6 +118,7 @@ export default {
     },
     restart() {
       this.stepLeave();
+      this.replaceBg('brazil');
       setTimeout(this.introEnded, 100);
     },
     openIntro() {
@@ -138,9 +148,14 @@ export default {
         this.isLoading = false;
       }, 2000);
     },
-    nextFaceScanHandler() {
+    nextFaceScanHandler(event) {
       this.step = null;
-      this.$store.commit('PLAY_VIDEO', `${this.stepId}-x2`);
+      const videoId = `${this.stepId}-x2`;
+      event.target['data-video-start'] = videoId;
+      this.$store.commit('PLAY_VIDEO', videoId);
+      setTimeout(() => {
+        event.target['data-video-start'] = null;
+      }, 2000);
     },
     reset() {
       this.step = 'face-scan';

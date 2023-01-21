@@ -2,7 +2,7 @@
   "franklin": "Franklin",
   "carla-thought": "Carla’s thinking",
   "yuri-thought": "Yuri’s thinking",
-  "yael-thought": "Yael’s thinking",
+  "dave-thought": "Dave’s thinking",
   "player-is-thinking": "Player is thinking",
   "confirm": "Confirm",
   "call-franklin": "Call Franklin",
@@ -42,11 +42,11 @@
   },
   "task-name": {
     "1": "Reception",
-    "2": "Dining room",
-    "3": "Bed room",
-    "4": "Game room",
-    "5": "Bed room",
-    "6": "Captain's cabin"
+    "2": "Dining Room",
+    "3": "Your Cabin",
+    "4": "Game Room",
+    "5": "Your Cabin",
+    "6": "Captain's Bridge"
   },
   "fullscreen-hint": {
     "title": "Fullscreen",
@@ -72,8 +72,8 @@
     ],
     "brazil": [],
     "china": [
-      "Read the note, then search around you in the room to find a ship ticket containing the privacy notice.",
-      "After you find it, look around you to find 5 objects that will have the 5 symbols of privacy on them."
+      "Read the note, then search the room to find the 5 privacy principles and their explanations.",
+      "After you have found them all, you will unlock the privacy notice."
     ],
     "usa": [],
     "russia": []
@@ -86,50 +86,56 @@
       "This is your room selector. Rooms order is mandatory. Active room has a glowing circle above its name."
     ]
   },
+  "wall-steps": [
+    "Ship Map",
+    "Here is a map of the cruise ship. You can only enter the room marked by the glowing circle – click the circle to enter."
+  ],
   "start": "Start",
   "orientation-hint": {
     "title": "Landscape is required",
     "text": "Playing the game in portrait mode is not possible, please rotate your device to landscape mode."
   },
-  "map": "Rooms",
+  "map": "Map",
   "back-to-map": {
     "text": "Do you want to back to room selector?"
   },
   "speeches": {
     "splash": {
       "1": [
-        "Hello and welcome!",
-        "Let me introduce myself: My name is Franklin and I will be your guide during our cruise."
+        "Welcome aboard!",
+        "I am Franklin, an al-powered robot and your concierge on this voyage."
       ],
       "2": [
         "The only thing you will need to be able to play the game is your mouse or mousepad. Right answers will allow you to proceed with the game. Selecting any wrong answers will result in you failing the task, but please note, that if you happen to fail a task, you can always go back and redo it. In order to proceed, please click on the confirm button.",
         "Splendid!",
-        "Now, please follow me to the reception!"
+        "Please follow me aboard so I can show you around the ship."
       ]
     },
     "italy": {
       "1": [
-        "Welcome aboard!",
-        "Our high-tech ship features the most cutting-edge digital technology available on the high seas- which we trust will make this a memorable and enjoyable vacation!",
-        "We’ll set sail in a few moments, but first, we need some registration information. Please provide your passport, any dietary restrictions, and then complete this survey."
+        "Greetings!",
+        "Our ship features the most cutting-edge, digital technology available on the high seas. We trust this will make for a memorable vacation!",
+        "Before we set sail, we need you to scan your passport, share any dietary restrictions we should know about, and complete a quick survey."
       ]
     },
     "egypt": {
-      "1": ["Please, join us and enjoy your meal!"],
-      "2": [
-        "You have been assigned to your seat with 3 other guests.",
-        "Before you eat, we have made a special task for you. Take a look at the menu and follow the instructions."
+      "1": [
+        "You have been assigned to a table with 3 other guests. Please take a look at the menu and whet your appetite!"
       ],
-      "3": [
+      "2": [
         "I’m only 2 months pregnant and not showing",
         "I don’t want people to know I’m pregnant yet, and sharing that I’m not drinking may reveal that."
       ],
-      "4": [
+      "3": [
         "I developed diabetes as a child and have to be very careful with what I eat, but I don’t tell people about this.",
         "It’s something I tend to keep private. I wonder if the others will suspect my medical condition."
       ],
-      "5": [
+      "4": [
         "I know that in some parts of the world, people are discriminated against based on religion, by sharing that I keep kosher, now everyone knows I’m Jewish."
+      ],
+      "5": [
+        "Well done!",
+        "This is indeed private information, and the waiter should not have shared these notes with your fellow passengers. Let‘s see how they feel about the situation."
       ]
     },
     "brazil": {
@@ -141,12 +147,15 @@
     "china": {
       "1": [
         "Hmm, that lunch menu incident was weird. I should do something about this!",
-        "But first I need to find a ship ticket containing the privacy notice and examine the notice to see whether it was really legitimate to collect and share dietary restrictions with the other passengers."
+        "But first I need to find the ship’s privacy notice to see whether it was appropriate to collect and share dietary",
+        "restrictions with other passengers. I bet the notice is somewhere on the ship’s ticket.",
+        "I should also look for the privacy principles that Captain Maria mentioned so I know what to be on the lookout for",
+        "when I find the notice."
       ],
       "2": ["I heard some noise in here", "Is everything okay?"],
       "3": [
-        "The dietary information was shared with other passengers which was not disclosed in the privacy notice",
-        "This is concerning"
+        "Passengers’ dietary information was shared with other passengers which was not disclosed in the privacy notice.",
+        "This is a problem!"
       ],
       "4": [
         "Hmmmm. That seems unlikely.",
@@ -156,7 +165,7 @@
       "5": ["Everything is fine!"]
     },
     "usa": {
-      "1": "I am desperate and scared. Do I have any privacy rights here?! <br />Let’s check privacy notice to see what it says."
+      "1": "That was very uncomfortable – I want to look at the privacy notice again to understand whether what happened in the game room was legit"
     }
   },
   "screens": {
@@ -167,7 +176,7 @@
     },
     "italy": {
       "title": "The survey",
-      "a1": "Please complete the following survey to proceed to next room"
+      "a1": "Welcome aboard! Participation in this game and the survey is completely voluntary. If you choose not to participate, it will not have any adverse effect on your employment relationship."
     },
     "egypt": {
       "title": "Lunch Menu",
@@ -179,9 +188,9 @@
     },
     "china": {
       "title": "Look at that!",
-      "title2": "Find suspicious part!",
+      "title2": "Take another look!",
       "a1": "You've found a note from a mysterious person.",
-      "a2": "Do you find any part of the privacy notice makes you uncomfortable? Please mark relevant part."
+      "a2": "Is there any data that the ship is collecting that makes you uncomfortable? If so, ask yourself whether collecting it seems necessary, and if not, click on it! "
     },
     "usa": {
       "games": {
@@ -215,37 +224,45 @@
   "next": "Next",
   "italy": {
     "questions-titles": {
-      "1": "When using a digital device for personal reasons how often do you",
-      "6": "Which of the following falls within the Novartis definition of ‘Personal Information’? (select all that apply)",
-      "7": "Are you familiar with? (yes/no)",
-      "12": "At work, do you:",
+      "1": "When using a digital device for personal reasons how often do you?",
+      "6": "Which of the following fall within the Novartis definition of ‘Personal Information’? (select all that apply)",
+      "7": "Are you familiar with the following?",
+      "12": "At work, do you?",
       "16": "Select job function",
       "17": "Country"
+    },
+    "questions-indexes": {
+      "1": "1",
+      "6": "2",
+      "7": "3",
+      "12": "4",
+      "16": "5",
+      "17": "6"
     },
     "questions": {
       "1": {
         "title": "1",
-        "label": "read a privacy policy",
+        "label": "Read a privacy policy?",
         "options": ["Always", "Often", "Occasionally", "Rarely", "Never"]
       },
       "2": {
         "title": "1",
-        "label": "customize cookie settings",
+        "label": "Customize cookie settings?",
         "options": ["Always", "Often", "Occasionally", "Rarely", "Never"]
       },
       "3": {
         "title": "1",
-        "label": "customize other privacy settings (like how your info can be used)",
+        "label": "Customize other privacy settings (like how your information can be used)?",
         "options": ["Always", "Often", "Occasionally", "Rarely", "Never"]
       },
       "4": {
         "title": "1",
-        "label": "try to enter as little information as needed",
+        "label": "Try to enter as little information as needed?",
         "options": ["Always", "Often", "Occasionally", "Rarely", "Never"]
       },
       "5": {
         "title": "1",
-        "label": "save credit card details or other Personal Information to your browser?",
+        "label": "Save credit card details or other Personal Information to your browser?",
         "options": ["Always", "Often", "Occasionally", "Rarely", "Never"]
       },
       "6": {
@@ -255,7 +272,7 @@
           "Phone number",
           "Birthday",
           "Home address",
-          "Information combined which could only identify one person on the planet, even if you don’t know their name (for example, country, college, employer, and age range)",
+          "Information which combined could only identify one person on the planet, even if you don’t know their name (for example, country, college, employer, and age range)",
           "GPS coordinates over time",
           "Government identifier",
           "IP address",
@@ -266,12 +283,12 @@
       },
       "7": {
         "title": "7",
-        "label": "The Novartis Data Privacy Policy",
+        "label": "The Novartis Data Privacy Policy?",
         "options": ["Yes", "No"]
       },
       "8": {
         "title": "7",
-        "label": "Our Data Privacy Principles",
+        "label": "Our Data Privacy Principles?",
         "options": ["Yes", "No"]
       },
       "9": {
@@ -291,7 +308,7 @@
       },
       "12": {
         "title": "12",
-        "label": "Report when you receive Personal Information you should not receive, such as date of birth, home address, ethical origin, medical or salary information?",
+        "label": "Report when you receive Personal Information you should not receive in your role?",
         "options": ["Always", "Often", "Occasionally", "Rarely", "Never"]
       },
       "13": {
@@ -306,26 +323,17 @@
       },
       "15": {
         "title": "12",
-        "label": "Seek to collect as little information as possible when creating a survey, registration, or other form.",
+        "label": "Seek to collect as little information as possible when creating a survey, registration, or other form?",
         "options": ["Always", "Often", "Occasionally", "Rarely", "Never"]
       },
       "16": {
         "title": "16",
         "label": "",
         "options": [
-          "People & Organization (P&O)",
-          "Procurement",
-          "Legal, Novartis Business Assurance & Advisory (NBAA), Ethics, Risk & Compliance (ERC), Data Privacy",
-          "Finance",
-          "Global Health and Corporate ResponsibilityInformation Security & Risk Management (ISRM)",
-          "Information Technology (IT)",
-          "Marketing & Sales",
-          "Medical",
-          "Clinical Development & Trials & Drug Discovery",
-          "Communications & Engagement",
-          "Data Science",
-          "Patient Services & Programs",
-          "Public Affairs",
+          "Marketing",
+          "Patient Support & Services",
+          "Research & Development",
+          "Sales",
           "Other"
         ]
       },
@@ -347,31 +355,40 @@
         ]
       },
       "2": {
-        "label": "What should you say to Franklin?",
+        "label": "You realize that Carla, Yuri, and Dave look uncomfortable and decide that you should speak up to Franklin. What should you say?",
         "options": [
-          "By sharing the dietary preferences, health conditions and/or religious affiliations about the passengers have been revealed. Did you know that that type of information is considered sensitive in many countries?",
-          "There was no need for each passenger to know this information.",
-          "The waiter’s notes should not have been on the menu.",
-          "All of the above."
+          "Passengers don’t need to know each other’s dietary restrictions.",
+          " By including the waiter’s notes on the menu, passengers’ health conditions and/or religious affiliations were likely revealed.",
+          "Information about health and religion is a type of Personal Information, and it can be considered sensitive in many countries.",
+          "All of the above"
         ]
       }
     }
   },
   "brazil": {
+    "validated-photo": [
+      "Good news!",
+      "The photo we just took of you was verified by our facial recognition software."
+    ],
     "questions": {
       "1": {
-        "label": "Did you realize your passport photo would be used in this way?",
+        "label": "Did the privacy notice indicate your photo might be taken and scanned?",
         "options": ["Yes", "No"]
       },
       "2": {
-        "label": "Does this make you uncomfortable?",
+        "label": "Did you know the ship had an image database they were using for facial recognition?",
         "options": ["Yes", "No"]
       },
       "3": {
         "label": "Is the facial recognition in the privacy notice?",
-        "options": ["Yes", "No"]
+        "options": ["Yes", "No"],
+        "link": "Review privacy notice"
       },
       "4": {
+        "label": "Look at the privacy notice again – does it clearly explain that facial recognition would be used?",
+        "options": ["Yes", "No"]
+      },
+      "5": {
         "label": "Does the processing of this data occur strange to you?",
         "options": [
           "Yes! Some information should not be shown to other passengers.",
@@ -387,13 +404,26 @@
       "points": "points",
       "high_score": "High score:",
       "seconds": "seconds",
-      "ranking": "Congratulations: You are number {ranking} on our eternal scoreboard!",
-      "ranking-2": "Your name, game-score and other travel information (e.g., home-address, cabin-number, age and nationality) including your picture are saved and processed in our eternal scoreboard.",
+      "ranking": "Congratulations! You have the highest score.",
       "statistics": "Statistics of former players:"
     },
     "welcome-to-game-room": [
       "Welcome to the game room",
       "Here you can see the result of all countries. Try to get the highest score possible in the game to contribute to your country‘s score."
+    ],
+    "scoreboard-questions": [
+      {
+        "label": "The scoreboard shows your photo and other identifying information which will be available for current and future voyageurs to see. Does this make you uncomfortable?",
+        "options": ["Yes", "No"]
+      },
+      {
+        "label": "Looking more closely at the scoreboard, you see that it has scores going back as far as 2013, suggesting that your information could be posted there for years to come. Does this make you uncomfortable?",
+        "options": ["Yes", "No"]
+      },
+      {
+        "label": "Can you think of a privacy-friendly way to handle the scoreboard?",
+        "options": ["Yes", "No"]
+      }
     ]
   },
   "usa": {
@@ -448,18 +478,36 @@
         "correctOptions": [0]
       }
     },
-    "score-board-inline": "OK let's go see the captain."
+    "score-board-inline": "OK let's go see the captain.",
+    "privacy-questions": [
+      {
+        "label": "Captain Maria shared the principle of being transparent. That means that the ship should have let me know in the privacy notice that my information might be shared on the scoreboard. Is there anything in the notice about that?",
+        "options": ["Yes", "No"]
+      },
+      {
+        "label": "She also shared the principle of not retaining information longer than necessary. The privacy notice doesn’t say anything about how long they keep our information, but based on the scoreboard, it looks like they have stored it for at least 10 years! Does that seem necessary?",
+        "options": ["Yes", "No"]
+      },
+      {
+        "label": "Captain Maria also said the ship should be responsible, meaning it should not use information collected for purposes other than what is was collected for. When they scanned my passport, I didn’t think they would use that information for a public scoreboard. Do you think the ship used the passport information responsibly?",
+        "options": ["Yes", "No"]
+      }
+    ]
   },
   "china": {
     "bedroom-note": [
-      "Dear passenger!",
-      "This ship contains some dubious data processing.",
-      "With the help of my 5 hidden privacy principles you can restore privacy on this ship"
+      "Dear Passenger,",
+      "I was sorry to learn about the waiter‘s mistake at lunch. I‘m",
+      "afraid this ship may not be as watertight when it comes to",
+      "privacy as it should be. But don‘t worry - I have hidden 5",
+      "privacy principles under objects in your cabin that I believe can",
+      "help you protect your privacy. Feel free to visit my cabin if you",
+      " have any other concerns. – Captain Maria"
     ],
     "bedroom-letter": [
-      "<div class='f-hand-2 font-weight-bold text-h3 mb-4'>Dear Guest!</div>",
-      "Welcome aboard! As the captain of this vessel, it is my job to protect your safety and your data privacy. Our privacy notice is printed on the back of your ticket, and to show our commitment to data privacy, I have asked Franklin to place information about our 5 data privacy principles in your cabin. He was supposed to leave them on the desk, but I have heard that his software is buggy, so you may need to search for them. I hope to meet you soon.",
-      "<div class='d-flex justify-end'><i class='f-hand-2 font-weight-bold text-h5'>– Captain Maria</i></div>"
+      "<div class='f-hand-2 font-weight-bold text-h3 mb-4'>Dear guest,</div>",
+      "Hello again and welcome to your cabin. You are staying in Cabin 42, which is a very special room featuring objects I have collected in my travels. I suggest you spend some time here admiring these objects from all angles. ",
+      "<div class='d-flex justify-end'><i class='f-hand-2 font-weight-bold text-h5'>- Regards, Franklin</i></div>"
     ],
     "privacy-notice": {
       "title": "Cruise Ship Privacy Notice",
@@ -481,7 +529,7 @@
           },
           {
             "category": "Payment information",
-            "description": "Information which you give us to execute the payment. Usually, this means the payment card details."
+            "description": "Information you provide for the purpose of processing payments, such as credit card details."
           },
           {
             "category": "Safety information",
@@ -605,10 +653,13 @@
       "Now, please join us in the dining room for lunch!"
     ],
     "egypt": [
-      "This is another example of human error – perhaps we should replace the waiter with an AI-powered robot, like me."
+      "That’s right – that waiter should know better! Silly humans. Perhaps they should replace the waiter with an AI-powered robot like me!",
+      "Why don’t you return to your cabin to relax."
     ],
-    "china": ["Cheer up!", "Follow me to the game room."],
-    "brazil": ["Are you tired after playing?", "Come rest in your room."]
+    "china": [],
+    "brazil": [
+      "Why don’t you go back to your cabin to see how the principles that Captain Maria shared can help you figure this out."
+    ]
   },
   "excellent": "Excellent",
   "bad": "Bad",
@@ -629,7 +680,7 @@
       {
         "label": "Starter",
         "text": "Prawn & Avocado Cocktail",
-        "handwritten": "Note: serve Goats Cheese & Onion Filo Tart to Yael (kosher)"
+        "handwritten": "Note: serve Goats Cheese & Onion Filo Tart to Dave (kosher)"
       },
       {
         "label": "Main",
@@ -647,6 +698,7 @@
     ]
   },
   "pick-response-to-continue": "Pick a response to continue",
+  "what-should-tell-franklin": "What should you tell Franklin?",
   "choose-headlines": "Choose which headlines are useful:",
   "congratulations": "Congratulations",
   "outro": {
@@ -671,15 +723,22 @@
       "2": "Sorry, you've clicked on a wrong item. Have you looked under the carpet yet?"
     },
     "find-x-more": "You need to find {x} more symbols",
-    "found-all": "You've found all privacy symbols!",
+    "found-last": "You‘ve found last privacy symbol!",
+    "found-all": "Congratulations! You‘ve found all privacy principles.",
     "privacy-found": "Congratulations! You found the missing part of the privacy notice.",
     "items": {
       "bridge": "Collect only what is necessary",
       "eye": "Be transparent",
       "handshake": "Use responsibly",
       "hourglass": "Retain only as long as necessary",
-      "lock": "Protect and be vigilant",
-      "phone": "Phone"
+      "lock": "Protect and be vigilant"
+    },
+    "items-explanations": {
+      "bridge": "Collect only what is necessary means you should not have to provide information about you that isn‘t necessary. This ship has a tendency to collect information everywhere – be on the lookout for times when the ship might collect more than what it needs.",
+      "eye": "Be transparent means you should be able to understand what will be done with information about you. When you find the privacy notice, make sure you understand what it says!",
+      "handshake": "Use responsibly means that the ship should only use your personal information for the purposes for which it was collected – pay attention to what is in the privacy notice to make sure the ship isn‘t using your information for other purposes.",
+      "hourglass": "Retain only as long as necessary means the ship should not keep your information longer then it needs to. Most of what the ship collects about you should probably be deleted when the voyage ends.",
+      "lock": "Protect and be vigilant means the ship should secure your personal information and report and investigate any misuse of data. You should speak up if you see anything suspicious."
     }
   },
   "note-from-prev-passenger": [
@@ -702,11 +761,11 @@
       },
       "2": {
         "name": "Data to enhance your voyage",
-        "desc": "As a high-tech cruise line, we employ state-of-the-art technology and algorithms to offer you the best voyage possible. To do this, we may use cameras and other sensors to track your movement on the ship, how long you stay in various rooms, and how you interact with our employees and other passengers"
+        "desc": "As a high-tech cruise line, we employ state-of-the-art technology and algorithms to offer you the best voyage possible. To do this, we may use cameras and other sensors to track your movement on the ship, how long you stay in various rooms, and how you interact with our employees and other passengers."
       },
       "3": {
         "name": "Payment information",
-        "desc": "Information which you give us to execute the payment. Usually, this means the payment card details."
+        "desc": "Information you provide for the purpose of processing payments, such as credit card details"
       },
       "4": {
         "name": "Safety information",
@@ -714,12 +773,21 @@
       }
     },
     "questions": {
+      "title": "Now that you have found the privacy notice and the principles that Captain Maria hid, what do you think about the situation at lunch?",
+      "description": [
+        "That’s right!",
+        "Although the ship disclosed that it would collect information about food allergies (which relates to dietary restrictions), it said it would only share it with employees to ensure safety. That information never should have been shared with other passengers. And while we’re thinking about it, it would be clearer if the privacy notice said “dietary restrictions” rather than just allergies, since Carla, Yuri, and Dave all had restrictions for other reasons."
+      ],
+      "congratulations": [
+        "Good job!",
+        "Why does the ship need to use cameras and sensors to track movement on the ship and how you interact with others? Does the ship really need to know if someone happens to be spending time in someone else’s cabin? Even if this is arguably for safety, there must be ways to ensure passenger safety without compromising privacy."
+      ],
       "q1": {
-        "text": "Does the privacy notice contain any information in connection with collecting data covering dietary restrictions?",
+        "text": "Does the privacy notice state that the ship will collect information about dietary restrictions?",
         "options": ["Yes", "No"]
       },
       "q2": {
-        "text": "Should the privacy notice have been shared with the other passengers?",
+        "text": "Based on the privacy notice, should the waiter’s notes have been shared with the passengers?",
         "options": ["Yes", "No"]
       }
     }
@@ -732,6 +800,7 @@
   "privacy_notice": "Privacy Notice",
   "wrong-response": "Wrong Response!",
   "wrong-response-desc": "You've selected an incorrect response, please try again",
+  "wrong-response-hint": "Really? It’s fine? Remember the concerns the other passengers shared...",
   "ok": "OK",
   "click-to-open-privacy-notice": "Click to open Privacy Notice",
   "restart": "Restart",

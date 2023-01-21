@@ -61,7 +61,7 @@ export default {
       },
       {
         description: '',
-        name: 'main-track-1',
+        name: 'main-track',
         type: 'mp3',
       },
       {

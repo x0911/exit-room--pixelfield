@@ -1,47 +1,52 @@
 <template>
-  <v-card light tile flat class="px-8 pt-4 pb-0">
+  <v-card class="px-8 pt-4 pb-0" flat light tile>
     <v-card-title
+      :inner-html.prop="$t('brazil.mini_game.ranking')"
       class="px-0 subtitle-1"
-      :inner-html.prop="$t('brazil.mini_game.ranking', { ranking: 2 })"
     />
     <v-card-text class="px-0">
-      {{ $t('brazil.mini_game.ranking-2') }}
+      <v-card light class="pa-2 my-0 mx-auto" style="border: 1px solid black">
+        <v-col
+          style="background-color: #080b6cff"
+          class="white--text text-center text-h5 py-6 mb-2"
+          >Top Scores</v-col
+        >
+        <v-row v-for="(player, pIdx) in players" :key="pIdx" class="pt-2">
+          <v-col cols="3" class="pl-12 pr-8">
+            <img width="80px" src="@/assets/images/avatars/player.png" />
+          </v-col>
+          <v-col cols="9"
+            >Passport number: {{ player.passport }}<br />
+            Voyage date: {{ player.voyageDate }} <br />
+            Cabin: {{ player.cabin }}
+          </v-col>
+        </v-row>
+      </v-card>
     </v-card-text>
     <v-card-text class="px-0">
-      <template v-if="false">
-        <div class="subtitle-2 text--darken-4 font-weight-bold mb-3">
-          {{ $t('brazil.mini_game.statistics') }}
-        </div>
-        <v-data-table
-          :headers="headers"
-          :items="items"
-          :items-per-page="5"
-          class="elevation-0"
-        ></v-data-table>
-      </template>
       <v-card class="pa-0" flat>
         <v-card-title
           class="px-0 pb-0 mb-3 subtitle-1"
-          v-text="$t('brazil.questions.4.label')"
+          v-text="$t('brazil.questions.5.label')"
         />
         <v-checkbox
           v-for="(option, oIdx) in $t('brazil.questions.4.options')"
           :key="oIdx"
-          color="primary"
-          class="ma-0 mb-2 caption"
-          hide-details
+          v-model="questionModel"
+          :error="hasErrors"
           :label="option"
           :value="oIdx"
-          :error="hasErrors"
-          v-model="questionModel"
+          class="ma-0 mb-2 caption"
+          color="primary"
+          hide-details
         />
-        <div class="d-flex justify-center pt-8">
+        <div class="d-flex justify-center pt-4">
           <v-btn
-            color="primary"
             class="px-4"
-            tile
-            large
+            color="primary"
             depressed
+            large
+            tile
             @click="finish"
           >
             {{ $t('submit') }}
@@ -77,7 +82,7 @@ export default {
           nationality: 'English',
         },
         {
-          name: 'Yael Cooper',
+          name: 'Dave Cooper',
           score: 97,
           address: 'Paris, France',
           cabin_number: 2,
@@ -85,6 +90,23 @@ export default {
           nationality: 'English',
         },
       ],
+      players: [
+        {
+          passport: 'Q29181948',
+          voyageDate: '[***]',
+          cabin: 42
+        },
+        {
+          passport: 'A02836295',
+          voyageDate: 'May 2019',
+          cabin: 71
+        },
+        {
+          passport: 'H95486012',
+          voyageDate: 'September 2013',
+          cabin: 106
+        }
+      ]
     };
   },
   computed: {
@@ -112,7 +134,7 @@ export default {
       if (!passed) {
         this.hasErrors = true;
       } else {
-        this.$emit('finish');
+        this.$emit('next');
       }
     },
   },

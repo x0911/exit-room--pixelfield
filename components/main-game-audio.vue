@@ -21,7 +21,7 @@ export default {
   data: () => ({
     volume: 1,
     pathToPlay: '',
-    audios: ['main-track-1.mp3'],
+    audios: ['main-track.mp3'],
   }),
   computed: {
     globalBtns() {

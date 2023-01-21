@@ -26,7 +26,7 @@
             <v-card-text class="px-16">
               <template v-for="(item, i) in $tr('lunch-menu.items', 'array')">
                 <v-card :key="i" class="transparent mt-4" flat tile>
-                  <v-layout class="pb-4" column>
+                  <v-layout style="position: relative" class="pb-8" column>
                     <div>
                       <v-layout class="gap-2" justify-space-between>
                         <div
@@ -53,7 +53,9 @@
                         ></v-img>
                       </v-avatar>
                     </v-layout>
-                    <div class="text-body-1 ps-9 f-hand black--text">
+                    <div
+                      class="text-body-1 ps-9 f-hand black--text font-weight-bold handwritten"
+                    >
                       {{ item.handwritten }}
                     </div>
                   </v-layout>
@@ -159,7 +161,7 @@ export default {
     isFormValid() {
       if (!this.model) return true;
       const q = this.questions[this.model - 1];
-      return q.value === q.correctValue;
+      return q && q.value === q.correctValue;
     },
   },
   watch: {
@@ -172,7 +174,7 @@ export default {
   },
   mounted() {
     this.$nuxt.$on(`video-${this.stepId}-ended`, this.videoEnded);
-    this.$nuxt.$on(`video-${this.stepId}-x2-ended`, this.videoEnded);
+    this.$nuxt.$on(`video-${this.stepId}-x2-ended`, this.showScoreBoard);
   },
   methods: {
     nextStep(event) {
@@ -186,24 +188,39 @@ export default {
         this.model++;
         return;
       }
+
       /** questions error **/
-      if (!this.isFormValid) {
+      if (this.model <= 2 && !this.isFormValid) {
         this.hasErrors = true;
         return;
       }
 
-      /** go to the next step **/
-      this.model++;
+      if (this.model === 1) {
+        this.model++;
+        return;
+      }
+
       if (this.model === 2) {
+        this.$store.commit('SET_INSTRUCTIONS', {
+          model: true,
+          steps: ['speeches.egypt.5'],
+          nextText: this.$t('next'),
+          nextMethod: (nextEvent) => {
+            this.model++;
+            this.nextStep(nextEvent);
+          },
+        });
+        return;
+      }
+
+      /** go to the next step **/
+      if (this.model === 3) {
         this.$set(this.videos.intro, 'ended', false);
         event.target['data-video-start'] = `${this.stepId}-x2`;
         this.$store.commit('PLAY_VIDEO', `${this.stepId}-x2`);
         setTimeout(() => {
           this.replaceBg('egypt-v2');
         }, 1000);
-      }
-      if (this.model === 3) {
-        this.showScoreBoard();
       }
     },
     backHandler() {

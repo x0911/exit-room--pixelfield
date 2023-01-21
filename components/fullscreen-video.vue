@@ -32,10 +32,10 @@
         persistent
         scrollable
       >
-        <div class="pb-4">
+        <div class="pb-4" :style="dialog.style">
           <v-card
             :class="{
-              'info-screen darken border-3': !isPlayerThinking(dialog),
+              'info-screen darken border-3 ': !isPlayerThinking(dialog),
               'thought-bubble-container': isPlayerThinking(dialog),
             }"
             class="transparent px-2 pb-4 d-flex align-center"
@@ -61,7 +61,7 @@
                   <div>
                     <template v-if="dialog.isConfirmable">
                       <template>
-                        <div v-if="dialog.speaker" class="font-weight-bold">
+                        <div v-if="dialog.speaker && !dialog.hideSpeaker" class="font-weight-bold">
                           <span> {{ dialog.speaker }}: </span>
                         </div>
                         <template v-if="dialog.speech">
@@ -83,7 +83,7 @@
                         <div
                           class="text-center mt-2 yellow--text font-weight-medium mb-3"
                         >
-                          {{ $t('pick-response-to-continue') }}
+                          {{ dialog.questionText || $t('pick-response-to-continue') }}
                         </div>
                         <v-row>
                           <template v-for="(option, oi) in dialog.options">
@@ -121,10 +121,10 @@
                         </div>
                       </template>
                       <vue-typed-js
-                        :contentType="'html'"
-                        :showCursor="false"
+                        :content-type="'html'"
+                        :show-cursor="false"
                         :strings="[dialog.textArray]"
-                        :typeSpeed="
+                        :type-speed="
                           (dialog.duration / dialog.text.length) * 750
                         "
                       >
@@ -395,7 +395,7 @@ export default {
         this.$store.commit('SET_INSTRUCTIONS', {
           model: true,
           title: this.$t('wrong-response'),
-          steps: ['wrong-response-desc'],
+          steps: [dialog.wrongResponse || 'wrong-response-desc'],
           nextText: this.$t('ok'),
           overlay: true,
         });
