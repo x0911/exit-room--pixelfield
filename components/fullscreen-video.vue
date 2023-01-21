@@ -46,7 +46,10 @@
               class="thought-bubble-background"
             />
             <v-card-text
-              :class="{ 'thought-bubble-content': isPlayerThinking(dialog) }"
+              :class="{
+                'thought-bubble-content': isPlayerThinking(dialog),
+              }"
+              :style="dialog.hideSpeaker && 'padding-top: 1.5rem !important;'"
               class="pt-12 pb-4 text-justify h-full"
             >
               <v-layout align-start class="gap-4" justify-start>
@@ -61,7 +64,10 @@
                   <div>
                     <template v-if="dialog.isConfirmable">
                       <template>
-                        <div v-if="dialog.speaker && !dialog.hideSpeaker" class="font-weight-bold">
+                        <div
+                          v-if="dialog.speaker && !dialog.hideSpeaker"
+                          class="font-weight-bold"
+                        >
                           <span> {{ dialog.speaker }}: </span>
                         </div>
                         <template v-if="dialog.speech">
@@ -83,7 +89,10 @@
                         <div
                           class="text-center mt-2 yellow--text font-weight-medium mb-3"
                         >
-                          {{ dialog.questionText || $t('pick-response-to-continue') }}
+                          {{
+                            dialog.questionText ||
+                            $t('pick-response-to-continue')
+                          }}
                         </div>
                         <v-row>
                           <template v-for="(option, oi) in dialog.options">

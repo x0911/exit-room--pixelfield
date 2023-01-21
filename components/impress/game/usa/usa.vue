@@ -194,13 +194,13 @@ export default {
       this.isPrivacySurveyOpen = true;
     },
     completePrivacySurveyHandler() {
-      this.canOpenPrivacyNotice = false;
       this.isPrivacySurveyOpen = false;
+      this.canOpenPrivacyNotice = false;
       this.isMissingPieceOpen = true;
     },
     completeUsaQuestionsHandler() {
       this.isUsaQuestionsOpen = false;
-      this.isMissingPieceOpen = true;
+      this.isPrivacySurveyOpen = true;
     },
     async completeMissingPieceHandler() {
       this.isMissingPieceOpen = false;

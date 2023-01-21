@@ -76,17 +76,16 @@ export default {
       ];
       const bedroom = [
         {
-          speaker: this.$t('player-is-thinking'),
           from: 2,
+          hideSpeaker: true,
           textArray: this.$tr('speeches.usa.1'),
           isConfirmable: true,
         },
       ];
       const bedroomX2 = [
         {
-          speaker: this.$t('player-is-thinking'),
-          hideSpeaker: true,
           from: 1,
+          hideSpeaker: true,
           textArray: this.$tr('speeches.china.1', 'array'),
           isConfirmable: true,
         },

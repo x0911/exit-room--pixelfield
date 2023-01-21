@@ -146,11 +146,9 @@
     },
     "china": {
       "1": [
-        "Hmm, that lunch menu incident was weird. I should do something about this!",
-        "But first I need to find the ship’s privacy notice to see whether it was appropriate to collect and share dietary",
-        "restrictions with other passengers. I bet the notice is somewhere on the ship’s ticket.",
-        "I should also look for the privacy principles that Captain Maria mentioned so I know what to be on the lookout for",
-        "when I find the notice."
+        "That lunch menu was weird, wasn’t it?",
+        "Why don’t you take a look at the ship’s privacy notice to see whether it was appropriate to collect and share dietary restrictions with other passengers.",
+        "You may also want to hunt for the privacy principles that Captain Maria mentioned so you know what to look for in the notice."
       ],
       "2": ["I heard some noise in here", "Is everything okay?"],
       "3": [
@@ -165,7 +163,10 @@
       "5": ["Everything is fine!"]
     },
     "usa": {
-      "1": "That was very uncomfortable – I want to look at the privacy notice again to understand whether what happened in the game room was legit"
+      "1": [
+        "That situation in the game room was very uncomfortable, wasn’t it?",
+        "Look at the privacy notice again to understand whether what happened in the game room was legit."
+      ]
     }
   },
   "screens": {
@@ -408,7 +409,7 @@
       "statistics": "Statistics of former players:"
     },
     "welcome-to-game-room": [
-      "Welcome to the game room",
+      "Welcome to the game room.",
       "Here you can see the result of all countries. Try to get the highest score possible in the game to contribute to your country‘s score."
     ],
     "scoreboard-questions": [
@@ -427,6 +428,9 @@
     ]
   },
   "usa": {
+    "intro": {
+      "player-thinking": "This doesn’t seem right. What can I do?"
+    },
     "hints": {
       "phone-questions": "Click on the internet browsing icon.",
       "missing-piece": {
