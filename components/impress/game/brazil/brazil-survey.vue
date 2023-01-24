@@ -1,13 +1,13 @@
 <template>
   <div>
-    <v-card light tile flat class="transparent mx-auto">
+    <v-card class="transparent mx-auto" flat light tile>
       <div class="mb-4">
-        <v-card light tile flat class="info-screen border-3">
+        <v-card class="info-screen border-3" flat light tile>
           <template v-for="(q, i) in questions">
             <v-card-text :key="i" class="py-4">
               <div
-                class="mb-2 text-body-1 font-weight-medium"
                 :class="{ 'error--text': hasErrors }"
+                class="mb-2 text-body-1 font-weight-medium"
               >
                 {{ $tr(`brazil.questions.${i + 1}.label`) }}
               </div>
@@ -21,8 +21,8 @@
                   >
                     <v-btn
                       :key="ai"
-                      :value="ai"
                       :class="{ 'primary white--text': q.value === ai }"
+                      :value="ai"
                     >
                       {{ answer }}
                     </v-btn>
@@ -32,12 +32,12 @@
               <template v-if="q.isLink">
                 <div class="my-1">
                   <v-btn
+                    class="text-underline f-odibee-sans px-0"
                     small
                     text
-                    class="text-underline f-odibee-sans px-0"
                     @click="isPrivacyOpen = true"
                   >
-                    <v-icon small class="me-1">mdi-launch</v-icon>
+                    <v-icon class="me-1" small>mdi-launch</v-icon>
                     {{ $tr(`brazil.questions.${i + 1}.link`) }}
                   </v-btn>
                 </div>
@@ -48,13 +48,13 @@
       </div>
       <div class="d-flex justify-center pb-6 gap-6 pt-4">
         <v-btn
-          dark
-          color="primary"
+          :disabled="isDisabled"
           class="px-6 custom-disabled-state"
-          x-large
+          color="primary"
+          dark
           depressed
           tile
-          :disabled="isDisabled"
+          x-large
           @click="finishSurveyHandler"
         >
           <span class="me-3">{{ $t('next') }}</span>
@@ -62,7 +62,7 @@
         </v-btn>
       </div>
     </v-card>
-    <privacy-notice v-if="isPrivacyOpen" v-model="isPrivacyOpen" />
+    <privacy-notice v-if="isPrivacyOpen" v-model="isPrivacyOpen"/>
   </div>
 </template>
 
@@ -72,7 +72,7 @@ import PrivacyNotice from '~/components/impress/game/shared/privacy-notice.vue';
 
 export default {
   name: 'BrazilSurvey',
-  components: { PrivacyNotice },
+  components: {PrivacyNotice},
   mixins: [SoundPlayer],
   data() {
     return {
@@ -106,7 +106,7 @@ export default {
   },
   computed: {
     isDisabled() {
-      const notAllAnswered = this.questions.some(({ value }) => value === null);
+      const notAllAnswered = this.questions.some(({value}) => value === null);
       const lastQuestion = [...this.questions].pop();
       return notAllAnswered || lastQuestion.value !== lastQuestion.correctValue;
     },

@@ -9,8 +9,8 @@
       :retain-focus="false"
       max-width="900"
     >
-      <puzzle-game v-if="step === 1" @next="puzzleNextHandler" />
-      <v-card v-else-if="step === 2" class="transparent" tile flat>
+      <!-- puzzle-game v-if="step === 1" @next="puzzleNextHandler" /-->
+      <v-card v-if="step === 1" class="transparent" tile flat>
         <v-card-text class="px-0 py-2 info-screen v-card darken border-3">
           <v-card class="transparent" tile flat min-height="200">
             <v-card-text>
@@ -151,11 +151,11 @@ import ScoreBoardInline from '~/components/ScoreBoardInline.vue';
 import SoundPlayer from '~/mixins/sound-player.js';
 import ImpressStep from '~/mixins/impress-step.js';
 import DotFlashing from '~/components/dot-flashing.vue';
-import PuzzleGame from '~/components/impress/game/russia/puzzle-game';
+// import PuzzleGame from '~/components/impress/game/russia/puzzle-game';
 
 export default {
   components: {
-    PuzzleGame,
+    // PuzzleGame,
     ScoreBoardInline,
     DotFlashing,
   },
@@ -342,9 +342,11 @@ export default {
     openIntro() {
       this.$store.commit('SET_INSTRUCTIONS', {
         model: true,
-        title: this.$t('screens.russia.games.1.title'),
-        steps: ['screens.russia.games.1.a1'],
-        nextMethod: () => this.step++,
+        steps: ['speeches.russia.2'],
+        nextMethod: () => {
+          this.step++;
+          this.initChat();
+        },
       });
     },
     goBackToMap() {

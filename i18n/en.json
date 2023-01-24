@@ -152,7 +152,7 @@
       ],
       "2": ["I heard some noise in here", "Is everything okay?"],
       "3": [
-        "Passengers’ dietary information was shared with other passengers which was not disclosed in the privacy notice.",
+        "Passengers’ dietary information was shared with other passengers which was not disclosed in the privacy notice",
         "This is a problem!"
       ],
       "4": [
@@ -166,6 +166,17 @@
       "1": [
         "That situation in the game room was very uncomfortable, wasn’t it?",
         "Look at the privacy notice again to understand whether what happened in the game room was legit."
+      ],
+      "2": ["This doesn’t seem right. What can I do?"],
+      "3": [
+        "Aha! The notice is torn – maybe the rest of it is hidden in the room."
+      ]
+    },
+    "russia": {
+      "1": ["Hello – so nice to finally meet you!"],
+      "2": [
+        "I’d like to exercise my privacy rights.",
+        "I’m not happy with what the ship is doing with my personal information."
       ]
     }
   },

@@ -1,11 +1,10 @@
 <template>
-  <privacy-notice
+  <!--privacy-notice
     v-if="isPrivacyOpen"
     v-model="isPrivacyOpen"
     :scroll-to-bottom="true"
-  />
+  /!-->
   <v-card
-    v-else-if="isQuestionsOpen"
     class="pa-6 mx-auto"
     flat
     light
@@ -43,12 +42,12 @@
   </v-card>
 </template>
 <script>
-import PrivacyNotice from '~/components/impress/game/shared/privacy-notice';
+// import PrivacyNotice from '~/components/impress/game/shared/privacy-notice';
 import SoundPlayer from '~/mixins/sound-player';
 
 export default {
   name: 'PrivacySurvey',
-  components: {PrivacyNotice},
+  // components: {PrivacyNotice},
   mixins: [SoundPlayer],
   data() {
     return {

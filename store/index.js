@@ -130,8 +130,13 @@ export const state = () => ({
       canPlay: false,
       ended: false,
     },
+    'usa-x3': {
+      path: '5th-room-v3.mp4',
+      canPlay: false,
+      ended: false,
+    },
     russia: {
-      path: '6th-task.mp4',
+      path: '6th-room.mp4',
       canPlay: false,
       ended: false,
     },

@@ -91,7 +91,7 @@ export default {
         return;
       }
       this.step === 1 ? this.step++ : this.$emit('next');
-      
+
     },
   },
 };

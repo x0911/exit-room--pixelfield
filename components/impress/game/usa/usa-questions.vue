@@ -1,17 +1,17 @@
 <template>
-  <v-card light class="info-screen pa-8">
+  <v-card class="info-screen pa-8" light>
     <div
-      :class="{ 'mb-6': qIndex !== questions.length - 1 }"
       v-for="(question, qIndex) in questions"
       :key="qIndex"
+      :class="{ 'mb-6': qIndex !== questions.length - 1 }"
     >
       <div class="pb-2 text-body-1 font-weight-medium">{{ question.label }}</div>
       <v-radio-group
         v-for="(option, oIdx) in question.options"
         :key="oIdx"
-        class=""
         v-model="question.value"
         :error="hasErrors"
+        class=""
         hide-details
       >
         <v-radio
@@ -25,11 +25,11 @@
     </div>
     <div class="d-flex justify-center">
       <v-btn
-        color="primary"
-        large
         class="px-6 font-weight-light"
-        tile
+        color="primary"
         depressed
+        large
+        tile
         @click="validateHandler"
       >
         {{ $t('next') }}
@@ -52,8 +52,10 @@ export default {
     };
   },
   computed: {
-    isInvalid() {
-      return this.questions.some(({ value }) => value === null);
+    isValid() {
+      return this.questions.every(({value}) => {
+        return value === 'No'
+      });
     },
   },
   watch: {
@@ -65,11 +67,11 @@ export default {
     },
   },
   methods: {
-    validateHandler() {
-      if (this.isInvalid) {
+    validateHandler(event) {
+      if (!this.isValid) {
         this.hasErrors = true;
       } else {
-        this.$emit('next');
+        this.$emit('next', event);
       }
     },
   },

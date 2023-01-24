@@ -1,17 +1,17 @@
 <template>
-  <v-card light class="info-screen pa-8">
+  <v-card flat class="transparent pa-8">
     <div
-      :class="{ 'mb-6': qIndex !== questions.length - 1 }"
       v-for="(question, qIndex) in questions"
       :key="qIndex"
+      :class="{ 'mb-6': qIndex !== questions.length - 1 }"
     >
       <div class="pb-2 text-body-1">{{ question.label }}</div>
       <v-radio-group
         v-for="(option, oIdx) in question.options"
         :key="oIdx"
-        class=""
         v-model="question.value"
-        :error="hasErrors"
+        :error="question.hasError"
+        class=""
         hide-details
       >
         <v-radio
@@ -25,11 +25,11 @@
     </div>
     <div class="d-flex justify-center">
       <v-btn
-        color="primary"
-        large
         class="px-6 font-weight-light"
-        tile
+        color="primary"
         depressed
+        large
+        tile
         @click="validateHandler"
       >
         {{ $t('next') }}
@@ -47,27 +47,24 @@ export default {
       questions: this.$t(`brazil.scoreboard-questions`).map((question) => ({
         ...question,
         value: null,
+        correctAnswer: 'No',
+        hasError: false,
       })),
-      hasErrors: false,
     };
   },
   computed: {
-    isInvalid() {
-      return this.questions.some(({ value }) => value === null);
-    },
-  },
-  watch: {
-    questions: {
-      deep: true,
-      handler() {
-        this.hasErrors = false;
-      },
+    isValid() {
+      return this.questions.every(
+        ({ value, correctAnswer }) => value && value === correctAnswer
+      );
     },
   },
   methods: {
     validateHandler() {
-      if (this.isInvalid) {
-        this.hasErrors = true;
+      if (!this.isValid) {
+        this.questions.forEach((question) => {
+          question.hasError = question.value !== question.correctAnswer;
+        });
       } else {
         this.$emit('finish');
       }

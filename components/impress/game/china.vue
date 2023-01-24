@@ -2,13 +2,13 @@
   <div>
     <v-container>
       <v-dialog
+        :max-width="step === 1 ? 850 : 610"
         :retain-focus="false"
         :value="
           videos.intro.ended && (step !== 3 || foundObject.name === 'note')
         "
         class="elevation-0"
         content-class="elevation-0 overflow-auto max-h-100"
-        :max-width="step === 1 ? 850 : 610"
         overlay-opacity="0"
         persistent
         scrollable
@@ -45,7 +45,7 @@
             >
               {{ $t('next') }}
               <v-icon class="ms-2"
-                >mdi-keyboard-backspace mdi-rotate-180
+              >mdi-keyboard-backspace mdi-rotate-180
               </v-icon>
             </v-btn>
           </v-card-actions>
@@ -53,10 +53,10 @@
         <v-card v-show="step === 2" class="transparent" flat tile>
           <div>
             <v-img
-              height="450px"
-              width="600px"
               :src="require('@/assets/images/games/china/letter.jpg')"
               contain
+              height="450px"
+              width="600px"
             >
               <v-layout fill-height justify-center>
                 <div
@@ -84,7 +84,7 @@
             >
               {{ $t('next') }}
               <v-icon class="ms-2"
-                >mdi-keyboard-backspace mdi-rotate-180
+              >mdi-keyboard-backspace mdi-rotate-180
               </v-icon>
             </v-btn>
           </v-card-actions>
@@ -213,19 +213,12 @@
             >
               {{ $t('next') }}
               <v-icon class="ms-2"
-                >mdi-keyboard-backspace mdi-rotate-180
+              >mdi-keyboard-backspace mdi-rotate-180
               </v-icon>
             </v-btn>
           </v-card-actions>
         </v-card>
       </v-dialog>
-      <score-board-inline
-        :model="result.model"
-        :passed="result.passed"
-        :perc="result.perc"
-        @restart="restart()"
-      >
-      </score-board-inline>
     </v-container>
     <div v-if="step === 3 && videos.intro.ended" class="items-container">
       <template v-for="(item, i) in rotatableItems">
@@ -339,26 +332,26 @@
       scrollable
     >
       <v-card
-        style="flex: none; height: 100%"
         class="mx-auto pa-8 info-screen"
         flat
         light
+        style="flex: none; height: 100%"
         tile
       >
         <div class="text-center font-weight-bold mb-4">
           {{ $t(`found-object.found-all`) }}
         </div>
         <div
-          class="d-flex justify-space-between align-center py-2"
           v-for="(symbol, sKey, sIdx) in $t(`found-object.items`)"
           :key="sKey"
           :style="sIdx !== 4 && 'border-bottom: 1px solid lightgray'"
+          class="d-flex justify-space-between align-center py-2"
         >
-          <div style="width: 120px" class="text-body-1 text-capitalize">
-            {{ sKey }}
+          <div class="text-body-1  text-capitalize px-auto" style="width: 40px">
+            <img :src="require(`@/assets/images/games/china/symbols/${sKey}.svg`)"/>
           </div>
-          <div style="width: 210px" class="text-body-1">{{ symbol }}</div>
-          <div style="width: 440px" class="text-body-2">
+          <div class="text-body-1" style="width: 210px">{{ symbol }}</div>
+          <div class="text-body-2" style="width: 440px">
             {{ $t(`found-object.items-explanations`)[sKey] }}
           </div>
         </div>
@@ -366,12 +359,12 @@
       <v-card-actions class="mt-4 px-6 pb-4">
         <v-spacer></v-spacer>
         <v-btn
+          :data-video-start="`${stepId}-x4`"
           class="px-4"
           color="primary"
           depressed
           large
           tile
-          :data-video-start="`${stepId}-x4`"
           @click="
             showAllSymbols = false;
             nextStep();
@@ -386,7 +379,7 @@
 </template>
 
 <script>
-import ScoreBoardInline from '~/components/ScoreBoardInline.vue';
+
 import SoundPlayer from '@/mixins/sound-player.js';
 import ImpressStep from '@/mixins/impress-step.js';
 import PrivacyNotice from '~/components/impress/game/shared/privacy-notice.vue';
@@ -394,7 +387,7 @@ import PrivacyNotice from '~/components/impress/game/shared/privacy-notice.vue';
 export default {
   components: {
     PrivacyNotice,
-    ScoreBoardInline,
+
   },
   mixins: [ImpressStep, SoundPlayer],
   data: () => ({
@@ -586,7 +579,8 @@ export default {
     });
     this.$nuxt.$on(`video-${this.stepId}-x5-ended`, () => {
       this.finish();
-    });
+      window.impressAPI.goto('map');
+    })
   },
   methods: {
     stepEnter() {

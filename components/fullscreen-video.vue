@@ -32,12 +32,13 @@
         persistent
         scrollable
       >
-        <div class="pb-4" :style="dialog.style">
+        <div :style="dialog.style" class="pb-4">
           <v-card
             :class="{
-              'info-screen darken border-3 ': !isPlayerThinking(dialog),
+              'info-screen border darken border-3 ': !isPlayerThinking(dialog),
               'thought-bubble-container': isPlayerThinking(dialog),
             }"
+
             class="transparent px-2 pb-4 d-flex align-center"
           >
             <img
@@ -50,11 +51,11 @@
                 'thought-bubble-content': isPlayerThinking(dialog),
               }"
               :style="dialog.hideSpeaker && 'padding-top: 1.5rem !important;'"
-              class="pt-12 pb-4 text-justify h-full"
+              class="pt-8 pb-4 text-justify h-full"
             >
               <v-layout align-start class="gap-4" justify-start>
                 <v-flex v-if="dialog.avatar" shrink>
-                  <v-avatar size="50">
+                  <v-avatar size="53">
                     <v-img
                       :src="require(`@/assets/images/avatars/${dialog.avatar}`)"
                     ></v-img>
@@ -66,7 +67,8 @@
                       <template>
                         <div
                           v-if="dialog.speaker && !dialog.hideSpeaker"
-                          class="font-weight-bold"
+                          class="font-weight-medium pb-2"
+                          style="color: rgba(255,235,59,0.55)"
                         >
                           <span> {{ dialog.speaker }}: </span>
                         </div>
@@ -75,7 +77,7 @@
                         </template>
                         <template v-else>
                           <div
-                            :inner-html.prop="dialog.textArray || dialog.text"
+                            :inner-html.prop="dialog.textArray || dialog.text " class="d-flex flex-column gap-1"
                           ></div>
                         </template>
                       </template>
@@ -98,13 +100,13 @@
                           <template v-for="(option, oi) in dialog.options">
                             <v-col :key="`option-${i}-${oi}`" cols="6">
                               <v-card
+                                :class="{
+                                  'green darken-3': option.isSelected,
+                                }"
                                 class="d-flex align-center"
                                 dark
                                 flat
                                 height="100%"
-                                :class="{
-                                  'green darken-3': option.isSelected,
-                                }"
                                 @click="chooseOption(i, oi)"
                               >
                                 <v-card-text>
@@ -366,7 +368,7 @@ export default {
         dialog.model = false;
       });
     },
-    isPlayerThinking({ speaker }) {
+    isPlayerThinking({speaker}) {
       return speaker === this.$t('player-is-thinking');
     },
     ended(playSound = false) {
@@ -397,7 +399,7 @@ export default {
     },
     validateOptions(dialog) {
       const selectedOption = dialog.options.find(
-        ({ isSelected }) => isSelected
+        ({isSelected}) => isSelected
       );
       if (!selectedOption) return;
       if (!selectedOption.isCorrect) {

@@ -33,13 +33,13 @@
           v-click-outside="outsideClickConfig"
           @next="completePhoneQuestionsHandler"
         />
+        <privacy-survey
+          v-else-if="isPrivacySurveyOpen"
+          @next="completePrivacySurveyHandler"
+          @privacy-hidden="canOpenPrivacyNotice = false"
+          @privacy-visible="canOpenPrivacyNotice = true"
+        />
       </div>
-      <privacy-survey
-        v-else-if="isPrivacySurveyOpen"
-        @next="completePrivacySurveyHandler"
-        @privacy-hidden="canOpenPrivacyNotice = false"
-        @privacy-visible="canOpenPrivacyNotice = true"
-      />
       <missing-piece
         v-else-if="isMissingPieceOpen"
         @next="completeMissingPieceHandler"
@@ -149,6 +149,19 @@ export default {
   },
   mounted() {
     this.$nuxt.$on(`video-${this.stepId}-ended`, this.introEnded);
+    this.$nuxt.$on(`video-${this.stepId}-x3-ended`, () => {
+      this.$store.commit('SET_INSTRUCTIONS', {
+        bottomModel: true,
+        steps: ['speeches.usa.3'],
+        nextMethod: async () => {
+          await this.addLoading();
+          this.isMissingPieceOpen = true;
+          setTimeout(() => {
+            this.replaceBg(this.stepId);
+          }, 500);
+        },
+      });
+    });
   },
   methods: {
     addLoading(ms = 1000) {
@@ -199,14 +212,34 @@ export default {
       this.isMissingPieceOpen = true;
     },
     completeUsaQuestionsHandler() {
+      this.canOpenPrivacyNotice = false;
       this.isUsaQuestionsOpen = false;
-      this.isPrivacySurveyOpen = true;
+      this.$store.commit('SET_INSTRUCTIONS', {
+        bottomModel: true,
+        steps: ['speeches.usa.2'],
+        nextMethod: (nextEvent) => {
+          nextEvent.target['data-video-start'] = `${this.stepId}-x3`;
+          this.$store.commit('PLAY_VIDEO', `${this.stepId}-x3`);
+          setTimeout(() => {
+            nextEvent.target['data-video-start'] = null;
+            this.replaceBg(`${this.stepId}-x2`);
+          }, 500);
+        },
+      });
     },
     async completeMissingPieceHandler() {
       this.isMissingPieceOpen = false;
       this.isChatOpen = true;
+      this.replaceBg(`${this.stepId}-x3`);
       await this.addLoading();
-      this.startChat();
+      this.$store.commit('SET_INSTRUCTIONS', {
+        bottomModel: true,
+        title: this.$t('franklin'),
+        steps: ['screens.usa.games.2.steps.1.title'],
+        image: 'avatars/franklin.jpg',
+        nextText: this.$t('screens.usa.games.2.steps.1.next'),
+        nextMethod: this.finishGame,
+      });
     },
     async completeSurveyHandler() {
       this.isQuestionsOpen = false;
@@ -229,29 +262,10 @@ export default {
         this.isChatOpen,
       ].every((step) => !step);
       if (isStart) {
-        this.canOpenPrivacyNotice = false;
         await this.addLoading();
         this.isUsaQuestionsOpen = true;
+        this.canOpenPrivacyNotice = true;
       }
-    },
-    startChat() {
-      this.$store.commit('SET_INSTRUCTIONS', {
-        model: true,
-        title: '',
-        steps: ['screens.usa.games.2.a1'],
-        nextText: this.$t('call-franklin'),
-        nextMethod: this.finishChat,
-      });
-    },
-    finishChat() {
-      this.$store.commit('SET_INSTRUCTIONS', {
-        bottomModel: true,
-        title: this.$t('franklin'),
-        steps: ['screens.usa.games.2.steps.1.title'],
-        image: 'avatars/franklin.jpg',
-        nextText: this.$t('screens.usa.games.2.steps.1.next'),
-        nextMethod: this.finishGame,
-      });
     },
     async finishGame() {
       try {

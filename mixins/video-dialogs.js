@@ -120,6 +120,14 @@ export default {
         },
       ];
 
+      const captain = [
+        {
+          from: 7.5,
+          textArray: this.$tr('speeches.russia.1', 'array'),
+          isConfirmable: true,
+        },
+      ];
+
       return {
         'game-intro-0': splash,
         italy: reception,
@@ -129,6 +137,7 @@ export default {
         'china-x2': bedroomX2,
         'china-x5': bedroomX5,
         usa: bedroom,
+        russia: captain,
       };
     },
   },

@@ -1,20 +1,20 @@
 <template>
   <v-container v-if="isMounted">
     <v-dialog
+      :retain-focus="false"
       :value="videos.intro.ended && model === 0"
-      overlay-opacity="0"
-      persistent
       class="elevation-0"
       content-class="elevation-0"
-      :retain-focus="false"
       max-width="700"
+      overlay-opacity="0"
+      persistent
     >
       <div v-if="isLoading" class="splash-screen_loading">
         <lottie-animation
-          loop
-          :width="100"
           :height="100"
           :path="require('@/assets/animated/spinner.json')"
+          :width="100"
+          loop
         ></lottie-animation>
       </div>
       <template v-else-if="isLoading === false">
@@ -41,18 +41,14 @@
         />
         <ranking-card
           v-if="step === 'ranking'"
-          @next="step = 'scoreboard-survey'"
-        />
-        <scoreboard-survey
-          v-if="step === 'scoreboard-survey'"
-          @finish="submitGame"
+          @next="submitGame"
         />
       </template>
     </v-dialog>
     <score-board-inline
       :model="result.model"
-      :perc="result.perc"
       :passed="result.passed"
+      :perc="result.perc"
       @restart="restart"
     >
     </score-board-inline>
@@ -67,7 +63,6 @@ import MiniGame from '~/components/impress/game/brazil/mini-game';
 import FaceScan from '~/components/impress/game/brazil/face-scan';
 import RankingCard from '~/components/impress/game/brazil/ranking-card';
 import CountriesScores from '~/components/impress/game/brazil/countries-scores';
-import ScoreboardSurvey from '~/components/impress/game/brazil/scoreboard-survey.vue';
 
 export default {
   components: {
@@ -76,7 +71,6 @@ export default {
     FaceScan,
     MiniGame,
     BrazilSurvey,
-    ScoreboardSurvey,
     ScoreBoardInline,
   },
   mixins: [ImpressStep],
