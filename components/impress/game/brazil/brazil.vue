@@ -39,10 +39,7 @@
             result.perc = $event;
           "
         />
-        <ranking-card
-          v-if="step === 'ranking'"
-          @next="submitGame"
-        />
+        <ranking-card v-if="step === 'ranking'" @next="submitGame" />
       </template>
     </v-dialog>
     <score-board-inline
@@ -76,7 +73,7 @@ export default {
   mixins: [ImpressStep],
   data: () => ({
     stepId: 'brazil',
-    step: 'face-scan',
+    step: null,
     isLoading: null,
     model: 0,
     videos: {
@@ -94,8 +91,15 @@ export default {
   mounted() {
     this.$nuxt.$on(`video-${this.stepId}-ended`, this.introEnded);
     this.$nuxt.$on(`video-${this.stepId}-x2-ended`, () => {
-      this.replaceBg('brazil-x2');
-      this.step = 'survey';
+      this.isLoading = true;
+      setTimeout(() => {
+        this.isLoading = false;
+        this.$set(this, 'step', 'face-scan');
+      }, 1000);
+    });
+    this.$nuxt.$on(`video-${this.stepId}-x3-ended`, () => {
+      this.replaceBg(`${this.stepId}-x2`)
+      this.step = 'survey'
     });
   },
   methods: {
@@ -120,7 +124,7 @@ export default {
         model: true,
         title: '',
         steps: ['screens.brazil.a1'],
-        nextMethod: this.startGameLoading,
+        nextMethod: this.startGame,
       });
     },
     introEnded(immediate = false) {
@@ -136,15 +140,14 @@ export default {
     showResultDialog() {
       this.$set(this.result, 'model', true);
     },
-    startGameLoading() {
-      this.isLoading = true;
-      setTimeout(() => {
-        this.isLoading = false;
-      }, 2000);
+    startGame(nextEvent) {
+      nextEvent.target['data-video-start'] = `${this.stepId}-x2`;
+      this.$store.commit('SET_VIDEO_IS_SKIPPABLE', false);
+      this.$store.commit('PLAY_VIDEO', `video-${this.stepId}-x2`);
     },
     nextFaceScanHandler(event) {
       this.step = null;
-      const videoId = `${this.stepId}-x2`;
+      const videoId = `${this.stepId}-x3`;
       event.target['data-video-start'] = videoId;
       this.$store.commit('PLAY_VIDEO', videoId);
       setTimeout(() => {
@@ -152,8 +155,8 @@ export default {
       }, 2000);
     },
     reset() {
-      this.step = 'face-scan';
       this.isLoading = null;
+      this.$set(this, 'step', 'face-scan');
       window.impressAPI.goto('map');
     },
     async submitGame() {

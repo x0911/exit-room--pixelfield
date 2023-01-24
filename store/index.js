@@ -116,6 +116,11 @@ export const state = () => ({
       ended: false,
     },
     'brazil-x2': {
+      path: '4th-room-v4.mp4',
+      canPlay: false,
+      ended: false,
+    },
+    'brazil-x3': {
       path: '4th-room-v3.mp4',
       canPlay: false,
       ended: false,
