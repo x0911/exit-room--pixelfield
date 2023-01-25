@@ -256,7 +256,7 @@ export default {
           .join(', ');
         const message = `${firstChoices} ${this.$t('and')} ${
           lastSelected.text
-        }`;
+        }.`;
         this.pushMsg({
           ...lastSelected,
           text: message,
