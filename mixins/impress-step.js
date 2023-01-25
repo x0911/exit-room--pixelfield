@@ -34,8 +34,10 @@ export default {
         });
       }
       if (this.stepLeave) {
-        this.$nuxt.$on(`impress-step-leave-${stepId}`, this.stepLeave);
-        this.replaceBg(stepId);
+        this.$nuxt.$on(`impress-step-leave-${stepId}`, () => {
+          this.stepLeave();
+          this.replaceBg(stepId);
+        });
       }
     }
   },

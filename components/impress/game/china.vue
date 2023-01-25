@@ -126,15 +126,15 @@
                   </div>
                   <v-radio-group v-model="q.value">
                     <template
-                      v-for="(option, i) in $tr(
+                      v-for="(option, oi) in $tr(
                         `privacy-notice.questions.${q.question}.options`,
                         'array'
                       )"
                     >
                       <v-radio
-                        :key="`o-${i}`"
+                        :key="`o-${i}-${oi}`"
                         :label="option"
-                        :value="i"
+                        :value="oi"
                         :class="q.hasError ? 'error--text' : 'white--text'"
                         color="white"
                         dark
@@ -225,22 +225,28 @@
       </v-dialog>
     </v-container>
     <div v-if="step === 3 && videos.intro.ended" class="items-container">
-      <template v-for="(item, i) in rotatableItems">
-        <div
-          :key="i"
-          :class="[`item-${item.name}`, `dir-${item.dir}`]"
-          class="item"
-          @click="rotateItem(i)"
-        >
-          <img
-            :alt="`item-${item.name}-${item.dir}`"
-            :draggable="false"
-            :src="
-              require(`@/assets/images/games/china/items/${item.name}_${item.dir}.png`)
-            "
-          />
-        </div>
-      </template>
+      <v-img
+        contain
+        class="items-container__background"
+        :src="require('@/assets/images/bg/china-v3-bg.jpg')"
+      >
+        <template v-for="(item, i) in rotatableItems">
+          <div
+            :key="i"
+            :class="[`item-${item.name}`, `dir-${item.dir}`]"
+            class="item"
+            @click="rotateItem(i)"
+          >
+            <img
+              :alt="`item-${item.name}-${item.dir}`"
+              :draggable="false"
+              :src="
+                require(`@/assets/images/games/china/items/${item.name}_${item.dir}.png`)
+              "
+            />
+          </div>
+        </template>
+      </v-img>
     </div>
     <v-dialog
       v-if="foundObject.name !== 'note'"
@@ -686,7 +692,7 @@ export default {
         this.$set(this.videos.intro, 'ended', false);
         this.$store.commit('PLAY_VIDEO', `${this.stepId}-x3`);
         setTimeout(() => {
-          this.replaceBg('china-v3');
+          this.replaceBg('china-v3x');
         }, 1000);
       }
       if (this.step === 4) {
