@@ -48,7 +48,7 @@
         class="mt-4 px-4"
         large
         @click="
-          this.playGameSound('big-button-press-1');
+          playGameSound('big-button-press-1');
           $emit('input', false);
         "
       >
