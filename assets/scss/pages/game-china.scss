@@ -118,3 +118,9 @@
     }
   }
 }
+
+.error--text {
+  ::v-deep label {
+    color: var(--v-error-base) !important;
+  }
+}

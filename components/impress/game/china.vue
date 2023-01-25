@@ -45,7 +45,7 @@
             >
               {{ $t('next') }}
               <v-icon class="ms-2"
-              >mdi-keyboard-backspace mdi-rotate-180
+                >mdi-keyboard-backspace mdi-rotate-180
               </v-icon>
             </v-btn>
           </v-card-actions>
@@ -84,7 +84,7 @@
             >
               {{ $t('next') }}
               <v-icon class="ms-2"
-              >mdi-keyboard-backspace mdi-rotate-180
+                >mdi-keyboard-backspace mdi-rotate-180
               </v-icon>
             </v-btn>
           </v-card-actions>
@@ -118,13 +118,13 @@
                 <div :key="i">
                   <div
                     :class="{
-                      'white--text': !hasError,
-                      'error--text': hasError,
+                      'white--text': !q.hasError,
+                      'error--text': q.hasError,
                     }"
                   >
                     {{ $t(`privacy-notice.questions.${q.question}.text`) }}
                   </div>
-                  <v-radio-group v-model="q.value" :error="hasError">
+                  <v-radio-group v-model="q.value">
                     <template
                       v-for="(option, i) in $tr(
                         `privacy-notice.questions.${q.question}.options`,
@@ -135,7 +135,7 @@
                         :key="`o-${i}`"
                         :label="option"
                         :value="i"
-                        class="white--text"
+                        :class="q.hasError ? 'error--text' : 'white--text'"
                         color="white"
                         dark
                       ></v-radio>
@@ -165,7 +165,7 @@
               depressed
               tile
               x-large
-              @click="showCorrectAnswerResults"
+              @click="validateFormHandler"
             >
               <span class="me-3">
                 {{ $t('next') }}
@@ -213,7 +213,7 @@
             >
               {{ $t('next') }}
               <v-icon class="ms-2"
-              >mdi-keyboard-backspace mdi-rotate-180
+                >mdi-keyboard-backspace mdi-rotate-180
               </v-icon>
             </v-btn>
           </v-card-actions>
@@ -347,8 +347,10 @@
           :style="sIdx !== 4 && 'border-bottom: 1px solid lightgray'"
           class="d-flex justify-space-between align-center py-2"
         >
-          <div class="text-body-1  text-capitalize px-auto" style="width: 40px">
-            <img :src="require(`@/assets/images/games/china/symbols/${sKey}.svg`)"/>
+          <div class="text-body-1 text-capitalize px-auto" style="width: 40px">
+            <img
+              :src="require(`@/assets/images/games/china/symbols/${sKey}.svg`)"
+            />
           </div>
           <div class="text-body-1" style="width: 210px">{{ symbol }}</div>
           <div class="text-body-2" style="width: 440px">
@@ -379,7 +381,6 @@
 </template>
 
 <script>
-
 import SoundPlayer from '@/mixins/sound-player.js';
 import ImpressStep from '@/mixins/impress-step.js';
 import PrivacyNotice from '~/components/impress/game/shared/privacy-notice.vue';
@@ -387,7 +388,6 @@ import PrivacyNotice from '~/components/impress/game/shared/privacy-notice.vue';
 export default {
   components: {
     PrivacyNotice,
-
   },
   mixins: [ImpressStep, SoundPlayer],
   data: () => ({
@@ -403,11 +403,13 @@ export default {
         question: 'q1',
         value: null,
         correctValue: 0,
+        hasError: false,
       },
       {
         question: 'q2',
         value: null,
         correctValue: 1,
+        hasError: false,
       },
     ],
     questionModel: 0,
@@ -506,11 +508,15 @@ export default {
       count: 5,
     },
     showAllSymbols: false,
-    hasError: false,
     showPrivacyNotice: false,
     isPrivacyForm: false,
   }),
   computed: {
+    isQuestionsValid() {
+      return this.questions.every(
+        ({ value, correctValue }) => value === correctValue
+      );
+    },
     nextDisabled() {
       let disabled = false;
       this.questions.forEach((question) => {
@@ -522,44 +528,6 @@ export default {
         }
       });
       return disabled;
-    },
-    prevDisabled() {
-      const index = this.questionModel;
-      if (index <= 0) {
-        return true;
-      }
-      return false;
-    },
-    seTypeColor() {
-      return (key, i) => {
-        const val = this.seTypesAnswers[key];
-        if (val === null) {
-          return '#070e2c';
-        }
-        if (val === key) {
-          return '#0b6800';
-        }
-        return '#680000';
-      };
-    },
-    takenAnswers() {
-      return Object.values(this.seTypesAnswers).filter((val) => val !== null);
-    },
-    randomSeTypes() {
-      const array = [...this.seTypes];
-      let currentIndex = array.length;
-      let randomIndex;
-      while (currentIndex !== 0) {
-        randomIndex = Math.floor(Math.random() * currentIndex);
-        currentIndex--;
-        [array[currentIndex], array[randomIndex]] = [
-          array[randomIndex],
-          array[currentIndex],
-        ];
-      }
-      return array;
-      // Exclude takenAnswers
-      // return array.filter((val) => !this.takenAnswers.includes(val));
     },
   },
   mounted() {
@@ -577,10 +545,10 @@ export default {
         this.isPrivacyForm = false;
       }, 1000);
     });
-    this.$nuxt.$on(`video-${this.stepId}-x5-ended`, () => {
-      this.finish();
+    this.$nuxt.$on(`video-${this.stepId}-x5-ended`, async () => {
+      await this.finish();
       window.impressAPI.goto('map');
-    })
+    });
   },
   methods: {
     stepEnter() {
@@ -638,22 +606,6 @@ export default {
         immediate ? 0 : 1000
       );
     },
-    showSeTypeAnswers(seType) {
-      this.$set(this, 'seTypeAnswerPicker', seType);
-      this.$set(this, 'seTypeSelectModel', 1);
-    },
-    pickSeTypeAnswer(seType) {
-      const key = this.seTypeAnswerPicker;
-      // Check if object values including `seType`
-      const index = Object.values(this.seTypesAnswers).indexOf(seType);
-      if (index !== -1) {
-        // get key of that index
-        const oldKey = Object.keys(this.seTypesAnswers)[index];
-        this.$set(this.seTypesAnswers, oldKey, null);
-      }
-      this.$set(this.seTypesAnswers, key, seType);
-      this.$set(this, 'seTypeSelectModel', 0);
-    },
     async finish() {
       const score = this.getScore();
       try {
@@ -680,16 +632,18 @@ export default {
     getScore() {
       return 100;
     },
+    updateQuestions() {
+      this.questions.forEach((question) => {
+        question.hasError = question.value !== question.correctValue;
+      });
+    },
     showResultDialog() {
       this.$set(this.result, 'model', true);
     },
-    viewEmail() {
-      this.playGameSound('big-button-press-2');
-      this.$set(this, 'step', 2);
-    },
-    replyToEmail() {
-      this.playGameSound('big-button-press-2');
-      this.$set(this, 'step', 3);
+    validateFormHandler() {
+      this.updateQuestions();
+      if (!this.isQuestionsValid) return;
+      this.showCorrectAnswerResults();
     },
     showCorrectAnswerResults() {
       this.$store.commit('SET_INSTRUCTIONS', {
@@ -700,10 +654,8 @@ export default {
       });
     },
     nextStep(event) {
-      this.hasError = false;
       if (this.step === 5) {
-        if (this.nextDisabled) {
-          this.hasError = true;
+        if (!this.isQuestionsValid) {
           return;
         }
         this.showPrivacyNotice = true;
