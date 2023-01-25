@@ -62,6 +62,7 @@
   "cabin_number": "Cabin number",
   "age": "Age",
   "nationality": "Nationality",
+  "and": "and",
   "hints": {
     "splash": ["Select your language to proceed"],
     "map": ["Active room will have a glowing circle above its name"],
@@ -571,83 +572,72 @@
       "msgs": [
         {
           "dir": "ltr",
-          "text": "Welcome guest!",
+          "text": "So nice to finally meet you.",
           "isMaria": true
         },
         {
           "dir": "ltr",
-          "text": "I'm Maria, Capitan of the ship",
+          "text": "I’m sorry to hear about the privacy issues and understand you would like to exercise your privacy rights.",
           "isMaria": true
         },
         {
           "dir": "ltr",
-          "text": "Are you enjoying your voyage?",
+          "text": "I can let you know what information we have about you, you can ask to correct it, or you can ask to delete it.",
           "isMaria": true
         },
         {
-          "dir": "rtl",
-          "text": "Yes – it’s great!",
-          "closeGame": true,
-          "isPlayer": true
-        },
-        {
-          "dir": "rtl",
-          "text": "No – I am concerned about my privacy – my dietary restrictions were shared with other guests without my permission, my passport photo was used for biometric facial recognition without my permission, and more! I thought you cared about privacy – how can you let this happen?",
-          "isPlayer": true
+          "dir": "ltr",
+          "text": "Based on your concerns, it sounds like you want me to delete your information.",
+          "isMaria": true
         },
         {
           "dir": "ltr",
-          "text": "Oh goodness – I’m afraid that <b>Franklin</b> may have messed things up – after all, he is an AI-powered robot, and he does not have the judgment of a human.",
+          "text": "Which information would you like deleted?",
           "isMaria": true
         },
         {
           "dir": "rtl",
-          "text": "That’s not an excuse. I can contact a regulator and report these violations! I have privacy rights – I demand that you share with me what personal information you have about me.",
+          "text": "Name and other identifiers",
+          "isPlayer": true
+        },
+        {
+          "dir": "rtl",
+          "text": "Contact information",
+          "isPlayer": true
+        },
+        {
+          "dir": "rtl",
+          "text": "Photographs",
+          "isPlayer": true
+        },
+        {
+          "dir": "rtl",
+          "text": "Biometric data",
+          "isPlayer": true
+        },
+        {
+          "dir": "rtl",
+          "text": "Credit card data",
+          "isPlayer": true
+        },
+        {
+          "dir": "rtl",
+          "text": "Dietary preferences",
           "isPlayer": true
         },
         {
           "dir": "ltr",
-          "text": "That’s not necessary – you don’t have privacy rights.",
-          "isFranklin": true
-        },
-        {
-          "dir": "ltr",
-          "text": "Franklin, our guest is right.",
+          "text": "Understood. I can delete some information right away if it’s not critical to operating the ship, but there is some information we need to use while you are on board, such as passport data and dietary restrictions.",
           "isMaria": true
         },
         {
           "dir": "ltr",
-          "text": "We need to protect our guests – if we don’t, we could cause them harm – and if they file a complaint with the regulator, the fines and bad press could literally sink our business.",
+          "text": "Once you disembark, we can delete everything except for what we have to keep for regulations – such as information needed to comply with COVID-related regulations.",
           "isMaria": true
         },
         {
           "dir": "ltr",
-          "text": "You do have privacy rights, and I will give you a copy of your data so you can see what we have collected, and if anything needs to be corrected or deleted, you can make a follow-up request.",
-          "isMaria": true
-        },
-        {
-          "dir": "ltr",
-          "text": "As for you Franklin, I think we need to update your software!",
-          "isMaria": true
-        },
-        {
-          "dir": "ltr",
-          "text": "Thank you for bringing the privacy issues aboard to my attention!",
-          "isMaria": true
-        },
-        {
-          "dir": "ltr",
-          "text": "Your commitment to responsible data use is admirable, and I’d like to offer you a complimentary return voyage",
-          "isMaria": true
-        },
-        {
-          "dir": "ltr",
-          "text": "I promise we will work out the kinks in our systems before then!",
-          "isMaria": true
-        },
-        {
-          "dir": "ltr",
-          "text": "In the meantime, here is the URL you can use when you return to shore to share your feedback about this cruise and enter your country in the privacy day competition.",
+          "text": "Thanks the user for bringing the privacy concerns to her attention and invites the user to sign the captains log which is reserved for special guests",
           "isMaria": true
         },
         {
@@ -713,6 +703,7 @@
     ]
   },
   "pick-response-to-continue": "Pick a response to continue",
+  "pick-at-least-three-choices": "Pick at least three choices",
   "what-should-tell-franklin": "What should you tell Franklin?",
   "choose-headlines": "Choose which headlines are useful:",
   "congratulations": "Congratulations",

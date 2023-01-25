@@ -36,19 +36,14 @@
                         ></v-img>
                       </v-avatar>
                       <div
+                        v-if="msg.show"
                         class="msgs__msg-inner d-flex flex-column justify-center align-center px-3 py-2 rounded-lg"
                         :class="{
-                          error: msg.dir === 'ltr' && msg.isFranklin,
                           'maria-color': msg.dir === 'ltr' && msg.isMaria,
                           success: msg.dir === 'rtl',
                         }"
                       >
-                        <template v-if="msg.show">
-                          <div :inner-html.prop="msg.text"></div>
-                        </template>
-                        <template v-else>
-                          <dot-flashing></dot-flashing>
-                        </template>
+                        <div :inner-html.prop="msg.text"></div>
                       </div>
                       <v-avatar
                         v-if="msg.dir === 'rtl'"
@@ -79,8 +74,11 @@
                 </v-slide-y-reverse-transition>
               </div>
               <div v-if="suggestions.length" class="suggestions mt-5">
-                <div class="text-center yellow--text font-weight-medium mb-3">
-                  {{ $t('pick-response-to-continue') }}
+                <div
+                  :class="{ 'error--text': hasErrors }"
+                  class="text-center yellow--text font-weight-medium mb-3"
+                >
+                  {{ $t('pick-at-least-three-choices') }}
                 </div>
                 <v-row>
                   <template v-for="(suggestion, i) in suggestions">
@@ -90,27 +88,36 @@
                         dark
                         height="100%"
                         class="d-flex align-center"
-                        :style="
-                          getWrongAnswerStyles(
-                            suggestion,
-                            'border: 1px solid #FF5252 !important;'
-                          )
-                        "
-                        @click="chooseSuggestion(suggestion)"
                       >
-                        <v-card-text
-                          :style="
-                            getWrongAnswerStyles(
-                              suggestion,
-                              'color: #FF5252 !important;'
-                            )
-                          "
-                        >
-                          {{ suggestion.text }}
+                        <v-card-text>
+                          <v-checkbox
+                            v-model="suggestion.value"
+                            :value="suggestion.value"
+                            :label="suggestion.text"
+                            :error="hasErrors"
+                            color="white"
+                            class="mt-0"
+                            hide-details
+                          />
                         </v-card-text>
                       </v-card>
                     </v-col>
                   </template>
+                  <v-col cols="12" class="d-flex justify-center mt-4">
+                    <v-btn
+                      color="primary"
+                      class="px-4"
+                      tile
+                      large
+                      depressed
+                      @click="validateSuggestionsHandler"
+                    >
+                      {{ $t('continue') }}
+                      <v-icon class="ms-2"
+                        >mdi-keyboard-backspace mdi-rotate-180</v-icon
+                      >
+                    </v-btn>
+                  </v-col>
                 </v-row>
               </div>
             </v-card-text>
@@ -150,15 +157,9 @@
 import ScoreBoardInline from '~/components/ScoreBoardInline.vue';
 import SoundPlayer from '~/mixins/sound-player.js';
 import ImpressStep from '~/mixins/impress-step.js';
-import DotFlashing from '~/components/dot-flashing.vue';
-// import PuzzleGame from '~/components/impress/game/russia/puzzle-game';
 
 export default {
-  components: {
-    // PuzzleGame,
-    ScoreBoardInline,
-    DotFlashing,
-  },
+  components: { ScoreBoardInline },
   mixins: [ImpressStep, SoundPlayer],
   data: () => ({
     stepId: 'russia',
@@ -193,9 +194,6 @@ export default {
         if (msg.isMaria) {
           return getImage('maria.jpg');
         }
-        if (msg.isFranklin) {
-          return getImage('franklin.jpg');
-        }
         return '';
       };
     },
@@ -211,20 +209,23 @@ export default {
         if (msg.isMaria) {
           return 'maria';
         }
-        if (msg.isFranklin) {
-          return 'franklin';
-        }
         return '';
       };
+    },
+  },
+  watch: {
+    suggestions: {
+      deep: true,
+      handler() {
+        this.hasErrors = false;
+      },
     },
   },
   mounted() {
     this.$nuxt.$on(`video-${this.stepId}-ended`, this.videoEnded);
   },
   methods: {
-    stepEnter() {
-      this.setCorrectMsgs();
-    },
+    stepEnter() {},
     stepLeave() {
       this.$set(this.videos.intro, 'ended', false);
       this.$set(this.result, 'model', false);
@@ -232,17 +233,6 @@ export default {
       this.$set(this, 'msgs', []);
       this.$set(this, 'suggestions', []);
       this.$set(this, 'chatEnded', false);
-    },
-    puzzleNextHandler() {
-      this.$store.commit('SET_INSTRUCTIONS', {
-        model: true,
-        title: this.$t('screens.russia.title'),
-        steps: ['screens.russia.a1'],
-        nextMethod: () => {
-          this.step++;
-          this.initChat();
-        },
-      });
     },
     pushMsg(msg) {
       const obj = { ...msg, show: false, seen: false };
@@ -255,18 +245,25 @@ export default {
     offerSuggestions(msgs = []) {
       this.$set(this, 'suggestions', msgs);
     },
-    chooseSuggestion(msg) {
-      this.hasErrors = msg.closeGame;
-      if (this.hasErrors) return;
-      this.pushMsg(msg);
-      this.suggestions = [];
-      this.initChat();
-    },
-    isWrongAnswer({ closeGame }) {
-      return this.hasErrors && closeGame;
-    },
-    getWrongAnswerStyles(suggestion, styles) {
-      return this.isWrongAnswer(suggestion) ? styles : '';
+    validateSuggestionsHandler() {
+      const selectedSuggestions = this.suggestions.filter(({ value }) => value);
+      if (selectedSuggestions.length < 3) {
+        this.hasErrors = true;
+      } else {
+        const lastSelected = this.suggestions.pop();
+        const firstChoices = this.suggestions
+          .map(({ text }) => text)
+          .join(', ');
+        const message = `${firstChoices} ${this.$t('and')} ${
+          lastSelected.text
+        }`;
+        this.pushMsg({
+          ...lastSelected,
+          text: message,
+        });
+        this.suggestions = [];
+        this.initChat();
+      }
     },
     wait() {
       const msgDelay = this.msgDelay;
@@ -286,21 +283,20 @@ export default {
         await this.wait();
         this.pushMsg(msgs[2]);
         await this.wait();
-        this.offerSuggestions([msgs[3], msgs[4]]);
+        this.pushMsg(msgs[3]);
+        await this.wait();
+        this.pushMsg(msgs[4]);
+        await this.wait();
+        this.offerSuggestions([
+          msgs[5],
+          msgs[6],
+          msgs[7],
+          msgs[8],
+          msgs[9],
+          msgs[10],
+        ]);
       }
-      if (innerMsgs.length === 4) {
-        await this.wait();
-        this.pushMsg(msgs[5]);
-        await this.wait();
-        this.pushMsg(msgs[6]);
-        await this.wait();
-        this.pushMsg(msgs[7]);
-        await this.wait();
-        this.pushMsg(msgs[8]);
-        await this.wait();
-        this.pushMsg(msgs[9]);
-        await this.wait();
-        this.pushMsg(msgs[10]);
+      if (innerMsgs.length === 6) {
         await this.wait();
         this.pushMsg(msgs[11]);
         await this.wait();
@@ -310,27 +306,8 @@ export default {
         await this.wait();
         this.pushMsg(msgs[14]);
         await this.wait();
-        this.pushMsg(msgs[15]);
-        await this.wait();
-        this.pushMsg(msgs[16]);
-        await this.wait();
         this.$set(this, 'chatEnded', true);
       }
-    },
-    setCorrectMsgs() {
-      const msgs = this.$t('russia.task-2.msgs');
-      this.$set(this, 'correctMsgs', []);
-      const pushMsg = (msg, i) => {
-        this.correctMsgs.push({
-          ...msg,
-          show: true,
-          seen: i === 7,
-        });
-      };
-      const indexes = [0, 1, 2, 3, 5, 7];
-      indexes.forEach((i) => {
-        pushMsg(msgs[i], i);
-      });
     },
     restart() {
       this.stepLeave();
@@ -340,14 +317,8 @@ export default {
       }, 100);
     },
     openIntro() {
-      this.$store.commit('SET_INSTRUCTIONS', {
-        model: true,
-        steps: ['speeches.russia.2'],
-        nextMethod: () => {
-          this.step++;
-          this.initChat();
-        },
-      });
+      this.step++;
+      this.initChat();
     },
     goBackToMap() {
       window.impressAPI.goto('map');
@@ -361,9 +332,6 @@ export default {
     },
     async finish() {
       const score = this.getScore();
-      // if (this.userScammed) {
-      //   score = 0;
-      // }
       try {
         const info = this.getActiveTaskInfo();
         await this.$store.dispatch('createTask', {
