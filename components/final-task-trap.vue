@@ -56,7 +56,7 @@
             large
             light
             depressed
-            @click="noThanks()"
+            @click="noThanks"
           >
             {{ $t('final-task-trap.no-thanks') }}
           </v-btn>
@@ -66,7 +66,7 @@
             tile
             large
             depressed
-            @click="goToLink()"
+            @click="goToLink"
           >
             <v-icon class="me-2">mdi-download</v-icon>
             <span class="text-decoration-underline">
@@ -81,7 +81,7 @@
           tile
           large
           depressed
-          @click="backToGame()"
+          @click="backToGame"
         >
           {{ $t('continue') }}
           <v-icon class="ms-2">mdi-keyboard-backspace mdi-rotate-180</v-icon>
@@ -147,12 +147,15 @@ export default {
       }
     },
     goToLink() {
+      this.playGameSound('big-button-press-1');
       this.$set(this, 'step', 2);
     },
     noThanks() {
+      this.playGameSound('big-button-press-1');
       this.$set(this, 'step', 3);
     },
     backToGame() {
+      this.playGameSound('big-button-press-1');
       this.$set(this, 'model', false);
       localStorage.setItem('privacy-cruise-final-task-trap', 'true');
     },

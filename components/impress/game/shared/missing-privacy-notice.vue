@@ -29,7 +29,7 @@
           >
             <v-col class="my-0 mx-auto pl-4" cols="4">
               <div
-                class="font-weight-bold d-flex align-center  pt-10 pl-16 ml-6 text-size-8"
+                class="font-weight-bold d-flex align-center pt-10 pl-16 ml-6 text-size-8"
               >
                 {{ line.category }}
               </div>
@@ -47,7 +47,10 @@
       <v-btn
         class="mt-4 px-4"
         large
-        @click="$emit('input', false)"
+        @click="
+          this.playGameSound('big-button-press-1');
+          $emit('input', false);
+        "
       >
         {{ $t('china.privacy-notice.close-and-call-franklin') }}
         <v-icon class="ml-2">mdi-close</v-icon>
@@ -62,9 +65,9 @@ export default {
   props: {
     value: {
       type: Boolean,
-      default: null
-    }
-  }
+      default: null,
+    },
+  },
 };
 </script>
 

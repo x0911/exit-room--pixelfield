@@ -73,6 +73,7 @@ export default {
       }, 1000);
     },
     acceptCookies() {
+      this.playGameSound('big-button-press-1');
       localStorage.setItem(`privacy-game-cookie-accepted`, 'true');
       this.$nuxt.$emit(`impress-step-enter-splash`);
       this.$emit('input', false);

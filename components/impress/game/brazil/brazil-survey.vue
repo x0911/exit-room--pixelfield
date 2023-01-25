@@ -38,7 +38,10 @@
                     class="text-underline f-odibee-sans px-0"
                     small
                     text
-                    @click="isPrivacyOpen = true"
+                    @click="
+                      playGameSound('big-button-press-1');
+                      isPrivacyOpen = true;
+                    "
                   >
                     <v-icon class="me-1" small>mdi-launch</v-icon>
                     {{ $tr(`brazil.questions.${i + 1}.link`) }}
@@ -69,13 +72,11 @@
 </template>
 
 <script>
-import SoundPlayer from '~/mixins/sound-player.js';
 import PrivacyNotice from '~/components/impress/game/shared/privacy-notice.vue';
 
 export default {
   name: 'BrazilSurvey',
   components: { PrivacyNotice },
-  mixins: [SoundPlayer],
   data() {
     return {
       isPrivacyOpen: false,

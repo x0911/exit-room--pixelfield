@@ -797,7 +797,10 @@
                 tile
                 large
                 depressed
-                @click="insta.model = false"
+                @click="
+                  playGameSound('big-button-press-1');
+                  insta.model = false;
+                "
               >
                 {{ $t('continue') }}
                 <v-icon class="ms-2"
@@ -940,7 +943,7 @@
 import ScoreBoardInline from '@/components/ScoreBoardInline.vue';
 import SplattedImg from '@/components/splatted-img.vue';
 import ElementsLeft from '@/components/india-els-left.vue';
-import SoundPlayer from '@/mixins/sound-player.js';
+
 import ImpressStep from '@/mixins/impress-step.js';
 export default {
   components: {
@@ -948,7 +951,7 @@ export default {
     SplattedImg,
     ElementsLeft,
   },
-  mixins: [ImpressStep, SoundPlayer],
+  mixins: [ImpressStep],
   data: () => ({
     stepId: 'india',
     model: 0,

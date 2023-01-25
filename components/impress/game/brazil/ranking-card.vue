@@ -1,5 +1,11 @@
 <template>
-  <v-card max-height="90vh" style="overflow-y: scroll" class="px-8 pt-4 pb-8" flat light>
+  <v-card
+    max-height="90vh"
+    style="overflow-y: scroll"
+    class="px-8 pt-4 pb-8"
+    flat
+    light
+  >
     <v-card-title
       :inner-html.prop="$t('brazil.mini_game.ranking')"
       class="px-0 subtitle-1"

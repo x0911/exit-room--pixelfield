@@ -92,7 +92,10 @@
         :disabled="canScroll ? !isScrollFinished : false"
         class="mt-4 px-4"
         large
-        @click="$emit('input', false)"
+        @click="
+          playGameSound('big-button-press-1');
+          $emit('input', false);
+        "
       >
         {{ $t('china.privacy-notice.close') }}
         <v-icon class="ml-2">mdi-close</v-icon>
@@ -177,6 +180,7 @@ export default {
       );
     },
     validateHandler(event) {
+      this.playGameSound('big-button-press-1');
       if (!this.isValidated) {
         this.hasErrors = true;
       } else {

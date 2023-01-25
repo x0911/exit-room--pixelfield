@@ -150,6 +150,7 @@
               class="px-6 mr-8"
               large
               @click="
+                playGameSound('big-button-press-1');
                 showPrivacyNotice = true;
                 step--;
               "
@@ -209,7 +210,10 @@
               depressed
               large
               tile
-              @click="foundObject.name = ''"
+              @click="
+                playGameSound('big-button-press-1');
+                foundObject.name = '';
+              "
             >
               {{ $t('next') }}
               <v-icon class="ms-2"
@@ -381,7 +385,6 @@
 </template>
 
 <script>
-import SoundPlayer from '@/mixins/sound-player.js';
 import ImpressStep from '@/mixins/impress-step.js';
 import PrivacyNotice from '~/components/impress/game/shared/privacy-notice.vue';
 
@@ -389,7 +392,7 @@ export default {
   components: {
     PrivacyNotice,
   },
-  mixins: [ImpressStep, SoundPlayer],
+  mixins: [ImpressStep],
   data: () => ({
     stepId: 'china',
     step: 1,
@@ -641,6 +644,7 @@ export default {
       this.$set(this.result, 'model', true);
     },
     validateFormHandler() {
+      this.playGameSound('big-button-press-1');
       this.updateQuestions();
       if (!this.isQuestionsValid) return;
       this.showCorrectAnswerResults();
@@ -654,6 +658,7 @@ export default {
       });
     },
     nextStep(event) {
+      this.playGameSound('big-button-press-1');
       if (this.step === 5) {
         if (!this.isQuestionsValid) {
           return;
@@ -739,6 +744,7 @@ export default {
       }
     },
     hideFoundObjectModel() {
+      this.playGameSound('big-button-press-1');
       this.$set(this.foundObject, 'model', false);
       if (this.foundObject.items.length === this.foundObject.count) {
         this.showAllSymbols = true;

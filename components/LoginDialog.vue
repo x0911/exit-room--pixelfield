@@ -81,6 +81,7 @@ export default {
   },
   methods: {
     login() {
+      this.playGameSound('big-button-press-1');
       const formattedPassword = this.password
         .toLowerCase()
         .replace(/-/g, '')

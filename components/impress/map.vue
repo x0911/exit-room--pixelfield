@@ -131,7 +131,6 @@
 
 <script>
 import TravelBook from '@/assets/images/travel-book.png';
-import SoundPlayer from '@/mixins/sound-player.js';
 // import FullscreenVideo from '~/components/fullscreen-video.vue';
 import ImpressStep from '@/mixins/impress-step.js';
 import AppDisclaimer from '@/components/ui/AppDisclaimer.vue';
@@ -143,7 +142,7 @@ export default {
     FinalTaskTrap,
     // FullscreenVideo,
   },
-  mixins: [ImpressStep, SoundPlayer],
+  mixins: [ImpressStep],
   data() {
     return {
       stepId: 'map',
@@ -306,7 +305,7 @@ export default {
             steps: ['wall-steps'],
             nextText: this.$t('start'),
             image: 'avatars/franklin.jpg',
-          })
+          });
         }, 1200);
       }
     },

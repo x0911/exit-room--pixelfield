@@ -20,7 +20,10 @@
           class="px-6 mr-4"
           large
           tile
-          @click="step === 1 ? $emit('cancel') : step--"
+          @click="
+            playGameSound('big-button-press-1');
+            step === 1 ? $emit('cancel') : step--;
+          "
         >
           <span>{{ step === 1 ? $t('cancel') : $t('previous') }}</span>
         </v-btn>
@@ -39,11 +42,8 @@
 </template>
 
 <script>
-import SoundPlayer from '~/mixins/sound-player';
-
 export default {
   name: 'UsaSurvey',
-  mixins: [SoundPlayer],
   data() {
     return {
       step: 1,
@@ -84,14 +84,13 @@ export default {
   },
   methods: {
     validateFormHandler() {
-      this.playGameSound(`big-button-press-2`);
+      this.playGameSound('big-button-press-1');
       this.hasErrors = false;
       if (!this.canProceedNext) {
         this.hasErrors = true;
         return;
       }
       this.step === 1 ? this.step++ : this.$emit('next');
-
     },
   },
 };

@@ -1,6 +1,6 @@
 <template>
   <v-img :src="require('~/assets/images/games/usa/phone.png')" class="outer">
-    <v-img :src="require('~/assets/images/games/usa/phone-background.png')"/>
+    <v-img :src="require('~/assets/images/games/usa/phone-background.png')" />
     <div v-if="step === 1">
       <div class="content d-flex flex-wrap align-center">
         <div
@@ -9,9 +9,8 @@
           class="app-container d-flex justify-center align-center"
         >
           <v-icon v-if="index === 2" class="icon" x-large @click="step++"
-          >mdi-web
-          </v-icon
-          >
+            >mdi-web
+          </v-icon>
         </div>
       </div>
       <v-row class="toggle-container d-flex justify-center">
@@ -25,9 +24,8 @@
         <div class="app-content-form d-flex justify-center align-center">
           <v-spacer></v-spacer>
           <v-icon class="pa-1" style="border-left: 2px solid white" x-large
-          >mdi-magnify
-          </v-icon
-          >
+            >mdi-magnify
+          </v-icon>
         </div>
         <v-checkbox
           v-for="(option, index) in options"
@@ -86,7 +84,7 @@ export default {
   },
   computed: {
     isFormValidated() {
-      return this.options.every(({value}, index) =>
+      return this.options.every(({ value }, index) =>
         this.correctOptions.includes(index) ? value : !value
       );
     },
@@ -102,21 +100,24 @@ export default {
       immediate: true,
       handler(step) {
         if (step === 1) {
-          this.$store.commit('SET_HINT', [this.$t('usa.hints.phone-questions')]);
+          this.$store.commit('SET_HINT', [
+            this.$t('usa.hints.phone-questions'),
+          ]);
         } else {
-          this.$store.commit("SET_INSTRUCTIONS", {
+          this.$store.commit('SET_INSTRUCTIONS', {
             bottomModel: true,
             title: this.$t('franklin'),
             steps: ['usa.instructions.phone-questions'],
             image: 'avatars/franklin.jpg',
-          })
+          });
           this.$store.commit('SET_HINT', []);
         }
-      }
-    }
+      },
+    },
   },
   methods: {
     nextHandler() {
+      this.playGameSound('big-button-press-1');
       if (!this.isFormValidated) {
         this.hasErrors = true;
       } else {

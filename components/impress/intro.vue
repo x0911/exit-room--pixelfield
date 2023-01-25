@@ -44,14 +44,14 @@
 
 <script>
 import LottieAnimation from '@/components/LottieAnimation.vue';
-import SoundPlayer from '@/mixins/sound-player.js';
+
 import ImpressStep from '@/mixins/impress-step.js';
 export default {
   name: 'IntroScreen',
   components: {
     LottieAnimation,
   },
-  mixins: [ImpressStep, SoundPlayer],
+  mixins: [ImpressStep],
   data() {
     return {
       stepId: 'intro',

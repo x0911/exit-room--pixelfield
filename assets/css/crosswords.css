@@ -60,10 +60,10 @@
   width: 100%;
 }
 .crossword .cwrow .cwcell input.active {
-  background: #FFF7B2;
+  background: #fff7b2;
 }
 .crossword .cwrow .cwcell:after {
-  content: "";
+  content: '';
   float: left;
   display: block;
   padding-top: 100%;
@@ -83,4 +83,3 @@
 .crossword .clue {
   background: #ff0000;
 }
-

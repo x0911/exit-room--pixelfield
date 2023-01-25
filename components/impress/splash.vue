@@ -107,7 +107,6 @@
 
 <script>
 import LottieAnimation from '@/components/LottieAnimation.vue';
-import SoundPlayer from '@/mixins/sound-player.js';
 import ImpressStep from '@/mixins/impress-step.js';
 
 export default {
@@ -115,7 +114,7 @@ export default {
   components: {
     LottieAnimation,
   },
-  mixins: [ImpressStep, SoundPlayer],
+  mixins: [ImpressStep],
   data() {
     return {
       wordsToSplit: ['SELECT', 'YOUR', 'PREFERRED', 'LANGUAGE'],

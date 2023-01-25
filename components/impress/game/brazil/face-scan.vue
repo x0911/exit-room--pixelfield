@@ -24,11 +24,8 @@
 </template>
 
 <script>
-import SoundPlayer from '~/mixins/sound-player';
-
 export default {
   name: 'FaceScan',
-  mixins: [SoundPlayer],
   props: {
     stepId: {
       type: String,
@@ -43,6 +40,7 @@ export default {
   },
   methods: {
     validateHandler() {
+      this.playGameSound('big-button-press-1');
       this.isValidating = true;
       setTimeout(() => {
         this.isValidated = true;

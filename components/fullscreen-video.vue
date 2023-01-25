@@ -38,7 +38,6 @@
               'info-screen border darken border-3 ': !isPlayerThinking(dialog),
               'thought-bubble-container': isPlayerThinking(dialog),
             }"
-
             class="transparent px-2 pb-4 d-flex align-center"
           >
             <img
@@ -68,7 +67,7 @@
                         <div
                           v-if="dialog.speaker && !dialog.hideSpeaker"
                           class="font-weight-medium pb-2"
-                          style="color: rgba(255,235,59,0.55)"
+                          style="color: rgba(255, 235, 59, 0.55)"
                         >
                           <span> {{ dialog.speaker }}: </span>
                         </div>
@@ -77,7 +76,8 @@
                         </template>
                         <template v-else>
                           <div
-                            :inner-html.prop="dialog.textArray || dialog.text " class="d-flex flex-column gap-1"
+                            :inner-html.prop="dialog.textArray || dialog.text"
+                            class="d-flex flex-column gap-1"
                           ></div>
                         </template>
                       </template>
@@ -168,11 +168,10 @@
 
 <script>
 import IsVerticalMixin from '@/mixins/is-vertical.js';
-import SoundPlayer from '@/mixins/sound-player.js';
 import VideoDialogs from '@/mixins/video-dialogs.js';
 
 export default {
-  mixins: [IsVerticalMixin, SoundPlayer, VideoDialogs],
+  mixins: [IsVerticalMixin, VideoDialogs],
   props: {
     path: {
       type: String,
@@ -368,7 +367,7 @@ export default {
         dialog.model = false;
       });
     },
-    isPlayerThinking({speaker}) {
+    isPlayerThinking({ speaker }) {
       return speaker === this.$t('player-is-thinking');
     },
     ended(playSound = false) {
@@ -399,7 +398,7 @@ export default {
     },
     validateOptions(dialog) {
       const selectedOption = dialog.options.find(
-        ({isSelected}) => isSelected
+        ({ isSelected }) => isSelected
       );
       if (!selectedOption) return;
       if (!selectedOption.isCorrect) {
@@ -415,6 +414,7 @@ export default {
       this.hideVideoDialog(dialog.id, true);
     },
     nextHandler(dialog) {
+      this.playGameSound('big-button-press-1');
       return dialog.validateOptionsOnNext
         ? this.validateOptions(dialog)
         : this.hideVideoDialog(dialog.id, true);

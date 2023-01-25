@@ -1,1 +1,737 @@
-{"v":"5.6.2","fr":30,"ip":0,"op":31,"w":309,"h":299,"nm":"Star","ddd":0,"assets":[],"layers":[{"ddd":0,"ind":1,"ty":4,"nm":"Layer 1 Outlines","sr":1,"ks":{"o":{"a":0,"k":100,"ix":11},"r":{"a":0,"k":0,"ix":10},"p":{"a":1,"k":[{"i":{"x":0.833,"y":0.833},"o":{"x":0.167,"y":0.167},"t":4,"s":[151.835,149.13,0],"to":[0,-0.26,0],"ti":[0,0.631,0]},{"i":{"x":0.833,"y":0.833},"o":{"x":0.167,"y":0.167},"t":8,"s":[151.835,146.674,0],"to":[0,-0.987,0],"ti":[0,0.407,0]},{"t":15,"s":[151.835,145.13,0]}],"ix":2},"a":{"a":0,"k":[40.92,38.929,0],"ix":1},"s":{"a":1,"k":[{"i":{"x":[0.804,0.804,0.667],"y":[1,1,1]},"o":{"x":[0.733,0.733,0.333],"y":[0.675,0.675,0]},"t":4,"s":[0,0,100]},{"i":{"x":[0.56,0.56,0.667],"y":[1,1,1]},"o":{"x":[0.505,0.505,0.333],"y":[0,0,0]},"t":15,"s":[119,119,100]},{"i":{"x":[0.512,0.512,0.833],"y":[1,1,1]},"o":{"x":[0.481,0.481,0.333],"y":[0,0,0]},"t":21,"s":[91.151,91.151,100]},{"t":29,"s":[100,100,100]}],"ix":6}},"ao":0,"shapes":[{"ty":"gr","it":[{"ind":0,"ty":"sh","ix":1,"ks":{"a":0,"k":{"i":[[0,0],[0,0],[0,0],[0,0],[0,0],[0,0],[0,0],[0,0],[0,0],[0,0]],"o":[[0,0],[0,0],[0,0],[0,0],[0,0],[0,0],[0,0],[0,0],[0,0],[0,0]],"v":[[0,-38.68],[9.64,-9.189],[40.67,-9.13],[15.6,9.15],[25.14,38.68],[0,20.48],[-25.14,38.68],[-15.59,9.15],[-40.67,-9.13],[-9.64,-9.189]],"c":true},"ix":2},"nm":"Path 1","mn":"ADBE Vector Shape - Group","hd":false},{"ty":"fl","c":{"a":0,"k":[0.447983984854,0.631747675877,0.887556666954,1],"ix":4},"o":{"a":0,"k":100,"ix":5},"r":1,"bm":0,"nm":"Fill 1","mn":"ADBE Vector Graphic - Fill","hd":false},{"ty":"tr","p":{"a":0,"k":[40.92,38.929],"ix":2},"a":{"a":0,"k":[0,0],"ix":1},"s":{"a":0,"k":[100,100],"ix":3},"r":{"a":0,"k":0,"ix":6},"o":{"a":0,"k":100,"ix":7},"sk":{"a":0,"k":0,"ix":4},"sa":{"a":0,"k":0,"ix":5},"nm":"Transform"}],"nm":"Group 1","np":2,"cix":2,"bm":0,"ix":1,"mn":"ADBE Vector Group","hd":false}],"ip":4,"op":110,"st":4,"bm":0},{"ddd":0,"ind":2,"ty":4,"nm":"Burst","sr":1,"ks":{"o":{"a":0,"k":100,"ix":11},"r":{"a":1,"k":[{"i":{"x":[0.833],"y":[0.833]},"o":{"x":[0.172],"y":[0.316]},"t":3,"s":[0]},{"i":{"x":[0.695],"y":[1]},"o":{"x":[0.167],"y":[0.167]},"t":12,"s":[38.12]},{"t":21,"s":[48]}],"ix":10},"p":{"a":0,"k":[413,142.5,0],"ix":2,"x":"var $bm_rt;\n$bm_rt = effect('Global Position')('ADBE Point Control-0001');"},"a":{"a":0,"k":[0,0,0],"ix":1},"s":{"a":0,"k":[100,100,100],"ix":6}},"ao":0,"ef":[{"ty":5,"nm":"Global Position","np":3,"mn":"ADBE Point Control","ix":1,"en":1,"ef":[{"ty":3,"nm":"Point","mn":"ADBE Point Control-0001","ix":1,"v":{"a":0,"k":[151.539,147.623],"ix":1}}]},{"ty":5,"nm":"# of Copies","np":3,"mn":"ADBE Slider Control","ix":2,"en":1,"ef":[{"ty":0,"nm":"Slider","mn":"ADBE Slider Control-0001","ix":1,"v":{"a":0,"k":10,"ix":1,"x":"var $bm_rt;\nvar copies, copies;\n$bm_rt = copies = effect('# of Copies')('ADBE Slider Control-0001');\nif (copies < 0) {\n    $bm_rt = copies = 0;\n}"}}]},{"ty":5,"nm":"Copies Revolution","np":3,"mn":"ADBE Slider Control","ix":3,"en":1,"ef":[{"ty":0,"nm":"Slider","mn":"ADBE Slider Control-0001","ix":1,"v":{"a":0,"k":360,"ix":1}}]},{"ty":5,"nm":"Revolution Offset","np":3,"mn":"ADBE Slider Control","ix":4,"en":1,"ef":[{"ty":0,"nm":"Slider","mn":"ADBE Slider Control-0001","ix":1,"v":{"a":0,"k":0,"ix":1}}]},{"ty":5,"nm":"Burst Offset","np":3,"mn":"ADBE Slider Control","ix":5,"en":1,"ef":[{"ty":0,"nm":"Slider","mn":"ADBE Slider Control-0001","ix":1,"v":{"a":0,"k":0,"ix":1}}]},{"ty":5,"nm":"Distance from Center","np":3,"mn":"ADBE Slider Control","ix":6,"en":1,"ef":[{"ty":0,"nm":"Slider","mn":"ADBE Slider Control-0001","ix":1,"v":{"a":1,"k":[{"i":{"x":[0.603],"y":[0.814]},"o":{"x":[0.172],"y":[0.098]},"t":5,"s":[2]},{"i":{"x":[0.695],"y":[1]},"o":{"x":[0.352],"y":[1.067]},"t":14,"s":[54.641]},{"t":21,"s":[61]}],"ix":1}}]},{"ty":5,"nm":"Link Width & Height","np":3,"mn":"ADBE Checkbox Control","ix":7,"en":1,"ef":[{"ty":7,"nm":"Checkbox","mn":"ADBE Checkbox Control-0001","ix":1,"v":{"a":0,"k":0,"ix":1}}]},{"ty":5,"nm":"Burst Width","np":3,"mn":"ADBE Slider Control","ix":8,"en":1,"ef":[{"ty":0,"nm":"Slider","mn":"ADBE Slider Control-0001","ix":1,"v":{"a":1,"k":[{"i":{"x":[0.667],"y":[1]},"o":{"x":[0.167],"y":[0.167]},"t":5,"s":[3]},{"i":{"x":[0.833],"y":[0.833]},"o":{"x":[0.297],"y":[0]},"t":12,"s":[6]},{"i":{"x":[0.815],"y":[0.927]},"o":{"x":[0.167],"y":[0.167]},"t":18,"s":[10.008]},{"t":21,"s":[3]}],"ix":1,"x":"var $bm_rt;\nvar width, width;\n$bm_rt = width = effect('Burst Width')('ADBE Slider Control-0001');\nif (width < 0) {\n    $bm_rt = width = 0;\n}"}}]},{"ty":5,"nm":"Burst Height","np":3,"mn":"ADBE Slider Control","ix":9,"en":1,"ef":[{"ty":0,"nm":"Slider","mn":"ADBE Slider Control-0001","ix":1,"v":{"a":1,"k":[{"i":{"x":[0.667],"y":[1]},"o":{"x":[0.167],"y":[0.167]},"t":5,"s":[0]},{"i":{"x":[0.833],"y":[0.833]},"o":{"x":[0.297],"y":[0]},"t":12,"s":[17]},{"i":{"x":[0.815],"y":[0.927]},"o":{"x":[0.167],"y":[0.167]},"t":18,"s":[13.378]},{"t":21,"s":[0]}],"ix":1}}]},{"ty":5,"nm":"Stroke Width","np":3,"mn":"ADBE Slider Control","ix":10,"en":1,"ef":[{"ty":0,"nm":"Slider","mn":"ADBE Slider Control-0001","ix":1,"v":{"a":0,"k":8,"ix":1}}]},{"ty":5,"nm":"Fill On | Off","np":3,"mn":"ADBE Checkbox Control","ix":11,"en":1,"ef":[{"ty":7,"nm":"Checkbox","mn":"ADBE Checkbox Control-0001","ix":1,"v":{"a":0,"k":1,"ix":1}}]},{"ty":5,"nm":"Fill Color","np":3,"mn":"ADBE Color Control","ix":12,"en":1,"ef":[{"ty":2,"nm":"Color","mn":"ADBE Color Control-0001","ix":1,"v":{"a":0,"k":[0,0.376470595598,0.678431391716,1],"ix":1}}]},{"ty":5,"nm":"Stroke On | Off","np":3,"mn":"ADBE Checkbox Control","ix":13,"en":1,"ef":[{"ty":7,"nm":"Checkbox","mn":"ADBE Checkbox Control-0001","ix":1,"v":{"a":0,"k":0,"ix":1}}]},{"ty":5,"nm":"Stroke Color","np":3,"mn":"ADBE Color Control","ix":14,"en":1,"ef":[{"ty":2,"nm":"Color","mn":"ADBE Color Control-0001","ix":1,"v":{"a":0,"k":[0.453999996185,0.73299998045,1,1],"ix":1}}]},{"ty":5,"nm":"Burst Roundness","np":3,"mn":"ADBE Slider Control","ix":15,"en":1,"ef":[{"ty":0,"nm":"Slider","mn":"ADBE Slider Control-0001","ix":1,"v":{"a":0,"k":30,"ix":1,"x":"var $bm_rt;\nvar roundness, roundness;\n$bm_rt = roundness = effect('Burst Roundness')('ADBE Slider Control-0001');\nif (roundness < 0) {\n    $bm_rt = roundness = 0;\n}"}}]},{"ty":5,"nm":"Link Seq. Width & Height","np":3,"mn":"ADBE Checkbox Control","ix":16,"en":1,"ef":[{"ty":7,"nm":"Checkbox","mn":"ADBE Checkbox Control-0001","ix":1,"v":{"a":0,"k":1,"ix":1}}]},{"ty":5,"nm":"Sequential - Width","np":3,"mn":"ADBE Slider Control","ix":17,"en":1,"ef":[{"ty":0,"nm":"Slider","mn":"ADBE Slider Control-0001","ix":1,"v":{"a":0,"k":0,"ix":1}}]},{"ty":5,"nm":"Sequential - Height","np":3,"mn":"ADBE Slider Control","ix":18,"en":1,"ef":[{"ty":0,"nm":"Slider","mn":"ADBE Slider Control-0001","ix":1,"v":{"a":0,"k":0,"ix":1}}]}],"shapes":[{"ty":"gr","it":[{"ty":"rc","d":1,"s":{"a":0,"k":[100,100],"ix":2,"x":"var $bm_rt;\nvar x, y, link;\nx = effect('Burst Width')('ADBE Slider Control-0001');\ny = effect('Burst Height')('ADBE Slider Control-0001');\n$bm_rt = link = effect('Link Width & Height')('ADBE Checkbox Control-0001');\nif (link == 0) {\n    $bm_rt = [\n        x,\n        y\n    ];\n} else {\n    $bm_rt = [\n        x,\n        x\n    ];\n}"},"p":{"a":0,"k":[0,0],"ix":3,"x":"var $bm_rt;\n$bm_rt = [\n    content('Rectangle 1').content('Burst Piece 1').position[1],\n    effect('Distance from Center')('ADBE Slider Control-0001')\n];"},"r":{"a":0,"k":0,"ix":4,"x":"var $bm_rt;\n$bm_rt = effect('Burst Roundness')('ADBE Slider Control-0001');"},"nm":"Burst Piece 1","mn":"ADBE Vector Shape - Rect","hd":false},{"ty":"rp","c":{"a":0,"k":1,"ix":1,"x":"var $bm_rt;\n$bm_rt = effect('# of Copies')('ADBE Slider Control-0001');"},"o":{"a":0,"k":0,"ix":2},"m":1,"ix":2,"tr":{"ty":"tr","p":{"a":0,"k":[0,0],"ix":2},"a":{"a":0,"k":[0,0],"ix":1},"s":{"a":0,"k":[100,100],"ix":3,"x":"var $bm_rt;\nvar x, y, link;\nx = $bm_sum(100, effect('Sequential - Width')('ADBE Slider Control-0001'));\ny = $bm_sum(100, effect('Sequential - Height')('ADBE Slider Control-0001'));\n$bm_rt = link = effect('Link Seq. Width & Height')('ADBE Checkbox Control-0001');\nif (link == 0) {\n    $bm_rt = [\n        x,\n        y\n    ];\n} else {\n    $bm_rt = [\n        x,\n        x\n    ];\n}"},"r":{"a":0,"k":0,"ix":4,"x":"var $bm_rt;\nvar copies, division, L;\ntry {\n    copies = effect('# of Copies')('ADBE Slider Control-0001');\n    division = effect('Copies Revolution')('ADBE Slider Control-0001');\n    $bm_rt = $bm_sum($bm_div(division, copies), content('Rectangle 1').content('Repeater 1').offset);\n} catch (e$$4) {\n    $bm_rt = L = null;\n}"},"so":{"a":0,"k":100,"ix":5},"eo":{"a":0,"k":100,"ix":6},"nm":"Transform"},"nm":"Repeater 1","mn":"ADBE Vector Filter - Repeater","hd":false},{"ty":"st","c":{"a":0,"k":[1,1,1,1],"ix":3,"x":"var $bm_rt;\n$bm_rt = effect('Stroke Color')('ADBE Color Control-0001');"},"o":{"a":0,"k":100,"ix":4,"x":"var $bm_rt;\n$bm_rt = $bm_mul(effect('Stroke On | Off')('ADBE Checkbox Control-0001'), 100);"},"w":{"a":0,"k":2,"ix":5,"x":"var $bm_rt;\n$bm_rt = effect('Stroke Width')('ADBE Slider Control-0001');"},"lc":1,"lj":1,"ml":4,"bm":0,"nm":"Stroke 1","mn":"ADBE Vector Graphic - Stroke","hd":false},{"ty":"fl","c":{"a":0,"k":[1,0,0,1],"ix":4,"x":"var $bm_rt;\n$bm_rt = effect('Fill Color')('ADBE Color Control-0001');"},"o":{"a":0,"k":100,"ix":5,"x":"var $bm_rt;\n$bm_rt = $bm_mul(effect('Fill On | Off')('ADBE Checkbox Control-0001'), 100);"},"r":1,"bm":0,"nm":"Fill 1","mn":"ADBE Vector Graphic - Fill","hd":false},{"ty":"tr","p":{"a":0,"k":[0,0],"ix":2},"a":{"a":0,"k":[0,0],"ix":1},"s":{"a":0,"k":[100,100],"ix":3},"r":{"a":0,"k":0,"ix":6},"o":{"a":0,"k":100,"ix":7},"sk":{"a":0,"k":0,"ix":4},"sa":{"a":0,"k":0,"ix":5},"nm":"Transform"}],"nm":"Rectangle 1","np":5,"cix":2,"bm":0,"ix":1,"mn":"ADBE Vector Group","hd":false}],"ip":-3,"op":107,"st":-3,"bm":0}],"markers":[]}
+{
+  "v": "5.6.2",
+  "fr": 30,
+  "ip": 0,
+  "op": 31,
+  "w": 309,
+  "h": 299,
+  "nm": "Star",
+  "ddd": 0,
+  "assets": [],
+  "layers": [
+    {
+      "ddd": 0,
+      "ind": 1,
+      "ty": 4,
+      "nm": "Layer 1 Outlines",
+      "sr": 1,
+      "ks": {
+        "o": { "a": 0, "k": 100, "ix": 11 },
+        "r": { "a": 0, "k": 0, "ix": 10 },
+        "p": {
+          "a": 1,
+          "k": [
+            {
+              "i": { "x": 0.833, "y": 0.833 },
+              "o": { "x": 0.167, "y": 0.167 },
+              "t": 4,
+              "s": [151.835, 149.13, 0],
+              "to": [0, -0.26, 0],
+              "ti": [0, 0.631, 0]
+            },
+            {
+              "i": { "x": 0.833, "y": 0.833 },
+              "o": { "x": 0.167, "y": 0.167 },
+              "t": 8,
+              "s": [151.835, 146.674, 0],
+              "to": [0, -0.987, 0],
+              "ti": [0, 0.407, 0]
+            },
+            { "t": 15, "s": [151.835, 145.13, 0] }
+          ],
+          "ix": 2
+        },
+        "a": { "a": 0, "k": [40.92, 38.929, 0], "ix": 1 },
+        "s": {
+          "a": 1,
+          "k": [
+            {
+              "i": { "x": [0.804, 0.804, 0.667], "y": [1, 1, 1] },
+              "o": { "x": [0.733, 0.733, 0.333], "y": [0.675, 0.675, 0] },
+              "t": 4,
+              "s": [0, 0, 100]
+            },
+            {
+              "i": { "x": [0.56, 0.56, 0.667], "y": [1, 1, 1] },
+              "o": { "x": [0.505, 0.505, 0.333], "y": [0, 0, 0] },
+              "t": 15,
+              "s": [119, 119, 100]
+            },
+            {
+              "i": { "x": [0.512, 0.512, 0.833], "y": [1, 1, 1] },
+              "o": { "x": [0.481, 0.481, 0.333], "y": [0, 0, 0] },
+              "t": 21,
+              "s": [91.151, 91.151, 100]
+            },
+            { "t": 29, "s": [100, 100, 100] }
+          ],
+          "ix": 6
+        }
+      },
+      "ao": 0,
+      "shapes": [
+        {
+          "ty": "gr",
+          "it": [
+            {
+              "ind": 0,
+              "ty": "sh",
+              "ix": 1,
+              "ks": {
+                "a": 0,
+                "k": {
+                  "i": [
+                    [0, 0],
+                    [0, 0],
+                    [0, 0],
+                    [0, 0],
+                    [0, 0],
+                    [0, 0],
+                    [0, 0],
+                    [0, 0],
+                    [0, 0],
+                    [0, 0]
+                  ],
+                  "o": [
+                    [0, 0],
+                    [0, 0],
+                    [0, 0],
+                    [0, 0],
+                    [0, 0],
+                    [0, 0],
+                    [0, 0],
+                    [0, 0],
+                    [0, 0],
+                    [0, 0]
+                  ],
+                  "v": [
+                    [0, -38.68],
+                    [9.64, -9.189],
+                    [40.67, -9.13],
+                    [15.6, 9.15],
+                    [25.14, 38.68],
+                    [0, 20.48],
+                    [-25.14, 38.68],
+                    [-15.59, 9.15],
+                    [-40.67, -9.13],
+                    [-9.64, -9.189]
+                  ],
+                  "c": true
+                },
+                "ix": 2
+              },
+              "nm": "Path 1",
+              "mn": "ADBE Vector Shape - Group",
+              "hd": false
+            },
+            {
+              "ty": "fl",
+              "c": {
+                "a": 0,
+                "k": [0.447983984854, 0.631747675877, 0.887556666954, 1],
+                "ix": 4
+              },
+              "o": { "a": 0, "k": 100, "ix": 5 },
+              "r": 1,
+              "bm": 0,
+              "nm": "Fill 1",
+              "mn": "ADBE Vector Graphic - Fill",
+              "hd": false
+            },
+            {
+              "ty": "tr",
+              "p": { "a": 0, "k": [40.92, 38.929], "ix": 2 },
+              "a": { "a": 0, "k": [0, 0], "ix": 1 },
+              "s": { "a": 0, "k": [100, 100], "ix": 3 },
+              "r": { "a": 0, "k": 0, "ix": 6 },
+              "o": { "a": 0, "k": 100, "ix": 7 },
+              "sk": { "a": 0, "k": 0, "ix": 4 },
+              "sa": { "a": 0, "k": 0, "ix": 5 },
+              "nm": "Transform"
+            }
+          ],
+          "nm": "Group 1",
+          "np": 2,
+          "cix": 2,
+          "bm": 0,
+          "ix": 1,
+          "mn": "ADBE Vector Group",
+          "hd": false
+        }
+      ],
+      "ip": 4,
+      "op": 110,
+      "st": 4,
+      "bm": 0
+    },
+    {
+      "ddd": 0,
+      "ind": 2,
+      "ty": 4,
+      "nm": "Burst",
+      "sr": 1,
+      "ks": {
+        "o": { "a": 0, "k": 100, "ix": 11 },
+        "r": {
+          "a": 1,
+          "k": [
+            {
+              "i": { "x": [0.833], "y": [0.833] },
+              "o": { "x": [0.172], "y": [0.316] },
+              "t": 3,
+              "s": [0]
+            },
+            {
+              "i": { "x": [0.695], "y": [1] },
+              "o": { "x": [0.167], "y": [0.167] },
+              "t": 12,
+              "s": [38.12]
+            },
+            { "t": 21, "s": [48] }
+          ],
+          "ix": 10
+        },
+        "p": {
+          "a": 0,
+          "k": [413, 142.5, 0],
+          "ix": 2,
+          "x": "var $bm_rt;\n$bm_rt = effect('Global Position')('ADBE Point Control-0001');"
+        },
+        "a": { "a": 0, "k": [0, 0, 0], "ix": 1 },
+        "s": { "a": 0, "k": [100, 100, 100], "ix": 6 }
+      },
+      "ao": 0,
+      "ef": [
+        {
+          "ty": 5,
+          "nm": "Global Position",
+          "np": 3,
+          "mn": "ADBE Point Control",
+          "ix": 1,
+          "en": 1,
+          "ef": [
+            {
+              "ty": 3,
+              "nm": "Point",
+              "mn": "ADBE Point Control-0001",
+              "ix": 1,
+              "v": { "a": 0, "k": [151.539, 147.623], "ix": 1 }
+            }
+          ]
+        },
+        {
+          "ty": 5,
+          "nm": "# of Copies",
+          "np": 3,
+          "mn": "ADBE Slider Control",
+          "ix": 2,
+          "en": 1,
+          "ef": [
+            {
+              "ty": 0,
+              "nm": "Slider",
+              "mn": "ADBE Slider Control-0001",
+              "ix": 1,
+              "v": {
+                "a": 0,
+                "k": 10,
+                "ix": 1,
+                "x": "var $bm_rt;\nvar copies, copies;\n$bm_rt = copies = effect('# of Copies')('ADBE Slider Control-0001');\nif (copies < 0) {\n    $bm_rt = copies = 0;\n}"
+              }
+            }
+          ]
+        },
+        {
+          "ty": 5,
+          "nm": "Copies Revolution",
+          "np": 3,
+          "mn": "ADBE Slider Control",
+          "ix": 3,
+          "en": 1,
+          "ef": [
+            {
+              "ty": 0,
+              "nm": "Slider",
+              "mn": "ADBE Slider Control-0001",
+              "ix": 1,
+              "v": { "a": 0, "k": 360, "ix": 1 }
+            }
+          ]
+        },
+        {
+          "ty": 5,
+          "nm": "Revolution Offset",
+          "np": 3,
+          "mn": "ADBE Slider Control",
+          "ix": 4,
+          "en": 1,
+          "ef": [
+            {
+              "ty": 0,
+              "nm": "Slider",
+              "mn": "ADBE Slider Control-0001",
+              "ix": 1,
+              "v": { "a": 0, "k": 0, "ix": 1 }
+            }
+          ]
+        },
+        {
+          "ty": 5,
+          "nm": "Burst Offset",
+          "np": 3,
+          "mn": "ADBE Slider Control",
+          "ix": 5,
+          "en": 1,
+          "ef": [
+            {
+              "ty": 0,
+              "nm": "Slider",
+              "mn": "ADBE Slider Control-0001",
+              "ix": 1,
+              "v": { "a": 0, "k": 0, "ix": 1 }
+            }
+          ]
+        },
+        {
+          "ty": 5,
+          "nm": "Distance from Center",
+          "np": 3,
+          "mn": "ADBE Slider Control",
+          "ix": 6,
+          "en": 1,
+          "ef": [
+            {
+              "ty": 0,
+              "nm": "Slider",
+              "mn": "ADBE Slider Control-0001",
+              "ix": 1,
+              "v": {
+                "a": 1,
+                "k": [
+                  {
+                    "i": { "x": [0.603], "y": [0.814] },
+                    "o": { "x": [0.172], "y": [0.098] },
+                    "t": 5,
+                    "s": [2]
+                  },
+                  {
+                    "i": { "x": [0.695], "y": [1] },
+                    "o": { "x": [0.352], "y": [1.067] },
+                    "t": 14,
+                    "s": [54.641]
+                  },
+                  { "t": 21, "s": [61] }
+                ],
+                "ix": 1
+              }
+            }
+          ]
+        },
+        {
+          "ty": 5,
+          "nm": "Link Width & Height",
+          "np": 3,
+          "mn": "ADBE Checkbox Control",
+          "ix": 7,
+          "en": 1,
+          "ef": [
+            {
+              "ty": 7,
+              "nm": "Checkbox",
+              "mn": "ADBE Checkbox Control-0001",
+              "ix": 1,
+              "v": { "a": 0, "k": 0, "ix": 1 }
+            }
+          ]
+        },
+        {
+          "ty": 5,
+          "nm": "Burst Width",
+          "np": 3,
+          "mn": "ADBE Slider Control",
+          "ix": 8,
+          "en": 1,
+          "ef": [
+            {
+              "ty": 0,
+              "nm": "Slider",
+              "mn": "ADBE Slider Control-0001",
+              "ix": 1,
+              "v": {
+                "a": 1,
+                "k": [
+                  {
+                    "i": { "x": [0.667], "y": [1] },
+                    "o": { "x": [0.167], "y": [0.167] },
+                    "t": 5,
+                    "s": [3]
+                  },
+                  {
+                    "i": { "x": [0.833], "y": [0.833] },
+                    "o": { "x": [0.297], "y": [0] },
+                    "t": 12,
+                    "s": [6]
+                  },
+                  {
+                    "i": { "x": [0.815], "y": [0.927] },
+                    "o": { "x": [0.167], "y": [0.167] },
+                    "t": 18,
+                    "s": [10.008]
+                  },
+                  { "t": 21, "s": [3] }
+                ],
+                "ix": 1,
+                "x": "var $bm_rt;\nvar width, width;\n$bm_rt = width = effect('Burst Width')('ADBE Slider Control-0001');\nif (width < 0) {\n    $bm_rt = width = 0;\n}"
+              }
+            }
+          ]
+        },
+        {
+          "ty": 5,
+          "nm": "Burst Height",
+          "np": 3,
+          "mn": "ADBE Slider Control",
+          "ix": 9,
+          "en": 1,
+          "ef": [
+            {
+              "ty": 0,
+              "nm": "Slider",
+              "mn": "ADBE Slider Control-0001",
+              "ix": 1,
+              "v": {
+                "a": 1,
+                "k": [
+                  {
+                    "i": { "x": [0.667], "y": [1] },
+                    "o": { "x": [0.167], "y": [0.167] },
+                    "t": 5,
+                    "s": [0]
+                  },
+                  {
+                    "i": { "x": [0.833], "y": [0.833] },
+                    "o": { "x": [0.297], "y": [0] },
+                    "t": 12,
+                    "s": [17]
+                  },
+                  {
+                    "i": { "x": [0.815], "y": [0.927] },
+                    "o": { "x": [0.167], "y": [0.167] },
+                    "t": 18,
+                    "s": [13.378]
+                  },
+                  { "t": 21, "s": [0] }
+                ],
+                "ix": 1
+              }
+            }
+          ]
+        },
+        {
+          "ty": 5,
+          "nm": "Stroke Width",
+          "np": 3,
+          "mn": "ADBE Slider Control",
+          "ix": 10,
+          "en": 1,
+          "ef": [
+            {
+              "ty": 0,
+              "nm": "Slider",
+              "mn": "ADBE Slider Control-0001",
+              "ix": 1,
+              "v": { "a": 0, "k": 8, "ix": 1 }
+            }
+          ]
+        },
+        {
+          "ty": 5,
+          "nm": "Fill On | Off",
+          "np": 3,
+          "mn": "ADBE Checkbox Control",
+          "ix": 11,
+          "en": 1,
+          "ef": [
+            {
+              "ty": 7,
+              "nm": "Checkbox",
+              "mn": "ADBE Checkbox Control-0001",
+              "ix": 1,
+              "v": { "a": 0, "k": 1, "ix": 1 }
+            }
+          ]
+        },
+        {
+          "ty": 5,
+          "nm": "Fill Color",
+          "np": 3,
+          "mn": "ADBE Color Control",
+          "ix": 12,
+          "en": 1,
+          "ef": [
+            {
+              "ty": 2,
+              "nm": "Color",
+              "mn": "ADBE Color Control-0001",
+              "ix": 1,
+              "v": {
+                "a": 0,
+                "k": [0, 0.376470595598, 0.678431391716, 1],
+                "ix": 1
+              }
+            }
+          ]
+        },
+        {
+          "ty": 5,
+          "nm": "Stroke On | Off",
+          "np": 3,
+          "mn": "ADBE Checkbox Control",
+          "ix": 13,
+          "en": 1,
+          "ef": [
+            {
+              "ty": 7,
+              "nm": "Checkbox",
+              "mn": "ADBE Checkbox Control-0001",
+              "ix": 1,
+              "v": { "a": 0, "k": 0, "ix": 1 }
+            }
+          ]
+        },
+        {
+          "ty": 5,
+          "nm": "Stroke Color",
+          "np": 3,
+          "mn": "ADBE Color Control",
+          "ix": 14,
+          "en": 1,
+          "ef": [
+            {
+              "ty": 2,
+              "nm": "Color",
+              "mn": "ADBE Color Control-0001",
+              "ix": 1,
+              "v": {
+                "a": 0,
+                "k": [0.453999996185, 0.73299998045, 1, 1],
+                "ix": 1
+              }
+            }
+          ]
+        },
+        {
+          "ty": 5,
+          "nm": "Burst Roundness",
+          "np": 3,
+          "mn": "ADBE Slider Control",
+          "ix": 15,
+          "en": 1,
+          "ef": [
+            {
+              "ty": 0,
+              "nm": "Slider",
+              "mn": "ADBE Slider Control-0001",
+              "ix": 1,
+              "v": {
+                "a": 0,
+                "k": 30,
+                "ix": 1,
+                "x": "var $bm_rt;\nvar roundness, roundness;\n$bm_rt = roundness = effect('Burst Roundness')('ADBE Slider Control-0001');\nif (roundness < 0) {\n    $bm_rt = roundness = 0;\n}"
+              }
+            }
+          ]
+        },
+        {
+          "ty": 5,
+          "nm": "Link Seq. Width & Height",
+          "np": 3,
+          "mn": "ADBE Checkbox Control",
+          "ix": 16,
+          "en": 1,
+          "ef": [
+            {
+              "ty": 7,
+              "nm": "Checkbox",
+              "mn": "ADBE Checkbox Control-0001",
+              "ix": 1,
+              "v": { "a": 0, "k": 1, "ix": 1 }
+            }
+          ]
+        },
+        {
+          "ty": 5,
+          "nm": "Sequential - Width",
+          "np": 3,
+          "mn": "ADBE Slider Control",
+          "ix": 17,
+          "en": 1,
+          "ef": [
+            {
+              "ty": 0,
+              "nm": "Slider",
+              "mn": "ADBE Slider Control-0001",
+              "ix": 1,
+              "v": { "a": 0, "k": 0, "ix": 1 }
+            }
+          ]
+        },
+        {
+          "ty": 5,
+          "nm": "Sequential - Height",
+          "np": 3,
+          "mn": "ADBE Slider Control",
+          "ix": 18,
+          "en": 1,
+          "ef": [
+            {
+              "ty": 0,
+              "nm": "Slider",
+              "mn": "ADBE Slider Control-0001",
+              "ix": 1,
+              "v": { "a": 0, "k": 0, "ix": 1 }
+            }
+          ]
+        }
+      ],
+      "shapes": [
+        {
+          "ty": "gr",
+          "it": [
+            {
+              "ty": "rc",
+              "d": 1,
+              "s": {
+                "a": 0,
+                "k": [100, 100],
+                "ix": 2,
+                "x": "var $bm_rt;\nvar x, y, link;\nx = effect('Burst Width')('ADBE Slider Control-0001');\ny = effect('Burst Height')('ADBE Slider Control-0001');\n$bm_rt = link = effect('Link Width & Height')('ADBE Checkbox Control-0001');\nif (link == 0) {\n    $bm_rt = [\n        x,\n        y\n    ];\n} else {\n    $bm_rt = [\n        x,\n        x\n    ];\n}"
+              },
+              "p": {
+                "a": 0,
+                "k": [0, 0],
+                "ix": 3,
+                "x": "var $bm_rt;\n$bm_rt = [\n    content('Rectangle 1').content('Burst Piece 1').position[1],\n    effect('Distance from Center')('ADBE Slider Control-0001')\n];"
+              },
+              "r": {
+                "a": 0,
+                "k": 0,
+                "ix": 4,
+                "x": "var $bm_rt;\n$bm_rt = effect('Burst Roundness')('ADBE Slider Control-0001');"
+              },
+              "nm": "Burst Piece 1",
+              "mn": "ADBE Vector Shape - Rect",
+              "hd": false
+            },
+            {
+              "ty": "rp",
+              "c": {
+                "a": 0,
+                "k": 1,
+                "ix": 1,
+                "x": "var $bm_rt;\n$bm_rt = effect('# of Copies')('ADBE Slider Control-0001');"
+              },
+              "o": { "a": 0, "k": 0, "ix": 2 },
+              "m": 1,
+              "ix": 2,
+              "tr": {
+                "ty": "tr",
+                "p": { "a": 0, "k": [0, 0], "ix": 2 },
+                "a": { "a": 0, "k": [0, 0], "ix": 1 },
+                "s": {
+                  "a": 0,
+                  "k": [100, 100],
+                  "ix": 3,
+                  "x": "var $bm_rt;\nvar x, y, link;\nx = $bm_sum(100, effect('Sequential - Width')('ADBE Slider Control-0001'));\ny = $bm_sum(100, effect('Sequential - Height')('ADBE Slider Control-0001'));\n$bm_rt = link = effect('Link Seq. Width & Height')('ADBE Checkbox Control-0001');\nif (link == 0) {\n    $bm_rt = [\n        x,\n        y\n    ];\n} else {\n    $bm_rt = [\n        x,\n        x\n    ];\n}"
+                },
+                "r": {
+                  "a": 0,
+                  "k": 0,
+                  "ix": 4,
+                  "x": "var $bm_rt;\nvar copies, division, L;\ntry {\n    copies = effect('# of Copies')('ADBE Slider Control-0001');\n    division = effect('Copies Revolution')('ADBE Slider Control-0001');\n    $bm_rt = $bm_sum($bm_div(division, copies), content('Rectangle 1').content('Repeater 1').offset);\n} catch (e$$4) {\n    $bm_rt = L = null;\n}"
+                },
+                "so": { "a": 0, "k": 100, "ix": 5 },
+                "eo": { "a": 0, "k": 100, "ix": 6 },
+                "nm": "Transform"
+              },
+              "nm": "Repeater 1",
+              "mn": "ADBE Vector Filter - Repeater",
+              "hd": false
+            },
+            {
+              "ty": "st",
+              "c": {
+                "a": 0,
+                "k": [1, 1, 1, 1],
+                "ix": 3,
+                "x": "var $bm_rt;\n$bm_rt = effect('Stroke Color')('ADBE Color Control-0001');"
+              },
+              "o": {
+                "a": 0,
+                "k": 100,
+                "ix": 4,
+                "x": "var $bm_rt;\n$bm_rt = $bm_mul(effect('Stroke On | Off')('ADBE Checkbox Control-0001'), 100);"
+              },
+              "w": {
+                "a": 0,
+                "k": 2,
+                "ix": 5,
+                "x": "var $bm_rt;\n$bm_rt = effect('Stroke Width')('ADBE Slider Control-0001');"
+              },
+              "lc": 1,
+              "lj": 1,
+              "ml": 4,
+              "bm": 0,
+              "nm": "Stroke 1",
+              "mn": "ADBE Vector Graphic - Stroke",
+              "hd": false
+            },
+            {
+              "ty": "fl",
+              "c": {
+                "a": 0,
+                "k": [1, 0, 0, 1],
+                "ix": 4,
+                "x": "var $bm_rt;\n$bm_rt = effect('Fill Color')('ADBE Color Control-0001');"
+              },
+              "o": {
+                "a": 0,
+                "k": 100,
+                "ix": 5,
+                "x": "var $bm_rt;\n$bm_rt = $bm_mul(effect('Fill On | Off')('ADBE Checkbox Control-0001'), 100);"
+              },
+              "r": 1,
+              "bm": 0,
+              "nm": "Fill 1",
+              "mn": "ADBE Vector Graphic - Fill",
+              "hd": false
+            },
+            {
+              "ty": "tr",
+              "p": { "a": 0, "k": [0, 0], "ix": 2 },
+              "a": { "a": 0, "k": [0, 0], "ix": 1 },
+              "s": { "a": 0, "k": [100, 100], "ix": 3 },
+              "r": { "a": 0, "k": 0, "ix": 6 },
+              "o": { "a": 0, "k": 100, "ix": 7 },
+              "sk": { "a": 0, "k": 0, "ix": 4 },
+              "sa": { "a": 0, "k": 0, "ix": 5 },
+              "nm": "Transform"
+            }
+          ],
+          "nm": "Rectangle 1",
+          "np": 5,
+          "cix": 2,
+          "bm": 0,
+          "ix": 1,
+          "mn": "ADBE Vector Group",
+          "hd": false
+        }
+      ],
+      "ip": -3,
+      "op": 107,
+      "st": -3,
+      "bm": 0
+    }
+  ],
+  "markers": []
+}

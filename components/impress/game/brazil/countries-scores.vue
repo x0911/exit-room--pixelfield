@@ -23,7 +23,10 @@
           class="px-4 mt-4"
           tile
           large
-          @click="$emit('next')"
+          @click="
+            playGameSound('big-button-press-1');
+            $emit('next');
+          "
         >
           {{ $t('next') }}
         </v-btn>

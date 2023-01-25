@@ -122,14 +122,13 @@
 
 <script>
 import ScoreBoardInline from '@/components/ScoreBoardInline.vue';
-import SoundPlayer from '@/mixins/sound-player.js';
 import ImpressStep from '@/mixins/impress-step.js';
 
 export default {
   components: {
     ScoreBoardInline,
   },
-  mixins: [ImpressStep, SoundPlayer],
+  mixins: [ImpressStep],
   data: () => ({
     stepId: 'egypt',
     model: 0,
@@ -224,7 +223,7 @@ export default {
       }
     },
     backHandler() {
-      this.playGameSound('big-button-press-2');
+      this.playGameSound('big-button-press-1');
       this.resetValue();
       this.model--;
     },

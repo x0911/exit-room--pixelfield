@@ -98,9 +98,7 @@
 </template>
 
 <script>
-import SoundPlayer from '@/mixins/sound-player.js';
 export default {
-  mixins: [SoundPlayer],
   data: () => ({}),
   computed: {
     fullPath() {
@@ -180,7 +178,7 @@ export default {
   },
   methods: {
     prev() {
-      this.playGameSound('button-press');
+      this.playGameSound('big-button-press-1');
       if (this.prevLink) {
         this.$nuxt.$router.push(this.localePath(this.prevLink));
       } else if (this.step > 1) {
@@ -188,7 +186,7 @@ export default {
       }
     },
     next(event) {
-      this.playGameSound('big-button-press-2');
+      this.playGameSound('big-button-press-1');
       if (this.step < this.steps.length) {
         this.step++;
       } else {
@@ -202,9 +200,10 @@ export default {
       }
     },
     cancel() {
+      this.playGameSound('big-button-press-1');
       this.$set(this, 'model', false);
       if (this.cancelMethod && typeof this.cancelMethod === 'function') {
-        this.cancelMethod()
+        this.cancelMethod();
       }
     },
   },

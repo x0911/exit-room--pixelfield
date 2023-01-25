@@ -69,6 +69,7 @@ export default {
       });
     },
     validateHandler(event) {
+      this.playGameSound('big-button-press-1');
       this.updateQuestions();
       if (!this.isValid) return;
       this.$emit('next', event);

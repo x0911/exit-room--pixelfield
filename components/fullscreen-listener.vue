@@ -26,7 +26,7 @@
             large
             text
             tile
-            @click="hideLocalModel()"
+            @click="hideLocalModel"
           >
             {{ $t('cancel') }}
           </v-btn>
@@ -36,7 +36,7 @@
             depressed
             large
             tile
-            @click="toggleFullscreen('button-press')"
+            @click="toggleFullscreen"
           >
             {{ $t('enable') }}
           </v-btn>
@@ -62,7 +62,7 @@
           small
           style="left: 15px; z-index: 9999"
           top
-          @click="playGameSound('button-press')"
+          @click="playGameSound('big-button-press-1')"
           v-on="on"
         >
           <v-icon> mdi-map-marker</v-icon>
@@ -86,7 +86,7 @@
               large
               text
               tile
-              @click="hideBackToMap('button-press')"
+              @click="hideBackToMap"
             >
               {{ $t('cancel') }}
             </v-btn>
@@ -100,9 +100,8 @@
             >
               {{ $t('map') }}
               <v-icon class="ms-2"
-              >mdi-keyboard-backspace mdi-rotate-180
-              </v-icon
-              >
+                >mdi-keyboard-backspace mdi-rotate-180
+              </v-icon>
             </v-btn>
           </v-card-actions>
         </v-card>
@@ -136,7 +135,7 @@
       right
       small
       top
-      @click="toggleSounds()"
+      @click="toggleSounds"
     >
       <v-icon>
         {{ soundsOff ? 'mdi-volume-off' : 'mdi-volume-high' }}
@@ -185,10 +184,7 @@
 </template>
 
 <script>
-import SoundPlayer from '@/mixins/sound-player.js';
-
 export default {
-  mixins: [SoundPlayer],
   data: () => ({
     isFullscreen: false,
     isMobile: false,
@@ -274,8 +270,7 @@ export default {
       window.impressAPI.goto('map');
     },
     toggleSounds() {
-      const soundName = this.soundsOff ? 'big-button-press-1' : 'button-press';
-      this.playGameSound(soundName);
+      this.playGameSound('big-button-press-1');
       this.$set(this, 'soundsOff', !this.soundsOff);
     },
     setCanHaveFullscreen() {
@@ -295,13 +290,11 @@ export default {
       }
     },
     hideLocalModel() {
-      this.playGameSound('button-press');
+      this.playGameSound('big-button-press-1');
       this.$set(this, 'localModel', false);
     },
-    hideBackToMap(soundName) {
-      if (soundName) {
-        this.playGameSound(soundName);
-      }
+    hideBackToMap() {
+      this.playGameSound('big-button-press-1');
       this.$set(this, 'backToMap', false);
     },
     checkIfMobile() {
@@ -326,20 +319,16 @@ export default {
         this.$set(this, 'isFullscreen', false);
       }
     },
-    toggleFullscreen(soundName) {
-      if (soundName) {
-        this.playGameSound(soundName);
-      }
+    toggleFullscreen() {
+      this.playGameSound('big-button-press-1');
       const isInFullscreen =
         document.fullscreenElement || document.webkitFullscreenElement;
       if (isInFullscreen) {
         if (document.exitFullscreen) {
           document
             .exitFullscreen()
-            .then(() => {
-            })
-            .catch(() => {
-            });
+            .then(() => {})
+            .catch(() => {});
         }
         if (document.webkitCancelFullScreen) {
           document.webkitCancelFullScreen();
@@ -349,38 +338,28 @@ export default {
         if (document.documentElement.requestFullscreen) {
           document.documentElement
             .requestFullscreen()
-            .then(() => {
-            })
-            .catch(() => {
-            });
+            .then(() => {})
+            .catch(() => {});
         } else if (document.documentElement.webkitRequestFullScreen) {
           document.documentElement
             .webkitRequestFullScreen(Element.ALLOW_KEYBOARD_INPUT)
-            .then(() => {
-            })
-            .catch(() => {
-            });
+            .then(() => {})
+            .catch(() => {});
         } else if (document.documentElement.mozRequestFullScreen) {
           document.documentElement
             .mozRequestFullScreen()
-            .then(() => {
-            })
-            .catch(() => {
-            });
+            .then(() => {})
+            .catch(() => {});
         } else if (document.documentElement.msRequestFullscreen) {
           document.documentElement
             .msRequestFullscreen()
-            .then(() => {
-            })
-            .catch(() => {
-            });
+            .then(() => {})
+            .catch(() => {});
         } else if (document.documentElement.webkitEnterFullscreen) {
           document.documentElement
             .webkitEnterFullscreen(Element.ALLOW_KEYBOARD_INPUT)
-            .then(() => {
-            })
-            .catch(() => {
-            });
+            .then(() => {})
+            .catch(() => {});
         }
       }
     },

@@ -57,10 +57,7 @@
               class="px-8"
               tile
               depressed
-              @click="
-                next();
-                playGameSound('big-button-press-1');
-              "
+              @click="next"
             >
               {{ $t(scoreInfo.type === 'perfect' ? 'lets-go' : 'okay') }}
             </v-btn>
@@ -85,9 +82,7 @@
 </template>
 
 <script>
-import SoundPlayer from '@/mixins/sound-player.js';
 export default {
-  mixins: [SoundPlayer],
   props: {},
   data: () => ({
     models: {
@@ -201,6 +196,7 @@ export default {
       }
     },
     next() {
+      this.playGameSound('big-button-press-1');
       if (typeof this.dialog.next === 'function') {
         this.dialog.next();
       }

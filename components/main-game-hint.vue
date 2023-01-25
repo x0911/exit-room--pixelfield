@@ -19,7 +19,7 @@
           right
           style="bottom: 30px !important; z-index: 9999 !important"
           width="48"
-          @click="playGameSound('button-press')"
+          @click="playGameSound('big-button-press-1')"
           v-on="on"
         >
           <v-icon>mdi-help</v-icon>
@@ -51,7 +51,7 @@
       style="z-index: 9999 !important; bottom: 5px !important"
       target="_blank"
       x-small
-      @click="playGameSound('button-press')"
+      @click="playGameSound('big-button-press-1')"
     >
       Produced by: F-mark s.r.o.
     </v-btn>
@@ -75,11 +75,8 @@
 </template>
 
 <script>
-import SoundPlayer from '@/mixins/sound-player.js';
-
 export default {
   components: {},
-  mixins: [SoundPlayer],
   data: () => ({
     model: false,
   }),
@@ -94,7 +91,7 @@ export default {
     },
     hints() {
       const hints = this.$store.getters.hint;
-      return Array.isArray(hints) && hints.length ? hints : this.stepHints
+      return Array.isArray(hints) && hints.length ? hints : this.stepHints;
     },
     globalBtns() {
       return this.$store.getters.globalBtns;
@@ -126,6 +123,7 @@ export default {
   },
   methods: {
     stopCurrentVideo() {
+      this.playGameSound('big-button-press-1');
       this.$nuxt.$emit('stop-current-video');
     },
     reset() {

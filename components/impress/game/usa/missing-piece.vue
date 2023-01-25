@@ -189,6 +189,7 @@ export default {
       return item.isOpened && !item.hiddenElement && !item.component;
     },
     closeItemModalHandler(item) {
+      this.playGameSound('big-button-press-1');
       item.modal = false;
       const isAdded = this.wrongItems.some(
         (wrongItem) => wrongItem.name === item.name

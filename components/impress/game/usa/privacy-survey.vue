@@ -4,14 +4,7 @@
     v-model="isPrivacyOpen"
     :scroll-to-bottom="true"
   /!-->
-  <v-card
-    class="pa-6 mx-auto"
-    flat
-    light
-    max-width="600"
-    rounded
-    tile
-  >
+  <v-card class="pa-6 mx-auto" flat light max-width="600" rounded tile>
     <v-card-text class="pa-4">
       <div class="text-body-1 mb-4 font-weight-bold">
         {{ $t(`usa.questions.4.label`) }}
@@ -43,12 +36,10 @@
 </template>
 <script>
 // import PrivacyNotice from '~/components/impress/game/shared/privacy-notice';
-import SoundPlayer from '~/mixins/sound-player';
 
 export default {
   name: 'PrivacySurvey',
   // components: {PrivacyNotice},
-  mixins: [SoundPlayer],
   data() {
     return {
       isPrivacyOpen: true,
@@ -83,19 +74,19 @@ export default {
     },
     isPrivacyOpen(value) {
       if (!value) {
-        this.$emit('privacy-visible')
+        this.$emit('privacy-visible');
       }
-    }
+    },
   },
   methods: {
     validateFormHandler() {
-      this.playGameSound(`big-button-press-2`);
+      this.playGameSound('big-button-press-1');
       this.hasErrors = false;
       if (!this.canProceedNext) {
         this.hasErrors = true;
         return;
       }
-      this.$emit('privacy-hidden')
+      this.$emit('privacy-hidden');
       this.isQuestionsOpen = false;
       this.$store.commit('SET_INSTRUCTIONS', {
         model: true,

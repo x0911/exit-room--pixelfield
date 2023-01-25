@@ -15,7 +15,10 @@
               alt="Speaker Image"
             ></v-img>
           </v-avatar>
-          <div :inner-html.prop="label" class="font-weight-bold text-body-1"></div>
+          <div
+            :inner-html.prop="label"
+            class="font-weight-bold text-body-1"
+          ></div>
         </div>
         <div
           v-if="hasSubtitle || hasPanels"
@@ -34,7 +37,11 @@
               <v-flex>
                 <div>
                   <template v-for="(line, i) in subtitle">
-                    <div :key="i" :inner-html.prop="line" class="mb-1  text-h6"></div>
+                    <div
+                      :key="i"
+                      :inner-html.prop="line"
+                      class="mb-1 text-h6"
+                    ></div>
                   </template>
                 </div>
               </v-flex>
@@ -72,10 +79,7 @@
           depressed
           large
           tile
-          @click="
-            restart();
-            playGameSound('big-button-press-2');
-          "
+          @click="restart"
         >
           <v-icon class="me-3">mdi-reload</v-icon>
           {{ $t('try-again') }}
@@ -103,10 +107,7 @@
 </template>
 
 <script>
-import SoundPlayer from '@/mixins/sound-player.js';
-
 export default {
-  mixins: [SoundPlayer],
   props: {
     model: {
       type: Boolean,
@@ -199,8 +200,7 @@ export default {
       this.$set(this, 'localModel', true);
     },
   },
-  mounted() {
-  },
+  mounted() {},
   methods: {
     checkFailCounter() {
       if (!this.passed) {
@@ -227,6 +227,7 @@ export default {
       window.impressAPI.goto('map');
     },
     restart() {
+      this.playGameSound('big-button-press-1');
       this.$emit('restart');
     },
   },

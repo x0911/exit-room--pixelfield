@@ -155,12 +155,11 @@
 
 <script>
 import ScoreBoardInline from '~/components/ScoreBoardInline.vue';
-import SoundPlayer from '~/mixins/sound-player.js';
 import ImpressStep from '~/mixins/impress-step.js';
 
 export default {
   components: { ScoreBoardInline },
-  mixins: [ImpressStep, SoundPlayer],
+  mixins: [ImpressStep],
   data: () => ({
     stepId: 'russia',
     loading: false,
@@ -246,6 +245,7 @@ export default {
       this.$set(this, 'suggestions', msgs);
     },
     validateSuggestionsHandler() {
+      this.playGameSound('big-button-press-1');
       const selectedSuggestions = this.suggestions.filter(({ value }) => value);
       if (selectedSuggestions.length < 3) {
         this.hasErrors = true;
@@ -331,6 +331,7 @@ export default {
       }, 200);
     },
     async finish() {
+      this.playGameSound('big-button-press-1');
       const score = this.getScore();
       try {
         const info = this.getActiveTaskInfo();

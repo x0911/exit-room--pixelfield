@@ -55,7 +55,10 @@
           right
           style="bottom: 30px; right: 3rem"
           tile
-          @click="isPrivacyOpen = true"
+          @click="
+            playGameSound('big-button-press-1');
+            isPrivacyOpen = true;
+          "
         >
           <span class="mr-3">{{ $t('china.privacy-notice.open') }}</span>
           <v-icon>mdi-file-document</v-icon>
@@ -75,7 +78,6 @@
 
 <script>
 import ScoreBoardInline from '~/components/ScoreBoardInline.vue';
-import SoundPlayer from '~/mixins/sound-player.js';
 import ImpressStep from '~/mixins/impress-step.js';
 import UsaSurvey from '~/components/impress/game/usa/usa-survey';
 import MissingPiece from '~/components/impress/game/usa/missing-piece';
@@ -94,7 +96,7 @@ export default {
     MissingPiece,
     ScoreBoardInline,
   },
-  mixins: [ImpressStep, SoundPlayer],
+  mixins: [ImpressStep],
   data: () => ({
     stepId: 'usa',
     isQuestionsOpen: false,

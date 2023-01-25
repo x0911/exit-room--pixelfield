@@ -9,7 +9,9 @@
     <v-row>
       <v-col class="d-flex align-center justify-start pl-0" cols="6">
         <v-img
-          :src="require('~/assets/images/games/russia/puzzle/puzzle_template.png')"
+          :src="
+            require('~/assets/images/games/russia/puzzle/puzzle_template.png')
+          "
           max-width="360"
         >
           <div class="puzzle-images">
@@ -95,8 +97,6 @@
 </template>
 
 <script>
-import SoundPlayer from '~/mixins/sound-player';
-
 const IMAGES = [
   {
     id: 1,
@@ -253,7 +253,6 @@ const IMAGES = [
 
 export default {
   name: 'PuzzleGame',
-  mixins: [SoundPlayer],
   data() {
     return {
       images: IMAGES,
@@ -347,6 +346,7 @@ export default {
       this.$emit('next');
     },
     restartPuzzleHandler() {
+      this.playGameSound('big-button-press-1');
       this.showCode = false;
       this.correctImages = new Array(16)
         .fill(0)

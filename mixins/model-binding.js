@@ -2,17 +2,17 @@ export default {
   props: {
     value: {
       type: [String, Boolean, Number, Object],
-      default: null
-    }
+      default: null,
+    },
   },
   computed: {
     vModel: {
       get() {
-        return this.value
+        return this.value;
       },
       set(value) {
-        this.$emit('input', value)
-      }
-    }
-  }
-}
+        this.$emit('input', value);
+      },
+    },
+  },
+};

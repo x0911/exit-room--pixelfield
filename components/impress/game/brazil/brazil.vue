@@ -98,8 +98,8 @@ export default {
       }, 1000);
     });
     this.$nuxt.$on(`video-${this.stepId}-x3-ended`, () => {
-      this.replaceBg(`${this.stepId}-x2`)
-      this.step = 'survey'
+      this.replaceBg(`${this.stepId}-x2`);
+      this.step = 'survey';
     });
   },
   methods: {

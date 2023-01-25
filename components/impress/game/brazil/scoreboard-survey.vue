@@ -66,6 +66,7 @@ export default {
   },
   methods: {
     validateHandler() {
+      this.playGameSound('big-button-press-1');
       this.questions.forEach((question) => {
         question.hasError = question.value !== question.correctAnswer;
       });

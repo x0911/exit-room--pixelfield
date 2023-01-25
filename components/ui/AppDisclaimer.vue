@@ -47,9 +47,7 @@
 </template>
 
 <script>
-import SoundPlayer from '@/mixins/sound-player.js';
 export default {
-  mixins: [SoundPlayer],
   data: () => ({
     title: '',
     perc: '0',

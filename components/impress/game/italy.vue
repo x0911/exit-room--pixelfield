@@ -126,14 +126,14 @@
 
 <script>
 import ScoreBoardInline from '~/components/ScoreBoardInline.vue';
-import SoundPlayer from '@/mixins/sound-player.js';
+
 import ImpressStep from '@/mixins/impress-step.js';
 import { countries } from '@/assets/js/countries';
 export default {
   components: {
     ScoreBoardInline,
   },
-  mixins: [ImpressStep, SoundPlayer],
+  mixins: [ImpressStep],
   data() {
     return {
       stepId: 'italy',

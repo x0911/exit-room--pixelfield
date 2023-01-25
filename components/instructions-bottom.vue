@@ -181,9 +181,7 @@
 </template>
 
 <script>
-import SoundPlayer from '@/mixins/sound-player.js';
 export default {
-  mixins: [SoundPlayer],
   data: () => ({}),
   computed: {
     fullPath() {
@@ -257,7 +255,7 @@ export default {
   },
   methods: {
     prev() {
-      this.playGameSound('button-press');
+      this.playGameSound('big-button-press-1');
       if (this.step > 1) {
         this.step--;
       } else {
@@ -268,7 +266,7 @@ export default {
       }
     },
     next(event) {
-      this.playGameSound('big-button-press-2');
+      this.playGameSound('big-button-press-1');
       if (this.step < this.steps.length) {
         this.step++;
       } else {

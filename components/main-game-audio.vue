@@ -154,9 +154,7 @@ export default {
       this.play();
     },
     handleActiveStepChange(v) {
-      if (v === 'map') {
-        this.restartAudio(`quiz/map.mp3`);
-      } else if (this.rooms.includes(v)) {
+      if (this.rooms.includes(v)) {
         this.restartAudio(`quiz/${v}.mp3`);
       } else {
         this.shuffleAudios();

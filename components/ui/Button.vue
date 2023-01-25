@@ -4,16 +4,16 @@
 
 <script>
 export default {
-  name: "Button",
+  name: 'Button',
   props: {
     text: {
       type: String,
       required: true,
     },
   },
-}
+};
 </script>
 
 <style lang="scss" scoped>
-@import "~/assets/scss/components/button";
+@import '~/assets/scss/components/button';
 </style>
