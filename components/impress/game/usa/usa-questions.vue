@@ -5,13 +5,16 @@
       :key="qIndex"
       :class="{ 'mb-6': qIndex !== questions.length - 1 }"
     >
-      <div class="pb-2 text-body-1 font-weight-medium">{{ question.label }}</div>
+      <div
+        class="pb-2 text-body-1 font-weight-medium"
+        :class="{ 'error--text': question.hasError }"
+      >
+        {{ question.label }}
+      </div>
       <v-radio-group
         v-for="(option, oIdx) in question.options"
         :key="oIdx"
         v-model="question.value"
-        :error="hasErrors"
-        class=""
         hide-details
       >
         <v-radio
@@ -19,6 +22,7 @@
           :value="option"
           class="ma-0 text-body-1"
           color="primary"
+          :class="question.hasError ? 'error--text' : 'white--text'"
           hide-details
         />
       </v-radio-group>
@@ -47,32 +51,27 @@ export default {
       questions: this.$t(`usa.privacy-questions`).map((question) => ({
         ...question,
         value: null,
+        hasError: false,
       })),
-      hasErrors: false,
     };
   },
   computed: {
     isValid() {
-      return this.questions.every(({value}) => {
-        return value === 'No'
+      return this.questions.every(({ value }) => {
+        return value === 'No';
       });
     },
   },
-  watch: {
-    questions: {
-      deep: true,
-      handler() {
-        this.hasErrors = false;
-      },
-    },
-  },
   methods: {
+    updateQuestions() {
+      this.questions.forEach((question) => {
+        question.hasError = question.value !== 'No';
+      });
+    },
     validateHandler(event) {
-      if (!this.isValid) {
-        this.hasErrors = true;
-      } else {
-        this.$emit('next', event);
-      }
+      this.updateQuestions();
+      if (!this.isValid) return;
+      this.$emit('next', event);
     },
   },
 };
@@ -81,6 +80,12 @@ export default {
 <style lang="scss" scoped>
 ::v-deep .v-input--selection-controls {
   margin: 0;
+}
+
+.error--text {
+  ::v-deep label {
+    color: var(--v-error-base) !important;
+  }
 }
 
 ::v-deep .v-input {

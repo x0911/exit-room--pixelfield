@@ -6,7 +6,7 @@
           <template v-for="(q, i) in questions">
             <v-card-text :key="i" class="py-4">
               <div
-                :class="{ 'error--text': hasErrors }"
+                :class="{ 'error--text': q.hasError }"
                 class="mb-2 text-body-1 font-weight-medium"
               >
                 {{ $tr(`brazil.questions.${i + 1}.label`) }}
@@ -21,7 +21,10 @@
                   >
                     <v-btn
                       :key="ai"
-                      :class="{ 'primary white--text': q.value === ai }"
+                      :class="{
+                        'primary white--text': q.value === ai,
+                        'error--text': q.hasError,
+                      }"
                       :value="ai"
                     >
                       {{ answer }}
@@ -48,7 +51,6 @@
       </div>
       <div class="d-flex justify-center pb-6 gap-6 pt-4">
         <v-btn
-          :disabled="isDisabled"
           class="px-6 custom-disabled-state"
           color="primary"
           dark
@@ -62,7 +64,7 @@
         </v-btn>
       </div>
     </v-card>
-    <privacy-notice v-if="isPrivacyOpen" v-model="isPrivacyOpen"/>
+    <privacy-notice v-if="isPrivacyOpen" v-model="isPrivacyOpen" />
   </div>
 </template>
 
@@ -72,7 +74,7 @@ import PrivacyNotice from '~/components/impress/game/shared/privacy-notice.vue';
 
 export default {
   name: 'BrazilSurvey',
-  components: {PrivacyNotice},
+  components: { PrivacyNotice },
   mixins: [SoundPlayer],
   data() {
     return {
@@ -82,43 +84,46 @@ export default {
           question: '',
           value: null,
           type: 'checkbox',
+          hasError: false,
         },
         {
           question: '',
           value: null,
           type: 'checkbox',
+          hasError: false,
         },
         {
           question: '',
           value: null,
           type: 'checkbox',
           isLink: true,
+          hasError: false,
         },
         {
           question: '',
           value: null,
           type: 'checkbox',
           correctValue: 1,
+          hasError: false,
         },
       ],
-      hasErrors: false,
     };
   },
   computed: {
-    isDisabled() {
-      const notAllAnswered = this.questions.some(({value}) => value === null);
+    isNotValid() {
+      const notAllAnswered = this.questions.some(({ value }) => value === null);
       const lastQuestion = [...this.questions].pop();
       return notAllAnswered || lastQuestion.value !== lastQuestion.correctValue;
     },
   },
   methods: {
     finishSurveyHandler() {
-      this.hasErrors = false;
       this.playGameSound('big-button-press-1');
-      if (this.isWrong) {
-        this.hasErrors = true;
-        return;
-      }
+      this.questions[this.questions.length - 1].hasError =
+        this.questions[this.questions.length - 1].value !==
+        this.questions[this.questions.length - 1].correctValue;
+
+      if (this.isNotValid) return;
       this.$emit('next');
     },
   },

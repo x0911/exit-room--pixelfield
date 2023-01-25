@@ -5,7 +5,12 @@
       :key="qIndex"
       :class="{ 'mb-6': qIndex !== questions.length - 1 }"
     >
-      <div class="pb-2 text-body-1">{{ question.label }}</div>
+      <div
+        :class="{ 'error--text': question.hasError }"
+        class="pb-2 text-body-1"
+      >
+        {{ question.label }}
+      </div>
       <v-radio-group
         v-for="(option, oIdx) in question.options"
         :key="oIdx"
@@ -61,13 +66,11 @@ export default {
   },
   methods: {
     validateHandler() {
-      if (!this.isValid) {
-        this.questions.forEach((question) => {
-          question.hasError = question.value !== question.correctAnswer;
-        });
-      } else {
-        this.$emit('finish');
-      }
+      this.questions.forEach((question) => {
+        question.hasError = question.value !== question.correctAnswer;
+      });
+      if (!this.isValid) return;
+      this.$emit('finish');
     },
   },
 };
