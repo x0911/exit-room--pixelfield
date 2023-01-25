@@ -299,6 +299,7 @@ $mainColorDarken: #183b7d;
 .room5 {
   top: 47%;
   left: 39%;
+  pointer-events: all;
 
   @media (max-height: 385px) {
     top: 47%;
