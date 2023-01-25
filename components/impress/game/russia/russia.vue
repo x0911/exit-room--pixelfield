@@ -250,8 +250,8 @@ export default {
       if (selectedSuggestions.length < 3) {
         this.hasErrors = true;
       } else {
-        const lastSelected = this.suggestions.pop();
-        const firstChoices = this.suggestions
+        const lastSelected = selectedSuggestions.pop();
+        const firstChoices = selectedSuggestions
           .map(({ text }) => text)
           .join(', ');
         const message = `${firstChoices} ${this.$t('and')} ${
