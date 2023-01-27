@@ -26,6 +26,7 @@
             {{ $t('screens.login.label') }}
           </div>
           <v-text-field
+            ref="password"
             v-model="password"
             type="password"
             filled
@@ -77,7 +78,12 @@ export default {
   created() {
     const loggedIn =
       localStorage.getItem('data-privacy-game-logged-in') || 'false';
-    return this.$emit('input', loggedIn === 'true');
+    this.$emit('input', loggedIn === 'true');
+  },
+  mounted() {
+    document.addEventListener('keypress', () => {
+      this.$refs.password.focus();
+    });
   },
   methods: {
     login() {

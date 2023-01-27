@@ -70,6 +70,7 @@
       :model="result.model"
       :passed="result.passed"
       :perc="result.perc"
+      :step-id="stepId"
       @restart="restart"
     >
     </score-board-inline>
@@ -192,7 +193,6 @@ export default {
     },
     restart() {
       this.stepLeave();
-      setTimeout(this.introEnded, 100);
     },
     introEnded(immediate = false) {
       setTimeout(

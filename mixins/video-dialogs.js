@@ -20,7 +20,7 @@ export default {
           textArray: this.$tr('speeches.splash.2', 'array'),
           isConfirmable: true,
           style:
-            'position: fixed; top: max(calc(50% - 210px), 20px); width: 720px; max-width: 75vw',
+            'position: fixed; top: max(calc(50% - 65px), 20px); width: 720px; max-width: 75vw',
         },
       ];
       const reception = [

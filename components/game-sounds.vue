@@ -109,6 +109,11 @@ export default {
         name: 'camera-shot',
         type: 'mp3',
       },
+      {
+        description: '',
+        name: 'whoosh',
+        type: 'aac',
+      },
     ],
   }),
   computed: {

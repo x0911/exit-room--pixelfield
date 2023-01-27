@@ -133,6 +133,10 @@ export default {
       type: String,
       default: '',
     },
+    stepId: {
+      type: String,
+      default: null,
+    },
   },
   data: () => ({
     localModel: true,
@@ -226,8 +230,12 @@ export default {
     openMap() {
       window.impressAPI.goto('map');
     },
-    restart() {
+    restart(event) {
       this.playGameSound('big-button-press-1');
+      if (this.stepId) {
+        event.target['data-video-start'] = this.stepId;
+        this.$store.commit('PLAY_VIDEO', this.stepId);
+      }
       this.$emit('restart');
     },
   },

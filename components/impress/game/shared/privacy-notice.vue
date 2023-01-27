@@ -26,15 +26,13 @@
           </span>
         </v-card-title>
         <v-row>
-          <v-col class="my-0 mx-auto" cols="12">
+          <v-col class="my-0 mx-auto pb-8" cols="12">
             <div
               class="white--text text-body-2 font-weight-medium mt-4 pt-10 pb-2 px-10 text-center"
             >
               {{ $t('china.privacy-notice.description') }}
             </div>
-            <div class="white--text text-body-2 font-weight-medium text-center">
-              {{ $t('china.privacy-notice.table.title') }}
-            </div>
+
           </v-col>
           <v-col class="mx-auto my-0" cols="12">
             <v-simple-table class="transparent">
@@ -46,7 +44,7 @@
                   >
                     <div>{{ $t('china.privacy-notice.table.headers[0]') }}</div>
                   </th>
-                  <th class="pl-10 font-weight-bold text-size-7">
+                  <th class="pl-1 font-weight-bold text-size-7">
                     {{ $t('china.privacy-notice.table.headers[1]') }}
                   </th>
                 </tr>
@@ -74,7 +72,7 @@
                   </td>
                   <td
                     :style="hasErrors && 'color: #FF5252 !important;'"
-                    class="text-size-7 white--text px-10 py-0 text-left"
+                    class="text-size-7 white--text pl-1 pr-16 py-0 text-left"
                   >
                     {{ item.description }}
                   </td>

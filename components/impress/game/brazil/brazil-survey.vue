@@ -3,6 +3,25 @@
     <v-card class="transparent mx-auto" flat light tile>
       <div class="mb-4">
         <v-card class="info-screen border-3" flat light tile>
+
+          <template >
+            <div class="my-1 mt-4 pl-4">
+              <v-btn
+                style="color: #444c61 !important"
+                class="text-underline text-body-1 font-weight-medium f-odibee-sans px-0"
+                small
+                text
+                @click="
+                      playGameSound('big-button-press-1');
+                      isPrivacyOpen = true;
+                    "
+              >
+                <v-icon class="me-1" small>mdi-launch</v-icon>
+                {{ $tr(`brazil.questions.3.link`) }}
+              </v-btn>
+            </div>
+          </template>
+
           <template v-for="(q, i) in questions">
             <v-card-text :key="i" class="py-4">
               <div
@@ -32,22 +51,7 @@
                   </template>
                 </v-btn-toggle>
               </template>
-              <template v-if="q.isLink">
-                <div class="my-1">
-                  <v-btn
-                    class="text-underline f-odibee-sans px-0"
-                    small
-                    text
-                    @click="
-                      playGameSound('big-button-press-1');
-                      isPrivacyOpen = true;
-                    "
-                  >
-                    <v-icon class="me-1" small>mdi-launch</v-icon>
-                    {{ $tr(`brazil.questions.${i + 1}.link`) }}
-                  </v-btn>
-                </div>
-              </template>
+
             </v-card-text>
           </template>
         </v-card>

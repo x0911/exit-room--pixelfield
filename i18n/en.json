@@ -56,7 +56,8 @@
   "validate": "Validate",
   "cancel": "Cancel",
   "hint-title": "Hint",
-  "take_photo": "Take photo",
+  "take_a_photo": "Take a photo",
+  "continue" : "Continue",
   "name": "Name",
   "address": "Address",
   "cabin_number": "Cabin number",
@@ -107,9 +108,7 @@
         "I am Franklin, an al-powered robot and your concierge on this voyage."
       ],
       "2": [
-        "The only thing you will need to be able to play the game is your mouse or mousepad. Right answers will allow you to proceed with the game. Selecting any wrong answers will result in you failing the task, but please note, that if you happen to fail a task, you can always go back and redo it. In order to proceed, please click on the confirm button.",
-        "Splendid!",
-        "Please follow me aboard so I can show you around the ship."
+       "Please follow me aboard so I can show you around the ship."
       ]
     },
     "italy": {
@@ -124,7 +123,7 @@
         "You have been assigned to a table with 3 other guests. Please take a look at the menu and whet your appetite!"
       ],
       "2": [
-        "I’m only 2 months pregnant and not showing",
+        "I’m only 2 months pregnant and not showing.",
         "I don’t want people to know I’m pregnant yet, and sharing that I’m not drinking may reveal that."
       ],
       "3": [
@@ -141,7 +140,7 @@
     },
     "brazil": {
       "1": [
-        "Please scan your face in order to get to the game room.",
+        "Please scan your face in order to enter game room.",
         "We are very innovative and use technology as much as possible, so when you gave us your passport at registration, we automatically uploaded your passport photo to our facial recognition software so we can control access to the VIP game room!"
       ]
     },
@@ -153,8 +152,7 @@
       ],
       "2": ["I heard some noise in here", "Is everything okay?"],
       "3": [
-        "Passengers’ dietary information was shared with other passengers which was not disclosed in the privacy notice",
-        "This is a problem!"
+        "Dietary information of passengers was shared with other passengers which was not disclosed in the privacy notice. This is a problem!"
       ],
       "4": [
         "Hmmmm. That seems unlikely.",
@@ -168,7 +166,11 @@
         "That situation in the game room was very uncomfortable, wasn’t it?",
         "Look at the privacy notice again to understand whether what happened in the game room was legit."
       ],
-      "2": ["This doesn’t seem right. What can I do?"],
+      "2": [
+        "Good job.",
+        "You answered all the questions correctly and that's why you probably won't be surprised that the ship is processing private data incorrectly.",
+        "What can you do about it?"
+      ],
       "3": [
         "Aha! The notice is torn – maybe the rest of it is hidden in the room."
       ]
@@ -197,7 +199,7 @@
     },
     "brazil": {
       "title": "The mini-game",
-      "a1": "Please scan your face in order to get to the game room."
+      "a1": "Please scan your face in order to enter game room."
     },
     "china": {
       "title": "Look at that!",
@@ -383,6 +385,9 @@
       "Good news!",
       "The photo we just took of you was verified by our facial recognition software."
     ],
+    "smile-photo": [
+      "Please smile, our cameras are all over the room."
+    ],
     "questions": {
       "1": {
         "label": "Did the privacy notice indicate your photo might be taken and scanned?",
@@ -411,8 +416,8 @@
       }
     },
     "mini_game": {
-      "title": "Hit-a-camera ",
-      "description": "You have 30 seconds to hit cameras. For every camera clicked during a 30-second run you will get 50 points. You can repeat the game up to 5 times and the highest score will be remembered and contributed to your country‘s score.",
+      "title": "Franklin",
+      "description": "Now's your chance to knock out some of those cameras you were concerned about. You have 30 seconds to hit cameras. For every camera clicked during a 30-second run you will get 50 points. You can repeat the game up to 5 times",
       "score": "Your score is: <strong> {score} points.</strong>",
       "points": "points",
       "high_score": "High score:",
@@ -420,6 +425,9 @@
       "ranking": "Congratulations! You have the highest score.",
       "statistics": "Statistics of former players:"
     },
+
+
+
     "welcome-to-game-room": [
       "Welcome to the game room.",
       "Here you can see the result of all countries. Try to get the highest score possible in the game to contribute to your country‘s score."
@@ -497,15 +505,15 @@
     "score-board-inline": "OK let's go see the captain.",
     "privacy-questions": [
       {
-        "label": "Captain Maria shared the principle of being transparent. That means that the ship should have let me know in the privacy notice that my information might be shared on the scoreboard. Is there anything in the notice about that?",
+        "label": "Captain Maria shared the principle of being transparent. That means that the ship should have let you know in the privacy notice that your information might be shared on the scoreboard. Is there anything in the notice about that?",
         "options": ["Yes", "No"]
       },
       {
-        "label": "She also shared the principle of not retaining information longer than necessary. The privacy notice doesn’t say anything about how long they keep our information, but based on the scoreboard, it looks like they have stored it for at least 10 years! Does that seem necessary?",
+        "label": "She also shared the principle of not retaining information longer than necessary. The privacy notice doesn’t say anything about how long they keep your information, but based on the scoreboard, it looks like they have stored it for at least 10 years! Does that seem necessary?",
         "options": ["Yes", "No"]
       },
       {
-        "label": "Captain Maria also said the ship should be responsible, meaning it should not use information collected for purposes other than what is was collected for. When they scanned my passport, I didn’t think they would use that information for a public scoreboard. Do you think the ship used the passport information responsibly?",
+        "label": "Captain Maria also said the ship should be responsible, meaning it should not use information collected for purposes other than what is was collected for. When they scanned your passport, you didn’t think they would use that information for a public scoreboard. Do you think the ship used the passport information responsibly?",
         "options": ["Yes", "No"]
       }
     ]
@@ -527,12 +535,12 @@
     ],
     "privacy-notice": {
       "title": "Cruise Ship Privacy Notice",
-      "description": "We take your privacy very seriously. This notice sets forth what we collect, what we share, and your right. For more details, please see the captain.",
+      "description": "We take your privacy very seriously. This notice sets forth what we collect, what we share, and your rights. For more details, please see the captain.",
       "open": "Open privacy notice",
       "close": "Close",
       "close-and-call-franklin": "Call Franklin and demand to see Captain Maria",
       "table": {
-        "title": "The Personal information we collect and how we use it",
+
         "headers": ["CATEGORY OF PERSONAL INFORMATION", "DESCRIPTION"],
         "content": [
           {
@@ -549,7 +557,7 @@
           },
           {
             "category": "Safety information",
-            "description": "we are committed to ensuring you have a safe voyage! We will ask you to let us know if you have any food allergies, and we also have a nurse on staff in the event of sea-sickness or other ailment. If you visit the nurse, we may collect infor-mation about any current or prior health conditions. This information will only be used by cruise employees for the purposes of ensuring your safety."
+            "description": "We are committed to ensuring you have a safe voyage! We will ask you to let us know if you have any food allergies, and we also have a nurse on staff in the event of sea-sickness or other ailment. If you visit the nurse, we may collect infor-mation about any current or prior health conditions. This information will only be used by cruise employees for the purposes of ensuring your safety."
           }
         ],
         "correctOptions": [1]
@@ -560,7 +568,7 @@
         "content": [
           {
             "category": "Your rights",
-            "description": "You have the right to request a copy of all Personal Information collected about you and to ask us to collect or delete that information. To exercice these rights, please contact Captain Maria."
+            "description": "You have the right to request a copy of all Personal Information collected about you and to ask us to correct or delete that information. To exercice these rights, please contact Captain Maria."
           }
         ]
       }
@@ -637,7 +645,7 @@
         },
         {
           "dir": "ltr",
-          "text": "Thanks the user for bringing the privacy concerns to her attention and invites the user to sign the captains log which is reserved for special guests",
+          "text": "Thank you for bringing the privacy concerns to my attention and I would like to invite you to sign the captains log which is reserved for special guests.",
           "isMaria": true
         },
         {
@@ -729,22 +737,22 @@
       "2": "Sorry, you've clicked on a wrong item. Have you looked under the carpet yet?"
     },
     "find-x-more": "You need to find {x} more symbols",
-    "found-last": "You‘ve found last privacy symbol!",
+    "found-last": "You‘ve found the last privacy symbol!",
     "found-all": "Congratulations! You‘ve found all privacy principles.",
     "privacy-found": "Congratulations! You found the missing part of the privacy notice.",
     "items": {
-      "bridge": "Collect only what is necessary",
       "eye": "Be transparent",
+      "bridge": "Collect only what is necessary",
       "handshake": "Use responsibly",
-      "hourglass": "Retain only as long as necessary",
-      "lock": "Protect and be vigilant"
+      "lock": "Protect and be vigilant",
+      "hourglass": "Retain only as long as necessary"
     },
     "items-explanations": {
-      "bridge": "Collect only what is necessary means you should not have to provide information about you that isn‘t necessary. This ship has a tendency to collect information everywhere – be on the lookout for times when the ship might collect more than what it needs.",
       "eye": "Be transparent means you should be able to understand what will be done with information about you. When you find the privacy notice, make sure you understand what it says!",
+      "bridge": "Collect only what is necessary means you should not have to provide information about you that isn‘t necessary. This ship has a tendency to collect information everywhere – be on the lookout for times when the ship might collect more than what it needs.",
       "handshake": "Use responsibly means that the ship should only use your personal information for the purposes for which it was collected – pay attention to what is in the privacy notice to make sure the ship isn‘t using your information for other purposes.",
-      "hourglass": "Retain only as long as necessary means the ship should not keep your information longer then it needs to. Most of what the ship collects about you should probably be deleted when the voyage ends.",
-      "lock": "Protect and be vigilant means the ship should secure your personal information and report and investigate any misuse of data. You should speak up if you see anything suspicious."
+      "lock": "Protect and be vigilant means the ship should secure your personal information and report and investigate any misuse of data. You should speak up if you see anything suspicious.",
+      "hourglass": "Retain only as long as necessary means the ship should not keep your information longer then it needs to. Most of what the ship collects about you should probably be deleted when the voyage ends."
     }
   },
   "note-from-prev-passenger": [

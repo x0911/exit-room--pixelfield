@@ -25,10 +25,6 @@
         />
         <brazil-survey
           v-if="step === 'survey'"
-          @next="step = 'countries-score'"
-        />
-        <countries-scores
-          v-if="step === 'countries-score'"
           @next="step = 'mini-game'"
         />
         <mini-game
@@ -46,6 +42,7 @@
       :model="result.model"
       :passed="result.passed"
       :perc="result.perc"
+      :step-id="stepId"
       @restart="restart"
     >
     </score-board-inline>
@@ -59,11 +56,9 @@ import ImpressStep from '~/mixins/impress-step.js';
 import MiniGame from '~/components/impress/game/brazil/mini-game';
 import FaceScan from '~/components/impress/game/brazil/face-scan';
 import RankingCard from '~/components/impress/game/brazil/ranking-card';
-import CountriesScores from '~/components/impress/game/brazil/countries-scores';
 
 export default {
   components: {
-    CountriesScores,
     RankingCard,
     FaceScan,
     MiniGame,
@@ -117,13 +112,13 @@ export default {
     restart() {
       this.stepLeave();
       this.replaceBg('brazil');
-      setTimeout(this.introEnded, 100);
     },
     openIntro() {
       this.$store.commit('SET_INSTRUCTIONS', {
         model: true,
         title: '',
         steps: ['screens.brazil.a1'],
+        nextText: this.$t('take_a_photo'),
         nextMethod: this.startGame,
       });
     },

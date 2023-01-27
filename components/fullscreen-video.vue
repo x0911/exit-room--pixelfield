@@ -66,8 +66,7 @@
                       <template>
                         <div
                           v-if="dialog.speaker && !dialog.hideSpeaker"
-                          class="font-weight-medium pb-2"
-                          style="color: rgba(255, 235, 59, 0.55)"
+                          class="font-weight-medium pb-2 yellow--text"
                         >
                           <span> {{ dialog.speaker }}: </span>
                         </div>
@@ -407,11 +406,11 @@ export default {
           title: this.$t('wrong-response'),
           steps: [dialog.wrongResponse || 'wrong-response-desc'],
           nextText: this.$t('ok'),
-          overlay: true,
+          nextMethod: (event) => (event.target['data-video-start'] = null),
         });
-        return;
+      } else {
+        this.hideVideoDialog(dialog.id, true);
       }
-      this.hideVideoDialog(dialog.id, true);
     },
     nextHandler(dialog) {
       this.playGameSound('big-button-press-1');

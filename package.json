@@ -24,6 +24,7 @@
     "impress": "^2.6.6",
     "lottie-vuejs": "^0.4.0",
     "lottie-web": "^5.7.13",
+    "moment": "^2.29.4",
     "nuxt": "^2.15.7",
     "swiper": "^5.4.5",
     "v-mask": "^2.3.0",

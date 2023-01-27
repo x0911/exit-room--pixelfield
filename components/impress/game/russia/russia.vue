@@ -147,6 +147,7 @@
       :model="result.model"
       :perc="result.perc"
       :passed="result.passed"
+      :step-id="stepId"
       @restart="restart"
     >
     </score-board-inline>

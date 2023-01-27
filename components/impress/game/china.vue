@@ -275,10 +275,10 @@
                         contain
                       ></v-img>
                     </v-avatar>
-                    <div class="f-tech text-body-1">
+                    <div class="f-tech text-h6 font-weight-bold">
                       {{ $t(`found-object.items.${foundObject.name}`) }}
                     </div>
-                    <div class="f-tech pt-2 text-body-2">
+                    <div class="f-tech pt-2 subtitle-1">
                       {{
                         $t(
                           `found-object.items-explanations.${foundObject.name}`
@@ -725,6 +725,7 @@ export default {
       });
     },
     rotateItem(i = 0) {
+      this.playGameSound('whoosh');
       const foundObjects = this.foundObject.items;
       const item = this.rotatableItems[i];
       const dirs = this.dirs;

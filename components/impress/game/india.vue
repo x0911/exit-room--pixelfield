@@ -932,6 +932,7 @@
       :model="result.model"
       :perc="result.perc"
       :passed="result.passed"
+      :step-id="stepId"
       videoId="game-outro"
       @restart="restart()"
     >

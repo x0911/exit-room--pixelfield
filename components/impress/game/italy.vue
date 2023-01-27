@@ -20,7 +20,7 @@
                       v-if="q.hasTitle"
                       class="mb-4 text-h6 font-weight-bold"
                     >
-                      {{ $tr(`italy.questions-indexes.${i + 1}`) }}/
+                      {{ $tr(`italy.questions-indexes.${i + 1}`) }})
                       {{ $tr(`italy.questions-titles.${i + 1}`) }}
                     </div>
                     <div class="mb-2 text-body-1 font-weight-medium">
@@ -117,8 +117,9 @@
       :model="result.model"
       :perc="result.perc"
       :passed="result.passed"
+      :step-id="stepId"
       :disable-try-again="true"
-      @restart="restart()"
+      @restart="restart"
     >
     </score-board-inline>
   </v-container>
@@ -297,7 +298,6 @@ export default {
       this.stepLeave();
       setTimeout(() => {
         this.stepEnter();
-        this.videoEnded();
       }, 100);
     },
     openIntro() {

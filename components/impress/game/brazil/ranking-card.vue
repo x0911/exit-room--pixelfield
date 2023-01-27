@@ -37,6 +37,7 @@
 </template>
 
 <script>
+import moment from "moment";
 import ScoreboardSurvey from '~/components/impress/game/brazil/scoreboard-survey.vue';
 
 export default {
@@ -73,7 +74,7 @@ export default {
       players: [
         {
           passport: 'Q29181948',
-          voyageDate: '[***]',
+          voyageDate: moment().format('MMMM YYYY'),
           cabin: 42,
         },
         {

@@ -49,7 +49,16 @@ export default {
           model: true,
           steps: [`brazil.validated-photo`],
           overlay: true,
-          nextMethod: (event) => this.$emit('next', event),
+          nextMethod: (event) => {
+            event.target['data-video-start'] = null;
+            this.$store.commit('SET_INSTRUCTIONS', {
+              bottomModel: true,
+              title: this.$t('franklin'),
+              steps: ['brazil.smile-photo'],
+              image: 'avatars/franklin.jpg',
+              nextMethod: (nextEvent) => this.$emit('next', nextEvent),
+            });
+          },
         });
       }, 2000);
     },

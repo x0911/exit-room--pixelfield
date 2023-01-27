@@ -94,7 +94,12 @@
         </template>
       </v-card>
       <div class="d-flex mt-4 align-center justify-center">
-        <v-btn v-if="model === 1" class="px-6 mr-8" large @click="backHandler">
+        <v-btn
+          v-if="model === 1 || model === 2"
+          class="px-6 mr-8"
+          large
+          @click="backHandler"
+        >
           <v-icon class="mr-2">mdi-keyboard-backspace</v-icon>
           {{ model === 2 ? $t('previous') : $t('back_to_menu') }}
         </v-btn>
@@ -114,6 +119,7 @@
       :model="result.model"
       :passed="result.passed"
       :perc="result.perc"
+      :step-id="stepId"
       @restart="restart"
     >
     </score-board-inline>
@@ -233,6 +239,7 @@ export default {
       this.$set(this, 'model', 0);
     },
     resetValue() {
+      this.replaceBg('egypt');
       this.questions.forEach((q) => {
         q.value = null;
       });
@@ -241,7 +248,6 @@ export default {
       this.stepLeave();
       setTimeout(() => {
         this.resetValue();
-        this.videoEnded();
       }, 100);
     },
     openIntro() {
