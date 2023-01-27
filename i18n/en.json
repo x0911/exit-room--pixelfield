@@ -533,6 +533,7 @@
       "Hello again and welcome to your cabin. You are staying in Cabin 42, which is a very special room featuring objects I have collected in my travels. I suggest you spend some time here admiring these objects from all angles. ",
       "<div class='d-flex justify-end'><i class='f-hand-2 font-weight-bold text-h5'>- Regards, Franklin</i></div>"
     ],
+    "privacy-principles" : "Open privacy principles",
     "privacy-notice": {
       "title": "Cruise Ship Privacy Notice",
       "description": "We take your privacy very seriously. This notice sets forth what we collect, what we share, and your rights. For more details, please see the captain.",

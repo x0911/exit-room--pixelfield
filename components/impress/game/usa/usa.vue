@@ -1,11 +1,13 @@
 <template>
   <v-container>
-    <v-dialog
+    <component
+      :is="isUsaQuestionsOpen ? 'div' : 'v-dialog'"
       :retain-focus="false"
       :value="videos.intro.ended"
       class="elevation-0"
       content-class="elevation-0"
       max-width="700"
+      style="max-width: 700px; margin: 0 auto"
       overlay-opacity="0"
       persistent
     >
@@ -53,7 +55,7 @@
           fixed
           large
           right
-          style="bottom: 30px; right: 3rem"
+          style="bottom: 90px; right: 3rem"
           tile
           @click="
             playGameSound('big-button-press-1');
@@ -64,7 +66,60 @@
           <v-icon>mdi-file-document</v-icon>
         </v-btn>
       </div>
-    </v-dialog>
+
+      <div class="d-flex justify-end">
+        <v-btn
+          v-if="canOpenPrivacySymbols"
+          class="btn-open-privacy px-6 mr-4"
+          color="primary"
+          fixed
+          large
+          right
+          style="bottom: 30px; right: 3rem"
+          tile
+          @click="
+            playGameSound('big-button-press-1');
+            isPrivacyPrincipleOpen = true;
+          "
+        >
+          <span class="mr-3">{{ $t('china.privacy-principles') }}</span>
+          <v-icon>mdi-file-document</v-icon>
+        </v-btn>
+      </div>
+
+      <v-dialog :value="isPrivacyPrincipleOpen" max-width="750" persistent>
+        <v-card class="mx-auto pa-4 info-screen" flat light tile>
+          <div class="d-flex justify-end">
+            <v-icon @click="isPrivacyPrincipleOpen = false">mdi-close</v-icon>
+          </div>
+          <div class="text-center font-weight-bold mb-4">
+            {{ $t(`found-object.found-all`) }}
+          </div>
+          <div
+            v-for="(symbol, sKey, sIdx) in $t(`found-object.items`)"
+            :key="sKey"
+            :style="sIdx !== 4 && 'border-bottom: 1px solid lightgray'"
+            class="ml-4 d-flex justify-space-between align-center py-2"
+          >
+            <div
+              class="text-body-1 text-capitalize px-auto"
+              style="width: 40px"
+            >
+              <img
+                style="padding-right: 0.5rem"
+                :src="
+                  require(`@/assets/images/games/china/symbols/${sKey}.svg`)
+                "
+              />
+            </div>
+            <div class="text-body-1" style="width: 210px">{{ symbol }}</div>
+            <div class="text-body-2" style="width: 440px">
+              {{ $t(`found-object.items-explanations`)[sKey] }}
+            </div>
+          </div>
+        </v-card>
+      </v-dialog>
+    </component>
     <score-board-inline
       :label="$t('usa.score-board-inline')"
       :model="result.model"
@@ -107,7 +162,9 @@ export default {
     isMissingPieceOpen: false,
     isChatOpen: false,
     isPrivacyOpen: false,
+    isPrivacyPrincipleOpen: false,
     canOpenPrivacyNotice: true,
+    canOpenPrivacySymbols: false,
     isLoading: false,
     videos: {
       intro: {
@@ -216,6 +273,7 @@ export default {
     completeUsaQuestionsHandler() {
       this.canOpenPrivacyNotice = false;
       this.isUsaQuestionsOpen = false;
+      this.canOpenPrivacySymbols = false;
       this.$store.commit('SET_INSTRUCTIONS', {
         bottomModel: true,
         steps: ['speeches.usa.2'],
@@ -267,6 +325,7 @@ export default {
         await this.addLoading();
         this.isUsaQuestionsOpen = true;
         this.canOpenPrivacyNotice = true;
+        this.canOpenPrivacySymbols = true;
       }
     },
     async finishGame() {
