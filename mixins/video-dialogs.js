@@ -26,7 +26,7 @@ export default {
       const reception = [
         {
           speaker: this.$t('receptionist'),
-          avatar: 'receptionist.jpg',
+          avatar: 'receptionist.png',
           from: 11,
           textArray: this.$tr('speeches.italy.1', 'array'),
           isConfirmable: true,
