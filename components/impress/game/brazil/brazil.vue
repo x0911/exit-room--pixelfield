@@ -138,7 +138,7 @@ export default {
     startGame(nextEvent) {
       nextEvent.target['data-video-start'] = `${this.stepId}-x2`;
       this.$store.commit('SET_VIDEO_IS_SKIPPABLE', false);
-      this.$store.commit('PLAY_VIDEO', `video-${this.stepId}-x2`);
+      this.$store.commit('PLAY_VIDEO', `${this.stepId}-x2`);
     },
     nextFaceScanHandler(event) {
       this.step = null;
