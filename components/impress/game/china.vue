@@ -675,6 +675,7 @@ export default {
           model: true,
           title: this.$t('screens.china.title2'),
           steps: ['screens.china.a2'],
+          nextMethod: (event) => (event.target['data-video-start'] = null),
         });
         return;
       }
