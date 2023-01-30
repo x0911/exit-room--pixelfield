@@ -150,7 +150,7 @@
         "Why don’t you take a look at the ship’s privacy notice to see whether it was appropriate to collect and share dietary restrictions with other passengers.",
         "You may also want to hunt for the privacy principles that Captain Maria mentioned so you know what to look for in the notice."
       ],
-      "2": ["I heard some noise in here", "Is everything okay?"],
+      "2": ["I heard some noise in here.", "Is everything okay?"],
       "3": [
         "Dietary information of passengers was shared with other passengers which was not disclosed in the privacy notice. This is a problem!"
       ],
@@ -199,7 +199,7 @@
     },
     "brazil": {
       "title": "The mini-game",
-      "a1": "Please scan your face in order to enter game room."
+      "a1": "Please take a picture of your face in order to enter game room."
     },
     "china": {
       "title": "Look at that!",
