@@ -660,7 +660,10 @@ export default {
         model: true,
         steps: [`privacy-notice.questions.description`],
         showNextArrow: true,
-        nextMethod: this.nextStep,
+        nextMethod: (event) =>{
+          event.target['data-video-start'] = null
+          this.nextStep(event)
+        }
       });
     },
     nextStep(event) {
