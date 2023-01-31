@@ -140,6 +140,9 @@ export default {
       nextEvent.target['data-video-start'] = `${this.stepId}-x2`;
       this.$store.commit('SET_VIDEO_IS_SKIPPABLE', false);
       this.$store.commit('PLAY_VIDEO', `${this.stepId}-x2`);
+      setTimeout(() => {
+        nextEvent.target['data-video-start'] = null;
+      }, 2000)
     },
     nextFaceScanHandler(event) {
       this.step = null;
