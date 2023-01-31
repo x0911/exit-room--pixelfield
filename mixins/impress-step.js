@@ -1,42 +1,21 @@
 export default {
-  data: () => ({
-    timings: {
-      italy: 4700,
-      egypt: 8000,
-      china: 5700,
-      brazil: 5700,
-      usa: 5000,
-      russia: 10500,
-      india: 4700,
-    },
-  }),
+  data: () => ({}),
   mounted() {
     const stepId = this.stepId;
     if (stepId) {
       if (this.stepEnter) {
         this.$nuxt.$on(`impress-step-enter-${stepId}`, () => {
+          this.setInitData();
           this.stepEnter();
-          // Show text before task
-          // const resumeVideo = () => {
-          //   return this.$nuxt.$emit('RESUME_VIDEO');
-          // };
-          // const keys = Object.keys(this.timings);
-          // if (keys.includes(stepId)) {
-          //   setTimeout(() => {
-          //     this.$nuxt.$emit('SHOW_MODEL_IF_PLAYING', {
-          //       model: true,
-          //       steps: [`before-task.${stepId}`],
-          //       nextMethod: resumeVideo,
-          //       ignoreIfShown: true,
-          //     });
-          //   }, this.timings[stepId]);
-          // }
         });
       }
       if (this.stepLeave) {
         this.$nuxt.$on(`impress-step-leave-${stepId}`, () => {
           this.stepLeave();
           this.replaceBg(stepId);
+          setTimeout(() => {
+            this.getInitData();
+          }, 500);
         });
       }
     }
@@ -49,6 +28,29 @@ export default {
     }
   },
   methods: {
+    setInitData() {
+      const data = this._data;
+      const initData = this.$store.getters.initData;
+      const stepData = initData[data.stepId];
+      if (data.stepId && stepData && !stepData.stepId) {
+        const stringified = JSON.stringify({ ...data });
+        const parsed = JSON.parse(stringified);
+        this.$store.commit('SET_INIT_DATA', parsed);
+      }
+    },
+    getInitData() {
+      const stepId = this.stepId;
+      const initData = this.$store.getters.initData;
+      const stepData = initData[stepId];
+      if (stepId && stepData && stepData.stepId) {
+        const stringified = JSON.stringify({ ...stepData });
+        const parsed = JSON.parse(stringified);
+        Object.keys(parsed).forEach((key) => {
+          const v = parsed[key];
+          this.$set(this, key, v);
+        });
+      }
+    },
     mandatoryQuizCheck() {
       const perc = localStorage.getItem(`room_italy`) || '0';
       const intPerc = parseInt(perc);

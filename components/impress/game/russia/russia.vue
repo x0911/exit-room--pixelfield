@@ -225,7 +225,9 @@ export default {
     this.$nuxt.$on(`video-${this.stepId}-ended`, this.videoEnded);
   },
   methods: {
-    stepEnter() {},
+    stepEnter() {
+      // Always leave method `stepEnter` even if not used
+    },
     stepLeave() {
       this.$set(this.videos.intro, 'ended', false);
       this.$set(this.result, 'model', false);

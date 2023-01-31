@@ -23,10 +23,7 @@
           :step-id="stepId"
           @next="nextFaceScanHandler"
         />
-        <brazil-survey
-          v-if="step === 'survey'"
-          @next="step = 'mini-game'"
-        />
+        <brazil-survey v-if="step === 'survey'" @next="step = 'mini-game'" />
         <mini-game
           v-if="step === 'mini-game'"
           :is-mini-game="step === 'mini-game'"
@@ -98,7 +95,11 @@ export default {
     });
   },
   methods: {
+    stepEnter() {
+      // Always leave method `stepEnter` even if not used
+    },
     stepLeave() {
+      // Always leave method `stepLeave` even if not used
       this.$set(this, 'isLoading', null);
       this.$set(this, 'step', 'face-scan');
       this.$set(this.videos.intro, 'ended', false);

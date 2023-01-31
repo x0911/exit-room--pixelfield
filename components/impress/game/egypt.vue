@@ -182,6 +182,9 @@ export default {
     this.$nuxt.$on(`video-${this.stepId}-x2-ended`, this.showScoreBoard);
   },
   methods: {
+    stepEnter() {
+      // Always leave method `stepEnter` even if not used
+    },
     nextStep(event) {
       this.playGameSound('big-button-press-1');
       event.target['data-video-start'] = null;

@@ -224,6 +224,9 @@ export default {
     });
   },
   methods: {
+    stepEnter() {
+      // Always leave method `stepEnter` even if not used
+    },
     addLoading(ms = 1000) {
       this.isLoading = true;
       return new Promise((resolve) => {

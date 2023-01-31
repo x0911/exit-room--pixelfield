@@ -15,6 +15,7 @@
               [`item-${item.name}--up`]: item.isOpened,
             }"
             class="item"
+            :style="`z-index: ${index + 1}`"
             @click="selectItemHandler(item)"
           >
             <img
@@ -116,11 +117,6 @@ export default {
           modal: true,
         },
         {
-          name: 'charger',
-          isOpened: false,
-          modal: true,
-        },
-        {
           name: 'cup',
           isOpened: false,
           modal: true,
@@ -143,6 +139,11 @@ export default {
             component: 'missing-privacy-notice',
             modal: true,
           },
+        },
+        {
+          name: 'charger',
+          isOpened: false,
+          modal: true,
         },
       ],
       wrongItems: [],

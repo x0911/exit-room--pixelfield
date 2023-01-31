@@ -190,7 +190,7 @@ export default {
         {
           component: 'Gameitaly',
           id: 'italy',
-          videos: ['italy'],
+          videos: ['italy', 'italy-x2'],
           x: `-${w}`,
           y: '0',
           z: '-1500',

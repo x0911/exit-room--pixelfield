@@ -75,6 +75,11 @@ export const state = () => ({
       canPlay: false,
       ended: false,
     },
+    'italy-x2': {
+      path: '1st-task-v2.mp4',
+      canPlay: false,
+      ended: false,
+    },
     egypt: {
       path: '2nd-room-v1.mp4',
       canPlay: false,
@@ -175,9 +180,24 @@ export const state = () => ({
   mapLoaded: false,
   videoIsSkippable: true,
   fullscreenLoader: false,
+  initData: {
+    italy: {},
+    egypt: {},
+    china: {},
+    brazil: {},
+    usa: {},
+    russia: {},
+  },
 });
 
 export const mutations = {
+  SET_INIT_DATA(state, payload) {
+    Object.keys(state.initData).forEach((key) => {
+      if (payload.stepId === key) {
+        state.initData[key] = payload;
+      }
+    });
+  },
   SET_ACTIVE_STEP(state, payload) {
     state.activeStep = payload;
   },
@@ -379,4 +399,5 @@ export const getters = {
   videoIsSkippable: (state) => state.videoIsSkippable,
   fullscreenLoader: (state) => state.fullscreenLoader,
   roomsBgs: (state) => state.roomsBgs,
+  initData: (state) => state.initData,
 };

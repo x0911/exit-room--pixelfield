@@ -286,7 +286,7 @@ export default {
       });
     },
     stepEnter() {
-      //
+      // Always leave method `stepEnter` even if not used
     },
     stepLeave() {
       this.resetValues();
