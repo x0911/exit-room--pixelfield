@@ -28,7 +28,7 @@
         <v-row>
           <v-col class="my-0 mx-auto pb-8" cols="12">
             <div
-              class="white--text text-body-2 font-weight-medium mt-4 pt-10 pb-2 px-10 text-center"
+              class="white--text  text-body-2 font-weight-medium mt-16 pt-10 pb-2 px-10 text-center"
             >
               {{ $t('china.privacy-notice.description') }}
             </div>
@@ -37,49 +37,49 @@
           <v-col class="mx-auto my-0" cols="12">
             <v-simple-table class="transparent">
               <thead>
-                <tr>
-                  <th
-                    class="pl-16 pr-0 font-weight-bold text-size-7"
-                    style="min-width: 315px"
-                  >
-                    <div>{{ $t('china.privacy-notice.table.headers[0]') }}</div>
-                  </th>
-                  <th class="pl-1 font-weight-bold text-size-7">
-                    {{ $t('china.privacy-notice.table.headers[1]') }}
-                  </th>
-                </tr>
+              <tr>
+                <th
+                  class="pl-16 pr-0 font-weight-bold text-size-7"
+                  style="min-width: 315px"
+                >
+                  <div>{{ $t('china.privacy-notice.table.headers[0]') }}</div>
+                </th>
+                <th class="pl-1 font-weight-bold text-size-7">
+                  {{ $t('china.privacy-notice.table.headers[1]') }}
+                </th>
+              </tr>
               </thead>
               <tbody>
-                <tr
-                  v-for="(item, index) in options"
-                  :key="index"
-                  class="table-line"
+              <tr
+                v-for="(item, index) in options"
+                :key="index"
+                class="table-line"
+              >
+                <td
+                  class="font-weight-bold d-flex gap-2 align-center pt-6 pl-16 ml-6 text-size-8"
                 >
-                  <td
-                    class="font-weight-bold d-flex gap-2 align-center pt-6 pl-16 ml-6 text-size-8"
-                  >
-                    <v-checkbox
-                      v-if="isForm"
-                      @change="updateOptions(index)"
-                      :error="hasErrors"
-                      :value="item.value"
-                      dark
-                      color="white"
-                    />
-                    <div :style="hasErrors && 'color: #FF5252 !important;'">
-                      {{ item.category }}
-                    </div>
-                  </td>
-                  <td
-                    :style="hasErrors && 'color: #FF5252 !important;'"
-                    class="text-size-7 white--text pl-1 pr-16 py-0 text-left"
-                  >
-                    {{ item.description }}
-                  </td>
-                </tr>
+                  <v-checkbox
+                    v-if="isForm"
+                    :error="hasErrors"
+                    :value="item.value"
+                    color="white"
+                    dark
+                    @change="updateOptions(index)"
+                  />
+                  <div :style="hasErrors && 'color: #FF5252 !important;'">
+                    {{ item.category }}
+                  </div>
+                </td>
+                <td
+                  :style="hasErrors && 'color: #FF5252 !important;'"
+                  class="text-size-7 white--text pl-1 pr-16 py-0 text-left"
+                >
+                  {{ item.description }}
+                </td>
+              </tr>
               </tbody>
             </v-simple-table>
-            <div id="cardBottom" />
+            <div id="cardBottom"/>
           </v-col>
         </v-row>
       </v-img>
@@ -146,7 +146,7 @@ export default {
       return this.value && this.scrollToBottom;
     },
     isValidated() {
-      return this.options.every(({ value }, index) =>
+      return this.options.every(({value}, index) =>
         this.correctOptions.includes(index) ? value : !value
       );
     },
@@ -164,7 +164,7 @@ export default {
         if (value) {
           setTimeout(() => {
             const cardBottomRef = document.getElementById('cardBottom');
-            cardBottomRef.scrollIntoView({ behavior: 'smooth' });
+            cardBottomRef.scrollIntoView({behavior: 'smooth'});
             this.isScrollFinished = true;
           }, 1000);
         }

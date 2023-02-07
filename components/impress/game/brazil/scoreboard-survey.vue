@@ -1,5 +1,5 @@
 <template>
-  <v-card flat class="transparent pa-8">
+  <v-card class="transparent pa-8" flat>
     <div
       v-for="(question, qIndex) in questions"
       :key="qIndex"
@@ -52,7 +52,6 @@ export default {
       questions: this.$t(`brazil.scoreboard-questions`).map((question) => ({
         ...question,
         value: null,
-        correctAnswer: 'No',
         hasError: false,
       })),
     };
@@ -60,7 +59,7 @@ export default {
   computed: {
     isValid() {
       return this.questions.every(
-        ({ value, correctAnswer }) => value && value === correctAnswer
+        ({value}) => value
       );
     },
   },
@@ -68,7 +67,7 @@ export default {
     validateHandler() {
       this.playGameSound('big-button-press-1');
       this.questions.forEach((question) => {
-        question.hasError = question.value !== question.correctAnswer;
+        question.hasError = !question.value;
       });
       if (!this.isValid) return;
       this.$emit('finish');

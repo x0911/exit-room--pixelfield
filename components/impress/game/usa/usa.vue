@@ -6,10 +6,10 @@
       :value="videos.intro.ended"
       class="elevation-0"
       content-class="elevation-0"
-      max-width="700"
-      style="max-width: 700px; margin: 0 auto"
       overlay-opacity="0"
       persistent
+      scrollable
+      style="max-width: 700px; margin: 0 auto"
     >
       <div v-if="isLoading" class="splash-screen_loading">
         <lottie-animation
@@ -19,7 +19,7 @@
           loop
         ></lottie-animation>
       </div>
-      <privacy-notice v-if="isPrivacyOpen" v-model="isPrivacyOpen" />
+      <privacy-notice v-if="isPrivacyOpen" v-model="isPrivacyOpen"/>
       <usa-questions
         v-if="isUsaQuestionsOpen"
         @next="completeUsaQuestionsHandler"
@@ -106,10 +106,10 @@
               style="width: 40px"
             >
               <img
-                style="padding-right: 0.5rem"
                 :src="
                   require(`@/assets/images/games/china/symbols/${sKey}.svg`)
                 "
+                style="padding-right: 0.5rem"
               />
             </div>
             <div class="text-body-1" style="width: 210px">{{ symbol }}</div>

@@ -57,8 +57,8 @@
                       >
                         <v-checkbox
                           :key="ai"
-                          hide-details
                           v-model="q.value"
+                          hide-details
                           :value="ai"
                           multiple
                           :label="answer"
@@ -343,11 +343,21 @@ export default {
                 ];
               }
             }
+
+            const answerId = q.type === 'text' ? null : q.value;
+            const answers = []
+            if (Array.isArray(answerId)) {
+              answerId.forEach((id, index) => answers.push({ answer_id:id, answer_text: answerText[index] }))
+            } else {
+              answers.push({
+                answer_id: answerId, answer_text: answerText
+              })
+            }
+
             return {
               question_id: i + 1,
               question_text: qText,
-              answer_id: q.type === 'text' ? null : q.value,
-              answer_text: answerText,
+              answers,
               is_correct: true,
             };
           });

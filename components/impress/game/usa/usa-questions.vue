@@ -6,10 +6,11 @@
       :class="{ 'mb-6': qIndex !== questions.length - 1 }"
     >
       <div
-        class="pb-2 text-body-1 font-weight-medium"
+        :inner-html.prop="question.label"
         :class="{ 'error--text': question.hasError }"
+        class="pb-2 text-body-1 font-weight-medium"
       >
-        {{ question.label }}
+
       </div>
       <v-radio-group
         v-for="(option, oIdx) in question.options"
@@ -18,11 +19,11 @@
         hide-details
       >
         <v-radio
+          :class="question.hasError ? 'error--text' : 'white--text'"
           :label="option"
           :value="option"
           class="ma-0 text-body-1"
           color="primary"
-          :class="question.hasError ? 'error--text' : 'white--text'"
           hide-details
         />
       </v-radio-group>

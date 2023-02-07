@@ -23,7 +23,7 @@
           :step-id="stepId"
           @next="nextFaceScanHandler"
         />
-        <brazil-survey v-if="step === 'survey'" @next="step = 'mini-game'" />
+        <brazil-survey v-if="step === 'survey'" @next="brazilSurveyNext" />
         <mini-game
           v-if="step === 'mini-game'"
           :is-mini-game="step === 'mini-game'"
@@ -157,6 +157,16 @@ export default {
       this.isLoading = null;
       this.$set(this, 'step', 'face-scan');
       window.impressAPI.goto('map');
+    },
+    brazilSurveyNext() {
+      this.$store.commit('SET_INSTRUCTIONS', {
+        model: true,
+        steps: ['screens.brazil.a2'],
+        nextMethod: (event) => {
+          event.target['data-video-start'] = null;
+          this.step = 'mini-game'
+        },
+      });
     },
     async submitGame() {
       try {

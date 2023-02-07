@@ -45,7 +45,7 @@
             >
               {{ $t('next') }}
               <v-icon class="ms-2"
-                >mdi-keyboard-backspace mdi-rotate-180
+              >mdi-keyboard-backspace mdi-rotate-180
               </v-icon>
             </v-btn>
           </v-card-actions>
@@ -84,7 +84,7 @@
             >
               {{ $t('next') }}
               <v-icon class="ms-2"
-                >mdi-keyboard-backspace mdi-rotate-180
+              >mdi-keyboard-backspace mdi-rotate-180
               </v-icon>
             </v-btn>
           </v-card-actions>
@@ -133,9 +133,9 @@
                     >
                       <v-radio
                         :key="`o-${i}-${oi}`"
+                        :class="q.hasError ? 'error--text' : 'white--text'"
                         :label="option"
                         :value="oi"
-                        :class="q.hasError ? 'error--text' : 'white--text'"
                         color="white"
                         dark
                       ></v-radio>
@@ -217,7 +217,7 @@
             >
               {{ $t('next') }}
               <v-icon class="ms-2"
-                >mdi-keyboard-backspace mdi-rotate-180
+              >mdi-keyboard-backspace mdi-rotate-180
               </v-icon>
             </v-btn>
           </v-card-actions>
@@ -226,9 +226,9 @@
     </v-container>
     <div v-if="step === 3 && videos.intro.ended" class="items-container">
       <v-img
-        contain
-        class="items-container__background"
         :src="require('@/assets/images/bg/china-v3-bg.jpg')"
+        class="items-container__background"
+        contain
       >
         <template v-for="(item, i) in rotatableItems">
           <div
@@ -275,10 +275,10 @@
                         contain
                       ></v-img>
                     </v-avatar>
-                    <div class="f-tech text-h6 font-weight-bold">
+                    <div class="f-tech text-h5 font-weight-bold">
                       {{ $t(`found-object.items.${foundObject.name}`) }}
                     </div>
-                    <div class="f-tech pt-2 subtitle-1">
+                    <div class="f-tech pt-2 text-h6">
                       {{
                         $t(
                           `found-object.items-explanations.${foundObject.name}`
@@ -293,17 +293,20 @@
                     v-if="foundObject.items.length === foundObject.count"
                   >
                     <!-- Found All Symbols -->
-                    <div class="text-h5">
+                    <div class="text-h6 font-weight-medium">
                       {{ $t('found-object.found-last') }}
                     </div>
                   </template>
                   <template v-else>
-                    <div class="text-h5">
+                    <div class="text-h6 found-last font-weight-medium">
                       {{ $t('found-object.title') }}
                     </div>
                     <div>
                       {{
-                        $t('found-object.find-x-more', {
+                        (foundObject.count - foundObject.items.length) === 1 ?
+                          $t('found-object.find-one-more', {
+                          x: foundObject.count - foundObject.items.length,
+                        }) : $t('found-object.find-x-more', {
                           x: foundObject.count - foundObject.items.length,
                         })
                       }}
@@ -523,7 +526,7 @@ export default {
   computed: {
     isQuestionsValid() {
       return this.questions.every(
-        ({ value, correctValue }) => value === correctValue
+        ({value, correctValue}) => value === correctValue
       );
     },
     nextDisabled() {
@@ -660,7 +663,7 @@ export default {
         model: true,
         steps: [`privacy-notice.questions.description`],
         showNextArrow: true,
-        nextMethod: (event) =>{
+        nextMethod: (event) => {
           event.target['data-video-start'] = null
           this.nextStep(event)
         }

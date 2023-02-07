@@ -1,10 +1,10 @@
 <template>
   <v-card
-    max-height="90vh"
-    style="overflow-y: scroll"
     class="px-8 pt-4 pb-8"
     flat
     light
+    max-height="90vh"
+    style="overflow-y: scroll"
   >
     <v-card-title
       :inner-html.prop="$t('brazil.mini_game.ranking')"
@@ -12,25 +12,27 @@
     />
     <v-card-text class="px-0">
       <v-card class="pa-2 my-0 mx-auto" light style="border: 1px solid black">
-        <v-col
-          class="white--text text-center text-h5 py-6 mb-2"
-          style="background-color: #080b6cff"
+        <div style="border: 6px solid red">
+          <v-col
+            class="white--text text-center text-h5 py-6 mb-2"
+            style="background-color: #080b6cff"
           >Top Scores {{ players.id }}
-        </v-col>
-        <v-row v-for="(player, pIdx) in players" :key="pIdx" class="pt-2">
-          <v-col class="pl-12 pr-8" cols="3">
-            <img
-              :src="require(`@/assets/images/avatars/player-${pIdx + 1}.jpg`)"
-              width="80"
-            />
           </v-col>
-          <v-col cols="9"
-            >Passport number: {{ player.passport }}<br />
-            Voyage date: {{ player.voyageDate }} <br />
-            Cabin: {{ player.cabin }}
-          </v-col>
-        </v-row>
-        <scoreboard-survey @finish="$emit('next')" />
+          <v-row v-for="(player, pIdx) in players" :key="pIdx" class="pt-2">
+            <v-col class="pl-12 pr-8" cols="3">
+              <img
+                :src="require(`@/assets/images/avatars/player-${pIdx + 1}.jpg`)"
+                width="80"
+              />
+            </v-col>
+            <v-col cols="9"
+            >Passport number: {{ player.passport }}<br/>
+              Voyage date: {{ player.voyageDate }} <br/>
+              Cabin: {{ player.cabin }}
+            </v-col>
+          </v-row>
+        </div>
+        <scoreboard-survey @finish="$emit('next')"/>
       </v-card>
     </v-card-text>
   </v-card>
@@ -42,7 +44,7 @@ import ScoreboardSurvey from '~/components/impress/game/brazil/scoreboard-survey
 
 export default {
   name: 'RankingCard',
-  components: { ScoreboardSurvey },
+  components: {ScoreboardSurvey},
   data() {
     return {
       items: [

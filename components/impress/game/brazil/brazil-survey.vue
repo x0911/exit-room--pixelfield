@@ -4,20 +4,20 @@
       <div class="mb-4">
         <v-card class="info-screen border-3" flat light tile>
 
-          <template >
+          <template>
             <div class="my-1 mt-4 pl-4">
               <v-btn
-                style="color: #444c61 !important"
-                class="text-underline text-body-1 font-weight-medium f-odibee-sans px-0"
+                class="text-underline  text-body-1 font-weight-bold f-odibee-sans px-0"
                 small
+                style="color: #444c61 !important"
                 text
                 @click="
                       playGameSound('big-button-press-1');
                       isPrivacyOpen = true;
                     "
               >
-                <v-icon class="me-1" small>mdi-launch</v-icon>
-                {{ $tr(`brazil.questions.3.link`) }}
+                <v-icon class="me-1 " small>mdi-launch</v-icon>
+                {{ $tr(`brazil.questions.2.link`) }}
               </v-btn>
             </div>
           </template>
@@ -71,7 +71,7 @@
         </v-btn>
       </div>
     </v-card>
-    <privacy-notice v-if="isPrivacyOpen" v-model="isPrivacyOpen" />
+    <privacy-notice v-if="isPrivacyOpen" v-model="isPrivacyOpen"/>
   </div>
 </template>
 
@@ -80,7 +80,7 @@ import PrivacyNotice from '~/components/impress/game/shared/privacy-notice.vue';
 
 export default {
   name: 'BrazilSurvey',
-  components: { PrivacyNotice },
+  components: {PrivacyNotice},
   data() {
     return {
       isPrivacyOpen: false,
@@ -90,6 +90,7 @@ export default {
           value: null,
           type: 'checkbox',
           hasError: false,
+          correctValue: 1,
         },
         {
           question: '',
@@ -103,30 +104,23 @@ export default {
           type: 'checkbox',
           isLink: true,
           hasError: false,
-        },
-        {
-          question: '',
-          value: null,
-          type: 'checkbox',
-          correctValue: 1,
-          hasError: false,
+          correctValue: 1
         },
       ],
     };
   },
   computed: {
     isNotValid() {
-      const notAllAnswered = this.questions.some(({ value }) => value === null);
-      const lastQuestion = [...this.questions].pop();
-      return notAllAnswered || lastQuestion.value !== lastQuestion.correctValue;
+      return this.questions.some(({ hasError }) => hasError)
     },
   },
   methods: {
     finishSurveyHandler() {
       this.playGameSound('big-button-press-1');
-      this.questions[this.questions.length - 1].hasError =
-        this.questions[this.questions.length - 1].value !==
-        this.questions[this.questions.length - 1].correctValue;
+
+      [0, 2].forEach(qIndex => {
+        this.questions[qIndex].hasError = this.questions[qIndex].value !== this.questions[qIndex].correctValue;
+      })
 
       if (this.isNotValid) return;
       this.$emit('next');

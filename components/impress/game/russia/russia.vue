@@ -1,33 +1,33 @@
 <template>
   <v-container>
     <v-dialog
+      :retain-focus="false"
       :value="videos.intro.ended"
-      overlay-opacity="0"
-      persistent
       class="elevation-0"
       content-class="elevation-0"
-      :retain-focus="false"
       max-width="900"
+      overlay-opacity="0"
+      persistent
     >
       <!-- puzzle-game v-if="step === 1" @next="puzzleNextHandler" /-->
-      <v-card v-if="step === 1" class="transparent" tile flat>
+      <v-card v-if="step === 1" class="transparent" flat tile>
         <v-card-text class="px-0 py-2 info-screen v-card darken border-3">
-          <v-card class="transparent" tile flat min-height="200">
+          <v-card class="transparent" flat min-height="200" tile>
             <v-card-text>
               <div class="msgs">
                 <v-slide-y-reverse-transition group hide-on-leave>
                   <template v-for="(msg, i) in msgs">
                     <div
                       :key="i"
-                      class="msgs__msg d-flex align-center gap-2"
                       :class="`msgs__msg-${msg.dir} ${
                         msg.dir === 'ltr' ? 'justify-start' : 'justify-end'
                       }`"
+                      class="msgs__msg d-flex align-center gap-2"
                     >
                       <v-avatar
                         v-if="msg.dir === 'ltr'"
-                        size="40"
                         class="align-self-start"
+                        size="40"
                       >
                         <v-img
                           v-if="getSender(i) !== getSender(i - 1)"
@@ -37,18 +37,18 @@
                       </v-avatar>
                       <div
                         v-if="msg.show"
-                        class="msgs__msg-inner d-flex flex-column justify-center align-center px-3 py-2 rounded-lg"
                         :class="{
                           'maria-color': msg.dir === 'ltr' && msg.isMaria,
                           success: msg.dir === 'rtl',
                         }"
+                        class="msgs__msg-inner d-flex flex-column justify-center align-center px-3 py-2 rounded-lg"
                       >
                         <div :inner-html.prop="msg.text"></div>
                       </div>
                       <v-avatar
                         v-if="msg.dir === 'rtl'"
-                        size="40"
                         class="align-self-start"
+                        size="40"
                       >
                         <v-img
                           v-if="getSender(i) !== getSender(i - 1)"
@@ -58,14 +58,14 @@
                       </v-avatar>
                     </div>
                     <div
-                      :key="`seen-${i}`"
                       v-if="msg.seen"
-                      class="text-caption d-flex gap-1"
+                      :key="`seen-${i}`"
                       :class="`${
                         msg.dir === 'ltr'
                           ? 'justify-start align-self-start'
                           : 'justify-end align-self-end'
                       }`"
+                      class="text-caption d-flex gap-1"
                     >
                       <v-icon size="16">mdi-check-all</v-icon>
                       {{ $t('seen') }}
@@ -84,37 +84,38 @@
                   <template v-for="(suggestion, i) in suggestions">
                     <v-col :key="i" cols="6">
                       <v-card
-                        flat
-                        dark
-                        height="100%"
                         class="d-flex align-center"
+                        dark
+                        flat
+                        height="100%"
                       >
                         <v-card-text>
                           <v-checkbox
                             v-model="suggestion.value"
-                            :value="suggestion.value"
-                            :label="suggestion.text"
                             :error="hasErrors"
-                            color="white"
+                            :label="suggestion.text"
+                            :value="suggestion.value"
                             class="mt-0"
+                            color="white"
                             hide-details
                           />
                         </v-card-text>
                       </v-card>
                     </v-col>
                   </template>
-                  <v-col cols="12" class="d-flex justify-center mt-4">
+                  <v-col class="d-flex justify-center mt-4" cols="12">
                     <v-btn
-                      color="primary"
                       class="px-4"
-                      tile
-                      large
+                      color="primary"
                       depressed
+                      large
+                      tile
                       @click="validateSuggestionsHandler"
                     >
                       {{ $t('continue') }}
                       <v-icon class="ms-2"
-                        >mdi-keyboard-backspace mdi-rotate-180</v-icon
+                      >mdi-keyboard-backspace mdi-rotate-180
+                      </v-icon
                       >
                     </v-btn>
                   </v-col>
@@ -127,16 +128,17 @@
           <v-card-actions v-if="chatEnded" class="mt-4 px-4 pb-4">
             <v-spacer></v-spacer>
             <v-btn
-              color="primary"
               class="px-4"
-              tile
-              large
+              color="primary"
               depressed
+              large
+              tile
               @click="finish()"
             >
-              {{ $t('map') }}
+              {{ $t('next') }}
               <v-icon class="ms-2"
-                >mdi-keyboard-backspace mdi-rotate-180</v-icon
+              >mdi-keyboard-backspace mdi-rotate-180
+              </v-icon
               >
             </v-btn>
           </v-card-actions>
@@ -145,8 +147,8 @@
     </v-dialog>
     <score-board-inline
       :model="result.model"
-      :perc="result.perc"
       :passed="result.passed"
+      :perc="result.perc"
       :step-id="stepId"
       @restart="restart"
     >
@@ -159,7 +161,7 @@ import ScoreBoardInline from '~/components/ScoreBoardInline.vue';
 import ImpressStep from '~/mixins/impress-step.js';
 
 export default {
-  components: { ScoreBoardInline },
+  components: {ScoreBoardInline},
   mixins: [ImpressStep],
   data: () => ({
     stepId: 'russia',
@@ -180,7 +182,7 @@ export default {
     correctMsgs: [],
     suggestions: [],
     chatEnded: false,
-    msgDelay: 3000,
+    msgDelay: 2000,
   }),
   computed: {
     getSpeakerImage() {
@@ -237,7 +239,7 @@ export default {
       this.$set(this, 'chatEnded', false);
     },
     pushMsg(msg) {
-      const obj = { ...msg, show: false, seen: false };
+      const obj = {...msg, show: false, seen: false};
       const msgDelay = this.msgDelay;
       this.msgs.push(obj);
       setTimeout(() => {
@@ -249,13 +251,13 @@ export default {
     },
     validateSuggestionsHandler() {
       this.playGameSound('big-button-press-1');
-      const selectedSuggestions = this.suggestions.filter(({ value }) => value);
+      const selectedSuggestions = this.suggestions.filter(({value}) => value);
       if (selectedSuggestions.length < 3) {
         this.hasErrors = true;
       } else {
         const lastSelected = selectedSuggestions.pop();
         const firstChoices = selectedSuggestions
-          .map(({ text }) => text)
+          .map(({text}) => text)
           .join(', ');
         const message = `${firstChoices} ${this.$t('and')} ${
           lastSelected.text
@@ -362,12 +364,14 @@ export default {
 .lh-lg {
   line-height: 1.5;
 }
+
 .msgs {
   & > span {
     display: flex;
     flex-direction: column;
     gap: 10px;
   }
+
   &__msg {
     &-inner {
       max-width: 75%;

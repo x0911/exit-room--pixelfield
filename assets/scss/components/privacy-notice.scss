@@ -12,20 +12,19 @@ tr:hover {
   background: transparent !important;
 }
 
-::v-deep(table) {
-  padding-top: 46px;
-}
-
 .table-line {
   &:nth-child(1) {
     height: 104px;
   }
+
   &:nth-child(2) {
     height: 114px;
   }
+
   &:nth-child(3) {
     height: 54px;
   }
+
   &:nth-child(4) {
     height: 130px;
   }
