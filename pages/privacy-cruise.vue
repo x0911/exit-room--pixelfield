@@ -285,7 +285,7 @@ export default {
     const impressRootElement = document.getElementById('impress');
     $this.$nuxt.$on('impress-restart', this.restart);
     if (impressRootElement) {
-      require('@/assets/js/custom-impress.js');
+      require('@/assets/js/custom-impress.min.js');
       window.impressAPI = window.impress();
       window.impressAPI.init();
       window.impressAPI.goto('splash');
