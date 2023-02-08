@@ -1101,7 +1101,7 @@
     document.body.classList.remove('impress-disabled');
 
     var root = document.getElementById(rootId);
-    var activeId = root.querySelector('.active').id;
+    var activeId = root.querySelector('.active')?.id;
     document.body.classList.remove('impress-on-' + activeId);
 
     document.documentElement.style.height = '';
@@ -2151,7 +2151,7 @@
 
     var nextStep = function () {
       var classes = '';
-      var nextElement = document.querySelector('.active');
+      var nextElement = document.querySelector('.active') || {};
 
       // Return to parents as long as there is no next sibling
       while (!nextElement.nextElementSibling && nextElement.parentNode) {
@@ -2187,9 +2187,8 @@
     var onStepLeave = function () {
       if (consoleWindow) {
         // Set notes to next steps notes.
-        var newNotes = document
-          .querySelector('.active')
-          .querySelector('.notes');
+        var newNotes =
+          document.querySelector('.active')?.querySelector('.notes') || {};
         if (newNotes) {
           newNotes = newNotes.innerHTML;
         } else {
@@ -2199,7 +2198,7 @@
 
         // Set the views
         var baseURL = document.URL.substring(0, document.URL.search('#/'));
-        var slideSrc = baseURL + '#' + document.querySelector('.active').id;
+        var slideSrc = baseURL + '#' + document.querySelector('.active')?.id;
         var preSrc = baseURL + '#' + nextStep().id;
         var slideView = consoleWindow.document.getElementById('slideView');
 
@@ -2223,9 +2222,8 @@
         // We do everything here again, because if you stopped the previos step to
         // early, the onstepleave trigger is not called for that step, so
         // we need this to sync things.
-        var newNotes = document
-          .querySelector('.active')
-          .querySelector('.notes');
+        var newNotes =
+          document.querySelector('.active')?.querySelector('.notes') || {};
         if (newNotes) {
           newNotes = newNotes.innerHTML;
         } else {
@@ -2237,7 +2235,7 @@
 
         // Set the views
         var baseURL = document.URL.substring(0, document.URL.search('#/'));
-        var slideSrc = baseURL + '#' + document.querySelector('.active').id;
+        var slideSrc = baseURL + '#' + document.querySelector('.active')?.id;
         var preSrc = baseURL + '#' + nextStep().id;
         var slideView = consoleWindow.document.getElementById('slideView');
 

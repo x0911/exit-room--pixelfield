@@ -362,6 +362,9 @@ export default {
             .catch(() => {});
         }
       }
+      setTimeout(() => {
+        this.$nuxt.$emit('impress-restart');
+      }, 1000);
     },
   },
 };

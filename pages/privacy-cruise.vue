@@ -285,7 +285,7 @@ export default {
     const impressRootElement = document.getElementById('impress');
     $this.$nuxt.$on('impress-restart', this.restart);
     if (impressRootElement) {
-      require('@/assets/js/custom-impress.min.js');
+      require('@/assets/js/custom-impress.js');
       window.impressAPI = window.impress();
       window.impressAPI.init();
       window.impressAPI.goto('splash');
@@ -311,6 +311,7 @@ export default {
           $this.$nuxt.$emit(`impress-step-entering-${nextStepId}`);
         }
       );
+      window.addEventListener("resize", this.restart)
     }
   },
   methods: {
@@ -351,9 +352,9 @@ export default {
       this.$set(this.steps[index], 'active', false);
     },
     restart() {
-      if (window.impressAPI) {
-        window.impressAPI.tear();
-        window.impressAPI.init();
+      const hasActiveEl = document.querySelector('.active');
+      if (window.impressAPI && hasActiveEl && this.activeStep) {
+        window.impressAPI.goto(this.activeStep);
       }
     },
     videoEnded(id, index) {
