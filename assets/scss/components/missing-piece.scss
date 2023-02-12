@@ -176,6 +176,14 @@
         transform: rotate(32deg);
       }
 
+      @media (min-width: 1700px) and (max-width: 1999px) {
+        --w: 7%;
+        --h: 12%;
+        --t: 30%;
+        --l: -6%;
+        transform: rotate(32deg);
+      }
+
       --dt: 5px;
       --db: 5px;
       --dx: 5px;
