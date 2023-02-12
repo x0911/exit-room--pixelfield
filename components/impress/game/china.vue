@@ -275,10 +275,10 @@
                         contain
                       ></v-img>
                     </v-avatar>
-                    <div class="f-tech text-h5 font-weight-bold">
+                    <div class="text-h5 font-weight-bold">
                       {{ $t(`found-object.items.${foundObject.name}`) }}
                     </div>
-                    <div class="f-tech pt-2 text-h6">
+                    <div class="pt-2 text-h6">
                       {{
                         $t(
                           `found-object.items-explanations.${foundObject.name}`

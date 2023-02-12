@@ -97,6 +97,7 @@ export default {
           value: null,
           type: 'checkbox',
           hasError: false,
+          correctValue: 1
         },
         {
           question: '',
@@ -118,7 +119,7 @@ export default {
     finishSurveyHandler() {
       this.playGameSound('big-button-press-1');
 
-      [0, 2].forEach(qIndex => {
+      this.questions.forEach((_, qIndex) => {
         this.questions[qIndex].hasError = this.questions[qIndex].value !== this.questions[qIndex].correctValue;
       })
 

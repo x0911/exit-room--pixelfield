@@ -12,7 +12,7 @@
     />
     <v-card-text class="px-0">
       <v-card class="pa-2 my-0 mx-auto" light style="border: 1px solid black">
-        <div style="border: 6px solid red">
+        <div style="border: 6px solid black">
           <v-col
             class="white--text text-center text-h5 py-6 mb-2"
             style="background-color: #080b6cff"

@@ -356,3 +356,9 @@ $fillables: width, height;
     }
   }
 }
+
+.card-scrollable {
+  max-height: min(770px, calc(100vh - 40px));
+  overflow: hidden;
+  overflow-y: scroll;
+}

@@ -615,7 +615,7 @@
     "score-board-inline": "No problem. I’ll take you to the captain’s cabin. Please follow me.",
     "privacy-questions": [
       {
-        "label": "Let’s reflect on what happened in game room in light of what the privacy notice says: <br /> Captain Maria shared the principle of being transparent. That means that the ship should have let you know in the privacy notice that your information might be shared on the scoreboard. Is there anything in the notice about that?",
+        "label": "Let’s reflect on what happened in game room in light of what the privacy notice says: <br /> <br /> Captain Maria shared the principle of being transparent. That means that the ship should have let you know in the privacy notice that your information might be shared on the scoreboard. Is there anything in the notice about that?",
         "options": [
           "Yes",
           "No"
@@ -671,7 +671,7 @@
           },
           {
             "category": "Data to enhance your voyage",
-            "description": "As a high-tech cruise line, we employ state-of-the-art technology and algorithms to offer you the best voyage possible. To do this, we may use cameras and other sensors to track your movement on the ship, how long you stay in various rooms and how you interact with our employees and other passengers."
+            "description": "As a high-tech cruise line, we employ state-of-the-art technology and algorithms to offer you the best voyage possible. To do this, we may use cameras and other sensors to track your movement on the ship, how long you stay in various rooms, and how you interact with our employees and other passengers."
           },
           {
             "category": "Payment information",
@@ -837,7 +837,6 @@
   "outro": {
     "successText": [
       "<b>Congratulations!</b> You have used the data privacy principles to prevent a privacy shipwreck!",
-      "Your score is {score}.",
       "Click “Next” to disembark and help your country become the 2023 Privacy Champion."
     ],
     "failText": [
@@ -894,7 +893,7 @@
       },
       "2": {
         "name": "Data to enhance your voyage",
-        "desc": "As a high-tech cruise line, we employ state-of-the-art technology and algorithms to offer you the best voyage possible. To do this, we may use cameras and other sensors to track your movement on the ship, how long you stay in various,rooms, and how you interact with our employees and other passengers."
+        "desc": "As a high-tech cruise line, we employ state-of-the-art technology and algorithms to offer you the best voyage possible. To do this, we may use cameras and other sensors to track your movement on the ship, how long you stay in various rooms, and how you interact with our employees and other passengers."
       },
       "3": {
         "name": "Payment information",

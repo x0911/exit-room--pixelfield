@@ -1,5 +1,5 @@
 <template>
-  <v-card class="info-screen pa-8" light>
+  <v-card class="info-screen card-scrollable pa-8" light>
     <div
       v-for="(question, qIndex) in questions"
       :key="qIndex"

@@ -57,14 +57,7 @@ export default {
   }),
   computed: {
     lines() {
-      const lines = this.$tr('outro.successText', 'array');
-      const newLines = [];
-      const score = this.perc;
-      lines.forEach((line) => {
-        const newLine = line.replace('{score}', `${score}%`);
-        newLines.push(newLine);
-      });
-      return newLines;
+      return this.$tr('outro.successText', 'array');
     },
     model: {
       get() {

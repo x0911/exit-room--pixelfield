@@ -295,14 +295,7 @@ export default {
       this.isChatOpen = true;
       this.replaceBg(`${this.stepId}-x3`);
       await this.addLoading();
-      this.$store.commit('SET_INSTRUCTIONS', {
-        bottomModel: true,
-        title: this.$t('franklin'),
-        steps: ['screens.usa.games.2.steps.1.title'],
-        image: 'avatars/franklin.jpg',
-        nextText: this.$t('screens.usa.games.2.steps.1.next'),
-        nextMethod: this.finishGame,
-      });
+      await this.finishGame()
     },
     async completeSurveyHandler() {
       this.isQuestionsOpen = false;
