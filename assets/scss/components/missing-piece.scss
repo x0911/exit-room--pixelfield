@@ -126,6 +126,7 @@
         --h: 24%;
         --t: 82%;
         --l: 69%;
+        overflow: visible;
 
         --dt: 5px;
         --db: 5px;
@@ -150,6 +151,29 @@
         --h: 12%;
         --t: 42%;
         --l: 0%;
+      }
+
+      @media (min-width: 2000px) {
+        --w: 7%;
+        --h: 12%;
+        --t: 30%;
+        --l: -6%;
+        transform: rotate(32deg);
+      }
+
+      @media (min-height: 760px) and (max-height: 830px) {
+        --w: 8%;
+        --h: 15%;
+        --t: 38%;
+        --l: -4%;
+      }
+
+      @media (max-height: 759px) {
+        --w: 6%;
+        --h: 12%;
+        --t: 32%;
+        --l: -4%;
+        transform: rotate(32deg);
       }
 
       --dt: 5px;

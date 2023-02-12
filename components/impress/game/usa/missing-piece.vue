@@ -149,9 +149,6 @@ export default {
       wrongItems: [],
     };
   },
-  created() {
-    this.$store.commit('SET_HINT', this.$t('usa.hints.missing-piece.1'));
-  },
   watch: {
     items: {
       deep: true,
@@ -181,6 +178,9 @@ export default {
         this.$emit('next');
       },
     },
+  },
+  created() {
+    this.$store.commit('SET_HINT', this.$t('usa.hints.missing-piece.1'));
   },
   methods: {
     selectItemHandler(item) {
