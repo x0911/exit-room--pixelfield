@@ -345,13 +345,16 @@ export default {
             }
 
             const answerId = q.type === 'text' ? null : q.value;
-            const answers = []
+            const answers = [];
             if (Array.isArray(answerId)) {
-              answerId.forEach((id, index) => answers.push({ answer_id:id, answer_text: answerText[index] }))
+              answerId.forEach((id, index) =>
+                answers.push({ answer_id: id, answer_text: answerText[index] })
+              );
             } else {
               answers.push({
-                answer_id: answerId, answer_text: answerText
-              })
+                answer_id: answerId,
+                answer_text: answerText,
+              });
             }
 
             return {
@@ -366,6 +369,18 @@ export default {
             questions,
             task_id: info.taskId,
             task_name: info.taskName,
+          });
+          const country = questions[questions.length - 1].answers[0].answer_id;
+          const locale =
+            localStorage.getItem('data-protection-language') || 'en';
+          const localStorageCountry =
+            localStorage.getItem('data-protection-country') || 'unknown';
+          if (country) {
+            localStorage.setItem('data-protection-country', country);
+          }
+          await this.$store.dispatch('updateLang', {
+            selected_lang: locale,
+            country: country || localStorageCountry,
           });
         } catch (err) {
           console.log(err);
