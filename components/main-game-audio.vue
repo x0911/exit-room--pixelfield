@@ -21,7 +21,11 @@ export default {
   data: () => ({
     volume: 1,
     pathToPlay: '',
-    audios: ['main-track.mp3'],
+    audios: [
+      'main-track-1.mp3',
+      'main-track-4.mp3',
+      'main-track-5.mp3',
+    ],
   }),
   computed: {
     globalBtns() {
@@ -115,7 +119,7 @@ export default {
       }
     },
     skipIntro(v) {
-      if (v === true) {
+      if (v === true && (!this.$refs.audio || this.$refs.audio?.paused)) {
         this.handleActiveStepChange(this.activeStep);
       }
     },
@@ -127,6 +131,8 @@ export default {
     setTimeout(() => {
       this.handleActiveStepChange(this.activeStep);
     }, 100);
+    this.$nuxt.$on('play-main-audio', this.handleActiveStepChange);
+    this.$nuxt.$on('pause-main-audio', this.pause);
   },
   methods: {
     shuffleAudios() {

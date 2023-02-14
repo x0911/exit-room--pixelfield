@@ -47,7 +47,7 @@
               persistent
               scrollable
             >
-              <v-card class="rounded-lg pa-4 mx-auto" flat light tile>
+              <v-card class="info-screen pa-4 mx-auto" flat light tile>
                 <v-card-text class="d-flex flex-column align-center">
                   <v-img
                     :src="

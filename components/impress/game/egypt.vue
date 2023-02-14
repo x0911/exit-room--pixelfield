@@ -209,6 +209,7 @@ export default {
       }
 
       if (this.model === 2) {
+        this.$nuxt.$emit('pause-main-audio');
         this.$store.commit('SET_INSTRUCTIONS', {
           model: true,
           steps: ['speeches.egypt.5'],
@@ -263,6 +264,7 @@ export default {
     videoEnded() {
       this.$store.commit('STOP_VIDEOS');
       this.$set(this.videos.intro, 'ended', true);
+      this.$nuxt.$emit('play-main-audio');
     },
     async showScoreBoard() {
       const score = 100;

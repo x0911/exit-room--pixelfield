@@ -305,6 +305,7 @@ export default {
         model: true,
         title: this.$t('screens.italy.title'),
         steps: ['screens.italy.a1'],
+        nextMethod: () => this.$nuxt.$emit('play-main-audio')
       });
     },
     videoEnded() {
@@ -316,6 +317,7 @@ export default {
     },
     async finish() {
       if (!this.nextDisabled) {
+        this.$nuxt.$emit('pause-main-audio');
         const score = this.getScore();
         try {
           const info = this.getActiveTaskInfo();

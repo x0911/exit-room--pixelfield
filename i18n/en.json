@@ -96,7 +96,7 @@
   },
   "wall-steps": [
     "Ship Map",
-    "Here is a map of the cruise ship. You can only enter the room marked by the glowing circle – click the circle to enter."
+    "Here is a map of the cruise ship. Click Start and then click the room marked by the glowing circle."
   ],
   "start": "Start",
   "orientation-hint": {
@@ -492,7 +492,8 @@
           "Yes",
           "No"
         ],
-        "link": "Review privacy notice"
+        "link": "Review privacy notice",
+        "text": "That camera flash was bright and you find yourself feeling a bit confused. You read the privacy notice carefully, but . ."
       },
       "3": {
         "label": "Look at the privacy notice again – does it clearly explain that facial recognition would be used?",
@@ -649,7 +650,7 @@
     ],
     "bedroom-letter": [
       "<div class='f-hand-2 font-weight-bold text-h3 mb-4'>Dear guest,</div>",
-      "Hello again and welcome to your cabin. You are staying in Cabin 42, which is a very special room featuring objects I have collected in my travels. I suggest you spend some time here admiring these objects from all angles. ",
+      "Hello again and welcome to your cabin. You are staying in Cabin 42, which is a very special room featuring objects I have collected in my travels. <div class='font-weight-bold'>I suggest you spend some time here admiring these objects from all angles.</div>",
       "<div class='d-flex justify-end'><i class='f-hand-2 font-weight-bold text-h5'>- Regards, Franklin</i></div>"
     ],
     "privacy-principles": "Open privacy principles",

@@ -8,6 +8,7 @@
         video: true,
         'is-vertical': isVertical,
         'full-video': fullVideo,
+        intro: $route.fullPath.includes('splash')
       }"
       :contextmenu="false"
       :controls="false"

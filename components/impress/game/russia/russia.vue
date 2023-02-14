@@ -324,6 +324,7 @@ export default {
     openIntro() {
       this.step++;
       this.initChat();
+      this.$nuxt.$emit('play-main-audio');
     },
     goBackToMap() {
       window.impressAPI.goto('map');
@@ -336,6 +337,7 @@ export default {
       }, 200);
     },
     async finish() {
+      this.$nuxt.$emit('pause-main-audio');
       this.playGameSound('big-button-press-1');
       const score = this.getScore();
       try {

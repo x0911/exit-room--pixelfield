@@ -187,6 +187,7 @@ export default {
       this.resetCameras();
       this.score = 0;
       this.scores = [];
+      this.$nuxt.$emit('pause-main-audio');
     },
   },
 };

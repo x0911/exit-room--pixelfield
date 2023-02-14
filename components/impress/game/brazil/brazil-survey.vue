@@ -19,6 +19,9 @@
                 <v-icon class="me-1 " small>mdi-launch</v-icon>
                 {{ $tr(`brazil.questions.2.link`) }}
               </v-btn>
+              <div class="mt-4 v-card__text pa-0 text-body-1 font-weight-medium">
+                {{ $tr(`brazil.questions.2.text`) }}
+              </div>
             </div>
           </template>
 

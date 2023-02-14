@@ -259,6 +259,7 @@ export default {
         () => {
           this.$set(this.videos.intro, 'ended', true);
           this.isPrivacyOpen = true;
+          this.$nuxt.$emit('play-main-audio');
         },
         immediate ? 0 : 1000
       );

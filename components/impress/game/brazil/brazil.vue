@@ -92,6 +92,7 @@ export default {
     this.$nuxt.$on(`video-${this.stepId}-x3-ended`, () => {
       this.replaceBg(`${this.stepId}-x2`);
       this.step = 'survey';
+      this.$nuxt.$emit('play-main-audio');
     });
   },
   methods: {

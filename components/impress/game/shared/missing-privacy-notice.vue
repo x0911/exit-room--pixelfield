@@ -47,10 +47,7 @@
       <v-btn
         class="mt-4 px-4"
         large
-        @click="
-          playGameSound('big-button-press-1');
-          $emit('input', false);
-        "
+        @click="closeMissingPrivacy"
       >
         {{ $t('china.privacy-notice.close-and-call-franklin') }}
         <v-icon class="ml-2">mdi-close</v-icon>
@@ -68,6 +65,13 @@ export default {
       default: null,
     },
   },
+  methods: {
+    closeMissingPrivacy() {
+      this.$nuxt.$emit('pause-main-audio');
+      this.playGameSound('big-button-press-1');
+      this.$emit('input', false);
+    }
+  }
 };
 </script>
 

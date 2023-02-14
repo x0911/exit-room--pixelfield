@@ -9,6 +9,7 @@
     </v-card>
     <div class="mx-auto d-flex justify-end" style="width: 400px">
       <v-btn
+        v-if="!isValidated"
         color="primary"
         large
         class="mt-8 px-4 font-weight-light"

@@ -493,7 +493,7 @@ export default {
       {
         name: 'cup',
         dir: 'front',
-        correctDir: 'bot',
+        correctDir: 'left',
         object: 'eye',
         isOpened: false,
       },
@@ -522,6 +522,7 @@ export default {
     showAllSymbols: false,
     showPrivacyNotice: false,
     isPrivacyForm: false,
+    startRotatingItems: false,
   }),
   computed: {
     isQuestionsValid() {
@@ -541,6 +542,13 @@ export default {
       });
       return disabled;
     },
+  },
+  watch: {
+    startRotatingItems(value) {
+      if (value) {
+        this.$nuxt.$emit('play-main-audio');
+      }
+    }
   },
   mounted() {
     this.$nuxt.$on(`video-${this.stepId}-ended`, this.introEnded);
@@ -591,6 +599,7 @@ export default {
       this.$set(this.foundObject, 'items', []);
       this.$set(this.foundObject, 'model', false);
       this.$set(this.foundObject, 'name', '');
+      this.$set(this, 'startRotatingItems', false);
     },
     restart() {
       this.stepLeave();
@@ -725,6 +734,7 @@ export default {
         steps: [`privacy-notice.questions.congratulations`],
         showNextArrow: true,
         nextMethod: (nextEvent) => {
+          this.$nuxt.$emit('pause-main-audio');
           this.showPrivacyNotice = false;
           this.step = 6;
           this.nextStep(nextEvent);
@@ -732,6 +742,7 @@ export default {
       });
     },
     rotateItem(i = 0) {
+      this.startRotatingItems = true;
       this.playGameSound('whoosh');
       const foundObjects = this.foundObject.items;
       const item = this.rotatableItems[i];
