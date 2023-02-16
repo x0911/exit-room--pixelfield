@@ -214,7 +214,6 @@ export default {
         return this.$store.getters.mapLoaded;
       },
       set(v) {
-        console.log(`mapLoaded changed to: ${v}`);
         this.$store.commit('SET_MAP_LOADED', v);
       },
     },
