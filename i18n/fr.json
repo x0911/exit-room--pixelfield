@@ -560,59 +560,6 @@
     "instructions": {
       "phone-questions": "Mark useful articles that could possibly help you."
     },
-    "questions": {
-      "1": {
-        "label": "Have you find the mention of using passport photos for biometrics?",
-        "options": [
-          "Yes, I have, everything is clear and there has been no violation of the private data.",
-          "Yes, but I'm still not sure if everything is correct.",
-          "No, I have to find another source of information."
-        ],
-        "correctOptions": [
-          2
-        ]
-      },
-      "2": {
-        "label": "Do you want to use your smart phone  and search online for how to report privacy violations ?",
-        "options": [
-          "Yes",
-          "No"
-        ],
-        "correctOptions": [
-          0
-        ]
-      },
-      "3": {
-        "options": [
-          {
-            "title": "A well-known company deceived the employees!",
-            "description": "The breach of private data will cost them a fortune!"
-          },
-          {
-            "title": "A famous tennis player was seen with his new girlfriend!",
-            "description": ""
-          },
-          {
-            "title": "You have your privacy rights!",
-            "description": "In modern era it is illegal to use a private data without a permission. There must be a privacy rights section in every privacy notice guidelines."
-          }
-        ],
-        "correctOptions": [
-          0,
-          2
-        ]
-      },
-      "4": {
-        "label": "Did you notice that the privacy notice is torn?",
-        "options": [
-          "Yes",
-          "No"
-        ],
-        "correctOptions": [
-          0
-        ]
-      }
-    },
     "score-board-inline": "No problem. I’ll take you to the captain’s cabin. Please follow me.",
     "privacy-questions": [
       {
@@ -700,7 +647,6 @@
     }
   },
   "russia": {
-    "complete_puzzle": "Please complete the puzzle to get the code",
     "task-2": {
       "msgs": [
         {
