@@ -142,12 +142,7 @@
       </v-icon>
     </v-btn>
     <v-btn
-      v-show="
-        gameIsDone &&
-        globalBtns &&
-        activeStep === 'map' &&
-        $route.path === '/privacy-cruise'
-      "
+      v-show="mapLoaded && gameIsDone && globalBtns && activeStep === 'map'"
       bottom
       color="rgba(0,0,0,0.65)"
       fab
@@ -161,9 +156,7 @@
       <v-icon>mdi-trophy-outline</v-icon>
     </v-btn>
     <v-btn
-      v-show="
-        globalBtns && activeStep === 'map' && $route.path === '/privacy-cruise'
-      "
+      v-show="mapLoaded && globalBtns && activeStep === 'map'"
       bottom
       color="rgba(0,0,0,0.65)"
       fab
