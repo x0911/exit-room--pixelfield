@@ -156,7 +156,6 @@ export default {
           ended: false,
         },
       },
-      mapLoaded: false,
 
       // Map
       travelBook: TravelBook,
@@ -210,6 +209,14 @@ export default {
     };
   },
   computed: {
+    mapLoaded: {
+      get() {
+        return this.$store.getters.mapLoaded;
+      },
+      set(v) {
+        this.$store.commit('SET_MAP_LOADED', v);
+      },
+    },
     mapModel: {
       get() {
         return (

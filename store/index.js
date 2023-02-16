@@ -293,6 +293,9 @@ export const mutations = {
     state.skipMapIntro = payload;
     state.mapLoaded = true;
   },
+  SET_MAP_LOADED(state, payload) {
+    state.mapLoaded = payload;
+  },
   SET_VIDEO_IS_SKIPPABLE(state, payload) {
     state.videoIsSkippable = payload;
   },
