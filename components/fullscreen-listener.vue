@@ -143,7 +143,6 @@
     </v-btn>
     <v-btn
       v-show="
-        mapLoaded &&
         gameIsDone &&
         globalBtns &&
         activeStep === 'map' &&
@@ -163,10 +162,7 @@
     </v-btn>
     <v-btn
       v-show="
-        mapLoaded &&
-        globalBtns &&
-        activeStep === 'map' &&
-        $route.path === '/privacy-cruise'
+        globalBtns && activeStep === 'map' && $route.path === '/privacy-cruise'
       "
       bottom
       color="rgba(0,0,0,0.65)"

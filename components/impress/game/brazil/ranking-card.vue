@@ -16,7 +16,7 @@
           <v-col
             class="white--text text-center text-h5 py-6 mb-2"
             style="background-color: #080b6cff"
-          >Top Scores {{ players.id }}
+            >{{ $t('top-scores') }} {{ players.id }}
           </v-col>
           <v-row v-for="(player, pIdx) in players" :key="pIdx" class="pt-2">
             <v-col class="pl-12 pr-8" cols="3">
@@ -26,25 +26,25 @@
               />
             </v-col>
             <v-col cols="9"
-            >Passport number: {{ player.passport }}<br/>
-              Voyage date: {{ player.voyageDate }} <br/>
-              Cabin: {{ player.cabin }}
+              >{{ $t('passport-number') }}: {{ player.passport }}<br />
+              {{ $t('voyage-date') }}: {{ player.voyageDate }} <br />
+              {{ $t('cabin') }}: {{ player.cabin }}
             </v-col>
           </v-row>
         </div>
-        <scoreboard-survey @finish="$emit('next')"/>
+        <scoreboard-survey @finish="$emit('next')" />
       </v-card>
     </v-card-text>
   </v-card>
 </template>
 
 <script>
-import moment from "moment";
+import moment from 'moment';
 import ScoreboardSurvey from '~/components/impress/game/brazil/scoreboard-survey.vue';
 
 export default {
   name: 'RankingCard',
-  components: {ScoreboardSurvey},
+  components: { ScoreboardSurvey },
   data() {
     return {
       items: [

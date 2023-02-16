@@ -64,7 +64,9 @@
         style="max-width: calc(100% - 20px)"
       >
         <v-col class="d-flex align-center mb-2" cols="3">
-          <div class="text-body-2 font-weight-bold">Enter the code:</div>
+          <div class="text-body-2 font-weight-bold">
+            {{ $t('enter-the-code') }}:
+          </div>
         </v-col>
         <v-col class="d-flex align-center pr-0" cols="3">
           <v-otp-input v-model="code" length="3" type="number"></v-otp-input>

@@ -58,9 +58,7 @@ export default {
   },
   computed: {
     isValid() {
-      return this.questions.every(
-        ({value}) => value
-      );
+      return this.questions.every(({ value }) => value);
     },
   },
   methods: {

@@ -947,5 +947,10 @@
     "title": "Restart Game",
     "hint": "Are you sure you want to restart the game?",
     "action": "Yes, restart!"
-  }
+  },
+  "top-scores": "Top Scores",
+  "passport-number": "Passport number",
+  "voyage-date": "Voyage date",
+  "cabin": "Cabin",
+  "enter-the-code": "Enter the code"
 }
