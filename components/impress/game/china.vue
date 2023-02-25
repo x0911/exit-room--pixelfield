@@ -21,12 +21,12 @@
             >
               <v-layout fill-height justify-center pa-0>
                 <div
-                  class="f-hand text-h5 font-weight-medium pt-5 px-5 black--text"
+                  class="f-hand font-weight-medium pt-5 px-6 black--text"
                 >
                   <template
                     v-for="(line, i) in $tr('china.bedroom-note', 'array')"
                   >
-                    <div :key="i" :inner-html.prop="line" class="lh-3-1"></div>
+                    <div :key="i" class="lh-3-1" :class="{ 'line-text': $i18n.locale === 'ru' }" :inner-html.prop="line"></div>
                   </template>
                 </div>
               </v-layout>
@@ -60,7 +60,7 @@
             >
               <v-layout fill-height justify-center>
                 <div
-                  class="f-hand-2 text-h4 font-weight-medium pt-12 px-16 black--text"
+                  class="f-hand-2 text-h6 font-weight-medium pt-12 px-16 black--text"
                 >
                   <template
                     v-for="(line, i) in $tr('china.bedroom-letter', 'array')"
@@ -147,7 +147,7 @@
           </v-card>
           <v-card-actions class="d-flex gap-6 pt-4">
             <v-btn
-              class="px-6 mr-8"
+              class="px-2 mr-8"
               large
               @click="
                 playGameSound('big-button-press-1');
@@ -188,7 +188,7 @@
             >
               <v-layout fill-height justify-center>
                 <div
-                  class="f-hand text-h4 font-weight-medium pt-12 px-16 black--text"
+                  class="f-hand text-h5 font-weight-medium pt-10 px-16 black--text"
                 >
                   <template
                     v-for="(line, i) in $tr(
@@ -196,7 +196,7 @@
                       'array'
                     )"
                   >
-                    <div :key="i" :inner-html.prop="line" class="lh-3-7"></div>
+                    <div :key="i" :inner-html.prop="line" class="lh-3-1"></div>
                   </template>
                 </div>
               </v-layout>
@@ -254,7 +254,7 @@
       :retain-focus="false"
       class="elevation-0"
       content-class="elevation-0"
-      max-width="600"
+      max-width="650"
       overlay-opacity="0"
       persistent
       scrollable
@@ -293,12 +293,12 @@
                     v-if="foundObject.items.length === foundObject.count"
                   >
                     <!-- Found All Symbols -->
-                    <div class="text-h6 font-weight-medium">
+                    <div class="text-h6 text-center font-weight-medium">
                       {{ $t('found-object.found-last') }}
                     </div>
                   </template>
                   <template v-else>
-                    <div class="text-h6 found-last font-weight-medium">
+                    <div class="text-h6 font-weight-medium">
                       {{ $t('found-object.title') }}
                     </div>
                     <div>

@@ -21,20 +21,21 @@
         <v-card-title
           class="d-block text-center mt-16 pt-12 white--text font-weight-bold"
         >
-          <span class="white--text font-weight-bold text-h4">
+          <span class="white--text font-weight-bold text-h6">
             {{ $t('china.privacy-notice.title') }}
           </span>
         </v-card-title>
         <v-row>
           <v-col class="my-0 mx-auto pb-8" cols="12">
             <div
-              class="white--text  text-body-2 font-weight-medium mt-16 pt-10 pb-2 px-10 text-center"
+              class="white--text text-body-2 font-weight-medium mt-16 pt-10 pb-2 px-10 text-center"
+              style="height: 108px"
             >
               {{ $t('china.privacy-notice.description') }}
             </div>
 
           </v-col>
-          <v-col class="mx-auto my-0" cols="12">
+          <v-col class="mx-auto my-0 pt-0" cols="12">
             <v-simple-table class="transparent">
               <thead>
               <tr>
@@ -72,7 +73,7 @@
                 </td>
                 <td
                   :style="hasErrors && 'color: #FF5252 !important;'"
-                  class="text-size-7 white--text pl-1 pr-16 py-0 text-left"
+                  class="white--text pl-1 pr-16 py-0 text-left"
                 >
                   {{ item.description }}
                 </td>

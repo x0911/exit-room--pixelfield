@@ -14,7 +14,6 @@
       width="auto"
     >
       <div
-        key="travel-book"
         :class="{ 'disable-clicking': disableClicking }"
         class="game"
       >
@@ -93,7 +92,7 @@
                 </div>
                 <div class="f-tech">
                   <div class="country">
-                    {{ room.title }}
+                    {{ room.title() }}
                   </div>
                 </div>
               </client-only>
@@ -162,37 +161,37 @@ export default {
       rooms: [
         {
           country: 'italy',
-          title: this.$t('task-name.1'),
+          title: () => this.$t('task-name.1'),
           progress: 0,
           done: false,
         },
         {
           country: 'egypt',
-          title: this.$t('task-name.2'),
+          title: () => this.$t('task-name.2'),
           progress: 0,
           done: false,
         },
         {
           country: 'china',
-          title: this.$t('task-name.3'),
+          title: () => this.$t('task-name.3'),
           progress: 0,
           done: false,
         },
         {
           country: 'brazil',
-          title: this.$t('task-name.4'),
+          title: () => this.$t('task-name.4'),
           progress: 0,
           done: false,
         },
         {
           country: 'usa',
-          title: this.$t('task-name.5'),
+          title: () => this.$t('task-name.5'),
           progress: 0,
           done: false,
         },
         {
           country: 'russia',
-          title: this.$t('task-name.6'),
+          title: () => this.$t('task-name.6'),
           progress: 0,
           done: false,
         },

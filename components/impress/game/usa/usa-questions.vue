@@ -57,16 +57,19 @@ export default {
     };
   },
   computed: {
+    answerNo() {
+      return this.questions[0].options[1]
+    },
     isValid() {
       return this.questions.every(({ value }) => {
-        return value === 'No';
+        return value === this.answerNo
       });
     },
   },
   methods: {
     updateQuestions() {
       this.questions.forEach((question) => {
-        question.hasError = question.value !== 'No';
+        question.hasError = question.value !== this.answerNo;
       });
     },
     validateHandler(event) {

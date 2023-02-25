@@ -25,8 +25,8 @@
             </v-card-title>
             <v-card-text class="px-16">
               <template v-for="(item, i) in $tr('lunch-menu.items', 'array')">
-                <v-card :key="i" class="transparent mt-4" flat tile>
-                  <v-layout style="position: relative" class="pb-8" column>
+                <v-card :key="i" class="transparent mt-4" :class="{ 'mt-8': i === 1 }" flat tile>
+                  <v-layout style="position: relative" :class="i !== 1 ? 'pb-8' : 'pb-2'" column>
                     <div>
                       <v-layout class="gap-2" justify-space-between>
                         <div
