@@ -1,267 +1,267 @@
 ﻿{
-  "franklin": "Franklin",
-  "carla-thought": "Carla’s thinking",
-  "yuri-thought": "Yuri’s thinking",
-  "dave-thought": "Dave’s thinking",
-  "player-is-thinking": "Player is thinking",
-  "confirm": "Confirm",
-  "call-franklin": "Call Franklin",
-  "submit": "Submit",
-  "accept": "Accept",
-  "previous": "Previous",
-  "back_to_menu": "Back to menu",
-  "score": "Score",
-  "phone": "Phone",
-  "country": "Country",
-  "countries_scores": "The 5 countries with the highest scores",
-  "lets-go": "Let's go",
+  "franklin": "フランクリン",
+  "carla-thought": "カルラの考え",
+  "yuri-thought": "ユーリの思考",
+  "dave-thought": "デイブの考え",
+  "player-is-thinking": "プレーヤーは考えている",
+  "confirm": "確認",
+  "call-franklin": "フランクリンに電話する",
+  "submit": "提出",
+  "accept": "受入",
+  "previous": "前",
+  "back_to_menu": "メニューに戻る",
+  "score": "スコア",
+  "phone": "電話番号",
+  "country": "国名",
+  "countries_scores": "最高得点の5カ国",
+  "lets-go": "レッツゴー",
   "cookies": {
-    "title": "Privacy & Cookie Notice",
+    "title": "個人情報保護とクッキーに関するお知らせ",
     "text": [
       {
-        "title": "Purpose",
-        "description": "This website contains an escape-room game with a survey and country competition related to privacy. It has been created by your employer to raise awareness and knowledge related to privacy and improve the privacy program and increase awareness within your company."
+        "title": "目的",
+        "description": "このサイトでは、プライバシーに関するアンケートや国別対抗戦などの脱出ゲームを行っています。個人情報保護に関する意識や知識を高め、個人情報保護プログラムを改善し、社内の意識を高めるために、あなたの雇用主が作成したものです。"
       },
       {
-        "title": "Voluntary basis",
-        "description": "Please note that participation in this game is on a voluntary basis. There is no obligation to participate. Non-participation will not have any adverse effects on your employment relationship."
+        "title": "任意ベース",
+        "description": "このゲームへの参加は任意であることをご了承ください。参加は義務ではありません。不参加でも、雇用関係に悪影響はありません。"
       },
       {
-        "title": "Anonymized data",
-        "description": "Within the game only anonymized data is processed. Your employer cannot make any reference to or identification of specific employees. For the purpose of being able to provide you news on the results of the country-competition or react to your provided feedback on our game, you can voluntarily provide your work-email-address at the end of the game. In this case an identification would be possible. Please note that, in cases of small teams or country operations, your employer may be able to identify you if less than five people have the same division or organizational unit, job function, and work country. Your employer will process the data consistent with its privacy policy and associate notice, including not intentionally identifying you and taking reasonable measures, as appropriate, to prevent identification."
+        "title": "匿名化されたデータ",
+        "description": "ゲーム内では、匿名化されたデータのみが処理されます。あなたの雇用主は、特定の従業員について言及したり、特定したりすることはできません。国別対抗戦の結果に関するニュースを提供したり、ゲームに関するフィードバックに対応したりするために、ゲームの終了時に任意で勤務先のEメールアドレスを提供することができます。この場合、識別は可能です。なお、少人数のチームや国別業務の場合、同じ部門や組織単位、職務、勤務国が5人未満であれば、雇用主があなたを特定できる可能性があります。あなたの雇用主は、意図的にあなたを特定しないこと、特定を防ぐために適切な合理的措置をとることを含め、プライバシーポリシーおよび関連通知と一致するようにデータを処理するものとします。"
       },
       {
-        "title": "Cookies",
-        "description": "This website only processes strictly necessary cookies. These cookies are necessary for the website to function and cannot be switched off in our systems. They are usually only set in response to actions made by you which amount to a request for services, such as setting your privacy preferences, logging in or filling in forms. You can set your browser to block or alert you about these cookies, but some parts of the site will not then work. These cookies do not store any personally identifiable information."
+        "title": "クッキー",
+        "description": "本サイトでは、厳密に必要なクッキーのみを処理しています。これらのクッキーは、ウェブサイトを機能させるために必要なものであり、当社のシステムでこれをオフにすることはできません。これらは通常、お客様のプライバシー設定、ログイン、フォームへの入力など、サービスの要求に相当するお客様の行為に対応してのみ設定されます。お客様は、ブラウザの設定により、これらのクッキーをブロックしたり、警告を表示させたりすることができますが、その場合、本サイトの一部が機能しなくなります。これらのクッキーは、個人を特定できるような情報を保存するものではありません。"
       },
       {
-        "title": "Legal basis and contact",
-        "description": "In case your personal data is processed, the legal basis for the data processing would be the necessity for the purposes of legitimate interests. For more detailed information with regards data processing in your working environment and your data privacy rights (e.g., right to object) please find the local privacy notices for employees or contact your local data privacy team."
+        "title": "法的根拠と連絡先",
+        "description": "お客様の個人情報が処理される場合、データ処理の法的根拠は、正当な利益を目的とする必要性です。あなたの職場環境におけるデータ処理およびあなたのデータプライバシー権（例：異議を唱える権利）に関するより詳細な情報については、従業員向けのローカルプライバシーノーティスをご覧になるか、あなたの地域のデータプライバシー担当チームにお問い合わせください。"
       }
     ]
   },
   "task-name": {
-    "1": "Reception",
-    "2": "Dining Room",
-    "3": "Your Cabin",
-    "4": "Game Room",
-    "5": "Your Cabin",
-    "6": "Captain's Bridge"
+    "1": "レセプション",
+    "2": "ダイニングルーム",
+    "3": "キャビンの様子",
+    "4": "ゲームルーム",
+    "5": "キャビンの様子",
+    "6": "キャプテンブリッジ"
   },
   "fullscreen-hint": {
-    "title": "Fullscreen",
-    "text": "It's recommended to play the game in fullscreen mode, Would you like to try it now?"
+    "title": "フルスクリーン",
+    "text": "フルスクリーンモードでプレイすることをお勧めします。今すぐ試してみませんか？"
   },
-  "enable": "Enable",
-  "validate": "Validate",
-  "cancel": "Cancel",
-  "hint-title": "Hint",
-  "take_a_photo": "Take a photo",
-  "continue": "Continue",
-  "name": "Name",
-  "address": "Address",
-  "cabin_number": "Cabin number",
-  "age": "Age",
-  "nationality": "Nationality",
-  "and": "and",
+  "enable": "有効化",
+  "validate": "検証",
+  "cancel": "キャンセル",
+  "hint-title": "ヒント",
+  "take_a_photo": "写真を撮る",
+  "continue": "継続",
+  "name": "名前",
+  "address": "住所",
+  "cabin_number": "キャビンの番号",
+  "age": "年齢",
+  "nationality": "国籍",
+  "and": "と",
   "hints": {
     "splash": [
-      "Select your language to proceed"
+      "言語を選択して次に進みます"
     ],
     "map": [
-      "Active room will have a glowing circle above its name"
+      "アクティブルームは名前の上に光る丸が表示されます"
     ],
     "italy": [
-      "Complete the survey"
+      "アンケートに答える"
     ],
     "egypt": [
-      "Waiter will give you a menu, check if you see any concerns.",
-      "After checking, you can safely click on next to proceed to next steps"
+      "店員がメニューを渡すので、気になるところがあれば確認しましょう。",
+      "確認後、安心して次へをクリックし、次のステップに進みます。"
     ],
     "brazil": [],
     "china": [
-      "Read the note, then search the room to find the 5 privacy principles and their explanations.",
-      "After you have found them all, you will unlock the privacy notice."
+      "メモを読み、部屋を探し、5つのプライバシー原則とその説明を見つける。",
+      "すべて見つけると、プライバシーノーティスのロックが解除されます。"
     ],
     "usa": [],
     "russia": []
   },
-  "start_game": "Meet Franklin",
-  "skip": "Skip",
-  "wall": "Room Selector",
+  "start_game": "フランクリンと出会う",
+  "skip": "スキップ",
+  "wall": "ルームセレクター",
   "map-email": {
     "text": [
-      "This is your room selector. Rooms order is mandatory. Active room has a glowing circle above its name."
+      "これがルームセレクターです。ルームオーダーは必須です。アクティブルームは、名前の上に光る丸があります。"
     ]
   },
   "wall-steps": [
-    "Ship Map",
-    "Here is a map of the cruise ship. Click Start and then click the room marked by the glowing circle."
+    "船内地図",
+    "クルーズ船の地図はこちらです。スタートをクリックし、光る丸が示された部屋をクリックします。"
   ],
-  "start": "Start",
+  "start": "スタート",
   "orientation-hint": {
-    "title": "Landscape is required",
-    "text": "Playing the game in portrait mode is not possible, please rotate your device to landscape mode."
+    "title": "ランドスケープは必須です",
+    "text": "縦画面でのプレイはできませんので、端末を回転させて横画面にしてください。"
   },
-  "map": "Map",
+  "map": "地図",
   "back-to-map": {
-    "text": "Do you want to back to room selector?"
+    "text": "ルームセレクターに戻りますか？"
   },
   "speeches": {
     "splash": {
       "1": [
-        "Welcome aboard!",
-        "I am Franklin, an AI-powered robot and your concierge on this voyage."
+        "ご搭乗ありがとうございます。",
+        "私はフランクリン、AIを搭載したロボットで、この航海のコンシェルジュです。"
       ],
       "2": [
-        "Please follow me aboard so I can show you around the ship."
+        "船内をご案内いたしますので、どうぞお付き合いください。"
       ]
     },
     "italy": {
       "1": [
-        "Greetings!",
-        "Our ship features the most cutting-edge, digital technology available on the high seas. We trust this will make for a memorable vacation!",
-        "Before we set sail, we need you to scan your passport, share any dietary restrictions we should know about, and complete a quick survey."
+        "こんにちは！",
+        "私たちの船には、公海上で利用可能な最先端のデジタル技術が搭載されています。思い出に残るバケーションになると確信しています。",
+        "出航前に、パスポートのスキャン、食事制限の有無、簡単なアンケートにお答えいただきます。"
       ]
     },
     "egypt": {
       "1": [
-        "You have been assigned to a table with 3 other guests. Please take a look at the menu and whet your appetite!"
+        "他のお客様3名と一緒にテーブルを指定されました。ぜひメニューをご覧になって、食欲を満たしてください。"
       ],
       "2": [
-        "I’m only 2 months pregnant and not showing.",
-        "I don’t want people to know I’m pregnant yet, and sharing that I’m not drinking may reveal that."
+        "まだ妊娠2ヶ月で、周りには気づかれません。",
+        "まだ妊娠していることを知られたくないし、お酒を控えていることを伝えると、それがバレてしまうかもしれない。"
       ],
       "3": [
-        "I developed diabetes as a child and have to be very careful with what I eat, but I don’t tell people about this.",
-        "It’s something I tend to keep private. I wonder if the others will suspect my medical condition."
+        "私は子供の頃に糖尿病を発症し、食事に気をつけなければならないのですが、このことはあまり人に言いません。",
+        "あまり人に教えたくないことです。他の人に病状を疑われないか心配です。"
       ],
       "4": [
-        "I know that in some parts of the world, people are discriminated against based on religion, by sharing that I keep kosher, now everyone knows I’m Jewish."
+        "世界には宗教で差別される地域もありますが、私がコーシャを守っていることを公表すれば、誰もが私がユダヤ人であることを知ります。"
       ],
       "5": [
-        "Well done!",
-        "This is indeed private information, and the waiter should not have shared these notes with your fellow passengers. Let‘s see how they feel about the situation."
+        "よくできました！",
+        "これはまさに個人情報であり、店員はこのメモを他の乗客と共有してはいけなかったのです。彼らがこの状況をどう受け止めているのか確認してみましょう。"
       ]
     },
     "brazil": {
       "1": [
-        "Please scan your face in order to enter game room.",
-        "We are very innovative and use technology as much as possible, so when you gave us your passport at registration, we automatically uploaded your passport photo to our facial recognition software so we can control access to the VIP game room!"
+        "ゲームルームに入るには、顔をスキャンしてください。",
+        "私たちは非常に革新的で、可能な限りテクノロジーを活用しています。登録時にパスポートをお預かりした際、自動的にパスポートの写真を顔認識ソフトウェアにアップロードし、VIPゲームルームへのアクセスを管理することができます。"
       ]
     },
     "china": {
       "1": [
-        "That lunch menu was weird, wasn’t it?",
-        "Why don’t you take a look at the ship’s privacy notice to see whether it was appropriate to collect and share dietary restrictions with other passengers.",
-        "You may also want to hunt for the privacy principles that Captain Maria mentioned so you know what to look for in the notice."
+        "あのランチメニューは変でしたよね？",
+        "食事制限に関する情報を収集し、他の乗客と共有することが適切であったかどうか、船のプライバシーノーティスを認されてはいかがでしょうか。",
+        "また、マリア船長が言及したプライバシーの原則を探し、通知の中で何を探すべきかを確認しておくとよいでしょう。"
       ],
       "2": [
-        "I heard some noise in here.",
-        "Is everything okay?"
+        "ここで何か物音がしました。",
+        "大丈夫ですか？"
       ],
       "3": [
-        "Passengers’ dietary information was shared with other passengers. This was not disclosed in the privacy notice and is a problem!"
+        "お客様の食事情報が他の乗客と共有されました。これは、プライバシーノーティスで開示されておらず、問題です。"
       ],
       "4": [
-        "Hmmmm. That seems unlikely.",
-        "Captain Maria takes privacy seriously.",
-        "Why don’t you go to the VIP game room to relax and take your mind off your worries. You are on vacation and should not worry about such things after all!"
+        "うん～。その可能性は低いと思います。",
+        "マリア船長は、プライバシーを大切にします。",
+        "VIPゲームルームでリラックスして、悩みを解消しませんか？せっかくの休暇なのだから、そんなことは気にしないほうがいいですよ！"
       ],
       "5": [
-        "Everything is fine!"
+        "すべて順調です!"
       ]
     },
     "usa": {
       "1": [
-        "That situation in the game room was very uncomfortable, wasn’t it?",
-        "Look at the privacy notice again to understand whether what happened in the game room was legit."
+        "ゲームルームでのあの状況は、とても居心地が悪かったのでは？",
+        "ゲームルームで起こったことが正しいかどうかを理解するために、もう一度プライバシーノーティスを見てください。"
       ],
       "2": [
-        "Good job!",
-        "You answered all the questions correctly, which means you have figured out that the ship is not responsibly handling personal information.",
-        "What can you do about it?"
+        "よくできました！",
+        "全問正解ということは、船が責任を持って個人情報を扱っていないことがわかったということですね。",
+        "では、どうすればいいのでしょうか？"
       ],
       "3": [
-        "Aha! The notice is torn – maybe the rest of it is hidden in the room."
+        "ハッ！告知が破れている......残りは部屋の中に隠してあるのかもしれません。"
       ]
     },
     "russia": {
       "1": [
-        "Hello – so nice to finally meet you!"
+        "こんにちは～、やっとお会いできましたね！"
       ],
       "2": [
-        "I’d like to exercise my privacy rights.",
-        "I’m not happy with what the ship is doing with my personal information."
+        "プライバシー権を行使したい。",
+        "舩の個人情報の取扱いに不満があります。"
       ]
     }
   },
   "screens": {
     "login": {
-      "label": "Please enter your access code",
-      "input-label": "Code",
-      "incorrect-password": "Incorrect code, Please try again"
+      "label": "アクセスコードを入力してください",
+      "input-label": "コード",
+      "incorrect-password": "コードが正しくありません。再試行してください。"
     },
     "italy": {
-      "title": "The survey",
-      "a1": "Welcome aboard! Participation in this game and the survey is completely voluntary. If you choose not to participate, it will not have any adverse effect on your employment relationship."
+      "title": "アンケート",
+      "a1": "ご搭乗ありがとうございます。このゲームおよびアンケートへの参加は、完全に任意です。参加しないことを選択しても、雇用関係に悪影響を及ぼすことはありません。"
     },
     "egypt": {
-      "title": "Lunch Menu",
-      "a1": "Waiter will give you the menu now, check if you see any concerns"
+      "title": "ランチメニュー",
+      "a1": "店員が今メニューを渡しますので、気になるものがあれば確認しましょう。"
     },
     "brazil": {
-      "title": "The mini-game",
-      "a1": "Please take a picture of your face in order to enter game room.",
+      "title": "ミニゲーム",
+      "a1": "ゲームルームに入るには、お顔の写真を撮影してください。",
       "a2": [
-        "Well done! The privacy notice was not very transparent.",
-        "Why don‘t you take a break and try out our latest game..."
+        "よくできました！プライバシーノーティスは透明性に欠けていました。",
+        "一息ついて、最新のゲームに挑戦してみてはいかがでしょうか..."
       ]
     },
     "china": {
-      "title": "Look at that!",
-      "title2": "Take another look!",
-      "a1": "You've found a note from a mysterious person.",
-      "a2": "Is there any data that the ship is collecting that makes you uncomfortable? If so, ask yourself whether collecting it seems necessary, and if not, click on it! "
+      "title": "見てください！",
+      "title2": "もう一度見てください！",
+      "a1": "あなたは謎の人物からのメモを見つけました。",
+      "a2": "船が収集している情報で、不快に感じるものはありますか？もしそうなら、収集する必要があるかどうか自問し、必要なければ、それをクリックしてください！"
     },
     "usa": {
       "games": {
         "1": {
-          "title": "Missing Piece game",
-          "a1": "You have to find the privacy notice in this room."
+          "title": "ミッシングピースゲーム",
+          "a1": "この部屋のプライバシーノーティスを見つけてください。"
         },
         "2": {
-          "a1": "You can call Franklin to take you to see Captain Maria.",
+          "a1": "フランクリンに電話して、マリア船長に会わせてもらいましょう。",
           "steps": {
             "1": {
-              "title": "This is a bit confusing – it’s not clear that Franklin is saying leave Maria alone and that the user is ignoring that.",
-              "next": "I insist to see Captain Maria"
+              "title": "フランクリンがマリアに構うなと言っているのに、ユーザーがそれを無視しているというのは、どうも腑に落ちないですね。",
+              "next": "マリア船長に会わせてください"
             }
           }
         }
       },
-      "look-around": "Look around the room and try to find the missing piece of the privacy notice."
+      "look-around": "部屋の中を見回して、プライバシーノーティスの欠けているピースを探してみてください。"
     },
     "russia": {
-      "title": "Captain's Cabin",
-      "a1": "You're going to have a conversation with <b>Capitan Maria</b>.",
+      "title": "キャプテンのキャビン",
+      "a1": "<b>カピタン・マリア</b>と話してもらいます。",
       "games": {
         "1": {
-          "title": "Puzzle game",
-          "a1": "You have to assemble a puzzle of 16 pieces, which will result in the image of the captain and at the same time the entry code to the cabin."
+          "title": "パズルゲーム",
+          "a1": "16ピースのパズルを組み立てることで、船長の画像と同時に、キャビンへの入室コードが表示されるのです。"
         }
       }
     }
   },
-  "next": "Next",
+  "next": "次",
   "italy": {
     "questions-titles": {
-      "1": "When using a digital device for personal reasons how often do you?",
-      "6": "Which of the following fall within the Novartis definition of ‘Personal Information’? (select all that apply)",
-      "7": "Are you familiar with the following?",
-      "12": "At work, do you?",
-      "16": "Select job function",
-      "17": "Country"
+      "1": "個人的な理由でデジタル機器を使うとき、どれくらいの頻度で使いますか？",
+      "6": "Novartisの「個人情報」の定義に該当するものはどれですか？(該当するものをすべて選択してください)",
+      "7": "以下のことをご存知でしょうか？",
+      "12": "職場ではどうですか？",
+      "16": "ジョ職務の選択",
+      "17": "国名"
     },
     "questions-indexes": {
       "1": "1",
@@ -274,177 +274,177 @@
     "questions": {
       "1": {
         "title": "1",
-        "label": "Read a privacy notice or policy?",
+        "label": "プライバシーノーティスや方針を読みますか？",
         "options": [
-          "Always",
-          "Often",
-          "Occasionally",
-          "Rarely",
-          "Never"
+          "常に",
+          "大抵",
+          "時々",
+          "稀に",
+          "全くない"
         ]
       },
       "2": {
         "title": "1",
-        "label": "Customize cookie settings?",
+        "label": "クッキーの設定をカスタマイズしますか？",
         "options": [
-          "Always",
-          "Often",
-          "Occasionally",
-          "Rarely",
-          "Never"
+          "常に",
+          "大抵",
+          "時々",
+          "稀に",
+          "全くない"
         ]
       },
       "3": {
         "title": "1",
-        "label": "Customize other privacy settings (like how your information can be used)?",
+        "label": "その他のプライバシー設定（あなたの情報の使用方法など）をカスタマイズしますか？",
         "options": [
-          "Always",
-          "Often",
-          "Occasionally",
-          "Rarely",
-          "Never"
+          "常に",
+          "大抵",
+          "時々",
+          "稀に",
+          "全くない"
         ]
       },
       "4": {
         "title": "1",
-        "label": "Try to enter as little information as needed?",
+        "label": "必要最小限の情報を入力するようにしますか？",
         "options": [
-          "Always",
-          "Often",
-          "Occasionally",
-          "Rarely",
-          "Never"
+          "常に",
+          "大抵",
+          "時々",
+          "稀に",
+          "全くない"
         ]
       },
       "5": {
         "title": "1",
-        "label": "Save credit card details or other Personal Information to your browser?",
+        "label": "クレジットカードの詳細やその他の個人情報をブラウザに保存しますか？",
         "options": [
-          "Always",
-          "Often",
-          "Occasionally",
-          "Rarely",
-          "Never"
+          "常に",
+          "大抵",
+          "時々",
+          "稀に",
+          "全くない"
         ]
       },
       "6": {
         "title": "6",
         "label": "",
         "options": [
-          "Phone number",
-          "Birthday",
-          "Home address",
-          "Information which combined could only identify one person on the planet, even if you don’t know their name (for example, country, college, employer, and age range)",
-          "GPS coordinates over time",
-          "Government identifier",
-          "IP address",
-          "Medical records",
-          "Anonymized data ",
-          "Cookies"
+          "電話番号",
+          "誕生日",
+          "自宅住所",
+          "名前が分からなくても、組み合わせると地球上の一人の人間しか特定できない情報（例：国、大学、勤務先、年齢層）。",
+          "GPS座標の経時変化",
+          "政府識別子",
+          "IPアドレス",
+          "医療記録",
+          "匿名化されたデータ",
+          "クッキー"
         ]
       },
       "7": {
         "title": "7",
-        "label": "The Novartis Data Privacy Policy?",
+        "label": "Novartisの個人情報保護方針?",
         "options": [
-          "Yes",
-          "No"
+          "はい",
+          "いいえ"
         ]
       },
       "8": {
         "title": "7",
-        "label": "Our Data Privacy Principles?",
+        "label": "当社の個人情報保護方針？",
         "options": [
-          "Yes",
-          "No"
+          "はい",
+          "いいえ"
         ]
       },
       "9": {
         "title": "7",
-        "label": "Who to contact for data privacy support?",
+        "label": "個人情報保護に関するサポートはどこに依頼すればよいか？",
         "options": [
-          "Yes",
-          "No"
+          "はい",
+          "いいえ"
         ]
       },
       "10": {
         "title": "7",
-        "label": "When to apply the Privacy Principles?",
+        "label": "プライバシー原則を適用するタイミング？",
         "options": [
-          "Yes",
-          "No"
+          "はい",
+          "いいえ"
         ]
       },
       "11": {
         "title": "7",
-        "label": "What to do if you become aware of a data privacy incident?",
+        "label": "個人情報漏洩に気づいた場合の対処法？",
         "options": [
-          "Yes",
-          "No"
+          "はい",
+          "いいえ"
         ]
       },
       "12": {
         "title": "12",
-        "label": "Report when you receive Personal Information you should not receive in your role?",
+        "label": "業務上受け取ってはいけない個人情報を受け取った場合の報告？",
         "options": [
-          "Always",
-          "Often",
-          "Occasionally",
-          "Rarely",
-          "Never",
-          "Not applicable"
+          "常に",
+          "大抵",
+          "時々",
+          "稀に",
+          "全くない",
+          "該当事項はありません。"
         ]
       },
       "13": {
         "title": "12",
-        "label": "Check the Novartis Data Privacy Policy when you have questions about handling  Personal Information?",
+        "label": "個人情報の取り扱いに関するご質問は、Novartis個人情報保護方針をご確認ください。",
         "options": [
-          "Always",
-          "Often",
-          "Occasionally",
-          "Rarely",
-          "Never",
-          "Not applicable"
+          "常に",
+          "大抵",
+          "時々",
+          "稀に",
+          "全くない",
+          "該当事項はありません。"
         ]
       },
       "14": {
         "title": "12",
-        "label": "Contact the privacy team if you cannot address a privacy-related question yourself?",
+        "label": "プライバシーに関する疑問を自分で解決できない場合は、プライバシーチームに連絡しますか？",
         "options": [
-          "Always",
-          "Often",
-          "Occasionally",
-          "Rarely",
-          "Never",
-          "Not applicable"
+          "常に",
+          "大抵",
+          "時々",
+          "稀に",
+          "全くない",
+          "該当事項はありません。"
         ]
       },
       "15": {
         "title": "12",
-        "label": "Seek to collect as little information as possible when creating a survey, registration, or other form?",
+        "label": "アンケートや登録などのフォームを作成する際に、できるだけ情報を集めないように努めていますか？",
         "options": [
-          "Always",
-          "Often",
-          "Occasionally",
-          "Rarely",
-          "Never",
-          "Not applicable"
+          "常に",
+          "大抵",
+          "時々",
+          "稀に",
+          "全くない",
+          "該当事項はありません。"
         ]
       },
       "16": {
         "title": "16",
         "label": "",
         "options": [
-          "Marketing",
-          "Patient Support & Services",
-          "Research & Development",
-          "Sales",
-          "Other"
+          "マーケティング",
+          "患者サポート＆サービス",
+          "研究開発",
+          "売上",
+          "その他"
         ]
       },
       "17": {
         "title": "17",
-        "label": "Select your country",
+        "label": "国を選択してください",
         "options": []
       }
     }
@@ -452,182 +452,182 @@
   "egypt": {
     "questions": {
       "1": {
-        "label": "Do you see any concerns with the waiter’s handwritten notes on the menu?",
+        "label": "店員がメニューに手書きでメモをすることに、何か気になる点はありますか？",
         "options": [
-          "Not at all, he is taking care of the guests' wishes ",
-          "Yes – he should also include their last names to be on the safe side ",
-          "Yes – it feels like this is private information that should not have been shared"
+          "何もありません、お客様トの意向を汲んでいるだけです",
+          "そうですね、念のため苗字も書いておいた方がいいでしょうね",
+          "そうですね、これは共有されてはならない個人情報だと思います"
         ]
       },
       "2": {
-        "label": "You realize that Carla, Yuri, and Dave look uncomfortable and decide that you should speak up to Franklin. What should you make him aware of?",
+        "label": "カーラ、ユーリ、デイブが不快そうにしていることに気づき、フランクリンにに相談するべきだと判断しました。何を知らせればいいのか？",
         "options": [
-          "Passengers don’t need to know each other’s dietary restrictions.",
-          " By including the waiter’s notes on the menu, passengers’ health conditions and/or religious affiliations were likely revealed.",
-          "Information about health and religion is a type of Personal Information, and it can be considered sensitive in many countries.",
-          "All of the above"
+          "乗客はお互いの食事制限を知る必要がありません。",
+          "メニューに店員のメモを記載することで、お客様の健康状態や所属宗教が特定される可能性があります。",
+          "健康や宗教に関する情報は、個人情報の一種であり、多くの国で機密情報とみなされることがあります。",
+          "上記すべて"
         ]
       }
     }
   },
   "brazil": {
     "validated-photo": [
-      "Good news!",
-      "The photo we just took of you was verified by our facial recognition software."
+      "朗報です！",
+      "今撮影した写真は、顔認識ソフトで確認されました。"
     ],
     "smile-photo": [
-      "Please follow me inside. Don’t forget to smile, we have cameras throughout the game room!"
+      "中へどうぞ。ゲームルームのあちこちにカメラが設置されているので、笑顔も忘れずに！"
     ],
     "questions": {
       "1": {
-        "label": "Did it say your passport photo would be taken and used to control access to parts of the ship?",
+        "label": "パスポートの写真を撮影して、船の一部へのアクセスを管理するために使用すると書かれていましたか？",
         "options": [
-          "Yes",
-          "No"
+          "はい",
+          "いいえ"
         ]
       },
       "2": {
-        "label": "Does it clearly explain that facial recognition would be used?",
+        "label": "顔認証が使われることは明確に説明されているのでしょうか？",
         "options": [
-          "Yes",
-          "No"
+          "はい",
+          "いいえ"
         ],
-        "link": "Review privacy notice",
-        "text": "That camera flash was bright and you find yourself feeling a bit confused. You read the privacy notice carefully, but . ."
+        "link": "プライバシーノーティスの見直し",
+        "text": "カメラのフラッシュが眩しくて、ちょっと戸惑いを感じます。プライバシーノーティスをよく読みます。。"
       },
       "3": {
-        "label": "Look at the privacy notice again – does it clearly explain that facial recognition would be used?",
+        "label": "プライバシーノーティスをもう一度見直してください。顔認識が使用されることが明確に説明されていますか？",
         "options": [
-          "Yes",
-          "No"
+          "はい",
+          "いいえ"
         ]
       }
     },
     "mini_game": {
-      "title": "Franklin",
-      "description": "Now's your chance to knock out some of those cameras you were concerned about. You have 30 seconds to hit cameras. For every camera clicked during a 30-second run you will get 50 points. You can repeat the game up to 5 times",
-      "score": "Your score is: <strong> {score} points.</strong>",
-      "points": "points",
-      "high_score": "High score:",
-      "seconds": "seconds",
-      "ranking": "Congratulations! You have the highest score.",
-      "statistics": "Statistics of former players:"
+      "title": "フランクリン",
+      "description": "今こそ、気になるカメラをノックアウトするチャンスです。30秒間でカメラをヒットしてください。30秒間にカメラを1回クリックすると、50ポイントもらえます。最大5回までゲームを繰り返すことができます",
+      "score": "あなたのスコアは：<strong>{スコア}点です。</strong>",
+      "points": "点",
+      "high_score": "ハイスコア：",
+      "seconds": "秒",
+      "ranking": "おめでとうございます！最高得点を獲得しました。",
+      "statistics": "過去のプレーヤーの統計データです："
     },
     "welcome-to-game-room": [
-      "Welcome to the game room.",
-      "Here you can see the result of all countries. Try to get the highest score possible in the game to contribute to your country‘s score."
+      "ゲームルームへようこそ。",
+      "ここでは、すべての国の結果を確認することができます。ゲーム内でできるだけ高いスコアを獲得し、自国のスコアに貢献することを目指してください。"
     ],
     "scoreboard-questions": [
       {
-        "label": "The scoreboard shows your photo and other identifying information which will be available for current and future voyageurs to see. Does this make you uncomfortable?",
+        "label": "スコアボードには、写真やその他の識別情報が表示され、現在および将来の航海者が確認できるようになります。不快に感じますか？",
         "options": [
-          "Yes",
-          "No"
+          "はい",
+          "いいえ"
         ]
       },
       {
-        "label": "Looking more closely at the scoreboard, you see that it has scores going back as far as 2013, suggesting that your information could be posted there for years to come. Does this make you uncomfortable?",
+        "label": "よく見ると、2013年までさかのぼったスコアボードがあり、、自分の情報が何年も掲載される可能性があることがわかります。不快に感じますか？",
         "options": [
-          "Yes",
-          "No"
+          "はい",
+          "いいえ"
         ]
       },
       {
-        "label": "Can you think of a privacy-friendly way to handle the scoreboard?",
+        "label": "プライバシーに配慮したスコアボードの取り扱いを考えていただけませんか？",
         "options": [
-          "Yes",
-          "No"
+          "はい",
+          "いいえ"
         ]
       }
     ]
   },
   "usa": {
     "intro": {
-      "player-thinking": "This doesn’t seem right. What can I do?"
+      "player-thinking": "これはおかしいと思います。どうすればいいのか？"
     },
     "hints": {
-      "phone-questions": "Click on the internet browsing icon.",
+      "phone-questions": "インターネットブラウザーのアイコンをクリックします。",
       "missing-piece": {
         "1": [
-          "Find the missing piece of the privacy notice",
-          "Have you looked under the carpet yet?"
+          "プライバシーノーティスの欠落ピースを探してください。",
+          "カーペットの下はもう探しましたか？"
         ],
         "2": [
-          "Click at the missing piece of the privacy notice."
+          "プライバシーノーティスの欠落ピースをクリックしてください。"
         ]
       }
     },
     "instructions": {
-      "phone-questions": "Mark useful articles that could possibly help you."
+      "phone-questions": "もしかしたら役立つかもしれない記事に印を付けます。"
     },
-    "score-board-inline": "No problem. I’ll take you to the captain’s cabin. Please follow me.",
+    "score-board-inline": "問題ありません。船長のキャビンへ案内します。私についてきてください。",
     "privacy-questions": [
       {
-        "label": "Let’s reflect on what happened in game room in light of what the privacy notice says: <br /> <br /> Captain Maria shared the principle of being transparent. That means that the ship should have let you know in the privacy notice that your information might be shared on the scoreboard. Is there anything in the notice about that?",
+        "label": "ゲームルームで起こったことを、プライバシーノーティスに照らして振り返ってみましょう。 <br /> <br /> マリア船長は、透明性の確保という原則を共有しました。つまり、船はプライバシーノーティスで、あなたの情報がスコアボードで共有される可能性があることを知らせるべきだったのです。それについて、告知に何か書かれていますか？",
         "options": [
-          "Yes",
-          "No"
+          "はい",
+          "いいえ"
         ]
       },
       {
-        "label": "She also shared the principle of not retaining information longer than necessary. The privacy notice doesn’t say anything about how long they keep your information, but based on the scoreboard, it looks like they have stored it for at least 10 years! Does that seem necessary?",
+        "label": "また、必要以上に情報を保持しないという原則も共有しました。プライバシーノーティスには、情報の保存期間について何も書かれていませんが、スコアボードからすると、少なくとも10年間は保存されているようです！必要だと思いますか？",
         "options": [
-          "Yes",
-          "No"
+          "はい",
+          "いいえ"
         ]
       },
       {
-        "label": "Captain Maria also said the ship should be responsible with personal information, meaning it should not use if for purposes other than what is was collected for. When the receptionist scanned your passport, you had no idea that your passport info would be posted on a public scoreboard. Do you think the ship used your passport information responsibly?",
+        "label": "また、マリア船長は、船は個人情報に対して責任をを持つべきであり、収集した目的以外に使ってはいけないと述べました。受付でパスポートをスキャンしたとき、あなたのパスポート情報が公共のスコアボードに掲載されるとは思わなかったと思います。船は責任を持ってあなたのパスポート情報を使用したと思いますか？",
         "options": [
-          "Yes",
-          "No"
+          "はい",
+          "いいえ"
         ]
       }
     ]
   },
   "china": {
     "bedroom-note": [
-      "Dear Passenger,",
-      "I was sorry to learn about the waiter‘s mistake at lunch. I‘m",
-      "afraid this ship may not be as watertight when it comes to",
-      "privacy as it should be. But don‘t worry - I have hidden 5",
-      "privacy principles under objects in your cabin that I believe can",
-      "help you protect your privacy. Feel free to visit my cabin if you",
-      " have any other concerns. – Captain Maria"
+      "乗客の皆さまへ、",
+      "昼食での店員のミスについて知り、申し訳なく思っています。残念ながら、",
+      "この船はプライバシー保護に関して、",
+      "厳密性が欠けていました。しかし、心配しないでください。私は、",
+      "あなたのプライバシーを守るために役立つと思われる5つのプライバシー原則を、あなたの",
+      "キャビンの中の物品の下に隠しておきました。気になることがあれば",
+      "キャビンへお越しください。- マリア船長"
     ],
     "bedroom-letter": [
-      "<div class='f-hand-2 font-weight-bold text-h3 mb-4'>Dear guest,</div>",
-      "Hello again and welcome to your cabin. You are staying in Cabin 42, which is a very special room featuring objects I have collected in my travels. <div class='font-weight-bold'>I suggest you spend some time here admiring these objects from all angles.</div>",
-      "<div class='d-flex justify-end'><i class='f-hand-2 font-weight-bold text-h5'>- Regards, Franklin</i></div>"
+      "<div class='f-hand-2 font-weight-bold text-h3 mb-4'>お客様へ、</div>",
+      "こんにちは、お客様のキャビンへようこそ。今回ご宿泊いただくキャビン42は、私が旅先で集めた品物を飾った特別なお部屋です。<div class='font-weight-bold'>あらゆる角度からこれら品物をじっくり鑑賞することをお勧めします。</div>",
+      "<div class='d-flex justify-end'><i class='f-hand-2 font-weight-bold text-h5'>- フランクリン</i></div>"
     ],
-    "privacy-principles": "Open privacy principles",
+    "privacy-principles": "個人情報保護方針を開く",
     "privacy-notice": {
-      "title": "Cruise Ship Privacy Notice",
-      "description": "We take your privacy very seriously. This notice sets forth what we collect, what we share, and your rights. For more details, please see the captain.",
-      "open": "Open privacy notice",
-      "close": "Close",
-      "close-and-call-franklin": "Call Franklin and demand to see Captain Maria",
+      "title": "クルーズ客船のプライバシーノーティス",
+      "description": "私たちは、お客様のプライバシーを非常に大切にしています。この告知は、当社が収集するもの、共有するもの、およびお客様の権利について規定するものです。詳しくは、船長にお聞きください。",
+      "open": "プライバシーノーティスを開く",
+      "close": "閉じる",
+      "close-and-call-franklin": "フランクリンに電話して、マリア船長に会わせてもらいましょう",
       "table": {
         "headers": [
-          "CATEGORY OF PERSONAL INFORMATION",
-          "DESCRIPTION"
+          "個人情報区分",
+          "説明"
         ],
         "content": [
           {
-            "category": "Identification and contact information",
-            "description": "We collect information to identify and contact you, such as your name, gender, nationality, date of birth, mailing address, email address, telephone number, and passport information (such as passport number and expiration date). This information may be shared with employees of the ship to facilitate your voyage."
+            "category": "識別情報および連絡先",
+            "description": "当社は、お客様の氏名、性別、国籍、生年月日、住所、Eメールアドレス、電話番号、パスポート情報（パスポート番号や有効期限など）など、お客様を特定し連絡を取るための情報を収集します。この情報は、お客様の航海を円滑にするために、船の従業員と共有されることがあります。"
           },
           {
-            "category": "Data to enhance your voyage",
-            "description": "As a high-tech cruise line, we employ state-of-the-art technology and algorithms to offer you the best voyage possible. To do this, we may use cameras and other sensors to track your movement on the ship, how long you stay in various rooms, and how you interact with our employees and other passengers."
+            "category": "航海を豊かにするデータ",
+            "description": "高度なテクノロジーを駆使したクルーズ会社として、最先端のテクノロジーとアルゴリズムを採用し、最高の航海を提供します。そのために、当社はカメラやその他のセンサーを使用して、お客様の船上での動き、お客様が各部屋に滞在する時間、お客様が当社の従業員や他の乗客とどのように交流するかを追跡することがあります。"
           },
           {
-            "category": "Payment information",
-            "description": "Information you provide for the purpose of processing payments, such as credit card details."
+            "category": "支払情報",
+            "description": "クレジットカードの詳細など、支払い処理のためにお客様が提供する情報。"
           },
           {
-            "category": "Safety information",
-            "description": "We are committed to ensuring you have a safe voyage! We will ask you to let us know if you have any food allergies, and we also have a nurse on staff in the event of sea-sickness or other ailment. If you visit the nurse, we may collect information about any current or prior health conditions. This information will only be used by cruise employees for the purposes of ensuring your safety."
+            "category": "安全性情報",
+            "description": "私たちは、お客様の安全な航海のために全力を尽くします！食物アレルギーのある方はお知らせいただき、また、船酔いなどの体調不良の際に備え、看護師が常駐しています。看護師を訪問する場合、現在または過去の健康状態について情報を収集することがあります。これらの情報は、お客様の安全を確保するために、クルーズの従業員のみが使用します。"
           }
         ],
         "correctOptions": [
@@ -639,8 +639,8 @@
       "table": {
         "content": [
           {
-            "category": "Your rights",
-            "description": "You have the right to request a copy of all Personal Information collected about you and to ask us to correct or delete that information. To exercise these rights, please contact Captain Maria."
+            "category": "あなたの権利",
+            "description": "お客様は、お客様について収集されたすべての個人情報の写しを要求し、その情報の修正または削除を当社に求める権利を有します。これらの権利を行使するためには、マリア船長に連絡してください。"
           }
         ]
       }
@@ -650,101 +650,101 @@
     "task-2": {
       "msgs": [
         {
-          "dir": "ltr",
-          "text": "So nice to finally meet you.",
+          "dir": "左書き",
+          "text": "やっとお会いできましたね。",
           "isMaria": true
         },
         {
-          "dir": "ltr",
-          "text": "I‘m sorry to hear about the privacy issues. You would like to exercise your privacy rights?",
+          "dir": "左書き",
+          "text": "プライバシーに関する問題についてお聞きしました。申し訳ありません。。個人情報保護の権利を行使しますか？",
           "isMaria": true
         },
         {
-          "dir": "ltr",
-          "text": "I can let you know what information we have about you, you can ask to correct it, or you can ask to delete it.",
+          "dir": "左書き",
+          "text": "当社が保有するお客様に関する情報をお知らせし、お客様はその訂正を求めることができ、また削除を求めることができます。",
           "isMaria": true
         },
         {
-          "dir": "ltr",
-          "text": "Based on your concerns, it sounds like you want me to delete your information.",
+          "dir": "左書き",
+          "text": "あなたの懸念から推測すると、あなたの情報を削除してほしいようですね。",
           "isMaria": true
         },
         {
-          "dir": "ltr",
-          "text": "Which information would you like deleted?",
+          "dir": "左書き",
+          "text": "どの情報を削除したいですか？",
           "isMaria": true
         },
         {
-          "dir": "rtl",
-          "text": "Name and other identifiers",
+          "dir": "右書き",
+          "text": "名前などの識別情報",
           "isPlayer": true
         },
         {
-          "dir": "rtl",
-          "text": "Contact information",
+          "dir": "右書き",
+          "text": "連絡先情報",
           "isPlayer": true
         },
         {
-          "dir": "rtl",
-          "text": "Photographs",
+          "dir": "右書き",
+          "text": "写真",
           "isPlayer": true
         },
         {
-          "dir": "rtl",
-          "text": "Biometric data",
+          "dir": "右書き",
+          "text": "バイオメトリクスデータ",
           "isPlayer": true
         },
         {
-          "dir": "rtl",
-          "text": "Credit card data",
+          "dir": "右書き",
+          "text": "クレジットカード情報",
           "isPlayer": true
         },
         {
-          "dir": "rtl",
-          "text": "Dietary preferences",
+          "dir": "右書き",
+          "text": "食事に関する要望",
           "isPlayer": true
         },
         {
-          "dir": "ltr",
-          "text": "Understood. I can delete some information right away if it’s not critical to operating the ship, but there is some information we need to use while you are on board, such as passport data and dietary restrictions.",
+          "dir": "左書き",
+          "text": "かしこまりました。船の運航に影響がない情報であればすぐに削除できますが、パスポートのデータや食事制限など、乗船中に使わなければならない情報もあります。",
           "isMaria": true
         },
         {
-          "dir": "ltr",
-          "text": "Once you disembark, we can delete everything except for what we have to keep for regulations – such as information needed to comply with COVID-related regulations.",
+          "dir": "左書き",
+          "text": "お客様が降船された後は、新型コロナウィルス関連の規制に対応するために必要な情報など、規制上保管しなければならないものを除き、すべてを削除することができます。",
           "isMaria": true
         },
         {
-          "dir": "ltr",
-          "text": "Thank you for speaking up about your privacy concerns. I will ask Franklin to get to work to make sure we are shipshape when it comes to privacy!",
+          "dir": "左書き",
+          "text": "プライバシーに関する懸念を共有していただき、ありがとうございます。フランクリンにお願いして、プライバシーを守るための体制を整えてもらいます！",
           "isMaria": true
         }
       ]
     }
   },
   "score-result": {
-    "star3": "Well Done!",
-    "star2": "Bad!",
-    "star1": "Too Bad!",
-    "star0": "Too Bad!",
+    "star3": "よくできました！",
+    "star2": "悪い！",
+    "star1": "残念です！",
+    "star0": "残念です！",
     "italy": [
-      "Thank you!",
-      "Now, please join us in the dining room for lunch!"
+      "ありがとうございました！",
+      "では、ダイニングルームでランチをお楽しみください！"
     ],
     "egypt": [
-      "That’s right – that waiter should know better! Silly humans. Perhaps they should replace the waiter with an AI-powered robot like me!",
-      "Why don’t you return to your cabin to relax."
+      "そうですね、店員の勉強不足ですね！愚かな人間たち。店員の代わりに、私のようなAI搭載のロボットを使うべきかもしれませんね！",
+      "キャビンに戻ってくつろいだらいかがでしょう。"
     ],
     "china": [],
     "brazil": [
-      "Why don’t you go back to your cabin to see how the principles that Captain Maria shared can help you figure this out."
+      "キャビンに戻って、マリア船長が話してくれた原理原則を参考にしてみてはいかがでしょうか。"
     ]
   },
-  "excellent": "Excellent",
-  "bad": "Bad",
-  "too-bad": "Too Bad",
+  "excellent": "最高",
+  "bad": "悪い",
+  "too-bad": "残念です",
   "learning-outcome": {
-    "title": "Learning Outcome",
+    "title": "学習成果",
     "italy": [],
     "egypt": [],
     "brazil": [],
@@ -752,151 +752,151 @@
     "china": [],
     "usa": []
   },
-  "try-again": "Try again",
+  "try-again": "再試行",
   "lunch-menu": {
-    "title": "Lunch Menu",
+    "title": "ランチメニュー",
     "items": [
       {
-        "label": "Starter",
-        "text": "Prawn & Avocado Cocktail",
-        "handwritten": "Note: serve Goats Cheese & Onion Filo Tart to Dave (kosher)"
+        "label": "スターター",
+        "text": "海老とアボカドのカクテル",
+        "handwritten": "注：ヤギのチーズとオニオンのフィロタルトをデイブに提供する（コーシャ）"
       },
       {
-        "label": "Main",
-        "text": "Fillet steak served with a mushroom sauce served with Dauphinoise Potatoes"
+        "label": "メイン",
+        "text": "フィレステーキ、マッシュルームソース、ドフィノワーズポテト添え"
       },
       {
-        "label": "Dessert",
-        "text": "Crème Brulee",
-        "handwritten": "Note: Serve Fresh Fruit  to Yuri (sugar-free)"
+        "label": "デザート",
+        "text": "クレームブリュレ",
+        "handwritten": "注：ユリに新鮮なフルーツを提供する（砂糖不使用）"
       },
       {
-        "label": "Wine pairings with each course",
-        "handwritten": "(Do not offer to Carla – instead give sparkling apple juice)"
+        "label": "各コースに合わせたワインペアリング",
+        "handwritten": "(カルラには提供しない、リンゴのスパークリングジュースを出す。）"
       }
     ]
   },
-  "pick-response-to-continue": "Pick a response to continue",
-  "pick-at-least-three-choices": "Pick at least three choices",
-  "what-should-tell-franklin": "What should you tell Franklin?",
-  "choose-headlines": "Choose which headlines are useful:",
-  "congratulations": "Congratulations",
+  "pick-response-to-continue": "続行する為に回答を選ぶ",
+  "pick-at-least-three-choices": "少なくとも3つの選択肢を選んでください",
+  "what-should-tell-franklin": "フランクリンに何を伝えるべきでしょうか？",
+  "choose-headlines": "どの見出しが有用かを選択します。",
+  "congratulations": "おめでとうございます",
   "outro": {
     "successText": [
-      "<b>Congratulations!</b> You have used the data privacy principles to prevent a privacy shipwreck!",
-      "Click “Next” to disembark and help your country become the 2023 Privacy Champion."
+      "<b>おめでとうございます！</b>個人情報保護の原則を利用して、個人情報漏えいをを防きました！",
+      "「次へ」をクリックし、2023年プライバシー・チャンピオンを目指してください。"
     ],
     "failText": [
-      "Oh, too bad. You failed to save the world, and now The Cyber Monster has destroyed everything he could. Play this task again and help our Brick defeat the enemy."
+      "残念。あなたは世界を救うことに失敗し、サイバーモンスターはすべてを破壊しました。このタスクをもう一度プレイして、ブリックが敵を倒すのを助けてください。"
     ],
     "actions": {
-      "yes": "Yes",
-      "no": "No"
+      "yes": "はい",
+      "no": "いいえ"
     }
   },
   "found-object": {
-    "title": "You've found a privacy symbol",
+    "title": "プライバシーマークが見つかりました",
     "wrong-item": {
-      "1": "Sorry, you've clicked on a wrong item. Try clicking on other items to find missing piece of the privacy notice.",
-      "2": "Sorry, you've clicked on a wrong item. Have you looked under the carpet yet?"
+      "1": "残念、間違ったアイテムをクリックしました。他のアイテムをクリックして、プライバシーノーティスの欠落ピースを探してください。",
+      "2": "残念、間違ったアイテムをクリックしました。カーペットの下はもう探しましたか？"
     },
-    "find-x-more": "You need to find {x} more symbols",
-    "find-one-more": "You need to find {x} more symbol",
-    "found-last": "You‘ve found the last privacy symbol!",
-    "found-all": "Congratulations! You‘ve found all privacy principles.",
-    "privacy-found": "Congratulations! You found the missing part of the privacy notice.",
+    "find-x-more": "あと{x}個のマークを見つける必要があります",
+    "find-one-more": "あと{x}個のマークを見つける必要があります",
+    "found-last": "最後のプライバシーマークを発見！",
+    "found-all": "おめでとうございます！すべての個人情報保護の原則を見つけました。",
+    "privacy-found": "おめでとうございます！プライバシーノーティスの欠落ピースを見つけました。",
     "items": {
-      "eye": "Be transparent",
-      "bridge": "Collect only what is necessary",
-      "handshake": "Use responsibly",
-      "lock": "Protect and be vigilant",
-      "hourglass": "Retain only as long as necessary"
+      "eye": "透明性を確保する",
+      "bridge": "必要なものだけを収集する",
+      "handshake": "責任を持って使用する",
+      "lock": "保護と警戒",
+      "hourglass": "必要な期間だけ保持する"
     },
     "items-explanations": {
-      "eye": "Be transparent means you should be able to understand what will be done with information about you. When you find the privacy notice, make sure you understand what it says!",
-      "bridge": "Collect only what is necessary means you should not have to provide information about you that isn‘t necessary. This ship has a tendency to collect information everywhere – be on the lookout for times when the ship might collect more than what it needs.",
-      "handshake": "Use responsibly means that the ship should only use your personal information for the purposes for which it was collected – pay attention to what is in the privacy notice to make sure the ship isn‘t using your information for other purposes.",
-      "lock": "Protect and be vigilant means the ship should secure your personal information and report and investigate any misuse of data. You should speak up if you see anything suspicious.",
-      "hourglass": "Retain only as long as necessary means the ship should not keep your information longer than it needs to. Most of what the ship collects about you should probably be deleted when the voyage ends."
+      "eye": "透明性の確保とは、あなたに関する情報がどう扱われるかを理解できるようにすることです。プライバシーノーティスを見つけたら、その内容をよく理解するようにしてください！",
+      "bridge": "必要なものだけを収集するということは、必要のない自分の情報を提供する必要がないことを意味します。この船は至る所で情報を集める傾向があり、必要以上の情報を集めてないか、注意する必要があります。",
+      "handshake": "責任を持って使用するということは、個人情報を収集した目的のためにのみ使用するということです。船が他の目的であなたの情報を使用していないかどうか、プライバシーノーティスに何が記載されているかに注意してください。",
+      "lock": "保護と警戒は、船が個人情報を保護し、データの不正使用を報告し、調査することを意味します。不審な点があれば、報告しましょう。",
+      "hourglass": "必要な期間だけ保持するということは、船が必要な期間より長くお客様の情報をを保持すべきではないということです。船が収集したあなたの情報は、航海が終わったらほとんど削除されるべきです。"
     }
   },
   "note-from-prev-passenger": [
-    "Beware",
-    "Something weird is going on here",
-    "Look under the alarm clock"
+    "注意してください",
+    "何かが変です",
+    "目覚まし時計の下を見てください"
   ],
   "privacy-notice": {
-    "title": "Cruise Ship Privacy Notice",
-    "text-1": "We take your privacy very seriously. This notice sets forth what we collect, what we share, and your rights. For more details, please see the captain.",
-    "text-2": "The Personal Information we collect and how we use it",
+    "title": "クルーズ客船のプライバシーノーティス",
+    "text-1": "私たちは、お客様のプライバシーを非常に大切にしています。この告知は、当社が収集するもの、共有するもの、およびお客様の権利について規定するものです。詳しくは、船長にお聞きください。",
+    "text-2": "当社が収集する個人情報およびその利用方法について",
     "headers": {
-      "name": "CATEGORY OF PERSONAL INFORMATION",
-      "desc": "DESCRIPTION"
+      "name": "個人情報区分",
+      "desc": "説明"
     },
     "items": {
       "1": {
-        "name": "Identification and contact information",
-        "desc": "We collect information to identify and contact you, such as your name, gender,nationality, date of birth, mailing address, email address, telephone number, and passport information (such as passport number and expiration date). This information may be shared with employees of the ship to facilitate your voyage."
+        "name": "識別情報および連絡先",
+        "desc": "当社は、お客様の氏名、性別、国籍、生年月日、住所、電子メールアドレス、電話番号、パスポート情報（パスポート番号や有効期限など）など、お客様を特定し連絡を取るための情報を収集します。この情報は、お客様の航海を円滑にするために、船の従業員と共有されることがあります。"
       },
       "2": {
-        "name": "Data to enhance your voyage",
-        "desc": "As a high-tech cruise line, we employ state-of-the-art technology and algorithms to offer you the best voyage possible. To do this, we may use cameras and other sensors to track your movement on the ship, how long you stay in various rooms, and how you interact with our employees and other passengers."
+        "name": "航海を豊かにするデータ",
+        "desc": "高度なテクノロジーを駆使したクルーズ会社として、最先端のテクノロジーとアルゴリズムを採用し、最高の航海を提供します。そのために、当社はカメラやその他のセンサーを使用して、お客様の船上での動き、お客様が各部屋に滞在する時間、お客様が当社の従業員や他の乗客とどのように交流するかを追跡することがあります。"
       },
       "3": {
-        "name": "Payment information",
-        "desc": "Information you provide for the purpose of processing payments, such as credit card details"
+        "name": "支払情報",
+        "desc": "クレジットカードの詳細など、支払い処理のために提供される情報"
       },
       "4": {
-        "name": "Safety information",
-        "desc": "We are committed to ensuring you have a safe voyage! We will ask you to let us know if you have any food allergies, and we also have a nurse on staff in the event of sea-sickness or other ailment. If you visit the nurse, we may collect information about any current or prior health conditions. This information will only be used by cruise employees for the purposes of ensuring your safety."
+        "name": "安全性情報",
+        "desc": "私たちは、お客様の安全な航海のために全力を尽くします！食物アレルギーのある方はお知らせいただき、また、船酔いなどの体調不良の際に備え、看護師が常駐しています。看護師を訪問する場合、現在または過去の健康状態について情報を収集することがあります。これらの情報は、お客様の安全を確保するために、クルーズの従業員のみが使用します。"
       }
     },
     "questions": {
-      "title": "Now that you have found the privacy notice and the principles that Captain Maria hid, what do you think about the situation at lunch?",
+      "title": "プライバシーに関するお知らせと、マリア船長が隠していた原則を見つけた今、あなたは昼食時の状況についてどう思いますか？",
       "description": [
-        "That’s right!",
-        "Although the ship disclosed that it would collect information about food allergies (which relates to dietary restrictions), it said it would only share it with employees to ensure safety. That information never should have been shared with other passengers. And while we’re thinking about it, it would be clearer if the privacy notice said “dietary restrictions” rather than just allergies, since Carla, Yuri, and Dave all had restrictions for other reasons."
+        "そうです！",
+        "食物アレルギー（食事制限に関わるもの）の情報を収集することは公表していましたが、安全性の確保のおために従業員にのみ共有するとしていました。その情報は、他の乗客と決して共有されるべきではなかったのです。また、カルラ、ユーリ、デイブは他の理由で食事制限をしているので、アレルギーだけでなく、「食事制限」と書いてあれば、より分かりやすいと思います。"
       ],
       "congratulations": [
-        "Good job!",
-        "Why does the ship need to use cameras and sensors to track movement on the ship and how you interact with others? Does the ship really need to know if someone happens to be spending time in someone else’s cabin? Even if this is arguably for safety, there must be ways to ensure passenger safety without compromising privacy."
+        "よくできました！",
+        "なぜ、船内の動きや他者との関わりを追跡するために、カメラやセンサーを使う必要があるのでしょうか？誰かが他の人のキャビンで過ごしていても、船はその情報を知る必要は本当にあるのでしょうか？たとえそれが安全のためであっても、プライバシーを損なわずに乗客の安全を確保する方法はあるはずです。"
       ],
       "q1": {
-        "text": "Does the privacy notice state that the ship will collect information about dietary restrictions?",
+        "text": "プライバシーノーティスには、食事制限に関する情報を収集することが記載されていますか？",
         "options": [
-          "Yes",
-          "No"
+          "はい",
+          "いいえ"
         ]
       },
       "q2": {
-        "text": "Based on the privacy notice, should the waiter’s notes have been shared with the passengers?",
+        "text": "プライバシーノーティスに基づき、店員のメモを乗客と共有するべきだったでしょうか？",
         "options": [
-          "Yes",
-          "No"
+          "はい",
+          "いいえ"
         ]
       }
     }
   },
-  "player": "Player",
-  "finish": "Finish",
-  "upload_photo": "Upload photo",
-  "hide": "Hide",
-  "receptionist": "Receptionist",
-  "privacy_notice": "Privacy Notice",
-  "wrong-response": "Wrong Response!",
-  "wrong-response-desc": "You've selected an incorrect response, please try again",
-  "wrong-response-hint": "Really? It’s fine? Remember the concerns the other passengers shared...",
-  "ok": "OK",
-  "click-to-open-privacy-notice": "Click to open Privacy Notice",
-  "restart": "Restart",
+  "player": "プレーヤー",
+  "finish": "終わる",
+  "upload_photo": "写真をアップロードする",
+  "hide": "隠す",
+  "receptionist": "受付",
+  "privacy_notice": "プライバシーノーティス",
+  "wrong-response": "不正解！",
+  "wrong-response-desc": "選択された回答が正しくありません。もう一度お試しください。",
+  "wrong-response-hint": "本当に？大丈夫ですか？他の乗客が話していた懸念を思い出してください...",
+  "ok": "オッケー",
+  "click-to-open-privacy-notice": "クリックするとプライバシーノーティスが表示されます。",
+  "restart": "リスタート",
   "restart-game": {
-    "title": "Restart Game",
-    "hint": "Are you sure you want to restart the game?",
-    "action": "Yes, restart!"
+    "title": "ゲームをリスタートする",
+    "hint": "本当にゲームをリスタートしますか？",
+    "action": "はい、リスタートします！"
   },
-  "top-scores": "Top Scores",
-  "passport-number": "Passport number",
-  "voyage-date": "Voyage date",
-  "cabin": "Cabin",
-  "enter-the-code": "Enter the code"
+  "top-scores": "トップスコア",
+  "passport-number": "パスポート番号",
+  "voyage-date": "航海日",
+  "cabin": "キャビン",
+  "enter-the-code": "コードを入力してください"
 }

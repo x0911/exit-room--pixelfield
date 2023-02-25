@@ -1,267 +1,266 @@
 ﻿{
   "franklin": "Franklin",
-  "carla-thought": "Carla’s thinking",
-  "yuri-thought": "Yuri’s thinking",
-  "dave-thought": "Dave’s thinking",
-  "player-is-thinking": "Player is thinking",
-  "confirm": "Confirm",
-  "call-franklin": "Call Franklin",
-  "submit": "Submit",
-  "accept": "Accept",
-  "previous": "Previous",
-  "back_to_menu": "Back to menu",
-  "score": "Score",
-  "phone": "Phone",
-  "country": "Country",
-  "countries_scores": "The 5 countries with the highest scores",
-  "lets-go": "Let's go",
+  "carla-thought": "Carla'nın düşüncesi",
+  "yuri-thought": "Yuri'nin düşüncesi",
+  "dave-thought": "Dave'in düşüncesi",
+  "player-is-thinking": "Oyuncu düşünüyor",
+  "confirm": "Onayla",
+  "call-franklin": "Franklin'i ara",
+  "submit": "Gönder",
+  "accept": "Kabul et",
+  "previous": "Önceki",
+  "back_to_menu": "Menüye geri dön",
+  "score": "Puan",
+  "phone": "Telefon",
+  "country": "Ülke",
+  "countries_scores": "En yüksek puana sahip 5 ülke",
+  "lets-go": "Başlayalım",
   "cookies": {
-    "title": "Privacy & Cookie Notice",
-    "text": [
+    "title": "Gizlilik ve Çerez Bildirimi",
+    "text": [{
+      "title": "Amaç",
+      "description": "Bu web sitesi, gizlilikle ilgili bir anketin ve ülkeler arası bir yarışmanın yer aldığı bir odadan kaçış oyunu içermektedir. Site, işvereniniz tarafından gizlilikle ilgili farkındalığı ve bilgi birikimini artırmak ve gizlilik programını geliştirerek şirketiniz genelindeki farkındalığı yükseltmek için oluşturulmuştur."
+    },
       {
-        "title": "Purpose",
-        "description": "This website contains an escape-room game with a survey and country competition related to privacy. It has been created by your employer to raise awareness and knowledge related to privacy and improve the privacy program and increase awareness within your company."
+        "title": "Gönüllülük esası",
+        "description": "Bu oyuna katılımın gönüllülük esasına bağlı olduğunu lütfen unutmayın. Herhangi bir katılım zorunluluğu yoktur. Oyuna katılmama tercihiniz, iş ilişkiniz üzerinde herhangi bir olumsuz etkiyle sonuçlanmayacaktır."
       },
       {
-        "title": "Voluntary basis",
-        "description": "Please note that participation in this game is on a voluntary basis. There is no obligation to participate. Non-participation will not have any adverse effects on your employment relationship."
+        "title": "Anonimleştirilmiş veriler",
+        "description": "Oyun içerisinde yalnızca anonimleştirilmiş veriler işlenir. İşvereniniz, çalışanlara herhangi bir atıfta bulunamaz veya çalışanları tanımlayıcı bilgiler sunamaz. Sizi ülkeler arası yarışmanın sonuçları hakkında bilgilendirebilmemiz veya oyunumuzla ilgili geri bildirimlerinize yanıt verebilmemiz için oyunun sonunda isterseniz iş e-posta adres bilginizi paylaşabilirsiniz. Bu durumda kimlik tespiti mümkün olacaktır. Küçük ekipler veya ülke operasyonları söz konusu olduğunda, aynı bölüm veya organizasyonel birim, iş fonksiyonu ve çalışma ülkesinde beşten az kişinin bulunması durumunda işvereninizin kimliğinizi tespit edebileceğini lütfen unutmayın. İşvereniniz, kimliğinizi kasıtlı olarak açığa çıkarmamak ve kimlik tanımlamasını önlemek için uygun şekilde makul önlemler almak da dahil olmak üzere, verileri gizlilik politikası ve iş ortağı bildirimi ile tutarlı olarak işleyecektir."
       },
       {
-        "title": "Anonymized data",
-        "description": "Within the game only anonymized data is processed. Your employer cannot make any reference to or identification of specific employees. For the purpose of being able to provide you news on the results of the country-competition or react to your provided feedback on our game, you can voluntarily provide your work-email-address at the end of the game. In this case an identification would be possible. Please note that, in cases of small teams or country operations, your employer may be able to identify you if less than five people have the same division or organizational unit, job function, and work country. Your employer will process the data consistent with its privacy policy and associate notice, including not intentionally identifying you and taking reasonable measures, as appropriate, to prevent identification."
+        "title": "Çerezler",
+        "description": "Bu web sitesi yalnızca kesinlikle gerekli çerezleri işler. Bu çerezler web sitesinin çalışması için gereklidir ve sistemlerimizde devre dışı bırakılamazlar. Çerezler genellikle yalnızca gizlilik tercihlerinizi ayarlamak, oturum açmak veya form doldurmak gibi hizmetlere yönelik talepler olarak değerlendirilen eylemlerinize yanıt olarak ayarlanır. Tarayıcınızı, bu çerezleri engelleyecek veya sizi bu çerezler konusunda uyaracak şekilde ayarlayabilirsiniz; ancak bu durumda, sitenin bazı kısımları çalışmayacaktır. Bu çerezler, kişileri tanımlamak için kullanılan herhangi bir bilgiyi depolamaz."
       },
       {
-        "title": "Cookies",
-        "description": "This website only processes strictly necessary cookies. These cookies are necessary for the website to function and cannot be switched off in our systems. They are usually only set in response to actions made by you which amount to a request for services, such as setting your privacy preferences, logging in or filling in forms. You can set your browser to block or alert you about these cookies, but some parts of the site will not then work. These cookies do not store any personally identifiable information."
-      },
-      {
-        "title": "Legal basis and contact",
-        "description": "In case your personal data is processed, the legal basis for the data processing would be the necessity for the purposes of legitimate interests. For more detailed information with regards data processing in your working environment and your data privacy rights (e.g., right to object) please find the local privacy notices for employees or contact your local data privacy team."
+        "title": "Yasal dayanak ve iletişim",
+        "description": "Kişisel verilerinizin işlenmesi durumunda, veri işlemeye yönelik yasal dayanak, işlemenin meşru menfaatler doğrultusunda gerekli olması olacaktır. Çalışma ortamınızdaki veri işleme sürecine ve veri gizliliği haklarınıza (örneğin, itiraz hakkı) ilişkin daha ayrıntılı bilgi için lütfen çalışanlara yönelik yerel gizlilik bildirimlerine başvurun veya yerel veri gizliliği ekibinizle iletişime geçin."
       }
     ]
   },
   "task-name": {
-    "1": "Reception",
-    "2": "Dining Room",
-    "3": "Your Cabin",
-    "4": "Game Room",
-    "5": "Your Cabin",
-    "6": "Captain's Bridge"
+    "1": "Resepsiyon",
+    "2": "Yemek Salonu",
+    "3": "Kamaranız",
+    "4": "Oyun Odası",
+    "5": "Kamaranız",
+    "6": "Kaptan Köşkü"
   },
   "fullscreen-hint": {
-    "title": "Fullscreen",
-    "text": "It's recommended to play the game in fullscreen mode, Would you like to try it now?"
+    "title": "Tam ekran",
+    "text": "Oyunu tam ekran modunda oynamanız önerilir. Şimdi denemek ister misiniz?"
   },
-  "enable": "Enable",
-  "validate": "Validate",
-  "cancel": "Cancel",
-  "hint-title": "Hint",
-  "take_a_photo": "Take a photo",
-  "continue": "Continue",
-  "name": "Name",
-  "address": "Address",
-  "cabin_number": "Cabin number",
-  "age": "Age",
-  "nationality": "Nationality",
-  "and": "and",
+  "enable": "Etkinleştir",
+  "validate": "Doğrula",
+  "cancel": "İptal",
+  "hint-title": "İpucu",
+  "take_a_photo": "Fotoğraf çek",
+  "continue": "Devam et",
+  "name": "Ad",
+  "address": "Adres",
+  "cabin_number": "Kamara numarası",
+  "age": "Yaş",
+  "nationality": "Uyruk",
+  "and": "ve",
   "hints": {
     "splash": [
-      "Select your language to proceed"
+      "Devam etmek için dil seçimi yapın"
     ],
     "map": [
-      "Active room will have a glowing circle above its name"
+      "Etkin olan odanın adının üzerinde parlak bir daire olacaktır"
     ],
     "italy": [
-      "Complete the survey"
+      "Anketi tamamla"
     ],
     "egypt": [
-      "Waiter will give you a menu, check if you see any concerns.",
-      "After checking, you can safely click on next to proceed to next steps"
+      "Garsonun size vereceği menüde herhangi bir sorun olup olmadığını kontrol edin.",
+      "Kontrol ettikten sonra, sonraki adımlara geçmek için güvenle ileri düğmesine tıklayabilirsiniz"
     ],
     "brazil": [],
     "china": [
-      "Read the note, then search the room to find the 5 privacy principles and their explanations.",
-      "After you have found them all, you will unlock the privacy notice."
+      "Notu okuyun, ardından 5 gizlilik ilkesini ve bu ilkelerin açıklamalarını bulmak için odayı arayın.",
+      "Tüm ilkeleri bulduktan sonra gizlilik bildiriminin kilidini açacaksınız."
     ],
     "usa": [],
     "russia": []
   },
-  "start_game": "Meet Franklin",
-  "skip": "Skip",
-  "wall": "Room Selector",
+  "start_game": "Franklin ile tanışın",
+  "skip": "Atla",
+  "wall": "Oda Seçici",
   "map-email": {
     "text": [
-      "This is your room selector. Rooms order is mandatory. Active room has a glowing circle above its name."
+      "Bu sizin oda seçicinizdir. Odaların sırası değiştirilemez. Etkin olan odanın adının üzerinde parlak bir daire vardır."
     ]
   },
   "wall-steps": [
-    "Ship Map",
-    "Here is a map of the cruise ship. Click Start and then click the room marked by the glowing circle."
+    "Gemi Haritası",
+    "İşte yolcu gemisinin haritası. Başlat öğesine ve ardından parlak daire ile belirtilen odaya tıklayın."
   ],
-  "start": "Start",
+  "start": "Başlat",
   "orientation-hint": {
-    "title": "Landscape is required",
-    "text": "Playing the game in portrait mode is not possible, please rotate your device to landscape mode."
+    "title": "Oyun yatay modda oynanmalıdır",
+    "text": "Oyunu dikey modda oynamak mümkün değildir; lütfen cihazınızı döndürerek yatay moda geçirin."
   },
-  "map": "Map",
+  "map": "Harita",
   "back-to-map": {
-    "text": "Do you want to back to room selector?"
+    "text": "Oda seçiciye dönmek mi istiyorsunuz?"
   },
   "speeches": {
     "splash": {
       "1": [
-        "Welcome aboard!",
-        "I am Franklin, an AI-powered robot and your concierge on this voyage."
+        "Gemimize hoş geldiniz!",
+        "Ben Franklin, bu yolculuktaki konsiyerjiniz olan yapay zeka destekli bir robotum."
       ],
       "2": [
-        "Please follow me aboard so I can show you around the ship."
+        "Lütfen benimle birlikte gemiye gelin ve size etrafı gezdirmeme izin verin."
       ]
     },
     "italy": {
       "1": [
-        "Greetings!",
-        "Our ship features the most cutting-edge, digital technology available on the high seas. We trust this will make for a memorable vacation!",
-        "Before we set sail, we need you to scan your passport, share any dietary restrictions we should know about, and complete a quick survey."
+        "Merhabalar!",
+        "Gemimiz açık sularda mevcut olan en gelişmiş dijital teknolojiye sahiptir. Bu sayede unutulmaz bir tatil yaşayacağınıza inanıyoruz!",
+        "Denize açılmadan önce pasaportunuzu taratmanız, bilmemiz gereken beslenme kısıtlamalarını paylaşmanız ve hızlı bir anketi doldurmanız gerekiyor."
       ]
     },
     "egypt": {
       "1": [
-        "You have been assigned to a table with 3 other guests. Please take a look at the menu and whet your appetite!"
+        "Yemek masanızı farklı 3 misafirle paylaşacaksınız. Lütfen menüye göz atın ve iştah açıcı yemekler arasından bir tercih yapın!"
       ],
       "2": [
-        "I’m only 2 months pregnant and not showing.",
-        "I don’t want people to know I’m pregnant yet, and sharing that I’m not drinking may reveal that."
+        "Henüz 2 aylık hamileyim ve bu durum belli olmuyor.",
+        "İnsanların hamile olduğumu bilmesini istemiyorum ve içki içmeyeceğimi söylemem durumu açığa çıkarabilir."
       ],
       "3": [
-        "I developed diabetes as a child and have to be very careful with what I eat, but I don’t tell people about this.",
-        "It’s something I tend to keep private. I wonder if the others will suspect my medical condition."
+        "Çocukken şeker hastalığına yakalandım ve yediklerime çok dikkat etmem gerekiyor fakat insanların bu durumdan haberi yok.",
+        "Bu, kimseyle paylaşmak istemediğim bir bilgi. Acaba diğerleri sağlık durumumdan şüphelenecek mi?"
       ],
       "4": [
-        "I know that in some parts of the world, people are discriminated against based on religion, by sharing that I keep kosher, now everyone knows I’m Jewish."
+        "Dünyanın bazı bölgelerinde insanların dinleri nedeniyle ayrımcılığa uğradığını biliyorum ve koşer yiyecekler tercih ettiğimi duyan herkes Yahudi olduğumu öğrenecek."
       ],
       "5": [
-        "Well done!",
-        "This is indeed private information, and the waiter should not have shared these notes with your fellow passengers. Let‘s see how they feel about the situation."
+        "Tebrikler!",
+        "Bunlar gerçekten de gizli bilgilerdir; garsonun bu notları birlikte seyahat ettiğiniz diğer yolcularla paylaşmaması gerekirdi. Bakalım bu durum hakkında ne düşünüyorlar."
       ]
     },
     "brazil": {
       "1": [
-        "Please scan your face in order to enter game room.",
-        "We are very innovative and use technology as much as possible, so when you gave us your passport at registration, we automatically uploaded your passport photo to our facial recognition software so we can control access to the VIP game room!"
+        "Oyun odasına girmek için lütfen yüzünüzü taratın.",
+        "Yenilikçi bir şirketiz ve teknolojiyi mümkün olduğunca kullanıyoruz. Bu nedenle kayıt sırasında bize pasaportunuzu verdiğinizde, VIP oyun odasına erişimi kontrol edebilmek için pasaport fotoğrafınızı otomatik olarak yüz tanıma yazılımımıza yükledik!"
       ]
     },
     "china": {
       "1": [
-        "That lunch menu was weird, wasn’t it?",
-        "Why don’t you take a look at the ship’s privacy notice to see whether it was appropriate to collect and share dietary restrictions with other passengers.",
-        "You may also want to hunt for the privacy principles that Captain Maria mentioned so you know what to look for in the notice."
+        "Yemek menüsü biraz garipti, değil mi?",
+        "Beslenme kısıtlamalarına ilişkin bilgilerin toplanmasının ve diğer yolcularla paylaşılmasının uygun olup olmadığını görmek için neden geminin gizlilik bildirimine bir göz atmıyorsunuz?",
+        "Bildirimde nelere dikkat etmeniz gerektiğini öğrenmek için Kaptan Maria'nın bahsettiği gizlilik ilkelerini aramak isteyebilirsiniz."
       ],
       "2": [
-        "I heard some noise in here.",
-        "Is everything okay?"
+        "Burada bazı sesler duydum.",
+        "Her şey yolunda mı?"
       ],
       "3": [
-        "Passengers’ dietary information was shared with other passengers. This was not disclosed in the privacy notice and is a problem!"
+        "Yolcuların beslenme bilgileri diğer yolcularla paylaşıldı. Bu durum gizlilik bildiriminde açıklanmıyor ve bu ciddi bir sorun!"
       ],
       "4": [
-        "Hmmmm. That seems unlikely.",
-        "Captain Maria takes privacy seriously.",
-        "Why don’t you go to the VIP game room to relax and take your mind off your worries. You are on vacation and should not worry about such things after all!"
+        "Hmmmm. Bu pek olası görünmüyor.",
+        "Kaptan Maria gizliliği ciddiye alır.",
+        "Rahatlamak ve endişelerinizden uzaklaşmak için neden VIP oyun odasına gitmiyorsunuz? Tatildesiniz ve böyle şeyler hakkında endişelenmemelisiniz!"
       ],
       "5": [
-        "Everything is fine!"
+        "Her şey yolunda!"
       ]
     },
     "usa": {
       "1": [
-        "That situation in the game room was very uncomfortable, wasn’t it?",
-        "Look at the privacy notice again to understand whether what happened in the game room was legit."
+        "Oyun odasındaki durum çok rahatsız ediciydi, değil mi?",
+        "Oyun odasında yaşananların yasal olup olmadığını anlamak için gizlilik bildirimine tekrar bakın."
       ],
       "2": [
-        "Good job!",
-        "You answered all the questions correctly, which means you have figured out that the ship is not responsibly handling personal information.",
-        "What can you do about it?"
+        "Bravo!",
+        "Tüm soruları doğru yanıtladınız. Geminin kişisel bilgileri sorumlu bir şekilde işlemediğini anladığınız belli oluyor.",
+        "Bu konuda ne yapabilirsiniz?"
       ],
       "3": [
-        "Aha! The notice is torn – maybe the rest of it is hidden in the room."
+        "Şuna bakın! Bildirim yırtılmış. Belki de kağıdın geri kalanı odada gizlidir."
       ]
     },
     "russia": {
       "1": [
-        "Hello – so nice to finally meet you!"
+        "Merhaba, sonunda tanışabildiğimiz için çok mutluyum!"
       ],
       "2": [
-        "I’d like to exercise my privacy rights.",
-        "I’m not happy with what the ship is doing with my personal information."
+        "Gizlilik haklarımı kullanmak istiyorum.",
+        "Geminin kişisel bilgilerimi kullanma şeklinden memnun değilim."
       ]
     }
   },
   "screens": {
     "login": {
-      "label": "Please enter your access code",
-      "input-label": "Code",
-      "incorrect-password": "Incorrect code, Please try again"
+      "label": "Lütfen erişim kodunuzu girin",
+      "input-label": "Kod",
+      "incorrect-password": "Hatalı kod. Lütfen tekrar deneyin"
     },
     "italy": {
-      "title": "The survey",
-      "a1": "Welcome aboard! Participation in this game and the survey is completely voluntary. If you choose not to participate, it will not have any adverse effect on your employment relationship."
+      "title": "Anket",
+      "a1": "Gemimize hoş geldiniz! Bu oyuna ve ankete katılım tamamen gönüllülük esasına dayanmaktadır. Oyuna veya ankete katılmama tercihiniz, iş ilişkiniz üzerinde herhangi bir olumsuz etkiyle sonuçlanmayacaktır."
     },
     "egypt": {
-      "title": "Lunch Menu",
-      "a1": "Waiter will give you the menu now, check if you see any concerns"
+      "title": "Yemek Menüsü",
+      "a1": "Garsonun şimdi size vereceği menüde herhangi bir sorun olup olmadığını kontrol edin"
     },
     "brazil": {
-      "title": "The mini-game",
-      "a1": "Please take a picture of your face in order to enter game room.",
+      "title": "Mini oyun",
+      "a1": "Oyun odasına girmek için lütfen yüzünüzün fotoğrafını çekin.",
       "a2": [
-        "Well done! The privacy notice was not very transparent.",
-        "Why don‘t you take a break and try out our latest game..."
+        "Tebrikler! Gizlilik bildirimi pek de şeffaf sayılmazdı.",
+        "Biraz ara verip en son oyunumuzu denemeye ne dersiniz?"
       ]
     },
     "china": {
-      "title": "Look at that!",
-      "title2": "Take another look!",
-      "a1": "You've found a note from a mysterious person.",
-      "a2": "Is there any data that the ship is collecting that makes you uncomfortable? If so, ask yourself whether collecting it seems necessary, and if not, click on it! "
+      "title": "Şuna bakın!",
+      "title2": "Bir kez daha bakın!",
+      "a1": "Gizemli birinden gelen bir not buldunuz.",
+      "a2": "Geminin topladığı veriler arasında sizi rahatsız eden herhangi bir veri var mı? Varsa bu veriyi toplamanın gerekli olup olmadığını kendinize sorun ve gerekli değilse ilgili öğeye tıklayın!"
     },
     "usa": {
       "games": {
         "1": {
-          "title": "Missing Piece game",
-          "a1": "You have to find the privacy notice in this room."
+          "title": "Kayıp Parça oyunu",
+          "a1": "Bu odada gizlilik bildirimini bulmalısınız."
         },
         "2": {
-          "a1": "You can call Franklin to take you to see Captain Maria.",
+          "a1": "Sizi Kaptan Maria'ya götürmesi için Franklin'i arayabilirsiniz.",
           "steps": {
             "1": {
-              "title": "This is a bit confusing – it’s not clear that Franklin is saying leave Maria alone and that the user is ignoring that.",
-              "next": "I insist to see Captain Maria"
+              "title": "Bu biraz kafa karıştırıcı. Franklin'in Maria'yı rahat bırakın dediği ve kullanıcının bunu dikkate almadığı konusu açık değil.",
+              "next": "Kaptan Maria'yı mutlaka görmek istiyorum"
             }
           }
         }
       },
-      "look-around": "Look around the room and try to find the missing piece of the privacy notice."
+      "look-around": "Odanın etrafına bakın ve gizlilik bildiriminin eksik parçasını bulmaya çalışın."
     },
     "russia": {
-      "title": "Captain's Cabin",
-      "a1": "You're going to have a conversation with <b>Capitan Maria</b>.",
+      "title": "Kaptanın Kamarası",
+      "a1": "<b>Kaptan Maria</b> ile konuşacaksınız.",
       "games": {
         "1": {
-          "title": "Puzzle game",
-          "a1": "You have to assemble a puzzle of 16 pieces, which will result in the image of the captain and at the same time the entry code to the cabin."
+          "title": "Yapboz oyunu",
+          "a1": "Birleştirildiğinde ortaya kaptanın resmi ve aynı zamanda kamaraya giriş kodu çıkacak olan 16 parçalık bir yapbozu bir araya getirmelisiniz."
         }
       }
     }
   },
-  "next": "Next",
+  "next": "İleri",
   "italy": {
     "questions-titles": {
-      "1": "When using a digital device for personal reasons how often do you?",
-      "6": "Which of the following fall within the Novartis definition of ‘Personal Information’? (select all that apply)",
-      "7": "Are you familiar with the following?",
-      "12": "At work, do you?",
-      "16": "Select job function",
-      "17": "Country"
+      "1": "Kişisel nedenlerle dijital cihaz kullanımını ne sıklıkta gerçekleştiriyorsunuz?",
+      "6": "Aşağıdakilerden hangisi Novartis'in, Kişisel Bilgi tanımına girer? (geçerli olanların tümünü seçin)",
+      "7": "Aşağıdaki unsurlar hakkında bilgi sahibi misiniz?",
+      "12": "İşte, ya sen?",
+      "16": "İş fonksiyonunu seçin",
+      "17": "Ülke"
     },
     "questions-indexes": {
       "1": "1",
@@ -274,177 +273,177 @@
     "questions": {
       "1": {
         "title": "1",
-        "label": "Read a privacy notice or policy?",
+        "label": "Gizlilik bildirimi veya politikalarını okur musunuz?",
         "options": [
-          "Always",
-          "Often",
-          "Occasionally",
-          "Rarely",
-          "Never"
+          "Her zaman",
+          "Sık sık",
+          "Ara sıra",
+          "Nadiren",
+          "Asla"
         ]
       },
       "2": {
         "title": "1",
-        "label": "Customize cookie settings?",
+        "label": "Çerez ayarlarını özelleştirir misiniz?",
         "options": [
-          "Always",
-          "Often",
-          "Occasionally",
-          "Rarely",
-          "Never"
+          "Her zaman",
+          "Sık sık",
+          "Ara sıra",
+          "Nadiren",
+          "Asla"
         ]
       },
       "3": {
         "title": "1",
-        "label": "Customize other privacy settings (like how your information can be used)?",
+        "label": "Diğer gizlilik ayarlarını (bilgilerinizin nasıl kullanılabileceği gibi) özelleştirir misiniz?",
         "options": [
-          "Always",
-          "Often",
-          "Occasionally",
-          "Rarely",
-          "Never"
+          "Her zaman",
+          "Sık sık",
+          "Ara sıra",
+          "Nadiren",
+          "Asla"
         ]
       },
       "4": {
         "title": "1",
-        "label": "Try to enter as little information as needed?",
+        "label": "Yalnızca gerektiği kadar bilgi girmeye mi çalışırsınız?",
         "options": [
-          "Always",
-          "Often",
-          "Occasionally",
-          "Rarely",
-          "Never"
+          "Her zaman",
+          "Sık sık",
+          "Ara sıra",
+          "Nadiren",
+          "Asla"
         ]
       },
       "5": {
         "title": "1",
-        "label": "Save credit card details or other Personal Information to your browser?",
+        "label": "Kredi kartı bilgilerini veya diğer Kişisel Bilgileri tarayıcınıza kaydeder misiniz?",
         "options": [
-          "Always",
-          "Often",
-          "Occasionally",
-          "Rarely",
-          "Never"
+          "Her zaman",
+          "Sık sık",
+          "Ara sıra",
+          "Nadiren",
+          "Asla"
         ]
       },
       "6": {
         "title": "6",
         "label": "",
         "options": [
-          "Phone number",
-          "Birthday",
-          "Home address",
-          "Information which combined could only identify one person on the planet, even if you don’t know their name (for example, country, college, employer, and age range)",
-          "GPS coordinates over time",
-          "Government identifier",
-          "IP address",
-          "Medical records",
-          "Anonymized data ",
-          "Cookies"
+          "Telefon numarası",
+          "Doğum günü",
+          "Ev adresi",
+          "Bir araya geldiklerinde adını bilmeseniz bile gezegende yalnızca bir kişiyi tanımlayabilecek bilgiler (örneğin ülke, üniversite, işveren ve yaş aralığı)",
+          "Zaman içinde GPS koordinatları",
+          "Resmi kimlik",
+          "IP adresi",
+          "Tıbbi kayıtlar",
+          "Anonimleştirilmiş veriler",
+          "Çerezler"
         ]
       },
       "7": {
         "title": "7",
-        "label": "The Novartis Data Privacy Policy?",
+        "label": "Novartis Veri Gizliliği Politikası?",
         "options": [
-          "Yes",
-          "No"
+          "Evet",
+          "Hayır"
         ]
       },
       "8": {
         "title": "7",
-        "label": "Our Data Privacy Principles?",
+        "label": "Veri Gizliliği İlkelerimiz?",
         "options": [
-          "Yes",
-          "No"
+          "Evet",
+          "Hayır"
         ]
       },
       "9": {
         "title": "7",
-        "label": "Who to contact for data privacy support?",
+        "label": "Veri gizliliği desteği için iletişime geçilecek kişiler?",
         "options": [
-          "Yes",
-          "No"
+          "Evet",
+          "Hayır"
         ]
       },
       "10": {
         "title": "7",
-        "label": "When to apply the Privacy Principles?",
+        "label": "Gizlilik İlkelerinin uygulanacağı durumlar?",
         "options": [
-          "Yes",
-          "No"
+          "Evet",
+          "Hayır"
         ]
       },
       "11": {
         "title": "7",
-        "label": "What to do if you become aware of a data privacy incident?",
+        "label": "Bir veri gizliliği olayından haberdar olduğunuzda yapmanız gerekenler?",
         "options": [
-          "Yes",
-          "No"
+          "Evet",
+          "Hayır"
         ]
       },
       "12": {
         "title": "12",
-        "label": "Report when you receive Personal Information you should not receive in your role?",
+        "label": "Göreviniz gereği almamanız gereken Kişisel Bilgileri aldığınızda bildirimde bulunur musunuz?",
         "options": [
-          "Always",
-          "Often",
-          "Occasionally",
-          "Rarely",
-          "Never",
-          "Not applicable"
+          "Her zaman",
+          "Sık sık",
+          "Ara sıra",
+          "Nadiren",
+          "Asla",
+          "Geçerli değil"
         ]
       },
       "13": {
         "title": "12",
-        "label": "Check the Novartis Data Privacy Policy when you have questions about handling  Personal Information?",
+        "label": "Kişisel Bilgilerin işlenmesi hakkında sorularınız olduğunda Novartis Veri Gizliliği Politikasını kontrol eder misiniz?",
         "options": [
-          "Always",
-          "Often",
-          "Occasionally",
-          "Rarely",
-          "Never",
-          "Not applicable"
+          "Her zaman",
+          "Sık sık",
+          "Ara sıra",
+          "Nadiren",
+          "Asla",
+          "Geçerli değil"
         ]
       },
       "14": {
         "title": "12",
-        "label": "Contact the privacy team if you cannot address a privacy-related question yourself?",
+        "label": "Gizlilikle ilgili bir soruyu kendiniz yanıtlayamıyorsanız gizlilik ekibiyle iletişime geçer misiniz?",
         "options": [
-          "Always",
-          "Often",
-          "Occasionally",
-          "Rarely",
-          "Never",
-          "Not applicable"
+          "Her zaman",
+          "Sık sık",
+          "Ara sıra",
+          "Nadiren",
+          "Asla",
+          "Geçerli değil"
         ]
       },
       "15": {
         "title": "12",
-        "label": "Seek to collect as little information as possible when creating a survey, registration, or other form?",
+        "label": "Bir anket, kayıt veya başka bir form oluştururken mümkün olduğunca az bilgi toplamaya mı çalışırsınız?",
         "options": [
-          "Always",
-          "Often",
-          "Occasionally",
-          "Rarely",
-          "Never",
-          "Not applicable"
+          "Her zaman",
+          "Sık sık",
+          "Ara sıra",
+          "Nadiren",
+          "Asla",
+          "Geçerli değil"
         ]
       },
       "16": {
         "title": "16",
         "label": "",
         "options": [
-          "Marketing",
-          "Patient Support & Services",
-          "Research & Development",
-          "Sales",
-          "Other"
+          "Pazarlama",
+          "Hasta Destek ve Hizmetleri",
+          "Araştırma ve Geliştirme",
+          "Satış",
+          "Diğer"
         ]
       },
       "17": {
         "title": "17",
-        "label": "Select your country",
+        "label": "Ülkenizi seçin",
         "options": []
       }
     }
@@ -452,182 +451,179 @@
   "egypt": {
     "questions": {
       "1": {
-        "label": "Do you see any concerns with the waiter’s handwritten notes on the menu?",
+        "label": "Garsonun menü üzerine elle yazdığı notlarda herhangi bir sorun görüyor musunuz?",
         "options": [
-          "Not at all, he is taking care of the guests' wishes ",
-          "Yes – he should also include their last names to be on the safe side ",
-          "Yes – it feels like this is private information that should not have been shared"
+          "Hayır görmüyorum, misafirlerin istekleriyle ilgileniyor",
+          "Evet, kendini garantiye almak için soyadlarını da eklemeli",
+          "Evet, bunlar paylaşılmaması gereken özel bilgiler gibi görünüyor"
         ]
       },
       "2": {
-        "label": "You realize that Carla, Yuri, and Dave look uncomfortable and decide that you should speak up to Franklin. What should you make him aware of?",
+        "label": "Carla, Yuri ve Dave'in rahatsız göründüğünü fark ediyor ve Franklin'le konuşmanız gerektiğine karar veriyorsunuz. Onu hangi konularda bilgilendirmelisiniz?",
         "options": [
-          "Passengers don’t need to know each other’s dietary restrictions.",
-          " By including the waiter’s notes on the menu, passengers’ health conditions and/or religious affiliations were likely revealed.",
-          "Information about health and religion is a type of Personal Information, and it can be considered sensitive in many countries.",
-          "All of the above"
+          "Yolcuların birbirlerinin beslenme kısıtlamalarını bilmesine gerek yoktur.",
+          "Garsonun notları menüye yazmasıyla yolcuların sağlık durumları ve/veya dini inançları muhtemelen ortaya çıkmıştır.",
+          "Sağlık ve dini inanç ile ilgili bilgiler bir tür Kişisel Bilgidir ve birçok ülkede hassas bilgi olarak kabul edilebilir.",
+          "Yukarıdakilerin hepsi"
         ]
       }
     }
   },
   "brazil": {
     "validated-photo": [
-      "Good news!",
-      "The photo we just took of you was verified by our facial recognition software."
+      "Haberler iyi!",
+      "Az önce çektiğimiz fotoğrafınız yüz tanıma yazılımımız tarafından doğrulandı."
     ],
     "smile-photo": [
-      "Please follow me inside. Don’t forget to smile, we have cameras throughout the game room!"
+      "Lütfen beni takip edin. Gülümsemeyi unutmayın, oyun odasının her yerinde kameralarımız var!"
     ],
     "questions": {
       "1": {
-        "label": "Did it say your passport photo would be taken and used to control access to parts of the ship?",
+        "label": "Pasaport fotoğrafınızın alınacağı ve geminin bazı bölümlerine erişimi kontrol etmek için kullanılacağı yazıyor muydu?",
         "options": [
-          "Yes",
-          "No"
+          "Evet",
+          "Hayır"
         ]
       },
       "2": {
-        "label": "Does it clearly explain that facial recognition would be used?",
+        "label": "Yüz tanıma yazılımının kullanılacağı açıkça belirtiliyor mu?",
         "options": [
-          "Yes",
-          "No"
+          "Evet",
+          "Hayır"
         ],
-        "link": "Review privacy notice",
-        "text": "That camera flash was bright and you find yourself feeling a bit confused. You read the privacy notice carefully, but . ."
+        "link": "Gizlilik bildirimini gözden geçirin",
+        "text": "Kameranın flaşı parlaktı ve biraz kafanız karıştı. Gizlilik bildirimini dikkatlice okudunuz; ancak... ."
       },
       "3": {
-        "label": "Look at the privacy notice again – does it clearly explain that facial recognition would be used?",
+        "label": "Gizlilik bildirimine tekrar bakın - yüz tanıma yazılımının kullanılacağı açıkça belirtiliyor mu?",
         "options": [
-          "Yes",
-          "No"
+          "Evet",
+          "Hayır"
         ]
       }
     },
     "mini_game": {
       "title": "Franklin",
-      "description": "Now's your chance to knock out some of those cameras you were concerned about. You have 30 seconds to hit cameras. For every camera clicked during a 30-second run you will get 50 points. You can repeat the game up to 5 times",
-      "score": "Your score is: <strong> {score} points.</strong>",
-      "points": "points",
-      "high_score": "High score:",
-      "seconds": "seconds",
-      "ranking": "Congratulations! You have the highest score.",
-      "statistics": "Statistics of former players:"
+      "description": "Şimdi endişelendiğiniz o kameralardan bazılarını yok etme şansınız var. Kameralara vurmak için 30 saniyeniz var. 30 saniyelik bir oyun sırasında tıklanan her kamera için 50 puan alacaksınız. Oyunu 5 defaya kadar tekrarlayabilirsiniz",
+      "score": "Puanınız: <strong>{score} puan.</strong>",
+      "points": "puan",
+      "high_score": "Yüksek puan:",
+      "seconds": "saniye",
+      "ranking": "Tebrikler! En yüksek puana ulaştınız.",
+      "statistics": "Eski oyuncuların istatistikleri:"
     },
     "welcome-to-game-room": [
-      "Welcome to the game room.",
-      "Here you can see the result of all countries. Try to get the highest score possible in the game to contribute to your country‘s score."
+      "Oyun odasına hoş geldiniz.",
+      "Burada tüm ülkelerin sonuçlarını görebilirsiniz. Ülkenizin puanına katkıda bulunmak için oyunda mümkün olan en yüksek puanı almaya çalışın."
     ],
-    "scoreboard-questions": [
+    "scoreboard-questions": [{
+      "label": "Puan tablosunda fotoğrafınız ve diğer tanımlayıcı bilgileriniz yer alıyor ve şu an sizinle birlikte seyahat eden ve gelecekteki yolcular da bu bilgileri görebilecek. Bu sizi rahatsız ediyor mu?",
+      "options": [
+        "Evet",
+        "Hayır"
+      ]
+    },
       {
-        "label": "The scoreboard shows your photo and other identifying information which will be available for current and future voyageurs to see. Does this make you uncomfortable?",
+        "label": "Puan tablosuna daha yakından baktığınızda, 2013 yılına kadar giden puanlar olduğunu görüyorsunuz, bu da bilgilerinizin yıllarca tabloda kalabileceğini gösteriyor. Bu sizi rahatsız ediyor mu?",
         "options": [
-          "Yes",
-          "No"
+          "Evet",
+          "Hayır"
         ]
       },
       {
-        "label": "Looking more closely at the scoreboard, you see that it has scores going back as far as 2013, suggesting that your information could be posted there for years to come. Does this make you uncomfortable?",
+        "label": "Sizce puan tablosu gizlilik konusunda daha hassas bir şekilde tutulabilir mi?",
         "options": [
-          "Yes",
-          "No"
-        ]
-      },
-      {
-        "label": "Can you think of a privacy-friendly way to handle the scoreboard?",
-        "options": [
-          "Yes",
-          "No"
+          "Evet",
+          "Hayır"
         ]
       }
     ]
   },
   "usa": {
     "intro": {
-      "player-thinking": "This doesn’t seem right. What can I do?"
+      "player-thinking": "Bu doğru görünmüyor. Ne yapabilirim?"
     },
     "hints": {
-      "phone-questions": "Click on the internet browsing icon.",
+      "phone-questions": "İnternet taraması simgesine tıklayın.",
       "missing-piece": {
         "1": [
-          "Find the missing piece of the privacy notice",
-          "Have you looked under the carpet yet?"
+          "Gizlilik bildiriminin eksik parçasını bulun",
+          "Halının altına baktınız mı?"
         ],
         "2": [
-          "Click at the missing piece of the privacy notice."
+          "Gizlilik bildiriminin eksik parçasına tıklayın."
         ]
       }
     },
     "instructions": {
-      "phone-questions": "Mark useful articles that could possibly help you."
+      "phone-questions": "Size yardımcı olabilecek faydalı öğeleri işaretleyin."
     },
-    "score-board-inline": "No problem. I’ll take you to the captain’s cabin. Please follow me.",
-    "privacy-questions": [
+    "score-board-inline": "Sorun değil. Sizi kaptanın kamarasına götüreceğim. Lütfen beni takip edin.",
+    "privacy-questions": [{
+      "label": "Gizlilik bildirimindeki ifadeler ışığında oyun odasında neler olduğunu düşünelim: <br /> <br /> Kaptan Maria şeffaf olma ilkelerini paylaştı. Bu, geminin gizlilik bildiriminde bilgilerinizin puan tablosunda paylaşılabileceğini size bildirmiş olması gerektiği anlamına gelir. Bildirimde bu konuyla ilgili bir husus var mı?",
+      "options": [
+        "Evet",
+        "Hayır"
+      ]
+    },
       {
-        "label": "Let’s reflect on what happened in game room in light of what the privacy notice says: <br /> <br /> Captain Maria shared the principle of being transparent. That means that the ship should have let you know in the privacy notice that your information might be shared on the scoreboard. Is there anything in the notice about that?",
+        "label": "Kaptan ayrıca, bilgiyi gereğinden uzun süre saklamama ilkesini de paylaştı. Gizlilik bildiriminde bilgilerinizin ne kadar süreyle saklanacağı hakkında bir şey yazmıyor; ancak, puan tablosuna göre bilgiler en az 10 yıl boyunca saklanıyor gibi görünüyor! Bu gerekli mi?",
         "options": [
-          "Yes",
-          "No"
+          "Evet",
+          "Hayır"
         ]
       },
       {
-        "label": "She also shared the principle of not retaining information longer than necessary. The privacy notice doesn’t say anything about how long they keep your information, but based on the scoreboard, it looks like they have stored it for at least 10 years! Does that seem necessary?",
+        "label": "Kaptan Maria ayrıca, geminin kişisel bilgiler konusunda sorumlu davranması gerektiğini, yani bu bilgileri toplanma amaçları dışında kullanmaması gerektiğini söyledi. Resepsiyon görevlisi pasaportunuzu tarattığında, pasaport bilgilerinizin herkese açık bir puan tablosunda yayınlanacağından haberiniz yoktu. Geminin pasaport bilgilerinizi sorumlu bir şekilde kullandığını düşünüyor musunuz?",
         "options": [
-          "Yes",
-          "No"
-        ]
-      },
-      {
-        "label": "Captain Maria also said the ship should be responsible with personal information, meaning it should not use if for purposes other than what is was collected for. When the receptionist scanned your passport, you had no idea that your passport info would be posted on a public scoreboard. Do you think the ship used your passport information responsibly?",
-        "options": [
-          "Yes",
-          "No"
+          "Evet",
+          "Hayır"
         ]
       }
     ]
   },
   "china": {
     "bedroom-note": [
-      "Dear Passenger,",
-      "I was sorry to learn about the waiter‘s mistake at lunch. I‘m",
-      "afraid this ship may not be as watertight when it comes to",
-      "privacy as it should be. But don‘t worry - I have hidden 5",
-      "privacy principles under objects in your cabin that I believe can",
-      "help you protect your privacy. Feel free to visit my cabin if you",
-      " have any other concerns. – Captain Maria"
+      "Sayın Yolcu,",
+      "Garsonun öğle yemeğindeki yanlış hareketi için çok üzgünüm. Korkarım ki",
+      "bu gemi, söz konusu gizlilik olduğunda gerektiği kadar",
+      "su geçirmez olmayabilir. Endişelenmeyin, kamaranızdaki nesnelerin altına",
+      "gizliliğinizi korumanıza yardımcı olacağına inandığım 5",
+      "gizlilik ilkesi sakladım. Başka endişeniz olursa kamaramı",
+      "istediğiniz zaman ziyaret edebilirsiniz. - Kaptan Maria"
     ],
     "bedroom-letter": [
-      "<div class='f-hand-2 font-weight-bold text-h3 mb-4'>Dear guest,</div>",
-      "Hello again and welcome to your cabin. You are staying in Cabin 42, which is a very special room featuring objects I have collected in my travels. <div class='font-weight-bold'>I suggest you spend some time here admiring these objects from all angles.</div>",
-      "<div class='d-flex justify-end'><i class='f-hand-2 font-weight-bold text-h5'>- Regards, Franklin</i></div>"
+      "<div class='f-hand-2 font-weight-bold text-h3 mb-4'>Sevgili misafirimiz,</div>",
+      "Tekrar merhaba, kabininize hoş geldiniz. Seyahatlerim sırasında topladığım nesnelerin yer aldığı çok özel bir oda olan 42 numaralı kamarada kalıyorsunuz.<div class='font-weight-bold'>Biraz zaman ayırarak bu nesneleri detaylıca incelemenizi tavsiye ederim.</div>",
+      "<div class='d-flex justify-end'><i class='f-hand-2 font-weight-bold text-h5'>- Saygılarımla, Franklin</i></div>"
     ],
-    "privacy-principles": "Open privacy principles",
+    "privacy-principles": "Açık gizlilik ilkeleri",
     "privacy-notice": {
-      "title": "Cruise Ship Privacy Notice",
-      "description": "We take your privacy very seriously. This notice sets forth what we collect, what we share, and your rights. For more details, please see the captain.",
-      "open": "Open privacy notice",
-      "close": "Close",
-      "close-and-call-franklin": "Call Franklin and demand to see Captain Maria",
+      "title": "Yolcu Gemisi Gizlilik Bildirimi",
+      "description": "Gizliliğinize çok önem veriyoruz. Bu bildirim, topladığımız ve paylaştığımız bilgileri ve haklarınızı içermektedir. Daha fazla ayrıntı için lütfen kaptana başvurun.",
+      "open": "Açık gizlilik bildirimi",
+      "close": "Kapat",
+      "close-and-call-franklin": "Franklin'i arayın ve Kaptan Maria'yı görmeyi talep edin",
       "table": {
         "headers": [
-          "CATEGORY OF PERSONAL INFORMATION",
-          "DESCRIPTION"
+          "KİŞİSEL BİLGİ KATEGORİSİ",
+          "AÇIKLAMA"
         ],
-        "content": [
+        "content": [{
+          "category": "Kimlik ve iletişim bilgileri",
+          "description": "Sizi tanımlamak ve sizinle iletişim kurmak için adınız, cinsiyetiniz, uyruğunuz, doğum tarihiniz, posta adresiniz, e-posta adresiniz, telefon numaranız ve pasaport bilgileriniz (pasaport numarası ve sonlanma tarihi vb.) gibi bilgileri topluyoruz. Bu bilgiler, yolculuğunuzu daha konforlu hale getirmek için gemi çalışanlarıyla paylaşılabilir."
+        },
           {
-            "category": "Identification and contact information",
-            "description": "We collect information to identify and contact you, such as your name, gender, nationality, date of birth, mailing address, email address, telephone number, and passport information (such as passport number and expiration date). This information may be shared with employees of the ship to facilitate your voyage."
+            "category": "Yolculuğunuzu daha keyifli hale dönüştürecek veriler",
+            "description": "İleri teknolojiden faydalanan bir gemi turu şirketi olarak, size mümkün olan en iyi yolculuğu sunmak için en son teknoloji ve algoritmaları kullanıyoruz. Bu doğrultuda, gemideki hareketinizi, çeşitli odalarda ne kadar kaldığınızı ve çalışanlarımızla ve diğer yolcularla nasıl iletişim kurduğunuzu izlemek için kameralar ve diğer sensörleri kullanabiliriz."
           },
           {
-            "category": "Data to enhance your voyage",
-            "description": "As a high-tech cruise line, we employ state-of-the-art technology and algorithms to offer you the best voyage possible. To do this, we may use cameras and other sensors to track your movement on the ship, how long you stay in various rooms, and how you interact with our employees and other passengers."
+            "category": "Ödeme bilgileri",
+            "description": "Kredi kartı bilgileri gibi, ödemelerin işlenmesi amacıyla sağladığınız bilgiler."
           },
           {
-            "category": "Payment information",
-            "description": "Information you provide for the purpose of processing payments, such as credit card details."
-          },
-          {
-            "category": "Safety information",
-            "description": "We are committed to ensuring you have a safe voyage! We will ask you to let us know if you have any food allergies, and we also have a nurse on staff in the event of sea-sickness or other ailment. If you visit the nurse, we may collect information about any current or prior health conditions. This information will only be used by cruise employees for the purposes of ensuring your safety."
+            "category": "Güvenlik bilgileri",
+            "description": "Güvenli bir yolculuk geçirmeniz için çabalıyoruz! Herhangi bir gıda alerjiniz olup olmadığını bize bildirmenizi isteyeceğiz ve ayrıca deniz tutması veya başka rahatsızlıklar için gemimizde bir hemşire bulunacaktır. Hemşireyi ziyaret ederseniz mevcut veya önceki sağlık durumlarınız hakkında bilgi toplayabiliriz. Bu bilgiler yalnızca tur çalışanları tarafından güvenliğinizi sağlamak amacıyla kullanılacaktır."
           }
         ],
         "correctOptions": [
@@ -637,114 +633,111 @@
     },
     "missing-privacy-notice": {
       "table": {
-        "content": [
-          {
-            "category": "Your rights",
-            "description": "You have the right to request a copy of all Personal Information collected about you and to ask us to correct or delete that information. To exercise these rights, please contact Captain Maria."
-          }
-        ]
+        "content": [{
+          "category": "Haklarınız",
+          "description": "Hakkınızda toplanan tüm Kişisel Bilgilerin bir kopyasını talep etme ve bizden bu bilgileri düzeltmemizi veya silmemizi isteme hakkına sahipsiniz. Bu hakları kullanmak için lütfen Kaptan Maria ile iletişime geçin."
+        }]
       }
     }
   },
   "russia": {
     "task-2": {
-      "msgs": [
+      "msgs": [{
+        "dir": "ltr",
+        "text": "Sonunda tanışabildiğimiz için çok mutluyum.",
+        "isMaria": true
+      },
         {
           "dir": "ltr",
-          "text": "So nice to finally meet you.",
+          "text": "Gizlilikle ilgili sorun yaşadığınızı duyduğuma üzüldüm. Gizlilik haklarınızı kullanmak mı istiyorsunuz?",
           "isMaria": true
         },
         {
           "dir": "ltr",
-          "text": "I‘m sorry to hear about the privacy issues. You would like to exercise your privacy rights?",
+          "text": "Hakkınızda hangi bilgilere sahip olduğumuzu size bildirebilirim ve siz de bu bilgilerin düzeltilmesini veya silinmesini talep edebilirsiniz.",
           "isMaria": true
         },
         {
           "dir": "ltr",
-          "text": "I can let you know what information we have about you, you can ask to correct it, or you can ask to delete it.",
+          "text": "Endişelerinize dayanarak bilgilerinizi silmemi istediğinizi anlıyorum.",
           "isMaria": true
         },
         {
           "dir": "ltr",
-          "text": "Based on your concerns, it sounds like you want me to delete your information.",
-          "isMaria": true
-        },
-        {
-          "dir": "ltr",
-          "text": "Which information would you like deleted?",
+          "text": "Hangi bilgilerin silinmesini istersiniz?",
           "isMaria": true
         },
         {
           "dir": "rtl",
-          "text": "Name and other identifiers",
+          "text": "Ad ve diğer tanımlayıcılar",
           "isPlayer": true
         },
         {
           "dir": "rtl",
-          "text": "Contact information",
+          "text": "İletişim bilgileri",
           "isPlayer": true
         },
         {
           "dir": "rtl",
-          "text": "Photographs",
+          "text": "Fotoğraflar",
           "isPlayer": true
         },
         {
           "dir": "rtl",
-          "text": "Biometric data",
+          "text": "Biyometrik veriler",
           "isPlayer": true
         },
         {
           "dir": "rtl",
-          "text": "Credit card data",
+          "text": "Kredi kartı verileri",
           "isPlayer": true
         },
         {
           "dir": "rtl",
-          "text": "Dietary preferences",
+          "text": "Beslenme tercihleri",
           "isPlayer": true
         },
         {
           "dir": "ltr",
-          "text": "Understood. I can delete some information right away if it’s not critical to operating the ship, but there is some information we need to use while you are on board, such as passport data and dietary restrictions.",
+          "text": "Anlaşıldı. Geminin işletimi açısından kritik değilse bazı bilgileri hemen silebilirim; ancak, pasaport verileri ve beslenme kısıtlamaları gibi siz gemideyken kullanmamız gereken belirli bilgiler var.",
           "isMaria": true
         },
         {
           "dir": "ltr",
-          "text": "Once you disembark, we can delete everything except for what we have to keep for regulations – such as information needed to comply with COVID-related regulations.",
+          "text": "Gemiden indiğinizde, COVID ile ilgili düzenlemelere uymak için gereken bilgiler gibi ilgili düzenlemeler doğrultusunda saklamamız gereken veriler dışında tüm bilgileri silebiliriz.",
           "isMaria": true
         },
         {
           "dir": "ltr",
-          "text": "Thank you for speaking up about your privacy concerns. I will ask Franklin to get to work to make sure we are shipshape when it comes to privacy!",
+          "text": "Gizlilikle ilgili endişelerinizi dile getirdiğiniz için teşekkür ederiz. Gizlilikle ilgili tüm hususların düzene girdiğinden emin olmak için Franklin'den derhal işe koyulmasını isteyeceğim!",
           "isMaria": true
         }
       ]
     }
   },
   "score-result": {
-    "star3": "Well Done!",
-    "star2": "Bad!",
-    "star1": "Too Bad!",
-    "star0": "Too Bad!",
+    "star3": "Bravo!",
+    "star2": "Kötü!",
+    "star1": "Çok Kötü!",
+    "star0": "Çok Kötü!",
     "italy": [
-      "Thank you!",
-      "Now, please join us in the dining room for lunch!"
+      "Teşekkürler!",
+      "Şimdi, lütfen öğle yemeği için yemek salonunda bize katılın!"
     ],
     "egypt": [
-      "That’s right – that waiter should know better! Silly humans. Perhaps they should replace the waiter with an AI-powered robot like me!",
-      "Why don’t you return to your cabin to relax."
+      "Doğru, garsonun bu konuda daha hassas olması gerekirdi! Bu insanlara inanamıyorum. Belki de garsonu benim gibi yapay zeka destekli bir robotla değiştirmeliler!",
+      "Neden kamaranıza dönüp dinlenmiyorsunuz?"
     ],
     "china": [],
     "brazil": [
-      "Why don’t you go back to your cabin to see how the principles that Captain Maria shared can help you figure this out."
+      "Kaptan Maria'nın paylaştığı ilkelerin bu durumu çözmenize nasıl yardımcı olabileceğini görmek için neden kamaranıza geri dönmüyorsunuz?"
     ]
   },
-  "excellent": "Excellent",
-  "bad": "Bad",
-  "too-bad": "Too Bad",
+  "excellent": "Mükemmel",
+  "bad": "Kötü",
+  "too-bad": "Çok Kötü",
   "learning-outcome": {
-    "title": "Learning Outcome",
+    "title": "Kazanım",
     "italy": [],
     "egypt": [],
     "brazil": [],
@@ -752,151 +745,150 @@
     "china": [],
     "usa": []
   },
-  "try-again": "Try again",
+  "try-again": "Tekrar deneyin",
   "lunch-menu": {
-    "title": "Lunch Menu",
-    "items": [
+    "title": "Yemek Menüsü",
+    "items": [{
+      "label": "Başlangıç",
+      "text": "Karides ve Avokado Kokteyli",
+      "handwritten": "Not: Dave'e Keçi Peyniri ve Soğanlı Tart servis edin (koşer)"
+    },
       {
-        "label": "Starter",
-        "text": "Prawn & Avocado Cocktail",
-        "handwritten": "Note: serve Goats Cheese & Onion Filo Tart to Dave (kosher)"
+        "label": "Ana Yemek",
+        "text": "Mantar soslu bonfile, patates graten ile servis edilir"
       },
       {
-        "label": "Main",
-        "text": "Fillet steak served with a mushroom sauce served with Dauphinoise Potatoes"
+        "label": "Tatlı",
+        "text": "Krem Brule",
+        "handwritten": "Not: Yuri'ye Taze Meyve Servis Edin (şekersiz)"
       },
       {
-        "label": "Dessert",
-        "text": "Crème Brulee",
-        "handwritten": "Note: Serve Fresh Fruit  to Yuri (sugar-free)"
-      },
-      {
-        "label": "Wine pairings with each course",
-        "handwritten": "(Do not offer to Carla – instead give sparkling apple juice)"
+        "label": "Her yemekle birlikte şarap eşleştirmeleri",
+        "handwritten": "(Carla'ya teklif etmeyin - bunun yerine köpüklü elma suyu servis edin)"
       }
     ]
   },
-  "pick-response-to-continue": "Pick a response to continue",
-  "pick-at-least-three-choices": "Pick at least three choices",
-  "what-should-tell-franklin": "What should you tell Franklin?",
-  "choose-headlines": "Choose which headlines are useful:",
-  "congratulations": "Congratulations",
+  "pick-response-to-continue": "Devam etmek için bir yanıt seçin",
+  "pick-at-least-three-choices": "En az üç seçenek belirleyin",
+  "what-should-tell-franklin": "Franklin'e ne söylemelisin?",
+  "choose-headlines": "Hangi başlıkların faydalı olduğunu seçin:",
+  "congratulations": "Tebrikler",
   "outro": {
     "successText": [
-      "<b>Congratulations!</b> You have used the data privacy principles to prevent a privacy shipwreck!",
-      "Click “Next” to disembark and help your country become the 2023 Privacy Champion."
+      "<b>Tebrikler!</b> Bir gizlilik kazasının önüne geçmek için veri gizliliği ilkelerini kullandınız!",
+      "Gemiden inmek ve ülkenizin 2023 Gizlilik Şampiyonu olmasına yardımcı olmak için “İleri“, öğesine tıklayın."
     ],
     "failText": [
-      "Oh, too bad. You failed to save the world, and now The Cyber Monster has destroyed everything he could. Play this task again and help our Brick defeat the enemy."
+      "Ah, bu çok kötü. Dünyayı kurtarmayı başaramadınız ve Siber Canavar erişebildiği her şeyi yok etti. Bu görevi tekrar oynayın ve Brick'in düşmanı yenmesine yardım edin."
     ],
     "actions": {
-      "yes": "Yes",
-      "no": "No"
+      "yes": "Evet",
+      "no": "Hayır"
     }
   },
   "found-object": {
-    "title": "You've found a privacy symbol",
+    "title": "Bir gizlilik sembolü buldunuz",
     "wrong-item": {
-      "1": "Sorry, you've clicked on a wrong item. Try clicking on other items to find missing piece of the privacy notice.",
-      "2": "Sorry, you've clicked on a wrong item. Have you looked under the carpet yet?"
+      "1": "Üzgünüz, yanlış bir öğeye tıkladınız. Gizlilik bildiriminin eksik parçasını bulmak için diğer öğelere tıklamayı deneyin.",
+      "2": "Üzgünüz, yanlış bir öğeye tıkladınız. Halının altına baktınız mı?"
     },
-    "find-x-more": "You need to find {x} more symbols",
-    "find-one-more": "You need to find {x} more symbol",
-    "found-last": "You‘ve found the last privacy symbol!",
-    "found-all": "Congratulations! You‘ve found all privacy principles.",
-    "privacy-found": "Congratulations! You found the missing part of the privacy notice.",
+    "find-x-more": "{x} tane daha sembol bulmanız gerekiyor",
+    "find-one-more": "{x} tane daha sembol bulmanız gerekiyor",
+    "found-last": "Son gizlilik sembolünü buldunuz!",
+    "found-all": "Tebrikler! Tüm gizlilik ilkelerini buldunuz.",
+    "privacy-found": "Tebrikler! Gizlilik bildiriminin eksik bölümünü buldunuz.",
     "items": {
-      "eye": "Be transparent",
-      "bridge": "Collect only what is necessary",
-      "handshake": "Use responsibly",
-      "lock": "Protect and be vigilant",
-      "hourglass": "Retain only as long as necessary"
+      "eye": "Şeffaf olma",
+      "bridge": "Sadece gerekli bilgileri toplama",
+      "handshake": "Bilgileri sorumlu bir şekilde kullanma",
+      "lock": "Bilgileri koruma ve tetikte olma",
+      "hourglass": "Bilgileri yalnızca gerekli olduğu sürece saklama"
     },
     "items-explanations": {
-      "eye": "Be transparent means you should be able to understand what will be done with information about you. When you find the privacy notice, make sure you understand what it says!",
-      "bridge": "Collect only what is necessary means you should not have to provide information about you that isn‘t necessary. This ship has a tendency to collect information everywhere – be on the lookout for times when the ship might collect more than what it needs.",
-      "handshake": "Use responsibly means that the ship should only use your personal information for the purposes for which it was collected – pay attention to what is in the privacy notice to make sure the ship isn‘t using your information for other purposes.",
-      "lock": "Protect and be vigilant means the ship should secure your personal information and report and investigate any misuse of data. You should speak up if you see anything suspicious.",
-      "hourglass": "Retain only as long as necessary means the ship should not keep your information longer than it needs to. Most of what the ship collects about you should probably be deleted when the voyage ends."
+      "eye": "Şeffaf olma, hakkınızdaki bilgilerin nasıl işleneceğini anlayabilmeniz gerektiği anlamına gelir. Gizlilik bildirimini bulduğunuzda, üzerinde yazanları anladığınızdan emin olun!",
+      "bridge": "Sadece gerekli bilgileri toplama, hakkınızda gerekli olmayan bilgileri vermek zorunda olmamanız gerektiği anlamına gelir. Bu geminin her yerde bilgi toplama eğilimi vardır. Geminin ihtiyaç duyduğundan daha fazla bilgi toplayabileceği zamanlar için tetikte olun.",
+      "handshake": "Bilgileri sorumlu bir şekilde kullanma, geminin kişisel bilgilerinizi yalnızca toplandıkları amaçlar doğrultusunda kullanması gerektiği anlamına gelir. Geminin bilgilerinizi başka amaçlar için kullanmadığından emin olmak üzere gizlilik bildiriminde yazanlara dikkat edin.",
+      "lock": "Bilgileri koruma ve tetikte olma, geminin kişisel bilgilerinizi güvence altına alması ve verilerin kötüye kullanımını bildirmesi ve araştırması gerektiği anlamına gelir. Şüpheli bir durum görürseniz bunu dillendirmelisiniz.",
+      "hourglass": "Bilgileri yalnızca gerekli olduğu sürece saklama, geminin bilgilerinizi gerekenden daha uzun süre saklamaması gerektiği anlamına gelir. Geminin hakkınızda topladığı bilgilerin çoğu muhtemelen yolculuk sona erdiğinde silinmelidir."
     }
   },
   "note-from-prev-passenger": [
-    "Beware",
-    "Something weird is going on here",
-    "Look under the alarm clock"
+    "Dikkatli olun",
+    "Burada garip bir şeyler oluyor",
+    "Çalar saatin altına bakın"
   ],
   "privacy-notice": {
-    "title": "Cruise Ship Privacy Notice",
-    "text-1": "We take your privacy very seriously. This notice sets forth what we collect, what we share, and your rights. For more details, please see the captain.",
-    "text-2": "The Personal Information we collect and how we use it",
+    "title": "Yolcu Gemisi Gizlilik Bildirimi",
+    "text-1": "Gizliliğinize çok önem veriyoruz. Bu bildirim, topladığımız ve paylaştığımız bilgileri ve haklarınızı içermektedir. Daha fazla ayrıntı için lütfen kaptana başvurun.",
+    "text-2": "Topladığımız Kişisel Bilgiler ve bu bilgileri kullanma şeklimiz",
     "headers": {
-      "name": "CATEGORY OF PERSONAL INFORMATION",
-      "desc": "DESCRIPTION"
+      "name": "KİŞİSEL BİLGİ KATEGORİSİ",
+      "desc": "AÇIKLAMA"
     },
     "items": {
       "1": {
-        "name": "Identification and contact information",
-        "desc": "We collect information to identify and contact you, such as your name, gender,nationality, date of birth, mailing address, email address, telephone number, and passport information (such as passport number and expiration date). This information may be shared with employees of the ship to facilitate your voyage."
+        "name": "Kimlik ve iletişim bilgileri",
+        "desc": "Sizi tanımlamak ve sizinle iletişim kurmak için adınız, cinsiyetiniz, uyruğunuz, doğum tarihiniz, posta adresiniz, e-posta adresiniz, telefon numaranız ve pasaport bilgileriniz (pasaport numarası ve sonlanma tarihi vb.) gibi bilgileri topluyoruz. Bu bilgiler, yolculuğunuzu daha konforlu hale getirmek için gemi çalışanlarıyla paylaşılabilir."
       },
       "2": {
-        "name": "Data to enhance your voyage",
-        "desc": "As a high-tech cruise line, we employ state-of-the-art technology and algorithms to offer you the best voyage possible. To do this, we may use cameras and other sensors to track your movement on the ship, how long you stay in various rooms, and how you interact with our employees and other passengers."
+        "name": "Yolculuğunuzu daha keyifli hale dönüştürecek veriler",
+        "desc": "İleri teknolojiden faydalanan bir gemi turu şirketi olarak, size mümkün olan en iyi yolculuğu sunmak için en son teknoloji ve algoritmaları kullanıyoruz. Bu doğrultuda, gemideki hareketinizi, çeşitli odalarda ne kadar kaldığınızı ve çalışanlarımızla ve diğer yolcularla nasıl iletişim kurduğunuzu izlemek için kameralar ve diğer sensörleri kullanabiliriz."
       },
       "3": {
-        "name": "Payment information",
-        "desc": "Information you provide for the purpose of processing payments, such as credit card details"
+        "name": "Ödeme bilgileri",
+        "desc": "Kredi kartı bilgileri gibi, ödemelerin işlenmesi amacıyla sağladığınız bilgiler"
       },
       "4": {
-        "name": "Safety information",
-        "desc": "We are committed to ensuring you have a safe voyage! We will ask you to let us know if you have any food allergies, and we also have a nurse on staff in the event of sea-sickness or other ailment. If you visit the nurse, we may collect information about any current or prior health conditions. This information will only be used by cruise employees for the purposes of ensuring your safety."
+        "name": "Güvenlik bilgileri",
+        "desc": "Güvenli bir yolculuk geçirmeniz için çabalıyoruz! Herhangi bir gıda alerjiniz olup olmadığını bize bildirmenizi isteyeceğiz ve ayrıca deniz tutması veya başka rahatsızlıklar için gemimizde bir hemşire bulunacaktır. Hemşireyi ziyaret ederseniz mevcut veya önceki sağlık durumlarınız hakkında bilgi toplayabiliriz. Bu bilgiler yalnızca tur çalışanları tarafından güvenliğinizi sağlamak amacıyla kullanılacaktır."
       }
     },
     "questions": {
-      "title": "Now that you have found the privacy notice and the principles that Captain Maria hid, what do you think about the situation at lunch?",
+      "title": "Artık gizlilik bildirimini ve Kaptan Maria'nın sakladığı ilkeleri bulduğunuza göre, yemekte yaşanan durum hakkında ne düşünüyorsunuz?",
       "description": [
-        "That’s right!",
-        "Although the ship disclosed that it would collect information about food allergies (which relates to dietary restrictions), it said it would only share it with employees to ensure safety. That information never should have been shared with other passengers. And while we’re thinking about it, it would be clearer if the privacy notice said “dietary restrictions” rather than just allergies, since Carla, Yuri, and Dave all had restrictions for other reasons."
+        "Bu doğru!",
+        "Gemi, gıda alerjileri (beslenme kısıtlamaları) hakkında bilgi toplayacağını açıklasa da güvenliği sağlamak için bu bilgilerin sadece çalışanlarla paylaşılacağı belirtilmiş. Bu bilgi asla diğer yolcularla paylaşılmamalıydı. Bu konudan bahsediyorken belirtmek gerekir ki Carla, Yuri ve Dave farklı sebeplerle beslenme kısıtlamalarına sahip olduğundan gizlilik bildiriminde alerji yerine “beslenme kısıtlamaları“, ifadesinin kullanılması daha açık olurdu."
       ],
       "congratulations": [
-        "Good job!",
-        "Why does the ship need to use cameras and sensors to track movement on the ship and how you interact with others? Does the ship really need to know if someone happens to be spending time in someone else’s cabin? Even if this is arguably for safety, there must be ways to ensure passenger safety without compromising privacy."
+        "Bravo!",
+        "Gemi, gemideki hareketleri ve diğerleriyle nasıl iletişim kurduğunuzu takip etmek için neden kamera ve sensör kullanımına ihtiyaç duyuyor? Bir yolcunun başka birinin kamarasında vakit geçirip geçirmediğini geminin gerçekten bilmesi gerekiyor mu? Bu uygulamanın amacının güvenliği sağlamak olduğu tartışmasız olsa bile yolcu güvenliğini gizlilikten ödün vermeden temin etmenin başka yolları da olmalıdır."
       ],
       "q1": {
-        "text": "Does the privacy notice state that the ship will collect information about dietary restrictions?",
+        "text": "Gizlilik bildiriminde geminin beslenme kısıtlamaları hakkında bilgi toplayacağı belirtiliyor mu?",
         "options": [
-          "Yes",
-          "No"
+          "Evet",
+          "Hayır"
         ]
       },
       "q2": {
-        "text": "Based on the privacy notice, should the waiter’s notes have been shared with the passengers?",
+        "text": "Gizlilik bildirimine göre, garsonun notları yolcularla paylaşılmalı mıydı?",
         "options": [
-          "Yes",
-          "No"
+          "Evet",
+          "Hayır"
         ]
       }
     }
   },
-  "player": "Player",
-  "finish": "Finish",
-  "upload_photo": "Upload photo",
-  "hide": "Hide",
-  "receptionist": "Receptionist",
-  "privacy_notice": "Privacy Notice",
-  "wrong-response": "Wrong Response!",
-  "wrong-response-desc": "You've selected an incorrect response, please try again",
-  "wrong-response-hint": "Really? It’s fine? Remember the concerns the other passengers shared...",
-  "ok": "OK",
-  "click-to-open-privacy-notice": "Click to open Privacy Notice",
-  "restart": "Restart",
+  "player": "Oyuncu",
+  "finish": "Bitir",
+  "upload_photo": "Fotoğraf yükle",
+  "hide": "Gizle",
+  "receptionist": "Resepsiyonist",
+  "privacy_notice": "Gizlilik Bildirimi",
+  "wrong-response": "Yanlış Yanıt!",
+  "wrong-response-desc": "Yanlış bir yanıt seçtiniz, lütfen tekrar deneyin",
+  "wrong-response-hint": "Gerçekten mi? Sorun var mı? Diğer yolcuların paylaştığı endişeleri hatırlayın...",
+  "ok": "TAMAM",
+  "click-to-open-privacy-notice": "Gizlilik Bildirimini açmak için tıklayın",
+  "restart": "Yeniden Başlat",
   "restart-game": {
-    "title": "Restart Game",
-    "hint": "Are you sure you want to restart the game?",
-    "action": "Yes, restart!"
+    "title": "Oyunu Yeniden Başlat",
+    "hint": "Oyunu yeniden başlatmak istediğinize emin misiniz?",
+    "action": "Evet, yeniden başlat!"
   },
-  "top-scores": "Top Scores",
-  "passport-number": "Passport number",
-  "voyage-date": "Voyage date",
-  "cabin": "Cabin",
-  "enter-the-code": "Enter the code"
+  "top-scores": "En İyi Puanlar",
+  "passport-number": "Pasaport numarası",
+  "voyage-date": "Sefer tarihi",
+  "cabin": "Kamara",
+  "enter-the-code": "Kodu girin"
 }

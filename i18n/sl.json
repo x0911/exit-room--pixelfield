@@ -1,267 +1,267 @@
 ﻿{
   "franklin": "Franklin",
-  "carla-thought": "Carla’s thinking",
-  "yuri-thought": "Yuri’s thinking",
-  "dave-thought": "Dave’s thinking",
-  "player-is-thinking": "Player is thinking",
-  "confirm": "Confirm",
-  "call-franklin": "Call Franklin",
-  "submit": "Submit",
-  "accept": "Accept",
-  "previous": "Previous",
-  "back_to_menu": "Back to menu",
-  "score": "Score",
-  "phone": "Phone",
-  "country": "Country",
-  "countries_scores": "The 5 countries with the highest scores",
-  "lets-go": "Let's go",
+  "carla-thought": "Carlino razmišljanje",
+  "yuri-thought": "Jurijevo razmišljanje",
+  "dave-thought": "Daveovo razmišljanje",
+  "player-is-thinking": "Igralec razmišlja",
+  "confirm": "Potrdite",
+  "call-franklin": "Pokličite Franklina",
+  "submit": "Pošlji",
+  "accept": "Sprejmi",
+  "previous": "Prejšnja",
+  "back_to_menu": "Nazaj na meni",
+  "score": "Rezultat",
+  "phone": "Telefon",
+  "country": "Država",
+  "countries_scores": "5 držav z najvišjim številom točk",
+  "lets-go": "Gremo",
   "cookies": {
-    "title": "Privacy & Cookie Notice",
+    "title": "Obvestilo o zasebnosti in piškotkih",
     "text": [
       {
-        "title": "Purpose",
-        "description": "This website contains an escape-room game with a survey and country competition related to privacy. It has been created by your employer to raise awareness and knowledge related to privacy and improve the privacy program and increase awareness within your company."
+        "title": "Namen",
+        "description": "To spletno mesto vsebuje igro soba pobega z anketo in državnim tekmovanjem v zvezi z zasebnostjo. Ustvaril ga je vaš delodajalec, da bi povečal ozaveščenost in znanje, povezano z zasebnostjo, izboljšal program zasebnosti in povečal ozaveščenost v vašem podjetju."
       },
       {
-        "title": "Voluntary basis",
-        "description": "Please note that participation in this game is on a voluntary basis. There is no obligation to participate. Non-participation will not have any adverse effects on your employment relationship."
+        "title": "Prostovoljno",
+        "description": "Upoštevajte, da je sodelovanje v tej igri prostovoljno. Sodelovanje ni obvezno. Neudeležba ne bo imela negativnih posledic za vaše delovno razmerje."
       },
       {
-        "title": "Anonymized data",
-        "description": "Within the game only anonymized data is processed. Your employer cannot make any reference to or identification of specific employees. For the purpose of being able to provide you news on the results of the country-competition or react to your provided feedback on our game, you can voluntarily provide your work-email-address at the end of the game. In this case an identification would be possible. Please note that, in cases of small teams or country operations, your employer may be able to identify you if less than five people have the same division or organizational unit, job function, and work country. Your employer will process the data consistent with its privacy policy and associate notice, including not intentionally identifying you and taking reasonable measures, as appropriate, to prevent identification."
+        "title": "Anonimizirani podatki",
+        "description": "V igri se obdelujejo samo anonimizirani podatki. Vaš delodajalec se ne sme sklicevati na posamezne zaposlene ali jih identificirati. Da bi vam lahko posredovali novice o rezultatih državnega tekmovanja ali se odzvali na vaše povratne informacije o naši igri, lahko na koncu igre prostovoljno posredujete svoj službeni e-poštni naslov. V tem primeru bi bila mogoča identifikacija. Upoštevajte, da vas lahko delodajalec v primeru majhnih skupin ali dejavnosti v posamezni državi identificira, če je recimo manj kot pet oseb na posameznem oddelku ali organizacijski enoti, na delovnem mestu in državi poslovanja. Vaš delodajalec bo podatke obdeloval v skladu s svojim pravilnikom o zasebnosti in obvestilom o sodelovanju, vključno s tem, da vas ne bo namerno identificiral in da bo po potrebi sprejel razumne ukrepe za preprečitev identifikacije."
       },
       {
-        "title": "Cookies",
-        "description": "This website only processes strictly necessary cookies. These cookies are necessary for the website to function and cannot be switched off in our systems. They are usually only set in response to actions made by you which amount to a request for services, such as setting your privacy preferences, logging in or filling in forms. You can set your browser to block or alert you about these cookies, but some parts of the site will not then work. These cookies do not store any personally identifiable information."
+        "title": "Piškotki",
+        "description": "To spletno mesto obdeluje samo nujno potrebne piškotke. Ti piškotki so potrebni za delovanje spletnega mesta in jih v naših sistemih ni mogoče izklopiti. Običajno se nastavijo le kot odziv na vaša dejanja, ki pomenijo zahtevo po storitvah, kot so nastavitev zasebnosti, prijava ali izpolnjevanje obrazcev. Brskalnik lahko nastavite tako, da te piškotke blokira ali vas opozori nanje, vendar nekateri deli spletnega mesta potem ne bodo delovali. Ti piškotki ne shranjujejo nobenih osebnih podatkov."
       },
       {
-        "title": "Legal basis and contact",
-        "description": "In case your personal data is processed, the legal basis for the data processing would be the necessity for the purposes of legitimate interests. For more detailed information with regards data processing in your working environment and your data privacy rights (e.g., right to object) please find the local privacy notices for employees or contact your local data privacy team."
+        "title": "Pravna podlaga in stik",
+        "description": "V primeru obdelave vaših osebnih podatkov je pravna podlaga za obdelavo podatkov potreba za namene zakonitih interesov. Podrobnejše informacije o obdelavi podatkov v vašem delovnem okolju in vaših pravicah glede zasebnosti podatkov (npr. pravica do ugovora) najdete v lokalnih obvestilih o zasebnosti za zaposlene ali se obrnite na lokalno skupino za varstvo podatkov."
       }
     ]
   },
   "task-name": {
-    "1": "Reception",
-    "2": "Dining Room",
-    "3": "Your Cabin",
-    "4": "Game Room",
-    "5": "Your Cabin",
-    "6": "Captain's Bridge"
+    "1": "Recepcija",
+    "2": "Jedilnica",
+    "3": "Vaša kabina",
+    "4": "Igralna soba",
+    "5": "Vaša kabina",
+    "6": "Kapitanski most"
   },
   "fullscreen-hint": {
-    "title": "Fullscreen",
-    "text": "It's recommended to play the game in fullscreen mode, Would you like to try it now?"
+    "title": "Celozaslonski način",
+    "text": "Igro je priporočljivo igrati v celozaslonskem načinu. Ali jo želite preizkusiti zdaj?"
   },
-  "enable": "Enable",
-  "validate": "Validate",
-  "cancel": "Cancel",
-  "hint-title": "Hint",
-  "take_a_photo": "Take a photo",
-  "continue": "Continue",
-  "name": "Name",
-  "address": "Address",
-  "cabin_number": "Cabin number",
-  "age": "Age",
-  "nationality": "Nationality",
-  "and": "and",
+  "enable": "Omogoči",
+  "validate": "Potrdi",
+  "cancel": "Prekliči",
+  "hint-title": "Namig",
+  "take_a_photo": "Posnemite fotografijo",
+  "continue": "Nadaljuj",
+  "name": "Ime",
+  "address": "Naslov",
+  "cabin_number": "Številka kabine",
+  "age": "Starost",
+  "nationality": "Državljanstvo",
+  "and": "in",
   "hints": {
     "splash": [
-      "Select your language to proceed"
+      "Za nadaljevanje izberite svoj jezik"
     ],
     "map": [
-      "Active room will have a glowing circle above its name"
+      "Nad imenom aktivne sobe bo svetleč krog"
     ],
     "italy": [
-      "Complete the survey"
+      "Izpolnite anketo"
     ],
     "egypt": [
-      "Waiter will give you a menu, check if you see any concerns.",
-      "After checking, you can safely click on next to proceed to next steps"
+      "Natakar vam bo dal meni, preverite, ali imate kakšne pomisleke.",
+      "Po preverjanju lahko varno kliknete Naprej in nadaljujete z naslednjimi koraki"
     ],
     "brazil": [],
     "china": [
-      "Read the note, then search the room to find the 5 privacy principles and their explanations.",
-      "After you have found them all, you will unlock the privacy notice."
+      "Preberite opombo, nato pa v sobi poiščite 5 načel zasebnosti in njihove razlage.",
+      "Ko najdete vse, boste odklenili obvestilo o zasebnosti."
     ],
     "usa": [],
     "russia": []
   },
-  "start_game": "Meet Franklin",
-  "skip": "Skip",
-  "wall": "Room Selector",
+  "start_game": "Spoznajte Franklina",
+  "skip": "Preskoči",
+  "wall": "Izbirnik sob",
   "map-email": {
     "text": [
-      "This is your room selector. Rooms order is mandatory. Active room has a glowing circle above its name."
+      "To je izbirnik sob. Urejenost sob je obvezna. Aktivna soba ima nad svojim imenom svetleč krog."
     ]
   },
   "wall-steps": [
-    "Ship Map",
-    "Here is a map of the cruise ship. Click Start and then click the room marked by the glowing circle."
+    "Zemljevid ladje",
+    "Tukaj je zemljevid potniške ladje. Kliknite Začni in nato kliknite sobo, označeno s svetlečim krogom."
   ],
-  "start": "Start",
+  "start": "Začni",
   "orientation-hint": {
-    "title": "Landscape is required",
-    "text": "Playing the game in portrait mode is not possible, please rotate your device to landscape mode."
+    "title": "Ležeč pogled je obvezen",
+    "text": "Igranje igre v pokončnem načinu ni mogoče, zato obrnite napravo v ležeč način."
   },
-  "map": "Map",
+  "map": "Zemljevid",
   "back-to-map": {
-    "text": "Do you want to back to room selector?"
+    "text": "Ali se želite vrniti v izbirnik sob?"
   },
   "speeches": {
     "splash": {
       "1": [
-        "Welcome aboard!",
-        "I am Franklin, an AI-powered robot and your concierge on this voyage."
+        "Dobrodošli na krovu!",
+        "Sem Franklin, robot z umetno inteligenco, ki je na tem potovanju vaš concierge."
       ],
       "2": [
-        "Please follow me aboard so I can show you around the ship."
+        "Sledite mi na krov, prosim, da vam lahko razkažem ladjo."
       ]
     },
     "italy": {
       "1": [
-        "Greetings!",
-        "Our ship features the most cutting-edge, digital technology available on the high seas. We trust this will make for a memorable vacation!",
-        "Before we set sail, we need you to scan your passport, share any dietary restrictions we should know about, and complete a quick survey."
+        "Pozdravljeni!",
+        "Naša ladja je opremljena z najsodobnejšo digitalno tehnologijo, ki je na voljo na odprtem morju. Verjamemo, da bo to nepozaben dopust!",
+        "Preden odplujemo, vas prosimo, da skenirate svoj potni list, nam sporočite morebitne prehranske omejitve, ki jih moramo poznati, in izpolnite kratko anketo."
       ]
     },
     "egypt": {
       "1": [
-        "You have been assigned to a table with 3 other guests. Please take a look at the menu and whet your appetite!"
+        "Dodeljeni ste za mizo s tremi drugimi gosti. Oglejte si jedilnik in spodbudite svoj apetit!"
       ],
       "2": [
-        "I’m only 2 months pregnant and not showing.",
-        "I don’t want people to know I’m pregnant yet, and sharing that I’m not drinking may reveal that."
+        "Noseča sem šele 2 meseca in tega še ne kažem.",
+        "Nočem, da bi ljudje že vedeli, da sem noseča, in če povem, da ne pijem, bi to lahko razkrila."
       ],
       "3": [
-        "I developed diabetes as a child and have to be very careful with what I eat, but I don’t tell people about this.",
-        "It’s something I tend to keep private. I wonder if the others will suspect my medical condition."
+        "Kot otrok sem zbolel za sladkorno boleznijo in moram zelo paziti, kaj jem, vendar tega ne povem ljudem.",
+        "To je nekaj, česar običajno ne povem. Zanima me, ali bodo drugi posumili na moje zdravstveno stanje."
       ],
       "4": [
-        "I know that in some parts of the world, people are discriminated against based on religion, by sharing that I keep kosher, now everyone knows I’m Jewish."
+        "Vem, da so v nekaterih delih sveta ljudje diskriminirani na podlagi vere, in če jim povem, da se držim hrane košer, bodo vsi vedeli, da sem Žid."
       ],
       "5": [
-        "Well done!",
-        "This is indeed private information, and the waiter should not have shared these notes with your fellow passengers. Let‘s see how they feel about the situation."
+        "Odlično opravljeno!",
+        "To so res zasebni podatki in natakar jih ne bi smel deliti z vašimi sopotniki. Poglejmo, kaj menijo o tej situaciji."
       ]
     },
     "brazil": {
       "1": [
-        "Please scan your face in order to enter game room.",
-        "We are very innovative and use technology as much as possible, so when you gave us your passport at registration, we automatically uploaded your passport photo to our facial recognition software so we can control access to the VIP game room!"
+        "Za vstop v igralno sobo skenirajte svoj obraz.",
+        "Smo zelo inovativni in kolikor je le mogoče, uporabljamo tehnologijo, zato smo ob registraciji, ko ste nam dali svoj potni list, fotografijo vašega potnega lista samodejno prenesli v programsko opremo za prepoznavanje obrazov, da lahko nadzorujemo dostop do igralne sobe VIP!"
       ]
     },
     "china": {
       "1": [
-        "That lunch menu was weird, wasn’t it?",
-        "Why don’t you take a look at the ship’s privacy notice to see whether it was appropriate to collect and share dietary restrictions with other passengers.",
-        "You may also want to hunt for the privacy principles that Captain Maria mentioned so you know what to look for in the notice."
+        "Meni za kosilo je bil čuden, kajne?",
+        "Zakaj si ne ogledate obvestila o zasebnosti na ladji in preverite, ali je bilo primerno zbirati in deliti prehranske omejitve z drugimi potniki.",
+        "Morda boste želeli poiskati tudi načela zasebnosti, ki jih je omenila kapitanka Maria, da boste vedeli, kaj morate iskati v obvestilu."
       ],
       "2": [
-        "I heard some noise in here.",
-        "Is everything okay?"
+        "Slišal sem, da je bilo tukaj hrupno.",
+        "Je vse v redu?"
       ],
       "3": [
-        "Passengers’ dietary information was shared with other passengers. This was not disclosed in the privacy notice and is a problem!"
+        "Podatki o prehrani potnikov so bili posredovani drugim potnikom. To ni bilo razkrito v obvestilu o zasebnosti in predstavlja težavo!"
       ],
       "4": [
-        "Hmmmm. That seems unlikely.",
-        "Captain Maria takes privacy seriously.",
-        "Why don’t you go to the VIP game room to relax and take your mind off your worries. You are on vacation and should not worry about such things after all!"
+        "Hmmmm. To se zdi malo verjetno.",
+        "Kapitanka Maria zasebnost jemlje zelo resno.",
+        "Pojdite v igralno sobo VIP, kjer se boste sprostili in se znebili skrbi. Ste na počitnicah in ne bi smeli skrbeti za takšne stvari!"
       ],
       "5": [
-        "Everything is fine!"
+        "Vse je v redu!"
       ]
     },
     "usa": {
       "1": [
-        "That situation in the game room was very uncomfortable, wasn’t it?",
-        "Look at the privacy notice again to understand whether what happened in the game room was legit."
+        "Položaj v igralnici je bil zelo neprijeten, kajne?",
+        "Ponovno si oglejte obvestilo o zasebnosti in ugotovite, ali je bilo dogajanje v igralnici zakonito."
       ],
       "2": [
-        "Good job!",
-        "You answered all the questions correctly, which means you have figured out that the ship is not responsibly handling personal information.",
-        "What can you do about it?"
+        "Dobro opravljeno!",
+        "Na vsa vprašanja ste odgovorili pravilno, kar pomeni, da ste ugotovili, da na ladji ne ravnajo odgovorno z osebnimi podatki.",
+        "Kaj lahko storite v zvezi s tem?"
       ],
       "3": [
-        "Aha! The notice is torn – maybe the rest of it is hidden in the room."
+        "Aha! Obvestilo je raztrgano - morda je preostanek skrit v sobi."
       ]
     },
     "russia": {
       "1": [
-        "Hello – so nice to finally meet you!"
+        "Pozdravljeni - lepo, da smo se končno spoznali!"
       ],
       "2": [
-        "I’d like to exercise my privacy rights.",
-        "I’m not happy with what the ship is doing with my personal information."
+        "Rad/-a bi uveljavil/-a svoje pravice do zasebnosti.",
+        "Nisem zadovoljen/-na s tem, kaj ladja počne z mojimi osebnimi podatki."
       ]
     }
   },
   "screens": {
     "login": {
-      "label": "Please enter your access code",
-      "input-label": "Code",
-      "incorrect-password": "Incorrect code, Please try again"
+      "label": "Vnesite kodo dostopa",
+      "input-label": "Koda",
+      "incorrect-password": "Nepravilna koda, poskusite znova"
     },
     "italy": {
-      "title": "The survey",
-      "a1": "Welcome aboard! Participation in this game and the survey is completely voluntary. If you choose not to participate, it will not have any adverse effect on your employment relationship."
+      "title": "Anketa",
+      "a1": "Dobrodošli na krovu! Sodelovanje v tej igri in anketi je popolnoma prostovoljno. Če se odločite, da ne boste sodelovali, to ne bo negativno vplivalo na vaše delovno razmerje."
     },
     "egypt": {
-      "title": "Lunch Menu",
-      "a1": "Waiter will give you the menu now, check if you see any concerns"
+      "title": "Meni za kosilo",
+      "a1": "Natakar vam bo zdaj dal meni, preverite, ali imate kakšne pomisleke"
     },
     "brazil": {
-      "title": "The mini-game",
-      "a1": "Please take a picture of your face in order to enter game room.",
+      "title": "Mini igra",
+      "a1": "Za vstop v igralnico posnemite svoj obraz.",
       "a2": [
-        "Well done! The privacy notice was not very transparent.",
-        "Why don‘t you take a break and try out our latest game..."
+        "Odlično opravljeno! Obvestilo o zasebnosti ni bilo zelo pregledno.",
+        "Zakaj si ne bi vzeli odmora in preizkusili naše najnovejše igre ..."
       ]
     },
     "china": {
-      "title": "Look at that!",
-      "title2": "Take another look!",
-      "a1": "You've found a note from a mysterious person.",
-      "a2": "Is there any data that the ship is collecting that makes you uncomfortable? If so, ask yourself whether collecting it seems necessary, and if not, click on it! "
+      "title": "Poglejte tole!",
+      "title2": "Poglejte še enkrat!",
+      "a1": "Našli ste sporočilo skrivnostne osebe.",
+      "a2": "Ali vam je zaradi podatkov, ki jih zbira ladja, kaj neprijetno? Če je tako, se vprašajte, ali menite, da je zbiranje teh podatkov potrebno, in če ni, kliknite na njih!"
     },
     "usa": {
       "games": {
         "1": {
-          "title": "Missing Piece game",
-          "a1": "You have to find the privacy notice in this room."
+          "title": "Igra Manjkajoči kos",
+          "a1": "V tej sobi morate poiskati obvestilo o zasebnosti."
         },
         "2": {
-          "a1": "You can call Franklin to take you to see Captain Maria.",
+          "a1": "Lahko pokličete Franklina, da vas odpelje h kapitanki Mariji.",
           "steps": {
             "1": {
-              "title": "This is a bit confusing – it’s not clear that Franklin is saying leave Maria alone and that the user is ignoring that.",
-              "next": "I insist to see Captain Maria"
+              "title": "To je nekoliko zmedeno - ni jasno, ali Franklin pravi, naj Mario pustimo pri miru, in ali uporabnik tega ne upošteva.",
+              "next": "Vztrajam, da vidim kapitanko Mario"
             }
           }
         }
       },
-      "look-around": "Look around the room and try to find the missing piece of the privacy notice."
+      "look-around": "Razglejte se po sobi in poskusite najti manjkajoči del obvestila o zasebnosti."
     },
     "russia": {
-      "title": "Captain's Cabin",
-      "a1": "You're going to have a conversation with <b>Capitan Maria</b>.",
+      "title": "Kapitanova kabina",
+      "a1": "Pogovarjali se boste s <b>kapitanko Mario</b>.",
       "games": {
         "1": {
-          "title": "Puzzle game",
-          "a1": "You have to assemble a puzzle of 16 pieces, which will result in the image of the captain and at the same time the entry code to the cabin."
+          "title": "Sestavljanka",
+          "a1": "Sestaviti morate sestavljanko iz 16 kosov, ki bo dala podobo kapitana in hkrati vstopno kodo v kabino."
         }
       }
     }
   },
-  "next": "Next",
+  "next": "Naprej",
   "italy": {
     "questions-titles": {
-      "1": "When using a digital device for personal reasons how often do you?",
-      "6": "Which of the following fall within the Novartis definition of ‘Personal Information’? (select all that apply)",
-      "7": "Are you familiar with the following?",
-      "12": "At work, do you?",
-      "16": "Select job function",
-      "17": "Country"
+      "1": "Kako pogosto uporabljate digitalno napravo iz osebnih razlogov?",
+      "6": "Kateri od naslednjih podatkov spadajo v opredelitev »osebnih podatkov« družbe Novartis? (izberite vse, kar velja)",
+      "7": "Ali poznate naslednje?",
+      "12": "Ali na delovnem mestu?",
+      "16": "Izberite funkcijo delovnega mesta",
+      "17": "Država"
     },
     "questions-indexes": {
       "1": "1",
@@ -274,177 +274,177 @@
     "questions": {
       "1": {
         "title": "1",
-        "label": "Read a privacy notice or policy?",
+        "label": "Preberete obvestilo ali pravilnik o zasebnosti?",
         "options": [
-          "Always",
-          "Often",
-          "Occasionally",
-          "Rarely",
-          "Never"
+          "Vedno",
+          "Pogosto",
+          "Občasno",
+          "Redko",
+          "Nikoli"
         ]
       },
       "2": {
         "title": "1",
-        "label": "Customize cookie settings?",
+        "label": "Prilagodite nastavitve piškotkov?",
         "options": [
-          "Always",
-          "Often",
-          "Occasionally",
-          "Rarely",
-          "Never"
+          "Vedno",
+          "Pogosto",
+          "Občasno",
+          "Redko",
+          "Nikoli"
         ]
       },
       "3": {
         "title": "1",
-        "label": "Customize other privacy settings (like how your information can be used)?",
+        "label": "Prilagodite druge nastavitve zasebnosti (na primer, kako se lahko uporabljajo vaši podatki)?",
         "options": [
-          "Always",
-          "Often",
-          "Occasionally",
-          "Rarely",
-          "Never"
+          "Vedno",
+          "Pogosto",
+          "Občasno",
+          "Redko",
+          "Nikoli"
         ]
       },
       "4": {
         "title": "1",
-        "label": "Try to enter as little information as needed?",
+        "label": "Poskusite vnesti čim manj informacij?",
         "options": [
-          "Always",
-          "Often",
-          "Occasionally",
-          "Rarely",
-          "Never"
+          "Vedno",
+          "Pogosto",
+          "Občasno",
+          "Redko",
+          "Nikoli"
         ]
       },
       "5": {
         "title": "1",
-        "label": "Save credit card details or other Personal Information to your browser?",
+        "label": "Shranite podatke o kreditni kartici ali druge osebne podatke v brskalnik?",
         "options": [
-          "Always",
-          "Often",
-          "Occasionally",
-          "Rarely",
-          "Never"
+          "Vedno",
+          "Pogosto",
+          "Občasno",
+          "Redko",
+          "Nikoli"
         ]
       },
       "6": {
         "title": "6",
         "label": "",
         "options": [
-          "Phone number",
-          "Birthday",
-          "Home address",
-          "Information which combined could only identify one person on the planet, even if you don’t know their name (for example, country, college, employer, and age range)",
-          "GPS coordinates over time",
-          "Government identifier",
-          "IP address",
-          "Medical records",
-          "Anonymized data ",
-          "Cookies"
+          "Telefonska številka",
+          "Rojstni dan",
+          "Domači naslov",
+          "Informacije, ki bi skupaj lahko identificirale le eno osebo na planetu, tudi če ne poznate njenega imena (na primer država, fakulteta, delodajalec in starostno obdobje)",
+          "Koordinate GPS skozi čas",
+          "Vladni identifikator",
+          "Naslov IP",
+          "Zdravstvena dokumentacija",
+          "Anonimizirani podatki",
+          "Piškotki"
         ]
       },
       "7": {
         "title": "7",
-        "label": "The Novartis Data Privacy Policy?",
+        "label": "Pravilnik o zasebnosti podatkov družbe Novartis?",
         "options": [
-          "Yes",
-          "No"
+          "Da",
+          "Ne"
         ]
       },
       "8": {
         "title": "7",
-        "label": "Our Data Privacy Principles?",
+        "label": "Naša načela zasebnosti podatkov?",
         "options": [
-          "Yes",
-          "No"
+          "Da",
+          "Ne"
         ]
       },
       "9": {
         "title": "7",
-        "label": "Who to contact for data privacy support?",
+        "label": "Na koga se lahko obrnete za podporo pri varovanju zasebnosti podatkov?",
         "options": [
-          "Yes",
-          "No"
+          "Da",
+          "Ne"
         ]
       },
       "10": {
         "title": "7",
-        "label": "When to apply the Privacy Principles?",
+        "label": "Kdaj uporabiti načela zasebnosti?",
         "options": [
-          "Yes",
-          "No"
+          "Da",
+          "Ne"
         ]
       },
       "11": {
         "title": "7",
-        "label": "What to do if you become aware of a data privacy incident?",
+        "label": "Kaj storiti, če se seznanite z incidentom v zvezi z zasebnostjo podatkov?",
         "options": [
-          "Yes",
-          "No"
+          "Da",
+          "Ne"
         ]
       },
       "12": {
         "title": "12",
-        "label": "Report when you receive Personal Information you should not receive in your role?",
+        "label": "Prijavite, kadar prejmete osebne podatke, ki jih v svoji vlogi ne bi smeli prejeti?",
         "options": [
-          "Always",
-          "Often",
-          "Occasionally",
-          "Rarely",
-          "Never",
-          "Not applicable"
+          "Vedno",
+          "Pogosto",
+          "Občasno",
+          "Redko",
+          "Nikoli",
+          "Se ne uporablja"
         ]
       },
       "13": {
         "title": "12",
-        "label": "Check the Novartis Data Privacy Policy when you have questions about handling  Personal Information?",
+        "label": "Preverite pravilnik o zasebnosti podatkov družbe Novartis, ko imate vprašanja o ravnanju z osebnimi podatki?",
         "options": [
-          "Always",
-          "Often",
-          "Occasionally",
-          "Rarely",
-          "Never",
-          "Not applicable"
+          "Vedno",
+          "Pogosto",
+          "Občasno",
+          "Redko",
+          "Nikoli",
+          "Se ne uporablja"
         ]
       },
       "14": {
         "title": "12",
-        "label": "Contact the privacy team if you cannot address a privacy-related question yourself?",
+        "label": "Če vprašanja v zvezi z zasebnostjo ne morete rešiti sami, se obrnete na ekipo za zasebnost?",
         "options": [
-          "Always",
-          "Often",
-          "Occasionally",
-          "Rarely",
-          "Never",
-          "Not applicable"
+          "Vedno",
+          "Pogosto",
+          "Občasno",
+          "Redko",
+          "Nikoli",
+          "Se ne uporablja"
         ]
       },
       "15": {
         "title": "12",
-        "label": "Seek to collect as little information as possible when creating a survey, registration, or other form?",
+        "label": "Pri ustvarjanju ankete, registracije ali drugega obrazca poskušate zbrati čim manj informacij?",
         "options": [
-          "Always",
-          "Often",
-          "Occasionally",
-          "Rarely",
-          "Never",
-          "Not applicable"
+          "Vedno",
+          "Pogosto",
+          "Občasno",
+          "Redko",
+          "Nikoli",
+          "Se ne uporablja"
         ]
       },
       "16": {
         "title": "16",
         "label": "",
         "options": [
-          "Marketing",
-          "Patient Support & Services",
-          "Research & Development",
-          "Sales",
-          "Other"
+          "Trženje",
+          "Podpora in storitve za bolnike",
+          "Raziskave in razvoj",
+          "Prodaja",
+          "Drugo"
         ]
       },
       "17": {
         "title": "17",
-        "label": "Select your country",
+        "label": "Izberite svojo državo",
         "options": []
       }
     }
@@ -452,182 +452,182 @@
   "egypt": {
     "questions": {
       "1": {
-        "label": "Do you see any concerns with the waiter’s handwritten notes on the menu?",
+        "label": "Ali imate pomisleke glede natakarjevih rokopisnih zapisov na jedilnem listu?",
         "options": [
-          "Not at all, he is taking care of the guests' wishes ",
-          "Yes – he should also include their last names to be on the safe side ",
-          "Yes – it feels like this is private information that should not have been shared"
+          "Nikakor ne, skrbi za želje gostov",
+          "Da - za varnost bi moral navesti tudi njuna priimka",
+          "Da - zdi se, da gre za zasebne informacije, ki jih ne bi smeli deliti"
         ]
       },
       "2": {
-        "label": "You realize that Carla, Yuri, and Dave look uncomfortable and decide that you should speak up to Franklin. What should you make him aware of?",
+        "label": "Ugotovite, da je Carli, Juriju in Davu neprijetno, in se odločite, da bi morali govoriti s Franklinom. Na kaj ga morate opozoriti?",
         "options": [
-          "Passengers don’t need to know each other’s dietary restrictions.",
-          " By including the waiter’s notes on the menu, passengers’ health conditions and/or religious affiliations were likely revealed.",
-          "Information about health and religion is a type of Personal Information, and it can be considered sensitive in many countries.",
-          "All of the above"
+          "Potnikom ni treba poznati prehranskih omejitev drugih sopotnikov.",
+          "Z vključitvijo natakarjevih opomb na jedilnik je bilo verjetno razkrito zdravstveno stanje in/ali verska pripadnost potnikov.",
+          "Informacije o zdravju in veroizpovedi so vrsta osebnih podatkov, ki lahko v številnih državah štejejo za občutljive.",
+          "Vse prej navedeno"
         ]
       }
     }
   },
   "brazil": {
     "validated-photo": [
-      "Good news!",
-      "The photo we just took of you was verified by our facial recognition software."
+      "Dobra novica!",
+      "Fotografijo, ki smo jo pravkar posneli, je preverila naša programska oprema za prepoznavanje obrazov."
     ],
     "smile-photo": [
-      "Please follow me inside. Don’t forget to smile, we have cameras throughout the game room!"
+      "Prosim, sledite mi v notranjost. Ne pozabite se nasmehniti, saj so v igralnici nameščene kamere!"
     ],
     "questions": {
       "1": {
-        "label": "Did it say your passport photo would be taken and used to control access to parts of the ship?",
+        "label": "Ali je pisalo, da bo fotografija vašega potnega lista posneta in uporabljena za nadzor dostopa do delov ladje?",
         "options": [
-          "Yes",
-          "No"
+          "Da",
+          "Ne"
         ]
       },
       "2": {
-        "label": "Does it clearly explain that facial recognition would be used?",
+        "label": "Ali je jasno pojasnjeno, da se bo uporabljala prepoznava obraza?",
         "options": [
-          "Yes",
-          "No"
+          "Da",
+          "Ne"
         ],
-        "link": "Review privacy notice",
-        "text": "That camera flash was bright and you find yourself feeling a bit confused. You read the privacy notice carefully, but . ."
+        "link": "Pregled obvestila o zasebnosti",
+        "text": "Bliskavica fotoaparata je bila svetla in počutite se nekoliko zmedeno. Obvestilo o zasebnosti ste pozorno prebrali, vendar . ."
       },
       "3": {
-        "label": "Look at the privacy notice again – does it clearly explain that facial recognition would be used?",
+        "label": "Še enkrat si oglejte obvestilo o zasebnosti - ali je v njem jasno pojasnjeno, da bo uporabljena prepoznava obraza?",
         "options": [
-          "Yes",
-          "No"
+          "Da",
+          "Ne"
         ]
       }
     },
     "mini_game": {
       "title": "Franklin",
-      "description": "Now's your chance to knock out some of those cameras you were concerned about. You have 30 seconds to hit cameras. For every camera clicked during a 30-second run you will get 50 points. You can repeat the game up to 5 times",
-      "score": "Your score is: <strong> {score} points.</strong>",
-      "points": "points",
-      "high_score": "High score:",
-      "seconds": "seconds",
-      "ranking": "Congratulations! You have the highest score.",
-      "statistics": "Statistics of former players:"
+      "description": "Zdaj imate priložnost, da se znebite nekaterih kamer, ki so vas skrbele. Na voljo imate 30 sekund, da zadenete kamere. Za vsako kamero, kliknjeno v 30 sekundah, prejmete 50 točk. Igro lahko ponovite do petkrat",
+      "score": "Vaš rezultat je: <strong>{score} točk.</strong>",
+      "points": "točke",
+      "high_score": "Visok rezultat:",
+      "seconds": "sekunde",
+      "ranking": "Čestitamo! Imate najvišje število točk.",
+      "statistics": "Statistika nekdanjih igralcev:"
     },
     "welcome-to-game-room": [
-      "Welcome to the game room.",
-      "Here you can see the result of all countries. Try to get the highest score possible in the game to contribute to your country‘s score."
+      "Dobrodošli v igralnici.",
+      "Tukaj si lahko ogledate rezultate vseh držav. Poskusite doseči čim višji rezultat v igri in tako prispevati k rezultatu svoje države."
     ],
     "scoreboard-questions": [
       {
-        "label": "The scoreboard shows your photo and other identifying information which will be available for current and future voyageurs to see. Does this make you uncomfortable?",
+        "label": "Na tabli je prikazana vaša fotografija in drugi identifikacijski podatki, ki bodo na voljo sedanjim in prihodnjim popotnikom. Ali vam je zaradi tega neprijetno?",
         "options": [
-          "Yes",
-          "No"
+          "Da",
+          "Ne"
         ]
       },
       {
-        "label": "Looking more closely at the scoreboard, you see that it has scores going back as far as 2013, suggesting that your information could be posted there for years to come. Does this make you uncomfortable?",
+        "label": "Če si podrobneje ogledate tablo z rezultati, ugotovite, da so na njej rezultati že iz leta 2013, kar pomeni, da bi lahko bili vaši podatki na njej objavljeni še leta. Ali vam je zaradi tega neprijetno?",
         "options": [
-          "Yes",
-          "No"
+          "Da",
+          "Ne"
         ]
       },
       {
-        "label": "Can you think of a privacy-friendly way to handle the scoreboard?",
+        "label": "Ali si lahko zamislite zasebnosti prijazen način upravljanja table z rezultati?",
         "options": [
-          "Yes",
-          "No"
+          "Da",
+          "Ne"
         ]
       }
     ]
   },
   "usa": {
     "intro": {
-      "player-thinking": "This doesn’t seem right. What can I do?"
+      "player-thinking": "To se ne zdi prav. Kaj lahko storim?"
     },
     "hints": {
-      "phone-questions": "Click on the internet browsing icon.",
+      "phone-questions": "Kliknite ikono za brskanje po internetu.",
       "missing-piece": {
         "1": [
-          "Find the missing piece of the privacy notice",
-          "Have you looked under the carpet yet?"
+          "Iskanje manjkajočega dela obvestila o zasebnosti",
+          "Ste že pogledali pod preprogo?"
         ],
         "2": [
-          "Click at the missing piece of the privacy notice."
+          "Kliknite na manjkajoči del obvestila o zasebnosti."
         ]
       }
     },
     "instructions": {
-      "phone-questions": "Mark useful articles that could possibly help you."
+      "phone-questions": "Označite koristne članke, ki vam lahko pomagajo."
     },
-    "score-board-inline": "No problem. I’ll take you to the captain’s cabin. Please follow me.",
+    "score-board-inline": "Brez težav. Popeljal vas bom v kapitanovo kabino. Sledite mi.",
     "privacy-questions": [
       {
-        "label": "Let’s reflect on what happened in game room in light of what the privacy notice says: <br /> <br /> Captain Maria shared the principle of being transparent. That means that the ship should have let you know in the privacy notice that your information might be shared on the scoreboard. Is there anything in the notice about that?",
+        "label": "Razmislimo o tem, kaj se je zgodilo v igralnici, glede na to, kaj je navedeno v obvestilu o zasebnosti: <br /> <br /> Kapitanka Maria je delila načelo preglednosti. To pomeni, da bi vas morala ladja v obvestilu o zasebnosti obvestiti, da bodo vaši podatki morda deljeni na tabli z rezultati. Ali je v obvestilu o tem kaj navedeno?",
         "options": [
-          "Yes",
-          "No"
+          "Da",
+          "Ne"
         ]
       },
       {
-        "label": "She also shared the principle of not retaining information longer than necessary. The privacy notice doesn’t say anything about how long they keep your information, but based on the scoreboard, it looks like they have stored it for at least 10 years! Does that seem necessary?",
+        "label": "Prav tako se je strinjala z načelom, da informacij ne smemo hraniti dlje, kot je potrebno. V obvestilu o zasebnosti ni navedeno, kako dolgo hranijo vaše podatke, vendar je glede na tablo z rezultati videti, da jih hranijo že vsaj 10 let! Se vam zdi to potrebno?",
         "options": [
-          "Yes",
-          "No"
+          "Da",
+          "Ne"
         ]
       },
       {
-        "label": "Captain Maria also said the ship should be responsible with personal information, meaning it should not use if for purposes other than what is was collected for. When the receptionist scanned your passport, you had no idea that your passport info would be posted on a public scoreboard. Do you think the ship used your passport information responsibly?",
+        "label": "Kapitanka Maria je tudi dejala, da mora ladja z osebnimi podatki ravnati odgovorno, kar pomeni, da jih ne sme uporabljati za druge namene, kot so bili zbrani. Ko je receptor skeniral vaš potni list, niste vedeli, da bodo podatki o vašem potnem listu objavljeni na javni tabli. Ali menite, da je ladja odgovorno uporabila podatke iz vašega potnega lista?",
         "options": [
-          "Yes",
-          "No"
+          "Da",
+          "Ne"
         ]
       }
     ]
   },
   "china": {
     "bedroom-note": [
-      "Dear Passenger,",
-      "I was sorry to learn about the waiter‘s mistake at lunch. I‘m",
-      "afraid this ship may not be as watertight when it comes to",
-      "privacy as it should be. But don‘t worry - I have hidden 5",
-      "privacy principles under objects in your cabin that I believe can",
-      "help you protect your privacy. Feel free to visit my cabin if you",
-      " have any other concerns. – Captain Maria"
+      "Dragi potnik,",
+      "ko sem izvedela za natakarjevo napako pri kosilu, sem to resnično obžalovala. Bojim",
+      "se, da ta ladja ne bo tako neprepustna na področju",
+      "zasebnosti, kot bi morala biti. Toda ne skrbite - skrila sem 5",
+      "načel zasebnosti pod predmeti v vaši kabini, za katere menim, da lahko",
+      "pomagajo zaščititi vašo zasebnost. Če",
+      "imate kakršne koli pomisleke, obiščite mojo kabino. - Kapitanka Maria"
     ],
     "bedroom-letter": [
-      "<div class='f-hand-2 font-weight-bold text-h3 mb-4'>Dear guest,</div>",
-      "Hello again and welcome to your cabin. You are staying in Cabin 42, which is a very special room featuring objects I have collected in my travels. <div class='font-weight-bold'>I suggest you spend some time here admiring these objects from all angles.</div>",
-      "<div class='d-flex justify-end'><i class='f-hand-2 font-weight-bold text-h5'>- Regards, Franklin</i></div>"
+      "<div class='f-hand-2 font-weight-bold text-h3 mb-4'>Dragi gost,</div>",
+      "ponovno pozdravljeni in dobrodošli v svoji kabini. Bivate v kabini 42, ki je prav posebna soba s predmeti, ki sem jih zbral na svojih potovanjih.<div class='font-weight-bold'>Predlagam vam, da nekaj časa preživite tukaj in občudujete te predmete z vseh zornih kotov.</div>",
+      "<div class='d-flex justify-end'><i class='f-hand-2 font-weight-bold text-h5'>- S spoštovanjem, Franklin</i></div>"
     ],
-    "privacy-principles": "Open privacy principles",
+    "privacy-principles": "Načela odprte zasebnosti",
     "privacy-notice": {
-      "title": "Cruise Ship Privacy Notice",
-      "description": "We take your privacy very seriously. This notice sets forth what we collect, what we share, and your rights. For more details, please see the captain.",
-      "open": "Open privacy notice",
-      "close": "Close",
-      "close-and-call-franklin": "Call Franklin and demand to see Captain Maria",
+      "title": "Obvestilo o zasebnosti na ladji za križarjenje",
+      "description": "Vašo zasebnost jemljemo zelo resno. V tem obvestilu je navedeno, kaj zbiramo, kaj delimo in kakšne so vaše pravice. Za več podrobnosti obiščite kapitana.",
+      "open": "Odprto obvestilo o zasebnosti",
+      "close": "Zapri",
+      "close-and-call-franklin": "Pokličite Franklina in zahtevajte obisk kapitanke Marie",
       "table": {
         "headers": [
-          "CATEGORY OF PERSONAL INFORMATION",
-          "DESCRIPTION"
+          "KATEGORIJA OSEBNIH PODATKOV",
+          "OPIS"
         ],
         "content": [
           {
-            "category": "Identification and contact information",
-            "description": "We collect information to identify and contact you, such as your name, gender, nationality, date of birth, mailing address, email address, telephone number, and passport information (such as passport number and expiration date). This information may be shared with employees of the ship to facilitate your voyage."
+            "category": "Identifikacija in kontaktni podatki",
+            "description": "Zbiramo podatke za identifikacijo in stik z vami, kot so vaše ime, spol, državljanstvo, datum rojstva, poštni naslov, e-poštni naslov, telefonska številka in podatki o potnem listu (na primer številka potnega lista in datum poteka veljavnosti). Te podatke lahko posredujemo zaposlenim na ladji, da bi vam olajšali potovanje."
           },
           {
-            "category": "Data to enhance your voyage",
-            "description": "As a high-tech cruise line, we employ state-of-the-art technology and algorithms to offer you the best voyage possible. To do this, we may use cameras and other sensors to track your movement on the ship, how long you stay in various rooms, and how you interact with our employees and other passengers."
+            "category": "Podatki za izboljšanje vašega potovanja",
+            "description": "Kot visokotehnološka križarka uporabljamo najsodobnejšo tehnologijo in algoritme, da vam ponudimo najboljše možno potovanje. V ta namen lahko s kamerami in drugimi senzorji spremljamo vaše gibanje na ladji, čas, ki ga preživite v različnih sobah, ter vaše stike z našimi zaposlenimi in drugimi potniki."
           },
           {
-            "category": "Payment information",
-            "description": "Information you provide for the purpose of processing payments, such as credit card details."
+            "category": "Podatki o plačilu",
+            "description": "Podatki, ki jih posredujete za obdelavo plačil, kot so podatki o kreditni kartici."
           },
           {
-            "category": "Safety information",
-            "description": "We are committed to ensuring you have a safe voyage! We will ask you to let us know if you have any food allergies, and we also have a nurse on staff in the event of sea-sickness or other ailment. If you visit the nurse, we may collect information about any current or prior health conditions. This information will only be used by cruise employees for the purposes of ensuring your safety."
+            "category": "Varnostne informacije",
+            "description": "Prizadevamo si, da vam zagotovimo varno potovanje! Prosili vas bomo, da nam sporočite, če imate kakršne koli alergije na hrano, na voljo pa vam je tudi medicinska sestra za primer morske bolezni ali drugih težav. Če obiščete medicinsko sestro, lahko zbiramo informacije o morebitnih trenutnih ali preteklih zdravstvenih stanjih. Te podatke bodo uporabljali le zaposleni na križarjenju za zagotavljanje vaše varnosti."
           }
         ],
         "correctOptions": [
@@ -639,8 +639,8 @@
       "table": {
         "content": [
           {
-            "category": "Your rights",
-            "description": "You have the right to request a copy of all Personal Information collected about you and to ask us to correct or delete that information. To exercise these rights, please contact Captain Maria."
+            "category": "Vaše pravice",
+            "description": "Imate pravico zahtevati kopijo vseh osebnih podatkov, zbranih o vas, in zahtevati, da te podatke popravimo ali izbrišemo. Za uveljavljanje teh pravic se obrnite na kapitanko Mario."
           }
         ]
       }
@@ -651,100 +651,100 @@
       "msgs": [
         {
           "dir": "ltr",
-          "text": "So nice to finally meet you.",
+          "text": "Lepo, da sva se končno spoznala.",
           "isMaria": true
         },
         {
           "dir": "ltr",
-          "text": "I‘m sorry to hear about the privacy issues. You would like to exercise your privacy rights?",
+          "text": "Žal mi je za težave z zasebnostjo. Želite uveljavljati svoje pravice do zasebnosti?",
           "isMaria": true
         },
         {
           "dir": "ltr",
-          "text": "I can let you know what information we have about you, you can ask to correct it, or you can ask to delete it.",
+          "text": "Seznanim vas lahko s podatki, ki jih imamo o vas, zahtevate lahko, da jih popravimo, ali pa zahtevate, da jih izbrišemo.",
           "isMaria": true
         },
         {
           "dir": "ltr",
-          "text": "Based on your concerns, it sounds like you want me to delete your information.",
+          "text": "Glede na vaše pomisleke se zdi, da želite, da izbrišem vaše podatke.",
           "isMaria": true
         },
         {
           "dir": "ltr",
-          "text": "Which information would you like deleted?",
+          "text": "Katere podatke želite izbrisati?",
           "isMaria": true
         },
         {
           "dir": "rtl",
-          "text": "Name and other identifiers",
+          "text": "Ime in druge identifikatorje",
           "isPlayer": true
         },
         {
           "dir": "rtl",
-          "text": "Contact information",
+          "text": "Kontaktne podatke",
           "isPlayer": true
         },
         {
           "dir": "rtl",
-          "text": "Photographs",
+          "text": "Fotografije",
           "isPlayer": true
         },
         {
           "dir": "rtl",
-          "text": "Biometric data",
+          "text": "Biometrične podatke",
           "isPlayer": true
         },
         {
           "dir": "rtl",
-          "text": "Credit card data",
+          "text": "Podatke o kreditnih karticah",
           "isPlayer": true
         },
         {
           "dir": "rtl",
-          "text": "Dietary preferences",
+          "text": "Prehranske preference",
           "isPlayer": true
         },
         {
           "dir": "ltr",
-          "text": "Understood. I can delete some information right away if it’s not critical to operating the ship, but there is some information we need to use while you are on board, such as passport data and dietary restrictions.",
+          "text": "Razumljivo. Nekatere podatke lahko takoj izbrišem, če niso ključnega pomena za delovanje ladje, vendar moramo nekatere podatke uporabiti, ko ste na krovu, na primer podatke iz potnega lista in prehranske omejitve.",
           "isMaria": true
         },
         {
           "dir": "ltr",
-          "text": "Once you disembark, we can delete everything except for what we have to keep for regulations – such as information needed to comply with COVID-related regulations.",
+          "text": "Ko se izkrcate, lahko izbrišemo vse podatke, razen tistih, ki jih moramo hraniti zaradi predpisov - na primer podatke, potrebne za izpolnjevanje predpisov, povezanih s predpisi glede covida.",
           "isMaria": true
         },
         {
           "dir": "ltr",
-          "text": "Thank you for speaking up about your privacy concerns. I will ask Franklin to get to work to make sure we are shipshape when it comes to privacy!",
+          "text": "Zahvaljujem se vam, da ste izrazili svoje pomisleke glede zasebnosti. Franklina bom prosila, naj se loti dela in poskrbi, da bomo na področju zasebnosti delovali brezhibno!",
           "isMaria": true
         }
       ]
     }
   },
   "score-result": {
-    "star3": "Well Done!",
-    "star2": "Bad!",
-    "star1": "Too Bad!",
-    "star0": "Too Bad!",
+    "star3": "Odlično opravljeno!",
+    "star2": "Slabo!",
+    "star1": "Škoda!",
+    "star0": "Škoda!",
     "italy": [
-      "Thank you!",
-      "Now, please join us in the dining room for lunch!"
+      "Hvala!",
+      "Sedaj pa se nam pridružite v jedilnici na kosilu!"
     ],
     "egypt": [
-      "That’s right – that waiter should know better! Silly humans. Perhaps they should replace the waiter with an AI-powered robot like me!",
-      "Why don’t you return to your cabin to relax."
+      "Tako je - ta natakar bi moral vedeti bolje! Neumni ljudje. Morda bi morali natakarja zamenjati z robotom z umetno inteligenco, kot sem jaz!",
+      "Zakaj se ne bi vrnili v svojo kabino in se sprostili."
     ],
     "china": [],
     "brazil": [
-      "Why don’t you go back to your cabin to see how the principles that Captain Maria shared can help you figure this out."
+      "Zakaj se ne bi vrnili v svojo kabino in preverili, kako vam lahko načela, ki vam jih je zaupala kapitanka Maria, pomagajo pri reševanju tega vprašanja."
     ]
   },
-  "excellent": "Excellent",
-  "bad": "Bad",
-  "too-bad": "Too Bad",
+  "excellent": "Odlično",
+  "bad": "Slabo",
+  "too-bad": "Preveč slabo",
   "learning-outcome": {
-    "title": "Learning Outcome",
+    "title": "Učni izid",
     "italy": [],
     "egypt": [],
     "brazil": [],
@@ -752,151 +752,151 @@
     "china": [],
     "usa": []
   },
-  "try-again": "Try again",
+  "try-again": "Poskusite znova",
   "lunch-menu": {
-    "title": "Lunch Menu",
+    "title": "Meni za kosilo",
     "items": [
       {
-        "label": "Starter",
-        "text": "Prawn & Avocado Cocktail",
-        "handwritten": "Note: serve Goats Cheese & Onion Filo Tart to Dave (kosher)"
+        "label": "Predjedi",
+        "text": "Koktajl iz kozic in avokada",
+        "handwritten": "Opomba: Davu postrezite tortico iz kozjega sira in čebule Filo (košer)"
       },
       {
-        "label": "Main",
-        "text": "Fillet steak served with a mushroom sauce served with Dauphinoise Potatoes"
+        "label": "Glavne jedi",
+        "text": "Zrezek iz fileja z gobovo omako, postrežen s krompirjem Dauphinoise"
       },
       {
-        "label": "Dessert",
+        "label": "Sladica",
         "text": "Crème Brulee",
-        "handwritten": "Note: Serve Fresh Fruit  to Yuri (sugar-free)"
+        "handwritten": "Opomba: Juriju postrezite sveže sadje (brez sladkorja)"
       },
       {
-        "label": "Wine pairings with each course",
-        "handwritten": "(Do not offer to Carla – instead give sparkling apple juice)"
+        "label": "Povezovanje vin z vsakim hodom",
+        "handwritten": "(Ne ponudite Carli - namesto tega ji dajte peneči jabolčni sok)"
       }
     ]
   },
-  "pick-response-to-continue": "Pick a response to continue",
-  "pick-at-least-three-choices": "Pick at least three choices",
-  "what-should-tell-franklin": "What should you tell Franklin?",
-  "choose-headlines": "Choose which headlines are useful:",
-  "congratulations": "Congratulations",
+  "pick-response-to-continue": "Izberite odgovor za nadaljevanje",
+  "pick-at-least-three-choices": "Izberite vsaj tri možnosti",
+  "what-should-tell-franklin": "Kaj bi morali povedati Franklinu?",
+  "choose-headlines": "Izberite uporabne naslove:",
+  "congratulations": "Čestitke",
   "outro": {
     "successText": [
-      "<b>Congratulations!</b> You have used the data privacy principles to prevent a privacy shipwreck!",
-      "Click “Next” to disembark and help your country become the 2023 Privacy Champion."
+      "<b>Čestitamo!</b> Z načeli o zasebnosti podatkov ste preprečili brodolom zasebnosti!",
+      "Kliknite »Naprej«, da se izkrcate in pomagate svoji državi postati prvak zasebnosti za leto 2023."
     ],
     "failText": [
-      "Oh, too bad. You failed to save the world, and now The Cyber Monster has destroyed everything he could. Play this task again and help our Brick defeat the enemy."
+      "Oh, škoda. Ni vam uspelo rešiti sveta in zdaj je kibernetska pošast uničila vse, kar je lahko. Ponovno odigrajte to nalogo in pomagajte naši Brick premagati sovražnika."
     ],
     "actions": {
-      "yes": "Yes",
-      "no": "No"
+      "yes": "Da",
+      "no": "Ne"
     }
   },
   "found-object": {
-    "title": "You've found a privacy symbol",
+    "title": "Našli ste simbol zasebnosti",
     "wrong-item": {
-      "1": "Sorry, you've clicked on a wrong item. Try clicking on other items to find missing piece of the privacy notice.",
-      "2": "Sorry, you've clicked on a wrong item. Have you looked under the carpet yet?"
+      "1": "Žal ste kliknili na napačen element. Če želite najti manjkajoči del obvestila o zasebnosti, poskusite klikniti na druge elemente.",
+      "2": "Žal ste kliknili na napačen element. Ste že pogledali pod preprogo?"
     },
-    "find-x-more": "You need to find {x} more symbols",
-    "find-one-more": "You need to find {x} more symbol",
-    "found-last": "You‘ve found the last privacy symbol!",
-    "found-all": "Congratulations! You‘ve found all privacy principles.",
-    "privacy-found": "Congratulations! You found the missing part of the privacy notice.",
+    "find-x-more": "Poiskati morate še {x} simbolov",
+    "find-one-more": "Poiskati morate še {x} simbol",
+    "found-last": "Našli ste zadnji simbol zasebnosti!",
+    "found-all": "Čestitamo! Našli ste vsa načela zasebnosti.",
+    "privacy-found": "Čestitamo! Našli ste manjkajoči del obvestila o zasebnosti.",
     "items": {
-      "eye": "Be transparent",
-      "bridge": "Collect only what is necessary",
-      "handshake": "Use responsibly",
-      "lock": "Protect and be vigilant",
-      "hourglass": "Retain only as long as necessary"
+      "eye": "Bodite pregledni",
+      "bridge": "Zberite le tisto, kar je potrebno",
+      "handshake": "Uporabljajte odgovorno",
+      "lock": "Varujte in bodite pozorni",
+      "hourglass": "Hranite le toliko časa, kolikor je potrebno"
     },
     "items-explanations": {
-      "eye": "Be transparent means you should be able to understand what will be done with information about you. When you find the privacy notice, make sure you understand what it says!",
-      "bridge": "Collect only what is necessary means you should not have to provide information about you that isn‘t necessary. This ship has a tendency to collect information everywhere – be on the lookout for times when the ship might collect more than what it needs.",
-      "handshake": "Use responsibly means that the ship should only use your personal information for the purposes for which it was collected – pay attention to what is in the privacy notice to make sure the ship isn‘t using your information for other purposes.",
-      "lock": "Protect and be vigilant means the ship should secure your personal information and report and investigate any misuse of data. You should speak up if you see anything suspicious.",
-      "hourglass": "Retain only as long as necessary means the ship should not keep your information longer than it needs to. Most of what the ship collects about you should probably be deleted when the voyage ends."
+      "eye": "Preglednost pomeni, da bi morali razumeti, kaj bo storjeno z informacijami o vas. Ko najdete obvestilo o zasebnosti, se prepričajte, da razumete, kaj piše v njem!",
+      "bridge": "Zbiranje samo nujnih podatkov pomeni, da vam ne sme biti treba posredovati podatkov o sebi, ki niso nujni. Ta ladja načeloma povsod zbira informacije - bodite pozorni na trenutke, ko lahko zbere več informacij, kot jih potrebuje.",
+      "handshake": "Odgovorna uporaba pomeni, da mora ladja vaše osebne podatke uporabljati le za namene, za katere so bili zbrani - pazite, kaj je navedeno v obvestilu o zasebnosti, da se prepričate, da ladja vaših podatkov ne uporablja za druge namene.",
+      "lock": "Zaščititi in biti pozoren pomeni, da mora ladja zavarovati vaše osebne podatke ter prijaviti in raziskati vsako zlorabo podatkov. Če opazite kaj sumljivega, se oglasite.",
+      "hourglass": "Hraniti le toliko časa, kolikor je potrebno, pomeni, da ladja ne sme hraniti vaših podatkov dlje, kot je potrebno. Večino podatkov, ki jih ladja zbira o vas, je treba po koncu potovanja izbrisati."
     }
   },
   "note-from-prev-passenger": [
-    "Beware",
-    "Something weird is going on here",
-    "Look under the alarm clock"
+    "Bodite pozorni",
+    "Tu se dogaja nekaj čudnega",
+    "Poglejte pod budilko"
   ],
   "privacy-notice": {
-    "title": "Cruise Ship Privacy Notice",
-    "text-1": "We take your privacy very seriously. This notice sets forth what we collect, what we share, and your rights. For more details, please see the captain.",
-    "text-2": "The Personal Information we collect and how we use it",
+    "title": "Obvestilo o zasebnosti na ladji za križarjenje",
+    "text-1": "Vašo zasebnost jemljemo zelo resno. V tem obvestilu je navedeno, kaj zbiramo, kaj delimo in kakšne so vaše pravice. Za več podrobnosti obiščite kapitana.",
+    "text-2": "Osebni podatki, ki jih zbiramo, in kako jih uporabljamo",
     "headers": {
-      "name": "CATEGORY OF PERSONAL INFORMATION",
-      "desc": "DESCRIPTION"
+      "name": "KATEGORIJA OSEBNIH PODATKOV",
+      "desc": "OPIS"
     },
     "items": {
       "1": {
-        "name": "Identification and contact information",
-        "desc": "We collect information to identify and contact you, such as your name, gender,nationality, date of birth, mailing address, email address, telephone number, and passport information (such as passport number and expiration date). This information may be shared with employees of the ship to facilitate your voyage."
+        "name": "Identifikacija in kontaktni podatki",
+        "desc": "Zbiramo podatke za identifikacijo in stik z vami, kot so vaše ime, spol, državljanstvo, datum rojstva, poštni naslov, e-poštni naslov, telefonska številka in podatki o potnem listu (na primer številka potnega lista in datum poteka veljavnosti). Te podatke lahko posredujemo zaposlenim na ladji, da bi vam olajšali potovanje."
       },
       "2": {
-        "name": "Data to enhance your voyage",
-        "desc": "As a high-tech cruise line, we employ state-of-the-art technology and algorithms to offer you the best voyage possible. To do this, we may use cameras and other sensors to track your movement on the ship, how long you stay in various rooms, and how you interact with our employees and other passengers."
+        "name": "Podatki za izboljšanje vašega potovanja",
+        "desc": "Kot visokotehnološka križarka uporabljamo najsodobnejšo tehnologijo in algoritme, da vam ponudimo najboljše možno potovanje. V ta namen lahko s kamerami in drugimi senzorji spremljamo vaše gibanje na ladji, čas, ki ga preživite v različnih sobah, ter vaše stike z našimi zaposlenimi in drugimi potniki."
       },
       "3": {
-        "name": "Payment information",
-        "desc": "Information you provide for the purpose of processing payments, such as credit card details"
+        "name": "Podatki o plačilu",
+        "desc": "Podatki, ki jih posredujete za obdelavo plačil, kot so podatki o kreditni kartici"
       },
       "4": {
-        "name": "Safety information",
-        "desc": "We are committed to ensuring you have a safe voyage! We will ask you to let us know if you have any food allergies, and we also have a nurse on staff in the event of sea-sickness or other ailment. If you visit the nurse, we may collect information about any current or prior health conditions. This information will only be used by cruise employees for the purposes of ensuring your safety."
+        "name": "Varnostne informacije",
+        "desc": "Prizadevamo si, da vam zagotovimo varno potovanje! Prosili vas bomo, da nam sporočite, če imate kakršne koli alergije na hrano, na voljo pa vam je tudi medicinska sestra za primer morske bolezni ali drugih težav. Če obiščete medicinsko sestro, lahko zbiramo informacije o morebitnih trenutnih ali preteklih zdravstvenih stanjih. Te podatke bodo uporabljali le zaposleni na križarjenju za zagotavljanje vaše varnosti."
       }
     },
     "questions": {
-      "title": "Now that you have found the privacy notice and the principles that Captain Maria hid, what do you think about the situation at lunch?",
+      "title": "Zdaj, ko ste našli obvestilo o zasebnosti in načela, ki jih je skrivala kapitanka Maria, kaj menite o situaciji pri kosilu?",
       "description": [
-        "That’s right!",
-        "Although the ship disclosed that it would collect information about food allergies (which relates to dietary restrictions), it said it would only share it with employees to ensure safety. That information never should have been shared with other passengers. And while we’re thinking about it, it would be clearer if the privacy notice said “dietary restrictions” rather than just allergies, since Carla, Yuri, and Dave all had restrictions for other reasons."
+        "Tako je!",
+        "Čeprav je ladja razkrila, da bo zbirala informacije o alergijah na hrano (ki se nanašajo na prehranske omejitve), je dejala, da jih bo zaradi zagotavljanja varnosti delila le z zaposlenimi. Teh informacij ni bilo treba posredovati drugim potnikom. In ko že razmišljamo o tem, bi bilo bolj jasno, če bi v obvestilu o zasebnosti pisalo »prehranske omejitve« in ne le alergije, saj so imeli Carla, Jurij in Dave omejitve iz drugih razlogov."
       ],
       "congratulations": [
-        "Good job!",
-        "Why does the ship need to use cameras and sensors to track movement on the ship and how you interact with others? Does the ship really need to know if someone happens to be spending time in someone else’s cabin? Even if this is arguably for safety, there must be ways to ensure passenger safety without compromising privacy."
+        "Dobro opravljeno!",
+        "Zakaj mora ladja uporabljati kamere in senzorje za spremljanje gibanja na ladji in vaše interakcije z drugimi? Ali mora ladja res vedeti, ali se nekdo zadržuje v kabini nekoga drugega? Tudi če je to domnevno zaradi varnosti, je treba najti načine, kako zagotoviti varnost potnikov, ne da bi pri tem ogrozili zasebnost."
       ],
       "q1": {
-        "text": "Does the privacy notice state that the ship will collect information about dietary restrictions?",
+        "text": "Ali je v obvestilu o zasebnosti navedeno, da bo ladja zbirala podatke o prehranskih omejitvah?",
         "options": [
-          "Yes",
-          "No"
+          "Da",
+          "Ne"
         ]
       },
       "q2": {
-        "text": "Based on the privacy notice, should the waiter’s notes have been shared with the passengers?",
+        "text": "Ali bi bilo treba na podlagi obvestila o zasebnosti natakarjeve zapiske posredovati potnikom?",
         "options": [
-          "Yes",
-          "No"
+          "Da",
+          "Ne"
         ]
       }
     }
   },
-  "player": "Player",
-  "finish": "Finish",
-  "upload_photo": "Upload photo",
-  "hide": "Hide",
-  "receptionist": "Receptionist",
-  "privacy_notice": "Privacy Notice",
-  "wrong-response": "Wrong Response!",
-  "wrong-response-desc": "You've selected an incorrect response, please try again",
-  "wrong-response-hint": "Really? It’s fine? Remember the concerns the other passengers shared...",
-  "ok": "OK",
-  "click-to-open-privacy-notice": "Click to open Privacy Notice",
-  "restart": "Restart",
+  "player": "Igralec",
+  "finish": "Zaključek",
+  "upload_photo": "Naloži fotografijo",
+  "hide": "Skrij",
+  "receptionist": "Receptor",
+  "privacy_notice": "Obvestilo o zasebnosti",
+  "wrong-response": "Napačen odgovor!",
+  "wrong-response-desc": "Izbrali ste napačen odgovor, poskusite znova",
+  "wrong-response-hint": "Res? Je v redu? Spomnite se pomislekov drugih potnikov...",
+  "ok": "V REDU",
+  "click-to-open-privacy-notice": "Kliknite za odprtje obvestila o zasebnosti",
+  "restart": "Ponovni začetek",
   "restart-game": {
-    "title": "Restart Game",
-    "hint": "Are you sure you want to restart the game?",
-    "action": "Yes, restart!"
+    "title": "Ponovni začetek igre",
+    "hint": "Ste prepričani, da želite znova zaigrati igro?",
+    "action": "Da, ponovni začetek!"
   },
-  "top-scores": "Top Scores",
-  "passport-number": "Passport number",
-  "voyage-date": "Voyage date",
-  "cabin": "Cabin",
-  "enter-the-code": "Enter the code"
+  "top-scores": "Najvišji rezultati",
+  "passport-number": "Številka potnega lista",
+  "voyage-date": "Datum potovanja",
+  "cabin": "Kabina",
+  "enter-the-code": "Vnesite kodo"
 }

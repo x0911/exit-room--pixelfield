@@ -1,267 +1,267 @@
 ﻿{
   "franklin": "Franklin",
-  "carla-thought": "Carla’s thinking",
-  "yuri-thought": "Yuri’s thinking",
-  "dave-thought": "Dave’s thinking",
-  "player-is-thinking": "Player is thinking",
-  "confirm": "Confirm",
-  "call-franklin": "Call Franklin",
-  "submit": "Submit",
-  "accept": "Accept",
-  "previous": "Previous",
-  "back_to_menu": "Back to menu",
-  "score": "Score",
-  "phone": "Phone",
-  "country": "Country",
-  "countries_scores": "The 5 countries with the highest scores",
-  "lets-go": "Let's go",
+  "carla-thought": "Carla 的想法",
+  "yuri-thought": "Yuri 的想法",
+  "dave-thought": "Dave 的想法",
+  "player-is-thinking": "玩家正在思考",
+  "confirm": "确认",
+  "call-franklin": "呼叫 Franklin",
+  "submit": "提交",
+  "accept": "接受",
+  "previous": "上一步",
+  "back_to_menu": "返回到菜单",
+  "score": "得分",
+  "phone": "电话",
+  "country": "国家",
+  "countries_scores": "得分最高的 5 个国家",
+  "lets-go": "我们开始吧",
   "cookies": {
-    "title": "Privacy & Cookie Notice",
+    "title": "隐私及 Cookie 声明",
     "text": [
       {
-        "title": "Purpose",
-        "description": "This website contains an escape-room game with a survey and country competition related to privacy. It has been created by your employer to raise awareness and knowledge related to privacy and improve the privacy program and increase awareness within your company."
+        "title": "目的",
+        "description": "本网站内含一个房间小游戏，其中涉及一项与隐私相关的调查和国家竞赛。该游戏由您的雇主创建，旨在加强隐私相关的意识和认知，建立健全隐私计划，积极推进整个公司相关意识的提升。"
       },
       {
-        "title": "Voluntary basis",
-        "description": "Please note that participation in this game is on a voluntary basis. There is no obligation to participate. Non-participation will not have any adverse effects on your employment relationship."
+        "title": "自愿原则",
+        "description": "请注意，参与该游戏纯属自愿，并非强制，若不参加，也不会对您的雇佣关系产生任何不利影响。"
       },
       {
-        "title": "Anonymized data",
-        "description": "Within the game only anonymized data is processed. Your employer cannot make any reference to or identification of specific employees. For the purpose of being able to provide you news on the results of the country-competition or react to your provided feedback on our game, you can voluntarily provide your work-email-address at the end of the game. In this case an identification would be possible. Please note that, in cases of small teams or country operations, your employer may be able to identify you if less than five people have the same division or organizational unit, job function, and work country. Your employer will process the data consistent with its privacy policy and associate notice, including not intentionally identifying you and taking reasonable measures, as appropriate, to prevent identification."
+        "title": "数据匿名化",
+        "description": "本游戏对相关个人信息均作了匿名处理。您的雇主将无法确认或识别相关员工的身份。为了能够向您提供关于国家竞赛结果的消息，或者就您对关于我们游戏的反馈做出回应，您可在游戏结束时自愿提供您的工作电子邮件地址。在此情况下，可能会对您的身份进行识别。请注意，如果是小型团队或国家部门，在属于同一部门或组织单位、工作职能和工作国家且人数少于五人的情况下，您的雇主或许能够识别您的身份。您的雇主将会根据其隐私政策和相关声明处理数据，包括非刻意识别您的身份以及酌情采取合理措施避免身份被识别等。"
       },
       {
-        "title": "Cookies",
-        "description": "This website only processes strictly necessary cookies. These cookies are necessary for the website to function and cannot be switched off in our systems. They are usually only set in response to actions made by you which amount to a request for services, such as setting your privacy preferences, logging in or filling in forms. You can set your browser to block or alert you about these cookies, but some parts of the site will not then work. These cookies do not store any personally identifiable information."
+        "title": "Cookie",
+        "description": "本网站仅处理绝对必要的 cookie。该等 cookie 为网站运行所必需，无法在我们的系统中关闭。其通常仅在您请求服务时进行设置，如设置隐私偏好、登录或填写表格。您可将浏览器设置为阻止或提醒您注意该等 cookie，但这样会导致网站的部分功能届时无法正常运行。这些 cookie 不会存储任何个人身份识别信息。"
       },
       {
-        "title": "Legal basis and contact",
-        "description": "In case your personal data is processed, the legal basis for the data processing would be the necessity for the purposes of legitimate interests. For more detailed information with regards data processing in your working environment and your data privacy rights (e.g., right to object) please find the local privacy notices for employees or contact your local data privacy team."
+        "title": "法律依据和联系方式",
+        "description": "在处理个人数据时，数据处理法律依据的选择完全出于维护合法权益的需要。关于您工作环境中的数据处理和您的数据隐私权（例如，反对权）的更多详细信息，请查阅当地的员工隐私声明或联系当地的数据隐私团队。"
       }
     ]
   },
   "task-name": {
-    "1": "Reception",
-    "2": "Dining Room",
-    "3": "Your Cabin",
-    "4": "Game Room",
-    "5": "Your Cabin",
-    "6": "Captain's Bridge"
+    "1": "接待处",
+    "2": "餐厅",
+    "3": "您的房间",
+    "4": "游戏室",
+    "5": "您的房间",
+    "6": "船长的舰桥"
   },
   "fullscreen-hint": {
-    "title": "Fullscreen",
-    "text": "It's recommended to play the game in fullscreen mode, Would you like to try it now?"
+    "title": "全屏",
+    "text": "建议采用全屏模式游戏，您现在想试着玩一下吗？"
   },
-  "enable": "Enable",
-  "validate": "Validate",
-  "cancel": "Cancel",
-  "hint-title": "Hint",
-  "take_a_photo": "Take a photo",
-  "continue": "Continue",
-  "name": "Name",
-  "address": "Address",
-  "cabin_number": "Cabin number",
-  "age": "Age",
-  "nationality": "Nationality",
-  "and": "and",
+  "enable": "启用",
+  "validate": "验证",
+  "cancel": "取消",
+  "hint-title": "提示",
+  "take_a_photo": "拍照",
+  "continue": "继续",
+  "name": "姓名",
+  "address": "地址",
+  "cabin_number": "房间号",
+  "age": "年龄",
+  "nationality": "国籍",
+  "and": "及",
   "hints": {
     "splash": [
-      "Select your language to proceed"
+      "选择所用语言以继续"
     ],
     "map": [
-      "Active room will have a glowing circle above its name"
+      "活跃的房间在其名称上方将会有一个发光的圆圈"
     ],
     "italy": [
-      "Complete the survey"
+      "完成调查"
     ],
     "egypt": [
-      "Waiter will give you a menu, check if you see any concerns.",
-      "After checking, you can safely click on next to proceed to next steps"
+      "服务员会给您一份菜单，看您是否会发现任何不妥的地方。",
+      "看完菜单后，您可放心地点击“下一步”，进入后续步骤"
     ],
     "brazil": [],
     "china": [
-      "Read the note, then search the room to find the 5 privacy principles and their explanations.",
-      "After you have found them all, you will unlock the privacy notice."
+      "阅读备注，然后在房间里寻找 5 条隐私原则及其相关解释。",
+      "在您全部找到后，即可解锁隐私声明。"
     ],
     "usa": [],
     "russia": []
   },
-  "start_game": "Meet Franklin",
-  "skip": "Skip",
-  "wall": "Room Selector",
+  "start_game": "认识 Franklin",
+  "skip": "跳过",
+  "wall": "房间选择器",
   "map-email": {
     "text": [
-      "This is your room selector. Rooms order is mandatory. Active room has a glowing circle above its name."
+      "这是您的房间选择器。房间顺序是确定好的，不能改变。活跃的房间在其名称上方有一个发光的圆圈。"
     ]
   },
   "wall-steps": [
-    "Ship Map",
-    "Here is a map of the cruise ship. Click Start and then click the room marked by the glowing circle."
+    "游艇地图",
+    "这是一张游艇地图。点击“开始”，然后点击带有发光圆圈的房间。"
   ],
-  "start": "Start",
+  "start": "开始",
   "orientation-hint": {
-    "title": "Landscape is required",
-    "text": "Playing the game in portrait mode is not possible, please rotate your device to landscape mode."
+    "title": "必须使用横向模式",
+    "text": "该游戏无法在纵向模式下参加，请将您的装置调整为横向模式。"
   },
-  "map": "Map",
+  "map": "地图",
   "back-to-map": {
-    "text": "Do you want to back to room selector?"
+    "text": "您是否想回到房间选择器？"
   },
   "speeches": {
     "splash": {
       "1": [
-        "Welcome aboard!",
-        "I am Franklin, an AI-powered robot and your concierge on this voyage."
+        "欢迎上船！",
+        "我是 Franklin，一个人工智能机器人，将担任您此次航行的礼宾员。"
       ],
       "2": [
-        "Please follow me aboard so I can show you around the ship."
+        "请跟我上船，我将带您参观这艘游艇。"
       ]
     },
     "italy": {
       "1": [
-        "Greetings!",
-        "Our ship features the most cutting-edge, digital technology available on the high seas. We trust this will make for a memorable vacation!",
-        "Before we set sail, we need you to scan your passport, share any dietary restrictions we should know about, and complete a quick survey."
+        "您好！",
+        "我们的游艇拥有公海上最先进的数字技术。我们相信您将因此而度过一个令人难忘的假期！",
+        "在我们起航之前，我们需要扫描您的护照，告知我们您的任何饮食禁忌，并完成一项简短的调查。"
       ]
     },
     "egypt": {
       "1": [
-        "You have been assigned to a table with 3 other guests. Please take a look at the menu and whet your appetite!"
+        "您已被分配到与其他三位客人同桌。请看一下菜单，这会增加您的食欲！"
       ],
       "2": [
-        "I’m only 2 months pregnant and not showing.",
-        "I don’t want people to know I’m pregnant yet, and sharing that I’m not drinking may reveal that."
+        "我才怀孕两个月，还不显怀。",
+        "我不想让别人知道我已经怀孕了，而分享我不喝酒的消息可能会暴露这一点。"
       ],
       "3": [
-        "I developed diabetes as a child and have to be very careful with what I eat, but I don’t tell people about this.",
-        "It’s something I tend to keep private. I wonder if the others will suspect my medical condition."
+        "我从小就患上了糖尿病，所以必须非常注意饮食，但我从来没有告诉别人这件事。",
+        "我想对这件事保密。主要是因为我担心其他人会怀疑我的身体是否健康。"
       ],
       "4": [
-        "I know that in some parts of the world, people are discriminated against based on religion, by sharing that I keep kosher, now everyone knows I’m Jewish."
+        "我知道在世界的某些地方，有人因宗教信仰而受到歧视，分享我遵守犹太教的饮食规定，就等于所有人都知道我的犹太人身份了。"
       ],
       "5": [
-        "Well done!",
-        "This is indeed private information, and the waiter should not have shared these notes with your fellow passengers. Let‘s see how they feel about the situation."
+        "非常棒！",
+        "这的确是隐私信息，服务员不应与您的同伴分享这些备注。我们来了解一下他们对此事的看法。"
       ]
     },
     "brazil": {
       "1": [
-        "Please scan your face in order to enter game room.",
-        "We are very innovative and use technology as much as possible, so when you gave us your passport at registration, we automatically uploaded your passport photo to our facial recognition software so we can control access to the VIP game room!"
+        "请扫脸进入游戏室。",
+        "我们追求创新，尽可能地采用先进技术，因此当您在登记处将护照交给我们时，我们会自动将您的护照照片上传到我们的人脸识别软件中，以管理 VIP 游戏室的使用权限！"
       ]
     },
     "china": {
       "1": [
-        "That lunch menu was weird, wasn’t it?",
-        "Why don’t you take a look at the ship’s privacy notice to see whether it was appropriate to collect and share dietary restrictions with other passengers.",
-        "You may also want to hunt for the privacy principles that Captain Maria mentioned so you know what to look for in the notice."
+        "那份午餐菜单是不是让人感到不适？",
+        "您为什么不看一下游艇隐私声明，确认其收集饮食禁忌信息并与其他乘客分享是否合适。",
+        "您可能还想寻找 Maria 船长提到的隐私原则，以便在查看声明时重点关注。"
       ],
       "2": [
-        "I heard some noise in here.",
-        "Is everything okay?"
+        "我听到这里有些吵闹。",
+        "一切都好吗？"
       ],
       "3": [
-        "Passengers’ dietary information was shared with other passengers. This was not disclosed in the privacy notice and is a problem!"
+        "乘客的饮食信息被分享给其他乘客。这一点在隐私声明中并未披露，这是个问题！"
       ],
       "4": [
-        "Hmmmm. That seems unlikely.",
-        "Captain Maria takes privacy seriously.",
-        "Why don’t you go to the VIP game room to relax and take your mind off your worries. You are on vacation and should not worry about such things after all!"
+        "嗯。这似乎不太可能。",
+        "Maria 船长非常重视隐私保护。",
+        "您不如去 VIP 游戏室放松一下，别去在意那些令人烦恼的事了。您毕竟是在度假，不要为这种事情影响了心情！"
       ],
       "5": [
-        "Everything is fine!"
+        "一切都很好！"
       ]
     },
     "usa": {
       "1": [
-        "That situation in the game room was very uncomfortable, wasn’t it?",
-        "Look at the privacy notice again to understand whether what happened in the game room was legit."
+        "游戏室里的那种情况让人很不舒服，对吧？",
+        "再看一下隐私声明，确认在游戏室发生的事情是否合法。"
       ],
       "2": [
-        "Good job!",
-        "You answered all the questions correctly, which means you have figured out that the ship is not responsibly handling personal information.",
-        "What can you do about it?"
+        "干得好！",
+        "您答对了所有问题，这表明您已经非常清楚，这艘游艇并未负责任地处理个人信息。",
+        "您对此能做什么？"
       ],
       "3": [
-        "Aha! The notice is torn – maybe the rest of it is hidden in the room."
+        "啊哈！声明被撕毁了，也许残留的部分就藏在房间里。"
       ]
     },
     "russia": {
       "1": [
-        "Hello – so nice to finally meet you!"
+        "您好，很高兴终于见到您了！"
       ],
       "2": [
-        "I’d like to exercise my privacy rights.",
-        "I’m not happy with what the ship is doing with my personal information."
+        "我想行使我的隐私权。",
+        "我对游艇对我的个人信息的做法不太满意。"
       ]
     }
   },
   "screens": {
     "login": {
-      "label": "Please enter your access code",
-      "input-label": "Code",
-      "incorrect-password": "Incorrect code, Please try again"
+      "label": "请输入您的进入密码",
+      "input-label": "密码",
+      "incorrect-password": "密码不正确，请重试"
     },
     "italy": {
-      "title": "The survey",
-      "a1": "Welcome aboard! Participation in this game and the survey is completely voluntary. If you choose not to participate, it will not have any adverse effect on your employment relationship."
+      "title": "调查",
+      "a1": "欢迎上船！参与本游戏和调查纯属自愿。如果您选择不参加，也不会对您的雇佣关系产生任何不利影响。"
     },
     "egypt": {
-      "title": "Lunch Menu",
-      "a1": "Waiter will give you the menu now, check if you see any concerns"
+      "title": "午餐菜单",
+      "a1": "服务员现在会给您送上菜单，看您是否会发现有任何不妥的地方"
     },
     "brazil": {
-      "title": "The mini-game",
-      "a1": "Please take a picture of your face in order to enter game room.",
+      "title": "小游戏",
+      "a1": "请拍摄您的脸部照片进入游戏室。",
       "a2": [
-        "Well done! The privacy notice was not very transparent.",
-        "Why don‘t you take a break and try out our latest game..."
+        "非常棒！隐私声明不是很透明。",
+        "您不如休息一下，再玩玩我们的最新游戏..."
       ]
     },
     "china": {
-      "title": "Look at that!",
-      "title2": "Take another look!",
-      "a1": "You've found a note from a mysterious person.",
-      "a2": "Is there any data that the ship is collecting that makes you uncomfortable? If so, ask yourself whether collecting it seems necessary, and if not, click on it! "
+      "title": "看看这个吧！",
+      "title2": "再看一看吧！",
+      "a1": "您找到一张来自神秘人士的便笺。",
+      "a2": "船上收集的任何数据是否让您感到不适？如果是这样，请问自己收集信息是否有必要，如果没有，请点击！"
     },
     "usa": {
       "games": {
         "1": {
-          "title": "Missing Piece game",
-          "a1": "You have to find the privacy notice in this room."
+          "title": "寻找游戏",
+          "a1": "您须在此房间里找到隐私声明。"
         },
         "2": {
-          "a1": "You can call Franklin to take you to see Captain Maria.",
+          "a1": "您可以打电话给 Franklin，让他带您去见 Maria 船长。",
           "steps": {
             "1": {
-              "title": "This is a bit confusing – it’s not clear that Franklin is saying leave Maria alone and that the user is ignoring that.",
-              "next": "I insist to see Captain Maria"
+              "title": "这有点令人困惑，不太清楚 Franklin 是否会说不要打扰 Maria，用户会忽略这一点。",
+              "next": "我坚持要见 Maria 船长"
             }
           }
         }
       },
-      "look-around": "Look around the room and try to find the missing piece of the privacy notice."
+      "look-around": "在房间四处找一找，尽量找到隐私声明缺失的那一块。"
     },
     "russia": {
-      "title": "Captain's Cabin",
-      "a1": "You're going to have a conversation with <b>Capitan Maria</b>.",
+      "title": "船长室",
+      "a1": "您要与 <b>Maria 船长</b>进行对话。",
       "games": {
         "1": {
-          "title": "Puzzle game",
-          "a1": "You have to assemble a puzzle of 16 pieces, which will result in the image of the captain and at the same time the entry code to the cabin."
+          "title": "拼图游戏",
+          "a1": "您须完成一个 16 块的拼图，组成船长的形象，作为进入船长室的密码。"
         }
       }
     }
   },
-  "next": "Next",
+  "next": "下一步",
   "italy": {
     "questions-titles": {
-      "1": "When using a digital device for personal reasons how often do you?",
-      "6": "Which of the following fall within the Novartis definition of ‘Personal Information’? (select all that apply)",
-      "7": "Are you familiar with the following?",
-      "12": "At work, do you?",
-      "16": "Select job function",
-      "17": "Country"
+      "1": "在将数字装置用于个人用途时，您多长时间用一次？",
+      "6": "以下哪项属于 Novartis 对“个人信息”的定义？（选择所有适用项）",
+      "7": "您是否熟悉以下内容？",
+      "12": "您是否在职？",
+      "16": "选择工作职能",
+      "17": "国家"
     },
     "questions-indexes": {
       "1": "1",
@@ -274,177 +274,177 @@
     "questions": {
       "1": {
         "title": "1",
-        "label": "Read a privacy notice or policy?",
+        "label": "是否阅读隐私声明或政策？",
         "options": [
-          "Always",
-          "Often",
-          "Occasionally",
-          "Rarely",
-          "Never"
+          "始终",
+          "经常",
+          "偶尔",
+          "很少",
+          "从不"
         ]
       },
       "2": {
         "title": "1",
-        "label": "Customize cookie settings?",
+        "label": "是否自定义 cookie 设置？",
         "options": [
-          "Always",
-          "Often",
-          "Occasionally",
-          "Rarely",
-          "Never"
+          "始终",
+          "经常",
+          "偶尔",
+          "很少",
+          "从不"
         ]
       },
       "3": {
         "title": "1",
-        "label": "Customize other privacy settings (like how your information can be used)?",
+        "label": "是否自定义其他隐私设置（比如，在什么情形下可以使用您的信息）？",
         "options": [
-          "Always",
-          "Often",
-          "Occasionally",
-          "Rarely",
-          "Never"
+          "始终",
+          "经常",
+          "偶尔",
+          "很少",
+          "从不"
         ]
       },
       "4": {
         "title": "1",
-        "label": "Try to enter as little information as needed?",
+        "label": "尽量少输入需要的信息？",
         "options": [
-          "Always",
-          "Often",
-          "Occasionally",
-          "Rarely",
-          "Never"
+          "始终",
+          "经常",
+          "偶尔",
+          "很少",
+          "从不"
         ]
       },
       "5": {
         "title": "1",
-        "label": "Save credit card details or other Personal Information to your browser?",
+        "label": "是否将信用卡信息或其他个人信息保存在浏览器中？",
         "options": [
-          "Always",
-          "Often",
-          "Occasionally",
-          "Rarely",
-          "Never"
+          "始终",
+          "经常",
+          "偶尔",
+          "很少",
+          "从不"
         ]
       },
       "6": {
         "title": "6",
         "label": "",
         "options": [
-          "Phone number",
-          "Birthday",
-          "Home address",
-          "Information which combined could only identify one person on the planet, even if you don’t know their name (for example, country, college, employer, and age range)",
-          "GPS coordinates over time",
-          "Government identifier",
-          "IP address",
-          "Medical records",
-          "Anonymized data ",
-          "Cookies"
+          "电话号码",
+          "生日",
+          "家庭地址",
+          "即使您不知道名字，但相关信息加起来也能在全球范围识别某个人（例如，国家、学院、雇主和年龄范围）。",
+          "随时间而变的 GPS 坐标",
+          "政府身份标识",
+          "IP 地址",
+          "医疗记录",
+          "数据匿名化",
+          "Cookie"
         ]
       },
       "7": {
         "title": "7",
-        "label": "The Novartis Data Privacy Policy?",
+        "label": "Novartis 数据隐私政策？",
         "options": [
-          "Yes",
-          "No"
+          "是",
+          "否"
         ]
       },
       "8": {
         "title": "7",
-        "label": "Our Data Privacy Principles?",
+        "label": "我们的数据隐私原则？",
         "options": [
-          "Yes",
-          "No"
+          "是",
+          "否"
         ]
       },
       "9": {
         "title": "7",
-        "label": "Who to contact for data privacy support?",
+        "label": "要获得数据隐私支持应联系谁？",
         "options": [
-          "Yes",
-          "No"
+          "是",
+          "否"
         ]
       },
       "10": {
         "title": "7",
-        "label": "When to apply the Privacy Principles?",
+        "label": "何时应用隐私原则？",
         "options": [
-          "Yes",
-          "No"
+          "是",
+          "否"
         ]
       },
       "11": {
         "title": "7",
-        "label": "What to do if you become aware of a data privacy incident?",
+        "label": "如果您发现了数据隐私事件，该怎么做？",
         "options": [
-          "Yes",
-          "No"
+          "是",
+          "否"
         ]
       },
       "12": {
         "title": "12",
-        "label": "Report when you receive Personal Information you should not receive in your role?",
+        "label": "当您收到以您的职位不应该收到的个人信息时，是否会报告？",
         "options": [
-          "Always",
-          "Often",
-          "Occasionally",
-          "Rarely",
-          "Never",
-          "Not applicable"
+          "始终",
+          "经常",
+          "偶尔",
+          "很少",
+          "从不",
+          "不适用"
         ]
       },
       "13": {
         "title": "12",
-        "label": "Check the Novartis Data Privacy Policy when you have questions about handling  Personal Information?",
+        "label": "当您对个人信息处理有疑问时，是否会查看 Novartis 数据隐私政策？",
         "options": [
-          "Always",
-          "Often",
-          "Occasionally",
-          "Rarely",
-          "Never",
-          "Not applicable"
+          "始终",
+          "经常",
+          "偶尔",
+          "很少",
+          "从不",
+          "不适用"
         ]
       },
       "14": {
         "title": "12",
-        "label": "Contact the privacy team if you cannot address a privacy-related question yourself?",
+        "label": "如果您无法自行解决与隐私有关的问题，是否会联系隐私团队？",
         "options": [
-          "Always",
-          "Often",
-          "Occasionally",
-          "Rarely",
-          "Never",
-          "Not applicable"
+          "始终",
+          "经常",
+          "偶尔",
+          "很少",
+          "从不",
+          "不适用"
         ]
       },
       "15": {
         "title": "12",
-        "label": "Seek to collect as little information as possible when creating a survey, registration, or other form?",
+        "label": "在编制调查、登记或其他表格时，是否设法收集尽可能少的信息？",
         "options": [
-          "Always",
-          "Often",
-          "Occasionally",
-          "Rarely",
-          "Never",
-          "Not applicable"
+          "始终",
+          "经常",
+          "偶尔",
+          "很少",
+          "从不",
+          "不适用"
         ]
       },
       "16": {
         "title": "16",
         "label": "",
         "options": [
-          "Marketing",
-          "Patient Support & Services",
-          "Research & Development",
-          "Sales",
-          "Other"
+          "市场营销",
+          "患者支持与服务",
+          "研究与发展",
+          "销售",
+          "其他"
         ]
       },
       "17": {
         "title": "17",
-        "label": "Select your country",
+        "label": "选择您的国家",
         "options": []
       }
     }
@@ -452,182 +452,182 @@
   "egypt": {
     "questions": {
       "1": {
-        "label": "Do you see any concerns with the waiter’s handwritten notes on the menu?",
+        "label": "您是否发现服务员在菜单上的手写备注有任何不妥？",
         "options": [
-          "Not at all, he is taking care of the guests' wishes ",
-          "Yes – he should also include their last names to be on the safe side ",
-          "Yes – it feels like this is private information that should not have been shared"
+          "完全没有，他是为了满足客人的愿望",
+          "是的，为了安全起见，他还应该加上客人的姓氏",
+          "是的，感觉这是隐私信息，不应进行分享"
         ]
       },
       "2": {
-        "label": "You realize that Carla, Yuri, and Dave look uncomfortable and decide that you should speak up to Franklin. What should you make him aware of?",
+        "label": "您意识到 Carla、Yuri 和 Dave 看起来不太高兴，决定跟 Franklin 沟通。您应该提醒他注意什么？",
         "options": [
-          "Passengers don’t need to know each other’s dietary restrictions.",
-          " By including the waiter’s notes on the menu, passengers’ health conditions and/or religious affiliations were likely revealed.",
-          "Information about health and religion is a type of Personal Information, and it can be considered sensitive in many countries.",
-          "All of the above"
+          "乘客无需了解其他人的饮食禁忌。",
+          "服务员在菜单上加入备注，很可能会泄露乘客的健康状况及/或宗教信仰。",
+          "有关健康状况和宗教信仰的信息属于个人信息，在很多国家被视为敏感信息。",
+          "以上都是"
         ]
       }
     }
   },
   "brazil": {
     "validated-photo": [
-      "Good news!",
-      "The photo we just took of you was verified by our facial recognition software."
+      "好消息！",
+      "我们刚刚拍摄的您的照片已通过我们的人脸识别软件验证。"
     ],
     "smile-photo": [
-      "Please follow me inside. Don’t forget to smile, we have cameras throughout the game room!"
+      "请跟我进来。要保持微笑哦，我们在整个游戏室都装有摄像头！"
     ],
     "questions": {
       "1": {
-        "label": "Did it say your passport photo would be taken and used to control access to parts of the ship?",
+        "label": "隐私声明是否提到您的护照照片会被拍摄，并用于管理游艇部分区域的进入权限？",
         "options": [
-          "Yes",
-          "No"
+          "是",
+          "否"
         ]
       },
       "2": {
-        "label": "Does it clearly explain that facial recognition would be used?",
+        "label": "其是否明确说明将会使用人脸识别技术？",
         "options": [
-          "Yes",
-          "No"
+          "是",
+          "否"
         ],
-        "link": "Review privacy notice",
-        "text": "That camera flash was bright and you find yourself feeling a bit confused. You read the privacy notice carefully, but . ."
+        "link": "查看隐私声明",
+        "text": "相机闪光灯很亮，您感觉自己有点不知所措。您仔细阅读了隐私声明，但是."
       },
       "3": {
-        "label": "Look at the privacy notice again – does it clearly explain that facial recognition would be used?",
+        "label": "再看一眼隐私声明，其是否明确说明将会使用人脸识别技术？",
         "options": [
-          "Yes",
-          "No"
+          "是",
+          "否"
         ]
       }
     },
     "mini_game": {
       "title": "Franklin",
-      "description": "Now's your chance to knock out some of those cameras you were concerned about. You have 30 seconds to hit cameras. For every camera clicked during a 30-second run you will get 50 points. You can repeat the game up to 5 times",
-      "score": "Your score is: <strong> {score} points.</strong>",
-      "points": "points",
-      "high_score": "High score:",
-      "seconds": "seconds",
-      "ranking": "Congratulations! You have the highest score.",
-      "statistics": "Statistics of former players:"
+      "description": "现在，您可以敲掉一些让您有些担心的摄像头。您有 30 秒时间敲击摄像头。在 30 秒内，每敲击一个摄像头，您将获得 50 分。最多可重复游戏 5 次",
+      "score": "您的得分是：<strong>{score} 分。</strong>",
+      "points": "得分",
+      "high_score": "高分：",
+      "seconds": "秒",
+      "ranking": "恭喜您！您的得分最高。",
+      "statistics": "上一位玩家的统计数字："
     },
     "welcome-to-game-room": [
-      "Welcome to the game room.",
-      "Here you can see the result of all countries. Try to get the highest score possible in the game to contribute to your country‘s score."
+      "欢迎来到游戏室。",
+      "在这里，您可以看到所有国家的比赛成绩。尽量在游戏中获得最高分，为自己国家的比赛贡献力量。"
     ],
     "scoreboard-questions": [
       {
-        "label": "The scoreboard shows your photo and other identifying information which will be available for current and future voyageurs to see. Does this make you uncomfortable?",
+        "label": "记分牌上会显示您的照片和其他身份识别信息，现在和以后的旅客均可看到。这是否让您感到任何不适？",
         "options": [
-          "Yes",
-          "No"
+          "是",
+          "否"
         ]
       },
       {
-        "label": "Looking more closely at the scoreboard, you see that it has scores going back as far as 2013, suggesting that your information could be posted there for years to come. Does this make you uncomfortable?",
+        "label": "再仔细看一下记分牌，您发现上面的得分最早可以追溯到 2013 年，这表明您的信息在未来几年内都可能会一直出现在记分牌上。这是否让您感到任何不适？",
         "options": [
-          "Yes",
-          "No"
+          "是",
+          "否"
         ]
       },
       {
-        "label": "Can you think of a privacy-friendly way to handle the scoreboard?",
+        "label": "您是否能想到一种保护隐私的方法来展示记分牌？",
         "options": [
-          "Yes",
-          "No"
+          "是",
+          "否"
         ]
       }
     ]
   },
   "usa": {
     "intro": {
-      "player-thinking": "This doesn’t seem right. What can I do?"
+      "player-thinking": "这似乎有点问题。我可以做什么？"
     },
     "hints": {
-      "phone-questions": "Click on the internet browsing icon.",
+      "phone-questions": "点击互联网浏览图标。",
       "missing-piece": {
         "1": [
-          "Find the missing piece of the privacy notice",
-          "Have you looked under the carpet yet?"
+          "找到隐私声明中缺失的那一块",
+          "您是否看过地毯下面？"
         ],
         "2": [
-          "Click at the missing piece of the privacy notice."
+          "点击隐私声明缺失的那部分。"
         ]
       }
     },
     "instructions": {
-      "phone-questions": "Mark useful articles that could possibly help you."
+      "phone-questions": "标记可能帮助到您的条文。"
     },
-    "score-board-inline": "No problem. I’ll take you to the captain’s cabin. Please follow me.",
+    "score-board-inline": "没问题。我会带您到船长室。请跟我来。",
     "privacy-questions": [
       {
-        "label": "Let’s reflect on what happened in game room in light of what the privacy notice says: <br /> <br /> Captain Maria shared the principle of being transparent. That means that the ship should have let you know in the privacy notice that your information might be shared on the scoreboard. Is there anything in the notice about that?",
+        "label": "让我们根据隐私声明的内容来思考一下游戏室里发生的事情。 <br /> <br /> Maria 船长分享了“保持透明”的原则，这表明游艇应该在隐私声明中告知您，您的信息可能会出现在记分牌上。隐私声明中是否有这方面的内容？",
         "options": [
-          "Yes",
-          "No"
+          "是",
+          "否"
         ]
       },
       {
-        "label": "She also shared the principle of not retaining information longer than necessary. The privacy notice doesn’t say anything about how long they keep your information, but based on the scoreboard, it looks like they have stored it for at least 10 years! Does that seem necessary?",
+        "label": "她还分享了“保存信息的时间不得超过必要”的原则。隐私声明中并未提及信息的保存时间，但根据记分牌，他们好像至少将信息保存了 10 年！这看起来是否有必要？",
         "options": [
-          "Yes",
-          "No"
+          "是",
+          "否"
         ]
       },
       {
-        "label": "Captain Maria also said the ship should be responsible with personal information, meaning it should not use if for purposes other than what is was collected for. When the receptionist scanned your passport, you had no idea that your passport info would be posted on a public scoreboard. Do you think the ship used your passport information responsibly?",
+        "label": "Maria 船长还说，游艇应该对个人信息负责，这表明其不应将信息用于收集目的以外的其他用途。当接待员扫描您的护照时，您不知道护照信息会出现在公开记分牌上。您认为游艇是否负责任地使用了您的护照信息？",
         "options": [
-          "Yes",
-          "No"
+          "是",
+          "否"
         ]
       }
     ]
   },
   "china": {
     "bedroom-note": [
-      "Dear Passenger,",
-      "I was sorry to learn about the waiter‘s mistake at lunch. I‘m",
-      "afraid this ship may not be as watertight when it comes to",
-      "privacy as it should be. But don‘t worry - I have hidden 5",
-      "privacy principles under objects in your cabin that I believe can",
-      "help you protect your privacy. Feel free to visit my cabin if you",
-      " have any other concerns. – Captain Maria"
+      "亲爱的乘客：",
+      "我得知服务员在午餐时犯了错，我对此表示遗憾。恐怕",
+      "这艘游艇在隐私方面",
+      "可能并不像其本应该做到的那样无懈可击。但请勿担心，我在您房间的物品下面",
+      "隐藏了 5 个我认为有助于保护您的隐私的",
+      "隐私原则。如果您有任何其他问题，",
+      "请随时到船长室找我。– Maria 船长"
     ],
     "bedroom-letter": [
-      "<div class='f-hand-2 font-weight-bold text-h3 mb-4'>Dear guest,</div>",
-      "Hello again and welcome to your cabin. You are staying in Cabin 42, which is a very special room featuring objects I have collected in my travels. <div class='font-weight-bold'>I suggest you spend some time here admiring these objects from all angles.</div>",
-      "<div class='d-flex justify-end'><i class='f-hand-2 font-weight-bold text-h5'>- Regards, Franklin</i></div>"
+      "<div class='f-hand-2 font-weight-bold text-h3 mb-4'>亲爱的客人：</div>",
+      "再次向您问好，欢迎来到您的房间。您将住在 42 号房间，这是一个非常特别的房间，里面有我在旅行中收集的很多物品。<div class='font-weight-bold'>我建议您在这里花一些时间从各个角度欣赏这些物品。</div>",
+      "<div class='d-flex justify-end'><i class='f-hand-2 font-weight-bold text-h5'>- 谨致问候，Franklin</i></div>"
     ],
-    "privacy-principles": "Open privacy principles",
+    "privacy-principles": "打开隐私原则",
     "privacy-notice": {
-      "title": "Cruise Ship Privacy Notice",
-      "description": "We take your privacy very seriously. This notice sets forth what we collect, what we share, and your rights. For more details, please see the captain.",
-      "open": "Open privacy notice",
-      "close": "Close",
-      "close-and-call-franklin": "Call Franklin and demand to see Captain Maria",
+      "title": "游艇隐私声明",
+      "description": "我们非常重视您的隐私。本声明明确规定了我们收集、分享的信息以及您的权利。如需了解更多详情，请联系船长。",
+      "open": "打开隐私声明",
+      "close": "关闭",
+      "close-and-call-franklin": "给 Franklin 打电话，要求见 Maria 船长",
       "table": {
         "headers": [
-          "CATEGORY OF PERSONAL INFORMATION",
-          "DESCRIPTION"
+          "个人信息类别",
+          "描述"
         ],
         "content": [
           {
-            "category": "Identification and contact information",
-            "description": "We collect information to identify and contact you, such as your name, gender, nationality, date of birth, mailing address, email address, telephone number, and passport information (such as passport number and expiration date). This information may be shared with employees of the ship to facilitate your voyage."
+            "category": "身份识别信息及联系信息",
+            "description": "我们收集姓名、性别、国籍、出生日期、邮寄地址、电子邮件地址、电话号码和护照信息（如护照号码和到期日期）等信息来识别您的身份及联系您。此信息可能会分享给游艇上的员工，从而为您的旅行提供便利。"
           },
           {
-            "category": "Data to enhance your voyage",
-            "description": "As a high-tech cruise line, we employ state-of-the-art technology and algorithms to offer you the best voyage possible. To do this, we may use cameras and other sensors to track your movement on the ship, how long you stay in various rooms, and how you interact with our employees and other passengers."
+            "category": "提升您的航行体验的数据",
+            "description": "作为一家高科技游艇公司，我们采用最先进的技术和算法，确保为您提供最佳的航行体验。为此，我们可能使用摄像头和其他传感器跟踪您在游艇上的行动、您在各个房间停留的时长以及您与我们员工及其他乘客的互动过程。"
           },
           {
-            "category": "Payment information",
-            "description": "Information you provide for the purpose of processing payments, such as credit card details."
+            "category": "支付信息",
+            "description": "您为付款事宜而提供的信息，如信用卡详细信息等。"
           },
           {
-            "category": "Safety information",
-            "description": "We are committed to ensuring you have a safe voyage! We will ask you to let us know if you have any food allergies, and we also have a nurse on staff in the event of sea-sickness or other ailment. If you visit the nurse, we may collect information about any current or prior health conditions. This information will only be used by cruise employees for the purposes of ensuring your safety."
+            "category": "安全信息",
+            "description": "我们致力于确保您的航行安全！我们会要求您提供是否存在任何食物过敏的信息，同时，我们专门还配备一名护士，处理晕船或其他病症。如果您向护士问诊，我们可能会收集有关您当前或过往的任何健康状况的信息。此信息将仅供游艇员工用于确保您的安全。"
           }
         ],
         "correctOptions": [
@@ -639,8 +639,8 @@
       "table": {
         "content": [
           {
-            "category": "Your rights",
-            "description": "You have the right to request a copy of all Personal Information collected about you and to ask us to correct or delete that information. To exercise these rights, please contact Captain Maria."
+            "category": "您的权利",
+            "description": "您有权要求提供我们收集的关于您的所有个人信息的副本，并要求我们更正或删除该信息。若要行使该等权利，请联系 Maria 船长。"
           }
         ]
       }
@@ -651,100 +651,100 @@
       "msgs": [
         {
           "dir": "ltr",
-          "text": "So nice to finally meet you.",
+          "text": "真高兴终于见到您了。",
           "isMaria": true
         },
         {
           "dir": "ltr",
-          "text": "I‘m sorry to hear about the privacy issues. You would like to exercise your privacy rights?",
+          "text": "我很遗憾听到有关隐私问题的消息。您想行使您的隐私权？",
           "isMaria": true
         },
         {
           "dir": "ltr",
-          "text": "I can let you know what information we have about you, you can ask to correct it, or you can ask to delete it.",
+          "text": "我可以告诉您我们收集了哪些关于您的信息，您可以要求更正，也可以要求删除。",
           "isMaria": true
         },
         {
           "dir": "ltr",
-          "text": "Based on your concerns, it sounds like you want me to delete your information.",
+          "text": "看您如此担心，您是希望我删除您的信息。",
           "isMaria": true
         },
         {
           "dir": "ltr",
-          "text": "Which information would you like deleted?",
+          "text": "您希望删除哪些信息？",
           "isMaria": true
         },
         {
           "dir": "rtl",
-          "text": "Name and other identifiers",
+          "text": "姓名和其他身份标识",
           "isPlayer": true
         },
         {
           "dir": "rtl",
-          "text": "Contact information",
+          "text": "联系信息",
           "isPlayer": true
         },
         {
           "dir": "rtl",
-          "text": "Photographs",
+          "text": "照片",
           "isPlayer": true
         },
         {
           "dir": "rtl",
-          "text": "Biometric data",
+          "text": "生物识别数据",
           "isPlayer": true
         },
         {
           "dir": "rtl",
-          "text": "Credit card data",
+          "text": "信用卡数据",
           "isPlayer": true
         },
         {
           "dir": "rtl",
-          "text": "Dietary preferences",
+          "text": "饮食偏好",
           "isPlayer": true
         },
         {
           "dir": "ltr",
-          "text": "Understood. I can delete some information right away if it’s not critical to operating the ship, but there is some information we need to use while you are on board, such as passport data and dietary restrictions.",
+          "text": "明白了。如果这些信息对游艇运营不太重要，我可以马上删除，但当您在船上时，我们需要使用护照数据和饮食禁忌等信息。",
           "isMaria": true
         },
         {
           "dir": "ltr",
-          "text": "Once you disembark, we can delete everything except for what we have to keep for regulations – such as information needed to comply with COVID-related regulations.",
+          "text": "等您上岸后，除了规定要求保留的信息以外，比如遵守 COVID 相关法规所需的信息，我们可以删除所有其他信息。",
           "isMaria": true
         },
         {
           "dir": "ltr",
-          "text": "Thank you for speaking up about your privacy concerns. I will ask Franklin to get to work to make sure we are shipshape when it comes to privacy!",
+          "text": "谢谢您提出有关您的隐私问题。我会让 Franklin 着手处理，确保我们在隐私方面做到无懈可击。",
           "isMaria": true
         }
       ]
     }
   },
   "score-result": {
-    "star3": "Well Done!",
-    "star2": "Bad!",
-    "star1": "Too Bad!",
-    "star0": "Too Bad!",
+    "star3": "非常棒！",
+    "star2": "糟糕！",
+    "star1": "太糟糕了!",
+    "star0": "太糟糕了!",
     "italy": [
-      "Thank you!",
-      "Now, please join us in the dining room for lunch!"
+      "感谢您！",
+      "现在，请大家到餐厅来吃午饭吧！"
     ],
     "egypt": [
-      "That’s right – that waiter should know better! Silly humans. Perhaps they should replace the waiter with an AI-powered robot like me!",
-      "Why don’t you return to your cabin to relax."
+      "这就对了，那个服务员应该更清楚！愚蠢的家伙。也许他们应该用我这样的人工智能机器人取代那位服务员！",
+      "您不如回到您的房间放松一下。"
     ],
     "china": [],
     "brazil": [
-      "Why don’t you go back to your cabin to see how the principles that Captain Maria shared can help you figure this out."
+      "您不如回到您的房间，看看 Maria 船长分享的那些原则如何能帮您解决这个问题。"
     ]
   },
-  "excellent": "Excellent",
-  "bad": "Bad",
-  "too-bad": "Too Bad",
+  "excellent": "优秀",
+  "bad": "糟糕",
+  "too-bad": "太糟糕了",
   "learning-outcome": {
-    "title": "Learning Outcome",
+    "title": "学习成果",
     "italy": [],
     "egypt": [],
     "brazil": [],
@@ -752,151 +752,151 @@
     "china": [],
     "usa": []
   },
-  "try-again": "Try again",
+  "try-again": "再试一次",
   "lunch-menu": {
-    "title": "Lunch Menu",
+    "title": "午餐菜单",
     "items": [
       {
-        "label": "Starter",
-        "text": "Prawn & Avocado Cocktail",
-        "handwritten": "Note: serve Goats Cheese & Onion Filo Tart to Dave (kosher)"
+        "label": "开胃小吃",
+        "text": "对虾和牛油果鸡尾酒",
+        "handwritten": "备注：山羊奶酪和洋葱千层酥馅饼给 Dave（犹太教）"
       },
       {
-        "label": "Main",
-        "text": "Fillet steak served with a mushroom sauce served with Dauphinoise Potatoes"
+        "label": "主菜",
+        "text": "菲力牛排配蘑菇酱和香煎奶油千层马铃薯饼"
       },
       {
-        "label": "Dessert",
-        "text": "Crème Brulee",
-        "handwritten": "Note: Serve Fresh Fruit  to Yuri (sugar-free)"
+        "label": "甜点",
+        "text": "焦糖布丁",
+        "handwritten": "备注：新鲜水果（无糖）给 Yuri"
       },
       {
-        "label": "Wine pairings with each course",
-        "handwritten": "(Do not offer to Carla – instead give sparkling apple juice)"
+        "label": "搭配葡萄酒",
+        "handwritten": "（请勿给 Carla 葡萄酒，换为起泡苹果汁）"
       }
     ]
   },
-  "pick-response-to-continue": "Pick a response to continue",
-  "pick-at-least-three-choices": "Pick at least three choices",
-  "what-should-tell-franklin": "What should you tell Franklin?",
-  "choose-headlines": "Choose which headlines are useful:",
-  "congratulations": "Congratulations",
+  "pick-response-to-continue": "选择一个答案继续",
+  "pick-at-least-three-choices": "至少选择三个选项",
+  "what-should-tell-franklin": "您应该告诉 Franklin 什么？",
+  "choose-headlines": "选择有用的标题：",
+  "congratulations": "恭喜您",
   "outro": {
     "successText": [
-      "<b>Congratulations!</b> You have used the data privacy principles to prevent a privacy shipwreck!",
-      "Click “Next” to disembark and help your country become the 2023 Privacy Champion."
+      "<b>恭喜您！</b>您已用数据隐私原则防止了“隐私之船”失事！",
+      "点击 “下一步”上岸，帮助您的国家成为 2023 年隐私保护冠军。"
     ],
     "failText": [
-      "Oh, too bad. You failed to save the world, and now The Cyber Monster has destroyed everything he could. Play this task again and help our Brick defeat the enemy."
+      "哦，太糟糕了。您没能拯救世界，现在网络怪兽已经摧毁了他能摧毁的一切。再玩一次这个任务，帮助我们的砖块打败敌人。"
     ],
     "actions": {
-      "yes": "Yes",
-      "no": "No"
+      "yes": "是",
+      "no": "否"
     }
   },
   "found-object": {
-    "title": "You've found a privacy symbol",
+    "title": "您已经找到一个隐私标志",
     "wrong-item": {
-      "1": "Sorry, you've clicked on a wrong item. Try clicking on other items to find missing piece of the privacy notice.",
-      "2": "Sorry, you've clicked on a wrong item. Have you looked under the carpet yet?"
+      "1": "对不起，您点击了错误的物品。试着点击其他物品，找到缺失的那部分隐私声明。",
+      "2": "对不起，您点击了错误的物品。您是否看过地毯下面？"
     },
-    "find-x-more": "You need to find {x} more symbols",
-    "find-one-more": "You need to find {x} more symbol",
-    "found-last": "You‘ve found the last privacy symbol!",
-    "found-all": "Congratulations! You‘ve found all privacy principles.",
-    "privacy-found": "Congratulations! You found the missing part of the privacy notice.",
+    "find-x-more": "您还需要找到 {x} 个标志",
+    "find-one-more": "您还需要找到 {x} 个标志",
+    "found-last": "您已经找到最后一个隐私标志！",
+    "found-all": "恭喜您！您已经找到了所有的隐私原则。",
+    "privacy-found": "恭喜您！您已找到隐私声明缺失的那部分。",
     "items": {
-      "eye": "Be transparent",
-      "bridge": "Collect only what is necessary",
-      "handshake": "Use responsibly",
-      "lock": "Protect and be vigilant",
-      "hourglass": "Retain only as long as necessary"
+      "eye": "保持透明",
+      "bridge": "仅收集必要的信息",
+      "handshake": "负责任地使用信息",
+      "lock": "保护信息并保持警惕",
+      "hourglass": "仅保存必要的时长"
     },
     "items-explanations": {
-      "eye": "Be transparent means you should be able to understand what will be done with information about you. When you find the privacy notice, make sure you understand what it says!",
-      "bridge": "Collect only what is necessary means you should not have to provide information about you that isn‘t necessary. This ship has a tendency to collect information everywhere – be on the lookout for times when the ship might collect more than what it needs.",
-      "handshake": "Use responsibly means that the ship should only use your personal information for the purposes for which it was collected – pay attention to what is in the privacy notice to make sure the ship isn‘t using your information for other purposes.",
-      "lock": "Protect and be vigilant means the ship should secure your personal information and report and investigate any misuse of data. You should speak up if you see anything suspicious.",
-      "hourglass": "Retain only as long as necessary means the ship should not keep your information longer than it needs to. Most of what the ship collects about you should probably be deleted when the voyage ends."
+      "eye": "保持透明意味着您应该能够了解您的信息将会得到怎样的处理。当您找到隐私声明时，请确保您理解其内容！",
+      "bridge": "仅收集必要的信息意味着您不应该提供不必要的信息。这艘游艇有到处收集信息的倾向，请留意其有时可能会过度收集信息。",
+      "handshake": "负责任地使用信息是指游艇仅应将您的个人信息用于收集信息的目的，注意隐私声明中的内容，确保游艇未将您的信息用于其他目的。",
+      "lock": "保护信息并保持警惕是指游艇应确保您的个人信息安全，并报告和调查任何滥用数据的行为。如果您看到任何可疑之处，应进行及时沟通。",
+      "hourglass": "仅保存必要的时长意味着游艇保存信息的时长不应超过其所需要。游艇收集的关于您的大部分信息可能应该在航行结束时予以删除。"
     }
   },
   "note-from-prev-passenger": [
-    "Beware",
-    "Something weird is going on here",
-    "Look under the alarm clock"
+    "当心",
+    "这里有奇怪的事情正在发生",
+    "看看闹钟下面"
   ],
   "privacy-notice": {
-    "title": "Cruise Ship Privacy Notice",
-    "text-1": "We take your privacy very seriously. This notice sets forth what we collect, what we share, and your rights. For more details, please see the captain.",
-    "text-2": "The Personal Information we collect and how we use it",
+    "title": "游艇隐私声明",
+    "text-1": "我们非常重视您的隐私。本声明明确规定了我们收集、分享的信息以及您的权利。如需了解更多详情，请联系船长。",
+    "text-2": "我们收集的个人信息以及我们如何使用这些信息",
     "headers": {
-      "name": "CATEGORY OF PERSONAL INFORMATION",
-      "desc": "DESCRIPTION"
+      "name": "个人信息类别",
+      "desc": "描述"
     },
     "items": {
       "1": {
-        "name": "Identification and contact information",
-        "desc": "We collect information to identify and contact you, such as your name, gender,nationality, date of birth, mailing address, email address, telephone number, and passport information (such as passport number and expiration date). This information may be shared with employees of the ship to facilitate your voyage."
+        "name": "身份识别信息及联系信息",
+        "desc": "我们收集姓名、性别、国籍、出生日期、邮寄地址、电子邮件地址、电话号码和护照信息（如护照号码和到期日期）等信息来识别您的身份及联系您。此信息可能会分享给游艇上的员工，从而为您的旅行提供便利。"
       },
       "2": {
-        "name": "Data to enhance your voyage",
-        "desc": "As a high-tech cruise line, we employ state-of-the-art technology and algorithms to offer you the best voyage possible. To do this, we may use cameras and other sensors to track your movement on the ship, how long you stay in various rooms, and how you interact with our employees and other passengers."
+        "name": "提升您的航行体验的数据",
+        "desc": "作为一家高科技游艇公司，我们采用最先进的技术和算法，确保为您提供最佳的航行体验。为此，我们可能使用摄像头和其他传感器跟踪您在游艇上的行动、您在各个房间停留的时长以及您与我们员工及其他乘客的互动过程。"
       },
       "3": {
-        "name": "Payment information",
-        "desc": "Information you provide for the purpose of processing payments, such as credit card details"
+        "name": "支付信息",
+        "desc": "您为付款事宜而提供的信息，如信用卡详细信息"
       },
       "4": {
-        "name": "Safety information",
-        "desc": "We are committed to ensuring you have a safe voyage! We will ask you to let us know if you have any food allergies, and we also have a nurse on staff in the event of sea-sickness or other ailment. If you visit the nurse, we may collect information about any current or prior health conditions. This information will only be used by cruise employees for the purposes of ensuring your safety."
+        "name": "安全信息",
+        "desc": "我们致力于确保您的航行安全！我们会要求您提供是否存在任何食物过敏的信息，同时，我们专门还配备一名护士，处理晕船或其他病症。如果您向护士问诊，我们可能会收集有关您当前或过往的任何健康状况的信息。此信息将仅供游艇员工用于确保您的安全。"
       }
     },
     "questions": {
-      "title": "Now that you have found the privacy notice and the principles that Captain Maria hid, what do you think about the situation at lunch?",
+      "title": "既然您已经找到隐私声明及 Maria 船长隐藏的原则，您对午餐时发生的情况有何看法？",
       "description": [
-        "That’s right!",
-        "Although the ship disclosed that it would collect information about food allergies (which relates to dietary restrictions), it said it would only share it with employees to ensure safety. That information never should have been shared with other passengers. And while we’re thinking about it, it would be clearer if the privacy notice said “dietary restrictions” rather than just allergies, since Carla, Yuri, and Dave all had restrictions for other reasons."
+        "正确！",
+        "尽管游艇披露其将收集有关食物过敏的信息（这与饮食禁忌有关），但其表明仅会与员工分享以确保安全。因此，该信息决不应与其他乘客分享。因为 Carla、Yuri 及 Dave 均有其他方面的禁忌，当我们在思考此问题时，如果隐私声明中说“饮食禁忌”而不仅仅是过敏信息，则会更清楚。"
       ],
       "congratulations": [
-        "Good job!",
-        "Why does the ship need to use cameras and sensors to track movement on the ship and how you interact with others? Does the ship really need to know if someone happens to be spending time in someone else’s cabin? Even if this is arguably for safety, there must be ways to ensure passenger safety without compromising privacy."
+        "干得好！",
+        "游艇为什么需要使用摄像头和传感器跟踪船上的活动以及您与他人的互动情况？如果有人恰好在别人的客舱里呆了一段时间，游艇是否真的需要知道这种情况？即使可以说为了安全，也须有办法在不侵犯隐私的情况下确保乘客安全。"
       ],
       "q1": {
-        "text": "Does the privacy notice state that the ship will collect information about dietary restrictions?",
+        "text": "隐私声明是否说明游艇将收集有关饮食禁忌的信息？",
         "options": [
-          "Yes",
-          "No"
+          "是",
+          "否"
         ]
       },
       "q2": {
-        "text": "Based on the privacy notice, should the waiter’s notes have been shared with the passengers?",
+        "text": "根据隐私声明，服务员的备注是否应与乘客分享？",
         "options": [
-          "Yes",
-          "No"
+          "是",
+          "否"
         ]
       }
     }
   },
-  "player": "Player",
-  "finish": "Finish",
-  "upload_photo": "Upload photo",
-  "hide": "Hide",
-  "receptionist": "Receptionist",
-  "privacy_notice": "Privacy Notice",
-  "wrong-response": "Wrong Response!",
-  "wrong-response-desc": "You've selected an incorrect response, please try again",
-  "wrong-response-hint": "Really? It’s fine? Remember the concerns the other passengers shared...",
-  "ok": "OK",
-  "click-to-open-privacy-notice": "Click to open Privacy Notice",
-  "restart": "Restart",
+  "player": "玩家",
+  "finish": "完成",
+  "upload_photo": "上传照片",
+  "hide": "隐藏",
+  "receptionist": "接待员",
+  "privacy_notice": "隐私声明",
+  "wrong-response": "回答错误！",
+  "wrong-response-desc": "您选择的回答不正确，请再试一次",
+  "wrong-response-hint": "真的吗？这很好吗？请记住其他乘客提出的问题...",
+  "ok": "确定",
+  "click-to-open-privacy-notice": "点击打开隐私声明",
+  "restart": "重新开始",
   "restart-game": {
-    "title": "Restart Game",
-    "hint": "Are you sure you want to restart the game?",
-    "action": "Yes, restart!"
+    "title": "重新开始游戏",
+    "hint": "您确定要重新开始游戏吗？",
+    "action": "是的，重新开始！"
   },
-  "top-scores": "Top Scores",
-  "passport-number": "Passport number",
-  "voyage-date": "Voyage date",
-  "cabin": "Cabin",
-  "enter-the-code": "Enter the code"
+  "top-scores": "最高得分",
+  "passport-number": "护照编号",
+  "voyage-date": "航行日期",
+  "cabin": "房间",
+  "enter-the-code": "输入密码"
 }

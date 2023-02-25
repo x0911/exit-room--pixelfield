@@ -1,267 +1,266 @@
 ﻿{
   "franklin": "Franklin",
-  "carla-thought": "Carla’s thinking",
-  "yuri-thought": "Yuri’s thinking",
-  "dave-thought": "Dave’s thinking",
-  "player-is-thinking": "Player is thinking",
-  "confirm": "Confirm",
-  "call-franklin": "Call Franklin",
-  "submit": "Submit",
-  "accept": "Accept",
-  "previous": "Previous",
-  "back_to_menu": "Back to menu",
-  "score": "Score",
-  "phone": "Phone",
-  "country": "Country",
-  "countries_scores": "The 5 countries with the highest scores",
-  "lets-go": "Let's go",
+  "carla-thought": "Carlas Denken",
+  "yuri-thought": "Yuris Denken",
+  "dave-thought": "Daves Denken",
+  "player-is-thinking": "Des Spielers Denken",
+  "confirm": "Bestätigen Sie",
+  "call-franklin": "Franklin anrufen",
+  "submit": "Einreichen",
+  "accept": "Akzeptieren",
+  "previous": "Vorherige",
+  "back_to_menu": "Zurück zum Menü",
+  "score": "Punktzahl",
+  "phone": "Telefon",
+  "country": "Land",
+  "countries_scores": "Die 5 Länder mit den höchsten Punktzahlen",
+  "lets-go": "Los geht's",
   "cookies": {
-    "title": "Privacy & Cookie Notice",
-    "text": [
+    "title": "Datenschutz und Cookie-Hinweis",
+    "text": [{
+      "title": "Zweck",
+      "description": "Diese Website enthält ein Escape-Room-Spiel mit einer Umfrage und einem Länderwettbewerb zum Thema Datenschutz. Er wurde von Ihrem Arbeitgeber erstellt, um das Bewusstsein und das Wissen in Bezug auf den Datenschutz zu erhöhen und das Datenschutzprogramm zu verbessern und das Bewusstsein in Ihrem Unternehmen zu erhöhen."
+    },
       {
-        "title": "Purpose",
-        "description": "This website contains an escape-room game with a survey and country competition related to privacy. It has been created by your employer to raise awareness and knowledge related to privacy and improve the privacy program and increase awareness within your company."
+        "title": "Auf freiwilliger Basis",
+        "description": "Bitte beachten Sie, dass die Teilnahme an diesem Spiel auf freiwilliger Basis erfolgt. Es besteht keine Verpflichtung zur Teilnahme. Die Nichtteilnahme hat keine nachteiligen Auswirkungen auf Ihr Arbeitsverhältnis."
       },
       {
-        "title": "Voluntary basis",
-        "description": "Please note that participation in this game is on a voluntary basis. There is no obligation to participate. Non-participation will not have any adverse effects on your employment relationship."
-      },
-      {
-        "title": "Anonymized data",
-        "description": "Within the game only anonymized data is processed. Your employer cannot make any reference to or identification of specific employees. For the purpose of being able to provide you news on the results of the country-competition or react to your provided feedback on our game, you can voluntarily provide your work-email-address at the end of the game. In this case an identification would be possible. Please note that, in cases of small teams or country operations, your employer may be able to identify you if less than five people have the same division or organizational unit, job function, and work country. Your employer will process the data consistent with its privacy policy and associate notice, including not intentionally identifying you and taking reasonable measures, as appropriate, to prevent identification."
+        "title": "Anonymisierte Daten",
+        "description": "Innerhalb des Spiels werden nur anonymisierte Daten verarbeitet. Ihr Arbeitgeber darf keine Hinweise auf bestimmte Mitarbeiter geben oder diese identifizieren. Damit wir Sie über die Ergebnisse des Länderwettbewerbs informieren oder auf Ihr Feedback zu unserem Spiel reagieren können, können Sie am Ende des Spiels freiwillig Ihre Arbeits-E-Mail-Adresse angeben. In diesem Fall wäre eine Identifizierung möglich. Bitte beachten Sie, dass Ihr Arbeitgeber im Falle kleiner Teams oder Ländergesellschaften Sie möglicherweise identifizieren kann, wenn weniger als fünf Personen dieselbe Abteilung oder Organisationseinheit, Jobfunktion und Arbeitsland haben. Ihr Arbeitgeber wird die Daten im Einklang mit seinen Datenschutzrichtlinien und dem dazugehörigen Hinweis verarbeiten. Dazu gehört, dass er Sie nicht absichtlich identifiziert und gegebenenfalls angemessene Maßnahmen ergreift, um eine Identifizierung zu verhindern."
       },
       {
         "title": "Cookies",
-        "description": "This website only processes strictly necessary cookies. These cookies are necessary for the website to function and cannot be switched off in our systems. They are usually only set in response to actions made by you which amount to a request for services, such as setting your privacy preferences, logging in or filling in forms. You can set your browser to block or alert you about these cookies, but some parts of the site will not then work. These cookies do not store any personally identifiable information."
+        "description": "Diese Website verarbeitet nur unbedingt notwendige Cookies. Diese Cookies sind für das Funktionieren der Website erforderlich und können in unseren Systemen nicht ausgeschaltet werden. Sie werden in der Regel nur als Reaktion auf Ihre Handlungen gesetzt, die einer Anfrage nach Dienstleistungen gleichkommen, wie z.B. die Einstellung Ihrer Datenschutzeinstellungen, das Einloggen oder das Ausfüllen von Formularen. Sie können Ihren Browser so einstellen, dass er diese Cookies blockiert oder Sie darauf hinweist, aber einige Teile der Website funktionieren dann nicht. Diese Cookies speichern keine persönlich identifizierbaren Informationen."
       },
       {
-        "title": "Legal basis and contact",
-        "description": "In case your personal data is processed, the legal basis for the data processing would be the necessity for the purposes of legitimate interests. For more detailed information with regards data processing in your working environment and your data privacy rights (e.g., right to object) please find the local privacy notices for employees or contact your local data privacy team."
+        "title": "Rechtsgrundlage und Kontakt",
+        "description": "Falls Ihre personenbezogenen Daten verarbeitet werden, ist die Rechtsgrundlage für die Datenverarbeitung die Notwendigkeit für die Zwecke der berechtigten Interessen. Ausführlichere Informationen zur Datenverarbeitung in Ihrem Arbeitsumfeld und zu Ihren Datenschutzrechten (z.B. Widerspruchsrecht) finden Sie in den lokalen Datenschutzhinweisen für Mitarbeiter oder bei Ihrem lokalen Datenschutzteam."
       }
     ]
   },
   "task-name": {
-    "1": "Reception",
-    "2": "Dining Room",
-    "3": "Your Cabin",
-    "4": "Game Room",
-    "5": "Your Cabin",
-    "6": "Captain's Bridge"
+    "1": "Rezeption",
+    "2": "Speisesaal",
+    "3": "Ihre Kabine",
+    "4": "Spielsaal",
+    "5": "Ihre Kabine",
+    "6": "Kapitänsbrücke"
   },
   "fullscreen-hint": {
-    "title": "Fullscreen",
-    "text": "It's recommended to play the game in fullscreen mode, Would you like to try it now?"
+    "title": "Vollbildschirm",
+    "text": "Es wird empfohlen, das Spiel im Vollbildmodus zu spielen. Möchten Sie es jetzt ausprobieren?"
   },
-  "enable": "Enable",
-  "validate": "Validate",
-  "cancel": "Cancel",
-  "hint-title": "Hint",
-  "take_a_photo": "Take a photo",
-  "continue": "Continue",
+  "enable": "Aktivieren",
+  "validate": "Validieren",
+  "cancel": "Abbrechen",
+  "hint-title": "Hinweis",
+  "take_a_photo": "Ein Foto machen",
+  "continue": "Weiter",
   "name": "Name",
-  "address": "Address",
-  "cabin_number": "Cabin number",
-  "age": "Age",
-  "nationality": "Nationality",
-  "and": "and",
+  "address": "Adresse",
+  "cabin_number": "Kabinennummer",
+  "age": "Alter",
+  "nationality": "Nationalität",
+  "and": "und",
   "hints": {
     "splash": [
-      "Select your language to proceed"
+      "Wählen Sie Ihre Sprache, um fortzufahren"
     ],
     "map": [
-      "Active room will have a glowing circle above its name"
+      "Der aktive Raum hat einen leuchtenden Kreis über seinem Namen"
     ],
     "italy": [
-      "Complete the survey"
+      "Füllen Sie die Umfrage aus"
     ],
     "egypt": [
-      "Waiter will give you a menu, check if you see any concerns.",
-      "After checking, you can safely click on next to proceed to next steps"
+      "Der Kellner wird Ihnen eine Speisekarte geben, überprüfen Sie, ob Sie irgendwelche Bedenken haben.",
+      "Nach der Überprüfung können Sie sicher auf Weiter klicken, um mit den nächsten Schritten fortzufahren"
     ],
     "brazil": [],
     "china": [
-      "Read the note, then search the room to find the 5 privacy principles and their explanations.",
-      "After you have found them all, you will unlock the privacy notice."
+      "Lesen Sie die Notiz und suchen Sie dann im Raum nach den 5 Datenschutzprinzipien und ihren Erklärungen.",
+      "Wenn Sie alle gefunden haben, wird der Datenschutzhinweis freigeschaltet."
     ],
     "usa": [],
     "russia": []
   },
-  "start_game": "Meet Franklin",
-  "skip": "Skip",
-  "wall": "Room Selector",
+  "start_game": "Treffen Sie Franklin",
+  "skip": "Überspringen",
+  "wall": "Raumwähler",
   "map-email": {
     "text": [
-      "This is your room selector. Rooms order is mandatory. Active room has a glowing circle above its name."
+      "Dies ist Ihr Raumwähler. Die Raumbestellung ist obligatorisch. Der aktive Raum hat einen leuchtenden Kreis über seinem Namen."
     ]
   },
   "wall-steps": [
-    "Ship Map",
-    "Here is a map of the cruise ship. Click Start and then click the room marked by the glowing circle."
+    "Schiffskarte",
+    "Hier finden Sie eine Karte des Kreuzfahrtschiffes. Klicken Sie auf Start und dann auf den mit dem leuchtenden Kreis markierten Raum."
   ],
   "start": "Start",
   "orientation-hint": {
-    "title": "Landscape is required",
-    "text": "Playing the game in portrait mode is not possible, please rotate your device to landscape mode."
+    "title": "Querformat ist erforderlich",
+    "text": "Das Spiel kann nicht im Hochformat gespielt werden. Bitte drehen Sie Ihr Gerät in das Querformat."
   },
-  "map": "Map",
+  "map": "Karte",
   "back-to-map": {
-    "text": "Do you want to back to room selector?"
+    "text": "Möchten Sie zurück zur Raumauswahl?"
   },
   "speeches": {
     "splash": {
       "1": [
-        "Welcome aboard!",
-        "I am Franklin, an AI-powered robot and your concierge on this voyage."
+        "Willkommen an Bord!",
+        "Ich bin Franklin, ein KI-gesteuerter Roboter und Ihr Concierge auf dieser Reise."
       ],
       "2": [
-        "Please follow me aboard so I can show you around the ship."
+        "Bitte folgen Sie mir an Bord, damit ich Ihnen das Schiff zeigen kann."
       ]
     },
     "italy": {
       "1": [
-        "Greetings!",
-        "Our ship features the most cutting-edge, digital technology available on the high seas. We trust this will make for a memorable vacation!",
-        "Before we set sail, we need you to scan your passport, share any dietary restrictions we should know about, and complete a quick survey."
+        "Grüße!",
+        "Unser Schiff verfügt über die modernste digitale Technologie, die auf hoher See verfügbar ist. Wir hoffen, dass dies ein unvergesslicher Urlaub wird!",
+        "Bevor wir in See stechen, müssen Sie Ihren Reisepass einscannen, uns mitteilen, welche diätetischen Einschränkungen wir kennen sollten, und eine kurze Umfrage ausfüllen."
       ]
     },
     "egypt": {
       "1": [
-        "You have been assigned to a table with 3 other guests. Please take a look at the menu and whet your appetite!"
+        "Sie haben einen Tisch mit 3 anderen Gästen zugewiesen bekommen. Werfen Sie einen Blick auf die Speisekarte und machen Sie sich Appetit!"
       ],
       "2": [
-        "I’m only 2 months pregnant and not showing.",
-        "I don’t want people to know I’m pregnant yet, and sharing that I’m not drinking may reveal that."
+        "Ich bin erst im 2. Monat schwanger und es ist noch nichts zu sehen.",
+        "Ich möchte nicht, dass die Leute wissen, dass ich schwanger bin, und die Tatsache, dass ich nicht trinke, könnte das verraten."
       ],
       "3": [
-        "I developed diabetes as a child and have to be very careful with what I eat, but I don’t tell people about this.",
-        "It’s something I tend to keep private. I wonder if the others will suspect my medical condition."
+        "Ich bin als Kind an Diabetes erkrankt und muss sehr vorsichtig sein, was ich esse, aber ich erzähle den Leuten nichts davon.",
+        "Das ist etwas, das ich lieber für mich behalte. Ich frage mich, ob die anderen meinen medizinischen Zustand vermuten werden."
       ],
       "4": [
-        "I know that in some parts of the world, people are discriminated against based on religion, by sharing that I keep kosher, now everyone knows I’m Jewish."
+        "Ich weiß, dass in einigen Teilen der Welt Menschen aufgrund ihrer Religion diskriminiert werden. Wenn ich erzähle, dass ich koscher lebe, weiß jeder, dass ich Jude bin."
       ],
       "5": [
-        "Well done!",
-        "This is indeed private information, and the waiter should not have shared these notes with your fellow passengers. Let‘s see how they feel about the situation."
+        "Gut gemacht!",
+        "Dies sind in der Tat private Informationen, und der Kellner hätte diese Notizen nicht an Ihre Mitreisenden weitergeben dürfen. Mal sehen, wie sie über die Situation denken."
       ]
     },
     "brazil": {
       "1": [
-        "Please scan your face in order to enter game room.",
-        "We are very innovative and use technology as much as possible, so when you gave us your passport at registration, we automatically uploaded your passport photo to our facial recognition software so we can control access to the VIP game room!"
+        "Bitte scannen Sie Ihr Gesicht, um den Spielsaal zu betreten.",
+        "Wir sind sehr innovativ und nutzen die Technologie so weit wie möglich. Als Sie uns bei der Registrierung Ihren Pass gegeben haben, haben wir Ihr Passfoto automatisch in unsere Gesichtserkennungssoftware hochgeladen, damit wir den Zugang zum VIP-Spielraum kontrollieren können!"
       ]
     },
     "china": {
       "1": [
-        "That lunch menu was weird, wasn’t it?",
-        "Why don’t you take a look at the ship’s privacy notice to see whether it was appropriate to collect and share dietary restrictions with other passengers.",
-        "You may also want to hunt for the privacy principles that Captain Maria mentioned so you know what to look for in the notice."
+        "Das Mittagsmenü war seltsam, nicht wahr?",
+        "Warum werfen Sie nicht einen Blick in die Datenschutzbestimmungen des Schiffes, um herauszufinden, ob es angemessen war, diätetische Einschränkungen zu sammeln und mit anderen Passagieren zu teilen.",
+        "Vielleicht möchten Sie auch nach den von Kapitän Maria erwähnten Datenschutzgrundsätzen suchen, damit Sie wissen, worauf Sie in der Mitteilung achten müssen."
       ],
       "2": [
-        "I heard some noise in here.",
-        "Is everything okay?"
+        "Ich habe hier drin Geräusche gehört.",
+        "Ist alles in Ordnung?"
       ],
       "3": [
-        "Passengers’ dietary information was shared with other passengers. This was not disclosed in the privacy notice and is a problem!"
+        "Die Ernährungsinformationen der Passagiere wurden an andere Passagiere weitergegeben. Dies wurde nicht in der Datenschutzerklärung angegeben und ist ein Problem!"
       ],
       "4": [
-        "Hmmmm. That seems unlikely.",
-        "Captain Maria takes privacy seriously.",
-        "Why don’t you go to the VIP game room to relax and take your mind off your worries. You are on vacation and should not worry about such things after all!"
+        "Hmmmm. Das scheint unwahrscheinlich.",
+        "Kapitän Maria nimmt den Datenschutz ernst.",
+        "Warum gehen Sie nicht in den VIP-Spielraum, um sich zu entspannen und Ihre Gedanken von Ihren Sorgen abzulenken. Sie sind im Urlaub und sollten sich um solche Dinge nicht kümmern!"
       ],
       "5": [
-        "Everything is fine!"
+        "Alles ist in Ordnung!"
       ]
     },
     "usa": {
       "1": [
-        "That situation in the game room was very uncomfortable, wasn’t it?",
-        "Look at the privacy notice again to understand whether what happened in the game room was legit."
+        "Die Situation im Spielzimmer war sehr unangenehm, nicht wahr?",
+        "Sehen Sie sich den Datenschutzhinweis noch einmal an, um zu verstehen, ob das, was im Spielzimmer passiert ist, rechtmäßig war."
       ],
       "2": [
-        "Good job!",
-        "You answered all the questions correctly, which means you have figured out that the ship is not responsibly handling personal information.",
-        "What can you do about it?"
+        "Gute Arbeit!",
+        "Sie haben alle Fragen richtig beantwortet, d.h. Sie haben herausgefunden, dass das Schiff nicht verantwortungsvoll mit persönlichen Daten umgeht.",
+        "Was können Sie dagegen tun?"
       ],
       "3": [
-        "Aha! The notice is torn – maybe the rest of it is hidden in the room."
+        "Aha! Der Zettel ist zerrissen - vielleicht ist der Rest davon im Zimmer versteckt."
       ]
     },
     "russia": {
       "1": [
-        "Hello – so nice to finally meet you!"
+        "Hallo - schön, Sie endlich kennenzulernen!"
       ],
       "2": [
-        "I’d like to exercise my privacy rights.",
-        "I’m not happy with what the ship is doing with my personal information."
+        "Ich möchte von meinem Recht auf Datenschutz Gebrauch machen.",
+        "Ich bin nicht zufrieden damit, was das Schiff mit meinen persönlichen Daten macht."
       ]
     }
   },
   "screens": {
     "login": {
-      "label": "Please enter your access code",
+      "label": "Bitte geben Sie Ihren Zugangscode ein",
       "input-label": "Code",
-      "incorrect-password": "Incorrect code, Please try again"
+      "incorrect-password": "Falscher Code, bitte versuchen Sie es erneut"
     },
     "italy": {
-      "title": "The survey",
-      "a1": "Welcome aboard! Participation in this game and the survey is completely voluntary. If you choose not to participate, it will not have any adverse effect on your employment relationship."
+      "title": "Die Umfrage",
+      "a1": "Willkommen an Bord! Die Teilnahme an diesem Spiel und an der Umfrage ist völlig freiwillig. Wenn Sie sich entscheiden, nicht teilzunehmen, hat dies keine negativen Auswirkungen auf Ihr Arbeitsverhältnis."
     },
     "egypt": {
-      "title": "Lunch Menu",
-      "a1": "Waiter will give you the menu now, check if you see any concerns"
+      "title": "Mittagsmenü",
+      "a1": "Der Kellner wird Ihnen jetzt die Speisekarte geben, überprüfen Sie, ob Sie irgendwelche Bedenken haben"
     },
     "brazil": {
-      "title": "The mini-game",
-      "a1": "Please take a picture of your face in order to enter game room.",
+      "title": "Das Minigame",
+      "a1": "Bitte machen Sie ein Foto von Ihrem Gesicht, um den Spielsaal zu betreten.",
       "a2": [
-        "Well done! The privacy notice was not very transparent.",
-        "Why don‘t you take a break and try out our latest game..."
+        "Gut gemacht! Der Datenschutzhinweis war nicht sehr transparent.",
+        "Machen Sie doch mal eine Pause und probieren Sie unser neuestes Spiel aus..."
       ]
     },
     "china": {
-      "title": "Look at that!",
-      "title2": "Take another look!",
-      "a1": "You've found a note from a mysterious person.",
-      "a2": "Is there any data that the ship is collecting that makes you uncomfortable? If so, ask yourself whether collecting it seems necessary, and if not, click on it! "
+      "title": "Sehen Sie sich das an!",
+      "title2": "Schauen Sie noch einmal nach!",
+      "a1": "Sie haben eine Nachricht von einer mysteriösen Person gefunden.",
+      "a2": "Gibt es irgendwelche Daten, die das Schiff sammelt, die Ihnen Unbehagen bereiten? Wenn ja, fragen Sie sich, ob es notwendig ist, sie zu sammeln, und wenn nicht, klicken Sie sie an!"
     },
     "usa": {
       "games": {
         "1": {
-          "title": "Missing Piece game",
-          "a1": "You have to find the privacy notice in this room."
+          "title": "Spiel mit fehlenden Stücken",
+          "a1": "Sie müssen den Datenschutzhinweis in diesem Raum finden."
         },
         "2": {
-          "a1": "You can call Franklin to take you to see Captain Maria.",
+          "a1": "Sie können Franklin anrufen, damit er Sie zu Kapitän Maria bringt.",
           "steps": {
             "1": {
-              "title": "This is a bit confusing – it’s not clear that Franklin is saying leave Maria alone and that the user is ignoring that.",
-              "next": "I insist to see Captain Maria"
+              "title": "Das ist etwas verwirrend - es ist nicht klar, dass Franklin sagt, lass Maria in Ruhe und dass der Benutzer das ignoriert.",
+              "next": "Ich bestehe darauf, Kapitän Maria zu besuchen"
             }
           }
         }
       },
-      "look-around": "Look around the room and try to find the missing piece of the privacy notice."
+      "look-around": "Schauen Sie sich in dem Raum um und versuchen Sie, das fehlende Stück des Datenschutzhinweises zu finden."
     },
     "russia": {
-      "title": "Captain's Cabin",
-      "a1": "You're going to have a conversation with <b>Capitan Maria</b>.",
+      "title": "Kapitänskabine",
+      "a1": "Sie werden ein Gespräch mit <b>Kapitän Maria</b>führen.",
       "games": {
         "1": {
-          "title": "Puzzle game",
-          "a1": "You have to assemble a puzzle of 16 pieces, which will result in the image of the captain and at the same time the entry code to the cabin."
+          "title": "Puzzle Spiel",
+          "a1": "Sie müssen ein Puzzle aus 16 Teilen zusammensetzen, das das Bild des Kapitäns und gleichzeitig den Zugangscode zur Kabine ergeben wird."
         }
       }
     }
   },
-  "next": "Next",
+  "next": "Nächste",
   "italy": {
     "questions-titles": {
-      "1": "When using a digital device for personal reasons how often do you?",
-      "6": "Which of the following fall within the Novartis definition of ‘Personal Information’? (select all that apply)",
-      "7": "Are you familiar with the following?",
-      "12": "At work, do you?",
-      "16": "Select job function",
-      "17": "Country"
+      "1": "Wie oft benutzen Sie ein digitales Gerät aus persönlichen Gründen?",
+      "6": "Welche der folgenden Angaben fallen unter die Novartis-Definition von „Persönlichen Informationen“? (wählen Sie alles Zutreffende aus)",
+      "7": "Kennen Sie die folgenden Punkte?",
+      "12": "Bei der Arbeit, ja?",
+      "16": "Jobfunktion auswählen",
+      "17": "Land"
     },
     "questions-indexes": {
       "1": "1",
@@ -274,161 +273,161 @@
     "questions": {
       "1": {
         "title": "1",
-        "label": "Read a privacy notice or policy?",
+        "label": "Haben Sie einen Datenschutzhinweis oder eine Datenschutzrichtlinie gelesen?",
         "options": [
-          "Always",
-          "Often",
-          "Occasionally",
-          "Rarely",
-          "Never"
+          "Immer",
+          "Oft",
+          "Gelegentlich",
+          "Selten",
+          "Niemals"
         ]
       },
       "2": {
         "title": "1",
-        "label": "Customize cookie settings?",
+        "label": "Cookie-Einstellungen anpassen?",
         "options": [
-          "Always",
-          "Often",
-          "Occasionally",
-          "Rarely",
-          "Never"
+          "Immer",
+          "Oft",
+          "Gelegentlich",
+          "Selten",
+          "Niemals"
         ]
       },
       "3": {
         "title": "1",
-        "label": "Customize other privacy settings (like how your information can be used)?",
+        "label": "Andere Datenschutzeinstellungen anpassen (z. B. wie Ihre Informationen verwendet werden können)?",
         "options": [
-          "Always",
-          "Often",
-          "Occasionally",
-          "Rarely",
-          "Never"
+          "Immer",
+          "Oft",
+          "Gelegentlich",
+          "Selten",
+          "Niemals"
         ]
       },
       "4": {
         "title": "1",
-        "label": "Try to enter as little information as needed?",
+        "label": "Versuchen Sie, so wenig Informationen wie nötig einzugeben?",
         "options": [
-          "Always",
-          "Often",
-          "Occasionally",
-          "Rarely",
-          "Never"
+          "Immer",
+          "Oft",
+          "Gelegentlich",
+          "Selten",
+          "Niemals"
         ]
       },
       "5": {
         "title": "1",
-        "label": "Save credit card details or other Personal Information to your browser?",
+        "label": "Kreditkartendaten oder andere persönliche Informationen in Ihrem Browser speichern?",
         "options": [
-          "Always",
-          "Often",
-          "Occasionally",
-          "Rarely",
-          "Never"
+          "Immer",
+          "Oft",
+          "Gelegentlich",
+          "Selten",
+          "Niemals"
         ]
       },
       "6": {
         "title": "6",
         "label": "",
         "options": [
-          "Phone number",
-          "Birthday",
-          "Home address",
-          "Information which combined could only identify one person on the planet, even if you don’t know their name (for example, country, college, employer, and age range)",
-          "GPS coordinates over time",
-          "Government identifier",
-          "IP address",
-          "Medical records",
-          "Anonymized data ",
+          "Rufnummer",
+          "Geburtstag",
+          "Heimatadresse",
+          "Informationen, die zusammengenommen nur eine Person auf der Welt identifizieren könnten, auch wenn Sie deren Namen nicht kennen (z. B. Land, Hochschule, Arbeitgeber und Altersgruppe)",
+          "GPS-Koordinaten im Zeitverlauf",
+          "Kennung der Regierung",
+          "IP-Adresse",
+          "Medizinische Aufzeichnungen",
+          "Anonymisierte Daten",
           "Cookies"
         ]
       },
       "7": {
         "title": "7",
-        "label": "The Novartis Data Privacy Policy?",
+        "label": "Die Novartis-Datenschutzrichtlinie?",
         "options": [
-          "Yes",
-          "No"
+          "Ja",
+          "Nein"
         ]
       },
       "8": {
         "title": "7",
-        "label": "Our Data Privacy Principles?",
+        "label": "Unsere Datenschutzgrundsätze?",
         "options": [
-          "Yes",
-          "No"
+          "Ja",
+          "Nein"
         ]
       },
       "9": {
         "title": "7",
-        "label": "Who to contact for data privacy support?",
+        "label": "An wen können Sie sich wenden, wenn Sie Unterstützung beim Datenschutz benötigen?",
         "options": [
-          "Yes",
-          "No"
+          "Ja",
+          "Nein"
         ]
       },
       "10": {
         "title": "7",
-        "label": "When to apply the Privacy Principles?",
+        "label": "Wann sind die Datenschutzgrundsätze anzuwenden?",
         "options": [
-          "Yes",
-          "No"
+          "Ja",
+          "Nein"
         ]
       },
       "11": {
         "title": "7",
-        "label": "What to do if you become aware of a data privacy incident?",
+        "label": "Was ist zu tun, wenn Sie von einem Datenschutzvorfall erfahren?",
         "options": [
-          "Yes",
-          "No"
+          "Ja",
+          "Nein"
         ]
       },
       "12": {
         "title": "12",
-        "label": "Report when you receive Personal Information you should not receive in your role?",
+        "label": "Melden Sie, wenn Sie persönliche Informationen erhalten, die Sie in Ihrer Funktion nicht erhalten sollten?",
         "options": [
-          "Always",
-          "Often",
-          "Occasionally",
-          "Rarely",
-          "Never",
-          "Not applicable"
+          "Immer",
+          "Oft",
+          "Gelegentlich",
+          "Selten",
+          "Niemals",
+          "Nicht anwendbar"
         ]
       },
       "13": {
         "title": "12",
-        "label": "Check the Novartis Data Privacy Policy when you have questions about handling  Personal Information?",
+        "label": "Schauen Sie in der Novartis Datenschutzrichtlinie nach, wenn Sie Fragen zum Umgang mit persönlichen Informationen haben?",
         "options": [
-          "Always",
-          "Often",
-          "Occasionally",
-          "Rarely",
-          "Never",
-          "Not applicable"
+          "Immer",
+          "Oft",
+          "Gelegentlich",
+          "Selten",
+          "Niemals",
+          "Nicht anwendbar"
         ]
       },
       "14": {
         "title": "12",
-        "label": "Contact the privacy team if you cannot address a privacy-related question yourself?",
+        "label": "Wenden Sie sich an das Datenschutzteam, wenn Sie eine Frage zum Datenschutz nicht selbst beantworten können?",
         "options": [
-          "Always",
-          "Often",
-          "Occasionally",
-          "Rarely",
-          "Never",
-          "Not applicable"
+          "Immer",
+          "Oft",
+          "Gelegentlich",
+          "Selten",
+          "Niemals",
+          "Nicht anwendbar"
         ]
       },
       "15": {
         "title": "12",
-        "label": "Seek to collect as little information as possible when creating a survey, registration, or other form?",
+        "label": "Versuchen Sie, so wenig Informationen wie möglich zu sammeln, wenn Sie eine Umfrage, eine Registrierung oder ein anderes Formular erstellen?",
         "options": [
-          "Always",
-          "Often",
-          "Occasionally",
-          "Rarely",
-          "Never",
-          "Not applicable"
+          "Immer",
+          "Oft",
+          "Gelegentlich",
+          "Selten",
+          "Niemals",
+          "Nicht anwendbar"
         ]
       },
       "16": {
@@ -436,15 +435,15 @@
         "label": "",
         "options": [
           "Marketing",
-          "Patient Support & Services",
-          "Research & Development",
-          "Sales",
-          "Other"
+          "Patientenunterstützung und Dienstleistungen",
+          "Forschung und Entwicklung",
+          "Verkauf",
+          "Andere"
         ]
       },
       "17": {
         "title": "17",
-        "label": "Select your country",
+        "label": "Wählen Sie Ihr Land",
         "options": []
       }
     }
@@ -452,182 +451,179 @@
   "egypt": {
     "questions": {
       "1": {
-        "label": "Do you see any concerns with the waiter’s handwritten notes on the menu?",
+        "label": "Sehen Sie irgendwelche Probleme mit den handschriftlichen Notizen des Kellners auf der Speisekarte?",
         "options": [
-          "Not at all, he is taking care of the guests' wishes ",
-          "Yes – he should also include their last names to be on the safe side ",
-          "Yes – it feels like this is private information that should not have been shared"
+          "Ganz und gar nicht, er kümmert sich um die Wünsche der Gäste",
+          "Ja - er sollte sicherheitshalber auch ihre Nachnamen angeben",
+          "Ja - ich habe das Gefühl, dass dies private Informationen sind, die nicht weitergegeben werden sollten"
         ]
       },
       "2": {
-        "label": "You realize that Carla, Yuri, and Dave look uncomfortable and decide that you should speak up to Franklin. What should you make him aware of?",
+        "label": "Sie bemerken, dass Carla, Yuri und Dave unbehaglich aussehen und beschließen, dass Sie Franklin ansprechen sollten. Worauf sollten Sie ihn aufmerksam machen?",
         "options": [
-          "Passengers don’t need to know each other’s dietary restrictions.",
-          " By including the waiter’s notes on the menu, passengers’ health conditions and/or religious affiliations were likely revealed.",
-          "Information about health and religion is a type of Personal Information, and it can be considered sensitive in many countries.",
-          "All of the above"
+          "Die Passagiere müssen die Diätvorschriften des jeweils anderen nicht kennen.",
+          "Durch die Notizen des Kellners auf der Speisekarte wurden wahrscheinlich der Gesundheitszustand und/oder die Religionszugehörigkeit der Passagiere preisgegeben.",
+          "Informationen über Gesundheit und Religion gehören zu den persönlichen Daten und können in vielen Ländern als sensibel angesehen werden.",
+          "Alle der oben genannten Punkte"
         ]
       }
     }
   },
   "brazil": {
     "validated-photo": [
-      "Good news!",
-      "The photo we just took of you was verified by our facial recognition software."
+      "Gute Nachrichten!",
+      "Das Foto, das wir gerade von Ihnen gemacht haben, wurde von unserer Gesichtserkennungssoftware verifiziert."
     ],
     "smile-photo": [
-      "Please follow me inside. Don’t forget to smile, we have cameras throughout the game room!"
+      "Bitte folgen Sie mir hinein. Vergessen Sie nicht zu lächeln, wir haben überall im Spielsaal Kameras!"
     ],
     "questions": {
       "1": {
-        "label": "Did it say your passport photo would be taken and used to control access to parts of the ship?",
+        "label": "Steht dort, dass Ihr Passfoto aufgenommen wird, um den Zugang zu bestimmten Bereichen des Schiffes zu kontrollieren?",
         "options": [
-          "Yes",
-          "No"
+          "Ja",
+          "Nein"
         ]
       },
       "2": {
-        "label": "Does it clearly explain that facial recognition would be used?",
+        "label": "Wird darin eindeutig erklärt, dass die Gesichtserkennung verwendet wird?",
         "options": [
-          "Yes",
-          "No"
+          "Ja",
+          "Nein"
         ],
-        "link": "Review privacy notice",
-        "text": "That camera flash was bright and you find yourself feeling a bit confused. You read the privacy notice carefully, but . ."
+        "link": "Datenschutzhinweis überprüfen",
+        "text": "Das Blitzlicht der Kamera war hell und Sie fühlen sich etwas verwirrt. Sie haben den Datenschutzhinweis sorgfältig gelesen, aber . ."
       },
       "3": {
-        "label": "Look at the privacy notice again – does it clearly explain that facial recognition would be used?",
+        "label": "Schauen Sie sich den Datenschutzhinweis noch einmal an - wird dort eindeutig erklärt, dass die Gesichtserkennung verwendet wird?",
         "options": [
-          "Yes",
-          "No"
+          "Ja",
+          "Nein"
         ]
       }
     },
     "mini_game": {
       "title": "Franklin",
-      "description": "Now's your chance to knock out some of those cameras you were concerned about. You have 30 seconds to hit cameras. For every camera clicked during a 30-second run you will get 50 points. You can repeat the game up to 5 times",
-      "score": "Your score is: <strong> {score} points.</strong>",
-      "points": "points",
-      "high_score": "High score:",
-      "seconds": "seconds",
-      "ranking": "Congratulations! You have the highest score.",
-      "statistics": "Statistics of former players:"
+      "description": "Jetzt haben Sie die Chance, einige der Kameras auszuschalten, über die Sie sich Sorgen gemacht haben. Sie haben 30 Sekunden Zeit, um die Kameras anzuklicken. Für jede Kamera, die während eines 30-Sekunden-Laufs angeklickt wird, erhalten Sie 50 Punkte. Sie können das Spiel bis zu 5 Mal wiederholen",
+      "score": "Ihr Ergebnis ist: <strong>{Punktzahl} Punkte.</strong>",
+      "points": "Punkte",
+      "high_score": "Hohe Punktzahl:",
+      "seconds": "Sekunden",
+      "ranking": "Herzlichen Glückwunsch! Sie haben die höchste Punktzahl.",
+      "statistics": "Statistiken von ehemaligen Spielern:"
     },
     "welcome-to-game-room": [
-      "Welcome to the game room.",
-      "Here you can see the result of all countries. Try to get the highest score possible in the game to contribute to your country‘s score."
+      "Willkommen im Spielsaal.",
+      "Hier können Sie das Ergebnis aller Länder sehen. Versuchen Sie, die höchstmögliche Punktzahl im Spiel zu erreichen, um zum Ergebnis Ihres Landes beizutragen."
     ],
-    "scoreboard-questions": [
+    "scoreboard-questions": [{
+      "label": "Auf der Anzeigetafel werden Ihr Foto und andere Informationen zur Identifizierung angezeigt, die für aktuelle und zukünftige Reisende einsehbar sein werden. Fühlen Sie sich dabei unwohl?",
+      "options": [
+        "Ja",
+        "Nein"
+      ]
+    },
       {
-        "label": "The scoreboard shows your photo and other identifying information which will be available for current and future voyageurs to see. Does this make you uncomfortable?",
+        "label": "Wenn Sie sich die Anzeigetafel genauer ansehen, sehen Sie, dass die Ergebnisse bis ins Jahr 2013 zurückreichen, was darauf hindeutet, dass Ihre Informationen dort noch jahrelang zu finden sein könnten. Fühlen Sie sich dabei unwohl?",
         "options": [
-          "Yes",
-          "No"
+          "Ja",
+          "Nein"
         ]
       },
       {
-        "label": "Looking more closely at the scoreboard, you see that it has scores going back as far as 2013, suggesting that your information could be posted there for years to come. Does this make you uncomfortable?",
+        "label": "Fällt Ihnen eine datenschutzfreundliche Lösung für die Anzeigetafel ein?",
         "options": [
-          "Yes",
-          "No"
-        ]
-      },
-      {
-        "label": "Can you think of a privacy-friendly way to handle the scoreboard?",
-        "options": [
-          "Yes",
-          "No"
+          "Ja",
+          "Nein"
         ]
       }
     ]
   },
   "usa": {
     "intro": {
-      "player-thinking": "This doesn’t seem right. What can I do?"
+      "player-thinking": "Das scheint nicht richtig zu sein. Was kann ich tun?"
     },
     "hints": {
-      "phone-questions": "Click on the internet browsing icon.",
+      "phone-questions": "Klicken Sie auf das Symbol für das Surfen im Internet.",
       "missing-piece": {
         "1": [
-          "Find the missing piece of the privacy notice",
-          "Have you looked under the carpet yet?"
+          "Finden Sie den fehlenden Teil des Datenschutzhinweises",
+          "Haben Sie schon unter den Teppich geschaut?"
         ],
         "2": [
-          "Click at the missing piece of the privacy notice."
+          "Klicken Sie auf das fehlende Stück des Datenschutzhinweises."
         ]
       }
     },
     "instructions": {
-      "phone-questions": "Mark useful articles that could possibly help you."
+      "phone-questions": "Markieren Sie nützliche Artikel, die Ihnen möglicherweise helfen könnten."
     },
-    "score-board-inline": "No problem. I’ll take you to the captain’s cabin. Please follow me.",
-    "privacy-questions": [
+    "score-board-inline": "Kein Problem. Ich bringe Sie in die Kabine des Kapitäns. Bitte folgen Sie mir.",
+    "privacy-questions": [{
+      "label": "Lassen Sie uns darüber nachdenken, was im Spielsaal im Lichte der Datenschutzhinweise passiert ist: <br /> <br /> Kapitän Maria teilte das Prinzip der Transparenz. Das bedeutet, dass das Schiff Sie in der Datenschutzerklärung darüber hätte informieren müssen, dass Ihre Daten möglicherweise auf der Anzeigetafel veröffentlicht werden. Steht dazu etwas in der Mitteilung?",
+      "options": [
+        "Ja",
+        "Nein"
+      ]
+    },
       {
-        "label": "Let’s reflect on what happened in game room in light of what the privacy notice says: <br /> <br /> Captain Maria shared the principle of being transparent. That means that the ship should have let you know in the privacy notice that your information might be shared on the scoreboard. Is there anything in the notice about that?",
+        "label": "Sie vertrat auch den Grundsatz, Informationen nicht länger als nötig aufzubewahren. Der Datenschutzhinweis sagt nichts darüber aus, wie lange Ihre Daten aufbewahrt werden, aber anhand der Anzeigetafel sieht es so aus, als ob sie mindestens 10 Jahre lang gespeichert werden! Halten Sie das für notwendig?",
         "options": [
-          "Yes",
-          "No"
+          "Ja",
+          "Nein"
         ]
       },
       {
-        "label": "She also shared the principle of not retaining information longer than necessary. The privacy notice doesn’t say anything about how long they keep your information, but based on the scoreboard, it looks like they have stored it for at least 10 years! Does that seem necessary?",
+        "label": "Kapitän Maria sagte auch, dass das Schiff verantwortungsvoll mit persönlichen Daten umgehen sollte, d.h. sie sollten nicht für andere Zwecke verwendet werden als die, für die sie gesammelt wurden. Als die Empfangsdame Ihren Pass einscannte, hatten Sie keine Ahnung, dass Ihre Passdaten auf einer öffentlichen Anzeigetafel veröffentlicht werden würden. Glauben Sie, dass das Schiff verantwortungsbewusst mit Ihren Passdaten umgegangen ist?",
         "options": [
-          "Yes",
-          "No"
-        ]
-      },
-      {
-        "label": "Captain Maria also said the ship should be responsible with personal information, meaning it should not use if for purposes other than what is was collected for. When the receptionist scanned your passport, you had no idea that your passport info would be posted on a public scoreboard. Do you think the ship used your passport information responsibly?",
-        "options": [
-          "Yes",
-          "No"
+          "Ja",
+          "Nein"
         ]
       }
     ]
   },
   "china": {
     "bedroom-note": [
-      "Dear Passenger,",
-      "I was sorry to learn about the waiter‘s mistake at lunch. I‘m",
-      "afraid this ship may not be as watertight when it comes to",
-      "privacy as it should be. But don‘t worry - I have hidden 5",
-      "privacy principles under objects in your cabin that I believe can",
-      "help you protect your privacy. Feel free to visit my cabin if you",
-      " have any other concerns. – Captain Maria"
+      "Lieber Passagier,",
+      "es tat mir Leid, von dem Fehler des Kellners beim Mittagessen zu erfahren. Ich",
+      "befürchte, dieses Schiff ist nicht so wasserdicht, wie es sein sollte, wenn es um den",
+      "Datenschutz geht. Aber keine Sorge - ich habe 5",
+      "Datenschutzgrundsätze unter den Objekten in Ihrer Kabine versteckt, die meiner Meinung nach",
+      "Ihnen helfen, Ihre Privatsphäre zu schützen. Besuchen Sie meine Kabine, wenn Sie",
+      "andere Bedenken haben. - Kapitän Maria"
     ],
     "bedroom-letter": [
-      "<div class='f-hand-2 font-weight-bold text-h3 mb-4'>Dear guest,</div>",
-      "Hello again and welcome to your cabin. You are staying in Cabin 42, which is a very special room featuring objects I have collected in my travels. <div class='font-weight-bold'>I suggest you spend some time here admiring these objects from all angles.</div>",
-      "<div class='d-flex justify-end'><i class='f-hand-2 font-weight-bold text-h5'>- Regards, Franklin</i></div>"
+      "<div class='f-hand-2 font-weight-bold text-h3 mb-4'>Lieber Gast,</div>",
+      "nochmals hallo und willkommen in Ihrer Kabine. Sie wohnen in Kabine 42, einem ganz besonderen Zimmer mit Gegenständen, die ich auf meinen Reisen gesammelt habe.<div class='font-weight-bold'>Ich schlage vor, dass Sie hier einige Zeit verbringen und diese Objekte aus allen Blickwinkeln bewundern.</div>",
+      "<div class='d-flex justify-end'><i class='f-hand-2 font-weight-bold text-h5'>- Mit freundlichen Grüßen, Franklin</i></div>"
     ],
-    "privacy-principles": "Open privacy principles",
+    "privacy-principles": "Offene Grundsätze zum Datenschutz",
     "privacy-notice": {
-      "title": "Cruise Ship Privacy Notice",
-      "description": "We take your privacy very seriously. This notice sets forth what we collect, what we share, and your rights. For more details, please see the captain.",
-      "open": "Open privacy notice",
-      "close": "Close",
-      "close-and-call-franklin": "Call Franklin and demand to see Captain Maria",
+      "title": "Datenschutzhinweis für Kreuzfahrtschiffe",
+      "description": "Wir nehmen Ihre Privatsphäre sehr ernst. Dieser Hinweis legt dar, was wir sammeln, was wir weitergeben und welche Rechte Sie haben. Weitere Einzelheiten erfahren Sie vom Kapitän.",
+      "open": "Datenschutzhinweis öffnen",
+      "close": "Schließen",
+      "close-and-call-franklin": "Rufen Sie Franklin an und verlangen Sie, Kapitän Maria zu besuchen",
       "table": {
         "headers": [
-          "CATEGORY OF PERSONAL INFORMATION",
-          "DESCRIPTION"
+          "KATEGORIE DER PERSONENBEZOGENEN INFORMATIONEN",
+          "BESCHREIBUNG"
         ],
-        "content": [
+        "content": [{
+          "category": "Identifizierung und Kontaktinformationen",
+          "description": "Wir sammeln Informationen, um Sie zu identifizieren und zu kontaktieren, wie z.B. Ihren Namen, Ihr Geschlecht, Ihre Nationalität, Ihr Geburtsdatum, Ihre Postanschrift, Ihre E-Mail-Adresse, Ihre Telefonnummer und Ihre Passdaten (z.B. Passnummer und Ablaufdatum). Diese Informationen können an Mitarbeiter des Schiffes weitergegeben werden, um Ihre Reise zu erleichtern."
+        },
           {
-            "category": "Identification and contact information",
-            "description": "We collect information to identify and contact you, such as your name, gender, nationality, date of birth, mailing address, email address, telephone number, and passport information (such as passport number and expiration date). This information may be shared with employees of the ship to facilitate your voyage."
+            "category": "Daten zur Verbesserung Ihrer Reise",
+            "description": "Als Hightech-Kreuzfahrtgesellschaft setzen wir modernste Technologien und Algorithmen ein, um Ihnen die bestmögliche Reise zu bieten. Zu diesem Zweck verwenden wir möglicherweise Kameras und andere Sensoren, um Ihre Bewegungen auf dem Schiff zu verfolgen, wie lange Sie sich in verschiedenen Räumen aufhalten und wie Sie mit unseren Mitarbeitern und anderen Passagieren interagieren."
           },
           {
-            "category": "Data to enhance your voyage",
-            "description": "As a high-tech cruise line, we employ state-of-the-art technology and algorithms to offer you the best voyage possible. To do this, we may use cameras and other sensors to track your movement on the ship, how long you stay in various rooms, and how you interact with our employees and other passengers."
+            "category": "Zahlungsinformationen",
+            "description": "Informationen, die Sie zum Zwecke der Zahlungsabwicklung zur Verfügung stellen, wie z.B. Kreditkartendaten."
           },
           {
-            "category": "Payment information",
-            "description": "Information you provide for the purpose of processing payments, such as credit card details."
-          },
-          {
-            "category": "Safety information",
-            "description": "We are committed to ensuring you have a safe voyage! We will ask you to let us know if you have any food allergies, and we also have a nurse on staff in the event of sea-sickness or other ailment. If you visit the nurse, we may collect information about any current or prior health conditions. This information will only be used by cruise employees for the purposes of ensuring your safety."
+            "category": "Informationen zur Sicherheit",
+            "description": "Wir setzen uns dafür ein, dass Sie eine sichere Reise haben! Wir werden Sie bitten, uns mitzuteilen, ob Sie Lebensmittelallergien haben, und wir haben auch eine Krankenschwester für den Fall einer Seekrankheit oder eines anderen Unwohlseins an Bord. Wenn Sie die Krankenschwester besuchen, können wir Informationen über aktuelle oder frühere Gesundheitszustände sammeln. Diese Informationen werden nur von Mitarbeitern der Kreuzfahrtgesellschaft verwendet, um Ihre Sicherheit zu gewährleisten."
           }
         ],
         "correctOptions": [
@@ -637,114 +633,111 @@
     },
     "missing-privacy-notice": {
       "table": {
-        "content": [
-          {
-            "category": "Your rights",
-            "description": "You have the right to request a copy of all Personal Information collected about you and to ask us to correct or delete that information. To exercise these rights, please contact Captain Maria."
-          }
-        ]
+        "content": [{
+          "category": "Ihre Rechte",
+          "description": "Sie haben das Recht, eine Kopie aller über Sie erfassten persönlichen Daten anzufordern und uns zu bitten, diese Daten zu korrigieren oder zu löschen. Um diese Rechte auszuüben, wenden Sie sich bitte an Kapitän Maria."
+        }]
       }
     }
   },
   "russia": {
     "task-2": {
-      "msgs": [
+      "msgs": [{
+        "dir": "ltr",
+        "text": "Schön, Sie endlich kennenzulernen.",
+        "isMaria": true
+      },
         {
           "dir": "ltr",
-          "text": "So nice to finally meet you.",
+          "text": "Es tut mir Leid, von den Problemen mit dem Datenschutz zu hören. Sie möchten Ihre Datenschutzrechte wahrnehmen?",
           "isMaria": true
         },
         {
           "dir": "ltr",
-          "text": "I‘m sorry to hear about the privacy issues. You would like to exercise your privacy rights?",
+          "text": "Ich kann Ihnen mitteilen, welche Informationen wir über Sie haben, Sie können darum bitten, sie zu korrigieren, oder Sie können darum bitten, sie zu löschen.",
           "isMaria": true
         },
         {
           "dir": "ltr",
-          "text": "I can let you know what information we have about you, you can ask to correct it, or you can ask to delete it.",
+          "text": "Nach Ihren Bedenken klingt es so, als ob Sie möchten, dass ich Ihre Daten lösche.",
           "isMaria": true
         },
         {
           "dir": "ltr",
-          "text": "Based on your concerns, it sounds like you want me to delete your information.",
-          "isMaria": true
-        },
-        {
-          "dir": "ltr",
-          "text": "Which information would you like deleted?",
+          "text": "Welche Informationen möchten Sie löschen?",
           "isMaria": true
         },
         {
           "dir": "rtl",
-          "text": "Name and other identifiers",
+          "text": "Name und andere Identifikatoren",
           "isPlayer": true
         },
         {
           "dir": "rtl",
-          "text": "Contact information",
+          "text": "Kontaktinformationen",
           "isPlayer": true
         },
         {
           "dir": "rtl",
-          "text": "Photographs",
+          "text": "Fotografien",
           "isPlayer": true
         },
         {
           "dir": "rtl",
-          "text": "Biometric data",
+          "text": "Biometrische Daten",
           "isPlayer": true
         },
         {
           "dir": "rtl",
-          "text": "Credit card data",
+          "text": "Kreditkartendaten",
           "isPlayer": true
         },
         {
           "dir": "rtl",
-          "text": "Dietary preferences",
+          "text": "Diätetische Präferenzen",
           "isPlayer": true
         },
         {
           "dir": "ltr",
-          "text": "Understood. I can delete some information right away if it’s not critical to operating the ship, but there is some information we need to use while you are on board, such as passport data and dietary restrictions.",
+          "text": "Verstanden. Ich kann einige Informationen sofort löschen, wenn sie für den Betrieb des Schiffes nicht entscheidend sind, aber es gibt einige Informationen, die wir brauchen, während Sie an Bord sind, wie z.B. Passdaten und diätetische Einschränkungen.",
           "isMaria": true
         },
         {
           "dir": "ltr",
-          "text": "Once you disembark, we can delete everything except for what we have to keep for regulations – such as information needed to comply with COVID-related regulations.",
+          "text": "Sobald Sie von Bord gehen, können wir alles löschen, bis auf das, was wir aufgrund von Vorschriften aufbewahren müssen - z. B. Informationen, die zur Einhaltung von COVID-bezogenen Vorschriften erforderlich sind.",
           "isMaria": true
         },
         {
           "dir": "ltr",
-          "text": "Thank you for speaking up about your privacy concerns. I will ask Franklin to get to work to make sure we are shipshape when it comes to privacy!",
+          "text": "Vielen Dank, dass Sie Ihre Bedenken bezüglich des Datenschutzes geäußert haben. Ich werde Franklin bitten, sich an die Arbeit zu machen und dafür zu sorgen, dass wir in Sachen Datenschutz auf der sicheren Seite sind!",
           "isMaria": true
         }
       ]
     }
   },
   "score-result": {
-    "star3": "Well Done!",
-    "star2": "Bad!",
-    "star1": "Too Bad!",
-    "star0": "Too Bad!",
+    "star3": "Gut gemacht!",
+    "star2": "Schlecht!",
+    "star1": "Schade!",
+    "star0": "Schade!",
     "italy": [
-      "Thank you!",
-      "Now, please join us in the dining room for lunch!"
+      "Vielen Dank!",
+      "Kommen Sie jetzt bitte zum Mittagessen in den Speisesaal!"
     ],
     "egypt": [
-      "That’s right – that waiter should know better! Silly humans. Perhaps they should replace the waiter with an AI-powered robot like me!",
-      "Why don’t you return to your cabin to relax."
+      "Stimmt - der Kellner sollte es besser wissen! Dumme Menschen. Vielleicht sollten sie den Kellner durch einen KI-gesteuerten Roboter wie mich ersetzen!",
+      "Warum kehren Sie nicht in Ihre Kabine zurück und entspannen sich."
     ],
     "china": [],
     "brazil": [
-      "Why don’t you go back to your cabin to see how the principles that Captain Maria shared can help you figure this out."
+      "Gehen Sie doch zurück in Ihre Kabine und schauen Sie, wie die Prinzipien, die Kapitän Maria mit Ihnen geteilt hat, Ihnen helfen können, darüber klar zu werden."
     ]
   },
-  "excellent": "Excellent",
-  "bad": "Bad",
-  "too-bad": "Too Bad",
+  "excellent": "Ausgezeichnet",
+  "bad": "Schlecht",
+  "too-bad": "Zu schlecht",
   "learning-outcome": {
-    "title": "Learning Outcome",
+    "title": "Lernergebnis",
     "italy": [],
     "egypt": [],
     "brazil": [],
@@ -752,151 +745,150 @@
     "china": [],
     "usa": []
   },
-  "try-again": "Try again",
+  "try-again": "Versuchen Sie es erneut",
   "lunch-menu": {
-    "title": "Lunch Menu",
-    "items": [
+    "title": "Mittagsmenü",
+    "items": [{
+      "label": "Vorspeise",
+      "text": "Garnelen und Avocado-Cocktail",
+      "handwritten": "Hinweis: servieren Sie Dave Ziegenkäse und Zwiebel Filo Tart (koscher)"
+    },
       {
-        "label": "Starter",
-        "text": "Prawn & Avocado Cocktail",
-        "handwritten": "Note: serve Goats Cheese & Onion Filo Tart to Dave (kosher)"
-      },
-      {
-        "label": "Main",
-        "text": "Fillet steak served with a mushroom sauce served with Dauphinoise Potatoes"
+        "label": "Hauptgericht",
+        "text": "Filetsteak mit einer Pilzsauce, serviert mit Dauphinoise-Kartoffeln"
       },
       {
         "label": "Dessert",
-        "text": "Crème Brulee",
-        "handwritten": "Note: Serve Fresh Fruit  to Yuri (sugar-free)"
+        "text": "Crème brulée",
+        "handwritten": "Hinweis: Servieren Sie Yuri frisches Obst (zuckerfrei)"
       },
       {
-        "label": "Wine pairings with each course",
-        "handwritten": "(Do not offer to Carla – instead give sparkling apple juice)"
+        "label": "Weinbegleitung zu jedem Gang",
+        "handwritten": "(Carla nicht anbieten – stattdessen prickelnden Apfelsaft geben)"
       }
     ]
   },
-  "pick-response-to-continue": "Pick a response to continue",
-  "pick-at-least-three-choices": "Pick at least three choices",
-  "what-should-tell-franklin": "What should you tell Franklin?",
-  "choose-headlines": "Choose which headlines are useful:",
-  "congratulations": "Congratulations",
+  "pick-response-to-continue": "Wählen Sie eine Antwort, um fortzufahren",
+  "pick-at-least-three-choices": "Wählen Sie mindestens drei Möglichkeiten aus",
+  "what-should-tell-franklin": "Was sollten Sie Franklin sagen?",
+  "choose-headlines": "Wählen Sie aus, welche Schlagzeilen nützlich sind:",
+  "congratulations": "Herzlichen Glückwunsch",
   "outro": {
     "successText": [
-      "<b>Congratulations!</b> You have used the data privacy principles to prevent a privacy shipwreck!",
-      "Click “Next” to disembark and help your country become the 2023 Privacy Champion."
+      "<b>Herzlichen Glückwunsch!</b> Sie haben die Datenschutzgrundsätze genutzt, um einen Datenschutz-Schiffbruch zu verhindern!",
+      "Klicken Sie auf “Weiter“, um von Bord zu gehen und Ihrem Land zu helfen, Datenschutz-Champion 2023 zu werden."
     ],
     "failText": [
-      "Oh, too bad. You failed to save the world, and now The Cyber Monster has destroyed everything he could. Play this task again and help our Brick defeat the enemy."
+      "Oh, schade. Sie haben es nicht geschafft, die Welt zu retten, und jetzt hat das Cyber-Monster alles zerstört, was es konnte. Spielen Sie diese Aufgabe erneut und helfen Sie unserem Brick, den Feind zu besiegen."
     ],
     "actions": {
-      "yes": "Yes",
-      "no": "No"
+      "yes": "Ja",
+      "no": "Nein"
     }
   },
   "found-object": {
-    "title": "You've found a privacy symbol",
+    "title": "Sie haben ein Datenschutzsymbol gefunden",
     "wrong-item": {
-      "1": "Sorry, you've clicked on a wrong item. Try clicking on other items to find missing piece of the privacy notice.",
-      "2": "Sorry, you've clicked on a wrong item. Have you looked under the carpet yet?"
+      "1": "Tut mir Leid, Sie haben auf eine falsche Position geklickt. Versuchen Sie, auf andere Elemente zu klicken, um den fehlenden Teil des Datenschutzhinweises zu finden.",
+      "2": "Tut mir Leid, Sie haben auf eine falsche Position geklickt. Haben Sie schon unter den Teppich geschaut?"
     },
-    "find-x-more": "You need to find {x} more symbols",
-    "find-one-more": "You need to find {x} more symbol",
-    "found-last": "You‘ve found the last privacy symbol!",
-    "found-all": "Congratulations! You‘ve found all privacy principles.",
-    "privacy-found": "Congratulations! You found the missing part of the privacy notice.",
+    "find-x-more": "Sie müssen {x} weitere Symbole finden",
+    "find-one-more": "Sie müssen {x} weitere Symbole finden",
+    "found-last": "Sie haben das letzte Datenschutzsymbol gefunden!",
+    "found-all": "Herzlichen Glückwunsch! Sie haben alle Datenschutzgrundsätze gefunden.",
+    "privacy-found": "Herzlichen Glückwunsch! Sie haben den fehlenden Teil des Datenschutzhinweises gefunden.",
     "items": {
-      "eye": "Be transparent",
-      "bridge": "Collect only what is necessary",
-      "handshake": "Use responsibly",
-      "lock": "Protect and be vigilant",
-      "hourglass": "Retain only as long as necessary"
+      "eye": "Transparent sein",
+      "bridge": "Nur das Nötigste sammeln",
+      "handshake": "Verantwortungsvoll nutzen",
+      "lock": "Beschützen und wachsam sein",
+      "hourglass": "Nur so lange wie nötig aufbewahren"
     },
     "items-explanations": {
-      "eye": "Be transparent means you should be able to understand what will be done with information about you. When you find the privacy notice, make sure you understand what it says!",
-      "bridge": "Collect only what is necessary means you should not have to provide information about you that isn‘t necessary. This ship has a tendency to collect information everywhere – be on the lookout for times when the ship might collect more than what it needs.",
-      "handshake": "Use responsibly means that the ship should only use your personal information for the purposes for which it was collected – pay attention to what is in the privacy notice to make sure the ship isn‘t using your information for other purposes.",
-      "lock": "Protect and be vigilant means the ship should secure your personal information and report and investigate any misuse of data. You should speak up if you see anything suspicious.",
-      "hourglass": "Retain only as long as necessary means the ship should not keep your information longer than it needs to. Most of what the ship collects about you should probably be deleted when the voyage ends."
+      "eye": "Transparent sein bedeutet, dass Sie in der Lage sein sollten, zu verstehen, was mit den Informationen über Sie gemacht wird. Wenn Sie den Datenschutzhinweis finden, stellen Sie sicher, dass Sie verstehen, was darin steht!",
+      "bridge": "Nur das Nötigste sammeln bedeutet, Sie sollten keine Informationen über sich preisgeben müssen, die nicht notwendig sind. Dieses Schiff hat die Tendenz, überall Informationen zu sammeln - halten Sie Ausschau nach Zeiten, in denen das Schiff mehr sammelt, als es braucht.",
+      "handshake": "Verantwortungsbewusste Nutzung bedeutet, dass das Schiff Ihre personenbezogenen Daten nur für die Zwecke verwenden sollte, für die sie erhoben wurden - achten Sie auf die Angaben in der Datenschutzerklärung, um sicherzustellen, dass das Schiff Ihre Daten nicht für andere Zwecke verwendet.",
+      "lock": "Schützen und wachsam sein bedeutet, dass das Schiff Ihre personenbezogenen Daten schützen und jeden Datenmissbrauch melden und untersuchen sollte. Sie sollten dass Wort ergreifen, wenn Sie etwas Verdächtiges sehen.",
+      "hourglass": "Nur so lange wie nötig aufbewahren bedeutet, dass das Schiff Ihre Informationen nicht länger als nötig aufbewahren sollte. Das meiste, was das Schiff über Sie sammelt, sollte wahrscheinlich gelöscht werden, wenn die Reise endet."
     }
   },
   "note-from-prev-passenger": [
-    "Beware",
-    "Something weird is going on here",
-    "Look under the alarm clock"
+    "Vorsicht",
+    "Hier geht etwas Seltsames vor sich",
+    "Schauen Sie unter den Wecker"
   ],
   "privacy-notice": {
-    "title": "Cruise Ship Privacy Notice",
-    "text-1": "We take your privacy very seriously. This notice sets forth what we collect, what we share, and your rights. For more details, please see the captain.",
-    "text-2": "The Personal Information we collect and how we use it",
+    "title": "Datenschutzhinweis für Kreuzfahrtschiffe",
+    "text-1": "Wir nehmen Ihre Privatsphäre sehr ernst. Dieser Hinweis legt dar, was wir sammeln, was wir weitergeben und welche Rechte Sie haben. Weitere Einzelheiten erfahren Sie vom Kapitän.",
+    "text-2": "Die personenbezogenen Daten, die wir sammeln und wie wir sie verwenden",
     "headers": {
-      "name": "CATEGORY OF PERSONAL INFORMATION",
-      "desc": "DESCRIPTION"
+      "name": "KATEGORIE DER PERSONENBEZOGENEN INFORMATIONEN",
+      "desc": "BESCHREIBUNG"
     },
     "items": {
       "1": {
-        "name": "Identification and contact information",
-        "desc": "We collect information to identify and contact you, such as your name, gender,nationality, date of birth, mailing address, email address, telephone number, and passport information (such as passport number and expiration date). This information may be shared with employees of the ship to facilitate your voyage."
+        "name": "Identifizierung und Kontaktinformationen",
+        "desc": "Wir sammeln Informationen, um Sie zu identifizieren und zu kontaktieren, wie z.B. Ihren Namen, Ihr Geschlecht, Ihre Nationalität, Ihr Geburtsdatum, Ihre Postanschrift, Ihre E-Mail-Adresse, Ihre Telefonnummer und Ihre Passdaten (z.B. Passnummer und Ablaufdatum). Diese Informationen können an Mitarbeiter des Schiffes weitergegeben werden, um Ihre Reise zu erleichtern."
       },
       "2": {
-        "name": "Data to enhance your voyage",
-        "desc": "As a high-tech cruise line, we employ state-of-the-art technology and algorithms to offer you the best voyage possible. To do this, we may use cameras and other sensors to track your movement on the ship, how long you stay in various rooms, and how you interact with our employees and other passengers."
+        "name": "Daten zur Verbesserung Ihrer Reise",
+        "desc": "Als Hightech-Kreuzfahrtgesellschaft setzen wir modernste Technologien und Algorithmen ein, um Ihnen die bestmögliche Reise zu bieten. Zu diesem Zweck verwenden wir möglicherweise Kameras und andere Sensoren, um Ihre Bewegungen auf dem Schiff zu verfolgen, wie lange Sie sich in verschiedenen Räumen aufhalten und wie Sie mit unseren Mitarbeitern und anderen Passagieren interagieren."
       },
       "3": {
-        "name": "Payment information",
-        "desc": "Information you provide for the purpose of processing payments, such as credit card details"
+        "name": "Zahlungsinformationen",
+        "desc": "Informationen, die Sie zum Zwecke der Zahlungsabwicklung zur Verfügung stellen, wie z.B. Kreditkartendaten"
       },
       "4": {
-        "name": "Safety information",
-        "desc": "We are committed to ensuring you have a safe voyage! We will ask you to let us know if you have any food allergies, and we also have a nurse on staff in the event of sea-sickness or other ailment. If you visit the nurse, we may collect information about any current or prior health conditions. This information will only be used by cruise employees for the purposes of ensuring your safety."
+        "name": "Informationen zur Sicherheit",
+        "desc": "Wir setzen uns dafür ein, dass Sie eine sichere Reise haben! Wir werden Sie bitten, uns mitzuteilen, ob Sie Lebensmittelallergien haben, und wir haben auch eine Krankenschwester für den Fall einer Seekrankheit oder eines anderen Unwohlseins an Bord. Wenn Sie die Krankenschwester besuchen, können wir Informationen über aktuelle oder frühere Gesundheitszustände sammeln. Diese Informationen werden nur von Mitarbeitern der Kreuzfahrtgesellschaft verwendet, um Ihre Sicherheit zu gewährleisten."
       }
     },
     "questions": {
-      "title": "Now that you have found the privacy notice and the principles that Captain Maria hid, what do you think about the situation at lunch?",
+      "title": "Nun, da Sie den Datenschutzhinweis und die Grundsätze, die Kapitän Maria versteckt hat, gefunden haben, was denken Sie über die Situation beim Mittagessen?",
       "description": [
-        "That’s right!",
-        "Although the ship disclosed that it would collect information about food allergies (which relates to dietary restrictions), it said it would only share it with employees to ensure safety. That information never should have been shared with other passengers. And while we’re thinking about it, it would be clearer if the privacy notice said “dietary restrictions” rather than just allergies, since Carla, Yuri, and Dave all had restrictions for other reasons."
+        "Das ist richtig!",
+        "Obwohl das Schiff bekannt gab, dass es Informationen über Lebensmittelallergien (die sich auf diätetische Einschränkungen beziehen) sammeln würde, sagte es, dass es diese Informationen nur an Mitarbeiter weitergeben würde, um die Sicherheit zu gewährleisten. Diese Informationen hätten niemals an andere Passagiere weitergegeben werden dürfen. Und wenn wir schon dabei sind, wäre es klarer, wenn in der Datenschutzerklärung von “diätetischen Einschränkungen“, und nicht nur von Allergien die Rede wäre, denn Carla, Yuri und Dave hatten Einschränkungen aus anderen Gründen."
       ],
       "congratulations": [
-        "Good job!",
-        "Why does the ship need to use cameras and sensors to track movement on the ship and how you interact with others? Does the ship really need to know if someone happens to be spending time in someone else’s cabin? Even if this is arguably for safety, there must be ways to ensure passenger safety without compromising privacy."
+        "Gute Arbeit!",
+        "Warum braucht das Schiff Kameras und Sensoren, um Ihre Bewegungen auf dem Schiff und Ihre Interaktion mit anderen zu verfolgen? Muss das Schiff wirklich wissen, ob sich jemand zufällig in der Kabine eines anderen aufhält? Auch wenn dies wohl der Sicherheit dient, muss es Möglichkeiten geben, die Sicherheit der Passagiere zu gewährleisten, ohne die Privatsphäre zu gefährden."
       ],
       "q1": {
-        "text": "Does the privacy notice state that the ship will collect information about dietary restrictions?",
+        "text": "Steht in der Datenschutzerklärung, dass das Schiff Informationen über diätetische Einschränkungen sammelt?",
         "options": [
-          "Yes",
-          "No"
+          "Ja",
+          "Nein"
         ]
       },
       "q2": {
-        "text": "Based on the privacy notice, should the waiter’s notes have been shared with the passengers?",
+        "text": "Hätten die Notizen des Kellners aufgrund des Datenschutzhinweises an die Passagiere weitergegeben werden müssen?",
         "options": [
-          "Yes",
-          "No"
+          "Ja",
+          "Nein"
         ]
       }
     }
   },
-  "player": "Player",
-  "finish": "Finish",
-  "upload_photo": "Upload photo",
-  "hide": "Hide",
-  "receptionist": "Receptionist",
-  "privacy_notice": "Privacy Notice",
-  "wrong-response": "Wrong Response!",
-  "wrong-response-desc": "You've selected an incorrect response, please try again",
-  "wrong-response-hint": "Really? It’s fine? Remember the concerns the other passengers shared...",
+  "player": "Spieler",
+  "finish": "Ende",
+  "upload_photo": "Foto hochladen",
+  "hide": "Ausblenden",
+  "receptionist": "Rezeptionist/in",
+  "privacy_notice": "Hinweis zum Datenschutz",
+  "wrong-response": "Falsche Antwort!",
+  "wrong-response-desc": "Sie haben eine falsche Antwort ausgewählt, bitte versuchen Sie es erneut",
+  "wrong-response-hint": "Wirklich? Ist das in Ordnung? Denken Sie an die Bedenken der anderen Passagiere...",
   "ok": "OK",
-  "click-to-open-privacy-notice": "Click to open Privacy Notice",
-  "restart": "Restart",
+  "click-to-open-privacy-notice": "Klicken Sie hier, um den Datenschutzhinweis zu öffnen",
+  "restart": "Neustart",
   "restart-game": {
-    "title": "Restart Game",
-    "hint": "Are you sure you want to restart the game?",
-    "action": "Yes, restart!"
+    "title": "Spiel neu starten",
+    "hint": "Sind Sie sicher, dass Sie das Spiel neu starten möchten?",
+    "action": "Ja, neu starten!"
   },
-  "top-scores": "Top Scores",
-  "passport-number": "Passport number",
-  "voyage-date": "Voyage date",
-  "cabin": "Cabin",
-  "enter-the-code": "Enter the code"
+  "top-scores": "Höchste Punktzahlen",
+  "passport-number": "Reisepassnummer",
+  "voyage-date": "Datum der Reise",
+  "cabin": "Kabine",
+  "enter-the-code": "Den Code eingeben"
 }

@@ -1,267 +1,267 @@
 ﻿{
-  "franklin": "Franklin",
-  "carla-thought": "Carla’s thinking",
-  "yuri-thought": "Yuri’s thinking",
-  "dave-thought": "Dave’s thinking",
-  "player-is-thinking": "Player is thinking",
-  "confirm": "Confirm",
-  "call-franklin": "Call Franklin",
-  "submit": "Submit",
-  "accept": "Accept",
-  "previous": "Previous",
-  "back_to_menu": "Back to menu",
-  "score": "Score",
-  "phone": "Phone",
-  "country": "Country",
-  "countries_scores": "The 5 countries with the highest scores",
-  "lets-go": "Let's go",
+  "franklin": "Франклин",
+  "carla-thought": "Размышления Карлы",
+  "yuri-thought": "Размышления Юрия",
+  "dave-thought": "Размышления Дэйва",
+  "player-is-thinking": "Игрок думает",
+  "confirm": "Подтвердить",
+  "call-franklin": "Позвонить Франклину",
+  "submit": "Отправить",
+  "accept": "Принять",
+  "previous": "Предыдущий",
+  "back_to_menu": "Назад к меню",
+  "score": "Оценка",
+  "phone": "Телефон",
+  "country": "Страна",
+  "countries_scores": "5 стран с самыми высокими оценками",
+  "lets-go": "Поехали",
   "cookies": {
-    "title": "Privacy & Cookie Notice",
+    "title": "Уведомление о конфиденциальности и файлах cookie",
     "text": [
       {
-        "title": "Purpose",
-        "description": "This website contains an escape-room game with a survey and country competition related to privacy. It has been created by your employer to raise awareness and knowledge related to privacy and improve the privacy program and increase awareness within your company."
+        "title": "Цель",
+        "description": "Этот сайт содержит игру escape-room с опросом и соревнованием между странами, связанную с конфиденциальностью. Сайт был создан Вашим работодателем для повышения осведомленности и улучшения знаний, связанных с конфиденциальностью, а также для улучшения программы конфиденциальности и повышения осведомленности в Вашей компании."
       },
       {
-        "title": "Voluntary basis",
-        "description": "Please note that participation in this game is on a voluntary basis. There is no obligation to participate. Non-participation will not have any adverse effects on your employment relationship."
+        "title": "Добровольная основа",
+        "description": "Обратите внимание, что участие в этой игре является добровольным. Участие в конкурсе не является обязательным. Неучастие не будет иметь никаких негативных последствий для Ваших трудовых отношений."
       },
       {
-        "title": "Anonymized data",
-        "description": "Within the game only anonymized data is processed. Your employer cannot make any reference to or identification of specific employees. For the purpose of being able to provide you news on the results of the country-competition or react to your provided feedback on our game, you can voluntarily provide your work-email-address at the end of the game. In this case an identification would be possible. Please note that, in cases of small teams or country operations, your employer may be able to identify you if less than five people have the same division or organizational unit, job function, and work country. Your employer will process the data consistent with its privacy policy and associate notice, including not intentionally identifying you and taking reasonable measures, as appropriate, to prevent identification."
+        "title": "Анонимизированные данные",
+        "description": "В рамках игры обрабатываются только анонимизированные данные. Ваш работодатель не может ссылаться на конкретных сотрудников или идентифицировать их. Для того чтобы иметь возможность сообщать Вам новости о результатах соревнования стран или реагировать на Ваши отзывы о нашей игре, Вы можете добровольно указать свой рабочий адрес электронной почты в конце игры. В этом случае возможна идентификация. Обратите внимание, что в случаях небольших коллективов или оперативных подразделений в стране, Ваш работодатель может быть в состоянии идентифицировать Вас, если менее пяти человек относятся к одинаковым подразделениям или организационным единицам, имеют одинаковые должностные функции и работают в одной стране. Ваш работодатель будет обрабатывать данные в соответствии со своей политикой конфиденциальности и ассоциированным уведомлением, включая отказ от намеренной идентификации Вас и принятие разумных мер в случае необходимости для предотвращения идентификации."
       },
       {
         "title": "Cookies",
-        "description": "This website only processes strictly necessary cookies. These cookies are necessary for the website to function and cannot be switched off in our systems. They are usually only set in response to actions made by you which amount to a request for services, such as setting your privacy preferences, logging in or filling in forms. You can set your browser to block or alert you about these cookies, but some parts of the site will not then work. These cookies do not store any personally identifiable information."
+        "description": "Данный сайт обрабатывает только строго необходимые файлы cookie. Эти файлы cookie необходимы для функционирования сайта и не могут быть отключены в наших системах. Обычно они устанавливаются только в ответ на Ваши действия, которые равносильны запросу на услуги, такие как установка Ваших предпочтений конфиденциальности, вход в систему или заполнение форм. Вы можете настроить свой браузер на блокировку или предупреждение о таких файлах cookie, но тогда некоторые части сайта не будут работать. Эти файлы cookie не хранят никакой персонально идентифицируемой информации."
       },
       {
-        "title": "Legal basis and contact",
-        "description": "In case your personal data is processed, the legal basis for the data processing would be the necessity for the purposes of legitimate interests. For more detailed information with regards data processing in your working environment and your data privacy rights (e.g., right to object) please find the local privacy notices for employees or contact your local data privacy team."
+        "title": "Правовая основа и контакт",
+        "description": "В случае обработки Ваших персональных данных, правовым основанием для обработки данных будет являться необходимость в целях соблюдения законных интересов. Для получения более подробной информации относительно обработки данных в Вашей рабочей среде и Ваших прав на конфиденциальность данных (например, право на возражение) уточните местные уведомления о конфиденциальности для сотрудников или обратитесь в местную команду по конфиденциальности данных."
       }
     ]
   },
   "task-name": {
-    "1": "Reception",
-    "2": "Dining Room",
-    "3": "Your Cabin",
-    "4": "Game Room",
-    "5": "Your Cabin",
-    "6": "Captain's Bridge"
+    "1": "Регистрация",
+    "2": "Столовая",
+    "3": "Ваша каюта",
+    "4": "Игровая комната",
+    "5": "Ваша каюта",
+    "6": "Капитанский мостик"
   },
   "fullscreen-hint": {
-    "title": "Fullscreen",
-    "text": "It's recommended to play the game in fullscreen mode, Would you like to try it now?"
+    "title": "Полный экран",
+    "text": "Рекомендуется играть в игру в полноэкранном режиме. Хотите попробовать прямо сейчас?"
   },
-  "enable": "Enable",
-  "validate": "Validate",
-  "cancel": "Cancel",
-  "hint-title": "Hint",
-  "take_a_photo": "Take a photo",
-  "continue": "Continue",
-  "name": "Name",
-  "address": "Address",
-  "cabin_number": "Cabin number",
-  "age": "Age",
-  "nationality": "Nationality",
-  "and": "and",
+  "enable": "Включить",
+  "validate": "Проверить",
+  "cancel": "Отмена",
+  "hint-title": "Подсказка",
+  "take_a_photo": "Сделайте фото",
+  "continue": "Продолжить",
+  "name": "Имя",
+  "address": "Адрес",
+  "cabin_number": "Номер каюты",
+  "age": "Возраст",
+  "nationality": "Национальность",
+  "and": "и",
   "hints": {
     "splash": [
-      "Select your language to proceed"
+      "Выберите язык, чтобы продолжить"
     ],
     "map": [
-      "Active room will have a glowing circle above its name"
+      "Активная комната будет иметь светящийся круг над своим названием"
     ],
     "italy": [
-      "Complete the survey"
+      "Заполните опрос"
     ],
     "egypt": [
-      "Waiter will give you a menu, check if you see any concerns.",
-      "After checking, you can safely click on next to proceed to next steps"
+      "Официант даст Вам меню. Проверьте, нет ли у Вас каких-либо проблем в отношении предлагаемой еды.",
+      "После проверки Вы можете смело нажать кнопку next, чтобы перейти к следующим шагам"
     ],
     "brazil": [],
     "china": [
-      "Read the note, then search the room to find the 5 privacy principles and their explanations.",
-      "After you have found them all, you will unlock the privacy notice."
+      "Прочитайте записку, а затем исследуйте комнату, чтобы найти 5 принципов конфиденциальности и их разъяснения.",
+      "После того как Вы найдете их все, Вы разблокируете уведомление о конфиденциальности."
     ],
     "usa": [],
     "russia": []
   },
-  "start_game": "Meet Franklin",
-  "skip": "Skip",
-  "wall": "Room Selector",
+  "start_game": "Знакомство с Франклином",
+  "skip": "Пропустить",
+  "wall": "Селектор комнат",
   "map-email": {
     "text": [
-      "This is your room selector. Rooms order is mandatory. Active room has a glowing circle above its name."
+      "Это Ваш селектор комнат. Порядок комнат является обязательным. Активная комната имеет светящийся круг над своим названием."
     ]
   },
   "wall-steps": [
-    "Ship Map",
-    "Here is a map of the cruise ship. Click Start and then click the room marked by the glowing circle."
+    "План корабля",
+    "Вот план круизного корабля. Нажмите «Пуск», а затем нажмите на комнату, отмеченную светящимся кругом."
   ],
-  "start": "Start",
+  "start": "Начало",
   "orientation-hint": {
-    "title": "Landscape is required",
-    "text": "Playing the game in portrait mode is not possible, please rotate your device to landscape mode."
+    "title": "Требуется ландшафтный режим",
+    "text": "Играть в игру в портретном режиме невозможно, пожалуйста, поверните Ваше устройство в ландшафтный режим."
   },
-  "map": "Map",
+  "map": "План",
   "back-to-map": {
-    "text": "Do you want to back to room selector?"
+    "text": "Хотите ли Вы вернуться к селектору комнат?"
   },
   "speeches": {
     "splash": {
       "1": [
-        "Welcome aboard!",
-        "I am Franklin, an AI-powered robot and your concierge on this voyage."
+        "Добро пожаловать на борт!",
+        "Я Франклин, робот с искусственным интеллектом и Ваш консьерж в этом путешествии."
       ],
       "2": [
-        "Please follow me aboard so I can show you around the ship."
+        "Пожалуйста, следуйте за мной на борт, чтобы я мог показать Вам корабль."
       ]
     },
     "italy": {
       "1": [
-        "Greetings!",
-        "Our ship features the most cutting-edge, digital technology available on the high seas. We trust this will make for a memorable vacation!",
-        "Before we set sail, we need you to scan your passport, share any dietary restrictions we should know about, and complete a quick survey."
+        "Приветствую!",
+        "Наш корабль оснащен самыми современными цифровыми технологиями, доступными в открытом море. Мы убеждены, что это станет для Вас незабываемым отдыхом!",
+        "Прежде чем мы отправимся в плавание, нам нужно, чтобы Вы отсканировали свой паспорт, рассказали нам о своих ограничениях в диете, о которых мы должны знать, и заполнили краткий опросник."
       ]
     },
     "egypt": {
       "1": [
-        "You have been assigned to a table with 3 other guests. Please take a look at the menu and whet your appetite!"
+        "За Вами закреплен стол с 3 другими гостями. Пожалуйста, ознакомьтесь с меню и нагуляйте аппетит!"
       ],
       "2": [
-        "I’m only 2 months pregnant and not showing.",
-        "I don’t want people to know I’m pregnant yet, and sharing that I’m not drinking may reveal that."
+        "Я нахожусь всего на 2-м месяце беременности и не показываюсь на людях.",
+        "Я пока не хочу, чтобы все узнали, что я беременна, а то, что я не употребляю спиртное, может выдать меня."
       ],
       "3": [
-        "I developed diabetes as a child and have to be very careful with what I eat, but I don’t tell people about this.",
-        "It’s something I tend to keep private. I wonder if the others will suspect my medical condition."
+        "В детстве у меня развился сахарный диабет, и мне приходится быть очень осторожным при выборе еды, но я никому не рассказываю об этом.",
+        "Это то, что я стараюсь держать в тайне. Интересно, заподозрят ли остальные мое заболевание?"
       ],
       "4": [
-        "I know that in some parts of the world, people are discriminated against based on religion, by sharing that I keep kosher, now everyone knows I’m Jewish."
+        "Я знаю, что в некоторых частях мира люди подвергаются дискриминации по религиозному признаку, а так как я сказал, что употребляю только кошерную пищу, теперь все знают, что я еврей."
       ],
       "5": [
-        "Well done!",
-        "This is indeed private information, and the waiter should not have shared these notes with your fellow passengers. Let‘s see how they feel about the situation."
+        "Молодец!",
+        "Это действительно частная информация, и официант не должен был показывать эти записи Вашим соседям-пассажирам. Давайте посмотрим, как они относятся к этой ситуации."
       ]
     },
     "brazil": {
       "1": [
-        "Please scan your face in order to enter game room.",
-        "We are very innovative and use technology as much as possible, so when you gave us your passport at registration, we automatically uploaded your passport photo to our facial recognition software so we can control access to the VIP game room!"
+        "Пожалуйста, отсканируйте свое лицо, чтобы войти в игровую комнату.",
+        "Мы привержены инновациям и используем технологии по максимуму, поэтому, когда Вы отдали нам свой паспорт при регистрации, мы автоматически загрузили фотографию Вашего паспорта в нашу программу распознавания лиц, чтобы мы могли контролировать доступ в игровую VIP-комнату!"
       ]
     },
     "china": {
       "1": [
-        "That lunch menu was weird, wasn’t it?",
-        "Why don’t you take a look at the ship’s privacy notice to see whether it was appropriate to collect and share dietary restrictions with other passengers.",
-        "You may also want to hunt for the privacy principles that Captain Maria mentioned so you know what to look for in the notice."
+        "Это меню обеда было странным, не так ли?",
+        "Почему бы Вам не заглянуть в уведомление о конфиденциальности на корабле, чтобы понять, уместно ли было собирать информацию о диетических ограничениях и делиться ею с другими пассажирами.",
+        "Возможно, Вы также захотите найти те принципы конфиденциальности, о которых упоминала капитан Мария, чтобы знать, на что обратить внимание в уведомлении."
       ],
       "2": [
-        "I heard some noise in here.",
-        "Is everything okay?"
+        "Я слышала здесь какой-то шум.",
+        "Все ли в порядке?"
       ],
       "3": [
-        "Passengers’ dietary information was shared with other passengers. This was not disclosed in the privacy notice and is a problem!"
+        "Информация о диетических ограничениях пассажиров была доступна другим пассажирам. Это не было включено в уведомление о конфиденциальности, и это является проблемой!"
       ],
       "4": [
-        "Hmmmm. That seems unlikely.",
-        "Captain Maria takes privacy seriously.",
-        "Why don’t you go to the VIP game room to relax and take your mind off your worries. You are on vacation and should not worry about such things after all!"
+        "Хммм. Это кажется маловероятным.",
+        "Капитан Мария серьезно относится к вопросам конфиденциальности.",
+        "Почему бы Вам не пойти в игровую VIP-комнату, чтобы расслабиться и отвлечься от забот. Вы находитесь в отпуске и не должны беспокоиться о таких вещах, в конце концов!"
       ],
       "5": [
-        "Everything is fine!"
+        "Все в порядке!"
       ]
     },
     "usa": {
       "1": [
-        "That situation in the game room was very uncomfortable, wasn’t it?",
-        "Look at the privacy notice again to understand whether what happened in the game room was legit."
+        "Та ситуация в игровой комнате была очень неудобной, не так ли?",
+        "Просмотрите еще раз уведомление о конфиденциальности, чтобы понять, соответствует ли правилам то, что произошло в игровой комнате."
       ],
       "2": [
-        "Good job!",
-        "You answered all the questions correctly, which means you have figured out that the ship is not responsibly handling personal information.",
-        "What can you do about it?"
+        "Хорошая работа!",
+        "Вы правильно ответили на все вопросы, а это значит, что Вы поняли, что команда корабля не несет ответственности за обработку личной информации.",
+        "Что Вы можете с этим сделать?"
       ],
       "3": [
-        "Aha! The notice is torn – maybe the rest of it is hidden in the room."
+        "Ага! Уведомление порвано: возможно, другая часть спрятана в комнате."
       ]
     },
     "russia": {
       "1": [
-        "Hello – so nice to finally meet you!"
+        "Здравствуйте! Так приятно наконец-то познакомиться с Вами!"
       ],
       "2": [
-        "I’d like to exercise my privacy rights.",
-        "I’m not happy with what the ship is doing with my personal information."
+        "Я хотел бы воспользоваться своими правами на конфиденциальность.",
+        "Я недоволен тем, как на корабле обращаются с моей личной информацией."
       ]
     }
   },
   "screens": {
     "login": {
-      "label": "Please enter your access code",
-      "input-label": "Code",
-      "incorrect-password": "Incorrect code, Please try again"
+      "label": "Пожалуйста, введите Ваш код доступа",
+      "input-label": "Код",
+      "incorrect-password": "Неверный код, пожалуйста, попробуйте еще раз"
     },
     "italy": {
-      "title": "The survey",
-      "a1": "Welcome aboard! Participation in this game and the survey is completely voluntary. If you choose not to participate, it will not have any adverse effect on your employment relationship."
+      "title": "Опрос",
+      "a1": "Добро пожаловать на борт! Участие в этой игре и опросе является полностью добровольным. Если Вы решите не участвовать, это не окажет никакого негативного влияния на Ваши трудовые отношения."
     },
     "egypt": {
-      "title": "Lunch Menu",
-      "a1": "Waiter will give you the menu now, check if you see any concerns"
+      "title": "Меню обеда",
+      "a1": "Официант сейчас передаст Вам меню. Проверьте, нет ли у Вас каких-либо вопросов"
     },
     "brazil": {
-      "title": "The mini-game",
-      "a1": "Please take a picture of your face in order to enter game room.",
+      "title": "Мини-игра",
+      "a1": "Пожалуйста, сфотографируйте свое лицо, чтобы пройти в игровую комнату.",
       "a2": [
-        "Well done! The privacy notice was not very transparent.",
-        "Why don‘t you take a break and try out our latest game..."
+        "Молодец! Уведомление о конфиденциальности было не очень понятным.",
+        "Почему бы Вам не сделать перерыв и не попробовать поиграть в нашу последнюю игру..."
       ]
     },
     "china": {
-      "title": "Look at that!",
-      "title2": "Take another look!",
-      "a1": "You've found a note from a mysterious person.",
-      "a2": "Is there any data that the ship is collecting that makes you uncomfortable? If so, ask yourself whether collecting it seems necessary, and if not, click on it! "
+      "title": "Посмотрите на это!",
+      "title2": "Посмотрите еще раз!",
+      "a1": "Вы нашли записку от таинственного человека.",
+      "a2": "Есть ли какие-то данные, собираемые на корабле, которые вызывают у Вас дискомфорт? Если да, спросите себя, кажется ли Вам необходимым собирать их, и, если нет, нажмите на них!"
     },
     "usa": {
       "games": {
         "1": {
-          "title": "Missing Piece game",
-          "a1": "You have to find the privacy notice in this room."
+          "title": "Игра «Пропавший фрагмент»",
+          "a1": "В этой комнате Вы должны найти уведомление о конфиденциальности."
         },
         "2": {
-          "a1": "You can call Franklin to take you to see Captain Maria.",
+          "a1": "Вы можете позвонить Франклину, чтобы он проводил Вас к капитану Марии.",
           "steps": {
             "1": {
-              "title": "This is a bit confusing – it’s not clear that Franklin is saying leave Maria alone and that the user is ignoring that.",
-              "next": "I insist to see Captain Maria"
+              "title": "Это немного запутанно: неясно, что Франклин говорит оставить Марию в покое и что пользователь игнорирует это.",
+              "next": "Я настаиваю на встрече с капитаном Марией"
             }
           }
         }
       },
-      "look-around": "Look around the room and try to find the missing piece of the privacy notice."
+      "look-around": "Осмотрите комнату и попытайтесь найти недостающий фрагмент уведомления о конфиденциальности."
     },
     "russia": {
-      "title": "Captain's Cabin",
-      "a1": "You're going to have a conversation with <b>Capitan Maria</b>.",
+      "title": "Каюта капитана",
+      "a1": "Вам предстоит разговор с <b>капитаном Марией</b>.",
       "games": {
         "1": {
-          "title": "Puzzle game",
-          "a1": "You have to assemble a puzzle of 16 pieces, which will result in the image of the captain and at the same time the entry code to the cabin."
+          "title": "Пазл",
+          "a1": "Вам предстоит собрать пазл из 16 фрагментов, в результате чего получится изображение капитана и одновременно код входа в каюту."
         }
       }
     }
   },
-  "next": "Next",
+  "next": "Следующий",
   "italy": {
     "questions-titles": {
-      "1": "When using a digital device for personal reasons how often do you?",
-      "6": "Which of the following fall within the Novartis definition of ‘Personal Information’? (select all that apply)",
-      "7": "Are you familiar with the following?",
-      "12": "At work, do you?",
-      "16": "Select job function",
-      "17": "Country"
+      "1": "Как часто Вы используете цифровое устройство в личных целях?",
+      "6": "Что из нижеперечисленного подпадает под определение «личной информации» в компании Novartis? (Выберите все, что применимо.)",
+      "7": "Знакомы ли Вы со следующим?",
+      "12": "На работе?",
+      "16": "Выберите должностные обязанности",
+      "17": "Страна"
     },
     "questions-indexes": {
       "1": "1",
@@ -274,177 +274,177 @@
     "questions": {
       "1": {
         "title": "1",
-        "label": "Read a privacy notice or policy?",
+        "label": "Вы знакомитесь с уведомлением о конфиденциальности или политикой конфиденциальности?",
         "options": [
-          "Always",
-          "Often",
-          "Occasionally",
-          "Rarely",
-          "Never"
+          "Всегда",
+          "Часто",
+          "Время от времени",
+          "Редко",
+          "Никогда"
         ]
       },
       "2": {
         "title": "1",
-        "label": "Customize cookie settings?",
+        "label": "Настраиваете параметры cookie?",
         "options": [
-          "Always",
-          "Often",
-          "Occasionally",
-          "Rarely",
-          "Never"
+          "Всегда",
+          "Часто",
+          "Время от времени",
+          "Редко",
+          "Никогда"
         ]
       },
       "3": {
         "title": "1",
-        "label": "Customize other privacy settings (like how your information can be used)?",
+        "label": "Настраиваете другие параметры конфиденциальности (например, как может быть использована Ваша информация)?",
         "options": [
-          "Always",
-          "Often",
-          "Occasionally",
-          "Rarely",
-          "Never"
+          "Всегда",
+          "Часто",
+          "Время от времени",
+          "Редко",
+          "Никогда"
         ]
       },
       "4": {
         "title": "1",
-        "label": "Try to enter as little information as needed?",
+        "label": "Стараетесь вводить как можно меньше информации?",
         "options": [
-          "Always",
-          "Often",
-          "Occasionally",
-          "Rarely",
-          "Never"
+          "Всегда",
+          "Часто",
+          "Время от времени",
+          "Редко",
+          "Никогда"
         ]
       },
       "5": {
         "title": "1",
-        "label": "Save credit card details or other Personal Information to your browser?",
+        "label": "Сохраняете данные кредитной карты или другую личную информацию в своем браузере?",
         "options": [
-          "Always",
-          "Often",
-          "Occasionally",
-          "Rarely",
-          "Never"
+          "Всегда",
+          "Часто",
+          "Время от времени",
+          "Редко",
+          "Никогда"
         ]
       },
       "6": {
         "title": "6",
         "label": "",
         "options": [
-          "Phone number",
-          "Birthday",
-          "Home address",
-          "Information which combined could only identify one person on the planet, even if you don’t know their name (for example, country, college, employer, and age range)",
-          "GPS coordinates over time",
-          "Government identifier",
-          "IP address",
-          "Medical records",
-          "Anonymized data ",
+          "Номер телефона",
+          "День рождения",
+          "Домашний адрес",
+          "Информация, которая в совокупности может идентифицировать только одного человека на планете, даже если Вы не знаете его имени (например, страна, колледж, работодатель и возрастной диапазон)",
+          "GPS-координаты с течением времени",
+          "Правительственный идентификатор",
+          "IP-адрес",
+          "Медицинская документация",
+          "Анонимизированные данные",
           "Cookies"
         ]
       },
       "7": {
         "title": "7",
-        "label": "The Novartis Data Privacy Policy?",
+        "label": "Политика конфиденциальности данных компании Novartis?",
         "options": [
-          "Yes",
-          "No"
+          "Да",
+          "Нет"
         ]
       },
       "8": {
         "title": "7",
-        "label": "Our Data Privacy Principles?",
+        "label": "Наши Принципы конфиденциальности данных?",
         "options": [
-          "Yes",
-          "No"
+          "Да",
+          "Нет"
         ]
       },
       "9": {
         "title": "7",
-        "label": "Who to contact for data privacy support?",
+        "label": "К кому обращаться за поддержкой по вопросам конфиденциальности данных?",
         "options": [
-          "Yes",
-          "No"
+          "Да",
+          "Нет"
         ]
       },
       "10": {
         "title": "7",
-        "label": "When to apply the Privacy Principles?",
+        "label": "Когда применять Принципы конфиденциальности?",
         "options": [
-          "Yes",
-          "No"
+          "Да",
+          "Нет"
         ]
       },
       "11": {
         "title": "7",
-        "label": "What to do if you become aware of a data privacy incident?",
+        "label": "Что делать, если Вам стало известно об инциденте, связанном с конфиденциальностью данных?",
         "options": [
-          "Yes",
-          "No"
+          "Да",
+          "Нет"
         ]
       },
       "12": {
         "title": "12",
-        "label": "Report when you receive Personal Information you should not receive in your role?",
+        "label": "Вы сообщаете о том, что получили Личную информацию, которую не должны получать в Вашей должности?",
         "options": [
-          "Always",
-          "Often",
-          "Occasionally",
-          "Rarely",
-          "Never",
-          "Not applicable"
+          "Всегда",
+          "Часто",
+          "Время от времени",
+          "Редко",
+          "Никогда",
+          "Неприменимо"
         ]
       },
       "13": {
         "title": "12",
-        "label": "Check the Novartis Data Privacy Policy when you have questions about handling  Personal Information?",
+        "label": "Вы знакомитесь с Политикой конфиденциальности данных компании Novartis, если у Вас возникают вопросы по работе с личной информацией?",
         "options": [
-          "Always",
-          "Often",
-          "Occasionally",
-          "Rarely",
-          "Never",
-          "Not applicable"
+          "Всегда",
+          "Часто",
+          "Время от времени",
+          "Редко",
+          "Никогда",
+          "Неприменимо"
         ]
       },
       "14": {
         "title": "12",
-        "label": "Contact the privacy team if you cannot address a privacy-related question yourself?",
+        "label": "Вы обращаетесь в отдел по вопросам конфиденциальности, если не можете самостоятельно решить вопрос, связанный с конфиденциальностью?",
         "options": [
-          "Always",
-          "Often",
-          "Occasionally",
-          "Rarely",
-          "Never",
-          "Not applicable"
+          "Всегда",
+          "Часто",
+          "Время от времени",
+          "Редко",
+          "Никогда",
+          "Неприменимо"
         ]
       },
       "15": {
         "title": "12",
-        "label": "Seek to collect as little information as possible when creating a survey, registration, or other form?",
+        "label": "Стремитесь ли вы собрать как можно меньше информации при создании анкеты, регистрационной или другой формы?",
         "options": [
-          "Always",
-          "Often",
-          "Occasionally",
-          "Rarely",
-          "Never",
-          "Not applicable"
+          "Всегда",
+          "Часто",
+          "Время от времени",
+          "Редко",
+          "Никогда",
+          "Неприменимо"
         ]
       },
       "16": {
         "title": "16",
         "label": "",
         "options": [
-          "Marketing",
-          "Patient Support & Services",
-          "Research & Development",
-          "Sales",
-          "Other"
+          "Маркетинг",
+          "Поддержка и обслуживание пациентов",
+          "Исследования и разработки",
+          "Продажи",
+          "Другое"
         ]
       },
       "17": {
         "title": "17",
-        "label": "Select your country",
+        "label": "Выберите свою страну",
         "options": []
       }
     }
@@ -452,182 +452,182 @@
   "egypt": {
     "questions": {
       "1": {
-        "label": "Do you see any concerns with the waiter’s handwritten notes on the menu?",
+        "label": "Видите ли Вы какие-либо проблемы в отношении рукописных пометок официанта в меню?",
         "options": [
-          "Not at all, he is taking care of the guests' wishes ",
-          "Yes – he should also include their last names to be on the safe side ",
-          "Yes – it feels like this is private information that should not have been shared"
+          "Вовсе нет, он заботится о выполнении желаний гостей",
+          "Да, он должен также указать их фамилии на всякий случай",
+          "Да, я считаю, что это частная информация, которую не следовало бы разглашать"
         ]
       },
       "2": {
-        "label": "You realize that Carla, Yuri, and Dave look uncomfortable and decide that you should speak up to Franklin. What should you make him aware of?",
+        "label": "Вы понимаете, что Карла, Юрий и Дэйв чувствуют себя неловко, и решаете, что Вам следует поговорить с Франклином. О чем Вы должны его предупредить?",
         "options": [
-          "Passengers don’t need to know each other’s dietary restrictions.",
-          " By including the waiter’s notes on the menu, passengers’ health conditions and/or religious affiliations were likely revealed.",
-          "Information about health and religion is a type of Personal Information, and it can be considered sensitive in many countries.",
-          "All of the above"
+          "Пассажирам не нужно знать диетические ограничения друг друга.",
+          "По сделанным в меню пометкам официанта можно было узнать о состоянии здоровья пассажиров и/или их религиозной принадлежности.",
+          "Информация о здоровье и религиозной принадлежности является одним из видов личной информации, и во многих странах она может считаться конфиденциальной.",
+          "Все вышеперечисленное"
         ]
       }
     }
   },
   "brazil": {
     "validated-photo": [
-      "Good news!",
-      "The photo we just took of you was verified by our facial recognition software."
+      "Хорошие новости!",
+      "Ваша фотография, которую мы только что сделали, была проверена нашей программой распознавания лиц."
     ],
     "smile-photo": [
-      "Please follow me inside. Don’t forget to smile, we have cameras throughout the game room!"
+      "Пожалуйста, следуйте за мной внутрь. Не забудьте улыбнуться, у нас есть камеры по всей игровой комнате!"
     ],
     "questions": {
       "1": {
-        "label": "Did it say your passport photo would be taken and used to control access to parts of the ship?",
+        "label": "Сообщалось ли там, что Ваша фотография в паспорте будет сделана и использована для контроля доступа к частям корабля?",
         "options": [
-          "Yes",
-          "No"
+          "Да",
+          "Нет"
         ]
       },
       "2": {
-        "label": "Does it clearly explain that facial recognition would be used?",
+        "label": "Предупреждали ли Вас, что будет использоваться распознавание лиц?",
         "options": [
-          "Yes",
-          "No"
+          "Да",
+          "Нет"
         ],
-        "link": "Review privacy notice",
-        "text": "That camera flash was bright and you find yourself feeling a bit confused. You read the privacy notice carefully, but . ."
+        "link": "Еще раз прочитайте уведомление о конфиденциальности",
+        "text": "Вспышка фотоаппарата была яркой, и Вы чувствуете себя немного растерянным. Вы внимательно прочитали уведомление о конфиденциальности, но . ."
       },
       "3": {
-        "label": "Look at the privacy notice again – does it clearly explain that facial recognition would be used?",
+        "label": "Прочитайте еще раз уведомление о конфиденциальности: указывается ли в нем четко, что будет использоваться распознавание лиц?",
         "options": [
-          "Yes",
-          "No"
+          "Да",
+          "Нет"
         ]
       }
     },
     "mini_game": {
-      "title": "Franklin",
-      "description": "Now's your chance to knock out some of those cameras you were concerned about. You have 30 seconds to hit cameras. For every camera clicked during a 30-second run you will get 50 points. You can repeat the game up to 5 times",
-      "score": "Your score is: <strong> {score} points.</strong>",
-      "points": "points",
-      "high_score": "High score:",
-      "seconds": "seconds",
-      "ranking": "Congratulations! You have the highest score.",
-      "statistics": "Statistics of former players:"
+      "title": "Франклин",
+      "description": "Теперь у Вас есть шанс избавиться от некоторых из тех камер, о которых Вы беспокоились. У Вас есть 30 секунд, чтобы попасть в камеры. За каждую камеру, по которой вы успели щелкнуть во время 30-секундного раунда, Вы получите 50 очков. Вы можете повторить игру до 5 раз",
+      "score": "Ваш результат: <strong>{score} очков.</strong>",
+      "points": "очки",
+      "high_score": "Высокий результат:",
+      "seconds": "секунд",
+      "ranking": "Поздравляем! У Вас самый высокий результат.",
+      "statistics": "Статистика предыдущих игроков:"
     },
     "welcome-to-game-room": [
-      "Welcome to the game room.",
-      "Here you can see the result of all countries. Try to get the highest score possible in the game to contribute to your country‘s score."
+      "Добро пожаловать в игровую комнату.",
+      "Здесь Вы можете увидеть результат по всем странам. Постарайтесь набрать как можно больше очков в игре, чтобы внести свой вклад в результат Вашей страны."
     ],
     "scoreboard-questions": [
       {
-        "label": "The scoreboard shows your photo and other identifying information which will be available for current and future voyageurs to see. Does this make you uncomfortable?",
+        "label": "На табло отображается Ваша фотография и другая идентифицирующая информация, которую смогут увидеть нынешние и будущие путешественники. Это вызывает у Вас дискомфорт?",
         "options": [
-          "Yes",
-          "No"
+          "Да",
+          "Нет"
         ]
       },
       {
-        "label": "Looking more closely at the scoreboard, you see that it has scores going back as far as 2013, suggesting that your information could be posted there for years to come. Does this make you uncomfortable?",
+        "label": "Посмотрев внимательнее на табло, Вы видите, что там есть результаты начиная с 2013 года. Это говорит о том, что Ваша информация может быть размещена там еще долгие годы. Это вызывает у Вас дискомфорт?",
         "options": [
-          "Yes",
-          "No"
+          "Да",
+          "Нет"
         ]
       },
       {
-        "label": "Can you think of a privacy-friendly way to handle the scoreboard?",
+        "label": "Можете ли Вы придумать соответствующий принципам конфиденциальности способ работы с табло?",
         "options": [
-          "Yes",
-          "No"
+          "Да",
+          "Нет"
         ]
       }
     ]
   },
   "usa": {
     "intro": {
-      "player-thinking": "This doesn’t seem right. What can I do?"
+      "player-thinking": "Мне кажется, это неправильно. Что я могу сделать?"
     },
     "hints": {
-      "phone-questions": "Click on the internet browsing icon.",
+      "phone-questions": "Нажмите на значок просмотра Интернета.",
       "missing-piece": {
         "1": [
-          "Find the missing piece of the privacy notice",
-          "Have you looked under the carpet yet?"
+          "Найдите недостающий фрагмент уведомления о конфиденциальности",
+          "Вы уже заглянули под ковер?"
         ],
         "2": [
-          "Click at the missing piece of the privacy notice."
+          "Нажмите на недостающий фрагмент уведомления о конфиденциальности."
         ]
       }
     },
     "instructions": {
-      "phone-questions": "Mark useful articles that could possibly help you."
+      "phone-questions": "Отметьте полезные статьи, которые, возможно, помогут Вам."
     },
-    "score-board-inline": "No problem. I’ll take you to the captain’s cabin. Please follow me.",
+    "score-board-inline": "Нет проблем. Я отведу Вас в каюту капитана. Пожалуйста, следуйте за мной.",
     "privacy-questions": [
       {
-        "label": "Let’s reflect on what happened in game room in light of what the privacy notice says: <br /> <br /> Captain Maria shared the principle of being transparent. That means that the ship should have let you know in the privacy notice that your information might be shared on the scoreboard. Is there anything in the notice about that?",
+        "label": "Давайте подумаем о том, что произошло в игровой комнате, в свете того, что говорится в уведомлении о конфиденциальности: <br /> <br /> Капитан Мария рассказала о принципе транспарентности. Этот принцип означает, что на корабле Вам должны были сообщить в уведомлении о конфиденциальности, что Ваша информация может быть передана на табло. Есть ли что-нибудь об этом в уведомлении?",
         "options": [
-          "Yes",
-          "No"
+          "Да",
+          "Нет"
         ]
       },
       {
-        "label": "She also shared the principle of not retaining information longer than necessary. The privacy notice doesn’t say anything about how long they keep your information, but based on the scoreboard, it looks like they have stored it for at least 10 years! Does that seem necessary?",
+        "label": "Она также рассказала о принципе не хранить информацию дольше, чем это необходимо. В уведомлении о конфиденциальности ничего не говорится о том, как долго хранится Ваша информация, но, судя по табло, похоже, что они хранят ее не менее 10 лет! Кажется ли это необходимым?",
         "options": [
-          "Yes",
-          "No"
+          "Да",
+          "Нет"
         ]
       },
       {
-        "label": "Captain Maria also said the ship should be responsible with personal information, meaning it should not use if for purposes other than what is was collected for. When the receptionist scanned your passport, you had no idea that your passport info would be posted on a public scoreboard. Do you think the ship used your passport information responsibly?",
+        "label": "Капитан Мария также сказала, что команда корабля должна ответственно относиться к личной информации, то есть не использовать ее в целях, отличных от тех, для которых она была собрана. Когда регистратор сканировал Ваш паспорт, Вы и не подозревали, что информация о Вашем паспорте будет вывешена на общественном табло. Как Вы думаете, ответственно ли команда корабля использовала Вашу паспортную информацию?",
         "options": [
-          "Yes",
-          "No"
+          "Да",
+          "Нет"
         ]
       }
     ]
   },
   "china": {
     "bedroom-note": [
-      "Dear Passenger,",
-      "I was sorry to learn about the waiter‘s mistake at lunch. I‘m",
-      "afraid this ship may not be as watertight when it comes to",
-      "privacy as it should be. But don‘t worry - I have hidden 5",
-      "privacy principles under objects in your cabin that I believe can",
-      "help you protect your privacy. Feel free to visit my cabin if you",
-      " have any other concerns. – Captain Maria"
+      "Уважаемый пассажир,",
+      "Я сожалею об ошибке официанта во время обеда. Я",
+      "боюсь, что этот корабль может оказаться не таким водонепроницаемым, когда дело доходит до того, чтобы обеспечить",
+      "адекватную конфиденциальность. Но не волнуйтесь: я спрятала 5",
+      "принципов конфиденциальности под предметами в вашей каюте, которые, по моему мнению, могут",
+      "помочь Вам защитить Вашу конфиденциальность. Заходите ко мне в каюту, если у вас",
+      "появятся еще вопросы. — Капитан Мария"
     ],
     "bedroom-letter": [
-      "<div class='f-hand-2 font-weight-bold text-h3 mb-4'>Dear guest,</div>",
-      "Hello again and welcome to your cabin. You are staying in Cabin 42, which is a very special room featuring objects I have collected in my travels. <div class='font-weight-bold'>I suggest you spend some time here admiring these objects from all angles.</div>",
-      "<div class='d-flex justify-end'><i class='f-hand-2 font-weight-bold text-h5'>- Regards, Franklin</i></div>"
+      "<div class='f-hand-2 font-weight-bold text-h3 mb-4'>Уважаемый гость,</div>",
+      "Еще раз здравствуйте, и добро пожаловать в Вашу каюту. Вы находитесь в Каюте 42, которая является особенной комнатой с предметами, которые я собрал в своих путешествиях.<div class='font-weight-bold'>Я предлагаю Вам провести здесь некоторое время, любуясь этими предметами со всех сторон.</div>",
+      "<div class='d-flex justify-end'><i class='f-hand-2 font-weight-bold text-h5'>— С уважением, Франклин</i></div>"
     ],
-    "privacy-principles": "Open privacy principles",
+    "privacy-principles": "Открытые принципы конфиденциальности",
     "privacy-notice": {
-      "title": "Cruise Ship Privacy Notice",
-      "description": "We take your privacy very seriously. This notice sets forth what we collect, what we share, and your rights. For more details, please see the captain.",
-      "open": "Open privacy notice",
-      "close": "Close",
-      "close-and-call-franklin": "Call Franklin and demand to see Captain Maria",
+      "title": "Уведомление о конфиденциальности на круизных кораблях",
+      "description": "Мы очень серьезно относимся к конфиденциальности Ваших личных данных. В данном уведомлении изложено, какие личные данные мы собираем, какие данные могут быть использованы, а также Ваши права. Для получения более подробной информации, пожалуйста, обратитесь к капитану.",
+      "open": "Открытое уведомление о конфиденциальности",
+      "close": "Закрыть",
+      "close-and-call-franklin": "Позвоните Франклину и потребуйте встречи с капитаном Марией",
       "table": {
         "headers": [
-          "CATEGORY OF PERSONAL INFORMATION",
-          "DESCRIPTION"
+          "КАТЕГОРИЯ ЛИЧНОЙ ИНФОРМАЦИИ",
+          "ОПИСАНИЕ"
         ],
         "content": [
           {
-            "category": "Identification and contact information",
-            "description": "We collect information to identify and contact you, such as your name, gender, nationality, date of birth, mailing address, email address, telephone number, and passport information (such as passport number and expiration date). This information may be shared with employees of the ship to facilitate your voyage."
+            "category": "Идентификация и контактная информация",
+            "description": "Мы собираем информацию для идентификации и связи с Вами, такую как Ваше имя, пол, национальность, дата рождения, почтовый адрес, адрес электронной почты, номер телефона и паспортные данные (например, номер паспорта и срок действия). Эта информация может быть передана сотрудникам судна для обеспечения Вашего путешествия."
           },
           {
-            "category": "Data to enhance your voyage",
-            "description": "As a high-tech cruise line, we employ state-of-the-art technology and algorithms to offer you the best voyage possible. To do this, we may use cameras and other sensors to track your movement on the ship, how long you stay in various rooms, and how you interact with our employees and other passengers."
+            "category": "Данные для улучшения Вашего путешествия",
+            "description": "Будучи высокотехнологичной круизной линией, мы используем самые современные технологии и алгоритмы, чтобы предложить Вам лучшее путешествие из возможных. Для этого мы можем использовать камеры и другие датчики для отслеживания Вашего передвижения по кораблю, продолжительности пребывания в различных помещениях, а также Вашего взаимодействия с нашими сотрудниками и другими пассажирами."
           },
           {
-            "category": "Payment information",
-            "description": "Information you provide for the purpose of processing payments, such as credit card details."
+            "category": "Платежная информация",
+            "description": "Информация, которую Вы предоставляете с целью обработки платежей, например данные кредитной карты."
           },
           {
-            "category": "Safety information",
-            "description": "We are committed to ensuring you have a safe voyage! We will ask you to let us know if you have any food allergies, and we also have a nurse on staff in the event of sea-sickness or other ailment. If you visit the nurse, we may collect information about any current or prior health conditions. This information will only be used by cruise employees for the purposes of ensuring your safety."
+            "category": "Информация о безопасности",
+            "description": "Мы стремимся обеспечить Вам безопасное путешествие! Мы попросим Вас сообщить нам, если у Вас есть аллергия на какие-либо продукты питания, у нас также есть медсестра в штате на случай морской болезни или другого недомогания. Если Вы посетите медсестру, мы можем собрать информацию о любых текущих или предыдущих состояниях здоровья. Эта информация будет использоваться сотрудниками круиза только в целях обеспечения Вашей безопасности."
           }
         ],
         "correctOptions": [
@@ -639,8 +639,8 @@
       "table": {
         "content": [
           {
-            "category": "Your rights",
-            "description": "You have the right to request a copy of all Personal Information collected about you and to ask us to correct or delete that information. To exercise these rights, please contact Captain Maria."
+            "category": "Ваши права",
+            "description": "Вы имеете право запросить копию всей собранной о Вас личной информации и попросить нас исправить или удалить эту информацию. Чтобы воспользоваться этими правами, пожалуйста, свяжитесь с капитаном Марией."
           }
         ]
       }
@@ -651,100 +651,100 @@
       "msgs": [
         {
           "dir": "ltr",
-          "text": "So nice to finally meet you.",
+          "text": "Так приятно наконец-то познакомиться с Вами.",
           "isMaria": true
         },
         {
           "dir": "ltr",
-          "text": "I‘m sorry to hear about the privacy issues. You would like to exercise your privacy rights?",
+          "text": "Мне жаль, что вы столкнулись с проблемами конфиденциальности. Вы хотели бы воспользоваться своими правами на конфиденциальность?",
           "isMaria": true
         },
         {
           "dir": "ltr",
-          "text": "I can let you know what information we have about you, you can ask to correct it, or you can ask to delete it.",
+          "text": "Я могу сообщить Вам, какая информация о Вас у нас есть, Вы можете попросить исправить ее или удалить.",
           "isMaria": true
         },
         {
           "dir": "ltr",
-          "text": "Based on your concerns, it sounds like you want me to delete your information.",
+          "text": "Исходя из Ваших опасений, похоже, что Вы хотите, чтобы я удалил Вашу информацию.",
           "isMaria": true
         },
         {
           "dir": "ltr",
-          "text": "Which information would you like deleted?",
+          "text": "Какую информацию Вы хотели бы удалить?",
           "isMaria": true
         },
         {
           "dir": "rtl",
-          "text": "Name and other identifiers",
+          "text": "Имя и другие идентификаторы",
           "isPlayer": true
         },
         {
           "dir": "rtl",
-          "text": "Contact information",
+          "text": "Контактная информация",
           "isPlayer": true
         },
         {
           "dir": "rtl",
-          "text": "Photographs",
+          "text": "Фотографии",
           "isPlayer": true
         },
         {
           "dir": "rtl",
-          "text": "Biometric data",
+          "text": "Биометрические данные",
           "isPlayer": true
         },
         {
           "dir": "rtl",
-          "text": "Credit card data",
+          "text": "Данные кредитной карты",
           "isPlayer": true
         },
         {
           "dir": "rtl",
-          "text": "Dietary preferences",
+          "text": "Диетические предпочтения",
           "isPlayer": true
         },
         {
           "dir": "ltr",
-          "text": "Understood. I can delete some information right away if it’s not critical to operating the ship, but there is some information we need to use while you are on board, such as passport data and dietary restrictions.",
+          "text": "Понятно. Я могу удалить некоторую информацию сразу, если она не является критически важной для управления кораблем, но есть информация, которую нам необходимо использовать, пока Вы находитесь на борту, например паспортные данные и диетические ограничения.",
           "isMaria": true
         },
         {
           "dir": "ltr",
-          "text": "Once you disembark, we can delete everything except for what we have to keep for regulations – such as information needed to comply with COVID-related regulations.",
+          "text": "Как только Вы сойдете на берег, мы можем удалить всю личную информацию, кроме той, которую необходимо сохранить для соблюдения нормативных требований, например связанных с COVID.",
           "isMaria": true
         },
         {
           "dir": "ltr",
-          "text": "Thank you for speaking up about your privacy concerns. I will ask Franklin to get to work to make sure we are shipshape when it comes to privacy!",
+          "text": "Спасибо, что рассказали о своих опасениях по поводу конфиденциальности. Я попрошу Франклина приступить к работе, чтобы убедиться, что у нас все в порядке в отношении конфиденциальности!",
           "isMaria": true
         }
       ]
     }
   },
   "score-result": {
-    "star3": "Well Done!",
-    "star2": "Bad!",
-    "star1": "Too Bad!",
-    "star0": "Too Bad!",
+    "star3": "Отлично!",
+    "star2": "Плохо!",
+    "star1": "Очень плохо!",
+    "star0": "Очень плохо!",
     "italy": [
-      "Thank you!",
-      "Now, please join us in the dining room for lunch!"
+      "Спасибо!",
+      "А теперь, пожалуйста, присоединяйтесь к нам в столовой к обеду!"
     ],
     "egypt": [
-      "That’s right – that waiter should know better! Silly humans. Perhaps they should replace the waiter with an AI-powered robot like me!",
-      "Why don’t you return to your cabin to relax."
+      "Это верно: официант должен знать лучше! Глупые люди. Возможно, им следует заменить официанта роботом с искусственным интеллектом, таким как я!",
+      "Почему бы Вам не вернуться в свою каюту, чтобы отдохнуть."
     ],
     "china": [],
     "brazil": [
-      "Why don’t you go back to your cabin to see how the principles that Captain Maria shared can help you figure this out."
+      "Почему бы Вам не вернуться в свою каюту и не посмотреть, как принципы, о которых рассказала Вам капитан Мария, помогут Вам разобраться в этом."
     ]
   },
-  "excellent": "Excellent",
-  "bad": "Bad",
-  "too-bad": "Too Bad",
+  "excellent": "Превосходно",
+  "bad": "Плохо",
+  "too-bad": "Слишком плохо",
   "learning-outcome": {
-    "title": "Learning Outcome",
+    "title": "Результат обучения",
     "italy": [],
     "egypt": [],
     "brazil": [],
@@ -752,151 +752,151 @@
     "china": [],
     "usa": []
   },
-  "try-again": "Try again",
+  "try-again": "Попробуйте еще раз",
   "lunch-menu": {
-    "title": "Lunch Menu",
+    "title": "Меню обеда",
     "items": [
       {
-        "label": "Starter",
-        "text": "Prawn & Avocado Cocktail",
-        "handwritten": "Note: serve Goats Cheese & Onion Filo Tart to Dave (kosher)"
+        "label": "Стартер",
+        "text": "Коктейль из креветок и авокадо",
+        "handwritten": "Примечание: подавайте сыр из козьего молока и луковую тарталетку Дэйву (кошерная еда)"
       },
       {
-        "label": "Main",
-        "text": "Fillet steak served with a mushroom sauce served with Dauphinoise Potatoes"
+        "label": "Главная",
+        "text": "Стейк из филе с грибным соусом подается с картофелем «Дофинуаз»"
       },
       {
-        "label": "Dessert",
-        "text": "Crème Brulee",
-        "handwritten": "Note: Serve Fresh Fruit  to Yuri (sugar-free)"
+        "label": "Десерт",
+        "text": "Крем-брюле",
+        "handwritten": "Примечание: Подавайте Юрию свежие фрукты (без сахара)"
       },
       {
-        "label": "Wine pairings with each course",
-        "handwritten": "(Do not offer to Carla – instead give sparkling apple juice)"
+        "label": "Подбор вин к каждому блюду",
+        "handwritten": "(Не предлагайте алкоголь Карле: вместо этого дайте газированный яблочный сок.)"
       }
     ]
   },
-  "pick-response-to-continue": "Pick a response to continue",
-  "pick-at-least-three-choices": "Pick at least three choices",
-  "what-should-tell-franklin": "What should you tell Franklin?",
-  "choose-headlines": "Choose which headlines are useful:",
-  "congratulations": "Congratulations",
+  "pick-response-to-continue": "Выберите ответ, чтобы продолжить",
+  "pick-at-least-three-choices": "Выберите как минимум три варианта",
+  "what-should-tell-franklin": "Что Вы должны сказать Франклину?",
+  "choose-headlines": "Выберите, какие заголовки будут полезны:",
+  "congratulations": "Поздравляем",
   "outro": {
     "successText": [
-      "<b>Congratulations!</b> You have used the data privacy principles to prevent a privacy shipwreck!",
-      "Click “Next” to disembark and help your country become the 2023 Privacy Champion."
+      "<b>Поздравляем!</b> Вы использовали принципы конфиденциальности данных, чтобы предотвратить кораблекрушение!",
+      "Нажмите «Далее», чтобы выйти из игры и помочь своей стране стать чемпионом по конфиденциальности в 2023 году."
     ],
     "failText": [
-      "Oh, too bad. You failed to save the world, and now The Cyber Monster has destroyed everything he could. Play this task again and help our Brick defeat the enemy."
+      "Очень жаль. Вам не удалось спасти мир, и Кибер-монстр уничтожил все, что смог. Пройдите это задание еще раз и помогите нашему Кирпичу победить врага."
     ],
     "actions": {
-      "yes": "Yes",
-      "no": "No"
+      "yes": "Да",
+      "no": "Нет"
     }
   },
   "found-object": {
-    "title": "You've found a privacy symbol",
+    "title": "Вы нашли символ конфиденциальности",
     "wrong-item": {
-      "1": "Sorry, you've clicked on a wrong item. Try clicking on other items to find missing piece of the privacy notice.",
-      "2": "Sorry, you've clicked on a wrong item. Have you looked under the carpet yet?"
+      "1": "Извините, Вы нажали не на тот элемент. Попробуйте нажать на другие элементы, чтобы найти недостающий фрагмент уведомления о конфиденциальности.",
+      "2": "Извините, Вы нажали не на тот элемент. Вы уже заглянули под ковер?"
     },
-    "find-x-more": "You need to find {x} more symbols",
-    "find-one-more": "You need to find {x} more symbol",
-    "found-last": "You‘ve found the last privacy symbol!",
-    "found-all": "Congratulations! You‘ve found all privacy principles.",
-    "privacy-found": "Congratulations! You found the missing part of the privacy notice.",
+    "find-x-more": "Вам нужно найти еще {x} символов",
+    "find-one-more": "Вам нужно найти еще {x} символ",
+    "found-last": "Вы нашли последний символ конфиденциальности!",
+    "found-all": "Поздравляем! Вы нашли все принципы конфиденциальности.",
+    "privacy-found": "Поздравляем! Вы нашли недостающую часть уведомления о конфиденциальности.",
     "items": {
-      "eye": "Be transparent",
-      "bridge": "Collect only what is necessary",
-      "handshake": "Use responsibly",
-      "lock": "Protect and be vigilant",
-      "hourglass": "Retain only as long as necessary"
+      "eye": "Соблюдайте транспарентность",
+      "bridge": "Собирайте только то, что необходимо",
+      "handshake": "Используйте данные ответственно",
+      "lock": "Защищайте приватность и будьте бдительны",
+      "hourglass": "Хранить не больше времени, чем это необходимо"
     },
     "items-explanations": {
-      "eye": "Be transparent means you should be able to understand what will be done with information about you. When you find the privacy notice, make sure you understand what it says!",
-      "bridge": "Collect only what is necessary means you should not have to provide information about you that isn‘t necessary. This ship has a tendency to collect information everywhere – be on the lookout for times when the ship might collect more than what it needs.",
-      "handshake": "Use responsibly means that the ship should only use your personal information for the purposes for which it was collected – pay attention to what is in the privacy notice to make sure the ship isn‘t using your information for other purposes.",
-      "lock": "Protect and be vigilant means the ship should secure your personal information and report and investigate any misuse of data. You should speak up if you see anything suspicious.",
-      "hourglass": "Retain only as long as necessary means the ship should not keep your information longer than it needs to. Most of what the ship collects about you should probably be deleted when the voyage ends."
+      "eye": "Транспарентность означает, что Вы должны иметь возможность понять, как будет использоваться информация о Вас. Когда Вы найдете уведомление о конфиденциальности, убедитесь, что Вы понимаете написанное!",
+      "bridge": "Собирать только то, что необходимо, означает, что Вы не должны предоставлять информацию о себе, в которой нет необходимости. На этом корабле есть тенденция собирать информацию повсюду: будьте начеку, когда корабль может собрать больше информации, чем ему нужно.",
+      "handshake": "Ответственное использование означает, что на корабле следует использовать Вашу личную информацию только в тех целях, для которых она была собрана: обратите внимание на то, что написано в уведомлении о конфиденциальности, чтобы убедиться, что Ваша информация не используется на корабле в других целях.",
+      "lock": "Защищать приватность и быть бдительным означает, что на корабле необходимо обеспечивать безопасность Вашей личной информации, сообщать о любом неправомерном использовании данных и расследовать его. Вы должны сообщить, если видите что-то подозрительное.",
+      "hourglass": "Хранить данные столько времени, сколько необходимо, означает, что Ваша личная информация не должна храниться на корабле дольше, чем это необходимо. Большая часть информации, которую собирают о Вас на корабле, вероятно, должна быть удалена по окончании рейса."
     }
   },
   "note-from-prev-passenger": [
-    "Beware",
-    "Something weird is going on here",
-    "Look under the alarm clock"
+    "Будьте настороже",
+    "Здесь происходит что-то странное",
+    "Загляните под будильник"
   ],
   "privacy-notice": {
-    "title": "Cruise Ship Privacy Notice",
-    "text-1": "We take your privacy very seriously. This notice sets forth what we collect, what we share, and your rights. For more details, please see the captain.",
-    "text-2": "The Personal Information we collect and how we use it",
+    "title": "Уведомление о конфиденциальности на круизных кораблях",
+    "text-1": "Мы очень серьезно относимся к конфиденциальности Ваших личных данных. В данном уведомлении изложено, какие личные данные мы собираем, какие данные могут быть использованы, а также Ваши права. Для получения более подробной информации, пожалуйста, обратитесь к капитану.",
+    "text-2": "Какую личную информацию мы собираем и как мы ее используем",
     "headers": {
-      "name": "CATEGORY OF PERSONAL INFORMATION",
-      "desc": "DESCRIPTION"
+      "name": "КАТЕГОРИЯ ЛИЧНОЙ ИНФОРМАЦИИ",
+      "desc": "ОПИСАНИЕ"
     },
     "items": {
       "1": {
-        "name": "Identification and contact information",
-        "desc": "We collect information to identify and contact you, such as your name, gender,nationality, date of birth, mailing address, email address, telephone number, and passport information (such as passport number and expiration date). This information may be shared with employees of the ship to facilitate your voyage."
+        "name": "Идентификация и контактная информация",
+        "desc": "Мы собираем информацию для идентификации и связи с Вами, такую как Ваши имя, пол, национальность, дата рождения, почтовый адрес, адрес электронной почты, номер телефона и паспортные данные (например, номер паспорта и срок его действия). Эта информация может быть передана сотрудникам судна для обеспечения Вашего путешествия."
       },
       "2": {
-        "name": "Data to enhance your voyage",
-        "desc": "As a high-tech cruise line, we employ state-of-the-art technology and algorithms to offer you the best voyage possible. To do this, we may use cameras and other sensors to track your movement on the ship, how long you stay in various rooms, and how you interact with our employees and other passengers."
+        "name": "Данные для улучшения Вашего путешествия",
+        "desc": "Будучи высокотехнологичной круизной линией, мы используем самые современные технологии и алгоритмы, чтобы предложить Вам лучшее путешествие из возможных. Для этого мы можем использовать камеры и другие датчики для отслеживания Вашего передвижения по кораблю, продолжительности пребывания в различных помещениях, а также Вашего взаимодействия с нашими сотрудниками и другими пассажирами."
       },
       "3": {
-        "name": "Payment information",
-        "desc": "Information you provide for the purpose of processing payments, such as credit card details"
+        "name": "Платежная информация",
+        "desc": "Информация, которую Вы предоставляете для целей обработки платежей, например данные кредитной карты"
       },
       "4": {
-        "name": "Safety information",
-        "desc": "We are committed to ensuring you have a safe voyage! We will ask you to let us know if you have any food allergies, and we also have a nurse on staff in the event of sea-sickness or other ailment. If you visit the nurse, we may collect information about any current or prior health conditions. This information will only be used by cruise employees for the purposes of ensuring your safety."
+        "name": "Информация о безопасности",
+        "desc": "Мы стремимся обеспечить Вам безопасное путешествие! Мы попросим Вас сообщить нам, если у Вас есть аллергия на какие-либо продукты питания, у нас также есть медсестра в штате на случай морской болезни или другого недомогания. Если Вы посетите медсестру, мы можем собрать информацию о любых текущих или предыдущих состояниях здоровья. Эта информация будет использоваться сотрудниками круиза только в целях обеспечения Вашей безопасности."
       }
     },
     "questions": {
-      "title": "Now that you have found the privacy notice and the principles that Captain Maria hid, what do you think about the situation at lunch?",
+      "title": "Теперь, когда Вы нашли уведомление о конфиденциальности и принципы, которые скрывала капитан Мария, что Вы думаете о ситуации за обедом?",
       "description": [
-        "That’s right!",
-        "Although the ship disclosed that it would collect information about food allergies (which relates to dietary restrictions), it said it would only share it with employees to ensure safety. That information never should have been shared with other passengers. And while we’re thinking about it, it would be clearer if the privacy notice said “dietary restrictions” rather than just allergies, since Carla, Yuri, and Dave all had restrictions for other reasons."
+        "Правильно!",
+        "Хотя вам сообщили, что на корабле будет собираться информация о пищевой аллергии (которая относится к диетическим ограничениям), было указано, что доступ к ней будут иметь только сотрудники для обеспечения безопасности. Эта информация не должна была быть доступной другим пассажирам. И пока мы думаем об этом, было бы понятнее, если бы в уведомлении о конфиденциальности было написано «диетические ограничения», а не просто аллергия, поскольку у Карлы, Юрия и Дейва были ограничения по другим причинам."
       ],
       "congratulations": [
-        "Good job!",
-        "Why does the ship need to use cameras and sensors to track movement on the ship and how you interact with others? Does the ship really need to know if someone happens to be spending time in someone else’s cabin? Even if this is arguably for safety, there must be ways to ensure passenger safety without compromising privacy."
+        "Хорошая работа!",
+        "Почему на корабле необходимо использовать камеры и датчики для отслеживания передвижения по кораблю и того, как Вы взаимодействуете с другими людьми? Действительно ли команде корабля необходимо знать, что кто-то будет находиться в чужой каюте? Даже если это аргументируется соображениями безопасности, должны существовать способы обеспечить безопасность пассажиров без ущерба для частной жизни."
       ],
       "q1": {
-        "text": "Does the privacy notice state that the ship will collect information about dietary restrictions?",
+        "text": "Указывается ли в уведомлении о конфиденциальности, что на корабле будет собираться информация о диетических ограничениях?",
         "options": [
-          "Yes",
-          "No"
+          "Да",
+          "Нет"
         ]
       },
       "q2": {
-        "text": "Based on the privacy notice, should the waiter’s notes have been shared with the passengers?",
+        "text": "Должны ли были пометки официанта быть доступны пассажирам на основании уведомления о конфиденциальности?",
         "options": [
-          "Yes",
-          "No"
+          "Да",
+          "Нет"
         ]
       }
     }
   },
-  "player": "Player",
-  "finish": "Finish",
-  "upload_photo": "Upload photo",
-  "hide": "Hide",
-  "receptionist": "Receptionist",
-  "privacy_notice": "Privacy Notice",
-  "wrong-response": "Wrong Response!",
-  "wrong-response-desc": "You've selected an incorrect response, please try again",
-  "wrong-response-hint": "Really? It’s fine? Remember the concerns the other passengers shared...",
+  "player": "Игрок",
+  "finish": "Конец",
+  "upload_photo": "Загрузить фото",
+  "hide": "Скрыть",
+  "receptionist": "Администратор на стойке регистрации",
+  "privacy_notice": "Уведомление о конфиденциальности",
+  "wrong-response": "Неправильный ответ!",
+  "wrong-response-desc": "Вы выбрали неправильный ответ. Пожалуйста, попробуйте еще раз",
+  "wrong-response-hint": "Правда? Это нормально? Вспомните, какими опасениями делились другие пассажиры...",
   "ok": "OK",
-  "click-to-open-privacy-notice": "Click to open Privacy Notice",
-  "restart": "Restart",
+  "click-to-open-privacy-notice": "Нажмите, чтобы открыть Уведомление о конфиденциальности",
+  "restart": "Перезапустите",
   "restart-game": {
-    "title": "Restart Game",
-    "hint": "Are you sure you want to restart the game?",
-    "action": "Yes, restart!"
+    "title": "Перезапустить игру",
+    "hint": "Вы уверены, что хотите перезапустить игру?",
+    "action": "Да, перезапуск!"
   },
-  "top-scores": "Top Scores",
-  "passport-number": "Passport number",
-  "voyage-date": "Voyage date",
-  "cabin": "Cabin",
-  "enter-the-code": "Enter the code"
+  "top-scores": "Высшие баллы",
+  "passport-number": "Номер паспорта",
+  "voyage-date": "Дата рейса",
+  "cabin": "Каюта",
+  "enter-the-code": "Введите код"
 }
