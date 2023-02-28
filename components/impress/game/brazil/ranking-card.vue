@@ -76,17 +76,21 @@ export default {
       players: [
         {
           passport: 'Q29181948',
-          voyageDate: moment().format('MMMM YYYY'),
+          voyageDate: moment().locale(this.$i18n.locale).format('MMMM YYYY'),
           cabin: 42,
         },
         {
           passport: 'A02836295',
-          voyageDate: 'May 2019',
+          voyageDate: moment('2019-05-01')
+            .locale(this.$i18n.locale)
+            .format('MMMM YYYY'), // 'May 2019',
           cabin: 71,
         },
         {
           passport: 'H95486012',
-          voyageDate: 'September 2013',
+          voyageDate: moment('2013-9-01')
+            .locale(this.$i18n.locale)
+            .format('MMMM YYYY'), // 'September 2013',
           cabin: 106,
         },
       ],

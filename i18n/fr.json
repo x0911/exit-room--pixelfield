@@ -16,27 +16,27 @@
   "countries_scores": "Les 5 pays ayant obtenu les meilleurs scores",
   "lets-go": "C’est parti",
   "cookies": {
-    "title": "Politique de confidentialité et avis sur les cookies",
+    "title": "Notice d'information sur la protection des données et informations sur les cookies",
     "text": [
       {
         "title": "Objectif",
-        "description": "Ce site web comporte un jeu d’évasion ainsi qu’un questionnaire et un concours de pays liés à la confidentialité. Il a été créé par votre employeur afin de vous sensibiliser et d’accroître vos connaissances relatives à la confidentialité. Il a également pour but d’améliorer le programme de confidentialité et d’augmenter la sensibilisation au sein de votre entreprise."
+        "description": "Ce site web propose un jeu d’évasion ainsi qu’un questionnaire et un concours entre les pays en lien avec la protection des données personnelles. Il a été créé par votre employeur afin de vous sensibiliser et accroître vos connaissances relatives à la protection des données personnelles. Il a également pour but d’améliorer le programme de protection des données personnelles et d’augmenter la sensibilisation au sein de votre entreprise."
       },
       {
         "title": "Sur la base du volontariat",
-        "description": "Veuillez noter que la participation à ce jeu se fait sur la base du volontariat. La participation n’est pas obligatoire. Le fait de ne pas participer au jeu n’impactera pas négativement votre relation de travail."
+        "description": "Veuillez noter que la participation à ce jeu se fait sur la base du volontariat. Cette participation n’est pas obligatoire. Le fait de ne pas participer au jeu n’aura pas un impact négatif sur votre relation de travail."
       },
       {
         "title": "Données anonymes",
-        "description": "Dans le cadre du jeu, seules des données anonymes sont traitées. Votre employeur ne peut pas faire référence à des employés spécifiques ni les identifier. Pour recevoir les résultats du concours de pays ou notre réaction à vos commentaires sur notre jeu, vous pouvez volontairement fournir votre adresse e-mail professionnelle à la fin du jeu. Dans ce cas, une identification serait possible. Veuillez noter que, dans le cas de petites équipes ou d’opérations nationales, votre employeur peut être en mesure de vous identifier si moins de cinq personnes font partie du même département ou de la même unité organisationnelle, occupent la même fonction et travaillent dans le même pays. Votre employeur traitera les données conformément à sa politique de confidentialité et à son avis connexe, notamment en ne vous identifiant pas intentionnellement et en prenant des mesures raisonnables, le cas échéant, pour empêcher l’identification."
+        "description": "Dans le cadre du jeu, seules des données anonymes sont traitées. Votre employeur ne peut pas faire référence à des employés spécifiques ni les identifier. Pour recevoir les résultats du concours entre les pays ou notre réponse à vos commentaires sur notre jeu, vous pouvez volontairement fournir votre adresse e-mail professionnelle à la fin du jeu. Dans ce cas, une identification serait possible. Veuillez noter que, dans le cas de petites équipes ou d’opérations nationales, votre employeur peut être en mesure de vous identifier si moins de cinq personnes font partie du même département ou de la même unité organisationnelle, occupent la même fonction et travaillent dans le même pays. Votre employeur traitera les données conformément à sa politique de protection des données personnelles et à sa notice d'information dédiée, notamment en ne vous identifiant pas intentionnellement et en prenant des mesures raisonnables, le cas échéant, pour empêcher l’identification."
       },
       {
         "title": "Cookies",
-        "description": "Ce site web ne traite que les cookies strictement nécessaires. Ces cookies sont nécessaires au fonctionnement du site web et ne peuvent pas être désactivés dans nos systèmes. Ils ne sont généralement définis qu’en réponse à des actions de votre part qui équivalent à une demande de services, comme la définition de vos préférences en matière de confidentialité, la connexion ou le remplissage de formulaires. Vous pouvez configurer votre navigateur pour qu’il bloque ces cookies ou vous en avertisse, mais certaines parties du site ne fonctionneront alors pas. Ces cookies ne stockent pas d’informations d’identification personnelle."
+        "description": "Ce site web ne traite que des cookies strictement nécessaires. Ces cookies sont nécessaires au fonctionnement du site web et ne peuvent pas être désactivés dans nos systèmes. Ils ne sont généralement définis qu’en réponse à des actions de votre part qui équivalent à une demande de services, comme la définition de vos préférences en matière de protection des données personnelles, la connexion ou le remplissage de formulaires. Vous pouvez configurer votre navigateur pour qu’il bloque ces cookies ou vous en avertisse, mais certaines parties du site ne fonctionneront alors pas. Ces cookies ne stockent pas d’informations d’identification personnelle."
       },
       {
-        "title": "Base juridique et contact",
-        "description": "En cas de traitement de vos données personnelles, la base juridique du traitement des données serait la nécessité aux fins d’intérêts légitimes. Pour en savoir plus sur le traitement des données dans votre environnement professionnel et vos droits en matière de confidentialité des données (par exemple, le droit d’opposition), veuillez consulter les politiques de confidentialité locales destinées aux employés ou contacter votre équipe locale chargée de la confidentialité des données."
+        "title": "Base légale et contact",
+        "description": "En cas de traitement de vos données personnelles, la base légale du traitement des données serait la nécessité aux fins d’intérêts légitimes. Pour en savoir plus sur le traitement des données dans votre environnement professionnel et vos droits en matière de protection des données personnelles (par exemple, le droit d’opposition), veuillez consulter les notices d'information relatives à la protection des données personnelles locales destinées aux employés ou contacter votre équipe locale chargée de la protection des données personnelles."
       }
     ]
   },
@@ -69,7 +69,7 @@
       "Sélectionnez votre langue pour continuer"
     ],
     "map": [
-      "La salle active sera indiquée grâce à un cercle lumineux au-dessus de son nom"
+      "La pièce active sera indiquée grâce à un cercle lumineux au-dessus de son nom"
     ],
     "italy": [
       "Répondez au questionnaire"
@@ -80,23 +80,23 @@
     ],
     "brazil": [],
     "china": [
-      "Lisez la note, puis recherchez dans la salle les 5 principes de confidentialité et leurs explications.",
-      "Lorsque vous les aurez tous trouvés, vous déverrouillerez la politique de confidentialité."
+      "Lisez la note, puis recherchez dans la cabine les 5 principes de protection des données personnelles et leurs explications.",
+      "Lorsque vous les aurez tous trouvés, vous déverrouillerez la politique de protection des données personnelles."
     ],
     "usa": [],
     "russia": []
   },
   "start_game": "Rencontrer Franklin",
   "skip": "Passer",
-  "wall": "Sélecteur de salles",
+  "wall": "Sélecteur de pièces",
   "map-email": {
     "text": [
-      "Voici votre sélecteur de salles. L’ordre des salles est obligatoire. La salle active est indiquée grâce à un cercle lumineux au-dessus de son nom."
+      "Voici votre sélecteur de pièces. L’ordre des pièces est obligatoire. La pièce active est indiquée grâce à un cercle lumineux au-dessus de son nom."
     ]
   },
   "wall-steps": [
     "Plan du bateau",
-    "Voici un plan du bateau de croisière. Cliquez sur Démarrer, puis sur la salle indiquée par le cercle lumineux."
+    "Voici un plan du bateau de croisière. Cliquez sur Démarrer, puis sur la pièce indiquée par le cercle lumineux."
   ],
   "start": "Démarrer",
   "orientation-hint": {
@@ -105,7 +105,7 @@
   },
   "map": "Plan",
   "back-to-map": {
-    "text": "Souhaitez-vous revenir au sélecteur de salles ?"
+    "text": "Souhaitez-vous revenir au sélecteur de pièces ?"
   },
   "speeches": {
     "splash": {
@@ -153,19 +153,19 @@
     "china": {
       "1": [
         "Ce menu de déjeuner était bizarre, n’est-ce pas ?",
-        "Pourquoi ne pas jeter un coup d’œil à la politique de confidentialité du bateau pour voir s’il était approprié de recueillir et de partager les restrictions alimentaires avec les autres passagers.",
-        "Vous pouvez également rechercher les principes de confidentialité mentionnés par la capitaine Maria afin de savoir ce que vous devez chercher dans la politique."
+        "Pourquoi ne pas jeter un coup d’œil à la politique de protection des données personnelles du bateau pour voir s’il était approprié de recueillir et de partager les restrictions alimentaires avec les autres passagers.",
+        "Vous pouvez également rechercher les principes de protection des données personnelles mentionnés par la capitaine Maria afin de savoir ce que vous devez chercher dans la politique."
       ],
       "2": [
         "J’ai entendu du bruit ici.",
         "Est-ce que tout va bien ?"
       ],
       "3": [
-        "Les informations diététiques des passagers ont été partagées avec d’autres passagers. Cela n’a pas été mentionné dans la politique de confidentialité, ce qui constitue un problème !"
+        "Les informations diététiques des passagers ont été partagées avec d’autres passagers. Cela n’a pas été mentionné dans la politique de protection des données personnelles, ce qui constitue un problème !"
       ],
       "4": [
         "Hmmmm. Cela semble peu probable.",
-        "La capitaine Maria prend la confidentialité au sérieux.",
+        "La capitaine Maria prend la protection des données personnelles au sérieux.",
         "Pourquoi ne pas vous rendre dans la salle de jeux VIP pour vous détendre et vous changer les idées. Vous êtes en vacances et ne devriez pas vous soucier de telles choses après tout !"
       ],
       "5": [
@@ -175,15 +175,15 @@
     "usa": {
       "1": [
         "Cette situation dans la salle de jeu était très gênante, n’est-ce pas ?",
-        "Consultez à nouveau la politique de confidentialité pour savoir si ce qui s’est passé dans la salle de jeu était légitime."
+        "Consultez à nouveau la politique de protection des données personnelles pour savoir si ce qui s’est passé dans la salle de jeu était légitime."
       ],
       "2": [
         "Bravo !",
-        "Vous avez répondu correctement à toutes les questions, vous avez donc compris que le bateau ne traite pas les informations personnelles de manière responsable.",
+        "Vous avez répondu correctement à toutes les questions, vous avez donc compris que le bateau ne traite pas les données personnelles de manière responsable.",
         "Que pouvez-vous faire ?"
       ],
       "3": [
-        "Aha ! La politique est déchirée, la partie restante est peut-être cachée dans la salle."
+        "Aha ! La politique est déchirée, la partie restante est peut-être cachée dans la cabine."
       ]
     },
     "russia": {
@@ -192,7 +192,7 @@
       ],
       "2": [
         "J’aimerais exercer mes droits au respect de la vie privée.",
-        "La façon dont le bateau traite mes informations personnelles ne me plaît pas."
+        "La façon dont le bateau traite mes données personnelles ne me plaît pas."
       ]
     }
   },
@@ -204,7 +204,7 @@
     },
     "italy": {
       "title": "Le questionnaire",
-      "a1": "Bienvenue à bord ! La participation à ce jeu et au questionnaire est entièrement volontaire. Si vous choisissez de ne pas participer, cela n’impactera pas négativement votre relation de travail."
+      "a1": "Bienvenue à bord ! La participation à ce jeu et au questionnaire est entièrement volontaire. Si vous choisissez de ne pas participer, cela n’aura pas d'impact négatif sur votre relation de travail."
     },
     "egypt": {
       "title": "Menu du déjeuner",
@@ -214,7 +214,7 @@
       "title": "Le mini-jeu",
       "a1": "Veuillez prendre une photo de votre visage afin d’entrer dans la salle de jeu.",
       "a2": [
-        "Bien joué ! La politique de confidentialité n’était pas très transparente.",
+        "Bien joué ! La politique de protection des données personnelles n’était pas très transparente.",
         "Pourquoi ne pas faire une pause et essayer notre dernier jeu..."
       ]
     },
@@ -228,7 +228,7 @@
       "games": {
         "1": {
           "title": "Jeu de la partie manquante",
-          "a1": "Vous devez trouver la politique de confidentialité dans cette salle."
+          "a1": "Vous devez trouver la politique de protection des données personnelles dans cette cabine."
         },
         "2": {
           "a1": "Vous pouvez appeler Franklin pour qu’il vous emmène voir la capitaine Maria.",
@@ -240,7 +240,7 @@
           }
         }
       },
-      "look-around": "Regardez dans la salle et essayez de trouver la partie manquante de la politique de confidentialité."
+      "look-around": "Regardez dans la cabine et essayez de trouver la partie manquante de la politique de protection des données personnelles."
     },
     "russia": {
       "title": "Cabine de la capitaine",
@@ -257,10 +257,10 @@
   "italy": {
     "questions-titles": {
       "1": "Lorsque vous utilisez un appareil numérique pour des raisons personnelles, à quelle fréquence :",
-      "6": "Lesquels des éléments suivants entrent dans la définition des « informations personnelles » de Novartis ? (choisissez toutes les réponses qui s’appliquent)",
+      "6": "Lesquels des éléments suivants entrent dans la définition des « données personnelles » de Novartis ? (choisissez toutes les réponses qui s’appliquent)",
       "7": "Connaissez-vous :",
       "12": "Au travail,",
-      "16": "Choisissez la fonction professionnelle",
+      "16": "Choisissez votre fonction professionnelle",
       "17": "Pays"
     },
     "questions-indexes": {
@@ -274,7 +274,7 @@
     "questions": {
       "1": {
         "title": "1",
-        "label": "Lisez-vous un avis ou une politique de confidentialité ?",
+        "label": "Lisez-vous une notice d'information ou une politique de protection des données personnelles ?",
         "options": [
           "Toujours",
           "Souvent",
@@ -296,7 +296,7 @@
       },
       "3": {
         "title": "1",
-        "label": "Personnalisez-vous d’autres paramètres de confidentialité (tels que l’utilisation de vos informations) ?",
+        "label": "Personnalisez-vous d’autres paramètres de protection des données personnelles (c'est-à-dire comment sont utilisées vos données personnelles) ?",
         "options": [
           "Toujours",
           "Souvent",
@@ -318,7 +318,7 @@
       },
       "5": {
         "title": "1",
-        "label": "Enregistrez-vous les informations de votre carte bancaire ou d’autres informations personnelles dans votre navigateur ?",
+        "label": "Enregistrez-vous les données de votre carte bancaire ou d’autres informations personnelles dans votre navigateur ?",
         "options": [
           "Toujours",
           "Souvent",
@@ -334,7 +334,7 @@
           "Numéro de téléphone",
           "Date d’anniversaire",
           "Adresse du domicile",
-          "Informations qui, combinées, ne pourraient identifier qu’une seule personne dans le monde, même si vous ne connaissez pas son nom (par exemple, le pays, l’université, l’employeur et la tranche d’âge)",
+          "Informations qui, combinées, pourraient identifier qu’une seule personne dans le monde, même si vous ne connaissez pas son nom (par exemple, le pays, l’université, l’employeur et la tranche d’âge)",
           "Coordonnées GPS au fil du temps",
           "Identifiant gouvernemental",
           "Adresse IP",
@@ -345,7 +345,7 @@
       },
       "7": {
         "title": "7",
-        "label": "La politique de confidentialité des données de Novartis ?",
+        "label": "La politique de protection des données personnelles de Novartis ?",
         "options": [
           "Oui",
           "Non"
@@ -353,7 +353,7 @@
       },
       "8": {
         "title": "7",
-        "label": "Nos principes de confidentialité des données ?",
+        "label": "Nos principes de protection des données personnelles ?",
         "options": [
           "Oui",
           "Non"
@@ -361,7 +361,7 @@
       },
       "9": {
         "title": "7",
-        "label": "La personne à contacter pour obtenir de l’aide en matière de confidentialité des données ?",
+        "label": "La personne à contacter pour obtenir de l’aide en matière de protection des données personnelles ?",
         "options": [
           "Oui",
           "Non"
@@ -369,7 +369,7 @@
       },
       "10": {
         "title": "7",
-        "label": "Quand appliquer les principes de confidentialité ?",
+        "label": "Quand appliquer les principes de protection des données personnelles ?",
         "options": [
           "Oui",
           "Non"
@@ -377,7 +377,7 @@
       },
       "11": {
         "title": "7",
-        "label": "Ce que vous devez faire si vous avez connaissance d’un incident lié à la confidentialité des données ?",
+        "label": "Ce que vous devez faire si vous avez connaissance d’un incident lié à la protection des données personnelles ?",
         "options": [
           "Oui",
           "Non"
@@ -385,7 +385,7 @@
       },
       "12": {
         "title": "12",
-        "label": "Signalez-vous les cas où vous recevez des informations personnelles que vous ne devriez pas recevoir dans le cadre de votre fonction ?",
+        "label": "Signalez-vous les cas où vous recevez des données personnelles que vous ne devriez pas recevoir dans le cadre de votre fonction ?",
         "options": [
           "Toujours",
           "Souvent",
@@ -397,7 +397,7 @@
       },
       "13": {
         "title": "12",
-        "label": "Consultez-vous la politique de confidentialité des données de Novartis lorsque vous avez des questions sur le traitement des informations personnelles ?",
+        "label": "Consultez-vous la politique de protection des données personnelles de Novartis lorsque vous avez des questions sur le traitement des données personnelles ?",
         "options": [
           "Toujours",
           "Souvent",
@@ -409,7 +409,7 @@
       },
       "14": {
         "title": "12",
-        "label": "Contactez-vous l’équipe chargée de la confidentialité si vous ne pouvez pas répondre vous-même à une question liée à la confidentialité ?",
+        "label": "Contactez-vous l’équipe chargée de la protection des données personnelles si vous ne pouvez pas répondre vous-même à une question liée à la protection des données personnelles ?",
         "options": [
           "Toujours",
           "Souvent",
@@ -421,7 +421,7 @@
       },
       "15": {
         "title": "12",
-        "label": "Cherchez-vous à collecter le moins d’informations possible lorsque vous créez un questionnaire, un enregistrement ou un autre formulaire ?",
+        "label": "Cherchez-vous à collecter le moins d’informations possible lorsque vous créez un questionnaire, un formulaire d'inscription ou un autre formulaire ?",
         "options": [
           "Toujours",
           "Souvent",
@@ -436,7 +436,7 @@
         "label": "",
         "options": [
           "Marketing",
-          "Assistance et services aux patients",
+          "Patient Support & Services",
           "Recherche et développement",
           "Ventes",
           "Autre"
@@ -464,7 +464,7 @@
         "options": [
           "Les passagers n’ont pas à connaître les restrictions alimentaires des uns et des autres.",
           "En incluant les notes du serveur sur le menu, l’état de santé et/ou les appartenances religieuses des passagers ont probablement été révélés.",
-          "Les informations sur la santé et la religion constituent des informations personnelles, elles peuvent être considérées comme sensibles dans de nombreux pays.",
+          "Les informations sur la santé et la religion constituent des données personnelles, elles peuvent être considérées comme sensibles dans de nombreux pays.",
           "Tout ce qui précède"
         ]
       }
@@ -492,11 +492,11 @@
           "Oui",
           "Non"
         ],
-        "link": "Consultez de nouveau la politique de confidentialité",
-        "text": "Le flash de l’appareil photo était intense et vous vous sentez un peu perdu. Vous avez lu attentivement la politique de confidentialité, mais . ."
+        "link": "Consultez de nouveau la politique de protection des données personnelles",
+        "text": "Le flash de l’appareil photo était intense et vous vous sentez un peu perdu. Vous avez lu attentivement la politique de protection des données personnelles, mais . ."
       },
       "3": {
-        "label": "Consultez à nouveau la politique de confidentialité, est-il clairement expliqué que la reconnaissance faciale serait utilisée ?",
+        "label": "Consultez à nouveau la politique de protection des données personnelles, est-il clairement expliqué que la reconnaissance faciale serait utilisée ?",
         "options": [
           "Oui",
           "Non"
@@ -533,7 +533,7 @@
         ]
       },
       {
-        "label": "Avez-vous une solution pour gérer le tableau d’affichage de manière à respecter la confidentialité ?",
+        "label": "Avez-vous une solution pour gérer le tableau d’affichage de manière à respecter la protection des données personnelles ?",
         "options": [
           "Oui",
           "Non"
@@ -546,14 +546,14 @@
       "player-thinking": "Cela ne semble pas normal. Qu’est-ce que je peux faire ?"
     },
     "hints": {
-      "phone-questions": "Cliquez sur l’icône de navigation Internet.",
+      "phone-questions": "Cliquez sur l’icône de navigation internet.",
       "missing-piece": {
         "1": [
-          "Trouvez la partie manquante de la politique de confidentialité",
+          "Trouvez la partie manquante de la politique de protection des données personnelles",
           "Avez-vous déjà regardé sous le tapis ?"
         ],
         "2": [
-          "Cliquez sur la partie manquante de la politique de confidentialité."
+          "Cliquez sur la partie manquante de la politique de protection des données personnelles."
         ]
       }
     },
@@ -563,21 +563,21 @@
     "score-board-inline": "Aucun problème. Je vais vous conduire à la cabine de la capitaine. Veuillez me suivre.",
     "privacy-questions": [
       {
-        "label": "Réfléchissons à ce qui s’est passé dans la salle de jeu au vu de ce que dit la politique de confidentialité : <br /> <br /> La capitaine Maria a partagé le principe de transparence. Cela signifie que le bateau aurait dû vous informer dans la politique de confidentialité que vos informations pourraient être partagées sur le tableau d’affichage. Y a-t-il quelque chose dans la politique à ce sujet ?",
+        "label": "Réfléchissons à ce qui s’est passé dans la salle de jeu au vu de ce que dit la politique de protection des données personnelles : <br /> <br /> La capitaine Maria a partagé le principe de transparence. Cela signifie que le bateau aurait dû vous informer dans la politique de protection des données personnelles que vos données pourraient être partagées sur le tableau d’affichage. Y a-t-il quelque chose dans la politique à ce sujet ?",
         "options": [
           "Oui",
           "Non"
         ]
       },
       {
-        "label": "Elle a également partagé le principe de non-conservation des informations au-delà de la durée nécessaire. La politique de confidentialité n’indique rien sur la durée de conservation de vos informations, mais d’après le tableau d’affichage, il semble qu’ils les aient stockées pendant au moins 10 ans ! Cela vous semble-t-il nécessaire ?",
+        "label": "Elle a également partagé le principe de non-conservation des données au-delà de la durée nécessaire. La politique de protection des données personnelles n’indique rien sur la durée de conservation de vos données, mais d’après le tableau d’affichage, il semble qu’ils les aient stockées pendant au moins 10 ans ! Cela vous semble-t-il nécessaire ?",
         "options": [
           "Oui",
           "Non"
         ]
       },
       {
-        "label": "La capitaine Maria a également précisé que le bateau doit faire preuve de responsabilité à l’égard des informations personnelles, c’est-à-dire qu’il ne doit pas les utiliser à d’autres fins que celle prévue lors de leur collecte. Lorsque le réceptionniste a scanné votre passeport, vous ne saviez pas que les informations figurant dessus seraient affichées sur un tableau d’affichage public. Pensez-vous que le bateau a utilisé les informations de votre passeport de manière responsable ?",
+        "label": "La capitaine Maria a également précisé que le bateau doit faire preuve de responsabilité à l’égard des données personnelles, c’est-à-dire qu’il ne doit pas les utiliser à d’autres fins que celles prévues lors de leur collecte. Lorsque le réceptionniste a scanné votre passeport, vous ne saviez pas que les informations figurant dessus seraient affichées sur un tableau d’affichage public. Pensez-vous que le bateau a utilisé les informations de votre passeport de manière responsable ?",
         "options": [
           "Oui",
           "Non"
@@ -590,26 +590,26 @@
       "Cher passager,",
       "Je regrette que le serveur ait fait une erreur lors du déjeuner. Je crains",
       "que ce bateau ne soit pas aussi étanche lorsqu’il s’agit de",
-      "la confidentialité qu’il devrait l’être. Mais ne vous inquiétez pas, j’ai caché 5",
-      "principes de confidentialité sous des objets dans votre cabine qui, je crois, peuvent",
-      "vous aider à protéger vos informations personnelles. N’hésitez pas à venir dans ma cabine si vous",
+      "la protection des données personnelles qu’il devrait l’être. Mais ne vous inquiétez pas, j’ai caché 5",
+      "principes de protection des données personnelles sous des objets dans votre cabine qui, je crois, peuvent",
+      "vous aider à protéger vos données personnelles. N’hésitez pas à venir dans ma cabine si vous",
       "avez d’autres questions. - Capitaine Maria"
     ],
     "bedroom-letter": [
       "<div class='f-hand-2 font-weight-bold text-h3 mb-4'>Cher client,</div>",
-      "Rebonjour et bienvenue dans votre cabine. Vous séjournez dans la cabine 42, qui est une salle très spéciale comportant des objets que j’ai collectés lors de mes voyages.<div class='font-weight-bold'>Je vous suggère de passer un peu de temps ici pour admirer ces objets sous tous les angles.</div>",
+      "Rebonjour et bienvenue dans votre cabine. Vous séjournez dans la cabine 42, qui est une cabine très spéciale comportant des objets que j’ai collectés lors de mes voyages.<div class='font-weight-bold'>Je vous suggère de passer un peu de temps ici pour admirer ces objets sous tous les angles.</div>",
       "<div class='d-flex justify-end'><i class='f-hand-2 font-weight-bold text-h5'>- Cordialement, Franklin</i></div>"
     ],
-    "privacy-principles": "Ouvrir les principes de confidentialité",
+    "privacy-principles": "Ouvrir les principes de protection des données personnelles",
     "privacy-notice": {
-      "title": "Politique de confidentialité du bateau de croisière",
-      "description": "Nous prenons la confidentialité de vos informations personnelles très au sérieux. Cette politique définit les informations que nous collectons et partageons ainsi que vos droits. Pour en savoir plus, veuillez contacter la capitaine.",
-      "open": "Ouvrir la politique de confidentialité",
+      "title": "Politique de protection des données personnelles du bateau de croisière",
+      "description": "Nous prenons la confidentialité de vos données personnelles très au sérieux. Cette politique définit les informations que nous collectons et partageons ainsi que vos droits. Pour en savoir plus, veuillez contacter la capitaine.",
+      "open": "Ouvrir la politique de protection des données personnelles",
       "close": "Fermer",
       "close-and-call-franklin": "Appeler Franklin et exiger de voir la capitaine Maria",
       "table": {
         "headers": [
-          "CATÉGORIE D’INFORMATIONS PERSONNELLES",
+          "CATÉGORIE DE DONNÉES PERSONNELLES",
           "DESCRIPTION"
         ],
         "content": [
@@ -640,7 +640,7 @@
         "content": [
           {
             "category": "Vos droits",
-            "description": "Vous pouvez demander une copie de toutes les informations personnelles collectées à votre sujet et nous demander de corriger ou de supprimer ces informations. Pour exercer ces droits, veuillez contacter la capitaine Maria."
+            "description": "Vous pouvez demander une copie de toutes les données personnelles collectées à votre sujet et nous demander de corriger ou de supprimer ces données. Pour exercer ces droits, veuillez contacter la capitaine Maria."
           }
         ]
       }
@@ -656,17 +656,17 @@
         },
         {
           "dir": "ltr",
-          "text": "Je regrette que vous ayez rencontré des problèmes de confidentialité. Souhaitez-vous exercer vos droits à la confidentialité ?",
+          "text": "Je regrette que vous ayez rencontré des problèmes de protection des données. Souhaitez-vous exercer vos droits liés à la protection des données personnelles ?",
           "isMaria": true
         },
         {
           "dir": "ltr",
-          "text": "Je peux vous communiquer les informations dont nous disposons à votre sujet, vous pouvez demander à les corriger ou à les supprimer.",
+          "text": "Je peux vous communiquer les données dont nous disposons à votre sujet, vous pouvez demander à les corriger ou à les supprimer.",
           "isMaria": true
         },
         {
           "dir": "ltr",
-          "text": "D’après vos questions, on dirait que vous souhaitez que je supprime vos informations.",
+          "text": "D’après vos questions, on dirait que vous souhaitez que je supprime vos données.",
           "isMaria": true
         },
         {
@@ -706,17 +706,17 @@
         },
         {
           "dir": "ltr",
-          "text": "D’accord. Je peux supprimer certaines informations tout de suite si elles ne sont pas essentielles au fonctionnement du bateau, mais il y a certaines informations que nous devons utiliser pendant votre séjour, comme les données de votre passeport et vos restrictions alimentaires.",
+          "text": "D’accord. Je peux supprimer certaines données tout de suite si elles ne sont pas essentielles au fonctionnement du bateau, mais il y a certaines données que nous devons utiliser pendant votre séjour, comme les données de votre passeport et vos restrictions alimentaires.",
           "isMaria": true
         },
         {
           "dir": "ltr",
-          "text": "Une fois que vous aurez débarqué, nous pourrons tout effacer, sauf les informations que nous devons conserver pour des raisons réglementaires, telles que les informations nécessaires au respect des réglementations relatives à la COVID.",
+          "text": "Une fois que vous aurez débarqué, nous pourrons tout effacer, sauf les données que nous devons conserver pour des raisons réglementaires, telles que les informations nécessaires au respect des réglementations relatives à la COVID.",
           "isMaria": true
         },
         {
           "dir": "ltr",
-          "text": "Je vous remercie de m’avoir fait part de vos préoccupations sur la confidentialité. Je vais demander à Franklin de se mettre au travail pour s’assurer que tout est en ordre en matière de confidentialité !",
+          "text": "Je vous remercie de m’avoir fait part de vos préoccupations sur la protection des données personnelles. Je vais demander à Franklin de se mettre au travail pour s’assurer que tout est en ordre en matière de protection des données !",
           "isMaria": true
         }
       ]
@@ -783,8 +783,8 @@
   "congratulations": "Félicitations",
   "outro": {
     "successText": [
-      "<b>Félicitations !</b> Vous avez utilisé les principes de confidentialité des données pour éviter un naufrage des informations personnelles !",
-      "Cliquez sur « Suivant » pour débarquer et aider votre pays à devenir le champion de la confidentialité de 2023."
+      "<b>Félicitations !</b> Vous avez utilisé les principes de protection des données personnelles pour éviter un naufrage des données personnelles !",
+      "Cliquez sur « Suivant » pour débarquer et aider votre pays à devenir le champion de la protection des données personnelles de 2023."
     ],
     "failText": [
       "Oh, c’est dommage. Vous n’avez pas réussi à sauver le monde, maintenant le cybermonstre a détruit tout ce qu’il pouvait. Rejouez cette mission et aidez Brick à vaincre l’ennemi."
@@ -795,29 +795,29 @@
     }
   },
   "found-object": {
-    "title": "Vous avez trouvé un symbole de confidentialité",
+    "title": "Vous avez trouvé un symbole de protection des données",
     "wrong-item": {
-      "1": "Désolé, vous avez cliqué sur un mauvais objet. Essayez de cliquer sur d’autres objets pour trouver la partie manquante de la politique de confidentialité.",
+      "1": "Désolé, vous avez cliqué sur un mauvais objet. Essayez de cliquer sur d’autres objets pour trouver la partie manquante de la politique de protection des données personnelles.",
       "2": "Désolé, vous avez cliqué sur un mauvais objet. Avez-vous déjà regardé sous le tapis ?"
     },
     "find-x-more": "Vous devez trouver {x} autres symboles",
     "find-one-more": "Vous devez trouver {x} autre symbole",
-    "found-last": "Vous avez trouvé le dernier symbole de confidentialité !",
-    "found-all": "Félicitations ! Vous avez trouvé tous les principes de confidentialité.",
-    "privacy-found": "Félicitations ! Vous avez trouvé la partie manquante de la politique de confidentialité.",
+    "found-last": "Vous avez trouvé le dernier symbole de protection des données !",
+    "found-all": "Félicitations ! Vous avez trouvé tous les principes de protection des données personnelles.",
+    "privacy-found": "Félicitations ! Vous avez trouvé la partie manquante de la politique de protection des données personnelles.",
     "items": {
       "eye": "Être transparent",
       "bridge": "Ne collecter que ce qui est nécessaire",
       "handshake": "Utiliser les données de façon responsable",
-      "lock": "Protéger les informations et être vigilant",
+      "lock": "Protéger les données et être vigilant",
       "hourglass": "Ne conserver les données que le temps nécessaire"
     },
     "items-explanations": {
-      "eye": "Être transparent signifie que vous devez être en mesure de comprendre ce qui adviendra des informations vous concernant. Lorsque vous trouvez la politique de confidentialité, assurez-vous de bien la comprendre !",
-      "bridge": "Ne collecter que ce qui est nécessaire signifie que vous ne devriez pas avoir à fournir des informations vous concernant qui ne sont pas nécessaires. Ce bateau a tendance à collecter des informations partout, soyez à l’affût des moments où le bateau pourrait collecter davantage de données que celles dont il a besoin.",
-      "handshake": "Utiliser les données de façon responsable signifie que le bateau ne doit utiliser vos informations personnelles qu’aux fins pour lesquelles elles ont été collectées. Prêtez attention à ce qui figure dans la politique de confidentialité afin de vous assurer que le bateau n’utilise pas vos informations à d’autres fins.",
-      "lock": "Protéger les informations et être vigilant signifie que le bateau doit sécuriser vos informations personnelles ainsi que signaler et enquêter sur toute utilisation abusive des données. Vous devez le signaler si vous voyez quelque chose de suspect.",
-      "hourglass": "Ne conserver les informations que le temps nécessaire signifie que le bateau ne doit pas conserver vos informations au-delà de la durée nécessaire. La plupart des informations collectées par le bateau à votre sujet devraient probablement être supprimées à la fin du voyage."
+      "eye": "Être transparent signifie que vous devez être en mesure de comprendre ce qui adviendra des données vous concernant. Lorsque vous trouvez la politique de protection des données personnelles, assurez-vous de bien la comprendre !",
+      "bridge": "Ne collecter que ce qui est nécessaire signifie que vous ne devriez pas avoir à fournir des données vous concernant qui ne sont pas nécessaires. Ce bateau a tendance à collecter des données partout, soyez à l’affût des moments où le bateau pourrait collecter davantage de données que celles dont il a besoin.",
+      "handshake": "Utiliser les données de façon responsable signifie que le bateau ne doit utiliser vos données personnelles qu’aux fins pour lesquelles elles ont été collectées. Prêtez attention à ce qui figure dans la politique de protection des données personnelles afin de vous assurer que le bateau n’utilise pas vos données à d’autres fins.",
+      "lock": "Protéger les données et être vigilant signifie que le bateau doit sécuriser vos données personnelles ainsi que signaler et enquêter sur toute utilisation abusive des données. Vous devez le signaler si vous voyez quelque chose de suspect.",
+      "hourglass": "Ne conserver les informations que le temps nécessaire signifie que le bateau ne doit pas conserver vos données au-delà de la durée nécessaire. La plupart des informations collectées par le bateau à votre sujet devraient probablement être supprimées à la fin du voyage."
     }
   },
   "note-from-prev-passenger": [
@@ -826,17 +826,17 @@
     "Regardez sous le réveil"
   ],
   "privacy-notice": {
-    "title": "Politique de confidentialité du bateau de croisière",
-    "text-1": "Nous prenons la confidentialité de vos informations personnelles très au sérieux. Cette politique définit les informations que nous collectons et partageons ainsi que vos droits. Pour en savoir plus, veuillez contacter la capitaine.",
-    "text-2": "Les informations personnelles que nous collectons et leur utilisation",
+    "title": "Politique de protection des données personnelles du bateau de croisière",
+    "text-1": "Nous prenons la protection de la confidentialité de vos données personnelles très au sérieux. Cette politique définit les données que nous collectons et partageons ainsi que vos droits. Pour en savoir plus, veuillez contacter la capitaine.",
+    "text-2": "Les données personnelles que nous collectons et leur utilisation",
     "headers": {
-      "name": "CATÉGORIE D’INFORMATIONS PERSONNELLES",
+      "name": "CATÉGORIE DE DONNÉES PERSONNELLES",
       "desc": "DESCRIPTION"
     },
     "items": {
       "1": {
         "name": "Informations d’identification et coordonnées",
-        "desc": "Nous collectons des informations pour vous identifier et vous contacter, telles que votre nom, votre genre, votre nationalité, votre date de naissance, votre adresse postale, votre adresse e-mail, votre numéro de téléphone et les informations de votre passeport (telles que son numéro et sa date d’expiration). Ces informations peuvent être partagées avec les employés du bateau pour faciliter votre voyage."
+        "desc": "Nous collectons des informations pour vous identifier et vous contacter, telles que votre nom, votre genre, votre nationalité, votre date de naissance, votre adresse postale, votre adresse e-mail, votre numéro de téléphone et les informations de votre passeport (telles que son numéro et sa date d’expiration). Ces données peuvent être partagées avec les employés du bateau pour faciliter votre voyage."
       },
       "2": {
         "name": "Données pour améliorer votre voyage",
@@ -852,24 +852,24 @@
       }
     },
     "questions": {
-      "title": "Maintenant que vous avez trouvé la politique de confidentialité et les principes cachés par la capitaine Maria, que pensez-vous de la situation au déjeuner ?",
+      "title": "Maintenant que vous avez trouvé la politique de protection des données personnelles et les principes cachés par la capitaine Maria, que pensez-vous de la situation au déjeuner ?",
       "description": [
         "C’est vrai !",
-        "Bien que le bateau ait révélé qu’il collecterait des informations sur les allergies alimentaires (qui se rapportent à des restrictions alimentaires), il a déclaré qu’il ne les partagerait qu’avec les employés pour garantir la sécurité. Ces informations n’auraient jamais dû être partagées avec les autres passagers. Et pendant que nous y pensons, il serait plus cohérent que la politique de confidentialité indique « restrictions alimentaires » plutôt que « allergies », puisque Carla, Yuri et Dave avaient tous des restrictions pour d’autres raisons."
+        "Bien que le bateau ait révélé qu’il collecterait des informations sur les allergies alimentaires (qui se rapportent à des restrictions alimentaires), il a déclaré qu’il ne les partagerait qu’avec les employés pour garantir la sécurité. Ces informations n’auraient jamais dû être partagées avec les autres passagers. Et pendant que nous y sommes, il serait plus cohérent que la politique de protection des données personnelles indique « restrictions alimentaires » plutôt que « allergies », puisque Carla, Yuri et Dave avaient tous des restrictions pour d’autres raisons."
       ],
       "congratulations": [
         "Bravo !",
         "Pourquoi le bateau doit-il utiliser des caméras et des capteurs pour suivre les déplacements à son bord et vos interactions avec les autres personnes ? Le bateau a-t-il vraiment besoin de savoir si quelqu’un passe du temps dans la cabine d’un autre passager ? Même si on peut soutenir que c’est pour des raisons de sécurité, il doit y avoir des moyens d’assurer la sécurité des passagers sans compromettre leur vie privée."
       ],
       "q1": {
-        "text": "La politique de confidentialité indique-t-elle que le bateau collectera des informations sur les restrictions alimentaires ?",
+        "text": "La politique de protection des données personnelles indique-t-elle que le bateau collectera des informations sur les restrictions alimentaires ?",
         "options": [
           "Oui",
           "Non"
         ]
       },
       "q2": {
-        "text": "Sur la base de la politique de confidentialité, les notes du serveur auraient-elles dû être partagées avec les passagers ?",
+        "text": "Sur la base de la politique de protection des données personnelles, les notes du serveur auraient-elles dû être partagées avec les passagers ?",
         "options": [
           "Oui",
           "Non"
@@ -882,12 +882,12 @@
   "upload_photo": "Télécharger la photo",
   "hide": "Masquer",
   "receptionist": "Réceptionniste",
-  "privacy_notice": "Politique de confidentialité",
+  "privacy_notice": "Politique de protection des données personnelles",
   "wrong-response": "Mauvaise réponse !",
   "wrong-response-desc": "Vous avez sélectionné une réponse incorrecte, veuillez réessayer",
   "wrong-response-hint": "Vraiment ? C’est bon ? Rappelez-vous les préoccupations des autres passagers...",
   "ok": "OK",
-  "click-to-open-privacy-notice": "Cliquez pour ouvrir la politique de confidentialité",
+  "click-to-open-privacy-notice": "Cliquez pour ouvrir la politique de protection des données personnelles",
   "restart": "Recommencer",
   "restart-game": {
     "title": "Recommencer le jeu",
