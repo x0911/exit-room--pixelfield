@@ -20,7 +20,7 @@
     "text": [
       {
         "title": "Propósito",
-        "description": "Este sitio web contiene un juego de escape con una encuesta y una competición por países relacionados con la privacidad. Su empresa lo ha creado para concienciar y ampliar los conocimientos en materia de privacidad, así como para mejorar el programa de privacidad y difundirlo en su empresa."
+        "description": "Este sitio web contiene un juego de escape con una encuesta y una competición por países relacionados con la privacidad. Su empresa lo ha creado para concientizar y ampliar los conocimientos en materia de privacidad, así como para mejorar el programa de privacidad y difundirlo en su empresa."
       },
       {
         "title": "Carácter voluntario",
@@ -121,7 +121,7 @@
       "1": [
         "¡Hola!",
         "Nuestro barco cuenta con la tecnología digital más avanzada disponible en alta mar. Confiamos en que disfrutará de unas vacaciones inolvidables.",
-        "Antes de zarpar, necesitamos que escanee su pasaporte, nos comunique cualquier restricción alimentaria que debamos conocer y rellene una encuesta rápida."
+        "Antes de zarpar, necesitamos que escanee su pasaporte, nos comunique cualquier restricción alimenticia que debamos conocer y rellene una breve encuesta."
       ]
     },
     "egypt": {
@@ -130,7 +130,7 @@
       ],
       "2": [
         "Estoy embarazada de solo dos meses y no se me nota.",
-        "No quiero que la gente sepa aún que estoy embarazada, y contar que no bebo lo daría a entender."
+        "No quiero que la gente sepa aún que estoy embarazada, y contar que no tomo bebidas con alcohol lo daría a entender."
       ],
       "3": [
         "Soy diabético desde pequeño y debo tener mucho cuidado con lo que como, pero no se lo cuento a la gente.",
@@ -256,9 +256,9 @@
   "next": "Siguiente",
   "italy": {
     "questions-titles": {
-      "1": "Cuando utiliza un dispositivo digital por motivos personales, ¿con qué frecuencia lo hace?",
+      "1": "Cuando utiliza un dispositivo digital por motivos personales, ¿con qué frecuencia realiza las actividades que se describen debajo?",
       "6": "¿Cuáles de los siguientes datos se corresponden con la definición de «información personal» de Novartis? (seleccione todas las opciones que correspondan)",
-      "7": "¿Conoce lo siguiente?",
+      "7": "Tiene conocimiento de …",
       "12": "En el trabajo…",
       "16": "Seleccione su cargo",
       "17": "País"
@@ -757,7 +757,7 @@
     "title": "Carta del almuerzo",
     "items": [
       {
-        "label": "Entrante",
+        "label": "Entrada",
         "text": "Cóctel de langostinos y aguacate",
         "handwritten": "Nota: Servir la tartaleta de queso de cabra y cebolla a Dave (kosher)"
       },
