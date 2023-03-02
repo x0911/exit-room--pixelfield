@@ -102,14 +102,6 @@ export default {
           hasError: false,
           correctValue: 1
         },
-        {
-          question: '',
-          value: null,
-          type: 'checkbox',
-          isLink: true,
-          hasError: false,
-          correctValue: 1
-        },
       ],
     };
   },

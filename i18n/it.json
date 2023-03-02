@@ -20,7 +20,7 @@
     "text": [
       {
         "title": "Scopo",
-        "description": "Questo sito web contiene un gioco di escape-room con un sondaggio e un concorso nazionale relativi alla privacy. È stato creato dal suo datore di lavoro per aumentare la consapevolezza e le conoscenze relative alla privacy e migliorare il programma di privacy e aumentare la consapevolezza all'interno della sua azienda."
+        "description": "Questo sito web contiene un gioco di escape-room con un sondaggio e un concorso nazionale relativi alla privacy. È stato creato dal suo datore di lavoro per aumentare la consapevolezza e le conoscenze relative alla privacy e migliorare il programma di privacy all'interno della sua azienda."
       },
       {
         "title": "Base volontaria",
@@ -28,7 +28,7 @@
       },
       {
         "title": "Dati in forma anonima",
-        "description": "All'interno del gioco vengono elaborati solo dati in forma anonima. Il suo datore di lavoro non può fare alcun riferimento o identificazione di dipendenti specifici. Per poterle fornire notizie sui risultati del concorso-nazionale o reagire al suo feedback sul nostro gioco, può fornire volontariamente il suo indirizzo e-mail di lavoro alla fine del gioco. In questo caso sarebbe possibile un'identificazione. Tenga presente che, in caso di team di piccole dimensioni o di attività in un Paese, il suo datore di lavoro potrebbe essere in grado di identificarla se meno di cinque persone hanno la stessa divisione o unità organizzativa, funzione lavorativa e Paese di lavoro. Il suo datore di lavoro tratterà i dati in conformità con la sua politica sulla privacy e l'avviso di associazione, compreso il fatto di non identificarla intenzionalmente e di adottare misure ragionevoli, se del caso, per impedire l'identificazione."
+        "description": "All'interno del gioco vengono elaborati solo dati in forma anonima. Il suo datore di lavoro non può fare alcun riferimento o identificazione di singoli dipendenti. Per poterle fornire notizie sui risultati del concorso nazionale o reagire al suo feedback sul nostro gioco, può fornire volontariamente il suo indirizzo e-mail di lavoro alla fine del gioco. In questo caso sarebbe possibile un'identificazione. Tenga presente che, in caso di team di piccole dimensioni o di attività in un Paese, il suo datore di lavoro potrebbe essere in grado di identificarla se meno di cinque persone hanno la stessa divisione o unità organizzativa, funzione lavorativa e Paese di lavoro. Il suo datore di lavoro tratterà i dati in conformità con la sua politica sulla privacy e l'avviso di associazione, compreso il fatto di non identificarla intenzionalmente e di adottare misure ragionevoli, se del caso, per impedire l'identificazione."
       },
       {
         "title": "I cookies",
@@ -36,7 +36,7 @@
       },
       {
         "title": "Base legale e contatto",
-        "description": "Nel caso in cui i Suoi dati personali vengano elaborati, la base legale per il trattamento dei dati sarà necessaria ai fini dei legittimi interessi. Per informazioni più dettagliate sul trattamento dei dati nel suo ambiente di lavoro e sui suoi diritti in materia di privacy (ad esempio, il diritto di opporsi), la invitiamo a consultare le note locali sulla privacy per i dipendenti o a contattare il team locale per la privacy dei dati."
+        "description": "Nel caso in cui i Suoi dati personali vengano elaborati, la base legale per il trattamento dei dati sarà necessaria ai fini dei legittimi interessi. Per informazioni più dettagliate sul trattamento dei dati nel suo ambiente di lavoro e sui suoi diritti in materia di privacy (ad esempio, il diritto di opporsi al trattamento), la invitiamo a consultare le note locali sulla privacy per i dipendenti o a contattare il team locale per la privacy dei dati."
       }
     ]
   },
@@ -69,7 +69,7 @@
       "Selezioni la sua lingua per procedere"
     ],
     "map": [
-      "La stanza attiva avrà un cerchio luminoso sopra il suo nome"
+      "La stanza attiva avrà un cerchio luminoso sopra il nome della stanza stessa"
     ],
     "italy": [
       "Completi il sondaggio"
@@ -81,7 +81,7 @@
     "brazil": [],
     "china": [
       "Legga la nota, poi cerchi nella stanza i 5 principi della privacy e le loro spiegazioni.",
-      "Dopo averli trovati tutti, sbloccherà l'avviso sulla privacy."
+      "Dopo averli trovati tutti, l'avviso sulla privacy sarà accessibile."
     ],
     "usa": [],
     "russia": []
@@ -114,13 +114,13 @@
         "Sono Franklin, un robot dotato di intelligenza artificiale e il suo concierge in questo viaggio."
       ],
       "2": [
-        "La prego di seguirmi a bordo per mostrarle la nave."
+        "La prego di seguirmi a bordo così che possa mostrarle la nave."
       ]
     },
     "italy": {
       "1": [
-        "Saluti!",
-        "La nostra nave dispone della tecnologia digitale più all'avanguardia disponibile in alto mare. Confidiamo che questa sia una vacanza memorabile!",
+        "Benvenuto!",
+        "La nostra nave dispone della tecnologia digitale più all'avanguardia disponibile in alto mare. Ci auguriamo che questa sia una vacanza memorabile per lei!",
         "Prima di salpare, abbiamo bisogno che lei scansioni il suo passaporto, condivida eventuali restrizioni alimentari di cui dovremmo essere a conoscenza e completi un rapido sondaggio."
       ]
     },
@@ -130,18 +130,18 @@
       ],
       "2": [
         "Sono incinta di soli 2 mesi e non mi faccio vedere.",
-        "Non voglio che le persone sappiano che sono ancora incinta, e condividere il fatto che non sto bevendo potrebbe rivelarlo."
+        "Non voglio che le persone sappiano che sono di nuovo incinta, e condividere il fatto che non sto bevendo potrebbe rivelarlo."
       ],
       "3": [
-        "Ho sviluppato il diabete da bambina e devo stare molto attenta a ciò che mangio, ma non lo dico alle persone.",
-        "È qualcosa che tendo a mantenere privato. Mi chiedo se gli altri sospetteranno la mia condizione medica."
+        "Ho sviluppato il diabete da bambino e devo stare molto attento a ciò che mangio, ma non lo dico alle persone.",
+        "È qualcosa che tendo a mantenere privato. Mi chiedo se gli altri sospetteranno la mia malattia."
       ],
       "4": [
-        "So che in alcune parti del mondo, le persone vengono discriminate in base alla religione, ma se condivido il fatto che io faccio il kosher, ora tutti sanno che sono ebrea."
+        "So che in alcune parti del mondo, le persone vengono discriminate in base alla religione, ma se condivido il fatto che io mangio cibo kosher, tutti sapranno che sono ebreo."
       ],
       "5": [
         "Ben fatto!",
-        "Si tratta di informazioni private e il cameriere non avrebbe dovuto condividere queste note con i suoi compagni di viaggio. Vediamo come si sentono in questa situazione."
+        "Si tratta di informazioni private e il cameriere non avrebbe dovuto condividere queste note con i suoi compagni di viaggio. Vediamo che cosa provano in questa situazione."
       ]
     },
     "brazil": {
@@ -166,7 +166,7 @@
       "4": [
         "Hmmmm. Sembra improbabile.",
         "Il Capitano Maria prende sul serio la privacy.",
-        "Perché non va nella sala giochi VIP per rilassarsi e distrarsi dalle preoccupazioni? Lei è in vacanza e non dovrebbe preoccuparsi di queste cose, dopotutto!"
+        "Perché non va nella sala giochi VIP per rilassarsi e distrarsi dalle sue preoccupazioni? Lei è in vacanza e non dovrebbe preoccuparsi di queste cose dopotutto!"
       ],
       "5": [
         "Va tutto bene!"
@@ -174,16 +174,16 @@
     },
     "usa": {
       "1": [
-        "La situazione nella sala giochi era molto scomoda, vero?",
+        "La situazione nella sala giochi era molto preoccupante, vero?",
         "Guardi di nuovo l'informativa sulla privacy per capire se ciò che è accaduto nella sala giochi è lecito."
       ],
       "2": [
         "Ottimo lavoro!",
-        "Ha risposto correttamente a tutte le domande, il che significa che ha capito che la nave non è responsabile per le informazioni personali.",
+        "Ha risposto correttamente a tutte le domande, il che significa che ha capito che la nave non sta trattando le informazioni personali in maniera responsabile.",
         "Cosa può fare al riguardo?"
       ],
       "3": [
-        "Aha! L'avviso è strappato - forse il resto è nascosto nella stanza."
+        "Aha! L'avviso è stato strappato - forse il resto è nascosto nella stanza."
       ]
     },
     "russia": {
@@ -222,7 +222,7 @@
       "title": "Guarda un po'!",
       "title2": "Dia un'altra occhiata!",
       "a1": "Ha trovato un biglietto di una persona misteriosa.",
-      "a2": "C'è qualche dato che la nave sta raccogliendo che la mette a disagio? In tal caso, si chieda se la raccolta è necessaria e, in caso contrario, faccia clic su di essa!"
+      "a2": "C'è qualche dato che la nave sta raccogliendo che la mette a disagio? In tal caso, si chieda se la raccolta dei dati stessi è necessaria e, in caso contrario, faccia clic su di essa!"
     },
     "usa": {
       "games": {
@@ -257,7 +257,7 @@
   "italy": {
     "questions-titles": {
       "1": "Quando utilizza un dispositivo digitale per motivi personali, quanto spesso lo fa?",
-      "6": "Quali delle seguenti rientrano nella definizione di 'Informazioni personali' di Novartis? (selezionare tutte le opzioni applicabili)",
+      "6": "Quali delle seguenti rientrano nella definizione di Novartis di 'Informazioni personali? (selezionare tutte le opzioni applicabili)",
       "7": "Ha familiarità con quanto segue?",
       "12": "Al lavoro, lo fa?",
       "16": "Selezionare la funzione lavorativa",
@@ -274,7 +274,7 @@
     "questions": {
       "1": {
         "title": "1",
-        "label": "Leggere un'informativa o una politica sulla privacy?",
+        "label": "Leggere un'informativa o una policy sulla privacy?",
         "options": [
           "Sempre",
           "Spesso",
@@ -336,7 +336,7 @@
           "Indirizzo di casa",
           "Informazioni che, combinate, potrebbero identificare una sola persona sul pianeta, anche se non si conosce il suo nome (ad esempio, il Paese, l'università, il datore di lavoro e la fascia d'età)",
           "Coordinate GPS nel tempo",
-          "Identificatore del governo",
+          "Codice fiscale",
           "Indirizzo IP",
           "Cartelle mediche",
           "Dati in forma anonima",
@@ -345,7 +345,7 @@
       },
       "7": {
         "title": "7",
-        "label": "La Politica sulla privacy di Novartis?",
+        "label": "La Policy sulla privacy di Novartis?",
         "options": [
           "Sì",
           "No"
@@ -353,7 +353,7 @@
       },
       "8": {
         "title": "7",
-        "label": "I nostri Principi sulla privacy dei dati?",
+        "label": "I nostri Principi sulla privacy dei dati personali?",
         "options": [
           "Sì",
           "No"
@@ -361,7 +361,7 @@
       },
       "9": {
         "title": "7",
-        "label": "Chi contattare per l'assistenza sulla privacy dei dati?",
+        "label": "Chi contattare per l'assistenza sulla privacy dei dati personali?",
         "options": [
           "Sì",
           "No"
@@ -377,7 +377,7 @@
       },
       "11": {
         "title": "7",
-        "label": "Cosa fare se si viene a conoscenza di un incidente sulla privacy dei dati?",
+        "label": "Cosa fare se si viene a conoscenza di un incidente sulla privacy dei dati personali?",
         "options": [
           "Sì",
           "No"
@@ -397,7 +397,7 @@
       },
       "13": {
         "title": "12",
-        "label": "Controllare la Politica sulla privacy dei dati di Novartis quando ha domande sulla gestione delle Informazioni personali?",
+        "label": "Controllare la Policy sulla privacy dei dati personali di Novartis quando ha domande sulla gestione delle Informazioni personali?",
         "options": [
           "Sempre",
           "Spesso",
@@ -460,7 +460,7 @@
         ]
       },
       "2": {
-        "label": "Si rende conto che Carla, Yuri e Dave sembrano a disagio e decide di parlare con Franklin. Di cosa dovrebbe renderlo consapevole?",
+        "label": "Si rende conto che Carla, Yuri e Dave sembrano a disagio e decide di parlare con Franklin. Che cosa dovrebbe dire a Franklin?",
         "options": [
           "I passeggeri non devono conoscere le restrizioni alimentari degli altri.",
           "Includendo le note del cameriere sul menu, è probabile che siano state rivelate le condizioni di salute dei passeggeri e/o la loro appartenenza religiosa.",
@@ -577,7 +577,7 @@
         ]
       },
       {
-        "label": "Il Capitano Maria ha anche detto che la nave deve essere responsabile delle informazioni personali, il che significa che non deve utilizzarle per scopi diversi da quelli per cui sono state raccolte. Quando l'addetto alla reception ha scannerizzato il suo passaporto, non sapeva che le sue informazioni sarebbero state pubblicate su un tabellone pubblico. Pensa che la nave abbia utilizzato le informazioni del suo passaporto in modo responsabile?",
+        "label": "Il Capitano Maria ha anche detto che la nave deve essere responsabile delle informazioni personali, il che significa che non deve utilizzarle per scopi diversi da quelli per cui sono state raccolte. Quando l'addetto alla reception ha scannerizzato il suo passaporto, non sapeva che le sue informazioni sarebbero state pubblicate su un tabellone pubblicamente visibile . Pensa che la nave abbia utilizzato le informazioni del suo passaporto in modo responsabile?",
         "options": [
           "Sì",
           "No"
@@ -588,10 +588,10 @@
   "china": {
     "bedroom-note": [
       "Caro passeggero,",
-      "Mi è dispiaciuto sapere dell'errore del cameriere a pranzo. Sono",
-      "teme che questa nave possa non essere così stagna quando si tratta di",
-      "privacy come dovrebbe essere. Ma non si preoccupi: ho nascosto 5",
-      "i principi della privacy sotto gli oggetti della sua cabina che ritengo possano",
+      "Mi è dispiaciuto sapere dell'errore del cameriere a pranzo. Temo",
+      "che questa nave non sia sicura come dovrebbe essere quando si tratta di",
+      "privacy. Ma non si preoccupi: ho nascosto  i 5",
+      "principi sulla privacy sotto gli oggetti della sua cabina che ritengo possano",
       "aiutarla a proteggere la sua privacy. Si senta libero di visitare la mia cabina se",
       "ha altre preoccupazioni. - Il Capitano Maria"
     ],
@@ -757,12 +757,12 @@
     "title": "Menu del pranzo",
     "items": [
       {
-        "label": "Avviamento",
+        "label": "Antipasti",
         "text": "Cocktail di gamberi e avocado",
         "handwritten": "Nota: servire la crostata di formaggio di capra e cipolle a Dave (kosher)"
       },
       {
-        "label": "Principale",
+        "label": "Secondo piatto",
         "text": "Filetto di manzo con salsa ai funghi, servito con patate Dauphinoise"
       },
       {
@@ -772,7 +772,7 @@
       },
       {
         "label": "Abbinamenti di vino con ogni portata",
-        "handwritten": "(Non offra a Carla - dia invece del succo di mela frizzante)"
+        "handwritten": "(Non offrire a Carla - servire del succo di mela frizzante al posto del vino)"
       }
     ]
   },
@@ -855,7 +855,7 @@
       "title": "Ora che ha trovato l'informativa sulla privacy e i principi che il Capitano Maria ha nascosto, cosa pensa della situazione del pranzo?",
       "description": [
         "Proprio così!",
-        "Sebbene la nave abbia rivelato che avrebbe raccolto informazioni sulle allergie alimentari (che si riferiscono alle restrizioni dietetiche), ha detto che le avrebbe condivise solo con i dipendenti per garantire la sicurezza. Queste informazioni non avrebbero mai dovuto essere condivise con gli altri passeggeri. E già che ci pensiamo, sarebbe più chiaro se l'informativa sulla privacy dicesse “restrizioni alimentari“, anziché solo allergie, dato che Carla, Yuri e Dave avevano tutti restrizioni per altri motivi."
+        "Sebbene la nave abbia rivelato che avrebbe raccolto informazioni sulle allergie alimentari (che si riferiscono alle restrizioni dietetiche), ha detto che le avrebbe condivise solo con i dipendenti per garantire la sicurezza. Queste informazioni non avrebbero mai dovuto essere condivise con gli altri passeggeri. E già che ci siamo, sarebbe più chiaro se l'informativa sulla privacy dicesse “restrizioni alimentari“, anziché solo allergie, dato che Carla, Yuri e Dave avevano tutti restrizioni per altri motivi."
       ],
       "congratulations": [
         "Ottimo lavoro!",

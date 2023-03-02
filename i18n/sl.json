@@ -16,27 +16,27 @@
   "countries_scores": "5 držav z najvišjim številom točk",
   "lets-go": "Gremo",
   "cookies": {
-    "title": "Obvestilo o zasebnosti in piškotkih",
+    "title": "Obvestilo o varstvu zasebnosti in piškotkih",
     "text": [
       {
         "title": "Namen",
-        "description": "To spletno mesto vsebuje igro soba pobega z anketo in državnim tekmovanjem v zvezi z zasebnostjo. Ustvaril ga je vaš delodajalec, da bi povečal ozaveščenost in znanje, povezano z zasebnostjo, izboljšal program zasebnosti in povečal ozaveščenost v vašem podjetju."
+        "description": "Na tej spletni strani se nahaja igra Soba pobega, ki vključuje anketo in tekmovanje v zvezi z varstvom zasebnosti. Novartis je pripravil to igro z namenom povečanja ozaveščenosti in znanja na področju varstva zasebnosti."
       },
       {
-        "title": "Prostovoljno",
+        "title": "Na prostovoljni osnovi",
         "description": "Upoštevajte, da je sodelovanje v tej igri prostovoljno. Sodelovanje ni obvezno. Neudeležba ne bo imela negativnih posledic za vaše delovno razmerje."
       },
       {
         "title": "Anonimizirani podatki",
-        "description": "V igri se obdelujejo samo anonimizirani podatki. Vaš delodajalec se ne sme sklicevati na posamezne zaposlene ali jih identificirati. Da bi vam lahko posredovali novice o rezultatih državnega tekmovanja ali se odzvali na vaše povratne informacije o naši igri, lahko na koncu igre prostovoljno posredujete svoj službeni e-poštni naslov. V tem primeru bi bila mogoča identifikacija. Upoštevajte, da vas lahko delodajalec v primeru majhnih skupin ali dejavnosti v posamezni državi identificira, če je recimo manj kot pet oseb na posameznem oddelku ali organizacijski enoti, na delovnem mestu in državi poslovanja. Vaš delodajalec bo podatke obdeloval v skladu s svojim pravilnikom o zasebnosti in obvestilom o sodelovanju, vključno s tem, da vas ne bo namerno identificiral in da bo po potrebi sprejel razumne ukrepe za preprečitev identifikacije."
+        "description": "V igri se obdelujejo samo anonimizirani podatki. Novartis ne more identificirati posameznih sodelavcev ali jih povezati s posameznimi odgovori. Da bi vam lahko posredovali novice o rezultatih tekmovanja ali se odzvali na vaše povratne informacije o naši igri, lahko na koncu igre prostovoljno posredujete svoj službeni e-poštni naslov. V tem primeru identifikacija bo mogoča. Upoštevajte, da vas lahko Novartis v primeru manjših skupin v posamezni državi identificira, če je recimo manj kot pet oseb na posameznem oddelku ali organizacijski enoti, na delovnem mestu ali državi, kjer ste stacionirani. Novartis bo podatke obdeloval v skladu s svojo Politioko o varstvu zasebnosti in Obvestilom o varstvu zasebnosti za sodelavce (ma voljo na go/pn), vključno s tem, da vas ne bo namerno identificiral in da bo po potrebi sprejel razumne ukrepe za preprečitev identifikacije."
       },
       {
         "title": "Piškotki",
-        "description": "To spletno mesto obdeluje samo nujno potrebne piškotke. Ti piškotki so potrebni za delovanje spletnega mesta in jih v naših sistemih ni mogoče izklopiti. Običajno se nastavijo le kot odziv na vaša dejanja, ki pomenijo zahtevo po storitvah, kot so nastavitev zasebnosti, prijava ali izpolnjevanje obrazcev. Brskalnik lahko nastavite tako, da te piškotke blokira ali vas opozori nanje, vendar nekateri deli spletnega mesta potem ne bodo delovali. Ti piškotki ne shranjujejo nobenih osebnih podatkov."
+        "description": "To spletno mesto obdeluje samo nujno potrebne piškotke. Ti piškotki so potrebni za delovanje spletnega mesta in jih v naših sistemih ni mogoče izklopiti. Običajno se nastavijo le kot odziv na vaša dejanja, ki pomenijo zahtevo po storitvah, kot so nastavitve varstva zasebnosti, prijava ali izpolnjevanje obrazcev. Brskalnik lahko nastavite tako, da te piškotke blokira ali vas opozori nanje, vendar nekateri deli spletnega mesta potem ne bodo delovali. Ti piškotki ne shranjujejo nobenih osebnih podatkov."
       },
       {
         "title": "Pravna podlaga in stik",
-        "description": "V primeru obdelave vaših osebnih podatkov je pravna podlaga za obdelavo podatkov potreba za namene zakonitih interesov. Podrobnejše informacije o obdelavi podatkov v vašem delovnem okolju in vaših pravicah glede zasebnosti podatkov (npr. pravica do ugovora) najdete v lokalnih obvestilih o zasebnosti za zaposlene ali se obrnite na lokalno skupino za varstvo podatkov."
+        "description": "V primeru obdelave vaših osebnih podatkov so zakoniti interesi Novartisa definirani kot pravna podlaga za obdelavo podatkov. Podrobnejše informacije o obdelavi podatkov v vašem delovnem okolju in vaših pravicah glede varstva zasebnosti podatkov (npr. pravica do ugovora) najdete v Obvestilu o varstvu zasebnosti za sodelavce (na voljo na go/pn) ali se obrnite na lokalni kontakt za varstvo osebnih podatkov."
       }
     ]
   },
@@ -80,8 +80,8 @@
     ],
     "brazil": [],
     "china": [
-      "Preberite opombo, nato pa v sobi poiščite 5 načel zasebnosti in njihove razlage.",
-      "Ko najdete vse, boste odklenili obvestilo o zasebnosti."
+      "Preberite opombo, nato pa v sobi poiščite 5 načel varstva zasebnosti in njihove razlage.",
+      "Ko najdete vse, boste odklenili obvestilo o varstvu zasebnosti."
     ],
     "usa": [],
     "russia": []
@@ -141,7 +141,7 @@
       ],
       "5": [
         "Odlično opravljeno!",
-        "To so res zasebni podatki in natakar jih ne bi smel deliti z vašimi sopotniki. Poglejmo, kaj menijo o tej situaciji."
+        "To so res osebni podatki in natakar jih ne bi smel deliti z vašimi sopotniki. Poglejmo, kaj menijo o tej situaciji."
       ]
     },
     "brazil": {
@@ -153,15 +153,15 @@
     "china": {
       "1": [
         "Meni za kosilo je bil čuden, kajne?",
-        "Zakaj si ne ogledate obvestila o zasebnosti na ladji in preverite, ali je bilo primerno zbirati in deliti prehranske omejitve z drugimi potniki.",
-        "Morda boste želeli poiskati tudi načela zasebnosti, ki jih je omenila kapitanka Maria, da boste vedeli, kaj morate iskati v obvestilu."
+        "Zakaj si ne ogledate obvestila o varstva zasebnosti na ladji in preverite, ali je bilo primerno zbirati in deliti prehranske omejitve z drugimi potniki.",
+        "Morda boste želeli poiskati tudi načela varstva zasebnosti, ki jih je omenila kapitanka Maria, da boste vedeli, kaj morate iskati v obvestilu."
       ],
       "2": [
         "Slišal sem, da je bilo tukaj hrupno.",
         "Je vse v redu?"
       ],
       "3": [
-        "Podatki o prehrani potnikov so bili posredovani drugim potnikom. To ni bilo razkrito v obvestilu o zasebnosti in predstavlja težavo!"
+        "Podatki o prehrani potnikov so bili posredovani drugim potnikom. To ni bilo razkrito v obvestilu o varstvu zasebnosti in predstavlja težavo!"
       ],
       "4": [
         "Hmmmm. To se zdi malo verjetno.",
@@ -175,7 +175,7 @@
     "usa": {
       "1": [
         "Položaj v igralnici je bil zelo neprijeten, kajne?",
-        "Ponovno si oglejte obvestilo o zasebnosti in ugotovite, ali je bilo dogajanje v igralnici zakonito."
+        "Ponovno si oglejte obvestilo o vartvu zasebnosti in ugotovite, ali je bilo dogajanje v igralnici zakonito."
       ],
       "2": [
         "Dobro opravljeno!",
@@ -191,7 +191,7 @@
         "Pozdravljeni - lepo, da smo se končno spoznali!"
       ],
       "2": [
-        "Rad/-a bi uveljavil/-a svoje pravice do zasebnosti.",
+        "Rad/-a bi uveljavil/-a svoje pravice do varstva zasebnosti.",
         "Nisem zadovoljen/-na s tem, kaj ladja počne z mojimi osebnimi podatki."
       ]
     }
@@ -214,7 +214,7 @@
       "title": "Mini igra",
       "a1": "Za vstop v igralnico posnemite svoj obraz.",
       "a2": [
-        "Odlično opravljeno! Obvestilo o zasebnosti ni bilo zelo pregledno.",
+        "Odlično opravljeno! Obvestilo o varstvu zasebnosti ni bilo zelo pregledno.",
         "Zakaj si ne bi vzeli odmora in preizkusili naše najnovejše igre ..."
       ]
     },
@@ -228,7 +228,7 @@
       "games": {
         "1": {
           "title": "Igra Manjkajoči kos",
-          "a1": "V tej sobi morate poiskati obvestilo o zasebnosti."
+          "a1": "V tej sobi morate poiskati obvestilo o varstvu zasebnosti."
         },
         "2": {
           "a1": "Lahko pokličete Franklina, da vas odpelje h kapitanki Mariji.",
@@ -240,7 +240,7 @@
           }
         }
       },
-      "look-around": "Razglejte se po sobi in poskusite najti manjkajoči del obvestila o zasebnosti."
+      "look-around": "Razglejte se po sobi in poskusite najti manjkajoči del obvestila o varstvu zasebnosti."
     },
     "russia": {
       "title": "Kapitanova kabina",
@@ -257,7 +257,7 @@
   "italy": {
     "questions-titles": {
       "1": "Kako pogosto uporabljate digitalno napravo iz osebnih razlogov?",
-      "6": "Kateri od naslednjih podatkov spadajo v opredelitev »osebnih podatkov« družbe Novartis? (izberite vse, kar velja)",
+      "6": "Kateri od naslednjih podatkov spada v opredelitev »osebnih podatkov« družbe Novartis? (izberite vse, kar velja)",
       "7": "Ali poznate naslednje?",
       "12": "Ali na delovnem mestu?",
       "16": "Izberite funkcijo delovnega mesta",
@@ -274,7 +274,7 @@
     "questions": {
       "1": {
         "title": "1",
-        "label": "Preberete obvestilo ali pravilnik o zasebnosti?",
+        "label": "Preberete obvestilo ali pravilnik o varstvu zasebnosti?",
         "options": [
           "Vedno",
           "Pogosto",
@@ -296,7 +296,7 @@
       },
       "3": {
         "title": "1",
-        "label": "Prilagodite druge nastavitve zasebnosti (na primer, kako se lahko uporabljajo vaši podatki)?",
+        "label": "Prilagodite druge nastavitve varstva zasebnosti (na primer, kako se lahko uporabljajo vaši podatki)?",
         "options": [
           "Vedno",
           "Pogosto",
@@ -333,10 +333,10 @@
         "options": [
           "Telefonska številka",
           "Rojstni dan",
-          "Domači naslov",
-          "Informacije, ki bi skupaj lahko identificirale le eno osebo na planetu, tudi če ne poznate njenega imena (na primer država, fakulteta, delodajalec in starostno obdobje)",
+          "Naslov stalnega prebivališča",
+          "Informacije, ki bi jih skupaj lahko uporabili za identifikacijo le ene osebe na planetu, tudi če ne poznate njenega imena (na primer država, fakulteta, delodajalec in starostno obdobje)",
           "Koordinate GPS skozi čas",
-          "Vladni identifikator",
+          "Identifikacijska številka",
           "Naslov IP",
           "Zdravstvena dokumentacija",
           "Anonimizirani podatki",
@@ -345,7 +345,7 @@
       },
       "7": {
         "title": "7",
-        "label": "Pravilnik o zasebnosti podatkov družbe Novartis?",
+        "label": "Pravilnik o varstvu zasebnosti družbe Novartis?",
         "options": [
           "Da",
           "Ne"
@@ -353,7 +353,7 @@
       },
       "8": {
         "title": "7",
-        "label": "Naša načela zasebnosti podatkov?",
+        "label": "Naša načela varstva zasebnosti?",
         "options": [
           "Da",
           "Ne"
@@ -361,7 +361,7 @@
       },
       "9": {
         "title": "7",
-        "label": "Na koga se lahko obrnete za podporo pri varovanju zasebnosti podatkov?",
+        "label": "Na koga se lahko obrnete za podporo pri varovanju osebnih podatkov?",
         "options": [
           "Da",
           "Ne"
@@ -369,7 +369,7 @@
       },
       "10": {
         "title": "7",
-        "label": "Kdaj uporabiti načela zasebnosti?",
+        "label": "Kdaj uporabiti načela varstva zasebnosti?",
         "options": [
           "Da",
           "Ne"
@@ -377,7 +377,7 @@
       },
       "11": {
         "title": "7",
-        "label": "Kaj storiti, če se seznanite z incidentom v zvezi z zasebnostjo podatkov?",
+        "label": "Kaj storiti, če se seznanite z incidentom v zvezi z varstvom zasebnosti?",
         "options": [
           "Da",
           "Ne"
@@ -397,7 +397,7 @@
       },
       "13": {
         "title": "12",
-        "label": "Preverite pravilnik o zasebnosti podatkov družbe Novartis, ko imate vprašanja o ravnanju z osebnimi podatki?",
+        "label": "Preverite pravilnik o varstvu zasebnosti družbe Novartis, ko imate vprašanja v zvezi z ravnanjem z osebnimi podatki?",
         "options": [
           "Vedno",
           "Pogosto",
@@ -409,7 +409,7 @@
       },
       "14": {
         "title": "12",
-        "label": "Če vprašanja v zvezi z zasebnostjo ne morete rešiti sami, se obrnete na ekipo za zasebnost?",
+        "label": "Če vprašanja v zvezi z varstvom zasebnosti ne morete rešiti sami, se obrnete na tim za varstvo zasebnosti?",
         "options": [
           "Vedno",
           "Pogosto",
@@ -421,7 +421,7 @@
       },
       "15": {
         "title": "12",
-        "label": "Pri ustvarjanju ankete, registracije ali drugega obrazca poskušate zbrati čim manj informacij?",
+        "label": "Pri ustvarjanju ankete, obrazca za registracijo ali drugega obrazca poskušate zbrati čim manj informacij?",
         "options": [
           "Vedno",
           "Pogosto",
@@ -460,7 +460,7 @@
         ]
       },
       "2": {
-        "label": "Ugotovite, da je Carli, Juriju in Davu neprijetno, in se odločite, da bi morali govoriti s Franklinom. Na kaj ga morate opozoriti?",
+        "label": "Ugotovite, da je Carli, Juriju in Dave-u neprijetno, in se odločite, da bi morali govoriti s Franklinom. Na kaj ga morate opozoriti?",
         "options": [
           "Potnikom ni treba poznati prehranskih omejitev drugih sopotnikov.",
           "Z vključitvijo natakarjevih opomb na jedilnik je bilo verjetno razkrito zdravstveno stanje in/ali verska pripadnost potnikov.",
@@ -492,11 +492,11 @@
           "Da",
           "Ne"
         ],
-        "link": "Pregled obvestila o zasebnosti",
-        "text": "Bliskavica fotoaparata je bila svetla in počutite se nekoliko zmedeno. Obvestilo o zasebnosti ste pozorno prebrali, vendar . ."
+        "link": "Pregled obvestila o varstvu zasebnosti",
+        "text": "Bliskavica fotoaparata je bila svetla in počutite se nekoliko zmedeno. Obvestilo o varstvu zasebnosti ste pozorno prebrali, vendar . ."
       },
       "3": {
-        "label": "Še enkrat si oglejte obvestilo o zasebnosti - ali je v njem jasno pojasnjeno, da bo uporabljena prepoznava obraza?",
+        "label": "Še enkrat si oglejte obvestilo o varstvu zasebnosti - ali je v njem jasno pojasnjeno, da bo uporabljena prepoznava obraza?",
         "options": [
           "Da",
           "Ne"
@@ -549,11 +549,11 @@
       "phone-questions": "Kliknite ikono za brskanje po internetu.",
       "missing-piece": {
         "1": [
-          "Iskanje manjkajočega dela obvestila o zasebnosti",
+          "Iskanje manjkajočega dela obvestila o varstvu zasebnosti",
           "Ste že pogledali pod preprogo?"
         ],
         "2": [
-          "Kliknite na manjkajoči del obvestila o zasebnosti."
+          "Kliknite na manjkajoči del obvestila o varstvu zasebnosti."
         ]
       }
     },
@@ -563,14 +563,14 @@
     "score-board-inline": "Brez težav. Popeljal vas bom v kapitanovo kabino. Sledite mi.",
     "privacy-questions": [
       {
-        "label": "Razmislimo o tem, kaj se je zgodilo v igralnici, glede na to, kaj je navedeno v obvestilu o zasebnosti: <br /> <br /> Kapitanka Maria je delila načelo preglednosti. To pomeni, da bi vas morala ladja v obvestilu o zasebnosti obvestiti, da bodo vaši podatki morda deljeni na tabli z rezultati. Ali je v obvestilu o tem kaj navedeno?",
+        "label": "Razmislimo o tem, kaj se je zgodilo v igralnici, glede na to, kaj je navedeno v obvestilu o varstvu zasebnosti: <br /> <br /> Kapitanka Maria je predstavila načelo transparentnosti. To pomeni, da bi vas morala ladja v obvestilu o varstvu zasebnosti obvestiti, da bodo vaši podatki morda deljeni na tabli z rezultati. Ali je v obvestilu o tem kaj navedeno?",
         "options": [
           "Da",
           "Ne"
         ]
       },
       {
-        "label": "Prav tako se je strinjala z načelom, da informacij ne smemo hraniti dlje, kot je potrebno. V obvestilu o zasebnosti ni navedeno, kako dolgo hranijo vaše podatke, vendar je glede na tablo z rezultati videti, da jih hranijo že vsaj 10 let! Se vam zdi to potrebno?",
+        "label": "Prav tako se je strinjala z načelom, da informacij ne smemo hraniti dlje, kot je potrebno. V obvestilu o varstvu zasebnosti ni navedeno, kako dolgo hranijo vaše podatke, vendar je glede na tablo z rezultati videti, da jih hranijo že vsaj 10 let! Se vam zdi to potrebno?",
         "options": [
           "Da",
           "Ne"
@@ -590,8 +590,8 @@
       "Dragi potnik,",
       "ko sem izvedela za natakarjevo napako pri kosilu, sem to resnično obžalovala. Bojim",
       "se, da ta ladja ne bo tako neprepustna na področju",
-      "zasebnosti, kot bi morala biti. Toda ne skrbite - skrila sem 5",
-      "načel zasebnosti pod predmeti v vaši kabini, za katere menim, da lahko",
+      "varstva zasebnosti, kot bi morala biti. Toda ne skrbite - skrila sem 5",
+      "načel varstva zasebnosti pod predmeti v vaši kabini, za katere menim, da lahko",
       "pomagajo zaščititi vašo zasebnost. Če",
       "imate kakršne koli pomisleke, obiščite mojo kabino. - Kapitanka Maria"
     ],
@@ -600,11 +600,11 @@
       "ponovno pozdravljeni in dobrodošli v svoji kabini. Bivate v kabini 42, ki je prav posebna soba s predmeti, ki sem jih zbral na svojih potovanjih.<div class='font-weight-bold'>Predlagam vam, da nekaj časa preživite tukaj in občudujete te predmete z vseh zornih kotov.</div>",
       "<div class='d-flex justify-end'><i class='f-hand-2 font-weight-bold text-h5'>- S spoštovanjem, Franklin</i></div>"
     ],
-    "privacy-principles": "Načela odprte zasebnosti",
+    "privacy-principles": "Načela varstva zasebnosti",
     "privacy-notice": {
-      "title": "Obvestilo o zasebnosti na ladji za križarjenje",
+      "title": "Obvestilo o varstvu zasebnosti na ladji za križarjenje",
       "description": "Vašo zasebnost jemljemo zelo resno. V tem obvestilu je navedeno, kaj zbiramo, kaj delimo in kakšne so vaše pravice. Za več podrobnosti obiščite kapitana.",
-      "open": "Odprto obvestilo o zasebnosti",
+      "open": "Odprto obvestilo o varstvu zasebnosti",
       "close": "Zapri",
       "close-and-call-franklin": "Pokličite Franklina in zahtevajte obisk kapitanke Marie",
       "table": {
@@ -615,7 +615,7 @@
         "content": [
           {
             "category": "Identifikacija in kontaktni podatki",
-            "description": "Zbiramo podatke za identifikacijo in stik z vami, kot so vaše ime, spol, državljanstvo, datum rojstva, poštni naslov, e-poštni naslov, telefonska številka in podatki o potnem listu (na primer številka potnega lista in datum poteka veljavnosti). Te podatke lahko posredujemo zaposlenim na ladji, da bi vam olajšali potovanje."
+            "description": "Zbiramo podatke za identifikacijo in stik z vami, kot so vaše ime, spol, državljanstvo, datum rojstva, naslov stalnega prebivališča, e-poštni naslov, telefonska številka in podatki o potnem listu (na primer številka potnega lista in datum poteka veljavnosti). Te podatke lahko posredujemo zaposlenim na ladji, da bi vam olajšali potovanje."
           },
           {
             "category": "Podatki za izboljšanje vašega potovanja",
@@ -656,7 +656,7 @@
         },
         {
           "dir": "ltr",
-          "text": "Žal mi je za težave z zasebnostjo. Želite uveljavljati svoje pravice do zasebnosti?",
+          "text": "Žal mi je za težave z varstvom zasebnosti. Želite uveljavljati svoje pravice do varstva zasebnosti?",
           "isMaria": true
         },
         {
@@ -711,12 +711,12 @@
         },
         {
           "dir": "ltr",
-          "text": "Ko se izkrcate, lahko izbrišemo vse podatke, razen tistih, ki jih moramo hraniti zaradi predpisov - na primer podatke, potrebne za izpolnjevanje predpisov, povezanih s predpisi glede covida.",
+          "text": "Ko se izkrcate, lahko izbrišemo vse podatke, razen tistih, ki jih moramo hraniti glede na veljavno zakonodajo - na primer podatke, potrebne za izpolnjevanje zahtev, povezanih s predpisi glede covida.",
           "isMaria": true
         },
         {
           "dir": "ltr",
-          "text": "Zahvaljujem se vam, da ste izrazili svoje pomisleke glede zasebnosti. Franklina bom prosila, naj se loti dela in poskrbi, da bomo na področju zasebnosti delovali brezhibno!",
+          "text": "Zahvaljujem se vam, da ste izrazili svoje pomisleke glede varstva zasebnosti. Franklina bom prosila, naj se loti dela in poskrbi, da bomo na področju varstva zasebnosti delovali brezhibno!",
           "isMaria": true
         }
       ]
@@ -742,9 +742,9 @@
   },
   "excellent": "Odlično",
   "bad": "Slabo",
-  "too-bad": "Preveč slabo",
+  "too-bad": "Škoda",
   "learning-outcome": {
-    "title": "Učni izid",
+    "title": "Izid",
     "italy": [],
     "egypt": [],
     "brazil": [],
@@ -759,7 +759,7 @@
       {
         "label": "Predjedi",
         "text": "Koktajl iz kozic in avokada",
-        "handwritten": "Opomba: Davu postrezite tortico iz kozjega sira in čebule Filo (košer)"
+        "handwritten": "Opomba: Dave-u postrezite tortico iz kozjega sira in čebule Filo (košer)"
       },
       {
         "label": "Glavne jedi",
@@ -783,8 +783,8 @@
   "congratulations": "Čestitke",
   "outro": {
     "successText": [
-      "<b>Čestitamo!</b> Z načeli o zasebnosti podatkov ste preprečili brodolom zasebnosti!",
-      "Kliknite »Naprej«, da se izkrcate in pomagate svoji državi postati prvak zasebnosti za leto 2023."
+      "<b>Čestitamo!</b> Z načeli o varstvu zasebnosti podatkov ste preprečili brodolom varstva zasebnosti!",
+      "Kliknite »Naprej«, da se izkrcate in pomagate svoji državi postati prvak varstva zasebnosti za leto 2023."
     ],
     "failText": [
       "Oh, škoda. Ni vam uspelo rešiti sveta in zdaj je kibernetska pošast uničila vse, kar je lahko. Ponovno odigrajte to nalogo in pomagajte naši Brick premagati sovražnika."
@@ -795,27 +795,27 @@
     }
   },
   "found-object": {
-    "title": "Našli ste simbol zasebnosti",
+    "title": "Našli ste simbol varstva zasebnosti",
     "wrong-item": {
-      "1": "Žal ste kliknili na napačen element. Če želite najti manjkajoči del obvestila o zasebnosti, poskusite klikniti na druge elemente.",
+      "1": "Žal ste kliknili na napačen element. Če želite najti manjkajoči del obvestila o varstvu zasebnosti, poskusite klikniti na druge elemente.",
       "2": "Žal ste kliknili na napačen element. Ste že pogledali pod preprogo?"
     },
     "find-x-more": "Poiskati morate še {x} simbolov",
     "find-one-more": "Poiskati morate še {x} simbol",
-    "found-last": "Našli ste zadnji simbol zasebnosti!",
-    "found-all": "Čestitamo! Našli ste vsa načela zasebnosti.",
-    "privacy-found": "Čestitamo! Našli ste manjkajoči del obvestila o zasebnosti.",
+    "found-last": "Našli ste zadnji simbol varstva zasebnosti!",
+    "found-all": "Čestitamo! Našli ste vsa načela ¸varstva zasebnosti.",
+    "privacy-found": "Čestitamo! Našli ste manjkajoči del obvestila o varstvu zasebnosti.",
     "items": {
-      "eye": "Bodite pregledni",
-      "bridge": "Zberite le tisto, kar je potrebno",
-      "handshake": "Uporabljajte odgovorno",
-      "lock": "Varujte in bodite pozorni",
-      "hourglass": "Hranite le toliko časa, kolikor je potrebno"
+      "eye": "Bodite transparentni",
+      "bridge": "Zberite samo tisto, kar je potrebno",
+      "handshake": "Odgovorna uporaba",
+      "lock": "Varujte osebne podatke in bodite pozorni",
+      "hourglass": "Hranite osebne podatke le toliko časa, kolikor je potrebno"
     },
     "items-explanations": {
-      "eye": "Preglednost pomeni, da bi morali razumeti, kaj bo storjeno z informacijami o vas. Ko najdete obvestilo o zasebnosti, se prepričajte, da razumete, kaj piše v njem!",
-      "bridge": "Zbiranje samo nujnih podatkov pomeni, da vam ne sme biti treba posredovati podatkov o sebi, ki niso nujni. Ta ladja načeloma povsod zbira informacije - bodite pozorni na trenutke, ko lahko zbere več informacij, kot jih potrebuje.",
-      "handshake": "Odgovorna uporaba pomeni, da mora ladja vaše osebne podatke uporabljati le za namene, za katere so bili zbrani - pazite, kaj je navedeno v obvestilu o zasebnosti, da se prepričate, da ladja vaših podatkov ne uporablja za druge namene.",
+      "eye": "Preglednost pomeni, da bi morali razumeti, kaj bo storjeno z informacijami o vas. Ko najdete obvestilo o varstvu zasebnosti, se prepričajte, da razumete, kaj piše v njem!",
+      "bridge": "Zbiranje samo nujnih podatkov pomeni, da ne bi smeli biti primorani posredovati podatkov o sebi, ki niso nujni. Ta ladja načeloma povsod zbira informacije - bodite pozorni na trenutke, ko lahko zbere več informacij, kot jih potrebuje.",
+      "handshake": "Odgovorna uporaba pomeni, da mora ladja vaše osebne podatke uporabljati le za namene, za katere so bili zbrani - pazite, kaj je navedeno v obvestilu o varstvu zasebnosti, da se prepričate, da ladja vaših podatkov ne uporablja za druge namene.",
       "lock": "Zaščititi in biti pozoren pomeni, da mora ladja zavarovati vaše osebne podatke ter prijaviti in raziskati vsako zlorabo podatkov. Če opazite kaj sumljivega, se oglasite.",
       "hourglass": "Hraniti le toliko časa, kolikor je potrebno, pomeni, da ladja ne sme hraniti vaših podatkov dlje, kot je potrebno. Večino podatkov, ki jih ladja zbira o vas, je treba po koncu potovanja izbrisati."
     }
@@ -826,7 +826,7 @@
     "Poglejte pod budilko"
   ],
   "privacy-notice": {
-    "title": "Obvestilo o zasebnosti na ladji za križarjenje",
+    "title": "Obvestilo o varstvu zasebnosti na ladji za križarjenje",
     "text-1": "Vašo zasebnost jemljemo zelo resno. V tem obvestilu je navedeno, kaj zbiramo, kaj delimo in kakšne so vaše pravice. Za več podrobnosti obiščite kapitana.",
     "text-2": "Osebni podatki, ki jih zbiramo, in kako jih uporabljamo",
     "headers": {
@@ -836,7 +836,7 @@
     "items": {
       "1": {
         "name": "Identifikacija in kontaktni podatki",
-        "desc": "Zbiramo podatke za identifikacijo in stik z vami, kot so vaše ime, spol, državljanstvo, datum rojstva, poštni naslov, e-poštni naslov, telefonska številka in podatki o potnem listu (na primer številka potnega lista in datum poteka veljavnosti). Te podatke lahko posredujemo zaposlenim na ladji, da bi vam olajšali potovanje."
+        "desc": "Zbiramo podatke za identifikacijo in komuniciranje z vami, kot so vaše ime, spol, državljanstvo, datum rojstva, naslov stalnega prebivališča, e-poštni naslov, telefonska številka in podatki o potnem listu (na primer številka potnega lista in datum poteka veljavnosti). Te podatke lahko posredujemo zaposlenim na ladji, da bi vam olajšali potovanje."
       },
       "2": {
         "name": "Podatki za izboljšanje vašega potovanja",
@@ -852,24 +852,24 @@
       }
     },
     "questions": {
-      "title": "Zdaj, ko ste našli obvestilo o zasebnosti in načela, ki jih je skrivala kapitanka Maria, kaj menite o situaciji pri kosilu?",
+      "title": "Zdaj, ko ste našli obvestilo o varstvu zasebnosti in načela, ki jih je skrivala kapitanka Maria, kaj menite o situaciji pri kosilu?",
       "description": [
         "Tako je!",
-        "Čeprav je ladja razkrila, da bo zbirala informacije o alergijah na hrano (ki se nanašajo na prehranske omejitve), je dejala, da jih bo zaradi zagotavljanja varnosti delila le z zaposlenimi. Teh informacij ni bilo treba posredovati drugim potnikom. In ko že razmišljamo o tem, bi bilo bolj jasno, če bi v obvestilu o zasebnosti pisalo »prehranske omejitve« in ne le alergije, saj so imeli Carla, Jurij in Dave omejitve iz drugih razlogov."
+        "Čeprav je ladja razkrila, da bo zbirala informacije o alergijah na hrano (ki se nanašajo na prehranske omejitve), je dejala, da jih bo zaradi zagotavljanja varnosti delila le z zaposlenimi. Teh informacij ni bilo treba posredovati drugim potnikom. In ko že razmišljamo o tem, bi bilo bolj jasno, če bi v obvestilu o varstvu zasebnosti pisalo »prehranske omejitve« in ne le alergije, saj so imeli Carla, Jurij in Dave omejitve iz drugih razlogov."
       ],
       "congratulations": [
         "Dobro opravljeno!",
-        "Zakaj mora ladja uporabljati kamere in senzorje za spremljanje gibanja na ladji in vaše interakcije z drugimi? Ali mora ladja res vedeti, ali se nekdo zadržuje v kabini nekoga drugega? Tudi če je to domnevno zaradi varnosti, je treba najti načine, kako zagotoviti varnost potnikov, ne da bi pri tem ogrozili zasebnost."
+        "Zakaj mora ladja uporabljati kamere in senzorje za spremljanje gibanja na ladji in vaše interakcije z drugimi? Ali mora ladja res vedeti, ali se nekdo zadržuje v kabini nekoga drugega? Tudi če je to domnevno zaradi varnosti, je treba najti načine, kako zagotoviti varnost potnikov, ne da bi pri tem ogrozili varstvo zasebnosti."
       ],
       "q1": {
-        "text": "Ali je v obvestilu o zasebnosti navedeno, da bo ladja zbirala podatke o prehranskih omejitvah?",
+        "text": "Ali je v obvestilu o varstvu zasebnosti navedeno, da bo ladja zbirala podatke o prehranskih omejitvah?",
         "options": [
           "Da",
           "Ne"
         ]
       },
       "q2": {
-        "text": "Ali bi bilo treba na podlagi obvestila o zasebnosti natakarjeve zapiske posredovati potnikom?",
+        "text": "Ali bi bilo treba na podlagi obvestila o varstvu zasebnosti natakarjeve zapiske posredovati potnikom?",
         "options": [
           "Da",
           "Ne"
@@ -882,16 +882,16 @@
   "upload_photo": "Naloži fotografijo",
   "hide": "Skrij",
   "receptionist": "Receptor",
-  "privacy_notice": "Obvestilo o zasebnosti",
+  "privacy_notice": "Obvestilo o varstvu zasebnosti",
   "wrong-response": "Napačen odgovor!",
   "wrong-response-desc": "Izbrali ste napačen odgovor, poskusite znova",
   "wrong-response-hint": "Res? Je v redu? Spomnite se pomislekov drugih potnikov...",
   "ok": "V REDU",
-  "click-to-open-privacy-notice": "Kliknite za odprtje obvestila o zasebnosti",
+  "click-to-open-privacy-notice": "Kliknite za odprtje obvestila o varstvu zasebnosti",
   "restart": "Ponovni začetek",
   "restart-game": {
     "title": "Ponovni začetek igre",
-    "hint": "Ste prepričani, da želite znova zaigrati igro?",
+    "hint": "Ste prepričani, da želite znova začeti z igro?",
     "action": "Da, ponovni začetek!"
   },
   "top-scores": "Najvišji rezultati",

@@ -506,7 +506,7 @@
     "mini_game": {
       "title": "Franklin",
       "description": "Agora é sua oportunidade de acabar com algumas dessas câmeras com que estava preocupado. Você tem 30 segundos para bater nas câmeras. Por cada câmera em que clique durante uma corrida de 30 segundos, você receberá 50 pontos. Você pode repetir o jogo até 5 vezes",
-      "score": "Sua pontuação é: <strong>{pontuação} pontos.</strong>",
+      "score": "Sua pontuação é: <strong>{score} pontos.</strong>",
       "points": "pontos",
       "high_score": "Pontuação alta:",
       "seconds": "segundos",

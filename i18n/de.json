@@ -118,29 +118,29 @@
     },
     "italy": {
       "1": [
-        "Grüße!",
+        "GutenTag!",
         "Unser Schiff verfügt über die modernste digitale Technologie, die auf hoher See verfügbar ist. Wir hoffen, dass dies ein unvergesslicher Urlaub wird!",
-        "Bevor wir in See stechen, müssen Sie Ihren Reisepass einscannen, uns mitteilen, welche diätetischen Einschränkungen wir kennen sollten, und eine kurze Umfrage ausfüllen."
+        "Bevor wir in See stechen, müssen Sie Ihren Reisepass einscannen, uns mitteilen, welche Ernährungsbeschränkungen wir kennen sollten, und eine kurze Umfrage ausfüllen."
       ]
     },
     "egypt": {
       "1": [
-        "Sie haben einen Tisch mit 3 anderen Gästen zugewiesen bekommen. Werfen Sie einen Blick auf die Speisekarte und machen Sie sich Appetit!"
+        "Sie haben einen Tisch mit 3 anderen Gästen zugewiesen bekommen. Werfen Sie einen Blick auf die Speisekarte! Guten Appetit!"
       ],
       "2": [
         "Ich bin erst im 2. Monat schwanger und es ist noch nichts zu sehen.",
-        "Ich möchte nicht, dass die Leute wissen, dass ich schwanger bin, und die Tatsache, dass ich nicht trinke, könnte das verraten."
+        "Ich möchte nicht, dass die Leute wissen, dass ich schwanger bin und die Tatsache, dass ich nicht trinke, könnte das verraten."
       ],
       "3": [
         "Ich bin als Kind an Diabetes erkrankt und muss sehr vorsichtig sein, was ich esse, aber ich erzähle den Leuten nichts davon.",
         "Das ist etwas, das ich lieber für mich behalte. Ich frage mich, ob die anderen meinen medizinischen Zustand vermuten werden."
       ],
       "4": [
-        "Ich weiß, dass in einigen Teilen der Welt Menschen aufgrund ihrer Religion diskriminiert werden. Wenn ich erzähle, dass ich koscher lebe, weiß jeder, dass ich Jude bin."
+        "Ich weiß, dass in einigen Teilen der Welt Menschen aufgrund ihrer Religion diskriminiert werden. Wenn ich erzähle, dass ich koscher lebe, weiß jeder, dass ich jüdischen Glaubens bin."
       ],
       "5": [
         "Gut gemacht!",
-        "Dies sind in der Tat private Informationen, und der Kellner hätte diese Notizen nicht an Ihre Mitreisenden weitergeben dürfen. Mal sehen, wie sie über die Situation denken."
+        "Dies sind in der Tat personenbezogene Daten und der Kellner hätte diese Notizen nicht an Ihre Mitreisenden weitergeben dürfen. Mal sehen, wie sie über die Situation denken."
       ]
     },
     "brazil": {
@@ -152,7 +152,7 @@
     "china": {
       "1": [
         "Das Mittagsmenü war seltsam, nicht wahr?",
-        "Warum werfen Sie nicht einen Blick in die Datenschutzbestimmungen des Schiffes, um herauszufinden, ob es angemessen war, diätetische Einschränkungen zu sammeln und mit anderen Passagieren zu teilen.",
+        "Warum werfen Sie nicht einen Blick in die Datenschutzbestimmungen des Schiffes, um herauszufinden, ob es angemessen war, Ernährungsgewohnheiten zu sammeln und mit anderen Passagieren zu teilen.",
         "Vielleicht möchten Sie auch nach den von Kapitän Maria erwähnten Datenschutzgrundsätzen suchen, damit Sie wissen, worauf Sie in der Mitteilung achten müssen."
       ],
       "2": [
@@ -202,8 +202,8 @@
       "incorrect-password": "Falscher Code, bitte versuchen Sie es erneut"
     },
     "italy": {
-      "title": "Die Umfrage",
-      "a1": "Willkommen an Bord! Die Teilnahme an diesem Spiel und an der Umfrage ist völlig freiwillig. Wenn Sie sich entscheiden, nicht teilzunehmen, hat dies keine negativen Auswirkungen auf Ihr Arbeitsverhältnis."
+      "title": "Umfrage",
+      "a1": "Willkommen an Bord! Die Teilnahme an diesem Spiel und an der Umfrage ist freiwillig. Eine   Verpflichtung  zur  Teilnahme  besteht  nicht.  Eine  Nichtteilnahme  hat  keine  nachteiligen  Auswirkungen auf Ihr Arbeitsverhältnis zur Folge."
     },
     "egypt": {
       "title": "Mittagsmenü",
@@ -252,13 +252,13 @@
       }
     }
   },
-  "next": "Nächste",
+  "next": "Weiter",
   "italy": {
     "questions-titles": {
-      "1": "Wie oft benutzen Sie ein digitales Gerät aus persönlichen Gründen?",
-      "6": "Welche der folgenden Angaben fallen unter die Novartis-Definition von „Persönlichen Informationen“? (wählen Sie alles Zutreffende aus)",
-      "7": "Kennen Sie die folgenden Punkte?",
-      "12": "Bei der Arbeit, ja?",
+      "1": "Bei der Nutzung eines digitalen Geräts für private Zwecke, wie oft...:",
+      "6": "Welche der folgenden Angaben fallen unter die Novartis-Definition von „Personenbezogene Daten“? (wählen Sie alles Zutreffende aus)",
+      "7": "Sind Ihnen folgende Punkte bekannt?",
+      "12": "Datenverarbeitungen im beruflichen Kontext",
       "16": "Jobfunktion auswählen",
       "17": "Land"
     },
@@ -273,7 +273,7 @@
     "questions": {
       "1": {
         "title": "1",
-        "label": "Haben Sie einen Datenschutzhinweis oder eine Datenschutzrichtlinie gelesen?",
+        "label": "Lesen Sie die Datenschutzhinweise?",
         "options": [
           "Immer",
           "Oft",
@@ -284,7 +284,7 @@
       },
       "2": {
         "title": "1",
-        "label": "Cookie-Einstellungen anpassen?",
+        "label": "Passen die Cookie-Einstellungen an?",
         "options": [
           "Immer",
           "Oft",
@@ -295,7 +295,7 @@
       },
       "3": {
         "title": "1",
-        "label": "Andere Datenschutzeinstellungen anpassen (z. B. wie Ihre Informationen verwendet werden können)?",
+        "label": "Passen Datenschutzeinstellungen an (z.B. wie Ihre Informationen verwendet werden dürfen)?",
         "options": [
           "Immer",
           "Oft",
@@ -317,7 +317,7 @@
       },
       "5": {
         "title": "1",
-        "label": "Kreditkartendaten oder andere persönliche Informationen in Ihrem Browser speichern?",
+        "label": "Speichern Sie Kreditkartendaten oder andere persönliche Informationen in Ihrem Browser?",
         "options": [
           "Immer",
           "Oft",
@@ -334,10 +334,10 @@
           "Geburtstag",
           "Heimatadresse",
           "Informationen, die zusammengenommen nur eine Person auf der Welt identifizieren könnten, auch wenn Sie deren Namen nicht kennen (z. B. Land, Hochschule, Arbeitgeber und Altersgruppe)",
-          "GPS-Koordinaten im Zeitverlauf",
-          "Kennung der Regierung",
+          "GPS-Koordinaten",
+          "Behördliche Kennungen",
           "IP-Adresse",
-          "Medizinische Aufzeichnungen",
+          "Krankenakten",
           "Anonymisierte Daten",
           "Cookies"
         ]
@@ -360,7 +360,7 @@
       },
       "9": {
         "title": "7",
-        "label": "An wen können Sie sich wenden, wenn Sie Unterstützung beim Datenschutz benötigen?",
+        "label": "An wen Sie sich wenden können, wenn Sie Unterstützung beim Datenschutz benötigen?",
         "options": [
           "Ja",
           "Nein"
@@ -368,7 +368,7 @@
       },
       "10": {
         "title": "7",
-        "label": "Wann sind die Datenschutzgrundsätze anzuwenden?",
+        "label": "Wann die Datenschutzgrundsätze anzuwenden sind?",
         "options": [
           "Ja",
           "Nein"
@@ -376,7 +376,7 @@
       },
       "11": {
         "title": "7",
-        "label": "Was ist zu tun, wenn Sie von einem Datenschutzvorfall erfahren?",
+        "label": "Was zu tun ist, wenn Sie von einem Datenschutzvorfall erfahren?",
         "options": [
           "Ja",
           "Nein"
@@ -435,9 +435,9 @@
         "label": "",
         "options": [
           "Marketing",
-          "Patientenunterstützung und Dienstleistungen",
-          "Forschung und Entwicklung",
-          "Verkauf",
+          "Patient Support & Services",
+          "Research & Development",
+          "Sales",
           "Andere"
         ]
       },
@@ -461,9 +461,9 @@
       "2": {
         "label": "Sie bemerken, dass Carla, Yuri und Dave unbehaglich aussehen und beschließen, dass Sie Franklin ansprechen sollten. Worauf sollten Sie ihn aufmerksam machen?",
         "options": [
-          "Die Passagiere müssen die Diätvorschriften des jeweils anderen nicht kennen.",
+          "Die Passagiere müssen die Ernährungsbeschränkungen des jeweils anderen nicht kennen.",
           "Durch die Notizen des Kellners auf der Speisekarte wurden wahrscheinlich der Gesundheitszustand und/oder die Religionszugehörigkeit der Passagiere preisgegeben.",
-          "Informationen über Gesundheit und Religion gehören zu den persönlichen Daten und können in vielen Ländern als sensibel angesehen werden.",
+          "Informationen über Gesundheit und Religion gehören zu den personenbezogene Daten und können in vielen Ländern als sensibel angesehen werden.",
           "Alle der oben genannten Punkte"
         ]
       }
@@ -505,7 +505,7 @@
     "mini_game": {
       "title": "Franklin",
       "description": "Jetzt haben Sie die Chance, einige der Kameras auszuschalten, über die Sie sich Sorgen gemacht haben. Sie haben 30 Sekunden Zeit, um die Kameras anzuklicken. Für jede Kamera, die während eines 30-Sekunden-Laufs angeklickt wird, erhalten Sie 50 Punkte. Sie können das Spiel bis zu 5 Mal wiederholen",
-      "score": "Ihr Ergebnis ist: <strong>{Punktzahl} Punkte.</strong>",
+      "score": "Ihr Ergebnis ist: <strong>{score} Punkte.</strong>",
       "points": "Punkte",
       "high_score": "Hohe Punktzahl:",
       "seconds": "Sekunden",
@@ -567,7 +567,7 @@
       ]
     },
       {
-        "label": "Sie vertrat auch den Grundsatz, Informationen nicht länger als nötig aufzubewahren. Der Datenschutzhinweis sagt nichts darüber aus, wie lange Ihre Daten aufbewahrt werden, aber anhand der Anzeigetafel sieht es so aus, als ob sie mindestens 10 Jahre lang gespeichert werden! Halten Sie das für notwendig?",
+        "label": "Kapitän Maria teilte, Informationen nicht länger als nötig aufzubewahren. Der Datenschutzhinweis sagt nichts darüber aus, wie lange Ihre Daten aufbewahrt werden, aber anhand der Anzeigetafel sieht es so aus, als ob sie mindestens 10 Jahre lang gespeichert werden! Halten Sie das für notwendig?",
         "options": [
           "Ja",
           "Nein"
@@ -585,10 +585,10 @@
   "china": {
     "bedroom-note": [
       "Lieber Passagier,",
-      "es tat mir Leid, von dem Fehler des Kellners beim Mittagessen zu erfahren. Ich",
+      "es tut mir Leid von dem Fehler des Kellners beim Mittagessen zu erfahren. Ich",
       "befürchte, dieses Schiff ist nicht so wasserdicht, wie es sein sollte, wenn es um den",
       "Datenschutz geht. Aber keine Sorge - ich habe 5",
-      "Datenschutzgrundsätze unter den Objekten in Ihrer Kabine versteckt, die meiner Meinung nach",
+      "Datenschutzgrundsätze unter den Objekten in Ihrer Kabine versteckt, die",
       "Ihnen helfen, Ihre Privatsphäre zu schützen. Besuchen Sie meine Kabine, wenn Sie",
       "andere Bedenken haben. - Kapitän Maria"
     ],
@@ -597,7 +597,7 @@
       "nochmals hallo und willkommen in Ihrer Kabine. Sie wohnen in Kabine 42, einem ganz besonderen Zimmer mit Gegenständen, die ich auf meinen Reisen gesammelt habe.<div class='font-weight-bold'>Ich schlage vor, dass Sie hier einige Zeit verbringen und diese Objekte aus allen Blickwinkeln bewundern.</div>",
       "<div class='d-flex justify-end'><i class='f-hand-2 font-weight-bold text-h5'>- Mit freundlichen Grüßen, Franklin</i></div>"
     ],
-    "privacy-principles": "Offene Grundsätze zum Datenschutz",
+    "privacy-principles": "Öffne Grundsätze zum Datenschutz",
     "privacy-notice": {
       "title": "Datenschutzhinweis für Kreuzfahrtschiffe",
       "description": "Wir nehmen Ihre Privatsphäre sehr ernst. Dieser Hinweis legt dar, was wir sammeln, was wir weitergeben und welche Rechte Sie haben. Weitere Einzelheiten erfahren Sie vom Kapitän.",
@@ -606,7 +606,7 @@
       "close-and-call-franklin": "Rufen Sie Franklin an und verlangen Sie, Kapitän Maria zu besuchen",
       "table": {
         "headers": [
-          "KATEGORIE DER PERSONENBEZOGENEN INFORMATIONEN",
+          "KATEGORIE DER PERSONENBEZOGENEN DATEN",
           "BESCHREIBUNG"
         ],
         "content": [{
@@ -635,7 +635,7 @@
       "table": {
         "content": [{
           "category": "Ihre Rechte",
-          "description": "Sie haben das Recht, eine Kopie aller über Sie erfassten persönlichen Daten anzufordern und uns zu bitten, diese Daten zu korrigieren oder zu löschen. Um diese Rechte auszuüben, wenden Sie sich bitte an Kapitän Maria."
+          "description": "Sie haben das Recht, Auskunft sowie eine Kopie aller über Sie erfassten personenbezogene Daten anzufordern und uns zu bitten, diese Daten zu korrigieren oder zu löschen. Um diese Rechte auszuüben, wenden Sie sich bitte an Kapitän Maria."
         }]
       }
     }
@@ -694,7 +694,7 @@
         },
         {
           "dir": "rtl",
-          "text": "Diätetische Präferenzen",
+          "text": "Ernährungsgewohnheiten",
           "isPlayer": true
         },
         {
@@ -759,7 +759,7 @@
       },
       {
         "label": "Dessert",
-        "text": "Crème brulée",
+        "text": "Crème Brulée",
         "handwritten": "Hinweis: Servieren Sie Yuri frisches Obst (zuckerfrei)"
       },
       {
@@ -798,17 +798,17 @@
     "found-all": "Herzlichen Glückwunsch! Sie haben alle Datenschutzgrundsätze gefunden.",
     "privacy-found": "Herzlichen Glückwunsch! Sie haben den fehlenden Teil des Datenschutzhinweises gefunden.",
     "items": {
-      "eye": "Transparent sein",
-      "bridge": "Nur das Nötigste sammeln",
-      "handshake": "Verantwortungsvoll nutzen",
-      "lock": "Beschützen und wachsam sein",
-      "hourglass": "Nur so lange wie nötig aufbewahren"
+      "eye": "Seien Sie transparent!",
+      "bridge": "Sammeln Sie nur notwendige Informationen!",
+      "handshake": "Nutzen Sie personenbezogene Daten verantwortungsvoll!",
+      "lock": "Schützen Sie personenbezogene Daten!",
+      "hourglass": "Bewahren Sie personenbezogene Daten nur so lange wie nötig!"
     },
     "items-explanations": {
       "eye": "Transparent sein bedeutet, dass Sie in der Lage sein sollten, zu verstehen, was mit den Informationen über Sie gemacht wird. Wenn Sie den Datenschutzhinweis finden, stellen Sie sicher, dass Sie verstehen, was darin steht!",
-      "bridge": "Nur das Nötigste sammeln bedeutet, Sie sollten keine Informationen über sich preisgeben müssen, die nicht notwendig sind. Dieses Schiff hat die Tendenz, überall Informationen zu sammeln - halten Sie Ausschau nach Zeiten, in denen das Schiff mehr sammelt, als es braucht.",
+      "bridge": "Nur notwendige Informationen sammeln bedeutet, Sie sollten keine Informationen über sich preisgeben müssen, die nicht notwendig sind. Dieses Schiff hat die Tendenz, überall Informationen zu sammeln - halten Sie Ausschau nach Zeiten, in denen das Schiff mehr sammelt, als es braucht.",
       "handshake": "Verantwortungsbewusste Nutzung bedeutet, dass das Schiff Ihre personenbezogenen Daten nur für die Zwecke verwenden sollte, für die sie erhoben wurden - achten Sie auf die Angaben in der Datenschutzerklärung, um sicherzustellen, dass das Schiff Ihre Daten nicht für andere Zwecke verwendet.",
-      "lock": "Schützen und wachsam sein bedeutet, dass das Schiff Ihre personenbezogenen Daten schützen und jeden Datenmissbrauch melden und untersuchen sollte. Sie sollten dass Wort ergreifen, wenn Sie etwas Verdächtiges sehen.",
+      "lock": "Personenbezogene Daten schützen bedeutet, dass das Schiff Ihre personenbezogenen Daten schützen und jeden Datenmissbrauch melden und untersuchen sollte. Sie sollten dass Wort ergreifen, wenn Sie etwas Verdächtiges sehen.",
       "hourglass": "Nur so lange wie nötig aufbewahren bedeutet, dass das Schiff Ihre Informationen nicht länger als nötig aufbewahren sollte. Das meiste, was das Schiff über Sie sammelt, sollte wahrscheinlich gelöscht werden, wenn die Reise endet."
     }
   },
@@ -822,7 +822,7 @@
     "text-1": "Wir nehmen Ihre Privatsphäre sehr ernst. Dieser Hinweis legt dar, was wir sammeln, was wir weitergeben und welche Rechte Sie haben. Weitere Einzelheiten erfahren Sie vom Kapitän.",
     "text-2": "Die personenbezogenen Daten, die wir sammeln und wie wir sie verwenden",
     "headers": {
-      "name": "KATEGORIE DER PERSONENBEZOGENEN INFORMATIONEN",
+      "name": "KATEGORIE DER PERSONENBEZOGENEN DATEN",
       "desc": "BESCHREIBUNG"
     },
     "items": {
@@ -847,14 +847,14 @@
       "title": "Nun, da Sie den Datenschutzhinweis und die Grundsätze, die Kapitän Maria versteckt hat, gefunden haben, was denken Sie über die Situation beim Mittagessen?",
       "description": [
         "Das ist richtig!",
-        "Obwohl das Schiff bekannt gab, dass es Informationen über Lebensmittelallergien (die sich auf diätetische Einschränkungen beziehen) sammeln würde, sagte es, dass es diese Informationen nur an Mitarbeiter weitergeben würde, um die Sicherheit zu gewährleisten. Diese Informationen hätten niemals an andere Passagiere weitergegeben werden dürfen. Und wenn wir schon dabei sind, wäre es klarer, wenn in der Datenschutzerklärung von “diätetischen Einschränkungen“, und nicht nur von Allergien die Rede wäre, denn Carla, Yuri und Dave hatten Einschränkungen aus anderen Gründen."
+        "Obwohl das Schiff bekannt gab, dass es Informationen über Lebensmittelallergien (die sich auf Ernährungsgewohnheiten beziehen) sammeln würde, sagte es, dass es diese Informationen nur an Mitarbeiter weitergeben würde, um die Sicherheit zu gewährleisten. Diese Informationen hätten niemals an andere Passagiere weitergegeben werden dürfen. Und wenn wir schon dabei sind, wäre es klarer, wenn in der Datenschutzerklärung von “diätetischen Einschränkungen“, und nicht nur von Allergien die Rede wäre, denn Carla, Yuri und Dave hatten Einschränkungen aus anderen Gründen."
       ],
       "congratulations": [
         "Gute Arbeit!",
         "Warum braucht das Schiff Kameras und Sensoren, um Ihre Bewegungen auf dem Schiff und Ihre Interaktion mit anderen zu verfolgen? Muss das Schiff wirklich wissen, ob sich jemand zufällig in der Kabine eines anderen aufhält? Auch wenn dies wohl der Sicherheit dient, muss es Möglichkeiten geben, die Sicherheit der Passagiere zu gewährleisten, ohne die Privatsphäre zu gefährden."
       ],
       "q1": {
-        "text": "Steht in der Datenschutzerklärung, dass das Schiff Informationen über diätetische Einschränkungen sammelt?",
+        "text": "Steht in der Datenschutzerklärung, dass das Schiff Informationen über Ernährungsgewohnheiten sammelt?",
         "options": [
           "Ja",
           "Nein"
@@ -870,7 +870,7 @@
     }
   },
   "player": "Spieler",
-  "finish": "Ende",
+  "finish": "Weiter",
   "upload_photo": "Foto hochladen",
   "hide": "Ausblenden",
   "receptionist": "Rezeptionist/in",
