@@ -1,34 +1,42 @@
 <template>
-  <v-card class="info-screen card-scrollable pa-8" light>
-    <div
-      v-for="(question, qIndex) in questions"
-      :key="qIndex"
-      :class="{ 'mb-6': qIndex !== questions.length - 1 }"
+  <div>
+    <v-card
+      class="info-screen mx-auto overflow-auto pa-8"
+      light
+      max-height="85vh"
+      max-width="800"
     >
-      <div
-        :inner-html.prop="question.label"
-        :class="{ 'error--text': question.hasError }"
-        class="pb-2 text-body-1 font-weight-medium"
-      >
-
-      </div>
-      <v-radio-group
-        v-for="(option, oIdx) in question.options"
-        :key="oIdx"
-        v-model="question.value"
-        hide-details
-      >
-        <v-radio
-          :class="question.hasError ? 'error--text' : 'white--text'"
-          :label="option"
-          :value="option"
-          class="ma-0 text-body-1"
-          color="primary"
-          hide-details
-        />
-      </v-radio-group>
-    </div>
-    <div class="d-flex justify-center">
+      <v-card-text>
+        <div
+          v-for="(question, qIndex) in questions"
+          :key="qIndex"
+          :class="{ 'mb-6': qIndex !== questions.length - 1 }"
+        >
+          <div
+            :inner-html.prop="question.label"
+            :class="{ 'error--text': question.hasError }"
+            class="pb-2 text-body-1 font-weight-medium"
+          ></div>
+          <v-radio-group
+            v-for="(option, oIdx) in question.options"
+            :key="oIdx"
+            v-model="question.value"
+            hide-details
+          >
+            <v-radio
+              :class="question.hasError ? 'error--text' : 'white--text'"
+              :label="option"
+              :value="option"
+              class="ma-0 text-body-1"
+              color="primary"
+              hide-details
+            />
+          </v-radio-group>
+        </div>
+      </v-card-text>
+    </v-card>
+    <v-card-actions>
+      <v-spacer></v-spacer>
       <v-btn
         class="px-6 font-weight-light"
         color="primary"
@@ -40,8 +48,8 @@
         {{ $t('next') }}
         <v-icon class="ms-3">mdi-keyboard-backspace mdi-rotate-180</v-icon>
       </v-btn>
-    </div>
-  </v-card>
+    </v-card-actions>
+  </div>
 </template>
 
 <script>
@@ -58,11 +66,11 @@ export default {
   },
   computed: {
     answerNo() {
-      return this.questions[0].options[1]
+      return this.questions[0].options[1];
     },
     isValid() {
       return this.questions.every(({ value }) => {
-        return value === this.answerNo
+        return value === this.answerNo;
       });
     },
   },
