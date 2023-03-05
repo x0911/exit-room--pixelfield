@@ -305,7 +305,7 @@ export default {
         model: true,
         title: this.$t('screens.italy.title'),
         steps: ['screens.italy.a1'],
-        nextMethod: () => this.$nuxt.$emit('play-main-audio')
+        nextMethod: () => this.$nuxt.$emit('play-main-audio'),
       });
     },
     videoEnded() {
@@ -322,9 +322,12 @@ export default {
         try {
           const info = this.getActiveTaskInfo();
           const questions = [...this.questions].map((q, i) => {
-            const qTitleIndex = this.$t(`italy.questions.${i + 1}.title`);
-            const qTitle = this.$t(`italy.questions-titles.${qTitleIndex}`);
-            const qTextInset = this.$t(`italy.questions.${i + 1}.label`);
+            const qTitleIndex = this.$t(`italy.questions.${i + 1}.title`, 'en');
+            const qTitle = this.$t(
+              `italy.questions-titles.${qTitleIndex}`,
+              'en'
+            );
+            const qTextInset = this.$t(`italy.questions.${i + 1}.label`, 'en');
             const qText = `${qTitle} ( ${qTextInset} )`;
             let answerText = q.value;
             if (q.type === 'dropdown') {
@@ -336,11 +339,13 @@ export default {
               if (q.multiple) {
                 const arr = [];
                 q.value.forEach((v) => {
-                  arr.push(this.$tr(`italy.questions.${i + 1}.options`)[v]);
+                  arr.push(
+                    this.$t(`italy.questions.${i + 1}.options`, 'en')[v]
+                  );
                 });
                 answerText = arr;
               } else {
-                answerText = this.$tr(`italy.questions.${i + 1}.options`)[
+                answerText = this.$t(`italy.questions.${i + 1}.options`, 'en')[
                   q.value
                 ];
               }

@@ -63,7 +63,7 @@ export default {
     getActiveTaskInfo() {
       const rooms = this.$store.getters.rooms || [];
       const taskId = rooms.indexOf(this.$store.getters.activeStep) + 1;
-      const taskName = this.$t(`task-name.${taskId}`);
+      const taskName = this.$t(`task-name.${taskId}`, 'en');
       return {
         taskId,
         taskName,
