@@ -1,15 +1,14 @@
 <template>
   <v-container>
-    <component
-      :is="isUsaQuestionsOpen ? 'div' : 'v-dialog'"
+    <v-dialog
       :retain-focus="false"
       :value="videos.intro.ended"
-      class="elevation-0"
+      class="elevation-0 mx-auto"
       content-class="elevation-0"
       overlay-opacity="0"
       persistent
       scrollable
-      style="max-width: 700px; margin: 0 auto"
+      max-width="700"
     >
       <div v-if="isLoading" class="splash-screen_loading">
         <lottie-animation
@@ -19,7 +18,7 @@
           loop
         ></lottie-animation>
       </div>
-      <privacy-notice v-if="isPrivacyOpen" v-model="isPrivacyOpen"/>
+      <privacy-notice v-if="isPrivacyOpen" v-model="isPrivacyOpen" />
       <usa-questions
         v-if="isUsaQuestionsOpen"
         @next="completeUsaQuestionsHandler"
@@ -46,46 +45,47 @@
         v-else-if="isMissingPieceOpen"
         @next="completeMissingPieceHandler"
       />
-      <div class="d-flex justify-end">
-        <v-btn
-          v-if="canOpenPrivacyNotice"
-          :disabled="isPrivacyOpen"
-          class="btn-open-privacy px-6 mr-4"
-          color="primary"
-          fixed
-          large
-          right
-          style="bottom: 90px; right: 3rem"
-          tile
-          @click="
-            playGameSound('big-button-press-1');
-            isPrivacyOpen = true;
-          "
-        >
-          <span class="mr-3">{{ $t('china.privacy-notice.open') }}</span>
-          <v-icon>mdi-file-document</v-icon>
-        </v-btn>
-      </div>
-
-      <div class="d-flex justify-end">
-        <v-btn
-          v-if="canOpenPrivacySymbols"
-          class="btn-open-privacy px-6 mr-4"
-          color="primary"
-          fixed
-          large
-          right
-          style="bottom: 30px; right: 3rem"
-          tile
-          @click="
-            playGameSound('big-button-press-1');
-            isPrivacyPrincipleOpen = true;
-          "
-        >
-          <span class="mr-3">{{ $t('china.privacy-principles') }}</span>
-          <v-icon>mdi-file-document</v-icon>
-        </v-btn>
-      </div>
+      <template v-if="!isUsaQuestionsOpen">
+        <div class="d-flex justify-end">
+          <v-btn
+            v-if="canOpenPrivacyNotice"
+            :disabled="isPrivacyOpen"
+            class="btn-open-privacy px-6 mr-4"
+            color="primary"
+            fixed
+            large
+            right
+            style="bottom: 90px; right: 3rem"
+            tile
+            @click="
+              playGameSound('big-button-press-1');
+              isPrivacyOpen = true;
+            "
+          >
+            <span class="mr-3">{{ $t('china.privacy-notice.open') }}</span>
+            <v-icon>mdi-file-document</v-icon>
+          </v-btn>
+        </div>
+        <div class="d-flex justify-end">
+          <v-btn
+            v-if="canOpenPrivacySymbols"
+            class="btn-open-privacy px-6 mr-4"
+            color="primary"
+            fixed
+            large
+            right
+            style="bottom: 30px; right: 3rem"
+            tile
+            @click="
+              playGameSound('big-button-press-1');
+              isPrivacyPrincipleOpen = true;
+            "
+          >
+            <span class="mr-3">{{ $t('china.privacy-principles') }}</span>
+            <v-icon>mdi-file-document</v-icon>
+          </v-btn>
+        </div>
+      </template>
 
       <v-dialog :value="isPrivacyPrincipleOpen" max-width="750" persistent>
         <v-card class="mx-auto pa-4 info-screen" flat light tile>
@@ -119,7 +119,7 @@
           </div>
         </v-card>
       </v-dialog>
-    </component>
+    </v-dialog>
     <score-board-inline
       :label="$t('usa.score-board-inline')"
       :model="result.model"
@@ -296,7 +296,7 @@ export default {
       this.isChatOpen = true;
       this.replaceBg(`${this.stepId}-x3`);
       await this.addLoading();
-      await this.finishGame()
+      await this.finishGame();
     },
     async completeSurveyHandler() {
       this.isQuestionsOpen = false;
