@@ -13,7 +13,7 @@
         <template v-if="model === 0">
           <v-img
             :src="require('@/assets/images/games/egypt/lunch_menu_empty.jpg')"
-            class="image-bg"
+            class="image-bg content-overflow-auto"
             height="85vh"
           >
             <v-card-title

@@ -41,7 +41,7 @@
               <tr>
                 <th
                   class="pl-16 pr-0 font-weight-bold text-size-7"
-                  style="min-width: 315px"
+                  style="width: 335px"
                 >
                   <div>{{ $t('china.privacy-notice.table.headers[0]') }}</div>
                 </th>

@@ -362,3 +362,9 @@ $fillables: width, height;
   overflow: hidden;
   overflow-y: scroll;
 }
+
+.content-overflow-auto {
+  .v-responsive__content {
+    overflow: auto;
+  }
+}

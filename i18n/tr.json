@@ -17,10 +17,11 @@
   "lets-go": "Başlayalım",
   "cookies": {
     "title": "Gizlilik ve Çerez Bildirimi",
-    "text": [{
-      "title": "Amaç",
-      "description": "Bu web sitesi, gizlilikle ilgili bir anketin ve ülkeler arası bir yarışmanın yer aldığı bir odadan kaçış oyunu içermektedir. Site, işvereniniz tarafından gizlilikle ilgili farkındalığı ve bilgi birikimini artırmak ve gizlilik programını geliştirerek şirketiniz genelindeki farkındalığı yükseltmek için oluşturulmuştur."
-    },
+    "text": [
+      {
+        "title": "Amaç",
+        "description": "Bu web sitesi, gizlilikle ilgili bir anketin ve ülkeler arası bir yarışmanın yer aldığı bir odadan kaçış oyunu içermektedir. Site, işvereniniz tarafından gizlilikle ilgili farkındalığı ve bilgi birikimini artırmak ve gizlilik programını geliştirerek şirketiniz genelindeki farkındalığı yükseltmek için oluşturulmuştur."
+      },
       {
         "title": "Gönüllülük esası",
         "description": "Bu oyuna katılımın gönüllülük esasına bağlı olduğunu lütfen unutmayın. Herhangi bir katılım zorunluluğu yoktur. Oyuna katılmama tercihiniz, iş ilişkiniz üzerinde herhangi bir olumsuz etkiyle sonuçlanmayacaktır."
@@ -64,15 +65,9 @@
   "nationality": "Uyruk",
   "and": "ve",
   "hints": {
-    "splash": [
-      "Devam etmek için dil seçimi yapın"
-    ],
-    "map": [
-      "Etkin olan odanın adının üzerinde parlak bir daire olacaktır"
-    ],
-    "italy": [
-      "Anketi tamamla"
-    ],
+    "splash": ["Devam etmek için dil seçimi yapın"],
+    "map": ["Etkin olan odanın adının üzerinde parlak bir daire olacaktır"],
+    "italy": ["Anketi tamamla"],
     "egypt": [
       "Garsonun size vereceği menüde herhangi bir sorun olup olmadığını kontrol edin.",
       "Kontrol ettikten sonra, sonraki adımlara geçmek için güvenle ileri düğmesine tıklayabilirsiniz"
@@ -155,10 +150,7 @@
         "Beslenme kısıtlamalarına ilişkin bilgilerin toplanmasının ve diğer yolcularla paylaşılmasının uygun olup olmadığını görmek için neden geminin gizlilik bildirimine bir göz atmıyorsunuz?",
         "Bildirimde nelere dikkat etmeniz gerektiğini öğrenmek için Kaptan Maria'nın bahsettiği gizlilik ilkelerini aramak isteyebilirsiniz."
       ],
-      "2": [
-        "Burada bazı sesler duydum.",
-        "Her şey yolunda mı?"
-      ],
+      "2": ["Burada bazı sesler duydum.", "Her şey yolunda mı?"],
       "3": [
         "Yolcuların beslenme bilgileri diğer yolcularla paylaşıldı. Bu durum gizlilik bildiriminde açıklanmıyor ve bu ciddi bir sorun!"
       ],
@@ -167,9 +159,7 @@
         "Kaptan Maria gizliliği ciddiye alır.",
         "Rahatlamak ve endişelerinizden uzaklaşmak için neden VIP oyun odasına gitmiyorsunuz? Tatildesiniz ve böyle şeyler hakkında endişelenmemelisiniz!"
       ],
-      "5": [
-        "Her şey yolunda!"
-      ]
+      "5": ["Her şey yolunda!"]
     },
     "usa": {
       "1": [
@@ -186,9 +176,7 @@
       ]
     },
     "russia": {
-      "1": [
-        "Merhaba, sonunda tanışabildiğimiz için çok mutluyum!"
-      ],
+      "1": ["Merhaba, sonunda tanışabildiğimiz için çok mutluyum!"],
       "2": [
         "Gizlilik haklarımı kullanmak istiyorum.",
         "Geminin kişisel bilgilerimi kullanma şeklinden memnun değilim."
@@ -274,57 +262,27 @@
       "1": {
         "title": "1",
         "label": "Gizlilik bildirimi veya politikalarını okur musunuz?",
-        "options": [
-          "Her zaman",
-          "Sık sık",
-          "Ara sıra",
-          "Nadiren",
-          "Asla"
-        ]
+        "options": ["Her zaman", "Sık sık", "Ara sıra", "Nadiren", "Asla"]
       },
       "2": {
         "title": "1",
         "label": "Çerez ayarlarını özelleştirir misiniz?",
-        "options": [
-          "Her zaman",
-          "Sık sık",
-          "Ara sıra",
-          "Nadiren",
-          "Asla"
-        ]
+        "options": ["Her zaman", "Sık sık", "Ara sıra", "Nadiren", "Asla"]
       },
       "3": {
         "title": "1",
         "label": "Diğer gizlilik ayarlarını (bilgilerinizin nasıl kullanılabileceği gibi) özelleştirir misiniz?",
-        "options": [
-          "Her zaman",
-          "Sık sık",
-          "Ara sıra",
-          "Nadiren",
-          "Asla"
-        ]
+        "options": ["Her zaman", "Sık sık", "Ara sıra", "Nadiren", "Asla"]
       },
       "4": {
         "title": "1",
         "label": "Yalnızca gerektiği kadar bilgi girmeye mi çalışırsınız?",
-        "options": [
-          "Her zaman",
-          "Sık sık",
-          "Ara sıra",
-          "Nadiren",
-          "Asla"
-        ]
+        "options": ["Her zaman", "Sık sık", "Ara sıra", "Nadiren", "Asla"]
       },
       "5": {
         "title": "1",
         "label": "Kredi kartı bilgilerini veya diğer Kişisel Bilgileri tarayıcınıza kaydeder misiniz?",
-        "options": [
-          "Her zaman",
-          "Sık sık",
-          "Ara sıra",
-          "Nadiren",
-          "Asla"
-        ]
+        "options": ["Her zaman", "Sık sık", "Ara sıra", "Nadiren", "Asla"]
       },
       "6": {
         "title": "6",
@@ -345,42 +303,27 @@
       "7": {
         "title": "7",
         "label": "Novartis Veri Gizliliği Politikası?",
-        "options": [
-          "Evet",
-          "Hayır"
-        ]
+        "options": ["Evet", "Hayır"]
       },
       "8": {
         "title": "7",
         "label": "Veri Gizliliği İlkelerimiz?",
-        "options": [
-          "Evet",
-          "Hayır"
-        ]
+        "options": ["Evet", "Hayır"]
       },
       "9": {
         "title": "7",
         "label": "Veri gizliliği desteği için iletişime geçilecek kişiler?",
-        "options": [
-          "Evet",
-          "Hayır"
-        ]
+        "options": ["Evet", "Hayır"]
       },
       "10": {
         "title": "7",
         "label": "Gizlilik İlkelerinin uygulanacağı durumlar?",
-        "options": [
-          "Evet",
-          "Hayır"
-        ]
+        "options": ["Evet", "Hayır"]
       },
       "11": {
         "title": "7",
         "label": "Bir veri gizliliği olayından haberdar olduğunuzda yapmanız gerekenler?",
-        "options": [
-          "Evet",
-          "Hayır"
-        ]
+        "options": ["Evet", "Hayır"]
       },
       "12": {
         "title": "12",
@@ -480,26 +423,17 @@
     "questions": {
       "1": {
         "label": "Pasaport fotoğrafınızın alınacağı ve geminin bazı bölümlerine erişimi kontrol etmek için kullanılacağı yazıyor muydu?",
-        "options": [
-          "Evet",
-          "Hayır"
-        ]
+        "options": ["Evet", "Hayır"]
       },
       "2": {
         "label": "Yüz tanıma yazılımının kullanılacağı açıkça belirtiliyor mu?",
-        "options": [
-          "Evet",
-          "Hayır"
-        ],
+        "options": ["Evet", "Hayır"],
         "link": "Gizlilik bildirimini gözden geçirin",
         "text": "Kameranın flaşı parlaktı ve biraz kafanız karıştı. Gizlilik bildirimini dikkatlice okudunuz; ancak... ."
       },
       "3": {
         "label": "Gizlilik bildirimine tekrar bakın - yüz tanıma yazılımının kullanılacağı açıkça belirtiliyor mu?",
-        "options": [
-          "Evet",
-          "Hayır"
-        ]
+        "options": ["Evet", "Hayır"]
       }
     },
     "mini_game": {
@@ -516,26 +450,18 @@
       "Oyun odasına hoş geldiniz.",
       "Burada tüm ülkelerin sonuçlarını görebilirsiniz. Ülkenizin puanına katkıda bulunmak için oyunda mümkün olan en yüksek puanı almaya çalışın."
     ],
-    "scoreboard-questions": [{
-      "label": "Puan tablosunda fotoğrafınız ve diğer tanımlayıcı bilgileriniz yer alıyor ve şu an sizinle birlikte seyahat eden ve gelecekteki yolcular da bu bilgileri görebilecek. Bu sizi rahatsız ediyor mu?",
-      "options": [
-        "Evet",
-        "Hayır"
-      ]
-    },
+    "scoreboard-questions": [
+      {
+        "label": "Puan tablosunda fotoğrafınız ve diğer tanımlayıcı bilgileriniz yer alıyor ve şu an sizinle birlikte seyahat eden ve gelecekteki yolcular da bu bilgileri görebilecek. Bu sizi rahatsız ediyor mu?",
+        "options": ["Evet", "Hayır"]
+      },
       {
         "label": "Puan tablosuna daha yakından baktığınızda, 2013 yılına kadar giden puanlar olduğunu görüyorsunuz, bu da bilgilerinizin yıllarca tabloda kalabileceğini gösteriyor. Bu sizi rahatsız ediyor mu?",
-        "options": [
-          "Evet",
-          "Hayır"
-        ]
+        "options": ["Evet", "Hayır"]
       },
       {
         "label": "Sizce puan tablosu gizlilik konusunda daha hassas bir şekilde tutulabilir mi?",
-        "options": [
-          "Evet",
-          "Hayır"
-        ]
+        "options": ["Evet", "Hayır"]
       }
     ]
   },
@@ -550,35 +476,25 @@
           "Gizlilik bildiriminin eksik parçasını bulun",
           "Halının altına baktınız mı?"
         ],
-        "2": [
-          "Gizlilik bildiriminin eksik parçasına tıklayın."
-        ]
+        "2": ["Gizlilik bildiriminin eksik parçasına tıklayın."]
       }
     },
     "instructions": {
       "phone-questions": "Size yardımcı olabilecek faydalı öğeleri işaretleyin."
     },
     "score-board-inline": "Sorun değil. Sizi kaptanın kamarasına götüreceğim. Lütfen beni takip edin.",
-    "privacy-questions": [{
-      "label": "Gizlilik bildirimindeki ifadeler ışığında oyun odasında neler olduğunu düşünelim: <br /> <br /> Kaptan Maria şeffaf olma ilkelerini paylaştı. Bu, geminin gizlilik bildiriminde bilgilerinizin puan tablosunda paylaşılabileceğini size bildirmiş olması gerektiği anlamına gelir. Bildirimde bu konuyla ilgili bir husus var mı?",
-      "options": [
-        "Evet",
-        "Hayır"
-      ]
-    },
+    "privacy-questions": [
+      {
+        "label": "Gizlilik bildirimindeki ifadeler ışığında oyun odasında neler olduğunu düşünelim: <br /> <br /> Kaptan Maria şeffaf olma ilkelerini paylaştı. Bu, geminin gizlilik bildiriminde bilgilerinizin puan tablosunda paylaşılabileceğini size bildirmiş olması gerektiği anlamına gelir. Bildirimde bu konuyla ilgili bir husus var mı?",
+        "options": ["Evet", "Hayır"]
+      },
       {
         "label": "Kaptan ayrıca, bilgiyi gereğinden uzun süre saklamama ilkesini de paylaştı. Gizlilik bildiriminde bilgilerinizin ne kadar süreyle saklanacağı hakkında bir şey yazmıyor; ancak, puan tablosuna göre bilgiler en az 10 yıl boyunca saklanıyor gibi görünüyor! Bu gerekli mi?",
-        "options": [
-          "Evet",
-          "Hayır"
-        ]
+        "options": ["Evet", "Hayır"]
       },
       {
         "label": "Kaptan Maria ayrıca, geminin kişisel bilgiler konusunda sorumlu davranması gerektiğini, yani bu bilgileri toplanma amaçları dışında kullanmaması gerektiğini söyledi. Resepsiyon görevlisi pasaportunuzu tarattığında, pasaport bilgilerinizin herkese açık bir puan tablosunda yayınlanacağından haberiniz yoktu. Geminin pasaport bilgilerinizi sorumlu bir şekilde kullandığını düşünüyor musunuz?",
-        "options": [
-          "Evet",
-          "Hayır"
-        ]
+        "options": ["Evet", "Hayır"]
       }
     ]
   },
@@ -605,14 +521,12 @@
       "close": "Kapat",
       "close-and-call-franklin": "Franklin'i arayın ve Kaptan Maria'yı görmeyi talep edin",
       "table": {
-        "headers": [
-          "KİŞİSEL BİLGİ KATEGORİSİ",
-          "AÇIKLAMA"
-        ],
-        "content": [{
-          "category": "Kimlik ve iletişim bilgileri",
-          "description": "Sizi tanımlamak ve sizinle iletişim kurmak için adınız, cinsiyetiniz, uyruğunuz, doğum tarihiniz, posta adresiniz, e-posta adresiniz, telefon numaranız ve pasaport bilgileriniz (pasaport numarası ve sonlanma tarihi vb.) gibi bilgileri topluyoruz. Bu bilgiler, yolculuğunuzu daha konforlu hale getirmek için gemi çalışanlarıyla paylaşılabilir."
-        },
+        "headers": ["KİŞİSEL BİLGİ KATEGORİSİ", "AÇIKLAMA"],
+        "content": [
+          {
+            "category": "Kimlik ve iletişim bilgileri",
+            "description": "Sizi tanımlamak ve sizinle iletişim kurmak için adınız, cinsiyetiniz, uyruğunuz, doğum tarihiniz, posta adresiniz, e-posta adresiniz, telefon numaranız ve pasaport bilgileriniz (pasaport numarası ve sonlanma tarihi vb.) gibi bilgileri topluyoruz. Bu bilgiler, yolculuğunuzu daha konforlu hale getirmek için gemi çalışanlarıyla paylaşılabilir."
+          },
           {
             "category": "Yolculuğunuzu daha keyifli hale dönüştürecek veriler",
             "description": "İleri teknolojiden faydalanan bir gemi turu şirketi olarak, size mümkün olan en iyi yolculuğu sunmak için en son teknoloji ve algoritmaları kullanıyoruz. Bu doğrultuda, gemideki hareketinizi, çeşitli odalarda ne kadar kaldığınızı ve çalışanlarımızla ve diğer yolcularla nasıl iletişim kurduğunuzu izlemek için kameralar ve diğer sensörleri kullanabiliriz."
@@ -626,27 +540,28 @@
             "description": "Güvenli bir yolculuk geçirmeniz için çabalıyoruz! Herhangi bir gıda alerjiniz olup olmadığını bize bildirmenizi isteyeceğiz ve ayrıca deniz tutması veya başka rahatsızlıklar için gemimizde bir hemşire bulunacaktır. Hemşireyi ziyaret ederseniz mevcut veya önceki sağlık durumlarınız hakkında bilgi toplayabiliriz. Bu bilgiler yalnızca tur çalışanları tarafından güvenliğinizi sağlamak amacıyla kullanılacaktır."
           }
         ],
-        "correctOptions": [
-          1
-        ]
+        "correctOptions": [1]
       }
     },
     "missing-privacy-notice": {
       "table": {
-        "content": [{
-          "category": "Haklarınız",
-          "description": "Hakkınızda toplanan tüm Kişisel Bilgilerin bir kopyasını talep etme ve bizden bu bilgileri düzeltmemizi veya silmemizi isteme hakkına sahipsiniz. Bu hakları kullanmak için lütfen Kaptan Maria ile iletişime geçin."
-        }]
+        "content": [
+          {
+            "category": "Haklarınız",
+            "description": "Hakkınızda toplanan tüm Kişisel Bilgilerin bir kopyasını talep etme ve bizden bu bilgileri düzeltmemizi veya silmemizi isteme hakkına sahipsiniz. Bu hakları kullanmak için lütfen Kaptan Maria ile iletişime geçin."
+          }
+        ]
       }
     }
   },
   "russia": {
     "task-2": {
-      "msgs": [{
-        "dir": "ltr",
-        "text": "Sonunda tanışabildiğimiz için çok mutluyum.",
-        "isMaria": true
-      },
+      "msgs": [
+        {
+          "dir": "ltr",
+          "text": "Sonunda tanışabildiğimiz için çok mutluyum.",
+          "isMaria": true
+        },
         {
           "dir": "ltr",
           "text": "Gizlilikle ilgili sorun yaşadığınızı duyduğuma üzüldüm. Gizlilik haklarınızı kullanmak mı istiyorsunuz?",
@@ -748,11 +663,12 @@
   "try-again": "Tekrar deneyin",
   "lunch-menu": {
     "title": "Yemek Menüsü",
-    "items": [{
-      "label": "Başlangıç",
-      "text": "Karides ve Avokado Kokteyli",
-      "handwritten": "Not: Dave'e Keçi Peyniri ve Soğanlı Tart servis edin (koşer)"
-    },
+    "items": [
+      {
+        "label": "Başlangıç",
+        "text": "Karides ve Avokado Kokteyli",
+        "handwritten": "Not: Dave'e Keçi Peyniri ve Soğanlı Tart servis edin (koşer)"
+      },
       {
         "label": "Ana Yemek",
         "text": "Mantar soslu bonfile, patates graten ile servis edilir"
@@ -855,17 +771,11 @@
       ],
       "q1": {
         "text": "Gizlilik bildiriminde geminin beslenme kısıtlamaları hakkında bilgi toplayacağı belirtiliyor mu?",
-        "options": [
-          "Evet",
-          "Hayır"
-        ]
+        "options": ["Evet", "Hayır"]
       },
       "q2": {
         "text": "Gizlilik bildirimine göre, garsonun notları yolcularla paylaşılmalı mıydı?",
-        "options": [
-          "Evet",
-          "Hayır"
-        ]
+        "options": ["Evet", "Hayır"]
       }
     }
   },
