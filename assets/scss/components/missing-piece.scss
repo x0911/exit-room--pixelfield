@@ -197,6 +197,10 @@
       height: 100%;
       object-fit: contain;
       filter: drop-shadow(var(--dt) var(--db) var(--dx) #111);
+      -webkit-filter: drop-shadow(var(--dt) var(--db) var(--dx) #111);
+      -moz-filter: drop-shadow(var(--dt) var(--db) var(--dx) #111);
+      -ms-filter: drop-shadow(var(--dt) var(--db) var(--dx) #111);
+      -o-filter: drop-shadow(var(--dt) var(--db) var(--dx) #111);
     }
   }
 }

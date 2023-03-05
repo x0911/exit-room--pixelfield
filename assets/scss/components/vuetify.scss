@@ -56,6 +56,20 @@ It's used in nuxt.config.js in global css files
 
 .v-btn {
   font-weight: 400 !important;
+  white-space: initial !important;
+  max-width: 250px;
+  height: auto !important;
+  
+  &:not(.d-block) {
+    display: inline-block;
+  }
+
+  &.v-btn--fab.v-size--small {
+    min-height: 40px !important;
+  }
+  &:not(.v-size--x-small):not(.v-size--small) {
+    min-height: 44px !important;
+  }
 
   &:not(.normal-btn):not(.v-btn--icon):not(.v-btn--outlined):not(.v-btn--text) {
     border-width: 2px;

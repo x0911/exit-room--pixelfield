@@ -19,9 +19,9 @@
         "
       >
         <v-card-title
-          class="d-block text-center mt-16 pt-12 white--text font-weight-bold"
+          class="d-block text-center mt-16 pt-4 white--text font-weight-bold"
         >
-          <span class="white--text font-weight-bold text-h6">
+          <span class="white--text font-weight-bold text-h6 d-block mx-auto" style="max-width: 400px; min-height: 64px">
             {{ $t('china.privacy-notice.title') }}
           </span>
         </v-card-title>
