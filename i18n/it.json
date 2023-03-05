@@ -806,11 +806,11 @@
     "found-all": "Congratulazioni! Ha trovato tutti i principi della privacy.",
     "privacy-found": "Congratulazioni! Ha trovato la parte mancante dell'informativa sulla privacy.",
     "items": {
-      "eye": "Siate trasparenti",
-      "bridge": "Raccolga solo ciò che è necessario",
-      "handshake": "Utilizzi in modo responsabile",
-      "lock": "Proteggere e vigilare",
-      "hourglass": "Conservi solo per il tempo necessario"
+      "eye": "Trasparenza",
+      "bridge": "Raccolta solo di ciò che è necessario",
+      "handshake": "Trattamento responsabile",
+      "lock": "Protezione e vigilanza",
+      "hourglass": "Conservazione solo per il tempo necessario"
     },
     "items-explanations": {
       "eye": "Essere trasparenti significa che lei deve essere in grado di capire cosa verrà fatto con le informazioni che la riguardano. Quando trova l'informativa sulla privacy, si assicuri di capire cosa dice!",

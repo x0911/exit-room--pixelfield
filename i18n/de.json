@@ -16,10 +16,10 @@
   "countries_scores": "Die 5 Länder mit den höchsten Punktzahlen",
   "lets-go": "Los geht's",
   "cookies": {
-    "title": "Datenschutz und Cookie-Hinweis",
+    "title": "Datenschutz und Cookie Policy",
     "text": [{
       "title": "Zweck",
-      "description": "Diese Website enthält ein Escape-Room-Spiel mit einer Umfrage und einem Länderwettbewerb zum Thema Datenschutz. Er wurde von Ihrem Arbeitgeber erstellt, um das Bewusstsein und das Wissen in Bezug auf den Datenschutz zu erhöhen und das Datenschutzprogramm zu verbessern und das Bewusstsein in Ihrem Unternehmen zu erhöhen."
+      "description": "Diese Website enthält ein Escape-Room-Spiel mit einer Umfrage und einem Länderwettbewerb zum Thema Datenschutz. Sie wurde von Ihrem Arbeitgeber erstellt, um das Bewusstsein und das Wissen in Bezug auf den Datenschutz zu erhöhen und das Datenschutzprogramm in Ihrem Unternehmen zu verbessern."
     },
       {
         "title": "Auf freiwilliger Basis",
@@ -27,15 +27,15 @@
       },
       {
         "title": "Anonymisierte Daten",
-        "description": "Innerhalb des Spiels werden nur anonymisierte Daten verarbeitet. Ihr Arbeitgeber darf keine Hinweise auf bestimmte Mitarbeiter geben oder diese identifizieren. Damit wir Sie über die Ergebnisse des Länderwettbewerbs informieren oder auf Ihr Feedback zu unserem Spiel reagieren können, können Sie am Ende des Spiels freiwillig Ihre Arbeits-E-Mail-Adresse angeben. In diesem Fall wäre eine Identifizierung möglich. Bitte beachten Sie, dass Ihr Arbeitgeber im Falle kleiner Teams oder Ländergesellschaften Sie möglicherweise identifizieren kann, wenn weniger als fünf Personen dieselbe Abteilung oder Organisationseinheit, Jobfunktion und Arbeitsland haben. Ihr Arbeitgeber wird die Daten im Einklang mit seinen Datenschutzrichtlinien und dem dazugehörigen Hinweis verarbeiten. Dazu gehört, dass er Sie nicht absichtlich identifiziert und gegebenenfalls angemessene Maßnahmen ergreift, um eine Identifizierung zu verhindern."
+        "description": "Innerhalb des Spiels werden nur anonymisierte Daten verarbeitet. Ihr Arbeitgeber kann keine Hinweise oder Ableitungen auf bestimmte Mitarbeiter ziehen oder diese identifizieren. Damit wir Sie über die Ergebnisse des Länderwettbewerbs informieren oder auf Ihr Feedback zu unserem Spiel reagieren können, können Sie am Ende des Spiels freiwillig Ihre Arbeits-Emailadresse angeben. In diesem Fall wäre eine Identifizierung möglich. Bitte beachten Sie, dass Ihr Arbeitgeber im Falle kleiner Teams oder Ländergesellschaften Sie möglicherweise identifizieren kann, wenn weniger als fünf Personen dieselbe Abteilung oder Organisationseinheit, Jobfunktion und Arbeitsland haben. Ihr Arbeitgeber wird die Daten im Einklang mit seinen Datenschutzrichtlinien und dem dazugehörigen Hinweis verarbeiten. Dazu gehört, dass er Sie nicht absichtlich identifiziert und gegebenenfalls angemessene Maßnahmen ergreift, um eine Identifizierung zu verhindern."
       },
       {
         "title": "Cookies",
-        "description": "Diese Website verarbeitet nur unbedingt notwendige Cookies. Diese Cookies sind für das Funktionieren der Website erforderlich und können in unseren Systemen nicht ausgeschaltet werden. Sie werden in der Regel nur als Reaktion auf Ihre Handlungen gesetzt, die einer Anfrage nach Dienstleistungen gleichkommen, wie z.B. die Einstellung Ihrer Datenschutzeinstellungen, das Einloggen oder das Ausfüllen von Formularen. Sie können Ihren Browser so einstellen, dass er diese Cookies blockiert oder Sie darauf hinweist, aber einige Teile der Website funktionieren dann nicht. Diese Cookies speichern keine persönlich identifizierbaren Informationen."
+        "description": "Diese Website verarbeitet nur unbedingt notwendige Cookies. Diese Cookies sind für das Funktionieren der Website erforderlich und können in unseren Systemen nicht ausgeschaltet werden. Sie werden in der Regel nur als Reaktion auf Ihre Handlungen gesetzt, die einer Anfrage nach Dienstleistungen gleichkommen, wie z.B. die Einstellung Ihrer Datenschutzeinstellungen, das Einloggen oder das Ausfüllen von Formularen. Sie können Ihren Browser so einstellen, dass er diese Cookies blockiert oder Sie darauf hinweist, aber einige Teile der Website funktionieren dann nicht. Diese Cookies speichern keine personenbezogenen Daten."
       },
       {
         "title": "Rechtsgrundlage und Kontakt",
-        "description": "Falls Ihre personenbezogenen Daten verarbeitet werden, ist die Rechtsgrundlage für die Datenverarbeitung die Notwendigkeit für die Zwecke der berechtigten Interessen. Ausführlichere Informationen zur Datenverarbeitung in Ihrem Arbeitsumfeld und zu Ihren Datenschutzrechten (z.B. Widerspruchsrecht) finden Sie in den lokalen Datenschutzhinweisen für Mitarbeiter oder bei Ihrem lokalen Datenschutzteam."
+        "description": "Falls Ihre personenbezogenen Daten verarbeitet werden sollten, ist die Rechtsgrundlage für diese Datenverarbeitung die Erforderlichkeit zur Wahrung von berechtigten Interessen. Ausführlichere Informationen zur Datenverarbeitung in Ihrem Arbeitsumfeld und zu Ihren Datenschutzrechten (z.B. Widerspruchsrecht) finden Sie in den lokalen Datenschutzhinweisen für Mitarbeiter oder bei Ihrem lokalen Datenschutzteam."
       }
     ]
   },
@@ -284,7 +284,7 @@
       },
       "2": {
         "title": "1",
-        "label": "Passen die Cookie-Einstellungen an?",
+        "label": "Passen Sie die Cookie-Einstellungen an?",
         "options": [
           "Immer",
           "Oft",
@@ -295,7 +295,7 @@
       },
       "3": {
         "title": "1",
-        "label": "Passen Datenschutzeinstellungen an (z.B. wie Ihre Informationen verwendet werden dürfen)?",
+        "label": "Passen Sie die Datenschutzeinstellungen an (z.B. wie Ihre Informationen verwendet werden dürfen)?",
         "options": [
           "Immer",
           "Oft",
@@ -635,7 +635,7 @@
       "table": {
         "content": [{
           "category": "Ihre Rechte",
-          "description": "Sie haben das Recht, Auskunft sowie eine Kopie aller über Sie erfassten personenbezogene Daten anzufordern und uns zu bitten, diese Daten zu korrigieren oder zu löschen. Um diese Rechte auszuüben, wenden Sie sich bitte an Kapitän Maria."
+          "description": "Sie haben das Recht, Auskunft sowie eine Kopie aller über Sie erfassten personenbezogenen Daten anzufordern und uns zu bitten, diese Daten zu korrigieren oder zu löschen. Um diese Rechte auszuüben, wenden Sie sich bitte an Kapitän Maria."
         }]
       }
     }
@@ -699,7 +699,7 @@
         },
         {
           "dir": "ltr",
-          "text": "Verstanden. Ich kann einige Informationen sofort löschen, wenn sie für den Betrieb des Schiffes nicht entscheidend sind, aber es gibt einige Informationen, die wir brauchen, während Sie an Bord sind, wie z.B. Passdaten und diätetische Einschränkungen.",
+          "text": "Verstanden. Ich kann einige Informationen sofort löschen, wenn sie für den Betrieb des Schiffes nicht entscheidend sind, aber es gibt einige Informationen, die wir brauchen, während Sie an Bord sind, wie z.B. Passdaten und Ernährungsgewohnheiten.",
           "isMaria": true
         },
         {
@@ -775,8 +775,8 @@
   "congratulations": "Herzlichen Glückwunsch",
   "outro": {
     "successText": [
-      "<b>Herzlichen Glückwunsch!</b> Sie haben die Datenschutzgrundsätze genutzt, um einen Datenschutz-Schiffbruch zu verhindern!",
-      "Klicken Sie auf “Weiter“, um von Bord zu gehen und Ihrem Land zu helfen, Datenschutz-Champion 2023 zu werden."
+      "<b>Herzlichen Glückwunsch!</b> Sie haben einen Datenschutz-Schiffbruch verhindert!",
+      "Wenn Sie nun auf Weiter klicken, gelangen Sie zu unserem Datenschutz-Länderwettbewerb auf MS-Forms, bei dem Sie für Ihr Land einen Länderpunkt holen können. Die Teilnahme ist freiwillig und eine Nichtteilnahme hat keinerlei Auswirkungen auf Ihr Arbeitsverhältnis."
     ],
     "failText": [
       "Oh, schade. Sie haben es nicht geschafft, die Welt zu retten, und jetzt hat das Cyber-Monster alles zerstört, was es konnte. Spielen Sie diese Aufgabe erneut und helfen Sie unserem Brick, den Feind zu besiegen."
@@ -847,7 +847,7 @@
       "title": "Nun, da Sie den Datenschutzhinweis und die Grundsätze, die Kapitän Maria versteckt hat, gefunden haben, was denken Sie über die Situation beim Mittagessen?",
       "description": [
         "Das ist richtig!",
-        "Obwohl das Schiff bekannt gab, dass es Informationen über Lebensmittelallergien (die sich auf Ernährungsgewohnheiten beziehen) sammeln würde, sagte es, dass es diese Informationen nur an Mitarbeiter weitergeben würde, um die Sicherheit zu gewährleisten. Diese Informationen hätten niemals an andere Passagiere weitergegeben werden dürfen. Und wenn wir schon dabei sind, wäre es klarer, wenn in der Datenschutzerklärung von “diätetischen Einschränkungen“, und nicht nur von Allergien die Rede wäre, denn Carla, Yuri und Dave hatten Einschränkungen aus anderen Gründen."
+        "Obwohl das Schiff bekannt gab, dass es Informationen über Lebensmittelallergien (die sich auf Ernährungsgewohnheiten beziehen) sammeln würde, sagte es, dass es diese Informationen nur an Mitarbeiter weitergeben würde, um die Sicherheit zu gewährleisten. Diese Informationen hätten niemals an andere Passagiere weitergegeben werden dürfen. Und wenn wir schon dabei sind, wäre es klarer, wenn in der Datenschutzerklärung von “Ernährungsgewohnheiten“, und nicht nur von Allergien die Rede wäre, denn Carla, Yuri und Dave hatten Einschränkungen aus anderen Gründen."
       ],
       "congratulations": [
         "Gute Arbeit!",

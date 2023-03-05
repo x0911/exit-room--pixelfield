@@ -95,7 +95,7 @@ export default {
     [
       '@nuxtjs/google-gtag',
       {
-        id: '', // will add id here
+        id: 'G-CW7F23SBKX', // will add id here
       },
     ],
   ],
