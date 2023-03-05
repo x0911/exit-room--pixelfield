@@ -63,8 +63,9 @@
       color="primary"
       depressed
       large
-      right
-      style="z-index: 9999 !important; bottom: 100px !important"
+      :right="$vuetify.breakpoint.lgAndUp"
+      :left="!$vuetify.breakpoint.lgAndUp"
+      :style="`z-index: 9999 !important; bottom: ${$vuetify.breakpoint.lgAndUp ? '50px' : '100px'} !important`"
       tile
       @click="stopCurrentVideo"
     >

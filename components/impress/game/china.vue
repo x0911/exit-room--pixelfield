@@ -20,13 +20,16 @@
               contain
             >
               <v-layout fill-height justify-center pa-0>
-                <div
-                  class="f-hand font-weight-medium pt-5 px-6 black--text"
-                >
+                <div class="f-hand font-weight-medium pt-5 px-6 black--text">
                   <template
                     v-for="(line, i) in $tr('china.bedroom-note', 'array')"
                   >
-                    <div :key="i" class="lh-3-1" :class="{ 'line-text': $i18n.locale === 'ru' }" :inner-html.prop="line"></div>
+                    <div
+                      :key="i"
+                      class="lh-3-1"
+                      :class="{ 'line-text': $i18n.locale === 'ru' }"
+                      :inner-html.prop="line"
+                    ></div>
                   </template>
                 </div>
               </v-layout>
@@ -45,7 +48,7 @@
             >
               {{ $t('next') }}
               <v-icon class="ms-2"
-              >mdi-keyboard-backspace mdi-rotate-180
+                >mdi-keyboard-backspace mdi-rotate-180
               </v-icon>
             </v-btn>
           </v-card-actions>
@@ -84,7 +87,7 @@
             >
               {{ $t('next') }}
               <v-icon class="ms-2"
-              >mdi-keyboard-backspace mdi-rotate-180
+                >mdi-keyboard-backspace mdi-rotate-180
               </v-icon>
             </v-btn>
           </v-card-actions>
@@ -97,19 +100,13 @@
           @next="validatePrivacyHandler"
         />
         <v-card
-          v-show="step === 5"
+          v-show="step === 5 && !showPrivacyNotice"
           class="transparent mx-auto"
           flat
           max-width="600"
           tile
         >
-          <v-card
-            class="mx-auto info-screen primary border-3"
-            flat
-            light
-            max-height="90vh"
-            tile
-          >
+          <v-card class="mx-auto info-screen primary border-3" flat light tile>
             <v-card-text class="pt-8 white--text">
               <div class="text-body-1 white--text mb-2">
                 {{ $t('privacy-notice.questions.title') }}
@@ -217,7 +214,7 @@
             >
               {{ $t('next') }}
               <v-icon class="ms-2"
-              >mdi-keyboard-backspace mdi-rotate-180
+                >mdi-keyboard-backspace mdi-rotate-180
               </v-icon>
             </v-btn>
           </v-card-actions>
@@ -303,12 +300,13 @@
                     </div>
                     <div>
                       {{
-                        (foundObject.count - foundObject.items.length) === 1 ?
-                          $t('found-object.find-one-more', {
-                          x: foundObject.count - foundObject.items.length,
-                        }) : $t('found-object.find-x-more', {
-                          x: foundObject.count - foundObject.items.length,
-                        })
+                        foundObject.count - foundObject.items.length === 1
+                          ? $t('found-object.find-one-more', {
+                              x: foundObject.count - foundObject.items.length,
+                            })
+                          : $t('found-object.find-x-more', {
+                              x: foundObject.count - foundObject.items.length,
+                            })
                       }}
                     </div>
                   </template>
@@ -527,7 +525,7 @@ export default {
   computed: {
     isQuestionsValid() {
       return this.questions.every(
-        ({value, correctValue}) => value === correctValue
+        ({ value, correctValue }) => value === correctValue
       );
     },
     nextDisabled() {
@@ -548,7 +546,7 @@ export default {
       if (value) {
         this.$nuxt.$emit('play-main-audio');
       }
-    }
+    },
   },
   mounted() {
     this.$nuxt.$on(`video-${this.stepId}-ended`, this.introEnded);
@@ -673,9 +671,9 @@ export default {
         steps: [`privacy-notice.questions.description`],
         showNextArrow: true,
         nextMethod: (event) => {
-          event.target['data-video-start'] = null
-          this.nextStep(event)
-        }
+          event.target['data-video-start'] = null;
+          this.nextStep(event);
+        },
       });
     },
     nextStep(event) {
