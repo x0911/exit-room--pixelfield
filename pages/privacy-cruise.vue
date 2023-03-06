@@ -278,6 +278,9 @@ export default {
   watch: {
     activeStep(v) {
       this.fixMapBg(v);
+      setTimeout(() => {
+        this.restart();
+      }, 500);
     },
   },
   mounted() {
@@ -311,7 +314,7 @@ export default {
           $this.$nuxt.$emit(`impress-step-entering-${nextStepId}`);
         }
       );
-      window.addEventListener("resize", this.restart)
+      window.addEventListener('resize', this.restart);
     }
   },
   methods: {
