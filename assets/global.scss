@@ -368,3 +368,9 @@ $fillables: width, height;
     overflow: auto;
   }
 }
+
+.special-pt-on-mobile {
+  @media (max-height: 400px) {
+    padding-top: 140px !important;
+  }
+}

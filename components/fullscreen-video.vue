@@ -8,7 +8,7 @@
         video: true,
         'is-vertical': isVertical,
         'full-video': fullVideo,
-        intro: $route.fullPath.includes('splash')
+        intro: $route.fullPath.includes('splash'),
       }"
       :contextmenu="false"
       :controls="false"
@@ -383,6 +383,9 @@ export default {
       this.$emit('ended');
       this.$set(this, 'canPlay', false);
       this.$store.commit('SET_VIDEO_IS_SKIPPABLE', true);
+      setTimeout(() => {
+        this.hideAllVideoDialogs();
+      }, 500);
     },
     chooseOption(dIndex, oIndex) {
       this.refreshing = true;

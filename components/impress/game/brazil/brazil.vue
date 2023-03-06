@@ -3,10 +3,11 @@
     <v-dialog
       :retain-focus="false"
       :value="videos.intro.ended && model === 0"
-      class="elevation-0"
+      class="elevation-0 mx-auto"
       content-class="elevation-0"
       max-width="700"
       overlay-opacity="0"
+      scrollable
       persistent
     >
       <div v-if="isLoading" class="splash-screen_loading">
