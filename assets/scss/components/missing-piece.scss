@@ -117,14 +117,18 @@
     &-carpet {
       --w: 45%;
       --h: 20%;
-      --t: 75%;
+      --t: 80%;
       --l: 55%;
       z-index: 1;
+
+      @media (max-height: 400px) {
+        --t: 75%;
+      }
 
       &--up {
         --w: 65%;
         --h: 24%;
-        --t: 77%;
+        --t: 82%;
         --l: 69%;
         overflow: visible;
 
@@ -133,6 +137,10 @@
         --dx: 5px;
 
         transform: rotate(7deg);
+
+        @media (max-height: 400px) {
+          --t: 77%;
+        }
       }
 
       img {
