@@ -21,7 +21,10 @@
         <v-card-title
           class="d-block text-center mt-16 pt-4 white--text font-weight-bold"
         >
-          <span class="white--text font-weight-bold text-h6 d-block mx-auto" style="max-width: 400px; min-height: 64px">
+          <span
+            class="white--text font-weight-bold text-h6 d-block mx-auto"
+            style="max-width: 400px; min-height: 64px"
+          >
             {{ $t('china.privacy-notice.title') }}
           </span>
         </v-card-title>
@@ -33,84 +36,83 @@
             >
               {{ $t('china.privacy-notice.description') }}
             </div>
-
           </v-col>
           <v-col class="mx-auto my-0 pt-0" cols="12">
             <v-simple-table class="transparent">
               <thead>
-              <tr>
-                <th
-                  class="pl-16 pr-0 font-weight-bold text-size-7"
-                  style="width: 335px"
-                >
-                  <div>{{ $t('china.privacy-notice.table.headers[0]') }}</div>
-                </th>
-                <th class="pl-1 font-weight-bold text-size-7">
-                  {{ $t('china.privacy-notice.table.headers[1]') }}
-                </th>
-              </tr>
+                <tr>
+                  <th
+                    class="pl-16 pr-0 font-weight-bold text-size-7"
+                    style="width: 335px"
+                  >
+                    <div>{{ $t('china.privacy-notice.table.headers[0]') }}</div>
+                  </th>
+                  <th class="pl-1 font-weight-bold text-size-7">
+                    {{ $t('china.privacy-notice.table.headers[1]') }}
+                  </th>
+                </tr>
               </thead>
               <tbody>
-              <tr
-                v-for="(item, index) in options"
-                :key="index"
-                class="table-line"
-              >
-                <td
-                  class="font-weight-bold d-flex gap-2 align-center pt-6 pl-16 ml-6 text-size-8"
+                <tr
+                  v-for="(item, index) in options"
+                  :key="index"
+                  class="table-line"
                 >
-                  <v-checkbox
-                    v-if="isForm"
-                    :error="hasErrors"
-                    :value="item.value"
-                    color="white"
-                    dark
-                    @change="updateOptions(index)"
-                  />
-                  <div :style="hasErrors && 'color: #FF5252 !important;'">
-                    {{ item.category }}
-                  </div>
-                </td>
-                <td
-                  :style="hasErrors && 'color: #FF5252 !important;'"
-                  class="white--text pl-1 pr-16 py-0 text-left"
-                >
-                  {{ item.description }}
-                </td>
-              </tr>
+                  <td
+                    class="font-weight-bold d-flex gap-2 align-center pt-6 pl-16 ml-6 text-size-8"
+                  >
+                    <v-checkbox
+                      v-if="isForm"
+                      :error="hasErrors"
+                      :value="item.value"
+                      color="white"
+                      dark
+                      @change="updateOptions(index)"
+                    />
+                    <div :style="hasErrors && 'color: #FF5252 !important;'">
+                      {{ item.category }}
+                    </div>
+                  </td>
+                  <td
+                    :style="hasErrors && 'color: #FF5252 !important;'"
+                    class="white--text pl-1 pr-16 py-0 text-left"
+                  >
+                    {{ item.description }}
+                  </td>
+                </tr>
               </tbody>
             </v-simple-table>
-            <div id="cardBottom"/>
+            <div id="cardBottom" />
           </v-col>
         </v-row>
       </v-img>
+      <div class="privacy-notice-actions d-flex justify-center gap-8 pb-2">
+        <v-btn
+          v-if="!isForm"
+          :disabled="canScroll ? !isScrollFinished : false"
+          class="mt-4 px-4"
+          large
+          @click="
+            playGameSound('big-button-press-1');
+            $emit('input', false);
+          "
+        >
+          {{ $t('china.privacy-notice.close') }}
+          <v-icon class="ml-2">mdi-close</v-icon>
+        </v-btn>
+        <v-btn
+          v-else
+          class="px-6 mt-4"
+          color="primary"
+          large
+          tile
+          @click="validateHandler"
+        >
+          {{ $t('next') }}
+          <v-icon class="ml-2">mdi-keyboard-backspace mdi-rotate-180</v-icon>
+        </v-btn>
+      </div>
     </v-card>
-    <div class="privacy-notice-actions d-flex justify-center gap-8">
-      <v-btn
-        v-if="!isForm"
-        :disabled="canScroll ? !isScrollFinished : false"
-        class="mt-4 px-4"
-        large
-        @click="
-          playGameSound('big-button-press-1');
-          $emit('input', false);
-        "
-      >
-        {{ $t('china.privacy-notice.close') }}
-        <v-icon class="ml-2">mdi-close</v-icon>
-      </v-btn>
-      <v-btn
-        v-else
-        class="px-6 mt-4"
-        color="primary"
-        large
-        tile
-        @click="validateHandler"
-      >
-        {{ $t('next') }}
-        <v-icon class="ml-2">mdi-keyboard-backspace mdi-rotate-180</v-icon>
-      </v-btn>
-    </div>
   </v-dialog>
 </template>
 
@@ -147,7 +149,7 @@ export default {
       return this.value && this.scrollToBottom;
     },
     isValidated() {
-      return this.options.every(({value}, index) =>
+      return this.options.every(({ value }, index) =>
         this.correctOptions.includes(index) ? value : !value
       );
     },
@@ -165,7 +167,7 @@ export default {
         if (value) {
           setTimeout(() => {
             const cardBottomRef = document.getElementById('cardBottom');
-            cardBottomRef.scrollIntoView({behavior: 'smooth'});
+            cardBottomRef.scrollIntoView({ behavior: 'smooth' });
             this.isScrollFinished = true;
           }, 1000);
         }
