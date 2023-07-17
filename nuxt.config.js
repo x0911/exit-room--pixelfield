@@ -36,6 +36,7 @@ export default {
     '@/assets/global.scss',
     '@/assets/scss/components/vuetify.scss',
     '@/assets/fonts/index.scss',
+    '@/static/@mdi/font/css/materialdesignicons.min.css',
   ],
 
   axios: {
